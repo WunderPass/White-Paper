@@ -1,0 +1,232 @@
+\documentclass[11pt]{scrartcl}
+
+\title{WunderPass-White-Paper}
+\author{G. Fricke, S.Tschurilin}
+\date{\today{}, Berlin}
+
+% \usepackage{ucs}
+% \usepackage[utf8x]{inputenc}
+% \usepackage[T1]{fontenc}
+
+% Zeilenumbrüche der deutschen Sprache
+% \usepackage[ngerman]{babel}
+
+% Mathe-Stuff
+\usepackage{amsmath,amssymb,amstext}
+\usepackage{amsthm}
+
+\newtheorem{def_potenzial}{Definition (@Potenzial)}
+\newtheorem{def_connections}{Definition (@Connection)}
+
+% zum Einfügen von Grafiken
+\usepackage{graphicx}
+
+\usepackage{xcolor}
+\newcommand\todo[1]{\textcolor{red}{#1}}
+ 
+ 
+ 
+\begin{document}
+
+\maketitle
+
+% \section
+% \subsection
+% \subsubsection 
+% \paragraph{Einleitende Worte}
+% \subparagraph
+
+
+
+\todo{TODO: Abstract}
+ 
+% Überschrift
+\section{Einleitung}
+\label{sec:einleitung}
+\todo{TODO}
+
+
+
+
+
+\section{Vision}
+\label{sec:vision}
+\todo{TODO}
+
+
+
+
+
+\section{Unser Ansatz}
+\label{sec:ansatz}
+\todo{TODO}
+
+
+
+
+
+\section{Avatare}
+\label{sec:avatar}
+\todo{TODO}
+
+
+
+
+
+\section{Dinge}
+\label{sec:dinge}
+\todo{TODO}
+
+
+
+
+
+\section{Economics}
+\label{sec:economics}
+
+
+\subsection{Einleitung}
+\label{sec:eco_einleitung}
+\todo{TODO}
+
+
+
+\subsection{Goals}
+\label{sec:eco_goals}
+\todo{TODO}
+
+
+
+\subsection{Quantifizierung}
+\label{sec:eco_zahlen}
+\todo{Einleitung - Start}
+
+Wir wollen den Mehrwert von User-Provider-Connections mittels Wunderpass einen bezifferbaren Mehrwert verleihen und diesen fundiert argumentieren. Dazu müssen wir diesen Value messen und beziffern können. Die Ergebnisse dieses Kapitels werden insbesondere für das im Kapitel \ref{sec:wpt_reward_pool} beleuchteten "Reward-Pools" von großer Bedeutung sein. Bzw. sogar im gesamten übergeordneten Kapitel \ref{sec:eco_wpt}.
+\todo{Einleitung - Ende}
+
+\subsubsection{Grundlegende Definitionen}
+\label{sec:eco_zahlen_def}
+Sei $t_0$ der initiale Zeitpunkt all unserer Messungen und Betrachtungen (vermutlich der Zeitpunkt des MVP-Launches).
+
+Darauf aufbauend betrachten wir das künftige Zeitintervall $T$, welches einzig an Relevanz für unser Vorhaben und alle in diesem Kapitel getätigten Ausführungen besitzt:
+
+\begin{equation*}
+  T = [t_0; \infty[
+\end{equation*}
+Der Zeitstrahl muss nicht zwingend unendlich sein. Er muss ebenfalls nicht zwingend infinitesimal fortlaufend sein und kann stattdessen je nach Kontext endlich und/oder diskret betrachtet werden. Also z. B. auch wahlweise als 
+
+\begin{equation*}
+  T = [t_0; t_{ende}]
+\end{equation*}
+
+\begin{equation*}
+  T = [t_0; t_1;...; t_{ende}]
+\end{equation*}
+definiert sein. In letzteren beiden Fällen wird jedoch $t_{ende}$ in aller Regel eine kontextbezogene (unverzichtbare) Bedeutung haben, die eine solche Definition des Zeitstrahls unverzichtbar macht. So könnte $t_{ende}$ z. B. für eine mathematisch quantifizierbare Erreichung unserer Vision stehen. \\
+
+Sei $\mathbf{t \in T}$ fortan stets ein beliebiger Zeitpunkt, zu welchem wir eine Aussage treffen möchten. \\
+
+
+Wir definieren die Anzahl aller zum Zeitpunkt $t$ potenziellen User $U^{(t)}$ überhaupt und ihre Anzahl $n^{(t)}_{max}$ als \\
+
+\begin{def_potenzial}
+\begin{equation*}
+  U^{(t)} = \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{n^{(t)}_{max}} \right\}
+\end{equation*}
+\end{def_potenzial} 
+
+\vspace{0.3cm}
+
+
+Und ganz analog dazu ebenfalls die potenziellen Service-Provider $S^{(t)}$ und ihre Anzahl $m^{(t)}_{max}$ als \\
+
+\begin{def_potenzial}
+\begin{equation*}
+  S^{(t)} = \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{m^{(t)}_{max}}\right\}
+\end{equation*}
+\end{def_potenzial}
+
+\vspace{1cm}
+
+
+Nun definieren den \textbf{\textit{Connection-Koeffizienten}} zwischen den eben definierten potenziellen Usern $\mathbf{U^{(t)}}$ und den Service-Providern $\mathbf{S^{(t)}}$ zum Zeitpunkt $t$ als boolesche Funktion $\mathbf{\alpha^{(t)}}$, die über über die Tatsache \textit{"is connected"} bzw. \textit{"is not connected"} entscheidet: \\
+
+\begin{def_connections}
+\begin{equation*}
+  \alpha^{(t)} : U^{(t)} \times S^{(t)} \rightarrow \{0; 1\}
+\end{equation*}
+\end{def_connections}
+
+
+\subsection{Token-Economics (WPT)}
+\label{sec:eco_wpt}
+\todo{TODO}
+
+\subsubsection{Einleitung}
+\label{sec:wpt_einleitung}
+\todo{TODO}
+
+\subsubsection{Kreislauf}
+\label{sec:wpt_kreislauf}
+\todo{TODO}
+
+\subsubsection{Token-Design}
+\label{sec:wpt_design}
+\todo{TODO}
+
+\subsubsection{Incentivierung}
+\label{sec:wpt_incent}
+\todo{TODO}
+
+\subsubsection{Milestones-Reward-Pool}
+\label{sec:wpt_reward_pool}
+\todo{TODO}
+
+\subsubsection{WPT in Zahlen}
+\label{sec:wpt_zahlen}
+\todo{TODO}
+
+\subsubsection{Fazit}
+\label{sec:wpt_fazit}
+\todo{TODO}
+
+
+\subsection{Fazit}
+\label{sec:eco_fazit}
+\todo{TODO}
+
+
+
+
+
+\section{Noch mehr Dinge}
+\label{sec:dinge2}
+\todo{TODO}
+
+
+
+
+
+\section{Project 'Guard'}
+\label{sec:guard}
+\todo{TODO}
+
+
+
+
+
+\section{Community}
+\label{sec:community}
+\todo{TODO}
+
+
+
+\section{Zusammenfassung}
+\label{sec:fazit}
+\todo{TODO}
+
+
+
+ 
+ 
+\end{document}
