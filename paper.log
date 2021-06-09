@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  9 JUN 2021 03:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  10 JUN 2021 01:15
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -212,7 +212,151 @@ Package tocbasic Info: babel extension for `lot' omitted
 \c@table=\count187
 Class scrartcl Info: Redefining `\numberline' on input line 6303.
 \bibindent=\dimen138
-) (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2021-02-10 v7.00j Hypertext links for LaTeX
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
+ty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen139
+\Hy@linkcounter=\count188
+\Hy@pagecounter=\count189
+ (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2021-02-10 v7.00j Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-langp
+atches.def
+File: hyperref-langpatches.def 2021-02-10 v7.00j Hyperref: patches for babel la
+nguages
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count190
+ (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2021-02-10 v7.00j Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count191
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen140
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count192
+\Field@Width=\dimen141
+\Fld@charsize=\dimen142
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring ON on input line 6093.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count193
+\c@Item=\count194
+\c@Hfootnote=\count195
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2021-02-10 v7.00j Hyperref driver for pdfTeX
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count196
+\c@bookmark@seq@number=\count197
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip63
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
@@ -234,7 +378,7 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip63
+\@mathmargin=\skip64
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -243,49 +387,49 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
-\ex@=\dimen139
+\ex@=\dimen143
 ))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen140
+\pmbraise@=\dimen144
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count188
+\inf@bad=\count198
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count189
-\leftroot@=\count190
+\uproot@=\count199
+\leftroot@=\count266
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count191
-\DOTSCASE@=\count192
+\classnum@=\count267
+\DOTSCASE@=\count268
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box49
 \strutbox@=\box50
-\big@size=\dimen141
+\big@size=\dimen145
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count193
-\c@MaxMatrixCols=\count194
-\dotsspace@=\muskip16
-\c@parentequation=\count195
-\dspbrk@lvl=\count196
+\macc@depth=\count269
+\c@MaxMatrixCols=\count270
+\dotsspace@=\muskip17
+\c@parentequation=\count271
+\dspbrk@lvl=\count272
 \tag@help=\toks17
-\row@=\count197
-\column@=\count198
-\maxfields@=\count199
+\row@=\count273
+\column@=\count274
+\maxfields@=\count275
 \andhelp@=\toks18
-\eqnshift@=\dimen142
-\alignsep@=\dimen143
-\tagshift@=\dimen144
-\tagwidth@=\dimen145
-\totwidth@=\dimen146
-\lineht@=\dimen147
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
 \@envbody=\toks19
-\multlinegap=\skip64
-\multlinetaggap=\skip65
+\multlinegap=\skip65
+\multlinetaggap=\skip66
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
@@ -307,9 +451,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks23
 \thm@notefont=\toks24
 \thm@headpunct=\toks25
-\thm@preskip=\skip66
-\thm@postskip=\skip67
-\thm@headsep=\skip68
+\thm@preskip=\skip67
+\thm@postskip=\skip68
+\thm@headsep=\skip69
 \dth@everypar=\toks26
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
@@ -319,7 +463,7 @@ Package: expl3 2021-02-18 L3 programming layer (loader)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count266
+\l__color_backend_stack_int=\count276
 \l__pdf_internal_box=\box51
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
@@ -332,7 +476,7 @@ Package: xparse 2020-10-27 L3 Experimental document command parser
 e-generic.tex))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count267
+\etb@tempcnta=\count277
 ))
 Class scrartcl Info: amsthm's \deferred@thm@head patched.
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
@@ -344,16 +488,16 @@ Package: inputenc 2020/08/01 v1.3d Input encoding file
 Package: mathtools 2021/04/12 v1.27 mathematical typesetting tools
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count268
-\calc@Bcount=\count269
-\calc@Adimen=\dimen148
-\calc@Bdimen=\dimen149
-\calc@Askip=\skip69
-\calc@Bskip=\skip70
+\calc@Acount=\count278
+\calc@Bcount=\count279
+\calc@Adimen=\dimen152
+\calc@Bdimen=\dimen153
+\calc@Askip=\skip70
+\calc@Bskip=\skip71
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count270
-\calc@Cskip=\skip71
+\calc@Ccount=\count280
+\calc@Cskip=\skip72
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
@@ -362,17 +506,17 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count271
-\l_MT_multwidth_dim=\dimen150
-\origjot=\skip72
-\l_MT_shortvdotswithinadjustabove_dim=\dimen151
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen152
-\l_MT_above_intertext_sep=\dimen153
-\l_MT_below_intertext_sep=\dimen154
-\l_MT_above_shortintertext_sep=\dimen155
-\l_MT_below_shortintertext_sep=\dimen156
+\g_MT_multlinerow_int=\count281
+\l_MT_multwidth_dim=\dimen154
+\origjot=\skip73
+\l_MT_shortvdotswithinadjustabove_dim=\dimen155
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen156
+\l_MT_above_intertext_sep=\dimen157
+\l_MT_below_intertext_sep=\dimen158
+\l_MT_above_shortintertext_sep=\dimen159
+\l_MT_below_shortintertext_sep=\dimen160
 \xmathstrut@box=\box52
-\xmathstrut@dim=\dimen157
+\xmathstrut@dim=\dimen161
 ) (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
 Package: lipsum 2021-03-03 v2.3 150 paragraphs of Lorem Ipsum dummy text
 
@@ -382,100 +526,62 @@ File: lipsum.ltd.tex 2021-03-03 v2.3 The Lorem ipsum dummy text
 y
 Package: mdframed 2013/07/01 1.9b: mdframed
 
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
-ty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.sty
 Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
 Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
-
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
- (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-) (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
 Package zref Info: New property list: main on input line 764.
 Package zref Info: New property: default on input line 765.
 Package zref Info: New property: page on input line 766.
-) (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
-with kernel methods
 )
-\c@abspage=\count272
+\c@abspage=\count282
 Package zref Info: New property: abspage on input line 66.
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip73
-\c@mdf@globalstyle@cnt=\count273
-\mdf@skipabove@length=\skip74
-\mdf@skipbelow@length=\skip75
-\mdf@leftmargin@length=\skip76
-\mdf@rightmargin@length=\skip77
-\mdf@innerleftmargin@length=\skip78
-\mdf@innerrightmargin@length=\skip79
-\mdf@innertopmargin@length=\skip80
-\mdf@innerbottommargin@length=\skip81
-\mdf@splittopskip@length=\skip82
-\mdf@splitbottomskip@length=\skip83
-\mdf@outermargin@length=\skip84
-\mdf@innermargin@length=\skip85
-\mdf@linewidth@length=\skip86
-\mdf@innerlinewidth@length=\skip87
-\mdf@middlelinewidth@length=\skip88
-\mdf@outerlinewidth@length=\skip89
-\mdf@roundcorner@length=\skip90
-\mdf@footenotedistance@length=\skip91
-\mdf@userdefinedwidth@length=\skip92
-\mdf@needspace@length=\skip93
-\mdf@frametitleaboveskip@length=\skip94
-\mdf@frametitlebelowskip@length=\skip95
-\mdf@frametitlerulewidth@length=\skip96
-\mdf@frametitleleftmargin@length=\skip97
-\mdf@frametitlerightmargin@length=\skip98
-\mdf@shadowsize@length=\skip99
-\mdf@extratopheight@length=\skip100
-\mdf@subtitleabovelinewidth@length=\skip101
-\mdf@subtitlebelowlinewidth@length=\skip102
-\mdf@subtitleaboveskip@length=\skip103
-\mdf@subtitlebelowskip@length=\skip104
-\mdf@subtitleinneraboveskip@length=\skip105
-\mdf@subtitleinnerbelowskip@length=\skip106
-\mdf@subsubtitleabovelinewidth@length=\skip107
-\mdf@subsubtitlebelowlinewidth@length=\skip108
-\mdf@subsubtitleaboveskip@length=\skip109
-\mdf@subsubtitlebelowskip@length=\skip110
-\mdf@subsubtitleinneraboveskip@length=\skip111
-\mdf@subsubtitleinnerbelowskip@length=\skip112
+\mdf@templength=\skip74
+\c@mdf@globalstyle@cnt=\count283
+\mdf@skipabove@length=\skip75
+\mdf@skipbelow@length=\skip76
+\mdf@leftmargin@length=\skip77
+\mdf@rightmargin@length=\skip78
+\mdf@innerleftmargin@length=\skip79
+\mdf@innerrightmargin@length=\skip80
+\mdf@innertopmargin@length=\skip81
+\mdf@innerbottommargin@length=\skip82
+\mdf@splittopskip@length=\skip83
+\mdf@splitbottomskip@length=\skip84
+\mdf@outermargin@length=\skip85
+\mdf@innermargin@length=\skip86
+\mdf@linewidth@length=\skip87
+\mdf@innerlinewidth@length=\skip88
+\mdf@middlelinewidth@length=\skip89
+\mdf@outerlinewidth@length=\skip90
+\mdf@roundcorner@length=\skip91
+\mdf@footenotedistance@length=\skip92
+\mdf@userdefinedwidth@length=\skip93
+\mdf@needspace@length=\skip94
+\mdf@frametitleaboveskip@length=\skip95
+\mdf@frametitlebelowskip@length=\skip96
+\mdf@frametitlerulewidth@length=\skip97
+\mdf@frametitleleftmargin@length=\skip98
+\mdf@frametitlerightmargin@length=\skip99
+\mdf@shadowsize@length=\skip100
+\mdf@extratopheight@length=\skip101
+\mdf@subtitleabovelinewidth@length=\skip102
+\mdf@subtitlebelowlinewidth@length=\skip103
+\mdf@subtitleaboveskip@length=\skip104
+\mdf@subtitlebelowskip@length=\skip105
+\mdf@subtitleinneraboveskip@length=\skip106
+\mdf@subtitleinnerbelowskip@length=\skip107
+\mdf@subsubtitleabovelinewidth@length=\skip108
+\mdf@subsubtitlebelowlinewidth@length=\skip109
+\mdf@subsubtitleaboveskip@length=\skip110
+\mdf@subsubtitlebelowskip@length=\skip111
+\mdf@subsubtitleinneraboveskip@length=\skip112
+\mdf@subsubtitleinnerbelowskip@length=\skip113
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
 sty
@@ -485,8 +591,8 @@ y
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
 \pgfutil@everybye=\toks29
-\pgfutil@tempdima=\dimen158
-\pgfutil@tempdimb=\dimen159
+\pgfutil@tempdima=\dimen162
+\pgfutil@tempdimb=\dimen163
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common-lists.tex))
@@ -518,8 +624,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
-\Gin@req@height=\dimen160
-\Gin@req@width=\dimen161
+\Gin@req@height=\dimen164
+\Gin@req@width=\dimen165
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
 sty
@@ -536,26 +642,26 @@ Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
 filtered.code.tex
 \pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen162
-\pgf@y=\dimen163
-\pgf@xa=\dimen164
-\pgf@ya=\dimen165
-\pgf@xb=\dimen166
-\pgf@yb=\dimen167
-\pgf@xc=\dimen168
-\pgf@yc=\dimen169
-\pgf@xd=\dimen170
-\pgf@yd=\dimen171
+\pgf@x=\dimen166
+\pgf@y=\dimen167
+\pgf@xa=\dimen168
+\pgf@ya=\dimen169
+\pgf@xb=\dimen170
+\pgf@yb=\dimen171
+\pgf@xc=\dimen172
+\pgf@yc=\dimen173
+\pgf@xd=\dimen174
+\pgf@yd=\dimen175
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count274
-\c@pgf@countb=\count275
-\c@pgf@countc=\count276
-\c@pgf@countd=\count277
+\c@pgf@counta=\count284
+\c@pgf@countb=\count285
+\c@pgf@countc=\count286
+\c@pgf@countd=\count287
 \t@pgf@toka=\toks33
 \t@pgf@tokb=\toks34
 \t@pgf@tokc=\toks35
-\pgf@sys@id@count=\count278
+\pgf@sys@id@count=\count288
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -574,8 +680,8 @@ File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count279
-\pgfsyssoftpath@bigbuffer@items=\count280
+\pgfsyssoftpath@smallbuffer@items=\count289
+\pgfsyssoftpath@bigbuffer@items=\count290
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -593,8 +699,8 @@ code.tex
 code.tex)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen172
-\pgfmath@count=\count281
+\pgfmath@dimen=\dimen176
+\pgfmath@count=\count291
 \pgfmath@box=\box54
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
@@ -620,39 +726,39 @@ ions.misc.code.tex)
 ions.integerarithmetics.code.tex)))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count282
+\c@pgfmathroundto@lastzeros=\count292
 ))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
 File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@picminx=\dimen173
-\pgf@picmaxx=\dimen174
-\pgf@picminy=\dimen175
-\pgf@picmaxy=\dimen176
-\pgf@pathminx=\dimen177
-\pgf@pathmaxx=\dimen178
-\pgf@pathminy=\dimen179
-\pgf@pathmaxy=\dimen180
-\pgf@xx=\dimen181
-\pgf@xy=\dimen182
-\pgf@yx=\dimen183
-\pgf@yy=\dimen184
-\pgf@zx=\dimen185
-\pgf@zy=\dimen186
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@path@lastx=\dimen187
-\pgf@path@lasty=\dimen188
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
 File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@shorten@end@additional=\dimen189
-\pgf@shorten@start@additional=\dimen190
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
@@ -660,19 +766,19 @@ File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfpic=\box55
 \pgf@hbox=\box56
 \pgf@layerbox@main=\box57
-\pgf@picture@serial@count=\count283
+\pgf@picture@serial@count=\count293
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgflinewidth=\dimen191
+\pgflinewidth=\dimen195
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@pt@x=\dimen192
-\pgf@pt@y=\dimen193
-\pgf@pt@temp=\dimen194
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
@@ -689,14 +795,14 @@ File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
 File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfarrowsep=\dimen195
+\pgfarrowsep=\dimen199
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
 File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@max=\dimen196
-\pgf@sys@shading@range@num=\count284
-\pgf@shadingcount=\count285
+\pgf@max=\dimen256
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -735,8 +841,8 @@ File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@nodesepstart=\dimen197
-\pgf@nodesepend=\dimen198
+\pgf@nodesepstart=\dimen257
+\pgf@nodesepend=\dimen258
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
@@ -757,8 +863,8 @@ Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex)
-\pgffor@iter=\dimen199
-\pgffor@skip=\dimen256
+\pgffor@iter=\dimen259
+\pgffor@skip=\dimen260
 \pgffor@stack=\toks39
 \pgffor@toks=\toks40
 ))
@@ -769,34 +875,34 @@ Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count286
-\pgfplotmarksize=\dimen257
+\pgf@plot@mark@count=\count296
+\pgfplotmarksize=\dimen261
 )
-\tikz@lastx=\dimen258
-\tikz@lasty=\dimen259
-\tikz@lastxsaved=\dimen260
-\tikz@lastysaved=\dimen261
-\tikz@lastmovetox=\dimen262
-\tikz@lastmovetoy=\dimen263
-\tikzleveldistance=\dimen264
-\tikzsiblingdistance=\dimen265
+\tikz@lastx=\dimen262
+\tikz@lasty=\dimen263
+\tikz@lastxsaved=\dimen264
+\tikz@lastysaved=\dimen265
+\tikz@lastmovetox=\dimen266
+\tikz@lastmovetoy=\dimen267
+\tikzleveldistance=\dimen268
+\tikzsiblingdistance=\dimen269
 \tikz@figbox=\box60
 \tikz@figbox@bg=\box61
 \tikz@tempbox=\box62
 \tikz@tempbox@bg=\box63
-\tikztreelevel=\count287
-\tikznumberofchildren=\count288
-\tikznumberofcurrentchild=\count289
-\tikz@fig@count=\count290
+\tikztreelevel=\count297
+\tikznumberofchildren=\count298
+\tikznumberofcurrentchild=\count299
+\tikz@fig@count=\count300
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count291
-\pgfmatrixcurrentcolumn=\count292
-\pgf@matrix@numberofcolumns=\count293
+\pgfmatrixcurrentrow=\count301
+\pgfmatrixcurrentcolumn=\count302
+\pgf@matrix@numberofcolumns=\count303
 )
-\tikz@expandcount=\count294
+\tikz@expandcount=\count304
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -810,82 +916,122 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \mdf@splitbox@one=\box66
 \mdf@splitbox@two=\box67
 \mdf@splitbox@save=\box68
-\mdfsplitboxwidth=\skip113
-\mdfsplitboxtotalwidth=\skip114
-\mdfsplitboxheight=\skip115
-\mdfsplitboxdepth=\skip116
-\mdfsplitboxtotalheight=\skip117
-\mdfframetitleboxwidth=\skip118
-\mdfframetitleboxtotalwidth=\skip119
-\mdfframetitleboxheight=\skip120
-\mdfframetitleboxdepth=\skip121
-\mdfframetitleboxtotalheight=\skip122
-\mdffootnoteboxwidth=\skip123
-\mdffootnoteboxtotalwidth=\skip124
-\mdffootnoteboxheight=\skip125
-\mdffootnoteboxdepth=\skip126
-\mdffootnoteboxtotalheight=\skip127
-\mdftotallinewidth=\skip128
-\mdfboundingboxwidth=\skip129
-\mdfboundingboxtotalwidth=\skip130
-\mdfboundingboxheight=\skip131
-\mdfboundingboxdepth=\skip132
-\mdfboundingboxtotalheight=\skip133
-\mdf@freevspace@length=\skip134
-\mdf@horizontalwidthofbox@length=\skip135
-\mdf@verticalmarginwhole@length=\skip136
-\mdf@horizontalspaceofbox=\skip137
-\mdfsubtitleheight=\skip138
-\mdfsubsubtitleheight=\skip139
-\c@mdfcountframes=\count295
+\mdfsplitboxwidth=\skip114
+\mdfsplitboxtotalwidth=\skip115
+\mdfsplitboxheight=\skip116
+\mdfsplitboxdepth=\skip117
+\mdfsplitboxtotalheight=\skip118
+\mdfframetitleboxwidth=\skip119
+\mdfframetitleboxtotalwidth=\skip120
+\mdfframetitleboxheight=\skip121
+\mdfframetitleboxdepth=\skip122
+\mdfframetitleboxtotalheight=\skip123
+\mdffootnoteboxwidth=\skip124
+\mdffootnoteboxtotalwidth=\skip125
+\mdffootnoteboxheight=\skip126
+\mdffootnoteboxdepth=\skip127
+\mdffootnoteboxtotalheight=\skip128
+\mdftotallinewidth=\skip129
+\mdfboundingboxwidth=\skip130
+\mdfboundingboxtotalwidth=\skip131
+\mdfboundingboxheight=\skip132
+\mdfboundingboxdepth=\skip133
+\mdfboundingboxtotalheight=\skip134
+\mdf@freevspace@length=\skip135
+\mdf@horizontalwidthofbox@length=\skip136
+\mdf@verticalmarginwhole@length=\skip137
+\mdf@horizontalspaceofbox=\skip138
+\mdfsubtitleheight=\skip139
+\mdfsubsubtitleheight=\skip140
+\c@mdfcountframes=\count305
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count296
-\c@mdf@env@i=\count297
-\c@mdf@env@ii=\count298
-\c@mdf@zref@counter=\count299
+\mdf@envdepth=\count306
+\c@mdf@env@i=\count307
+\c@mdf@env@ii=\count308
+\c@mdf@zref@counter=\count309
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-\c@Def=\count300
-\c@Theorem=\count301
-\c@Lemma=\count302
+\c@Def=\count310
+\c@Theorem=\count311
+\c@Lemma=\count312
  (paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-Package scrbase Info: activating english \contentsname on input line 72.
-Package scrbase Info: activating english \listfigurename on input line 72.
-Package scrbase Info: activating english \listtablename on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+Package scrbase Info: activating english \contentsname on input line 74.
+Package scrbase Info: activating english \listfigurename on input line 74.
+Package scrbase Info: activating english \listtablename on input line 74.
+Package hyperref Info: Link coloring ON on input line 74.
 
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count313
+)
+LaTeX Info: Redefining \ref on input line 74.
+LaTeX Info: Redefining \pageref on input line 74.
+LaTeX Info: Redefining \nameref on input line 74.
+ (paper.out) (paper.out)
+\@outlinefile=\write4
+\openout4 = `paper.out'.
+
+Class scrartcl Info: loading recommended package `bookmark'.
+(scrartcl)           Using `bookmark' together with `hyperref' is recommended,
+(scrartcl)           because of handling of possible bookmark level gaps.
+(scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
+(scrartcl)           `bookmarkpackage=false' before \begin{document} and
+(scrartcl)           you can avoid this message adding:
+(scrartcl)             \usepackage{bookmark}
+(scrartcl)           before \begin{document} on input line 74.
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\BKM@id=\count314
+))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count303
-\scratchdimen=\dimen266
+\scratchcounter=\count315
+\scratchdimen=\dimen270
 \scratchbox=\box69
-\nofMPsegments=\count304
-\nofMParguments=\count305
+\nofMPsegments=\count316
+\nofMParguments=\count317
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count306
-\MPscratchDim=\dimen267
-\MPnumerator=\count307
-\makeMPintoPDFobject=\count308
+\MPscratchCnt=\count318
+\MPscratchDim=\dimen271
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
 \everyMPtoPDFconversion=\toks42
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -894,13 +1040,13 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
 
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
 
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -910,103 +1056,137 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {C:/Users/Slava/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 167--169
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 175.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 179.
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 186.
+(mdframed)              on input line 177.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 190.
+(mdframed)              on input line 181.
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 188.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 192.
 [2]
-Package mdframed Info: Not enough space on this page on input line 190.
+Package mdframed Info: Not enough space on this page on input line 192.
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 197.
+(mdframed)              on input line 199.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 224.
+(mdframed)              on input line 226.
 
-Overfull \hbox (18.04156pt too wide) in paragraph at lines 232--233
+Overfull \hbox (18.04156pt too wide) in paragraph at lines 234--235
 []\OT1/cmr/m/n/10.95 Mit diesen geschaf-fe-nen Formalisierungs-Werkzeugen lass
 t sich nun auch die ubergeordnete
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 234.
+(mdframed)              on input line 236.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 246.
+(mdframed)              on input line 248.
 [3]
-Package mdframed Info: Not enough space on this page on input line 246.
+Package mdframed Info: Not enough space on this page on input line 248.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 255.
+(mdframed)              on input line 257.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 259.
+(mdframed)              on input line 261.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 270.
+(mdframed)              on input line 272.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 279.
+(mdframed)              on input line 281.
  [4]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 288.
+(mdframed)              on input line 290.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 301.
+(mdframed)              on input line 303.
  [5]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 340.
+(mdframed)              on input line 342.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 349.
- [6] [7] (paper.aux)
+(mdframed)              on input line 351.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 365.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 388.
+ [6]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 397.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 415.
+
+Overfull \hbox (7.06117pt too wide) in paragraph at lines 423--424
+[]\OT1/cmr/m/n/10.95 Diese Netzwerk-Bewertungs-Modell be-sitzt je-doch im ak-tu
+ellen Zu-s-tand drei wesentliche
+ []
+
+
+Overfull \hbox (6.29063pt too wide) in paragraph at lines 427--428
+\OT1/cmr/m/n/10.95 Sicht der All-ge-mein-heit. Der einzelne Teil-nehmer bleibt 
+in-di-vidu-ell un-berucksichtigt.
+ []
+
+[7]
+Overfull \hbox (18.73064pt too wide) detected at line 438
+\OML/cmm/m/it/10.95 [] \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 [] \OT1/cmr/
+m/n/10.95 = 1[]\OML/cmm/m/it/10.95 u[]; u[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it
+/10.95 U[][]s[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 S[][]
+ []
+
+[8] [9] [10] (paper.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
+Package rerunfilecheck Info: File `paper.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18336 strings out of 479334
- 377936 string characters out of 2857085
- 874731 words of memory out of 3000000
- 35456 multiletter control sequences out of 15000+200000
+ 24591 strings out of 479334
+ 469961 string characters out of 2857085
+ 986958 words of memory out of 3000000
+ 41583 multiletter control sequences out of 15000+200000
  414133 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,10n,138p,10602b,1002s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 133i,10n,138p,10602b,1018s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Slava\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1025,12 +1205,10 @@ public/amsfonts/cm/cmssbx10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Slava/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/
 Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Use
-rs/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm
-10.pfb>
-Output written on paper.pdf (7 pages, 190768 bytes).
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on paper.pdf (10 pages, 215093 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

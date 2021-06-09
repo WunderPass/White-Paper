@@ -1,5 +1,7 @@
 \documentclass[11pt]{scrartcl}
 
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
 \title{WunderPass-White-Paper}
 \author{G. Fricke, S.Tschurilin}
 \date{\today{}, Berlin}
@@ -241,13 +243,13 @@ Wir betrachten die WunderPass-Vision zu einem Zeitpunkt $t_{*} \in T$ als erreic
 \label{eq:1}
   \alpha^{(t)}_{ij} = 1 \textrm{ für alle } i \in \{1,...,n\} \textrm{ und } j \in \{1,...,m\}
 \end{equation}\\
-erfüllt ist. Darüber hinaus ist es noch nicht ganz klar, welche Aussage für die Zeitpunkte $t > t_{*}$ hinsichtlich der Visions-Erreichung zu treffen ist. Grundsätzlich ist es ja durchaus denkbar, die obige Voraussetzung gelte für $t > t_{*}$ nicht mehr. Bleibt die Vision in diesem Fall trotzdem als 'erreicht' zu betrachten?
+erfüllt ist. Darüber hinaus ist es noch nicht ganz klar, welche Aussage für die Zeitpunkte $t > t_{*}$ hinsichtlich der Visions-Erreichung zu treffen sei. Grundsätzlich ist es ja durchaus denkbar, die obige Voraussetzung gelte für $t > t_{*}$ nicht mehr. Bleibt die Vision in diesem Fall trotzdem als 'erreicht' zu betrachten?
 
 \end{Def}
 
 \vspace{1cm}
 
-Zu guter Letzt formulieren wie abschließend folgendes Theorem, auf dessen trivialen Beweis ausnahmsweise zu verzichten sei:
+Zu guter Letzt formulieren wir abschließend folgendes Theorem, auf dessen trivialen Beweis ausnahmsweise zu verzichten sei:
 
 \vspace{0.3cm}
 
@@ -260,7 +262,7 @@ Die in der Definition \ref{def:Def4} formulierte Gleichung \eqref{eq:1} ist äqu
 
 \subsubsection{Quantifizierung des Status quo}
 \label{sec:eco_zahlen_status_quo}
-Die gelungene Formalisierung unserer Vision mittels Definition \ref{def:Def4} mag einen Fortschritt hinsichtlich unserer "Business-Mathematics" darstellen, bleibt jedoch losgelöst zunächst einmal ziemlich wertlos. Zum Einen ist das Erreichen der Vision im formellen Sinne der Definition \ref{def:Def4} weder praxistauglich noch akribisch erforderlich. Zudem bleibt zum Anderen der resultierende Business-Value der Visions-Erreichung bisher weiterhin nicht ohne Weiteres erkennbar.
+Die gelungene Formalisierung unserer Vision mittels Definition \ref{def:Def4} mag einen Fortschritt hinsichtlich unserer "Business-Mathematics" darstellen, bleibt jedoch losgelöst zunächst einmal ziemlich wertlos. Zum Einen ist das Erreichen der Vision im formellen Sinne der Definition \ref{def:Def4} weder praxistauglich noch akribisch erforderlich. Zudem bleibt zum Anderen der resultierende (intrinsische) Business-Value der Visions-Erreichung bisher weiterhin nicht ohne Weiteres erkennbar.
 Vielmehr sollten wir die Anforderung von Gleichung \eqref{eq:1} als eine Messlatte unseres Fortschritts heranziehen, und eher als (unerreichbare) 100\%-Zielerreichungs-Marke betrachten. Zudem müssen wir zeitnah - obgleich die vollständige oder nur fortschreitend partielle - Zielerreichung unserer Vision in klaren, quantifizierbaren Business-Value übersetzen.
 
 Dazu definieren wir als erstes ein intuitives Maß der Zielerreichung:
@@ -290,7 +292,7 @@ Es gelten folgende Aussagen:
 
 \begin{equation}
 \label{eq:2}
-  \Gamma(t) \leqslant n^{(t)} * m^{(t)} \textrm{ für alle } t \in T
+  \Gamma(t) \leq n^{(t)} * m^{(t)} \textrm{ für alle } t \in T
 \end{equation}
 
 \begin{equation}
@@ -309,7 +311,7 @@ Es gelten folgende Aussagen:
   zu \eqref{eq:2}: 
   
 \begin{equation*}
-  \Gamma(t) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \leqslant \sum_{i=1}^n \sum_{j=1}^m 1 = n^{(t)} * m^{(t)}
+  \Gamma(t) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \leq \sum_{i=1}^n \sum_{j=1}^m 1 = n^{(t)} * m^{(t)}
 \end{equation*}
 
 \vspace{0.3cm} 
@@ -323,7 +325,7 @@ zu \eqref{eq:3}:
   Angenommen Gleichung \eqref{eq:1} wäre nicht erfüllt. Dann gäbe es ein $i \in \{1,...,n\}$ und ein $j \in \{1,...,m\}$, sodass $\alpha^{(t)}_{ij} = 0$. Aufgrund der Gültigkeit von \eqref{eq:2} hätte dies zur Folge, es gelte
   
 \begin{equation*}
-  n^{(t)} * m^{(t)} = \Gamma(t) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \leqslant (\sum_{i=1}^n \sum_{j=1}^m 1) - 1 = n^{(t)} * m^{(t)} - 1
+  n^{(t)} * m^{(t)} = \Gamma(t) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \leq (\sum_{i=1}^n \sum_{j=1}^m 1) - 1 = n^{(t)} * m^{(t)} - 1
 \end{equation*}  
 was einem Widerspruch gleichkäme, weshalb die Annahme nicht möglich sein.
   
@@ -348,10 +350,103 @@ Gleichung \eqref{eq:3} ermöglicht uns die Definition \ref{def:Def5} auf ein rel
 
 \end{Def}
 
-\paragraph{Netzwerk-Effekt}
+\paragraph{Vernetzung \& Netzwerk-Effekt}
 \label{sec:zahlen_status_quo_netzwerk_effekt}
 
-TODO
+\textrm{ }
+\vspace{0.3cm}
+
+Die WunderPass-Vision steht in ihrer Formulierung ganz klar im Sinne einer gewissen "Vernetzung". Wir möchten, dass möglichst viele User sich mit möglichst vielen Service-Providern "connecten" (bzw. connectet sind/bleiben). Schränkt man seine Sichtweise alleinig auf diese Vision (ohne diese zunächst zu hinterfragen), liefern uns die zuletzt eingeführten Größen $\alpha^{(t)}_{ij}$, $\Gamma(t)$ und $\gamma(t)$ ziemlich gute Gradmesser, um zweifelsfreie Aussagen hinsichtlich der Vergleichbarkeit zweier Zeitpunkte $t_1, t_2 \in T$ treffen zu können. Es ist irgendwie klar, $\alpha^{(t)}_{ij} = 1$ sei im Sinne unserer Vision irgendwie besser als $\alpha^{(t)}_{ij} = 0$.
+
+Aus diesem Blickwinkel (in dem die Vision zunächst ein Selbstzweck bleibt) erscheint die folgende Definition mehr als intuitiv einleuchtend, um die obige Formulierung "irgendwie besser" zu formalisieren und vor allem zu quantifizieren. 
+
+\vspace{0.3cm}
+
+\begin{Def}\label{def:Def7}
+
+Wir bedienen uns der in Definition \ref{def:Def5} beschriebenen Funktion $\Gamma(t)$, um damit eine \href{https://de.wikipedia.org/wiki/Ordnungsrelation}{Ordnungsrelation} 
+auf unserem Zeitstrahl $T$ für je zwei beliebige Zeitpunkte $t_1, t_2 \in T$ zu erhalten: 
+
+\vspace{0.3cm}
+
+\begin{equation*}
+  R_{\preceq} \subseteq T \times T \textrm{ mit}
+\end{equation*}
+
+\begin{equation*}
+  R_{\preceq}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) \leq \Gamma(t_2) \right\}
+\end{equation*}
+\vspace{1cm}
+Mittels $R_{\preceq}$ erhalten wir eine Ordnung unseres Zeitstahls $T$ und erklären zudem insbesondere, was "irgendwie besser" bedeutet. Ein beliebiger Zeitpunkt $t_1 \in T$ ist nämlich verbal genau dann "nicht schlechter" in Sinne unserer Vision als ein beliebiger anderer Zeitpunkt $t_2 \in T$, falls $(t_1, t_2) \in R_{\preceq}$ gilt.
+
+\vspace{0.3cm}
+
+\begin{equation*}
+  \textrm{Wir schreiben fortan statt } (t_1, t_2) \in R_{\preceq} \textrm{ lieber } t_1 \preceq t_2 
+\end{equation*}
+
+\end{Def}
+
+\vspace{1cm}
+
+Man beachte, dass es sich bei der definierten Ordnungsrelation gar um eine \href{https://de.wikipedia.org/wiki/Ordnungsrelation#Totalordnung}{Totalordnung} handelt!
+Der Form halber ergänzen wir an der Stelle noch um zwei weitere - schematisch induzierte - Relationen auf unserem Zeitstrahl $T$:
+
+\vspace{0.3cm}
+
+\begin{Def}\label{def:Def8}
+
+Um zusätzlich zur in Def \ref{def:Def7} definierten Ordnungsrelation "$\preceq$", auch dem Verständnis von "echt besser" und "gleich gut" Rechnung zu tragen, definieren wir die beiden Relationen "$\prec$" und "$\simeq$"
+
+\vspace{0.3cm}
+
+\begin{equation*}
+  R_{\prec}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) < \Gamma(t_2) \right\}
+\end{equation*}
+
+\begin{equation*}
+  R_{\simeq}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) = \Gamma(t_2) \right\}
+\end{equation*}
+
+\vspace{1cm}
+
+Bei $R_{\prec}$ handelt es sich im Übrigen wieder um eine Ordnungsrelation. Bei $R_{\simeq}$ dagegen nicht.
+
+\end{Def}
+
+\vspace{0.3cm}
+
+Auch für die letzten beiden Relationen wollen wir fortan die vereinfachte Schreibweise $t_1 \prec t_2$ und $t_1 \simeq t_2$ nutzen. 
+
+\vspace{1cm}
+
+Diese Netzwerk-Bewertungs-Modell besitzt jedoch im aktuellen Zustand drei wesentliche Schwachstellen:
+
+\begin{itemize}
+  \item Es beschreibt uns misst weiterhin ausschließlich den intrinsischen Wert der Vernetzung innerhalb unserer kleinen "Visions-Welt", dem es noch an Bezug zur "Außenwelt" und dem Business-Case fehlt. Diesen Umstand wollen wir weiterhin zunächst einmal ignorieren.
+  \item Es bewertet in der aktuellen Form ausschließlich "unsere Welt" bzw. unseren Fortschritt als Ganzes. Die definierte "besser"-Relation misst das "Besser" aus Sicht der Allgemeinheit. Der einzelne Teilnehmer bleibt individuell unberücksichtigt. Es ist schwer vorstellbar, ein Ökosystem zu designen, welches intrinsisch nach dem Wohl/Optimum Aller strebt (und damit eben einmal einen formalen Beweis für das Funktionieren des Kommunismus zu liefern.) 
+  \item Es lässt den sogenannten \href{https://de.wikipedia.org/wiki/Netzwerkeffekt}{Netzwerkeffekt} außer Acht! Denn selbst wenn man eben einmal das Problem des Bullet 1 aus der Welt schafft, und ein Preisschild an den Mehrwert einer Connection zwischen User und Provider bekommt. Die Literatur zum besagten Netzwerkeffekt liefert gute Argumente für die Annahme, eine von uns anvisierte User-Provider-Connection kann nur sehr selten alleinstehend in ihrem Mehrwert bewertet werden. Vielmehr bemisst sich dieser etwaige Mehrwert in dem Zusammenspiel und den Synergien mit anderen User-Provider-Connections. Es lassen sich viele Beispiele finden, um diesen Umstand zu begründen. So kann es z. B. sein, dass ein Finance-Aggregator-Service für einen User um so wertvoller wird, je mehr Finance-Provider der User selbst mit seiner WunderIdentity connectet. Hierbei wird es kaum einen Unterschied für ihn machen, ob die genannten Finance-Provider mit 100 anderen WunderPass-Usern connectet seien oder mit 10 Mio. Im Case einer Splitwise-Connection (oder auch einer etwaigen EventsWithFriends-App) dagegen entsteht der Mehrwert erst dann, wenn auch ganz viele Freunde des Users diese Splitwise-Connection mit WunderPass besitzen. Andernfalls beläuft sich der Mehrwert seiner eigenen Connection so ziemlich gen Null.
+\end{itemize}
+
+\vspace{1cm}
+
+Insbesondere der letzte Punkt wirft einige interessante Fragen auf, zu denen wir eine Antwort finden werden müssen. Oder zumindest Hypothesen und Annahmen treffen.
+Was bedeutet eigentlich
+
+\begin{equation*}
+  \alpha^{(t)}_{kj} * \alpha^{(t)}_{lj} = 1 \textrm{ für zwei User } u^{(t)}_k, u^{(t)}_l \in U^{(t)} \textrm{ die beide mit Privider } s^{(t)}_j \in S^{(t)} \textrm{ connectet sind?}
+\end{equation*}
+Sind diese dann damit gleichbedeutend in irgendeiner Weise ebenfalls "\textit{miteinander connectet}"? Und was würde eine solche Implikation für unser bisheriges Modell bedeuten? Wie (un)abhängig ist eine solche "indirekte Connection" von ihrer "Brücke" - dem Service-Provider? All diese Fragen lassen sich zudem analog auf "indirekte Connections" zwischen Providern übertragen - die dann etwaige User als "Brücke" nützten. Zu guter Letzt ließe sich diese neue Komplexität beliebig potenzieren, indem man mittels Rekursion indirekte Connections "zweitens, drittens,... Grades" definiert.
+
+Um der aufkommenden Komplexität Herr zu werden, wollen wir uns zunächst einmal dem zweiten der oben genannten Schwachstellen unseres bisherigen Modells zuwenden, und dieses idealerweise dahingehend erweitern, auch individuelle Bewertungen unserer Teilnehmer $u \in U^{(t)}$ und $s \in S^{(t)}$ zu erfassen.
+
+
+\subsubsection{Individuelle Wertschöpfung der Teilneher}
+\label{sec:eco_zahlen_teilnehmer}
+
+Hallo
+
+
 
 
 \subsection{Token-Economics (WPT)}
