@@ -1,6 +1,6 @@
 \documentclass[11pt]{scrartcl}
 
-\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
 
 \title{WunderPass-White-Paper}
 \author{G. Fricke, S.Tschurilin}
@@ -14,9 +14,28 @@
 % \usepackage[ngerman]{babel}
 
 
-
+% Farben
 \usepackage[RGB]{xcolor}
 \definecolor{dunkelgruen}{RGB}{0 136 0}
+
+% Referenzierung und Verlinkung
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
+
+% Zähler:
+
+% Eigenen Zähler erzeugen
+\newcounter{mycount}
+
+%Zähler initialisieren
+\setcounter{mycount}{1}
+
+% Equationumgebung auf den Zähler umdefinieren
+% \arabic sorgt für die Nummerierung mit arabischen Zahlen. 
+% Alternativ wäre auch \roman für kleine römische Zahlen oder 
+% \Roman für große römische Zahlen denkbar. 
+% Auch Buchstaben sind mit \alph und \Alph möglich.
+% \renewcommand{\theequation}{\roman{mycount}}
 
 %\newcommand{\uproman}[1]{\uppercase\expandafter{\romannumeral#1}}
 %\newcommand{\lowroman}[1]{\romannumeral#1\relax}
@@ -151,6 +170,9 @@ Wir wollen den Mehrwert von User-Provider-Connections mittels Wunderpass einen b
 
 \subsubsection{Grundlegende Definitionen}
 \label{sec:eco_zahlen_def}
+
+\counterwithin{equation}{Def}
+
 Sei $t_0$ der initiale Zeitpunkt all unserer Messungen und Betrachtungen (vermutlich der Zeitpunkt des MVP-Launches).
 
 Darauf aufbauend betrachten wir das künftige Zeitintervall $T$, welches einzig an Relevanz für unser Vorhaben und alle in diesem Kapitel getätigten Ausführungen besitzt:
@@ -174,7 +196,7 @@ Sei $\mathbf{t \in T}$ fortan stets ein beliebiger Zeitpunkt, zu welchem wir ein
 
 Wir definieren die Anzahl aller zum Zeitpunkt $t$ potenziellen User $U^{(t)}$ überhaupt und ihre (maximale) Anzahl $n^{(t)}$ als \\
 
-\begin{Def}\label{def:Def1}
+\begin{Def}\label{defU}
 \begin{equation*}
   U^{(t)} = \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{n} \right\}
 \end{equation*}
@@ -185,7 +207,7 @@ Wir definieren die Anzahl aller zum Zeitpunkt $t$ potenziellen User $U^{(t)}$ ü
 
 Und ganz analog dazu ebenfalls die potenziellen Service-Provider $S^{(t)}$ und ihre (maximale) Anzahl $m^{(t)}$ als \\
 
-\begin{Def}\label{def:Def2}
+\begin{Def}\label{defS}
 \begin{equation*}
   S^{(t)} = \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{m}\right\}
 \end{equation*}
@@ -196,7 +218,7 @@ Und ganz analog dazu ebenfalls die potenziellen Service-Provider $S^{(t)}$ und i
 
 Nun definieren den \textbf{\textit{Connection-Koeffizienten}} zwischen den eben definierten potenziellen Usern $\mathbf{U^{(t)}}$ und den Service-Providern $\mathbf{S^{(t)}}$ zum Zeitpunkt $t$ als boolesche Funktion $\mathbf{\alpha^{(t)}}$, die über über die Tatsache \textit{"is connected"} bzw. \textit{"is not connected"} entscheidet: \\
 
-\begin{Def}\label{def:Def3}
+\begin{Def}\label{defKoeff}
 \begin{equation*}
   \alpha^{(t)} : U^{(t)} \times S^{(t)} \rightarrow \{0; 1\} 
 \end{equation*}
@@ -231,9 +253,13 @@ Man beachte, dass wir bei den diskreten/Aufzählungs-basierten Definitionen oben
 
 \vspace{0.3cm}
 
+Mittels der eben definierten Koefffizienten $\alpha^{(t)}_{ij}$ definieren wir "connected Pools" von Usern und Service-Providern zum Zeitpunkt $t \in T$:
+
+\vspace{1cm}
+
 Mit diesen geschaffenen Formalisierungs-Werkzeugen lässt sich nun auch die übergeordnete WunderPass-Vision formal erfassen - und zwar indem man den Zeitpunkt $t_{*} \in T$ ihrer Erreichung benennt:
 
-\begin{Def}\label{def:Def4}
+\begin{Def}\label{defVision}
 
 Wir betrachten die WunderPass-Vision zu einem Zeitpunkt $t_{*} \in T$ als erreicht, falls
 
@@ -245,6 +271,8 @@ Wir betrachten die WunderPass-Vision zu einem Zeitpunkt $t_{*} \in T$ als erreic
 \end{equation}\\
 erfüllt ist. Darüber hinaus ist es noch nicht ganz klar, welche Aussage für die Zeitpunkte $t > t_{*}$ hinsichtlich der Visions-Erreichung zu treffen sei. Grundsätzlich ist es ja durchaus denkbar, die obige Voraussetzung gelte für $t > t_{*}$ nicht mehr. Bleibt die Vision in diesem Fall trotzdem als 'erreicht' zu betrachten?
 
+\refstepcounter{mycount}
+
 \end{Def}
 
 \vspace{1cm}
@@ -254,7 +282,7 @@ Zu guter Letzt formulieren wir abschließend folgendes Theorem, auf dessen trivi
 \vspace{0.3cm}
 
 \begin{Theorem}
-Die in der Definition \ref{def:Def4} formulierte Gleichung \eqref{eq:1} ist äquivalent zu folgenden Aussagen: 
+Die in der Definition \ref{defVision} formulierte Gleichung \eqref{eq:1} ist äquivalent zu folgenden Aussagen: 
 \begin{equation*}
   \sum_{u \in U^{(t)}} \sum_{s \in S^{(t)}} \alpha^{(t)}(u, s) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} = n^{(t)} * m^{(t)}
 \end{equation*}
@@ -262,14 +290,14 @@ Die in der Definition \ref{def:Def4} formulierte Gleichung \eqref{eq:1} ist äqu
 
 \subsubsection{Quantifizierung des Status quo}
 \label{sec:eco_zahlen_status_quo}
-Die gelungene Formalisierung unserer Vision mittels Definition \ref{def:Def4} mag einen Fortschritt hinsichtlich unserer "Business-Mathematics" darstellen, bleibt jedoch losgelöst zunächst einmal ziemlich wertlos. Zum Einen ist das Erreichen der Vision im formellen Sinne der Definition \ref{def:Def4} weder praxistauglich noch akribisch erforderlich. Zudem bleibt zum Anderen der resultierende (intrinsische) Business-Value der Visions-Erreichung bisher weiterhin nicht ohne Weiteres erkennbar.
+Die gelungene Formalisierung unserer Vision mittels Definition \ref{defVision} mag einen Fortschritt hinsichtlich unserer "Business-Mathematics" darstellen, bleibt jedoch losgelöst zunächst einmal ziemlich wertlos. Zum Einen ist das Erreichen der Vision im formellen Sinne der Definition \ref{defVision} weder praxistauglich noch akribisch erforderlich. Zudem bleibt zum Anderen der resultierende (intrinsische) Business-Value der Visions-Erreichung bisher weiterhin nicht ohne Weiteres erkennbar.
 Vielmehr sollten wir die Anforderung von Gleichung \eqref{eq:1} als eine Messlatte unseres Fortschritts heranziehen, und eher als (unerreichbare) 100\%-Zielerreichungs-Marke betrachten. Zudem müssen wir zeitnah - obgleich die vollständige oder nur fortschreitend partielle - Zielerreichung unserer Vision in klaren, quantifizierbaren Business-Value übersetzen.
 
 Dazu definieren wir als erstes ein intuitives Maß der Zielerreichung:
 
 \vspace{0.3cm}
 
-\begin{Def}\label{def:Def5}
+\begin{Def}\label{defGamma}
 \begin{equation*}
   \Gamma : T \rightarrow \mathbb{N} 
 \end{equation*}
@@ -282,7 +310,7 @@ Dazu definieren wir als erstes ein intuitives Maß der Zielerreichung:
 
 \vspace{1cm}
 
-Was hier als $\Gamma$-Funktion so kompliziert definiert sein zu scheint, ist nichts anderes als die Formalisierung der für uns entscheidenden (jedoch simplen) KPI "Gesamtzahl bestehender User-to-Provider-Connections" zum Zeitpunkt $t \in T$. Damit liefert uns die definierte $\Gamma$-Funktion aber auch ein extrem greifbares und intuitiv nachvollziehbares Fortschrittsmaß unseres Vorhabens. Zudem fügt sich dieses perfekt in unsere mittels Definition \ref{def:Def4} quantifizierte Unternehmens-Vision und unterliegt einer fundamentalen (bezifferbaren) Obergrenze. Dies zeigt folgendes Lemma:
+Was hier als $\Gamma$-Funktion so kompliziert definiert sein zu scheint, ist nichts anderes als die Formalisierung der für uns entscheidenden (jedoch simplen) KPI "Gesamtzahl bestehender User-to-Provider-Connections" zum Zeitpunkt $t \in T$. Damit liefert uns die definierte $\Gamma$-Funktion aber auch ein extrem greifbares und intuitiv nachvollziehbares Fortschrittsmaß unseres Vorhabens. Zudem fügt sich dieses perfekt in unsere mittels Definition \ref{defVision} quantifizierte Unternehmens-Vision und unterliegt einer fundamentalen (bezifferbaren) Obergrenze. Dies zeigt folgendes Lemma:
 
 \vspace{0.3cm}
 
@@ -292,7 +320,7 @@ Es gelten folgende Aussagen:
 
 \begin{equation}
 \label{eq:2}
-  \Gamma(t) \leq n^{(t)} * m^{(t)} \textrm{ für alle } t \in T
+  \Gamma(t) \leq n^{(t)} * m^{(t)} \textrm{ für alle } t \in T 
 \end{equation}
 
 \begin{equation}
@@ -319,7 +347,7 @@ Es gelten folgende Aussagen:
 zu \eqref{eq:3}: 
 
 \begin{itemize}
-  \item "$\Leftarrow$" ist trivial und folgt direkt aus Definition \ref{def:Def4}.
+  \item "$\Leftarrow$" ist trivial und folgt direkt aus Definition \ref{defVision}.
   \item "$\Rightarrow$": Es gelte also $\Gamma(t) = n^{(t)} * m^{(t)}$.
   
   Angenommen Gleichung \eqref{eq:1} wäre nicht erfüllt. Dann gäbe es ein $i \in \{1,...,n\}$ und ein $j \in \{1,...,m\}$, sodass $\alpha^{(t)}_{ij} = 0$. Aufgrund der Gültigkeit von \eqref{eq:2} hätte dies zur Folge, es gelte
@@ -335,11 +363,11 @@ was einem Widerspruch gleichkäme, weshalb die Annahme nicht möglich sein.
 
 \vspace{0.3cm}
 
-Gleichung \eqref{eq:3} ermöglicht uns die Definition \ref{def:Def5} auf ein relatives Zielereichungs-Maß auszuweiten:
+Gleichung \eqref{eq:3} ermöglicht uns die Definition \ref{defGamma} auf ein relatives Zielereichungs-Maß auszuweiten:
 
 \vspace{0.3cm}
 
-\begin{Def}\label{def:Def6}
+\begin{Def}\label{defKleinGamma}
 \begin{equation*}
   \gamma : T \rightarrow [0; 1] 
 \end{equation*}
@@ -362,9 +390,9 @@ Aus diesem Blickwinkel (in dem die Vision zunächst ein Selbstzweck bleibt) ersc
 
 \vspace{0.3cm}
 
-\begin{Def}\label{def:Def7}
+\begin{Def}\label{defRelation}
 
-Wir bedienen uns der in Definition \ref{def:Def5} beschriebenen Funktion $\Gamma(t)$, um damit eine \href{https://de.wikipedia.org/wiki/Ordnungsrelation}{Ordnungsrelation} 
+Wir bedienen uns der in Definition \ref{defGamma} beschriebenen Funktion $\Gamma(t)$, um damit eine \href{https://de.wikipedia.org/wiki/Ordnungsrelation}{Ordnungsrelation} 
 auf unserem Zeitstrahl $T$ für je zwei beliebige Zeitpunkte $t_1, t_2 \in T$ zu erhalten: 
 
 \vspace{0.3cm}
@@ -394,9 +422,9 @@ Der Form halber ergänzen wir an der Stelle noch um zwei weitere - schematisch i
 
 \vspace{0.3cm}
 
-\begin{Def}\label{def:Def8}
+\begin{Def}\label{defRelationen}
 
-Um zusätzlich zur in Def \ref{def:Def7} definierten Ordnungsrelation "$\preceq$", auch dem Verständnis von "echt besser" und "gleich gut" Rechnung zu tragen, definieren wir die beiden Relationen "$\prec$" und "$\simeq$"
+Um zusätzlich zur in Def \ref{defRelation} definierten Ordnungsrelation "$\preceq$", auch dem Verständnis von "echt besser" und "gleich gut" Rechnung zu tragen, definieren wir die beiden Relationen "$\prec$" und "$\simeq$"
 
 \vspace{0.3cm}
 
