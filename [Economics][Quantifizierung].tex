@@ -1,0 +1,460 @@
+% !TEX root = paper.tex
+\subsection{Quantifizierung}
+\label{sec:eco_zahlen}
+\todo{Einleitung - Start}
+
+Wir wollen den Mehrwert von User-Provider-Connections mittels Wunderpass einen bezifferbaren Mehrwert verleihen und diesen fundiert argumentieren. Dazu müssen wir diesen Value messen und beziffern können. Die Ergebnisse dieses Kapitels werden insbesondere für das im Kapitel \ref{sec:wpt_reward_pool} beleuchteten "Reward-Pools" von großer Bedeutung sein. Bzw. sogar im gesamten übergeordneten Kapitel \ref{sec:eco_wpt}.
+\todo{Einleitung - Ende}
+
+\subsubsection{Grundlegende Definitionen}
+\label{sec:eco_zahlen_def}
+
+% \counterwithin{equation}{Def}
+
+Sei $t_0$ der initiale Zeitpunkt all unserer Messungen und Betrachtungen (vermutlich der Zeitpunkt des MVP-Launches).
+
+Darauf aufbauend betrachten wir das künftige Zeitintervall $T$, welches einzig an Relevanz für unser Vorhaben und alle in diesem Kapitel getätigten Ausführungen besitzt:
+
+\begin{equation*}
+  T = [t_0; \infty[
+\end{equation*}
+Der Zeitstrahl muss nicht zwingend unendlich sein. Er muss ebenfalls nicht zwingend infinitesimal fortlaufend sein und kann stattdessen je nach Kontext endlich und/oder diskret betrachtet werden. Also z. B. auch wahlweise als 
+
+\begin{equation*}
+  T = [t_0; t_{ende}]
+\end{equation*}
+
+\begin{equation*}
+  T = [t_0; t_1;...; t_{ende}]
+\end{equation*}
+definiert sein. In letzteren beiden Fällen wird jedoch $t_{ende}$ in aller Regel eine kontextbezogene (unverzichtbare) Bedeutung haben, die eine solche Definition des Zeitstrahls unverzichtbar macht. So könnte $t_{ende}$ z. B. für eine mathematisch quantifizierbare Erreichung unserer Vision stehen. \\
+
+Sei $\mathbf{t \in T}$ fortan stets ein beliebiger Zeitpunkt, zu welchem wir eine Aussage treffen möchten. \\
+
+
+Wir definieren die Anzahl aller zum Zeitpunkt $t$ potenziellen User $U^{(t)}$ überhaupt und ihre (maximale) Anzahl $n^{(t)}$ als \\
+
+\begin{Def}\label{defU}
+\begin{equation*}
+  U^{(t)} = \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{n} \right\}
+\end{equation*}
+\end{Def} 
+
+\vspace{0.3cm}
+
+
+Und ganz analog dazu ebenfalls die potenziellen Service-Provider $S^{(t)}$ und ihre (maximale) Anzahl $m^{(t)}$ als \\
+
+\begin{Def}\label{defS}
+\begin{equation*}
+  S^{(t)} = \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{m}\right\}
+\end{equation*}
+\end{Def}
+
+\vspace{0.3cm}
+
+Man beachte, dass die definierten Mengen $U^{(t)}$ und $S^{(t)}$ bzw. ihre Größe gewissermaßen den Fortschritt der Digitalisierung insgesamt beschreiben (potenzielle User brauchen einen Zugang zum digitalen Ökosystem und potenzielle Provider sind unabhängige Service-Dienstleister, die eigenmächtig darüber entscheiden, zu solchen zu werden) und in keiner Weise im Einfluss Wunderpasses stehen. Viel mehr beschreiben sie die "Umstände der Welt", mit denen WunderPass (wie alle anderen) "arbeiten" müssen.  
+
+\vspace{1cm}
+
+
+Nun definieren den \textbf{\textit{Connection-Koeffizienten}} zwischen den eben definierten potenziellen Usern $\mathbf{U^{(t)}}$ und den Service-Providern $\mathbf{S^{(t)}}$ zum Zeitpunkt $t$ als boolesche Funktion $\mathbf{\alpha^{(t)}}$, die über über die Tatsache \textit{"is connected"} bzw. \textit{"is not connected"} entscheidet: \\
+
+\begin{Def}\label{defKoeff}
+
+\begin{equation*}
+  \alpha^{(t)} : U^{(t)} \times S^{(t)} \rightarrow \{0; 1\} 
+\end{equation*}
+
+\[
+\alpha^{(t)}(u, s):=\left\{%
+\begin{array}{ll}
+    1, & \hbox{falls User $u \in U^{(t)}$ mit mit Provider $s \in S^{(t)}$ connectet ist} \\
+    0, & \hbox{andernfalls} \\
+\end{array}%
+\right.
+\]
+
+\vspace{1cm}
+
+Bzw. wenn man die diskreten Auslegungen der Pools $U^{(t)} = \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{n} \right\}$ und $S^{(t)} = \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{m} \right\}$ heranzieht, alternativ als
+
+\[
+\alpha^{(t)}_{ij}:=\left\{%
+\begin{array}{ll}
+    1, & \hbox{falls User $u^{(t)}_i \in U^{(t)}$ mit mit Provider $s^{(t)}_j \in S^{(t)}$ connectet ist} \\
+    0, & \hbox{andernfalls} \\
+\end{array}%
+\right.
+\]
+
+\end{Def}
+
+\vspace{1cm}
+
+Man beachte, dass wir bei den diskreten/Aufzählungs-basierten Definitionen oben, der Übersicht halber etwas "geschlampt" haben, indem wir - klar zeitbedingte - Indizes stillschweigend als $n$ und $m$ bezeichnet haben, gleichwohl diese korrekterweise $n^{(t)}$ und $m^{(t)}$ lauten müssten. Nur verwirrt eben ein Ausdruck wie $u^{(t)}_{n^{(t)}}$ mehr, als dieser in seiner pedantischen Korrektheit einen Mehrwert generiert. Wir werden genannte Ungenauigkeit zudem im weiteren Verlauf in gleicher Weise fortführen und gehen davon aus, der Leser wisse damit umzugehen. 
+
+\vspace{0.3cm}
+
+Mittels der eben definierten Koefffizienten $\alpha^{(t)}_{ij}$ definieren wir "connected Pools" von Usern und Service-Providern zum Zeitpunkt $t \in T$:
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defPools}
+
+Wir definieren den connecteten User-Pool $\widehat{U}^{(t)} \subseteq U^{(t)}$ und den connecteten Service-Provider-Pool $\widehat{S}^{(t)} \subseteq S^{(t)}$als
+
+\begin{align}
+\widehat{U}^{(t)}:&= \left\{u \in U^{(t)} \mid \exists s^{*} \in S^{(t)} \textrm{ mit } \alpha^{(t)}(u, s^{*}) = 1 \right\} \tag{i} \\ 
+\widehat{S}^{(t)}:&= \left\{s \in S^{(t)} \mid \exists u^{*} \in U^{(t)} \textrm{ mit } \alpha^{(t)}(u^{*}, s) = 1 \right\} \tag{ii}
+\end{align}
+
+\vspace{0.3cm}
+
+Für die diskrete/sortierte Variante ist dies wieder gleichbedeutend mit
+\begin{align}
+\widehat{U}^{(t)} &= \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{\widehat{n}} \right\} \tag{iii} \\ 
+\widehat{S}^{(t)} &= \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{\widehat{m}}\right\} \tag{iv}
+\end{align}
+
+\vspace{0.6cm}
+
+Der Wert $\widehat{n} \leq n$ beschreibt die Größe des connecteten User-Pools - also die Anzahl $\widehat{n}$ der tatsächlich mit WunderPass connecteten User unter den $n$ potenziellen Usern. Analog steht $\widehat{m} \leq m$ für die Anzahl der tatsächlich mit WunderPass connecteten Prividern.
+
+\end{Def}
+
+\vspace{1cm}
+
+Man beachte bei den diskreten/sortierten Schreibweisen der definierten Mengen $U^{(t)}$, $\widehat{U}^{(t)}$, $S^{(t)}$ und $\widehat{S}^{(t)}$, dass in aller Regel $u^{(t)}_i \neq \widehat{u}^{(t)}_i$ und $s^{(t)}_j \neq \widehat{s}^{(t)}_j$ gelten. Die sich teils trivial aus den letzten Definitionen ergebenden Zusammenhänge fallen wir in Form eines Theorems zusammen:
+
+\vspace{0.3cm}
+
+\begin{Theorem}
+
+\begin{align}
+&\widehat{n} \leq n \tag{i.u} \\ 
+&\widehat{m} \leq m \tag{i.s} \\
+&\widehat{n} = n \Leftrightarrow \widehat{U}^{(t)} = U^{(t)} \tag{ii.u} \\
+&\widehat{m} = m \Leftrightarrow \widehat{S}^{(t)} = S^{(t)} \tag{ii.s} \\
+&\widehat{n} * \widehat{m} > 0 \Leftrightarrow \widehat{U}^{(t)} \neq \emptyset \Leftrightarrow \widehat{S}^{(t)} \neq \emptyset \tag{iii} \\
+&\widehat{n} * \widehat{m} = 0 \Leftrightarrow \widehat{U}^{(t)} = \emptyset = \widehat{S}^{(t)} \tag{iv}
+\end{align}
+
+\end{Theorem}
+
+\vspace{0.3cm}
+
+\begin{proof}[Beweis] \textrm{ }
+
+\vspace{0.3cm}
+
+(i) und (ii) sind (in jeweils beiden Varianten trivial!
+
+\vspace{0.3cm}
+
+zu (iii): Zunächst einmal ist
+
+\begin{align*}
+\widehat{n} * \widehat{m} > 0 &\Leftrightarrow \widehat{n}, \widehat{m} > 0 \\
+&\Leftrightarrow |\widehat{U}^{(t)}|, |\widehat{S}^{(t)}| > 0 \\
+&\Leftrightarrow \widehat{U}^{(t)}, \widehat{S}^{(t)} \neq \emptyset
+\end{align*}
+
+\vspace{0.3cm}
+
+Es bleibt also nur noch $\widehat{U}^{(t)} \neq \emptyset \Leftrightarrow \widehat{S}^{(t)} \neq \emptyset$ zu beweisen. Wir beschränken uns hierbei lediglich auf "$\Rightarrow$". Die Rückrichtung erfolgt gänzlich analog. Sei also $\widehat{U}^{(t)} \neq \emptyset$.
+
+\begin{align*}
+\widehat{U}^{(t)} \neq \emptyset &\Rightarrow \exists u^{*} \in \widehat{U}^{(t)} \\
+&\xRightarrow{Def \ref{defPools}} \exists s^{*} \in S^{(t)} \textrm{ mit } \alpha^{(t)}(u^{*}, s^{*}) = 1 \\
+&\Rightarrow s^{*} \in \widehat{S}^{(t)} \\
+&\Rightarrow \widehat{S}^{(t)} \neq \emptyset
+\end{align*}
+
+\vspace{0.3cm}
+
+zu (iv): 
+"$\Leftarrow$" ist gänzlich trivial. Die Richtung "$\Rightarrow$" folgt dagegen aus
+
+\begin{align*}
+\widehat{n} * \widehat{m} = 0 &\Rightarrow \textrm{ mindestens eine der Mengen } \widehat{U}^{(t)}, \widehat{S}^{(t)} \textrm{ ist leer } \\
+&\xRightarrow{(iii)}  \widehat{U}^{(t)}, \widehat{S}^{(t)} = \emptyset
+\end{align*}
+  
+\end{proof}
+
+\subsubsection{Quantifizierung des Status quo}
+\label{sec:eco_zahlen_status_quo}
+
+Mit diesen geschaffenen Formalisierungs-Werkzeugen lässt sich nun unser ganzes Vorhaben inklusive der übergeordneten WunderPass-Vision formal besser greifen.
+
+\vspace{0.3cm}
+
+Aufgrund der bereits weiter oben erwähnten nicht möglichen Einflussnahme auf die Mengen $U^{(t)}$ und $S^{(t)}$ benötigen wir noch ein weiteres Hilfsmittel, dessen Existenz wir im Folgenden einfach voraussetzen möchten - und diese mit Möglichkeiten der Markt-Analyse rechtfertigen.
+
+\vspace{0.3cm}
+
+\begin{Assumption}[Digitalisierungs-Orakel]\label{assumptionOrakel}
+
+Sei $t \in T$. Anstatt die (nicht wirklich berechtigte) Kenntnis der Mengen $U^{(t)}$ und $S^{(t)}$ vorzugeben, wollen wir lieber die (realistischere) Existenz einer "Schätzfunktion" $dP^{(t)}$ (digital progress) annehmen. Wir definieren $dP^{(t)}$ als
+
+\vspace{0.3cm}
+
+\begin{align*}
+dP &: T \rightarrow \mathbb{N} \times \mathbb{N}  \\
+dP^{(t)} &= (n^{(t)}, m^{(t)})
+\end{align*}
+wobei $n^{(t)} = |U^{(t)}|$ und $m^{(t)} = |S^{(t)}|$ darstellen sollen, ohne dafür zwingend die exakten Mengen $U^{(t)}$ und $S^{(t)}$ kennen zu müssen.
+
+\end{Assumption}
+
+\vspace{0.3cm}
+
+Und auf der letzten Annahme aufbauend der Vollständigkeit halber die aus praktischer Sicht vollkommen alternativlose Annahme ergänzen, laut der Service-Provider stets eine große Anzahl an Users ansprechen/bedienen und damit zahlenmäßig den Usern stark unterlegen sind.
+\vspace{0.3cm}
+
+\begin{Assumption}[Verhälnissmäßigkeit der Teilnehmer]\label{assumptionRatio}
+Für alle $t \in T$ mit $(n^{(t)}, m^{(t)}) = dP^{(t)}$ gilt:
+
+\begin{equation*}
+m^{(t)} << n^{(t)}
+\end{equation*}
+
+\end{Assumption}
+
+\vspace{0.3cm}
+
+Diese letzten Werkzeuge lassen und Begriffe wie "Zielsetzung" bzw. "Milestone" einführen.
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defZiel}
+
+Seien $t \in T$ und zudem entsprechend $(n^{(t)}, m^{(t)}) = dP^{(t)}$ der angenommene Zustand der digitalen Welt zu einem beliebig gewählten Zeitpunkt. Wir definieren die - allein durch WunderPass zu bestimmende - Zielfunktion als
+
+\end{Def}
+
+
+
+
+
+
+
+
+\vspace{1cm}
+
+\todo{Ab hier WIP}
+
+Mit diesen geschaffenen Formalisierungs-Werkzeugen lässt sich nun auch die übergeordnete WunderPass-Vision formal erfassen - und zwar indem man den Zeitpunkt $t_{*} \in T$ ihrer Erreichung benennt:
+
+\begin{Def}\label{defVision}
+
+Wir betrachten die WunderPass-Vision zu einem Zeitpunkt $t_{*} \in T$ als erreicht, falls
+
+\vspace{0.3cm}
+
+\begin{equation}
+\label{eq:1}
+  \alpha^{(t_{*})}_{ij} = 1 \textrm{ für alle } i \in \{1,...,n\} \textrm{ und } j \in \{1,...,m\}
+\end{equation}\\
+erfüllt ist. Darüber hinaus ist es noch nicht ganz klar, welche Aussage für die Zeitpunkte $t > t_{*}$ hinsichtlich der Visions-Erreichung zu treffen sei. Grundsätzlich ist es ja durchaus denkbar, die obige Voraussetzung gelte für $t > t_{*}$ nicht mehr. Bleibt die Vision in diesem Fall trotzdem als 'erreicht' zu betrachten?
+
+\end{Def}
+
+\vspace{1cm}
+
+Zu guter Letzt formulieren wir abschließend folgendes Theorem, auf dessen trivialen Beweis ausnahmsweise zu verzichten sei:
+
+\vspace{0.3cm}
+
+\begin{Theorem}
+Die in der Definition \ref{defVision} formulierte Gleichung \eqref{eq:1} ist äquivalent zu folgenden Aussagen: 
+\begin{equation*}
+  \sum_{u \in U^{(t)}} \sum_{s \in S^{(t)}} \alpha^{(t)}(u, s) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} = n^{(t)} * m^{(t)}
+\end{equation*}
+\end{Theorem}
+
+\vspace{1cm}
+
+Die gelungene Formalisierung unserer Vision mittels Definition \ref{defVision} mag einen Fortschritt hinsichtlich unserer "Business-Mathematics" darstellen, bleibt jedoch losgelöst zunächst einmal ziemlich wertlos. Zum Einen ist das Erreichen der Vision im formellen Sinne der Definition \ref{defVision} weder praxistauglich noch akribisch erforderlich. Zudem bleibt zum Anderen der resultierende (intrinsische) Business-Value der Visions-Erreichung bisher weiterhin nicht ohne Weiteres erkennbar.
+Vielmehr sollten wir die Anforderung von Gleichung \eqref{eq:1} als eine Messlatte unseres Fortschritts heranziehen, und eher als (unerreichbare) 100\%-Zielerreichungs-Marke betrachten. Zudem müssen wir zeitnah - obgleich die vollständige oder nur fortschreitend partielle - Zielerreichung unserer Vision in klaren, quantifizierbaren Business-Value übersetzen.
+
+Dazu definieren wir als erstes ein intuitives Maß der Zielerreichung:
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defGamma}
+
+\begin{equation*}
+  \Gamma : T \rightarrow \mathbb{N} 
+\end{equation*}
+
+\begin{equation*}
+  \Gamma(t):= \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} 
+\end{equation*}
+
+\end{Def}
+
+\vspace{1cm}
+
+Was hier als $\Gamma$-Funktion so kompliziert definiert sein zu scheint, ist nichts anderes als die Formalisierung der für uns entscheidenden (jedoch simplen) KPI "Gesamtzahl bestehender User-to-Provider-Connections" zum Zeitpunkt $t \in T$. Damit liefert uns die definierte $\Gamma$-Funktion aber auch ein extrem greifbares und intuitiv nachvollziehbares Fortschrittsmaß unseres Vorhabens. Zudem fügt sich dieses perfekt in unsere mittels Definition \ref{defVision} quantifizierte Unternehmens-Vision und unterliegt einer fundamentalen (bezifferbaren) Obergrenze. Dies zeigt folgendes Lemma:
+
+\vspace{0.3cm}
+
+\begin{Lemma}
+
+Es gelten folgende Aussagen:
+
+
+\begin{align}
+\Gamma(t) &\leq n^{(t)} * m^{(t)} \textrm{ für alle } t \in T \tag{i} \label{eq:l1_erste} \\ 
+  \text{es gilt Gleichheit bei }  \eqref{eq:l1_erste} &\Leftrightarrow \text{ es gilt Gleichung } \eqref{eq:1} \text{ aus Def } \ref{defVision} \tag{ii} \label{eq:l1_zweite}
+\end{align}
+
+
+
+\end{Lemma}
+
+\vspace{0.3cm}
+
+\begin{proof}[Beweis] \textrm{ }
+
+\vspace{0.3cm}
+
+  zu \eqref{eq:l1_erste}: 
+  
+\begin{equation*}
+  \Gamma(t) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \leq \sum_{i=1}^n \sum_{j=1}^m 1 = n^{(t)} * m^{(t)}
+\end{equation*}
+
+\vspace{0.3cm} 
+
+zu \eqref{eq:l1_zweite}: 
+
+\begin{itemize}
+  \item "$\Leftarrow$" ist trivial und folgt direkt aus Definition \ref{defVision}.
+  \item "$\Rightarrow$": Es gelte also $\Gamma(t) = n^{(t)} * m^{(t)}$.
+  
+  Angenommen Gleichung \eqref{eq:1} wäre nicht erfüllt. Dann gäbe es ein $i \in \{1,...,n\}$ und ein $j \in \{1,...,m\}$, sodass $\alpha^{(t)}_{ij} = 0$. Aufgrund der Gültigkeit von \eqref{eq:l1_erste} hätte dies zur Folge, es gelte
+  
+\begin{equation*}
+  n^{(t)} * m^{(t)} = \Gamma(t) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \leq (\sum_{i=1}^n \sum_{j=1}^m 1) - 1 = n^{(t)} * m^{(t)} - 1
+\end{equation*}  
+was einem Widerspruch gleichkäme, weshalb die Annahme nicht möglich sein.
+  
+\end{itemize}
+  
+\end{proof}
+
+\vspace{0.3cm}
+
+Gleichung \eqref{eq:l1_zweite} ermöglicht uns die Definition \ref{defGamma} auf ein relatives Zielereichungs-Maß auszuweiten:
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defKleinGamma}
+\begin{equation*}
+  \gamma : T \rightarrow [0; 1] 
+\end{equation*}
+
+\begin{equation*}
+  \gamma(t):= \frac{\Gamma(t)}{n^{(t)} * m^{(t)}}
+\end{equation*}
+
+\end{Def}
+
+\paragraph{Vernetzung \& Netzwerk-Effekt}
+\label{sec:zahlen_status_quo_netzwerk_effekt}
+
+\textrm{ }
+\vspace{0.3cm}
+
+Die WunderPass-Vision steht in ihrer Formulierung ganz klar im Sinne einer gewissen "Vernetzung". Wir möchten, dass möglichst viele User sich mit möglichst vielen Service-Providern "connecten" (bzw. connectet sind/bleiben). Schränkt man seine Sichtweise alleinig auf diese Vision (ohne diese zunächst zu hinterfragen), liefern uns die zuletzt eingeführten Größen $\alpha^{(t)}_{ij}$, $\Gamma(t)$ und $\gamma(t)$ ziemlich gute Gradmesser, um zweifelsfreie Aussagen hinsichtlich der Vergleichbarkeit zweier Zeitpunkte $t_1, t_2 \in T$ treffen zu können. Es ist irgendwie klar, $\alpha^{(t)}_{ij} = 1$ sei im Sinne unserer Vision irgendwie besser als $\alpha^{(t)}_{ij} = 0$.
+
+Aus diesem Blickwinkel (in dem die Vision zunächst ein Selbstzweck bleibt) erscheint die folgende Definition mehr als intuitiv einleuchtend, um die obige Formulierung "irgendwie besser" zu formalisieren und vor allem zu quantifizieren. 
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defRelation}
+
+Wir bedienen uns der in Definition \ref{defGamma} beschriebenen Funktion $\Gamma(t)$, um damit eine \href{https://de.wikipedia.org/wiki/Ordnungsrelation}{Ordnungsrelation} 
+auf unserem Zeitstrahl $T$ für je zwei beliebige Zeitpunkte $t_1, t_2 \in T$ zu erhalten: 
+
+\vspace{0.3cm}
+
+\begin{equation*}
+  R_{\preceq} \subseteq T \times T \textrm{ mit}
+\end{equation*}
+
+\begin{equation*}
+  R_{\preceq}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) \leq \Gamma(t_2) \right\}
+\end{equation*}
+\vspace{1cm}
+Mittels $R_{\preceq}$ erhalten wir eine Ordnung unseres Zeitstahls $T$ und erklären zudem insbesondere, was "irgendwie besser" bedeutet. Ein beliebiger Zeitpunkt $t_1 \in T$ ist nämlich verbal genau dann "nicht schlechter" in Sinne unserer Vision als ein beliebiger anderer Zeitpunkt $t_2 \in T$, falls $(t_1, t_2) \in R_{\preceq}$ gilt.
+
+\vspace{0.3cm}
+
+\begin{equation*}
+  \textrm{Wir schreiben fortan statt } (t_1, t_2) \in R_{\preceq} \textrm{ lieber } t_1 \preceq t_2 
+\end{equation*}
+
+\end{Def}
+
+\vspace{1cm}
+
+Man beachte, dass es sich bei der definierten Ordnungsrelation gar um eine \href{https://de.wikipedia.org/wiki/Ordnungsrelation#Totalordnung}{Totalordnung} handelt!
+Der Form halber ergänzen wir an der Stelle noch um zwei weitere - schematisch induzierte - Relationen auf unserem Zeitstrahl $T$:
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defRelationen}
+
+Um zusätzlich zur in Def \ref{defRelation} definierten Ordnungsrelation "$\preceq$", auch dem Verständnis von "echt besser" und "gleich gut" Rechnung zu tragen, definieren wir die beiden Relationen "$\prec$" und "$\simeq$"
+
+\vspace{0.3cm}
+
+\begin{equation*}
+  R_{\prec}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) < \Gamma(t_2) \right\}
+\end{equation*}
+
+\begin{equation*}
+  R_{\simeq}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) = \Gamma(t_2) \right\}
+\end{equation*}
+
+\vspace{1cm}
+
+Bei $R_{\prec}$ handelt es sich im Übrigen wieder um eine Ordnungsrelation. Bei $R_{\simeq}$ dagegen nicht.
+
+\end{Def}
+
+\vspace{0.3cm}
+
+Auch für die letzten beiden Relationen wollen wir fortan die vereinfachte Schreibweise $t_1 \prec t_2$ und $t_1 \simeq t_2$ nutzen. 
+
+\vspace{1cm}
+
+Diese Netzwerk-Bewertungs-Modell besitzt jedoch im aktuellen Zustand drei wesentliche Schwachstellen:
+
+\begin{itemize}
+  \item Es beschreibt uns misst weiterhin ausschließlich den intrinsischen Wert der Vernetzung innerhalb unserer kleinen "Visions-Welt", dem es noch an Bezug zur "Außenwelt" und dem Business-Case fehlt. Diesen Umstand wollen wir weiterhin zunächst einmal ignorieren.
+  \item Es bewertet in der aktuellen Form ausschließlich "unsere Welt" bzw. unseren Fortschritt als Ganzes. Die definierte "besser"-Relation misst das "Besser" aus Sicht der Allgemeinheit. Der einzelne Teilnehmer bleibt individuell unberücksichtigt. Es ist schwer vorstellbar, ein Ökosystem zu designen, welches intrinsisch nach dem Wohl/Optimum Aller strebt (und damit eben einmal einen formalen Beweis für das Funktionieren des Kommunismus zu liefern.) 
+  \item Es lässt den sogenannten \href{https://de.wikipedia.org/wiki/Netzwerkeffekt}{Netzwerkeffekt} außer Acht! Denn selbst wenn man eben einmal das Problem des Bullet 1 aus der Welt schafft, und ein Preisschild an den Mehrwert einer Connection zwischen User und Provider bekommt. Die Literatur zum besagten Netzwerkeffekt liefert gute Argumente für die Annahme, eine von uns anvisierte User-Provider-Connection kann nur sehr selten alleinstehend in ihrem Mehrwert bewertet werden. Vielmehr bemisst sich dieser etwaige Mehrwert in dem Zusammenspiel und den Synergien mit anderen User-Provider-Connections. Es lassen sich viele Beispiele finden, um diesen Umstand zu begründen. So kann es z. B. sein, dass ein Finance-Aggregator-Service für einen User um so wertvoller wird, je mehr Finance-Provider der User selbst mit seiner WunderIdentity connectet. Hierbei wird es kaum einen Unterschied für ihn machen, ob die genannten Finance-Provider mit 100 anderen WunderPass-Usern connectet seien oder mit 10 Mio. Im Case einer Splitwise-Connection (oder auch einer etwaigen EventsWithFriends-App) dagegen entsteht der Mehrwert erst dann, wenn auch ganz viele Freunde des Users diese Splitwise-Connection mit WunderPass besitzen. Andernfalls beläuft sich der Mehrwert seiner eigenen Connection so ziemlich gen Null.
+\end{itemize}
+
+\vspace{1cm}
+
+Insbesondere der letzte Punkt wirft einige interessante Fragen auf, zu denen wir eine Antwort finden werden müssen. Oder zumindest Hypothesen und Annahmen treffen.
+Was bedeutet eigentlich
+
+\begin{equation*}
+  \alpha^{(t)}_{kj} * \alpha^{(t)}_{lj} = 1 \textrm{ für zwei User } u^{(t)}_k, u^{(t)}_l \in U^{(t)} \textrm{ die beide mit Privider } s^{(t)}_j \in S^{(t)} \textrm{ connectet sind?}
+\end{equation*}
+Sind diese dann damit gleichbedeutend in irgendeiner Weise ebenfalls "\textit{miteinander connectet}"? Und was würde eine solche Implikation für unser bisheriges Modell bedeuten? Wie (un)abhängig ist eine solche "indirekte Connection" von ihrer "Brücke" - dem Service-Provider? All diese Fragen lassen sich zudem analog auf "indirekte Connections" zwischen Providern übertragen - die dann etwaige User als "Brücke" nützten. Zu guter Letzt ließe sich diese neue Komplexität beliebig potenzieren, indem man mittels Rekursion indirekte Connections "zweitens, drittens,... Grades" definiert.
+
+Um der aufkommenden Komplexität Herr zu werden, wollen wir uns zunächst einmal dem zweiten der oben genannten Schwachstellen unseres bisherigen Modells zuwenden, und dieses idealerweise dahingehend erweitern, auch individuelle Bewertungen unserer Teilnehmer $u \in U^{(t)}$ und $s \in S^{(t)}$ zu erfassen.
+
+
+\subsubsection{Individuelle Wertschöpfung der Teilneher}
+\label{sec:eco_zahlen_teilnehmer}
+
+Hallo

@@ -1,0 +1,28 @@
+\contentsline {section}{\numberline {1}Abstract}{1}{section.1}%
+\contentsline {section}{\numberline {2}Einleitung}{1}{section.2}%
+\contentsline {section}{\numberline {3}Vision}{1}{section.3}%
+\contentsline {section}{\numberline {4}Unser Ansatz}{1}{section.4}%
+\contentsline {section}{\numberline {5}Avatare}{1}{section.5}%
+\contentsline {section}{\numberline {6}Dinge}{1}{section.6}%
+\contentsline {section}{\numberline {7}Economics}{1}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Einleitung}{1}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Goals}{2}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Quantifizierung}{2}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Grundlegende Definitionen}{2}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Quantifizierung des Status quo}{6}{subsubsection.7.3.2}%
+\contentsline {paragraph}{\nonumberline Vernetzung \& Netzwerk-Effekt}{9}{paragraph*.3}%
+\contentsline {subsubsection}{\numberline {7.3.3}Individuelle Wertschöpfung der Teilneher}{11}{subsubsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.4}Token-Economics (WPT)}{11}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Einleitung}{11}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}Kreislauf}{12}{subsubsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.3}Token-Design}{12}{subsubsection.7.4.3}%
+\contentsline {subsubsection}{\numberline {7.4.4}Incentivierung}{12}{subsubsection.7.4.4}%
+\contentsline {subsubsection}{\numberline {7.4.5}Milestones-Reward-Pool}{12}{subsubsection.7.4.5}%
+\contentsline {subsubsection}{\numberline {7.4.6}WPT in Zahlen}{12}{subsubsection.7.4.6}%
+\contentsline {subsubsection}{\numberline {7.4.7}Fazit}{12}{subsubsection.7.4.7}%
+\contentsline {subsection}{\numberline {7.5}Fazit}{12}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Noch mehr Dinge}{12}{section.8}%
+\contentsline {section}{\numberline {9}Project 'Guard'}{12}{section.9}%
+\contentsline {section}{\numberline {10}Community}{12}{section.10}%
+\contentsline {section}{\numberline {11}Zusammenfassung}{12}{section.11}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,66 +1,41 @@
 \documentclass[11pt]{scrartcl}
 
 
+%---------Konfiguration------
 
-\title{WunderPass-White-Paper}
-\author{G. Fricke, S.Tschurilin}
-\date{\today{}, Berlin}
 
+%-----Sprache und Zeichen----
+\usepackage[utf8]{inputenc}
 % \usepackage{ucs}
-% \usepackage[utf8x]{inputenc}
 % \usepackage[T1]{fontenc}
 
 % Zeilenumbrüche der deutschen Sprache
 % \usepackage[ngerman]{babel}
 
 
-% Farben
+%---------Farben-------------
 \usepackage[RGB]{xcolor}
 \definecolor{dunkelgruen}{RGB}{0 136 0}
+\newcommand\todo[1]{\textcolor{red}{#1}}
 
-% Referenzierung und Verlinkung
+
+%---------Links/Refs---------
 \usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 
 
-% Zähler:
-
-% Eigenen Zähler erzeugen
-\newcounter{mycount}
-
-%Zähler initialisieren
-\setcounter{mycount}{1}
-
-% Equationumgebung auf den Zähler umdefinieren
-% \arabic sorgt für die Nummerierung mit arabischen Zahlen. 
-% Alternativ wäre auch \roman für kleine römische Zahlen oder 
-% \Roman für große römische Zahlen denkbar. 
-% Auch Buchstaben sind mit \alph und \Alph möglich.
-% \renewcommand{\theequation}{\roman{mycount}}
-
-%\newcommand{\uproman}[1]{\uppercase\expandafter{\romannumeral#1}}
-%\newcommand{\lowroman}[1]{\romannumeral#1\relax}
-\renewcommand{\theequation}{\roman{equation}}
-% \renewcommand{\proofname}{Beweis}
+%---------Grafiken-----------
+%\usepackage{graphicx}
 
 
-% Mathe-Stuff
-\usepackage{amsmath,amssymb,amstext}
-\usepackage{amsthm}
-% \usepackage{cleveref}
+
+%---------Mathe--------------
+\usepackage{amsthm, amssymb, mathtools}
+% \usepackage{amsmath, amssymb, amstext ,lipsum}
 
 
-% \newtheorem{def_potenzial}{Definition (@Potenzial)}
-% \newtheorem{def_connections}{Definition (@Connection)}
 
-
-\usepackage[utf8]{inputenc}
-\usepackage{mathtools,amssymb,lipsum}
+%---------Umgebungen---------
 \usepackage[framemethod=tikz]{mdframed}
-
-% Shorthands
-\newcommand*\iffdef{\overset{\text{def}}{\iff}}
-\DeclarePairedDelimiter\abs{\lvert}{\rvert}
-\DeclarePairedDelimiter\norm{\lVert}{\rVert}
 
 \mdtheorem[
   linecolor=gray,
@@ -80,19 +55,43 @@
   frametitlebackgroundcolor=blue,
 ]{Lemma}{Lemma}
 
+\mdtheorem[
+  linecolor=red,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=red,
+]{Assumption}{Annahme}
 
 
-% zum Einfügen von Grafiken
-\usepackage{graphicx}
 
-\usepackage{xcolor}
-\newcommand\todo[1]{\textcolor{red}{#1}}
- 
- 
- 
-\begin{document}
 
-\maketitle
+%---------Backup-------------
+
+
+
+% Zähler:
+
+% Eigenen Zähler erzeugen
+%\newcounter{counter}
+%\newcounter{sub_counter}[counter]
+
+%Zähler initialisieren
+%\setcounter{counter}{0}
+%\setcounter{sub_counter}{0}
+
+% Equationumgebung auf den Zähler umdefinieren
+% \arabic sorgt für die Nummerierung mit arabischen Zahlen. 
+% Alternativ wäre auch \roman für kleine römische Zahlen oder 
+% \Roman für große römische Zahlen denkbar. 
+% Auch Buchstaben sind mit \alph und \Alph möglich.
+% \renewcommand{\theequation}{\roman{mycount}}
+
+%\newcommand{\uproman}[1]{\uppercase\expandafter{\romannumeral#1}}
+%\newcommand{\lowroman}[1]{\romannumeral#1\relax}
+%\renewcommand{\theequation}{\roman{equation}}
+%\renewcommand{\proofname}{Beweis}
+
+
+
 
 % \section
 % \subsection
@@ -102,450 +101,34 @@
 
 
 
-\todo{TODO: Abstract}
- 
-% Überschrift
-\section{Einleitung}
-\label{sec:einleitung}
-\todo{TODO}
-
-
-
-
-
-\section{Vision}
-\label{sec:vision}
-\todo{TODO}
-
-
-
-
-
-\section{Unser Ansatz}
-\label{sec:ansatz}
-\todo{TODO}
-
-
-
-
-
-\section{Avatare}
-\label{sec:avatar}
-\todo{TODO}
-
-
-
-
-
-\section{Dinge}
-\label{sec:dinge}
-\todo{TODO}
-
-
-
-
-
-\section{Economics}
-\label{sec:economics}
-
-
-\subsection{Einleitung}
-\label{sec:eco_einleitung}
-\todo{TODO}
-
-
-
-\subsection{Goals}
-\label{sec:eco_goals}
-\todo{TODO}
-
-
-
-\subsection{Quantifizierung}
-\label{sec:eco_zahlen}
-\todo{Einleitung - Start}
-
-Wir wollen den Mehrwert von User-Provider-Connections mittels Wunderpass einen bezifferbaren Mehrwert verleihen und diesen fundiert argumentieren. Dazu müssen wir diesen Value messen und beziffern können. Die Ergebnisse dieses Kapitels werden insbesondere für das im Kapitel \ref{sec:wpt_reward_pool} beleuchteten "Reward-Pools" von großer Bedeutung sein. Bzw. sogar im gesamten übergeordneten Kapitel \ref{sec:eco_wpt}.
-\todo{Einleitung - Ende}
-
-\subsubsection{Grundlegende Definitionen}
-\label{sec:eco_zahlen_def}
-
-\counterwithin{equation}{Def}
-
-Sei $t_0$ der initiale Zeitpunkt all unserer Messungen und Betrachtungen (vermutlich der Zeitpunkt des MVP-Launches).
-
-Darauf aufbauend betrachten wir das künftige Zeitintervall $T$, welches einzig an Relevanz für unser Vorhaben und alle in diesem Kapitel getätigten Ausführungen besitzt:
-
-\begin{equation*}
-  T = [t_0; \infty[
-\end{equation*}
-Der Zeitstrahl muss nicht zwingend unendlich sein. Er muss ebenfalls nicht zwingend infinitesimal fortlaufend sein und kann stattdessen je nach Kontext endlich und/oder diskret betrachtet werden. Also z. B. auch wahlweise als 
-
-\begin{equation*}
-  T = [t_0; t_{ende}]
-\end{equation*}
-
-\begin{equation*}
-  T = [t_0; t_1;...; t_{ende}]
-\end{equation*}
-definiert sein. In letzteren beiden Fällen wird jedoch $t_{ende}$ in aller Regel eine kontextbezogene (unverzichtbare) Bedeutung haben, die eine solche Definition des Zeitstrahls unverzichtbar macht. So könnte $t_{ende}$ z. B. für eine mathematisch quantifizierbare Erreichung unserer Vision stehen. \\
-
-Sei $\mathbf{t \in T}$ fortan stets ein beliebiger Zeitpunkt, zu welchem wir eine Aussage treffen möchten. \\
-
-
-Wir definieren die Anzahl aller zum Zeitpunkt $t$ potenziellen User $U^{(t)}$ überhaupt und ihre (maximale) Anzahl $n^{(t)}$ als \\
-
-\begin{Def}\label{defU}
-\begin{equation*}
-  U^{(t)} = \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{n} \right\}
-\end{equation*}
-\end{Def} 
-
-\vspace{0.3cm}
-
-
-Und ganz analog dazu ebenfalls die potenziellen Service-Provider $S^{(t)}$ und ihre (maximale) Anzahl $m^{(t)}$ als \\
-
-\begin{Def}\label{defS}
-\begin{equation*}
-  S^{(t)} = \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{m}\right\}
-\end{equation*}
-\end{Def}
-
-\vspace{1cm}
-
-
-Nun definieren den \textbf{\textit{Connection-Koeffizienten}} zwischen den eben definierten potenziellen Usern $\mathbf{U^{(t)}}$ und den Service-Providern $\mathbf{S^{(t)}}$ zum Zeitpunkt $t$ als boolesche Funktion $\mathbf{\alpha^{(t)}}$, die über über die Tatsache \textit{"is connected"} bzw. \textit{"is not connected"} entscheidet: \\
-
-\begin{Def}\label{defKoeff}
-\begin{equation*}
-  \alpha^{(t)} : U^{(t)} \times S^{(t)} \rightarrow \{0; 1\} 
-\end{equation*}
-
-\[
-\alpha^{(t)}(u, s):=\left\{%
-\begin{array}{ll}
-    1, & \hbox{falls User $u \in U^{(t)}$ mit mit Provider $s \in S^{(t)}$ connectet ist} \\
-    0, & \hbox{andernfalls} \\
-\end{array}%
-\right.
-\]
-
-\vspace{1cm}
-
-Bzw. wenn man die diskreten Auslegungen der Pools $U^{(t)} = \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{n} \right\}$ und $S^{(t)} = \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{m} \right\}$ heranzieht, alternativ als
-
-\[
-\alpha^{(t)}_{ij}:=\left\{%
-\begin{array}{ll}
-    1, & \hbox{falls User $u^{(t)}_i \in U^{(t)}$ mit mit Provider $s^{(t)}_j \in S^{(t)}$ connectet ist} \\
-    0, & \hbox{andernfalls} \\
-\end{array}%
-\right.
-\]
-
-\end{Def}
-
-\vspace{1cm}
-
-Man beachte, dass wir bei den diskreten/Aufzählungs-basierten Definitionen oben, der Übersicht halber etwas "geschlampt" haben, indem wir - klar zeitbedingte - Indizes stillschweigend als $n$ und $m$ bezeichnet haben, gleichwohl diese korrekterweise $n^{(t)}$ und $m^{(t)}$ lauten müssten. Nur verwirrt eben ein Ausdruck wie $u^{(t)}_{n^{(t)}}$ mehr, als dieser in seiner pedantischen Korrektheit einen Mehrwert generiert. Wir werden genannte Ungenauigkeit zudem im weiteren Verlauf in gleicher Weise fortführen und gehen davon aus, der Leser wisse damit umzugehen. 
-
-\vspace{0.3cm}
-
-Mittels der eben definierten Koefffizienten $\alpha^{(t)}_{ij}$ definieren wir "connected Pools" von Usern und Service-Providern zum Zeitpunkt $t \in T$:
-
-\vspace{1cm}
-
-Mit diesen geschaffenen Formalisierungs-Werkzeugen lässt sich nun auch die übergeordnete WunderPass-Vision formal erfassen - und zwar indem man den Zeitpunkt $t_{*} \in T$ ihrer Erreichung benennt:
-
-\begin{Def}\label{defVision}
-
-Wir betrachten die WunderPass-Vision zu einem Zeitpunkt $t_{*} \in T$ als erreicht, falls
-
-\vspace{0.3cm}
-
-\begin{equation}
-\label{eq:1}
-  \alpha^{(t)}_{ij} = 1 \textrm{ für alle } i \in \{1,...,n\} \textrm{ und } j \in \{1,...,m\}
-\end{equation}\\
-erfüllt ist. Darüber hinaus ist es noch nicht ganz klar, welche Aussage für die Zeitpunkte $t > t_{*}$ hinsichtlich der Visions-Erreichung zu treffen sei. Grundsätzlich ist es ja durchaus denkbar, die obige Voraussetzung gelte für $t > t_{*}$ nicht mehr. Bleibt die Vision in diesem Fall trotzdem als 'erreicht' zu betrachten?
-
-\refstepcounter{mycount}
-
-\end{Def}
-
-\vspace{1cm}
-
-Zu guter Letzt formulieren wir abschließend folgendes Theorem, auf dessen trivialen Beweis ausnahmsweise zu verzichten sei:
-
-\vspace{0.3cm}
-
-\begin{Theorem}
-Die in der Definition \ref{defVision} formulierte Gleichung \eqref{eq:1} ist äquivalent zu folgenden Aussagen: 
-\begin{equation*}
-  \sum_{u \in U^{(t)}} \sum_{s \in S^{(t)}} \alpha^{(t)}(u, s) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} = n^{(t)} * m^{(t)}
-\end{equation*}
-\end{Theorem}
-
-\subsubsection{Quantifizierung des Status quo}
-\label{sec:eco_zahlen_status_quo}
-Die gelungene Formalisierung unserer Vision mittels Definition \ref{defVision} mag einen Fortschritt hinsichtlich unserer "Business-Mathematics" darstellen, bleibt jedoch losgelöst zunächst einmal ziemlich wertlos. Zum Einen ist das Erreichen der Vision im formellen Sinne der Definition \ref{defVision} weder praxistauglich noch akribisch erforderlich. Zudem bleibt zum Anderen der resultierende (intrinsische) Business-Value der Visions-Erreichung bisher weiterhin nicht ohne Weiteres erkennbar.
-Vielmehr sollten wir die Anforderung von Gleichung \eqref{eq:1} als eine Messlatte unseres Fortschritts heranziehen, und eher als (unerreichbare) 100\%-Zielerreichungs-Marke betrachten. Zudem müssen wir zeitnah - obgleich die vollständige oder nur fortschreitend partielle - Zielerreichung unserer Vision in klaren, quantifizierbaren Business-Value übersetzen.
-
-Dazu definieren wir als erstes ein intuitives Maß der Zielerreichung:
-
-\vspace{0.3cm}
-
-\begin{Def}\label{defGamma}
-\begin{equation*}
-  \Gamma : T \rightarrow \mathbb{N} 
-\end{equation*}
-
-\begin{equation*}
-  \Gamma(t):= \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} 
-\end{equation*}
-
-\end{Def}
-
-\vspace{1cm}
-
-Was hier als $\Gamma$-Funktion so kompliziert definiert sein zu scheint, ist nichts anderes als die Formalisierung der für uns entscheidenden (jedoch simplen) KPI "Gesamtzahl bestehender User-to-Provider-Connections" zum Zeitpunkt $t \in T$. Damit liefert uns die definierte $\Gamma$-Funktion aber auch ein extrem greifbares und intuitiv nachvollziehbares Fortschrittsmaß unseres Vorhabens. Zudem fügt sich dieses perfekt in unsere mittels Definition \ref{defVision} quantifizierte Unternehmens-Vision und unterliegt einer fundamentalen (bezifferbaren) Obergrenze. Dies zeigt folgendes Lemma:
-
-\vspace{0.3cm}
-
-\begin{Lemma}
-
-Es gelten folgende Aussagen:
-
-\begin{equation}
-\label{eq:2}
-  \Gamma(t) \leq n^{(t)} * m^{(t)} \textrm{ für alle } t \in T 
-\end{equation}
-
-\begin{equation}
-\label{eq:3}
-  \textrm{es gilt Gleichheit bei Gleichung }  \eqref{eq:2} \Leftrightarrow \textrm{ es gilt Gleichung } \eqref{eq:1}
-\end{equation}
-
-\end{Lemma}
-
-\vspace{0.3cm}
-
-\begin{proof}[Beweis] \textrm{ }
-
-\vspace{0.3cm}
-
-  zu \eqref{eq:2}: 
-  
-\begin{equation*}
-  \Gamma(t) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \leq \sum_{i=1}^n \sum_{j=1}^m 1 = n^{(t)} * m^{(t)}
-\end{equation*}
-
-\vspace{0.3cm} 
-
-zu \eqref{eq:3}: 
-
-\begin{itemize}
-  \item "$\Leftarrow$" ist trivial und folgt direkt aus Definition \ref{defVision}.
-  \item "$\Rightarrow$": Es gelte also $\Gamma(t) = n^{(t)} * m^{(t)}$.
-  
-  Angenommen Gleichung \eqref{eq:1} wäre nicht erfüllt. Dann gäbe es ein $i \in \{1,...,n\}$ und ein $j \in \{1,...,m\}$, sodass $\alpha^{(t)}_{ij} = 0$. Aufgrund der Gültigkeit von \eqref{eq:2} hätte dies zur Folge, es gelte
-  
-\begin{equation*}
-  n^{(t)} * m^{(t)} = \Gamma(t) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \leq (\sum_{i=1}^n \sum_{j=1}^m 1) - 1 = n^{(t)} * m^{(t)} - 1
-\end{equation*}  
-was einem Widerspruch gleichkäme, weshalb die Annahme nicht möglich sein.
-  
-\end{itemize}
-  
-\end{proof}
-
-\vspace{0.3cm}
-
-Gleichung \eqref{eq:3} ermöglicht uns die Definition \ref{defGamma} auf ein relatives Zielereichungs-Maß auszuweiten:
-
-\vspace{0.3cm}
-
-\begin{Def}\label{defKleinGamma}
-\begin{equation*}
-  \gamma : T \rightarrow [0; 1] 
-\end{equation*}
-
-\begin{equation*}
-  \gamma(t):= \frac{\Gamma(t)}{n^{(t)} * m^{(t)}}
-\end{equation*}
-
-\end{Def}
-
-\paragraph{Vernetzung \& Netzwerk-Effekt}
-\label{sec:zahlen_status_quo_netzwerk_effekt}
-
-\textrm{ }
-\vspace{0.3cm}
-
-Die WunderPass-Vision steht in ihrer Formulierung ganz klar im Sinne einer gewissen "Vernetzung". Wir möchten, dass möglichst viele User sich mit möglichst vielen Service-Providern "connecten" (bzw. connectet sind/bleiben). Schränkt man seine Sichtweise alleinig auf diese Vision (ohne diese zunächst zu hinterfragen), liefern uns die zuletzt eingeführten Größen $\alpha^{(t)}_{ij}$, $\Gamma(t)$ und $\gamma(t)$ ziemlich gute Gradmesser, um zweifelsfreie Aussagen hinsichtlich der Vergleichbarkeit zweier Zeitpunkte $t_1, t_2 \in T$ treffen zu können. Es ist irgendwie klar, $\alpha^{(t)}_{ij} = 1$ sei im Sinne unserer Vision irgendwie besser als $\alpha^{(t)}_{ij} = 0$.
-
-Aus diesem Blickwinkel (in dem die Vision zunächst ein Selbstzweck bleibt) erscheint die folgende Definition mehr als intuitiv einleuchtend, um die obige Formulierung "irgendwie besser" zu formalisieren und vor allem zu quantifizieren. 
-
-\vspace{0.3cm}
-
-\begin{Def}\label{defRelation}
-
-Wir bedienen uns der in Definition \ref{defGamma} beschriebenen Funktion $\Gamma(t)$, um damit eine \href{https://de.wikipedia.org/wiki/Ordnungsrelation}{Ordnungsrelation} 
-auf unserem Zeitstrahl $T$ für je zwei beliebige Zeitpunkte $t_1, t_2 \in T$ zu erhalten: 
-
-\vspace{0.3cm}
-
-\begin{equation*}
-  R_{\preceq} \subseteq T \times T \textrm{ mit}
-\end{equation*}
-
-\begin{equation*}
-  R_{\preceq}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) \leq \Gamma(t_2) \right\}
-\end{equation*}
-\vspace{1cm}
-Mittels $R_{\preceq}$ erhalten wir eine Ordnung unseres Zeitstahls $T$ und erklären zudem insbesondere, was "irgendwie besser" bedeutet. Ein beliebiger Zeitpunkt $t_1 \in T$ ist nämlich verbal genau dann "nicht schlechter" in Sinne unserer Vision als ein beliebiger anderer Zeitpunkt $t_2 \in T$, falls $(t_1, t_2) \in R_{\preceq}$ gilt.
-
-\vspace{0.3cm}
-
-\begin{equation*}
-  \textrm{Wir schreiben fortan statt } (t_1, t_2) \in R_{\preceq} \textrm{ lieber } t_1 \preceq t_2 
-\end{equation*}
-
-\end{Def}
-
-\vspace{1cm}
-
-Man beachte, dass es sich bei der definierten Ordnungsrelation gar um eine \href{https://de.wikipedia.org/wiki/Ordnungsrelation#Totalordnung}{Totalordnung} handelt!
-Der Form halber ergänzen wir an der Stelle noch um zwei weitere - schematisch induzierte - Relationen auf unserem Zeitstrahl $T$:
-
-\vspace{0.3cm}
-
-\begin{Def}\label{defRelationen}
-
-Um zusätzlich zur in Def \ref{defRelation} definierten Ordnungsrelation "$\preceq$", auch dem Verständnis von "echt besser" und "gleich gut" Rechnung zu tragen, definieren wir die beiden Relationen "$\prec$" und "$\simeq$"
-
-\vspace{0.3cm}
-
-\begin{equation*}
-  R_{\prec}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) < \Gamma(t_2) \right\}
-\end{equation*}
-
-\begin{equation*}
-  R_{\simeq}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) = \Gamma(t_2) \right\}
-\end{equation*}
-
-\vspace{1cm}
-
-Bei $R_{\prec}$ handelt es sich im Übrigen wieder um eine Ordnungsrelation. Bei $R_{\simeq}$ dagegen nicht.
-
-\end{Def}
-
-\vspace{0.3cm}
-
-Auch für die letzten beiden Relationen wollen wir fortan die vereinfachte Schreibweise $t_1 \prec t_2$ und $t_1 \simeq t_2$ nutzen. 
-
-\vspace{1cm}
-
-Diese Netzwerk-Bewertungs-Modell besitzt jedoch im aktuellen Zustand drei wesentliche Schwachstellen:
-
-\begin{itemize}
-  \item Es beschreibt uns misst weiterhin ausschließlich den intrinsischen Wert der Vernetzung innerhalb unserer kleinen "Visions-Welt", dem es noch an Bezug zur "Außenwelt" und dem Business-Case fehlt. Diesen Umstand wollen wir weiterhin zunächst einmal ignorieren.
-  \item Es bewertet in der aktuellen Form ausschließlich "unsere Welt" bzw. unseren Fortschritt als Ganzes. Die definierte "besser"-Relation misst das "Besser" aus Sicht der Allgemeinheit. Der einzelne Teilnehmer bleibt individuell unberücksichtigt. Es ist schwer vorstellbar, ein Ökosystem zu designen, welches intrinsisch nach dem Wohl/Optimum Aller strebt (und damit eben einmal einen formalen Beweis für das Funktionieren des Kommunismus zu liefern.) 
-  \item Es lässt den sogenannten \href{https://de.wikipedia.org/wiki/Netzwerkeffekt}{Netzwerkeffekt} außer Acht! Denn selbst wenn man eben einmal das Problem des Bullet 1 aus der Welt schafft, und ein Preisschild an den Mehrwert einer Connection zwischen User und Provider bekommt. Die Literatur zum besagten Netzwerkeffekt liefert gute Argumente für die Annahme, eine von uns anvisierte User-Provider-Connection kann nur sehr selten alleinstehend in ihrem Mehrwert bewertet werden. Vielmehr bemisst sich dieser etwaige Mehrwert in dem Zusammenspiel und den Synergien mit anderen User-Provider-Connections. Es lassen sich viele Beispiele finden, um diesen Umstand zu begründen. So kann es z. B. sein, dass ein Finance-Aggregator-Service für einen User um so wertvoller wird, je mehr Finance-Provider der User selbst mit seiner WunderIdentity connectet. Hierbei wird es kaum einen Unterschied für ihn machen, ob die genannten Finance-Provider mit 100 anderen WunderPass-Usern connectet seien oder mit 10 Mio. Im Case einer Splitwise-Connection (oder auch einer etwaigen EventsWithFriends-App) dagegen entsteht der Mehrwert erst dann, wenn auch ganz viele Freunde des Users diese Splitwise-Connection mit WunderPass besitzen. Andernfalls beläuft sich der Mehrwert seiner eigenen Connection so ziemlich gen Null.
-\end{itemize}
-
-\vspace{1cm}
-
-Insbesondere der letzte Punkt wirft einige interessante Fragen auf, zu denen wir eine Antwort finden werden müssen. Oder zumindest Hypothesen und Annahmen treffen.
-Was bedeutet eigentlich
-
-\begin{equation*}
-  \alpha^{(t)}_{kj} * \alpha^{(t)}_{lj} = 1 \textrm{ für zwei User } u^{(t)}_k, u^{(t)}_l \in U^{(t)} \textrm{ die beide mit Privider } s^{(t)}_j \in S^{(t)} \textrm{ connectet sind?}
-\end{equation*}
-Sind diese dann damit gleichbedeutend in irgendeiner Weise ebenfalls "\textit{miteinander connectet}"? Und was würde eine solche Implikation für unser bisheriges Modell bedeuten? Wie (un)abhängig ist eine solche "indirekte Connection" von ihrer "Brücke" - dem Service-Provider? All diese Fragen lassen sich zudem analog auf "indirekte Connections" zwischen Providern übertragen - die dann etwaige User als "Brücke" nützten. Zu guter Letzt ließe sich diese neue Komplexität beliebig potenzieren, indem man mittels Rekursion indirekte Connections "zweitens, drittens,... Grades" definiert.
-
-Um der aufkommenden Komplexität Herr zu werden, wollen wir uns zunächst einmal dem zweiten der oben genannten Schwachstellen unseres bisherigen Modells zuwenden, und dieses idealerweise dahingehend erweitern, auch individuelle Bewertungen unserer Teilnehmer $u \in U^{(t)}$ und $s \in S^{(t)}$ zu erfassen.
-
-
-\subsubsection{Individuelle Wertschöpfung der Teilneher}
-\label{sec:eco_zahlen_teilnehmer}
-
-Hallo
-
-
-
-
-\subsection{Token-Economics (WPT)}
-\label{sec:eco_wpt}
-\todo{TODO}
-
-\subsubsection{Einleitung}
-\label{sec:wpt_einleitung}
-\todo{TODO}
-
-\subsubsection{Kreislauf}
-\label{sec:wpt_kreislauf}
-\todo{TODO}
-
-\subsubsection{Token-Design}
-\label{sec:wpt_design}
-\todo{TODO}
-
-\subsubsection{Incentivierung}
-\label{sec:wpt_incent}
-\todo{TODO}
-
-\subsubsection{Milestones-Reward-Pool}
-\label{sec:wpt_reward_pool}
-\todo{TODO}
-
-\subsubsection{WPT in Zahlen}
-\label{sec:wpt_zahlen}
-\todo{TODO}
-
-\subsubsection{Fazit}
-\label{sec:wpt_fazit}
-\todo{TODO}
-
-
-\subsection{Fazit}
-\label{sec:eco_fazit}
-\todo{TODO}
-
-
-
-
-
-\section{Noch mehr Dinge}
-\label{sec:dinge2}
-\todo{TODO}
-
-
-
-
-
-\section{Project 'Guard'}
-\label{sec:guard}
-\todo{TODO}
-
-
-
-
-
-\section{Community}
-\label{sec:community}
-\todo{TODO}
-
-
-
-\section{Zusammenfassung}
-\label{sec:fazit}
-\todo{TODO}
-
 
 
  
+%---------Dokument-----------
+
+%---------Titel--------------
+\title{WunderPass-White-Paper}
+\author{G. Fricke, S.Tschurilin}
+\date{\today{}, Berlin}
+ 
+%---------Inhalt-------------
+\begin{document}
+
+\maketitle
+\tableofcontents{}
+
+\input{[Abstract]}    % binde die Datei 'Abstract.tex' ein
+\input{[Einleitung]}    % binde die Datei 'Einleitung.tex' ein
+\input{[Vision]}    % binde die Datei 'Vision.tex' ein
+\input{[Unser Ansatz]}    % binde die Datei 'Unser Ansatz.tex' ein
+\input{[Avatare]}    % binde die Datei 'Avatare.tex' ein
+\input{[Dinge]}    % binde die Datei 'Dinge.tex' ein
+\input{[Economics]}    % binde die Datei 'Economics.tex' ein
+\input{[Noch mehr Dinge]}    % binde die Datei 'Noch mehr Dinge.tex' ein
+\input{[Project Guard]}    % binde die Datei 'Project Guard.tex' ein
+\input{[Community]}    % binde die Datei 'Community.tex' ein
+\input{[Zusammenfassung]}    % binde die Datei 'Zusammenfassung.tex' ein
+
+
  
 \end{document}
