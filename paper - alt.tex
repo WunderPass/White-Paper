@@ -1,0 +1,134 @@
+\documentclass[11pt]{scrartcl}
+
+
+%---------Konfiguration------
+
+
+%-----Sprache und Zeichen----
+\usepackage[utf8]{inputenc}
+% \usepackage{ucs}
+% \usepackage[T1]{fontenc}
+
+% Zeilenumbrüche der deutschen Sprache
+% \usepackage[ngerman]{babel}
+
+
+%---------Farben-------------
+\usepackage[RGB]{xcolor}
+\definecolor{dunkelgruen}{RGB}{0 136 0}
+\newcommand\todo[1]{\textcolor{red}{#1}}
+
+
+%---------Links/Refs---------
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
+
+%---------Grafiken-----------
+%\usepackage{graphicx}
+
+
+
+%---------Mathe--------------
+\usepackage{amsthm, amssymb, mathtools}
+% \usepackage{amsmath, amssymb, amstext ,lipsum}
+
+
+
+%---------Umgebungen---------
+\usepackage[framemethod=tikz]{mdframed}
+
+\mdtheorem[
+  linecolor=gray,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=gray,
+]{Def}{Definition}
+
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{Theorem}{Theorem}
+
+\mdtheorem[
+  linecolor=blue,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=blue,
+]{Lemma}{Lemma}
+
+\mdtheorem[
+  linecolor=red,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=red,
+]{Assumption}{Annahme}
+
+
+
+
+%---------Backup-------------
+
+
+
+% Zähler:
+
+% Eigenen Zähler erzeugen
+%\newcounter{counter}
+%\newcounter{sub_counter}[counter]
+
+%Zähler initialisieren
+%\setcounter{counter}{0}
+%\setcounter{sub_counter}{0}
+
+% Equationumgebung auf den Zähler umdefinieren
+% \arabic sorgt für die Nummerierung mit arabischen Zahlen. 
+% Alternativ wäre auch \roman für kleine römische Zahlen oder 
+% \Roman für große römische Zahlen denkbar. 
+% Auch Buchstaben sind mit \alph und \Alph möglich.
+% \renewcommand{\theequation}{\roman{mycount}}
+
+%\newcommand{\uproman}[1]{\uppercase\expandafter{\romannumeral#1}}
+%\newcommand{\lowroman}[1]{\romannumeral#1\relax}
+%\renewcommand{\theequation}{\roman{equation}}
+%\renewcommand{\proofname}{Beweis}
+
+
+
+
+% \section
+% \subsection
+% \subsubsection 
+% \paragraph{Einleitende Worte}
+% \subparagraph
+
+
+
+
+
+ 
+%---------Dokument-----------
+
+%---------Titel--------------
+\title{WunderPass-White-Paper}
+\author{G. Fricke, S.Tschurilin}
+\date{\today{}, Berlin}
+ 
+%---------Inhalt-------------
+\begin{document}
+
+\maketitle
+\tableofcontents{}
+
+\input{[Abstract]}    % binde die Datei 'Abstract.tex' ein
+\input{[Einleitung]}    % binde die Datei 'Einleitung.tex' ein
+\input{[Vision]}    % binde die Datei 'Vision.tex' ein
+\input{[Unser Ansatz]}    % binde die Datei 'Unser Ansatz.tex' ein
+\input{[Avatare]}    % binde die Datei 'Avatare.tex' ein
+\input{[Dinge]}    % binde die Datei 'Dinge.tex' ein
+\input{[Economics]}    % binde die Datei 'Economics.tex' ein
+\input{[Noch mehr Dinge]}    % binde die Datei 'Noch mehr Dinge.tex' ein
+\input{[Project Guard]}    % binde die Datei 'Project Guard.tex' ein
+\input{[Community]}    % binde die Datei 'Community.tex' ein
+\input{[Zusammenfassung]}    % binde die Datei 'Zusammenfassung.tex' ein
+
+
+ 
+\end{document}

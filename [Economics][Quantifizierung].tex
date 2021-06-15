@@ -55,7 +55,7 @@ Und ganz analog dazu ebenfalls die potenziellen Service-Provider $S^{(t)}$ und i
 
 Man beachte, dass die definierten Mengen $U^{(t)}$ und $S^{(t)}$ bzw. ihre Größe gewissermaßen den Fortschritt der Digitalisierung insgesamt beschreiben (potenzielle User brauchen einen Zugang zum digitalen Ökosystem und potenzielle Provider sind unabhängige Service-Dienstleister, die eigenmächtig darüber entscheiden, zu solchen zu werden) und in keiner Weise im Einfluss Wunderpasses stehen. Viel mehr beschreiben sie die "Umstände der Welt", mit denen WunderPass (wie alle anderen) "arbeiten" müssen.  
 
-\vspace{1cm}
+\vspace{0.6cm}
 
 
 Nun definieren den \textbf{\textit{Connection-Koeffizienten}} zwischen den eben definierten potenziellen Usern $\mathbf{U^{(t)}}$ und den Service-Providern $\mathbf{S^{(t)}}$ zum Zeitpunkt $t$ als boolesche Funktion $\mathbf{\alpha^{(t)}}$, die über über die Tatsache \textit{"is connected"} bzw. \textit{"is not connected"} entscheidet: \\
@@ -90,13 +90,129 @@ Bzw. wenn man die diskreten Auslegungen der Pools $U^{(t)} = \left\{ u^{(t)}_1; 
 
 \end{Def}
 
-\vspace{1cm}
+\vspace{0.6cm}
 
 Man beachte, dass wir bei den diskreten/Aufzählungs-basierten Definitionen oben, der Übersicht halber etwas "geschlampt" haben, indem wir - klar zeitbedingte - Indizes stillschweigend als $n$ und $m$ bezeichnet haben, gleichwohl diese korrekterweise $n^{(t)}$ und $m^{(t)}$ lauten müssten. Nur verwirrt eben ein Ausdruck wie $u^{(t)}_{n^{(t)}}$ mehr, als dieser in seiner pedantischen Korrektheit einen Mehrwert generiert. Wir werden genannte Ungenauigkeit zudem im weiteren Verlauf in gleicher Weise fortführen und gehen davon aus, der Leser wisse damit umzugehen. 
 
 \vspace{0.3cm}
 
-Mittels der eben definierten Koefffizienten $\alpha^{(t)}_{ij}$ definieren wir "connected Pools" von Usern und Service-Providern zum Zeitpunkt $t \in T$:
+Mittels der eben definierten Koefffizienten $\alpha^{(t)}_{ij}$ aus Def \ref{defKoeff} definieren wir "connected Pools" von Usern und Service-Providern zum Zeitpunkt $t \in T$:
+
+
+
+\subsubsection{Zustandsbeschreibung der digitalen Welt}
+\label{sec:eco_zahlen_zustand_digitalisierung}
+
+Mit diesen geschaffenen Formalisierungs-Werkzeugen lassen sich nun einige Dinge formal deutlich besser greifen. Und zwar zum einen im Folgenden die übergeordneten "Umstände der digitalen Welt" (auf die WunderPass bestenfalls sehr geringfügig Einfluss üben kann) aber zum anderen ebenfalls unser gesamtes Vorhaben inklusive der übergeordneten WunderPass-Vision, die in den darauf folgenden Kapitels beleuchtet wird. 
+
+\vspace{0.3cm}
+
+Aufgrund der bereits weiter oben erwähnten nicht möglichen Einflussnahme auf die Mengen $U^{(t)}$ und $S^{(t)}$ benötigen wir noch ein weiteres Hilfsmittel, dessen Existenz wir im Folgenden einfach voraussetzen möchten - und diese mit Möglichkeiten der Markt-Analyse rechtfertigen.
+
+\vspace{0.3cm}
+
+\begin{Assumption}[Digitalisierungs-Orakel]\label{assumptionOrakel}
+
+Sei $t \in T$. Anstatt die (nicht wirklich berechtigte) Kenntnis der Mengen $U^{(t)}$ und $S^{(t)}$ vorzugeben, wollen wir lieber die (realistischere) Existenz einer "Schätzfunktion" $dP^{(t)}$ (digital progress) annehmen. Wir definieren $dP^{(t)}$ als
+
+\begin{align*}
+dP &: T \rightarrow \mathbb{N} \times \mathbb{N}  \\
+dP^{(t)} &= \left(n^{(t)}, m^{(t)}\right)
+\end{align*}
+wobei $n^{(t)} = |U^{(t)}|$ und $m^{(t)} = |S^{(t)}|$ darstellen sollen, ohne dafür zwingend die exakten Mengen $U^{(t)}$ und $S^{(t)}$ kennen zu müssen.
+
+\end{Assumption}
+
+\vspace{0.3cm}
+
+\todo{Annahme 2 ist noch buggy}
+
+\vspace{0.3cm}
+
+Und auf der letzten Annahme aufbauend der Vollständigkeit halber die aus praktischer Sicht vollkommen alternativlose Annahme ergänzen, laut der Service-Provider stets eine große Anzahl an Users ansprechen/bedienen und damit zahlenmäßig den Usern stark unterlegen sind.
+\vspace{0.3cm}
+
+\begin{Assumption}[Verhältnismäßigkeit der Teilnehmer]\label{assumptionRatio}
+Für alle $t \in T$ mit $\left(n^{(t)}, m^{(t)}\right) = dP^{(t)}$ gilt:
+
+\begin{equation*}
+m^{(t)} << n^{(t)} \tag{i}
+\end{equation*}
+
+\vspace{0.3cm}
+
+Diese Aussage mag zahlenmäßig noch etwas "griffiger" formuliert werden. Dafür möchten wir das Verhältnis der Größen $n^{(t)}$ und $m^{(t)}$ abschätzen: Für unseren Zeithorizont, an dessen Ende - einem ausreichend späten, aber auch nicht in unabsehbar fernen Zukunft liegenden Zeitpunkt $t_{end} \in T$ - wir von einer WunderWelt sprechen, sei die Annahme
+
+\begin{align*}
+n^{(t_{end})} &\thickapprox 10 Mrd. \textrm{ und } m^{(t_{end})} \thickapprox 10.000 \textrm{ bzw.} \\
+dP^{(t_{end})} &\thickapprox (10^{10}, 10^{4}) = 10^{4} * (10^{6}, 1) \tag{ii}
+\end{align*}
+nicht ganz abwegig. Genauso wenig unvernünftig scheint die Annahme, WunderPass begänne seine Welteroberung mit einem MVP mit lediglich einem einzigen Service-Provider - z. B. dem Guard (siehe Kap. \ref{sec:guard}] - und einer überschaubaren Anzahl an angepeilten Usern, also
+
+\begin{align*}
+n^{(t_0)} &\thickapprox 1.000 \textrm{ und } m^{(t_0)} = 1 \textrm{ bzw.} \\
+dP^{(t_0)} &\thickapprox (1.000, 1) \tag{iii}
+\end{align*}
+
+\vspace{0.3cm}
+
+Mit den beiden zuletzt getroffenen (quantitativen) Annahmen (ii) und (iii) lässt sich auch die initiale (qualitative) Annahme (i) ebenfalls quantifizieren:
+
+\vspace{0.3cm}
+
+Für alle $t \in ]t_0; t_{end}[$ mit $\left(n^{(t)}, m^{(t)}\right) = dP^{(t)}$ gilt:
+
+\begin{equation*}
+1.000 = \frac{n^{(t_0)}}{m^{(t_0)}} < \frac{n^{(t)}}{m^{(t)}} < \frac{n^{(t_{end})}}{m^{(t_{end})}} = 1.000.000 \tag{iv}
+\end{equation*}
+
+\end{Assumption}
+
+\vspace{0.3cm}
+
+Wir fassen Annahme \ref{assumptionRatio} in einer abschließenden Definition zusammen:
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defZiel}
+
+Seien $t \in T$ und $dP^{(t)} = \left(n^{(t)}, m^{(t)}\right)$ wie in Annahme \ref{assumptionOrakel} beschrieben. Wie definieren die "Verhältnismäßigkeit der Teilnehmer" als
+
+\begin{align*}
+\sigma &: T \rightarrow \mathbb{Q} \\
+\sigma^{(t)} &= \frac{n^{(t)}}{m^{(t)}}
+\end{align*}
+
+\vspace{0.3cm}
+
+Zudem halten wir fest, Annahme \ref{assumptionRatio} lege nahe, man könne in der Praxis stets von
+
+\begin{equation*}
+1.000 < \sigma^{(t)} < 1.000.000
+\end{equation*}
+ausgehen.
+
+\end{Def}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\vspace{1cm}
+
+\subsubsection{Zustandsbeschreibung WunderPass}
+\label{sec:eco_zahlen_zustand_wp}
+
+Aufbauend auf die bisher erzielten Ergebnisse, wollen wir nun auch dem Stand von WunderPass für einen Zeitpunkt $t \in T$ einen formalisierten Charakter verleihen.
 
 \vspace{0.3cm}
 
@@ -123,13 +239,15 @@ Der Wert $\widehat{n} \leq n$ beschreibt die Größe des connecteten User-Pools 
 
 \end{Def}
 
-\vspace{1cm}
+\vspace{0.6cm}
 
 Man beachte bei den diskreten/sortierten Schreibweisen der definierten Mengen $U^{(t)}$, $\widehat{U}^{(t)}$, $S^{(t)}$ und $\widehat{S}^{(t)}$, dass in aller Regel $u^{(t)}_i \neq \widehat{u}^{(t)}_i$ und $s^{(t)}_j \neq \widehat{s}^{(t)}_j$ gelten. Die sich teils trivial aus den letzten Definitionen ergebenden Zusammenhänge fallen wir in Form eines Theorems zusammen:
 
 \vspace{0.3cm}
 
 \begin{Theorem}
+
+Seien $n = |U^{(t)}|$ und $m = |S^{(t)}|$ bzw. $(n, m) = dP^{(t)}$. Dann gelten folgende Aussagen:
 
 \begin{align}
 &\widehat{n} \leq n \tag{i.u} \\ 
@@ -183,46 +301,37 @@ zu (iv):
   
 \end{proof}
 
-\subsubsection{Quantifizierung des Status quo}
-\label{sec:eco_zahlen_status_quo}
-
-Mit diesen geschaffenen Formalisierungs-Werkzeugen lässt sich nun unser ganzes Vorhaben inklusive der übergeordneten WunderPass-Vision formal besser greifen.
 
 \vspace{0.3cm}
 
-Aufgrund der bereits weiter oben erwähnten nicht möglichen Einflussnahme auf die Mengen $U^{(t)}$ und $S^{(t)}$ benötigen wir noch ein weiteres Hilfsmittel, dessen Existenz wir im Folgenden einfach voraussetzen möchten - und diese mit Möglichkeiten der Markt-Analyse rechtfertigen.
+Es ist klar, dass WunderPass sich in gewisser Weise an den definierten Größen $\widehat{n}$ und $\widehat{m}$ messen können wird. 
 
 \vspace{0.3cm}
 
-\begin{Assumption}[Digitalisierungs-Orakel]\label{assumptionOrakel}
+\todo{TODO}
 
-Sei $t \in T$. Anstatt die (nicht wirklich berechtigte) Kenntnis der Mengen $U^{(t)}$ und $S^{(t)}$ vorzugeben, wollen wir lieber die (realistischere) Existenz einer "Schätzfunktion" $dP^{(t)}$ (digital progress) annehmen. Wir definieren $dP^{(t)}$ als
-
-\vspace{0.3cm}
-
-\begin{align*}
-dP &: T \rightarrow \mathbb{N} \times \mathbb{N}  \\
-dP^{(t)} &= (n^{(t)}, m^{(t)})
-\end{align*}
-wobei $n^{(t)} = |U^{(t)}|$ und $m^{(t)} = |S^{(t)}|$ darstellen sollen, ohne dafür zwingend die exakten Mengen $U^{(t)}$ und $S^{(t)}$ kennen zu müssen.
-
-\end{Assumption}
 
 \vspace{0.3cm}
 
-Und auf der letzten Annahme aufbauend der Vollständigkeit halber die aus praktischer Sicht vollkommen alternativlose Annahme ergänzen, laut der Service-Provider stets eine große Anzahl an Users ansprechen/bedienen und damit zahlenmäßig den Usern stark unterlegen sind.
-\vspace{0.3cm}
+\todo{Ab hier WIP}
+\vspace{1cm}
 
-\begin{Assumption}[Verhälnissmäßigkeit der Teilnehmer]\label{assumptionRatio}
-Für alle $t \in T$ mit $(n^{(t)}, m^{(t)}) = dP^{(t)}$ gilt:
 
-\begin{equation*}
-m^{(t)} << n^{(t)}
-\end{equation*}
 
-\end{Assumption}
 
-\vspace{0.3cm}
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Business-Plan in Mathematics}
+\label{sec:eco_zahlen_business_plan}
 
 Diese letzten Werkzeuge lassen und Begriffe wie "Zielsetzung" bzw. "Milestone" einführen.
 
@@ -235,15 +344,11 @@ Seien $t \in T$ und zudem entsprechend $(n^{(t)}, m^{(t)}) = dP^{(t)}$ der angen
 \end{Def}
 
 
-
-
-
-
+\subsubsection{Quantifizierung des Status quo}
+\label{sec:eco_zahlen_status_quo}
 
 
 \vspace{1cm}
-
-\todo{Ab hier WIP}
 
 Mit diesen geschaffenen Formalisierungs-Werkzeugen lässt sich nun auch die übergeordnete WunderPass-Vision formal erfassen - und zwar indem man den Zeitpunkt $t_{*} \in T$ ihrer Erreichung benennt:
 
@@ -276,7 +381,7 @@ Die in der Definition \ref{defVision} formulierte Gleichung \eqref{eq:1} ist äq
 
 \vspace{1cm}
 
-Die gelungene Formalisierung unserer Vision mittels Definition \ref{defVision} mag einen Fortschritt hinsichtlich unserer "Business-Mathematics" darstellen, bleibt jedoch losgelöst zunächst einmal ziemlich wertlos. Zum Einen ist das Erreichen der Vision im formellen Sinne der Definition \ref{defVision} weder praxistauglich noch akribisch erforderlich. Zudem bleibt zum Anderen der resultierende (intrinsische) Business-Value der Visions-Erreichung bisher weiterhin nicht ohne Weiteres erkennbar.
+Die gelungene Formalisierung unserer Vision mittels Definition \ref{defVision} mag einen Fortschritt hinsichtlich unserer "Business-Mathematics" darstellen, bleibt jedoch losgelöst zunächst einmal ziemlich wertlos. Zum einen ist das Erreichen der Vision im formellen Sinne der Definition \ref{defVision} weder praxistauglich noch akribisch erforderlich. Zudem bleibt zum anderen der resultierende (intrinsische) Business-Value der Visions-Erreichung bisher weiterhin nicht ohne Weiteres erkennbar.
 Vielmehr sollten wir die Anforderung von Gleichung \eqref{eq:1} als eine Messlatte unseres Fortschritts heranziehen, und eher als (unerreichbare) 100\%-Zielerreichungs-Marke betrachten. Zudem müssen wir zeitnah - obgleich die vollständige oder nur fortschreitend partielle - Zielerreichung unserer Vision in klaren, quantifizierbaren Business-Value übersetzen.
 
 Dazu definieren wir als erstes ein intuitives Maß der Zielerreichung:
