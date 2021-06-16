@@ -96,8 +96,6 @@ Man beachte, dass wir bei den diskreten/Aufzählungs-basierten Definitionen oben
 
 \vspace{0.3cm}
 
-Mittels der eben definierten Koefffizienten $\alpha^{(t)}_{ij}$ aus Def \ref{defKoeff} definieren wir "connected Pools" von Usern und Service-Providern zum Zeitpunkt $t \in T$:
-
 
 
 \subsubsection{Zustandsbeschreibung der digitalen Welt}
@@ -125,12 +123,11 @@ wobei $n^{(t)} = |U^{(t)}|$ und $m^{(t)} = |S^{(t)}|$ darstellen sollen, ohne da
 
 \vspace{0.3cm}
 
-\todo{Annahme 2 ist noch buggy}
-
-\vspace{0.3cm}
-
 Und auf der letzten Annahme aufbauend der Vollständigkeit halber die aus praktischer Sicht vollkommen alternativlose Annahme ergänzen, laut der Service-Provider stets eine große Anzahl an Users ansprechen/bedienen und damit zahlenmäßig den Usern stark unterlegen sind.
+
 \vspace{0.3cm}
+
+\todo{[TODO1][Annahme 2 ist noch buggy]}
 
 \begin{Assumption}[Verhältnismäßigkeit der Teilnehmer]\label{assumptionRatio}
 Für alle $t \in T$ mit $\left(n^{(t)}, m^{(t)}\right) = dP^{(t)}$ gilt:
@@ -194,31 +191,22 @@ ausgehen.
 
 \end{Def}
 
+\todo{[ende TODO1]}
+
+\vspace{0.6cm}
 
 
-
-
-
-
-
-
-
-
-
-
-
-\vspace{1cm}
 
 \subsubsection{Zustandsbeschreibung WunderPass}
 \label{sec:eco_zahlen_zustand_wp}
 
-Aufbauend auf die bisher erzielten Ergebnisse, wollen wir nun auch dem Stand von WunderPass für einen Zeitpunkt $t \in T$ einen formalisierten Charakter verleihen.
+Aufbauend auf die bisher erzielten Ergebnisse, wollen wir nun auch dem Stand von WunderPass für einen beliebigen Zeitpunkt $t \in T$ einen formalisierten Charakter verleihen und definieren zunächst einmal mittels der in Def \ref{defKoeff} beschriebenen Koeffizienten $\alpha^{(t)}_{ij}$ die sogenannten "connected Pools" von Usern und Service-Providern zum Zeitpunkt $t \in T$:
 
 \vspace{0.3cm}
 
 \begin{Def}\label{defPools}
 
-Wir definieren den connecteten User-Pool $\widehat{U}^{(t)} \subseteq U^{(t)}$ und den connecteten Service-Provider-Pool $\widehat{S}^{(t)} \subseteq S^{(t)}$als
+Wir definieren den "connected User-Pool" $\widehat{U}^{(t)} \subseteq U^{(t)}$ und den "connected Service-Provider-Pool" $\widehat{S}^{(t)} \subseteq S^{(t)}$als
 
 \begin{align}
 \widehat{U}^{(t)}:&= \left\{u \in U^{(t)} \mid \exists s^{*} \in S^{(t)} \textrm{ mit } \alpha^{(t)}(u, s^{*}) = 1 \right\} \tag{i} \\ 
@@ -229,13 +217,22 @@ Wir definieren den connecteten User-Pool $\widehat{U}^{(t)} \subseteq U^{(t)}$ u
 
 Für die diskrete/sortierte Variante ist dies wieder gleichbedeutend mit
 \begin{align}
-\widehat{U}^{(t)} &= \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{\widehat{n}} \right\} \tag{iii} \\ 
-\widehat{S}^{(t)} &= \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{\widehat{m}}\right\} \tag{iv}
+\widehat{U}^{(t)} &= \left\{ \widehat{u}^{(t)}_1; \widehat{u}^{(t)}_2;...; \widehat{u}^{(t)}_{\widehat{n}} \right\} \tag{iii} \\ 
+\widehat{S}^{(t)} &= \left\{ \widehat{s}^{(t)}_1; \widehat{s}^{(t)}_2;...; \widehat{s}^{(t)}_{\widehat{m}}\right\} \tag{iv}
 \end{align}
 
 \vspace{0.6cm}
 
-Der Wert $\widehat{n} \leq n$ beschreibt die Größe des connecteten User-Pools - also die Anzahl $\widehat{n}$ der tatsächlich mit WunderPass connecteten User unter den $n$ potenziellen Usern. Analog steht $\widehat{m} \leq m$ für die Anzahl der tatsächlich mit WunderPass connecteten Prividern.
+Der Wert $\widehat{n} \leq n$ beschreibt die Größe des connecteten User-Pools - also die Anzahl $\widehat{n}$ der tatsächlich mit WunderPass connecteten User unter den $n$ potenziellen Usern. Analog steht $\widehat{m} \leq m$ für die Anzahl der tatsächlich mit WunderPass connecteten Prividern. Der Vollständigkeit halber übertragen wir das aus Def \ref{defKoeff} stammende Verständnis der Connection-Koeffizienten auch auf die eben definierten "connected Pools"
+
+\[
+\widehat{\alpha}^{(t)}_{ij}:=\left\{%
+\begin{array}{ll}
+    1, & \hbox{falls User $\widehat{u}^{(t)}_i \in \widehat{U}^{(t)}$ mit mit Provider $\widehat{s}^{(t)}_j \in \widehat{S}^{(t)}$ connectet ist} \\
+    0, & \hbox{andernfalls} \\
+\end{array}%
+\right. \tag{v}
+\] 
 
 \end{Def}
 
@@ -304,51 +301,158 @@ zu (iv):
 
 \vspace{0.3cm}
 
-Es ist klar, dass WunderPass sich in gewisser Weise an den definierten Größen $\widehat{n}$ und $\widehat{m}$ messen können wird. 
+Es ist klar, dass WunderPass sich in gewisser Weise an den definierten numerischen Messgrößen ihrer angebundenen Teilnehmer $\widehat{n}$ und $\widehat{m}$ messen können wird. Zusätzlich dazu möchten wir ein - womöglich deutlich relevanteres - numerisches Maß formalisieren. Nämlich die intuitive und sehr simple KPI "Gesamtzahl bestehender User-to-Provider-Connections" zum Zeitpunkt $t \in T$.
 
 \vspace{0.3cm}
 
-\todo{TODO}
+\begin{Def}\label{defGamma}
 
+\begin{equation*}
+  \Gamma : T \rightarrow \mathbb{N} 
+\end{equation*}
 
-\vspace{0.3cm}
-
-\todo{Ab hier WIP}
-\vspace{1cm}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\subsubsection{Business-Plan in Mathematics}
-\label{sec:eco_zahlen_business_plan}
-
-Diese letzten Werkzeuge lassen und Begriffe wie "Zielsetzung" bzw. "Milestone" einführen.
-
-\vspace{0.3cm}
-
-\begin{Def}\label{defZiel}
-
-Seien $t \in T$ und zudem entsprechend $(n^{(t)}, m^{(t)}) = dP^{(t)}$ der angenommene Zustand der digitalen Welt zu einem beliebig gewählten Zeitpunkt. Wir definieren die - allein durch WunderPass zu bestimmende - Zielfunktion als
+\begin{equation*}
+  \Gamma(t):= \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \textrm{ mit } (n, m) = \left(n^{(t)}, m^{(t)}\right) = dP^{(t)}
+\end{equation*}
 
 \end{Def}
 
+\vspace{0.6cm}
 
-\subsubsection{Quantifizierung des Status quo}
-\label{sec:eco_zahlen_status_quo}
+Nun beweisen wir folgende sich ergebende Zusammenhänge:
 
+\begin{Theorem}\label{theremConnectionsCount}
 
+Sei $t \in T$ ein beliebiger Zeitpunkt, $(n, m) = dP^{(t)}$ und $\widehat{U}^{(t)} = \left\{ \widehat{u}^{(t)}_1; \widehat{u}^{(t)}_2;...; \widehat{u}^{(t)}_{\widehat{n}} \right\}$ und $\widehat{S}^{(t)} = \left\{ \widehat{s}^{(t)}_1; \widehat{s}^{(t)}_2;...; \widehat{s}^{(t)}_{\widehat{m}} \right\}$ die connecteten Teilnehmer-Pools mit $\widehat{n} < n$ sowie $\widehat{m} < m$.
+
+Zudem soll in Anlehnung an Annahme \ref{assumptionRatio} $\widehat{m} << \widehat{n}$ gelten. Dann gelten zusätzlich auch folgende Aussagen:
+
+\vspace{0.3cm}
+
+\begin{align*}
+\Gamma(t)&= \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \tag{i} \\ 
+\widehat{n} &\leq \Gamma(t) \leq \widehat{n} * \widehat{m} \tag{ii} \\
+\widehat{n} = \Gamma(t) &\Leftrightarrow \forall i \in \left\{1;...; \widehat{n} \right\}
+\textrm{ gilt } \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} = 1 \tag{iii} \\
+\Gamma(t) = \widehat{n} * \widehat{m} &\Leftrightarrow \widehat{\alpha}^{(t)}_{ij} = 1 \textrm{  } \forall i \in \left\{1;...; \widehat{n} \right\} \textrm{ und } \forall j \in \left\{1;...; \widehat{m} \right\} \tag{iv}
+\end{align*}
+
+\vspace{0.3cm}
+
+Man beachte, Aussage (ii) impliziert insbesondere
+
+\begin{equation*}
+\Gamma(t) = 0 \Leftrightarrow \widehat{n} = 0 \Leftrightarrow \widehat{U}^{(t)} = \emptyset  \Leftrightarrow \widehat{S}^{(t)} = \emptyset
+\end{equation*}
+
+\vspace{0.3cm}
+
+Aussage (iv) beschreibt dagegen quasi eine "\textbf{\textit{Voll-Vernetzung}}" der aktuell connecteten Teilnehmer!
+
+\end{Theorem}
+
+\vspace{0.3cm}
+
+\begin{proof}[Beweis] \textrm{ }
+
+\todo{[TODO2][Beweis]}
+
+\end{proof}
 \vspace{1cm}
+
+
+
+\todo{[TODO3][Abschätzung $\frac{\widehat{n}}{\widehat{m}}$]}
+\vspace{0.3cm}
+
+Aussagen aus Annahme \ref{assumptionRatio} und Theorem \ref{theremConnectionsCount} - Aussage (ii) - verwerten und Annahme \ref{assumptionRatio} deutlich verschärfen.
+
+\todo{[ende TODO3]}
+\vspace{1cm}
+
+
+\todo{[TODO4]["Sättigung"]}
+\vspace{0.3cm}
+
+Die Maße $\widehat{n}$, $\widehat{m}$ und $\Gamma(t)$ sind sehr objektiv und teils zielführend. Sie scheinen aber nicht zu reichen. So kann es z. B. User $\widehat{u} \in \widehat{U}^{(t)}$ geben, die im worst case ausschließlich zu einem einzigen Provider $\widehat{s} \in \widehat{S}^{(t)}$ connectet sind (und somit aber trotzdem den Wert von $\widehat{n}$ beeinflussen, oder noch schlimmer analog Provider $\widehat{s} \in \widehat{S}^{(t)}$, die als "angebunden" gelten, weil sie mit marginal wenigen Usern (im worst case mit einem einzigen) connectet sind. Solche Teilnehmer spielen eigentlich für den zahlenmäßigen WunderPass-Fortschritt keinerlei Rolle, beeinflussen jedoch unsere relevanten Messgrößen (KPI).
+
+Von daher benötigen wir noch eine weitere Präzisierung in Form von
+
+\begin{itemize}
+  \item "80-20-Regel" heranziehen, indem man die Mengen $\widehat{U}^{(t)}$ und $\widehat{S}^{(t)}$ so modifiziert/verkleinert, dass $\Gamma(t)$ davon kaum einen Einfluss spürt (sich lediglich um einen marginalen Prozentsatz verringert).
+  \item Formeln auf die davon modifizierten Größen $\widehat{\widehat{n}}$ und $\widehat{\widehat{m}}$ anpassen.
+  \item $\Rightarrow$ Die Grenzen von [Theorem \ref{theremConnectionsCount}][Aussage (ii)] werden damit deutlich schärfer.
+  \item $\Rightarrow$ kann sicherlich in Abschnitt \ref{sec:eco_zahlen_business_plan} für den Umgang mit dem Verhältnis $\frac{\widehat{n}}{\widehat{m}}$ genutzt werden.
+  \item Wird vermutlich auch Relevanz bei den "individuellen" (Definition erfolgt noch) User- und Provider-Pools zum Einsatz kommen.
+\end{itemize}
+
+\todo{[ende TODO4]}
+\vspace{1cm}
+
+
+
+\todo{[TODO5]["individuelle" User- und Provider-Pools]}
+\vspace{0.3cm}
+
+Nicht alle Teilnehmer innerhalb der WunderPass-Netzwerks sind gleichbedeutend. Dies ist zweifelsfrei klar hinsichtlich der Unterscheidung zwischen connecteten Usern $\widehat{u} \in \widehat{U}^{(t)}$ und Service-Providern $\widehat{s} \in \widehat{S}^{(t)}$. Jedoch bestehen ebenfalls signifikante Unterschiede jeweils innerhalb der beiden Teilnehmerklassen $\widehat{U}^{(t)}$ und $\widehat{S}^{(t)}$ (siehe \todo{[TODO4]["Sättigung"]}). Um dieser Unterscheidung unserer Teilnehmer gerecht zu werden, definieren wir "connected Pools" pro individuellen Teilnehmer als
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defTeilnehmerPool}
+
+Sei $t \in T$, $\widehat{U}^{(t)}$ und $\widehat{S}^{(t)}$ die übergeordneten "connected" User- und Provider-Pools und $\widehat{u}_{*} \in \widehat{U}^{(t)}$ und $\widehat{s}_{*} \in \widehat{S}^{(t)}$ die entsprechenden Teilnehmer, für deren individuelle "connected Pools" wir uns an dieser Stelle interessieren. Wir definieren die genannten "connected Pools" als
+
+\begin{align*}
+&accounts : \widehat{U}^{(t)} \rightarrow \mathcal{P}\left(\widehat{S}^{(t)}\right) \\
+&accounts^{(t)}(\widehat{u}_{*}) = \left\{\widehat{s} \in \widehat{S}^{(t)} \textrm{ } | \textrm{ } \widehat{\alpha}^{(t)}(\widehat{u}_{*}, \widehat{s}) = 1 \right\}
+\end{align*}
+und
+
+\begin{align*}
+&userbase : \widehat{S}^{(t)} \rightarrow \mathcal{P}\left(\widehat{U}^{(t)}\right) \\
+&userbase^{(t)}(\widehat{s}_{*}) = \left\{\widehat{u} \in \widehat{U}^{(t)} \textrm{ } | \textrm{ } \widehat{\alpha}^{(t)}(\widehat{u}, \widehat{s}_{*}) = 1 \right\}
+\end{align*}
+
+\end{Def}
+
+\vspace{0.6cm}
+
+\begin{Lemma}
+
+\begin{align}
+\bigcup_{\widehat{u} \in \widehat{U}^{(t)}} \left(accounts^{(t)} (\widehat{u})\right) = \widehat{S}^{(t)} \tag{i} \\
+\bigcup_{\widehat{s} \in \widehat{S}^{(t)}} \left(userbase^{(t)} (\widehat{s})\right) = \widehat{U}^{(t)} \tag{ii}
+\end{align}
+
+\end{Lemma}
+
+\vspace{0.6cm}
+
+\begin{Theorem}
+
+\begin{equation*}
+\sum_{\widehat{u} \in \widehat{U}^{(t)}} |accounts^{(t)} (\widehat{u})| = \sum_{\widehat{s} \in \widehat{S}^{(t)}} |userbase^{(t)} (\widehat{s})| = \Gamma(t)
+\end{equation*}
+
+\end{Theorem}
+
+\vspace{0.3cm}
+
+\begin{proof}[Beweis] \textrm{ }
+
+\todo{Beweis}
+
+\end{proof}
+
+
+\vspace{0.6cm}
+\todo{[ende TODO5]}
+\vspace{1cm}
+
+
+
+\todo{[TODO6][deprecated Inhalt verarbeiten]}
+\vspace{0.3cm}
 
 Mit diesen geschaffenen Formalisierungs-Werkzeugen lässt sich nun auch die übergeordnete WunderPass-Vision formal erfassen - und zwar indem man den Zeitpunkt $t_{*} \in T$ ihrer Erreichung benennt:
 
@@ -368,19 +472,6 @@ erfüllt ist. Darüber hinaus ist es noch nicht ganz klar, welche Aussage für d
 
 \vspace{1cm}
 
-Zu guter Letzt formulieren wir abschließend folgendes Theorem, auf dessen trivialen Beweis ausnahmsweise zu verzichten sei:
-
-\vspace{0.3cm}
-
-\begin{Theorem}
-Die in der Definition \ref{defVision} formulierte Gleichung \eqref{eq:1} ist äquivalent zu folgenden Aussagen: 
-\begin{equation*}
-  \sum_{u \in U^{(t)}} \sum_{s \in S^{(t)}} \alpha^{(t)}(u, s) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} = n^{(t)} * m^{(t)}
-\end{equation*}
-\end{Theorem}
-
-\vspace{1cm}
-
 Die gelungene Formalisierung unserer Vision mittels Definition \ref{defVision} mag einen Fortschritt hinsichtlich unserer "Business-Mathematics" darstellen, bleibt jedoch losgelöst zunächst einmal ziemlich wertlos. Zum einen ist das Erreichen der Vision im formellen Sinne der Definition \ref{defVision} weder praxistauglich noch akribisch erforderlich. Zudem bleibt zum anderen der resultierende (intrinsische) Business-Value der Visions-Erreichung bisher weiterhin nicht ohne Weiteres erkennbar.
 Vielmehr sollten wir die Anforderung von Gleichung \eqref{eq:1} als eine Messlatte unseres Fortschritts heranziehen, und eher als (unerreichbare) 100\%-Zielerreichungs-Marke betrachten. Zudem müssen wir zeitnah - obgleich die vollständige oder nur fortschreitend partielle - Zielerreichung unserer Vision in klaren, quantifizierbaren Business-Value übersetzen.
 
@@ -388,7 +479,7 @@ Dazu definieren wir als erstes ein intuitives Maß der Zielerreichung:
 
 \vspace{0.3cm}
 
-\begin{Def}\label{defGamma}
+\begin{Def}\label{defGamma2}
 
 \begin{equation*}
   \Gamma : T \rightarrow \mathbb{N} 
@@ -402,7 +493,7 @@ Dazu definieren wir als erstes ein intuitives Maß der Zielerreichung:
 
 \vspace{1cm}
 
-Was hier als $\Gamma$-Funktion so kompliziert definiert sein zu scheint, ist nichts anderes als die Formalisierung der für uns entscheidenden (jedoch simplen) KPI "Gesamtzahl bestehender User-to-Provider-Connections" zum Zeitpunkt $t \in T$. Damit liefert uns die definierte $\Gamma$-Funktion aber auch ein extrem greifbares und intuitiv nachvollziehbares Fortschrittsmaß unseres Vorhabens. Zudem fügt sich dieses perfekt in unsere mittels Definition \ref{defVision} quantifizierte Unternehmens-Vision und unterliegt einer fundamentalen (bezifferbaren) Obergrenze. Dies zeigt folgendes Lemma:
+Damit liefert uns die definierte $\Gamma$-Funktion aber auch ein extrem greifbares und intuitiv nachvollziehbares Fortschrittsmaß unseres Vorhabens. Zudem fügt sich dieses perfekt in unsere mittels Definition \ref{defVision} quantifizierte Unternehmens-Vision und unterliegt einer fundamentalen (bezifferbaren) Obergrenze. Dies zeigt folgendes Lemma:
 
 \vspace{0.3cm}
 
@@ -410,13 +501,10 @@ Was hier als $\Gamma$-Funktion so kompliziert definiert sein zu scheint, ist nic
 
 Es gelten folgende Aussagen:
 
-
 \begin{align}
 \Gamma(t) &\leq n^{(t)} * m^{(t)} \textrm{ für alle } t \in T \tag{i} \label{eq:l1_erste} \\ 
   \text{es gilt Gleichheit bei }  \eqref{eq:l1_erste} &\Leftrightarrow \text{ es gilt Gleichung } \eqref{eq:1} \text{ aus Def } \ref{defVision} \tag{ii} \label{eq:l1_zweite}
 \end{align}
-
-
 
 \end{Lemma}
 
@@ -467,6 +555,44 @@ Gleichung \eqref{eq:l1_zweite} ermöglicht uns die Definition \ref{defGamma} auf
 \end{equation*}
 
 \end{Def}
+
+\todo{[ende TODO6]}
+\vspace{1cm}
+
+
+
+
+
+
+
+
+
+
+
+\vspace{1cm}
+
+\todo{Ab hier WIP}
+\vspace{1cm}
+
+
+\subsubsection{Business-Plan in Mathematics}
+\label{sec:eco_zahlen_business_plan}
+
+Diese letzten Werkzeuge lassen und Begriffe wie "Zielsetzung" bzw. "Milestone" einführen.
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defZiel}
+
+Seien $t \in T$ und zudem entsprechend $(n^{(t)}, m^{(t)}) = dP^{(t)}$ der angenommene Zustand der digitalen Welt zu einem beliebig gewählten Zeitpunkt. Wir definieren die - allein durch WunderPass zu bestimmende - Zielfunktion als
+
+\end{Def}
+
+
+\subsubsection{Quantifizierung des Status quo}
+\label{sec:eco_zahlen_status_quo}
+
+
 
 \paragraph{Vernetzung \& Netzwerk-Effekt}
 \label{sec:zahlen_status_quo_netzwerk_effekt}
