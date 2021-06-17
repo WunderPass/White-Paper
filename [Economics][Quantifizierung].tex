@@ -242,7 +242,7 @@ Man beachte bei den diskreten/sortierten Schreibweisen der definierten Mengen $U
 
 \vspace{0.3cm}
 
-\begin{Theorem}
+\begin{Theorem}\label{theoremPools}
 
 Seien $n = |U^{(t)}|$ und $m = |S^{(t)}|$ bzw. $(n, m) = dP^{(t)}$. Dann gelten folgende Aussagen:
 
@@ -252,7 +252,9 @@ Seien $n = |U^{(t)}|$ und $m = |S^{(t)}|$ bzw. $(n, m) = dP^{(t)}$. Dann gelten 
 &\widehat{n} = n \Leftrightarrow \widehat{U}^{(t)} = U^{(t)} \tag{ii.u} \\
 &\widehat{m} = m \Leftrightarrow \widehat{S}^{(t)} = S^{(t)} \tag{ii.s} \\
 &\widehat{n} * \widehat{m} > 0 \Leftrightarrow \widehat{U}^{(t)} \neq \emptyset \Leftrightarrow \widehat{S}^{(t)} \neq \emptyset \tag{iii} \\
-&\widehat{n} * \widehat{m} = 0 \Leftrightarrow \widehat{U}^{(t)} = \emptyset = \widehat{S}^{(t)} \tag{iv}
+&\widehat{n} * \widehat{m} = 0 \Leftrightarrow \widehat{U}^{(t)} = \emptyset = \widehat{S}^{(t)} \tag{iv} \\
+&\widehat{u}^{(t)} \in \widehat{U}^{(t)} \Leftrightarrow \exists \widehat{s} \in \widehat{S}^{(t)} \textrm{ mit } \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) = 1 \tag{v} \\
+&\widehat{s}^{(t)} \in \widehat{S}^{(t)} \Leftrightarrow \exists \widehat{u} \in \widehat{U}^{(t)} \textrm{ mit } \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) = 1 \tag{vi} \label{theoremPools_6}
 \end{align}
 
 \end{Theorem}
@@ -293,8 +295,23 @@ zu (iv):
 
 \begin{align*}
 \widehat{n} * \widehat{m} = 0 &\Rightarrow \textrm{ mindestens eine der Mengen } \widehat{U}^{(t)}, \widehat{S}^{(t)} \textrm{ ist leer } \\
-&\xRightarrow{(iii)}  \widehat{U}^{(t)}, \widehat{S}^{(t)} = \emptyset
+&\xRightarrow{(iii)} \widehat{U}^{(t)}, \widehat{S}^{(t)} = \emptyset
 \end{align*}
+
+\vspace{0.3cm}
+
+zu (v): Die Richtung "$\Leftarrow$" folgt trivial aus Def \ref{defPools} und $\widehat{s} \in \widehat{S}^{(t)} \subseteq {S}^{(t)}$.
+
+Für "$\Rightarrow$" mögen wir annehmen 
+
+\begin{equation*}
+  \exists u^{*} \in \widehat{U}^{(t)} \textrm{ mit } \forall \widehat{s} \in \widehat{S}^{(t)} \textrm{ gilt } \alpha^{(t)}(u^{*}, \widehat{s}) = 0
+\end{equation*}
+Da jedoch laut Annahme $u^{*} \in \widehat{U}^{(t)}$, muss aufgrund von Def \ref{defPools} ein $s^{*} \in S^{(t)} \setminus \widehat{S}^{(t)}$ mit $\alpha^{(t)}(u^{*}, s^{*}) = 1$ existieren. Da $u^{*} \in \widehat{U}^{(t)} \subseteq {U}^{(t)}$, muss $s^{*}$ jedoch laut Def \ref{defPools} auch in $\widehat{S}^{(t)}$ liegen. Im Widerspruch zu $s^{*} \in S^{(t)} \setminus \widehat{S}^{(t)}$.
+
+\vspace{0.3cm}
+
+Aussage (vi) ergibt sich ganz analog zu (v)!
   
 \end{proof}
 
@@ -330,7 +347,7 @@ Zudem soll in Anlehnung an Annahme \ref{assumptionRatio} $\widehat{m} << \wideha
 \vspace{0.3cm}
 
 \begin{align*}
-\Gamma(t)&= \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \tag{i} \\ 
+\Gamma(t)&= \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \tag{i} \label{theremConnectionsCount_1} \\ 
 \widehat{n} &\leq \Gamma(t) \leq \widehat{n} * \widehat{m} \tag{ii} \\
 \widehat{n} = \Gamma(t) &\Leftrightarrow \forall i \in \left\{1;...; \widehat{n} \right\}
 \textrm{ gilt } \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} = 1 \tag{iii} \\
@@ -371,7 +388,7 @@ Aussagen aus Annahme \ref{assumptionRatio} und Theorem \ref{theremConnectionsCou
 \vspace{1cm}
 
 
-\todo{[TODO4]["Sättigung"]}
+\todo{[TODO4]["Verdichtung"]}
 \vspace{0.3cm}
 
 Die Maße $\widehat{n}$, $\widehat{m}$ und $\Gamma(t)$ sind sehr objektiv und teils zielführend. Sie scheinen aber nicht zu reichen. So kann es z. B. User $\widehat{u} \in \widehat{U}^{(t)}$ geben, die im worst case ausschließlich zu einem einzigen Provider $\widehat{s} \in \widehat{S}^{(t)}$ connectet sind (und somit aber trotzdem den Wert von $\widehat{n}$ beeinflussen, oder noch schlimmer analog Provider $\widehat{s} \in \widehat{S}^{(t)}$, die als "angebunden" gelten, weil sie mit marginal wenigen Usern (im worst case mit einem einzigen) connectet sind. Solche Teilnehmer spielen eigentlich für den zahlenmäßigen WunderPass-Fortschritt keinerlei Rolle, beeinflussen jedoch unsere relevanten Messgrößen (KPI).
@@ -389,6 +406,19 @@ Von daher benötigen wir noch eine weitere Präzisierung in Form von
 \todo{[ende TODO4]}
 \vspace{1cm}
 
+\todo{[TODO4.1]["Exklusive Connections"]}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Eine Connection zu einem Service-Provider ist exklusiv, wenn der zugehörige User zu keinem anderen Service-Provider connectet ist.
+    \item Es gibt mindestens $n_{nexcl} \geq \Gamma(t) - \widehat{n}$ nicht exklusive Connections.
+  
+\end{itemize}
+
+
+\todo{[ende TODO4.1]}
+\vspace{1cm}
+
 
 
 \todo{[TODO5]["individuelle" User- und Provider-Pools]}
@@ -404,13 +434,13 @@ Sei $t \in T$, $\widehat{U}^{(t)}$ und $\widehat{S}^{(t)}$ die übergeordneten "
 
 \begin{align*}
 &accounts : \widehat{U}^{(t)} \rightarrow \mathcal{P}\left(\widehat{S}^{(t)}\right) \\
-&accounts^{(t)}(\widehat{u}_{*}) = \left\{\widehat{s} \in \widehat{S}^{(t)} \textrm{ } | \textrm{ } \widehat{\alpha}^{(t)}(\widehat{u}_{*}, \widehat{s}) = 1 \right\}
+&accounts^{(t)}(\widehat{u}_{*}) = \left\{\widehat{s} \in \widehat{S}^{(t)} \textrm{ } | \textrm{ } \alpha^{(t)}(\widehat{u}_{*}, \widehat{s}) = 1 \right\}
 \end{align*}
 und
 
 \begin{align*}
 &userbase : \widehat{S}^{(t)} \rightarrow \mathcal{P}\left(\widehat{U}^{(t)}\right) \\
-&userbase^{(t)}(\widehat{s}_{*}) = \left\{\widehat{u} \in \widehat{U}^{(t)} \textrm{ } | \textrm{ } \widehat{\alpha}^{(t)}(\widehat{u}, \widehat{s}_{*}) = 1 \right\}
+&userbase^{(t)}(\widehat{s}_{*}) = \left\{\widehat{u} \in \widehat{U}^{(t)} \textrm{ } | \textrm{ } \alpha^{(t)}(\widehat{u}, \widehat{s}_{*}) = 1 \right\}
 \end{align*}
 
 \end{Def}
@@ -426,7 +456,29 @@ und
 
 \end{Lemma}
 
-\vspace{0.6cm}
+\vspace{0.3cm}
+
+\begin{proof}[Beweis] \textrm{ }
+
+\vspace{0.3cm}
+
+zu (i): Es ist
+
+\begin{align*}
+\bigcup_{\widehat{u} \in \widehat{U}^{(t)}} \left(accounts^{(t)} (\widehat{u})\right) &\overset{\text{Def \ref{defTeilnehmerPool}}}{=} \bigcup_{\widehat{u} \in \widehat{U}^{(t)}} \left\{\widehat{s} \in \widehat{S}^{(t)} \textrm{ } | \textrm{ } \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) = 1 \right\} \\
+&\overset{(*)}{=} \left\{\widehat{s} \in \widehat{S}^{(t)} \mid \exists \widehat{u} \in \widehat{U}^{(t)} \textrm{ mit } \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) = 1 \right\} \\
+&\overset{\text{Th. \ref{theoremPools} (\ref{theoremPools_6})}}{=} \widehat{S}^{(t)}
+\end{align*}
+Die Gleichheit zu (*) ergibt aus der Tatsache, Mengen-Vereinigungen ignorierten Doppelzählungen! 
+
+\vspace{0.3cm}
+
+Aussage (ii) folgt ganz analog!
+
+\end{proof}
+
+\vspace{0.3cm}
+
 
 \begin{Theorem}
 
@@ -440,7 +492,25 @@ und
 
 \begin{proof}[Beweis] \textrm{ }
 
-\todo{Beweis}
+\vspace{0.3cm}
+
+Es ist
+
+\begin{align*}
+\Gamma(t)&\overset{\text{Th. \ref{theremConnectionsCount} (\ref{theremConnectionsCount_1})}}{=} \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \\
+&= \sum_{\widehat{u} \in \widehat{U}^{(t)}} \textrm{  } \sum_{\widehat{s} \in \widehat{S}^{(t)}} \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) \\
+&= \sum_{\widehat{u} \in \widehat{U}^{(t)}} \textrm{  } \sum_{\widehat{s} \in \widehat{S}^{(t)} \textrm{ mit } \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) = 1} 1 \\
+&\overset{\text{Def \ref{defTeilnehmerPool}}}{=} \sum_{\widehat{u} \in \widehat{U}^{(t)}} \textrm{  } \sum_{s \in accounts^{(t)} (\widehat{u})} 1 \\
+&= \sum_{\widehat{u} \in \widehat{U}^{(t)}} |accounts^{(t)} (\widehat{u})|
+\end{align*}
+
+\vspace{0.3cm}
+
+Die zweite Gleichheit folgt analog, falls man die Kommutativität der Def \ref{defGamma} beachtet: 
+
+\begin{equation*}
+  \Gamma(t)= \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} = \sum_{j=1}^m \sum_{i=1}^n \alpha^{(t)}_{ij}
+\end{equation*}
 
 \end{proof}
 
@@ -448,6 +518,18 @@ und
 \vspace{0.6cm}
 \todo{[ende TODO5]}
 \vspace{1cm}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
