@@ -11,7 +11,7 @@ Wir wollen den Mehrwert von User-Provider-Connections mittels Wunderpass einen b
 \subsubsection{Zustandsbeschreibung der digitalen Welt}
 \label{sec:eco_zahlen_zustand_digitalisierung}
 
-Mit diesen geschaffenen Formalisierungs-Werkzeugen lassen sich nun einige Dinge formal deutlich besser greifen. Und zwar zum einen im Folgenden die übergeordneten "Umstände der digitalen Welt" (auf die WunderPass bestenfalls sehr geringfügig Einfluss üben kann) aber zum anderen ebenfalls unser gesamtes Vorhaben inklusive der übergeordneten WunderPass-Vision, die in den darauf folgenden Kapitels beleuchtet wird. 
+Mit diesen geschaffenen Formalisierungs-Werkzeugen lassen sich nun einige Dinge formal deutlich besser greifen. Und zwar zum einen im Folgenden die übergeordneten "Umstände der digitalen Welt" (auf die WunderPass bestenfalls sehr geringfügig Einfluss üben kann) aber zum anderen ebenfalls unser gesamtes Vorhaben inklusive der übergeordneten WunderPass-Vision, die in den darauf folgenden Kapitels beleuchtet wird.
 
 \vspace{0.3cm}
 
@@ -119,7 +119,7 @@ Aufbauend auf die bisher erzielten Ergebnisse, wollen wir nun auch dem Stand von
 Wir definieren den "connected User-Pool" $\widehat{U}^{(t)} \subseteq U^{(t)}$ und den "connected Service-Provider-Pool" $\widehat{S}^{(t)} \subseteq S^{(t)}$ als
 
 \begin{align}
-\widehat{U}^{(t)}:&= \left\{u \in U^{(t)} \mid \exists s^{*} \in S^{(t)} \textrm{ mit } \alpha^{(t)}(u, s^{*}) = 1 \right\} \tag{i} \\ 
+\widehat{U}^{(t)}:&= \left\{u \in U^{(t)} \mid \exists s^{*} \in S^{(t)} \textrm{ mit } \alpha^{(t)}(u, s^{*}) = 1 \right\} \tag{i} \\
 \widehat{S}^{(t)}:&= \left\{s \in S^{(t)} \mid \exists u^{*} \in U^{(t)} \textrm{ mit } \alpha^{(t)}(u^{*}, s) = 1 \right\} \tag{ii}
 \end{align}
 
@@ -127,13 +127,13 @@ Wir definieren den "connected User-Pool" $\widehat{U}^{(t)} \subseteq U^{(t)}$ u
 
 Für die diskrete/sortierte Variante ist dies wieder gleichbedeutend mit
 \begin{align}
-\widehat{U}^{(t)} &= \left\{ \widehat{u}^{(t)}_1; \widehat{u}^{(t)}_2;...; \widehat{u}^{(t)}_{\widehat{n}} \right\} \tag{iii} \\ 
+\widehat{U}^{(t)} &= \left\{ \widehat{u}^{(t)}_1; \widehat{u}^{(t)}_2;...; \widehat{u}^{(t)}_{\widehat{n}} \right\} \tag{iii} \\
 \widehat{S}^{(t)} &= \left\{ \widehat{s}^{(t)}_1; \widehat{s}^{(t)}_2;...; \widehat{s}^{(t)}_{\widehat{m}}\right\} \tag{iv}
 \end{align}
 
 \vspace{0.6cm}
 
-Der Wert $\widehat{n} \leq n$ beschreibt die Größe des connecteten User-Pools - also die Anzahl $\widehat{n}$ der tatsächlich mit WunderPass connecteten User unter den $n$ potenziellen Usern. Analog steht $\widehat{m} \leq m$ für die Anzahl der tatsächlich mit WunderPass connecteten Prividern. Der Vollständigkeit halber übertragen wir das aus Def \ref{defKoeff} stammende Verständnis der Connection-Koeffizienten auch auf die eben definierten "connected Pools"
+Der Wert $\widehat{n} \leq n$ beschreibt die Größe des connecteten User-Pools - also die Anzahl $\widehat{n}$ der tatsächlich mit WunderPass connecteten User unter den $n$ potenziellen Usern. Analog steht $\widehat{m} \leq m$ für die Anzahl der tatsächlich mit WunderPass connecteten Providern. Der Vollständigkeit halber übertragen wir das aus Def \ref{defKoeff} stammende Verständnis der Connection-Koeffizienten auch auf die eben definierten "connected Pools"
 
 \[
 \widehat{\alpha}^{(t)}_{ij}:=\left\{%
@@ -142,7 +142,7 @@ Der Wert $\widehat{n} \leq n$ beschreibt die Größe des connecteten User-Pools 
     0, & \hbox{andernfalls} \\
 \end{array}%
 \right. \tag{v}
-\] 
+\]
 
 \end{Def}
 
@@ -162,7 +162,7 @@ Es ist klar, dass WunderPass sich in gewisser Weise an den definierten numerisch
 \begin{Def}\label{defGamma}
 
 \begin{equation*}
-  \Gamma : T \rightarrow \mathbb{N} 
+  \Gamma : T \rightarrow \mathbb{N}
 \end{equation*}
 
 \begin{equation*}
@@ -184,7 +184,7 @@ Zudem soll in Anlehnung an Annahme \ref{assumptionRatio} $\widehat{m} << \wideha
 \vspace{0.3cm}
 
 \begin{align*}
-\Gamma(t)&= \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \tag{i} \label{theremConnectionsCount_1} \\ 
+\Gamma(t)&= \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \tag{i} \label{theremConnectionsCount_1} \\
 \widehat{n} &\leq \Gamma(t) \leq \widehat{n} * \widehat{m} \tag{ii} \\
 \widehat{n} = \Gamma(t) &\Leftrightarrow \forall i \in \left\{1;...; \widehat{n} \right\}
 \textrm{ gilt } \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} = 1 \tag{iii} \\
@@ -216,7 +216,7 @@ Die Aussage (i) ist intuitiv nahezu trivial. Das explizite Vorrechnen dagegen et
 
 \vspace{0.4cm}
 
-zu (ii): 
+zu (ii):
 
 $\Gamma(t) \leq \widehat{n} * \widehat{m}$ ergibt sich aus
 \begin{equation*}
@@ -234,8 +234,8 @@ Nun zeigen wir $\widehat{n} \leq \Gamma(t)$. Für $n = 0$ ergibt sich die Aussag
 
 \vspace{0.4cm}
 
-zu (iii): 
-"$\Leftarrow$" ist trivial. 
+zu (iii):
+"$\Leftarrow$" ist trivial.
 
 \vspace{0.4cm}
 
@@ -243,10 +243,10 @@ Zu "$\Rightarrow$": Sei $\widehat{n} = \Gamma(t)$. Angenommen es gäbe ein $i^{*
 
 \vspace{0.4cm}
 
-zu (iv): 
+zu (iv):
 "$\Leftarrow$" ist wieder trivial.
 
-\vspace{0.4cm} 
+\vspace{0.4cm}
 
 Zu "$\Rightarrow$": Es gelte also $\Gamma(t) = \widehat{n} * \widehat{m}$. Angenommen es gäbe ein $i^{*} \in \{1,...,\widehat{n}\}$ und ein $j^{*} \in \{1,...,\widehat{m}\}$, sodass $\alpha^{(t)}_{i^{*}j^{*}} = 0$. Dann wäre unter Gültigkeit der Aussage (i)
 
@@ -255,7 +255,7 @@ Zu "$\Rightarrow$": Es gelte also $\Gamma(t) = \widehat{n} * \widehat{m}$. Angen
 &\leq \left(\sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} 1 \right) - 1 = \widehat{n} * \widehat{m} - 1 < \widehat{n} * \widehat{m} \\
 \end{align*}
 Widerspruch!
-  
+
 \end{proof}
 \vspace{1cm}
 
@@ -294,7 +294,7 @@ Von daher benötigen wir noch eine weitere Präzisierung in Form von
 \begin{itemize}
   \item Eine Connection zu einem Service-Provider ist exklusiv, wenn der zugehörige User zu keinem anderen Service-Provider connectet ist.
     \item Es gibt mindestens $n_{nexcl} \geq \Gamma(t) - \widehat{n}$ nicht exklusive Connections.
-  
+
 \end{itemize}
 
 \todo{[ende TODO4.1]}
@@ -350,7 +350,7 @@ zu (i): Es ist
 &\overset{(*)}{=} \left\{\widehat{s} \in \widehat{S}^{(t)} \mid \exists \widehat{u} \in \widehat{U}^{(t)} \textrm{ mit } \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) = 1 \right\} \\
 &\overset{\text{Th. \ref{theoremPools} (\ref{theoremPools_6})}}{=} \widehat{S}^{(t)}
 \end{align*}
-Die Gleichheit zu (*) ergibt aus der Tatsache, Mengen-Vereinigungen ignorierten Doppelzählungen! 
+Die Gleichheit zu (*) ergibt aus der Tatsache, Mengen-Vereinigungen ignorierten Doppelzählungen!
 
 \vspace{0.3cm}
 
@@ -387,7 +387,7 @@ Es ist
 
 \vspace{0.3cm}
 
-Die zweite Gleichheit folgt analog, falls man die Kommutativität der Def \ref{defGamma} beachtet: 
+Die zweite Gleichheit folgt analog, falls man die Kommutativität der Def \ref{defGamma} beachtet:
 
 \begin{equation*}
   \Gamma(t)= \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} = \sum_{j=1}^m \sum_{i=1}^n \alpha^{(t)}_{ij}
@@ -441,14 +441,14 @@ Seien $t \in T$ und zudem entsprechend $(n^{(t)}, m^{(t)}) = dP^{(t)}$ der angen
 
 Die WunderPass-Vision steht in ihrer Formulierung ganz klar im Sinne einer gewissen "Vernetzung". Wir möchten, dass möglichst viele User sich mit möglichst vielen Service-Providern "connecten" (bzw. connectet sind/bleiben). Schränkt man seine Sichtweise alleinig auf diese Vision (ohne diese zunächst zu hinterfragen), liefern uns die zuletzt eingeführten Größen $\alpha^{(t)}_{ij}$, $\Gamma(t)$ und $\gamma(t)$ ziemlich gute Gradmesser, um zweifelsfreie Aussagen hinsichtlich der Vergleichbarkeit zweier Zeitpunkte $t_1, t_2 \in T$ treffen zu können. Es ist irgendwie klar, $\alpha^{(t)}_{ij} = 1$ sei im Sinne unserer Vision irgendwie besser als $\alpha^{(t)}_{ij} = 0$.
 
-Aus diesem Blickwinkel (in dem die Vision zunächst ein Selbstzweck bleibt) erscheint die folgende Definition mehr als intuitiv einleuchtend, um die obige Formulierung "irgendwie besser" zu formalisieren und vor allem zu quantifizieren. 
+Aus diesem Blickwinkel (in dem die Vision zunächst ein Selbstzweck bleibt) erscheint die folgende Definition mehr als intuitiv einleuchtend, um die obige Formulierung "irgendwie besser" zu formalisieren und vor allem zu quantifizieren.
 
 \vspace{0.3cm}
 
 \begin{Def}\label{defRelation}
 
-Wir bedienen uns der in Definition \ref{defGamma} beschriebenen Funktion $\Gamma(t)$, um damit eine \href{https://de.wikipedia.org/wiki/Ordnungsrelation}{Ordnungsrelation} 
-auf unserem Zeitstrahl $T$ für je zwei beliebige Zeitpunkte $t_1, t_2 \in T$ zu erhalten: 
+Wir bedienen uns der in Definition \ref{defGamma} beschriebenen Funktion $\Gamma(t)$, um damit eine \href{https://de.wikipedia.org/wiki/Ordnungsrelation}{Ordnungsrelation}
+auf unserem Zeitstrahl $T$ für je zwei beliebige Zeitpunkte $t_1, t_2 \in T$ zu erhalten:
 
 \vspace{0.3cm}
 
@@ -465,7 +465,7 @@ Mittels $R_{\preceq}$ erhalten wir eine Ordnung unseres Zeitstahls $T$ und erkl�
 \vspace{0.3cm}
 
 \begin{equation*}
-  \textrm{Wir schreiben fortan statt } (t_1, t_2) \in R_{\preceq} \textrm{ lieber } t_1 \preceq t_2 
+  \textrm{Wir schreiben fortan statt } (t_1, t_2) \in R_{\preceq} \textrm{ lieber } t_1 \preceq t_2
 \end{equation*}
 
 \end{Def}
@@ -499,7 +499,7 @@ Bei $R_{\prec}$ handelt es sich im Übrigen wieder um eine Ordnungsrelation. Bei
 
 \vspace{0.3cm}
 
-Auch für die letzten beiden Relationen wollen wir fortan die vereinfachte Schreibweise $t_1 \prec t_2$ und $t_1 \simeq t_2$ nutzen. 
+Auch für die letzten beiden Relationen wollen wir fortan die vereinfachte Schreibweise $t_1 \prec t_2$ und $t_1 \simeq t_2$ nutzen.
 
 \vspace{1cm}
 
@@ -507,7 +507,7 @@ Diese Netzwerk-Bewertungs-Modell besitzt jedoch im aktuellen Zustand drei wesent
 
 \begin{itemize}
   \item Es beschreibt uns misst weiterhin ausschließlich den intrinsischen Wert der Vernetzung innerhalb unserer kleinen "Visions-Welt", dem es noch an Bezug zur "Außenwelt" und dem Business-Case fehlt. Diesen Umstand wollen wir weiterhin zunächst einmal ignorieren.
-  \item Es bewertet in der aktuellen Form ausschließlich "unsere Welt" bzw. unseren Fortschritt als Ganzes. Die definierte "besser"-Relation misst das "Besser" aus Sicht der Allgemeinheit. Der einzelne Teilnehmer bleibt individuell unberücksichtigt. Es ist schwer vorstellbar, ein Ökosystem zu designen, welches intrinsisch nach dem Wohl/Optimum Aller strebt (und damit eben einmal einen formalen Beweis für das Funktionieren des Kommunismus zu liefern.) 
+  \item Es bewertet in der aktuellen Form ausschließlich "unsere Welt" bzw. unseren Fortschritt als Ganzes. Die definierte "besser"-Relation misst das "Besser" aus Sicht der Allgemeinheit. Der einzelne Teilnehmer bleibt individuell unberücksichtigt. Es ist schwer vorstellbar, ein Ökosystem zu designen, welches intrinsisch nach dem Wohl/Optimum Aller strebt (und damit eben einmal einen formalen Beweis für das Funktionieren des Kommunismus zu liefern.)
   \item Es lässt den sogenannten \href{https://de.wikipedia.org/wiki/Netzwerkeffekt}{Netzwerkeffekt} außer Acht! Denn selbst wenn man eben einmal das Problem des Bullet 1 aus der Welt schafft, und ein Preisschild an den Mehrwert einer Connection zwischen User und Provider bekommt. Die Literatur zum besagten Netzwerkeffekt liefert gute Argumente für die Annahme, eine von uns anvisierte User-Provider-Connection kann nur sehr selten alleinstehend in ihrem Mehrwert bewertet werden. Vielmehr bemisst sich dieser etwaige Mehrwert in dem Zusammenspiel und den Synergien mit anderen User-Provider-Connections. Es lassen sich viele Beispiele finden, um diesen Umstand zu begründen. So kann es z. B. sein, dass ein Finance-Aggregator-Service für einen User um so wertvoller wird, je mehr Finance-Provider der User selbst mit seiner WunderIdentity connectet. Hierbei wird es kaum einen Unterschied für ihn machen, ob die genannten Finance-Provider mit 100 anderen WunderPass-Usern connectet seien oder mit 10 Mio. Im Case einer Splitwise-Connection (oder auch einer etwaigen EventsWithFriends-App) dagegen entsteht der Mehrwert erst dann, wenn auch ganz viele Freunde des Users diese Splitwise-Connection mit WunderPass besitzen. Andernfalls beläuft sich der Mehrwert seiner eigenen Connection so ziemlich gen Null.
 \end{itemize}
 
@@ -517,7 +517,7 @@ Insbesondere der letzte Punkt wirft einige interessante Fragen auf, zu denen wir
 Was bedeutet eigentlich
 
 \begin{equation*}
-  \alpha^{(t)}_{kj} * \alpha^{(t)}_{lj} = 1 \textrm{ für zwei User } u^{(t)}_k, u^{(t)}_l \in U^{(t)} \textrm{ die beide mit Privider } s^{(t)}_j \in S^{(t)} \textrm{ connectet sind?}
+  \alpha^{(t)}_{kj} * \alpha^{(t)}_{lj} = 1 \textrm{ für zwei User } u^{(t)}_k, u^{(t)}_l \in U^{(t)} \textrm{ die beide mit Provider } s^{(t)}_j \in S^{(t)} \textrm{ connectet sind?}
 \end{equation*}
 Sind diese dann damit gleichbedeutend in irgendeiner Weise ebenfalls "\textit{miteinander connectet}"? Und was würde eine solche Implikation für unser bisheriges Modell bedeuten? Wie (un)abhängig ist eine solche "indirekte Connection" von ihrer "Brücke" - dem Service-Provider? All diese Fragen lassen sich zudem analog auf "indirekte Connections" zwischen Providern übertragen - die dann etwaige User als "Brücke" nützten. Zu guter Letzt ließe sich diese neue Komplexität beliebig potenzieren, indem man mittels Rekursion indirekte Connections "zweitens, drittens,... Grades" definiert.
 
