@@ -1,0 +1,261 @@
+
+
+-----Pools-----
+
+U^{(t)} = \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{n} \right\}
+U^{(t)} = \left\{ u_1; u^_2;...; u^_{n} \right\}
+
+\widehat{U}^{(t)} = \left\{ \widehat{u}^{(t)}_1; \widehat{u}^{(t)}_2;...; \widehat{u}^{(t)}_{\widehat{n}} \right\}
+\widehat{U}^{(t)} = \left\{ \widehat{u}_1; \widehat{u}_2;...; \widehat{u}_{\widehat{n}} \right\}
+
+
+S^{(t)} = \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{m} \right\}
+S^{(t)} = \left\{ s_1; s^_2;...; s^_{n} \right\}
+
+\widehat{S}^{(t)} = \left\{ \widehat{s}^{(t)}_1; \widehat{s}^{(t)}_2;...; \widehat{s}^{(t)}_{\widehat{m}} \right\}
+\widehat{S}^{(t)} = \left\{ \widehat{s}_1; \widehat{s}_2;...; \widehat{s}_{\widehat{m}} \right\}
+
+
+-----Teilnehmer-----
+
+u^{(t)} \in U^{(t)}
+u \in U^{(t)}
+u^{(t)}_i \in U^{(t)}
+u_i \in U^{(t)}
+
+\widehat{u}^{(t)} \in \widehat{U}^{(t)}
+\widehat{u} \in \widehat{U}^{(t)}
+\widehat{u}^{(t)}_i \in \widehat{U}^{(t)}
+\widehat{u}_i \in \widehat{U}^{(t)}
+
+
+s^{(t)} \in S^{(t)}
+s \in S^{(t)}
+s^{(t)}_j \in S^{(t)}
+s_j \in S^{(t)}
+
+\widehat{s}^{(t)} \in \widehat{S}^{(t)}
+\widehat{s} \in \widehat{S}^{(t)}
+\widehat{s}^{(t)}_j \in \widehat{S}^{(t)}
+\widehat{s}_j \in \widehat{S}^{(t)}
+
+
+dP^{(t)} = \left(n^{(t)}, m^{(t)}\right)
+\left(n^{(t)}, m^{(t)}\right) = dP^{(t)}
+
+dP^{(t)} = \left(n, m\right)
+\left(n, m\right) = dP^{(t)}
+
+\left(n, m\right) = \left(n^{(t)}, m^{(t)}\right) = dP^{(t)}
+
+
+
+-----Hut-----
+
+\widehat{n}
+\widehat{m}
+
+\widehat{u}^{(t)}
+\widehat{u}
+\widehat{u}^{(t)}_i
+\widehat{u}_i
+\widehat{u}^{(t)}_{\widehat{n}}
+\widehat{u}_{\widehat{n}}
+
+\widehat{s}^{(t)}
+\widehat{s}
+\widehat{s}^{(t)}_j
+\widehat{s}_j
+\widehat{s}^{(t)}_{\widehat{m}}
+\widehat{s}_{\widehat{m}}
+
+
+
+-----Connections-----
+
+\alpha^{(t)}(u, s)
+\alpha^{(t)}_{ij}
+
+\alpha^{(t)} \left( \widehat{u}, \widehat{s} \right)
+\alpha^{(t)} \left( \widehat{u}^{(t)}, \widehat{s}^{(t)} \right)
+\widehat{\alpha}^{(t)}_{ij}
+
+
+
+-----Diverses-----
+
+\Gamma(t)
+
+\Gamma(t) = \sum_{u \in U^{(t)}} \textrm{  } \sum_{s \in S^{(t)}} \alpha^{(t)}\left(u, s\right)
+\Gamma(t) = \sum_{\widehat{u} \in \widehat{U}^{(t)}} \textrm{  } \sum_{\widehat{s} \in \widehat{S}^{(t)}} \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right)
+\Gamma(t) = \sum_{i=1}^{n} \sum_{j=1}^{m} \alpha^{(t)}_{ij}
+\Gamma(t) = \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij}
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----Aussagen-Listen-----
+
+\begin{align}
+_LINKE_SEITE1_ &_OPERATOR1 _RECHTE_SEITE1_ \tag{i} \\
+_LINKE_SEITE2_ &_OPERATOR2 _RECHTE_SEITE2_ \tag{ii} \\
+_LINKE_SEITE3_ &_OPERATOR3 _RECHTE_SEITE3_ \tag{iii}
+\end{align}
+
+\begin{align}
+_LINKE_SEITE1_ &_OPERATOR1 _RECHTE_SEITE1_ \tag{i} \\
+_LINKE_SEITE2_ &_OPERATOR2 _RECHTE_SEITE2_ \tag{ii} \\
+_LINKE_SEITE3_ &_OPERATOR3 _RECHTE_SEITE3_ \tag{iii}
+\end{align}
+
+\begin{align}
+_LINKE_SEITE1_ &\Leftrightarrow _RECHTE_SEITE1_ \textrm{ mit } a > b \tag{i} \\
+_LINKE_SEITE2_ &\Leftrightarrow _RECHTE_SEITE2_ \textrm{ mit } a = b \tag{ii} \\
+_LINKE_SEITE3_ &\Leftrightarrow _RECHTE_SEITE3_ \textrm{ mit } a < b \tag{iii}
+\end{align}
+
+
+
+-----Herleitung-----
+
+\begin{align*}
+_LINKE_SEITE_ &_OPERATOR1_ _RECHTE_SEITE1_ \\
+&_OPERATOR2_ _RECHTE_SEITE2_ \\
+&_OPERATOR3_ _RECHTE_SEITE3_
+\end{align*}
+
+\begin{align*}
+_LINKE_SEITE_ &\overset{\text{_WEIL_TEXT1_}}{_OPERATOR1_} _RECHTE_SEITE1_ \\
+&\overset{(_WEIL_TEXT2_)}{_OPERATOR2_} _RECHTE_SEITE2_ \\
+&\overset{\text{_WEIL_TEXT3_}}{_OPERATOR3_} _RECHTE_SEITE3_
+\end{align*}
+
+\begin{align*}
+5x + 2y &\overset{\text{weil ief}}{=} 2x + z \\
+&\overset{(*)}{<} 3z \\
+&\overset{\text{weil finn}}{=} 15
+\end{align*}
+
+
+
+-----Beweis-----
+
+\begin{proof}[Beweis] \textrm{ }
+
+\vspace{0.3cm}
+
+(i) ist trivial!
+
+\vspace{0.3cm}
+
+zu (ii): Es ist
+
+\begin{align*}
+... \\
+... \\
+...
+\end{align*}
+
+\vspace{0.3cm}
+
+zu (iii): 
+"$\Leftarrow$" ist trivial. Die Richtung "$\Rightarrow$" folgt aus
+
+\begin{equation*}
+  ...
+\end{equation*}
+
+\vspace{0.3cm}
+
+Aussage (vi) ergibt sich ganz analog zu (iii)!
+  
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----Funktionen-----
+
+---Rumpf---
+_F_ : _MENGE1_ \times _MENGE2_ \rightarrow _ZIELMENGE_
+
+-mögliche (Ziel-)Mengen:
+ * [0; 1]
+ * \{0; 1\}
+ * \mathbb{N}
+ * \mathbb{Q}
+ 
+---Body--- 
+_F_ \left(_ARG1_, _ARG2_\right) := _RESULT_
+
+
+---Funktions-Definition (Rumpf + Body)---
+\begin{align*}
+_F_ &: _MENGE1_ \times _MENGE2_ \rightarrow _ZIELMENGE_ \\
+_F_ \left(_ARG1_, _ARG2_\right) &:= _RESULT_
+\end{align*}
+
+
+---IF-ELSE-Funktionen---
+\[
+_F_ \left(_ARG1_, _ARG2_\right) :=\left\{%
+\begin{array}{ll}
+    1, & \hbox{falls ief} \\
+	-1, & \hbox{falls finn} \\
+    0, & \hbox{andernfalls} \\
+\end{array}%
+\right.
+\]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+
+
+-----Reihenfolge-----
+
+[Definition 1] --> \begin{Def}\label{defU}
+[Definition 2] --> \begin{Def}\label{defS}
+[Definition 3] --> \begin{Def}\label{defKoeff}
+   [Annahme 1] --> \begin{Assumption}[Digitalisierungs-Orakel]\label{assumptionOrakel}
+   [Annahme 2] --> \begin{Assumption}[Verhältnismäßigkeit der Teilnehmer]\label{assumptionRatio}
+[Definition 4] --> \begin{Def}\label{defRatio}
+[Definition 5] --> \begin{Def}\label{defPools}
+   [Theorem 1] --> \begin{Theorem}\label{theoremPools}
+[Definition 6] --> \begin{Def}\label{defGamma}
+   [Theorem 2] --> \begin{Theorem}\label{theremConnectionsCount}
+[Definition 7] --> \begin{Def}\label{defTeilnehmerPool}
+     [Lemma 1] --> \begin{Lemma}\label{lemmaPools}
+   [Theorem 3] --> \begin{Theorem}\label{theremPoolsCount}
+	
+
+
+-----Referenzierungen-----
+
+---Definitionen---
+\ref{defU}
+\ref{defS}
+\ref{defKoeff}
+\ref{defRatio}
+\ref{defPools}
+\ref{defGamma}
+\ref{defTeilnehmerPool}
+
+
+---Annahmen---
+\ref{assumptionOrakel}
+\ref{assumptionRatio}
+
+
+---Theoreme---
+\ref{theoremPools}
+	\label{theoremPools_6}
+	--> "Laut Aussage (\label{theoremPools_6}) aus Theorem \ref{theoremPools}..."
+\ref{theremConnectionsCount}
+	\label{theremConnectionsCount_1}
+	--> "Laut Aussage (\label{theremConnectionsCount_1}) aus Theorem \ref{theremConnectionsCount}..."
+\ref{theremPoolsCount}
+	
+
+
+---Lemmata---
+\ref{lemmaPools}
+
+
+
+
+
+
+
+
+
+
+
+
+

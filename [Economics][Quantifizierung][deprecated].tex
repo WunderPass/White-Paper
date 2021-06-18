@@ -1,0 +1,78 @@
+% !TEX root = paper.tex
+
+\todo{[TODO6][deprecated Inhalt verarbeiten]}
+\vspace{0.3cm}
+
+Mit diesen geschaffenen Formalisierungs-Werkzeugen lässt sich nun auch die übergeordnete WunderPass-Vision formal erfassen - und zwar indem man den Zeitpunkt $t_{*} \in T$ ihrer Erreichung benennt:
+
+\begin{Def}\label{defVision}
+
+Wir betrachten die WunderPass-Vision zu einem Zeitpunkt $t_{*} \in T$ als erreicht, falls
+
+\vspace{0.3cm}
+
+\begin{equation}
+\label{eq:1}
+  \alpha^{(t_{*})}_{ij} = 1 \textrm{ für alle } i \in \{1,...,n\} \textrm{ und } j \in \{1,...,m\}
+\end{equation}\\
+erfüllt ist. Darüber hinaus ist es noch nicht ganz klar, welche Aussage für die Zeitpunkte $t > t_{*}$ hinsichtlich der Visions-Erreichung zu treffen sei. Grundsätzlich ist es ja durchaus denkbar, die obige Voraussetzung gelte für $t > t_{*}$ nicht mehr. Bleibt die Vision in diesem Fall trotzdem als 'erreicht' zu betrachten?
+
+\end{Def}
+
+\vspace{1cm}
+
+Die gelungene Formalisierung unserer Vision mittels Definition \ref{defVision} mag einen Fortschritt hinsichtlich unserer "Business-Mathematics" darstellen, bleibt jedoch losgelöst zunächst einmal ziemlich wertlos. Zum einen ist das Erreichen der Vision im formellen Sinne der Definition \ref{defVision} weder praxistauglich noch akribisch erforderlich. Zudem bleibt zum anderen der resultierende (intrinsische) Business-Value der Visions-Erreichung bisher weiterhin nicht ohne Weiteres erkennbar.
+Vielmehr sollten wir die Anforderung von Gleichung \eqref{eq:1} als eine Messlatte unseres Fortschritts heranziehen, und eher als (unerreichbare) 100\%-Zielerreichungs-Marke betrachten. Zudem müssen wir zeitnah - obgleich die vollständige oder nur fortschreitend partielle - Zielerreichung unserer Vision in klaren, quantifizierbaren Business-Value übersetzen.
+
+Dazu definieren wir als erstes ein intuitives Maß der Zielerreichung:
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defGamma2}
+
+\begin{equation*}
+  \Gamma : T \rightarrow \mathbb{N} 
+\end{equation*}
+
+\begin{equation*}
+  \Gamma(t):= \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} 
+\end{equation*}
+
+\end{Def}
+
+\vspace{1cm}
+
+Damit liefert uns die definierte $\Gamma$-Funktion aber auch ein extrem greifbares und intuitiv nachvollziehbares Fortschrittsmaß unseres Vorhabens. Zudem fügt sich dieses perfekt in unsere mittels Definition \ref{defVision} quantifizierte Unternehmens-Vision und unterliegt einer fundamentalen (bezifferbaren) Obergrenze. Dies zeigt folgendes Lemma:
+
+\vspace{0.3cm}
+
+\begin{Lemma}
+
+Es gelten folgende Aussagen:
+
+\begin{align}
+\Gamma(t) &\leq n^{(t)} * m^{(t)} \textrm{ für alle } t \in T \tag{i} \label{eq:l1_erste} \\ 
+  \text{es gilt Gleichheit bei }  \eqref{eq:l1_erste} &\Leftrightarrow \text{ es gilt Gleichung } \eqref{eq:1} \text{ aus Def } \ref{defVision} \tag{ii} \label{eq:l1_zweite}
+\end{align}
+
+\end{Lemma}
+
+\vspace{0.3cm}
+
+Gleichung \eqref{eq:l1_zweite} ermöglicht uns die Definition \ref{defGamma} auf ein relatives Zielereichungs-Maß auszuweiten:
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defKleinGamma}
+\begin{equation*}
+  \gamma : T \rightarrow [0; 1] 
+\end{equation*}
+
+\begin{equation*}
+  \gamma(t):= \frac{\Gamma(t)}{n^{(t)} * m^{(t)}}
+\end{equation*}
+
+\end{Def}
+
+\todo{[ende TODO6]}
+\vspace{1.5cm}

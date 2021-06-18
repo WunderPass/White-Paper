@@ -6,97 +6,7 @@
 Wir wollen den Mehrwert von User-Provider-Connections mittels Wunderpass einen bezifferbaren Mehrwert verleihen und diesen fundiert argumentieren. Dazu müssen wir diesen Value messen und beziffern können. Die Ergebnisse dieses Kapitels werden insbesondere für das im Kapitel \ref{sec:wpt_reward_pool} beleuchteten "Reward-Pools" von großer Bedeutung sein. Bzw. sogar im gesamten übergeordneten Kapitel \ref{sec:eco_wpt}.
 \todo{Einleitung - Ende}
 
-\subsubsection{Grundlegende Definitionen}
-\label{sec:eco_zahlen_def}
-
-% \counterwithin{equation}{Def}
-
-Sei $t_0$ der initiale Zeitpunkt all unserer Messungen und Betrachtungen (vermutlich der Zeitpunkt des MVP-Launches).
-
-Darauf aufbauend betrachten wir das künftige Zeitintervall $T$, welches einzig an Relevanz für unser Vorhaben und alle in diesem Kapitel getätigten Ausführungen besitzt:
-
-\begin{equation*}
-  T = [t_0; \infty[
-\end{equation*}
-Der Zeitstrahl muss nicht zwingend unendlich sein. Er muss ebenfalls nicht zwingend infinitesimal fortlaufend sein und kann stattdessen je nach Kontext endlich und/oder diskret betrachtet werden. Also z. B. auch wahlweise als 
-
-\begin{equation*}
-  T = [t_0; t_{ende}]
-\end{equation*}
-
-\begin{equation*}
-  T = [t_0; t_1;...; t_{ende}]
-\end{equation*}
-definiert sein. In letzteren beiden Fällen wird jedoch $t_{ende}$ in aller Regel eine kontextbezogene (unverzichtbare) Bedeutung haben, die eine solche Definition des Zeitstrahls unverzichtbar macht. So könnte $t_{ende}$ z. B. für eine mathematisch quantifizierbare Erreichung unserer Vision stehen. \\
-
-Sei $\mathbf{t \in T}$ fortan stets ein beliebiger Zeitpunkt, zu welchem wir eine Aussage treffen möchten. \\
-
-
-Wir definieren die Anzahl aller zum Zeitpunkt $t$ potenziellen User $U^{(t)}$ überhaupt und ihre (maximale) Anzahl $n^{(t)}$ als \\
-
-\begin{Def}\label{defU}
-\begin{equation*}
-  U^{(t)} = \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{n} \right\}
-\end{equation*}
-\end{Def} 
-
-\vspace{0.3cm}
-
-
-Und ganz analog dazu ebenfalls die potenziellen Service-Provider $S^{(t)}$ und ihre (maximale) Anzahl $m^{(t)}$ als \\
-
-\begin{Def}\label{defS}
-\begin{equation*}
-  S^{(t)} = \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{m}\right\}
-\end{equation*}
-\end{Def}
-
-\vspace{0.3cm}
-
-Man beachte, dass die definierten Mengen $U^{(t)}$ und $S^{(t)}$ bzw. ihre Größe gewissermaßen den Fortschritt der Digitalisierung insgesamt beschreiben (potenzielle User brauchen einen Zugang zum digitalen Ökosystem und potenzielle Provider sind unabhängige Service-Dienstleister, die eigenmächtig darüber entscheiden, zu solchen zu werden) und in keiner Weise im Einfluss Wunderpasses stehen. Viel mehr beschreiben sie die "Umstände der Welt", mit denen WunderPass (wie alle anderen) "arbeiten" müssen.  
-
-\vspace{0.6cm}
-
-
-Nun definieren den \textbf{\textit{Connection-Koeffizienten}} zwischen den eben definierten potenziellen Usern $\mathbf{U^{(t)}}$ und den Service-Providern $\mathbf{S^{(t)}}$ zum Zeitpunkt $t$ als boolesche Funktion $\mathbf{\alpha^{(t)}}$, die über über die Tatsache \textit{"is connected"} bzw. \textit{"is not connected"} entscheidet: \\
-
-\begin{Def}\label{defKoeff}
-
-\begin{equation*}
-  \alpha^{(t)} : U^{(t)} \times S^{(t)} \rightarrow \{0; 1\} 
-\end{equation*}
-
-\[
-\alpha^{(t)}(u, s):=\left\{%
-\begin{array}{ll}
-    1, & \hbox{falls User $u \in U^{(t)}$ mit mit Provider $s \in S^{(t)}$ connectet ist} \\
-    0, & \hbox{andernfalls} \\
-\end{array}%
-\right.
-\]
-
-\vspace{1cm}
-
-Bzw. wenn man die diskreten Auslegungen der Pools $U^{(t)} = \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{n} \right\}$ und $S^{(t)} = \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{m} \right\}$ heranzieht, alternativ als
-
-\[
-\alpha^{(t)}_{ij}:=\left\{%
-\begin{array}{ll}
-    1, & \hbox{falls User $u^{(t)}_i \in U^{(t)}$ mit mit Provider $s^{(t)}_j \in S^{(t)}$ connectet ist} \\
-    0, & \hbox{andernfalls} \\
-\end{array}%
-\right.
-\]
-
-\end{Def}
-
-\vspace{0.6cm}
-
-Man beachte, dass wir bei den diskreten/Aufzählungs-basierten Definitionen oben, der Übersicht halber etwas "geschlampt" haben, indem wir - klar zeitbedingte - Indizes stillschweigend als $n$ und $m$ bezeichnet haben, gleichwohl diese korrekterweise $n^{(t)}$ und $m^{(t)}$ lauten müssten. Nur verwirrt eben ein Ausdruck wie $u^{(t)}_{n^{(t)}}$ mehr, als dieser in seiner pedantischen Korrektheit einen Mehrwert generiert. Wir werden genannte Ungenauigkeit zudem im weiteren Verlauf in gleicher Weise fortführen und gehen davon aus, der Leser wisse damit umzugehen. 
-
-\vspace{0.3cm}
-
-
+\input{[Economics][Quantifizierung][Definitionen]}    % binde die Datei '[Economics][Quantifizierung][Definitionen].tex' ein
 
 \subsubsection{Zustandsbeschreibung der digitalen Welt}
 \label{sec:eco_zahlen_zustand_digitalisierung}
@@ -115,7 +25,7 @@ Sei $t \in T$. Anstatt die (nicht wirklich berechtigte) Kenntnis der Mengen $U^{
 
 \begin{align*}
 dP &: T \rightarrow \mathbb{N} \times \mathbb{N}  \\
-dP^{(t)} &= \left(n^{(t)}, m^{(t)}\right)
+dP^{(t)} &:= \left(n^{(t)}, m^{(t)}\right)
 \end{align*}
 wobei $n^{(t)} = |U^{(t)}|$ und $m^{(t)} = |S^{(t)}|$ darstellen sollen, ohne dafür zwingend die exakten Mengen $U^{(t)}$ und $S^{(t)}$ kennen zu müssen.
 
@@ -171,7 +81,7 @@ Wir fassen Annahme \ref{assumptionRatio} in einer abschließenden Definition zus
 
 \vspace{0.3cm}
 
-\begin{Def}\label{defZiel}
+\begin{Def}\label{defRatio}
 
 Seien $t \in T$ und $dP^{(t)} = \left(n^{(t)}, m^{(t)}\right)$ wie in Annahme \ref{assumptionOrakel} beschrieben. Wie definieren die "Verhältnismäßigkeit der Teilnehmer" als
 
@@ -206,7 +116,7 @@ Aufbauend auf die bisher erzielten Ergebnisse, wollen wir nun auch dem Stand von
 
 \begin{Def}\label{defPools}
 
-Wir definieren den "connected User-Pool" $\widehat{U}^{(t)} \subseteq U^{(t)}$ und den "connected Service-Provider-Pool" $\widehat{S}^{(t)} \subseteq S^{(t)}$als
+Wir definieren den "connected User-Pool" $\widehat{U}^{(t)} \subseteq U^{(t)}$ und den "connected Service-Provider-Pool" $\widehat{S}^{(t)} \subseteq S^{(t)}$ als
 
 \begin{align}
 \widehat{U}^{(t)}:&= \left\{u \in U^{(t)} \mid \exists s^{*} \in S^{(t)} \textrm{ mit } \alpha^{(t)}(u, s^{*}) = 1 \right\} \tag{i} \\ 
@@ -242,81 +152,8 @@ Man beachte bei den diskreten/sortierten Schreibweisen der definierten Mengen $U
 
 \vspace{0.3cm}
 
-\begin{Theorem}\label{theoremPools}
+\input{[Economics][Quantifizierung][theoremPools]}    % binde die Datei '[Economics][Quantifizierung][theoremPools].tex' ein
 
-Seien $n = |U^{(t)}|$ und $m = |S^{(t)}|$ bzw. $(n, m) = dP^{(t)}$. Dann gelten folgende Aussagen:
-
-\begin{align}
-&\widehat{n} \leq n \tag{i.u} \\ 
-&\widehat{m} \leq m \tag{i.s} \\
-&\widehat{n} = n \Leftrightarrow \widehat{U}^{(t)} = U^{(t)} \tag{ii.u} \\
-&\widehat{m} = m \Leftrightarrow \widehat{S}^{(t)} = S^{(t)} \tag{ii.s} \\
-&\widehat{n} * \widehat{m} > 0 \Leftrightarrow \widehat{U}^{(t)} \neq \emptyset \Leftrightarrow \widehat{S}^{(t)} \neq \emptyset \tag{iii} \\
-&\widehat{n} * \widehat{m} = 0 \Leftrightarrow \widehat{U}^{(t)} = \emptyset = \widehat{S}^{(t)} \tag{iv} \\
-&\widehat{u}^{(t)} \in \widehat{U}^{(t)} \Leftrightarrow \exists \widehat{s} \in \widehat{S}^{(t)} \textrm{ mit } \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) = 1 \tag{v} \\
-&\widehat{s}^{(t)} \in \widehat{S}^{(t)} \Leftrightarrow \exists \widehat{u} \in \widehat{U}^{(t)} \textrm{ mit } \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) = 1 \tag{vi} \label{theoremPools_6}
-\end{align}
-
-\end{Theorem}
-
-\vspace{0.3cm}
-
-\begin{proof}[Beweis] \textrm{ }
-
-\vspace{0.3cm}
-
-(i) und (ii) sind (in jeweils beiden Varianten trivial!
-
-\vspace{0.3cm}
-
-zu (iii): Zunächst einmal ist
-
-\begin{align*}
-\widehat{n} * \widehat{m} > 0 &\Leftrightarrow \widehat{n}, \widehat{m} > 0 \\
-&\Leftrightarrow |\widehat{U}^{(t)}|, |\widehat{S}^{(t)}| > 0 \\
-&\Leftrightarrow \widehat{U}^{(t)}, \widehat{S}^{(t)} \neq \emptyset
-\end{align*}
-
-\vspace{0.3cm}
-
-Es bleibt also nur noch $\widehat{U}^{(t)} \neq \emptyset \Leftrightarrow \widehat{S}^{(t)} \neq \emptyset$ zu beweisen. Wir beschränken uns hierbei lediglich auf "$\Rightarrow$". Die Rückrichtung erfolgt gänzlich analog. Sei also $\widehat{U}^{(t)} \neq \emptyset$.
-
-\begin{align*}
-\widehat{U}^{(t)} \neq \emptyset &\Rightarrow \exists u^{*} \in \widehat{U}^{(t)} \\
-&\xRightarrow{Def \ref{defPools}} \exists s^{*} \in S^{(t)} \textrm{ mit } \alpha^{(t)}(u^{*}, s^{*}) = 1 \\
-&\Rightarrow s^{*} \in \widehat{S}^{(t)} \\
-&\Rightarrow \widehat{S}^{(t)} \neq \emptyset
-\end{align*}
-
-\vspace{0.3cm}
-
-zu (iv): 
-"$\Leftarrow$" ist gänzlich trivial. Die Richtung "$\Rightarrow$" folgt dagegen aus
-
-\begin{align*}
-\widehat{n} * \widehat{m} = 0 &\Rightarrow \textrm{ mindestens eine der Mengen } \widehat{U}^{(t)}, \widehat{S}^{(t)} \textrm{ ist leer } \\
-&\xRightarrow{(iii)} \widehat{U}^{(t)}, \widehat{S}^{(t)} = \emptyset
-\end{align*}
-
-\vspace{0.3cm}
-
-zu (v): Die Richtung "$\Leftarrow$" folgt trivial aus Def \ref{defPools} und $\widehat{s} \in \widehat{S}^{(t)} \subseteq {S}^{(t)}$.
-
-Für "$\Rightarrow$" mögen wir annehmen 
-
-\begin{equation*}
-  \exists u^{*} \in \widehat{U}^{(t)} \textrm{ mit } \forall \widehat{s} \in \widehat{S}^{(t)} \textrm{ gilt } \alpha^{(t)}(u^{*}, \widehat{s}) = 0
-\end{equation*}
-Da jedoch laut Annahme $u^{*} \in \widehat{U}^{(t)}$, muss aufgrund von Def \ref{defPools} ein $s^{*} \in S^{(t)} \setminus \widehat{S}^{(t)}$ mit $\alpha^{(t)}(u^{*}, s^{*}) = 1$ existieren. Da $u^{*} \in \widehat{U}^{(t)} \subseteq {U}^{(t)}$, muss $s^{*}$ jedoch laut Def \ref{defPools} auch in $\widehat{S}^{(t)}$ liegen. Im Widerspruch zu $s^{*} \in S^{(t)} \setminus \widehat{S}^{(t)}$.
-
-\vspace{0.3cm}
-
-Aussage (vi) ergibt sich ganz analog zu (v)!
-  
-\end{proof}
-
-
-\vspace{0.3cm}
 
 Es ist klar, dass WunderPass sich in gewisser Weise an den definierten numerischen Messgrößen ihrer angebundenen Teilnehmer $\widehat{n}$ und $\widehat{m}$ messen können wird. Zusätzlich dazu möchten wir ein - womöglich deutlich relevanteres - numerisches Maß formalisieren. Nämlich die intuitive und sehr simple KPI "Gesamtzahl bestehender User-to-Provider-Connections" zum Zeitpunkt $t \in T$.
 
@@ -370,10 +207,55 @@ Aussage (iv) beschreibt dagegen quasi eine "\textbf{\textit{Voll-Vernetzung}}" d
 
 \vspace{0.3cm}
 
+
 \begin{proof}[Beweis] \textrm{ }
 
-\todo{[TODO2][Beweis]}
+\vspace{0.3cm}
 
+Die Aussage (i) ist intuitiv nahezu trivial. Das explizite Vorrechnen dagegen etwas aufwendig, erfolgt aber in Grunde sehr ähnlich wie der Beweis der Aussagen (v) und (vi) des Theorems \ref{theoremPools}.
+
+\vspace{0.4cm}
+
+zu (ii): 
+
+$\Gamma(t) \leq \widehat{n} * \widehat{m}$ ergibt sich aus
+\begin{equation*}
+  \Gamma(t) = \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \leq \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} 1 = \widehat{n} * \widehat{m}
+\end{equation*}
+
+\vspace{0.3cm}
+
+Nun zeigen wir $\widehat{n} \leq \Gamma(t)$. Für $n = 0$ ergibt sich die Aussage aus Punkt (iv) aus Theorem \ref{theoremPools}. Sei also $n > 0$. Dann ist
+
+\begin{align*}
+\Gamma(t) &\overset{\text{(i)}}{=} \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \\
+&\overset{(Def \ref{defPools})}{\geq} \sum_{i=1}^{\widehat{n}} 1 = \widehat{n}
+\end{align*}
+
+\vspace{0.4cm}
+
+zu (iii): 
+"$\Leftarrow$" ist trivial. 
+
+\vspace{0.4cm}
+
+Zu "$\Rightarrow$": Sei $\widehat{n} = \Gamma(t)$. Angenommen es gäbe ein $i^{*} \in \left\{1;...; \widehat{n} \right\}$ mit $\sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{i^{*}j} > 1$. Dann müsste es aufgrund der Annahme aber auch ein $i^{**} \in \left\{1;...; \widehat{n} \right\}$ mit $\sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{i^{**}j} < 1$ also $\sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{i^{**}j} = 0$ geben. In diesem Fall wäre aber $\widehat{u}^{(t)}_{i^{**}} \notin \widehat{U}^{(t)}$ und somit auch $i^{**} \notin \left\{1;...; \widehat{n} \right\}$. Widerspruch!
+
+\vspace{0.4cm}
+
+zu (iv): 
+"$\Leftarrow$" ist wieder trivial.
+
+\vspace{0.4cm} 
+
+Zu "$\Rightarrow$": Es gelte also $\Gamma(t) = \widehat{n} * \widehat{m}$. Angenommen es gäbe ein $i^{*} \in \{1,...,\widehat{n}\}$ und ein $j^{*} \in \{1,...,\widehat{m}\}$, sodass $\alpha^{(t)}_{i^{*}j^{*}} = 0$. Dann wäre unter Gültigkeit der Aussage (i)
+
+\begin{align*}
+\widehat{n} * \widehat{m} &= \Gamma(t) = \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \\
+&\leq \left(\sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} 1 \right) - 1 = \widehat{n} * \widehat{m} - 1 < \widehat{n} * \widehat{m} \\
+\end{align*}
+Widerspruch!
+  
 \end{proof}
 \vspace{1cm}
 
@@ -415,7 +297,6 @@ Von daher benötigen wir noch eine weitere Präzisierung in Form von
   
 \end{itemize}
 
-
 \todo{[ende TODO4.1]}
 \vspace{1cm}
 
@@ -447,7 +328,7 @@ und
 
 \vspace{0.6cm}
 
-\begin{Lemma}
+\begin{Lemma}\label{lemmaPools}
 
 \begin{align}
 \bigcup_{\widehat{u} \in \widehat{U}^{(t)}} \left(accounts^{(t)} (\widehat{u})\right) = \widehat{S}^{(t)} \tag{i} \\
@@ -480,7 +361,7 @@ Aussage (ii) folgt ganz analog!
 \vspace{0.3cm}
 
 
-\begin{Theorem}
+\begin{Theorem}\label{theremPoolsCount}
 
 \begin{equation*}
 \sum_{\widehat{u} \in \widehat{U}^{(t)}} |accounts^{(t)} (\widehat{u})| = \sum_{\widehat{s} \in \widehat{S}^{(t)}} |userbase^{(t)} (\widehat{s})| = \Gamma(t)
@@ -522,136 +403,12 @@ Die zweite Gleichheit folgt analog, falls man die Kommutativität der Def \ref{d
 
 
 
+\input{[Economics][Quantifizierung][deprecated]}    % binde die Datei '[Economics][Quantifizierung][deprecated].tex' ein
 
 
 
 
 
-
-
-
-
-
-
-\todo{[TODO6][deprecated Inhalt verarbeiten]}
-\vspace{0.3cm}
-
-Mit diesen geschaffenen Formalisierungs-Werkzeugen lässt sich nun auch die übergeordnete WunderPass-Vision formal erfassen - und zwar indem man den Zeitpunkt $t_{*} \in T$ ihrer Erreichung benennt:
-
-\begin{Def}\label{defVision}
-
-Wir betrachten die WunderPass-Vision zu einem Zeitpunkt $t_{*} \in T$ als erreicht, falls
-
-\vspace{0.3cm}
-
-\begin{equation}
-\label{eq:1}
-  \alpha^{(t_{*})}_{ij} = 1 \textrm{ für alle } i \in \{1,...,n\} \textrm{ und } j \in \{1,...,m\}
-\end{equation}\\
-erfüllt ist. Darüber hinaus ist es noch nicht ganz klar, welche Aussage für die Zeitpunkte $t > t_{*}$ hinsichtlich der Visions-Erreichung zu treffen sei. Grundsätzlich ist es ja durchaus denkbar, die obige Voraussetzung gelte für $t > t_{*}$ nicht mehr. Bleibt die Vision in diesem Fall trotzdem als 'erreicht' zu betrachten?
-
-\end{Def}
-
-\vspace{1cm}
-
-Die gelungene Formalisierung unserer Vision mittels Definition \ref{defVision} mag einen Fortschritt hinsichtlich unserer "Business-Mathematics" darstellen, bleibt jedoch losgelöst zunächst einmal ziemlich wertlos. Zum einen ist das Erreichen der Vision im formellen Sinne der Definition \ref{defVision} weder praxistauglich noch akribisch erforderlich. Zudem bleibt zum anderen der resultierende (intrinsische) Business-Value der Visions-Erreichung bisher weiterhin nicht ohne Weiteres erkennbar.
-Vielmehr sollten wir die Anforderung von Gleichung \eqref{eq:1} als eine Messlatte unseres Fortschritts heranziehen, und eher als (unerreichbare) 100\%-Zielerreichungs-Marke betrachten. Zudem müssen wir zeitnah - obgleich die vollständige oder nur fortschreitend partielle - Zielerreichung unserer Vision in klaren, quantifizierbaren Business-Value übersetzen.
-
-Dazu definieren wir als erstes ein intuitives Maß der Zielerreichung:
-
-\vspace{0.3cm}
-
-\begin{Def}\label{defGamma2}
-
-\begin{equation*}
-  \Gamma : T \rightarrow \mathbb{N} 
-\end{equation*}
-
-\begin{equation*}
-  \Gamma(t):= \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} 
-\end{equation*}
-
-\end{Def}
-
-\vspace{1cm}
-
-Damit liefert uns die definierte $\Gamma$-Funktion aber auch ein extrem greifbares und intuitiv nachvollziehbares Fortschrittsmaß unseres Vorhabens. Zudem fügt sich dieses perfekt in unsere mittels Definition \ref{defVision} quantifizierte Unternehmens-Vision und unterliegt einer fundamentalen (bezifferbaren) Obergrenze. Dies zeigt folgendes Lemma:
-
-\vspace{0.3cm}
-
-\begin{Lemma}
-
-Es gelten folgende Aussagen:
-
-\begin{align}
-\Gamma(t) &\leq n^{(t)} * m^{(t)} \textrm{ für alle } t \in T \tag{i} \label{eq:l1_erste} \\ 
-  \text{es gilt Gleichheit bei }  \eqref{eq:l1_erste} &\Leftrightarrow \text{ es gilt Gleichung } \eqref{eq:1} \text{ aus Def } \ref{defVision} \tag{ii} \label{eq:l1_zweite}
-\end{align}
-
-\end{Lemma}
-
-\vspace{0.3cm}
-
-\begin{proof}[Beweis] \textrm{ }
-
-\vspace{0.3cm}
-
-  zu \eqref{eq:l1_erste}: 
-  
-\begin{equation*}
-  \Gamma(t) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \leq \sum_{i=1}^n \sum_{j=1}^m 1 = n^{(t)} * m^{(t)}
-\end{equation*}
-
-\vspace{0.3cm} 
-
-zu \eqref{eq:l1_zweite}: 
-
-\begin{itemize}
-  \item "$\Leftarrow$" ist trivial und folgt direkt aus Definition \ref{defVision}.
-  \item "$\Rightarrow$": Es gelte also $\Gamma(t) = n^{(t)} * m^{(t)}$.
-  
-  Angenommen Gleichung \eqref{eq:1} wäre nicht erfüllt. Dann gäbe es ein $i \in \{1,...,n\}$ und ein $j \in \{1,...,m\}$, sodass $\alpha^{(t)}_{ij} = 0$. Aufgrund der Gültigkeit von \eqref{eq:l1_erste} hätte dies zur Folge, es gelte
-  
-\begin{equation*}
-  n^{(t)} * m^{(t)} = \Gamma(t) = \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \leq (\sum_{i=1}^n \sum_{j=1}^m 1) - 1 = n^{(t)} * m^{(t)} - 1
-\end{equation*}  
-was einem Widerspruch gleichkäme, weshalb die Annahme nicht möglich sein.
-  
-\end{itemize}
-  
-\end{proof}
-
-\vspace{0.3cm}
-
-Gleichung \eqref{eq:l1_zweite} ermöglicht uns die Definition \ref{defGamma} auf ein relatives Zielereichungs-Maß auszuweiten:
-
-\vspace{0.3cm}
-
-\begin{Def}\label{defKleinGamma}
-\begin{equation*}
-  \gamma : T \rightarrow [0; 1] 
-\end{equation*}
-
-\begin{equation*}
-  \gamma(t):= \frac{\Gamma(t)}{n^{(t)} * m^{(t)}}
-\end{equation*}
-
-\end{Def}
-
-\todo{[ende TODO6]}
-\vspace{1cm}
-
-
-
-
-
-
-
-
-
-
-
-\vspace{1cm}
 
 \todo{Ab hier WIP}
 \vspace{1cm}
