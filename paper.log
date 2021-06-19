@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  19 JUN 2021 03:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  19 JUN 2021 03:45
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -1327,7 +1327,7 @@ in-di-vidu-ell un-berucksichtigt.
  []
 
 [22]
-Overfull \hbox (18.73064pt too wide) detected at line 521
+Overfull \hbox (20.85979pt too wide) detected at line 521
 \OML/cmm/m/it/10.95 [] \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 [] \OT1/cmr/
 m/n/10.95 = 1[]\OML/cmm/m/it/10.95 u[]; u[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it
 /10.95 U[][]s[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 S[][]
@@ -1345,7 +1345,7 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 Here is how much of TeX's memory you used:
  24666 strings out of 479334
  471164 string characters out of 2857085
- 902507 words of memory out of 3000000
+ 902508 words of memory out of 3000000
  41550 multiletter control sequences out of 15000+200000
  414133 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1372,7 +1372,7 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users
 /Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 <C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb>
-Output written on paper.pdf (25 pages, 309976 bytes).
+Output written on paper.pdf (25 pages, 309971 bytes).
 PDF statistics:
  566 PDF objects out of 1000 (max. 8388607)
  98 named destinations out of 1000 (max. 500000)
