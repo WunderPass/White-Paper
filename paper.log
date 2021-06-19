@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  19 JUN 2021 03:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  19 JUN 2021 03:33
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -957,7 +957,17 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 \c@Lemma=\count312
 \c@Assumption=\count313
 \c@Example=\count314
- (paper.aux)
+ (paper.aux
+
+LaTeX Warning: Label `defTeilnehmerPool' multiply defined.
+
+
+LaTeX Warning: Label `lemmaPools' multiply defined.
+
+
+LaTeX Warning: Label `theremPoolsCount' multiply defined.
+
+)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
@@ -1084,6 +1094,13 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 32.
 
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 32.
+
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
@@ -1094,8 +1111,6 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 43.
-[3]
-Package mdframed Info: Not enough space on this page on input line 43.
 
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
@@ -1120,18 +1135,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 76.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 76.
  [5]
+Package mdframed Info: Not enough space on this page on input line 76.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 84.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 102.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
 (mdframed)              on input line 102.
  [6] ([Economics][Quantifizierung][WP][Status quo].tex
 Package mdframed Info: mdframed detected package amsthm 
@@ -1162,15 +1172,13 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 102.
  [9] [10])
-([Economics][Quantifizierung][WP][Messbarkeit].tex
+([Economics][Quantifizierung][WP][Messbarkeit].tex [11]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 21.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
- [11]
-Package mdframed Info: Not enough space on this page on input line 44.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 53.
@@ -1201,33 +1209,33 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 157.
 [14]
+Package mdframed Info: Not enough space on this page on input line 157.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 161.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 168.
+ [15]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 194.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 200.
- [15]
+
 Overfull \hbox (10.98387pt too wide) in paragraph at lines 234--235
 \OT1/cmr/m/n/10.95 jew-eils in-ner-halb der bei-den Teil-nehmerk-lassen $[]$ un
 d $[]$ (siehe [][TODO4]["Sattigung"][]).
  []
 
+[16]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 238.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 253.
-Package mdframed Info: Not enough space on this page on input line 253.
-[16]
-Package mdframed Info: Not enough space on this page on input line 253.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 257.
@@ -1262,7 +1270,7 @@ Package mdframed Info: mdframed detected package amsthm
 
 Overfull \hbox (3.1983pt too wide) in paragraph at lines 24--26
 []\OT1/cmr/m/n/10.95 Die gelun-gene For-mal-isierung un-serer Vi-sion mit-tels 
-Def-i-ni-tion [][]10[][] mag einen Fortschritt
+Def-i-ni-tion [][]11[][] mag einen Fortschritt
  []
 
 Package mdframed Info: mdframed detected package amsthm 
@@ -1329,19 +1337,19 @@ m/n/10.95 = 1[]\OML/cmm/m/it/10.95 u[]; u[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it
 ([Noch mehr Dinge].tex) ([Project Guard].tex) ([Community].tex)
 ([Zusammenfassung].tex) [24] [25] (paper.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24663 strings out of 479334
- 471099 string characters out of 2857085
- 905442 words of memory out of 3000000
- 41547 multiletter control sequences out of 15000+200000
+ 24666 strings out of 479334
+ 471164 string characters out of 2857085
+ 902507 words of memory out of 3000000
+ 41550 multiletter control sequences out of 15000+200000
  414133 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,13n,138p,10602b,1020s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 133i,13n,138p,10602b,1019s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Slava\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1364,9 +1372,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users
 /Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 <C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb>
-Output written on paper.pdf (25 pages, 309740 bytes).
+Output written on paper.pdf (25 pages, 309976 bytes).
 PDF statistics:
- 565 PDF objects out of 1000 (max. 8388607)
+ 566 PDF objects out of 1000 (max. 8388607)
  98 named destinations out of 1000 (max. 500000)
  261 words of extra memory for PDF output out of 10000 (max. 10000000)
 
