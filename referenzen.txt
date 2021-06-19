@@ -11,8 +11,10 @@
 [Definition 5] --> \begin{Def}\label{defPools}
    [Theorem 1] --> \begin{Theorem}\label{theoremPools}
 [Definition 6] --> \begin{Def}\label{defGamma}
+[Definition 7] --> \begin{Def}\label{defRelation}
+[Definition 8] --> \begin{Def}\label{defRelationen}
    [Theorem 2] --> \begin{Theorem}\label{theremConnectionsCount}
-[Definition 7] --> \begin{Def}\label{defTeilnehmerPool}
+[Definition 9] --> \begin{Def}\label{defTeilnehmerPool}
      [Lemma 1] --> \begin{Lemma}\label{lemmaPools}
    [Theorem 3] --> \begin{Theorem}\label{theremPoolsCount}
 	
@@ -27,6 +29,8 @@
 \ref{defRatio}
 \ref{defPools}
 \ref{defGamma}
+\ref{defRelation}
+\ref{defRelationen}
 \ref{defTeilnehmerPool}
 
 

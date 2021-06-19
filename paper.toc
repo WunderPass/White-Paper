@@ -10,22 +10,28 @@
 \contentsline {subsection}{\numberline {7.3}Quantifizierung}{3}{subsection.7.3}%
 \contentsline {subsubsection}{\numberline {7.3.1}Grundlegende Definitionen}{3}{subsubsection.7.3.1}%
 \contentsline {subsubsection}{\numberline {7.3.2}Zustandsbeschreibung der digitalen Welt}{5}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Zustandsbeschreibung WunderPass}{7}{subsubsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.4}Business-Plan in Mathematics}{16}{subsubsection.7.3.4}%
-\contentsline {subsubsection}{\numberline {7.3.5}Quantifizierung des Status quo}{16}{subsubsection.7.3.5}%
-\contentsline {paragraph}{\nonumberline Vernetzung \& Netzwerk-Effekt}{16}{paragraph*.3}%
-\contentsline {subsubsection}{\numberline {7.3.6}Individuelle Wertschöpfung der Teilneher}{19}{subsubsection.7.3.6}%
-\contentsline {subsection}{\numberline {7.4}Token-Economics (WPT)}{19}{subsection.7.4}%
-\contentsline {subsubsection}{\numberline {7.4.1}Einleitung}{19}{subsubsection.7.4.1}%
-\contentsline {subsubsection}{\numberline {7.4.2}Kreislauf}{19}{subsubsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {7.4.3}Token-Design}{19}{subsubsection.7.4.3}%
-\contentsline {subsubsection}{\numberline {7.4.4}Incentivierung}{19}{subsubsection.7.4.4}%
-\contentsline {subsubsection}{\numberline {7.4.5}Milestones-Reward-Pool}{19}{subsubsection.7.4.5}%
-\contentsline {subsubsection}{\numberline {7.4.6}WPT in Zahlen}{19}{subsubsection.7.4.6}%
-\contentsline {subsubsection}{\numberline {7.4.7}Fazit}{19}{subsubsection.7.4.7}%
-\contentsline {subsection}{\numberline {7.5}Fazit}{19}{subsection.7.5}%
-\contentsline {section}{\numberline {8}Noch mehr Dinge}{20}{section.8}%
-\contentsline {section}{\numberline {9}Project 'Guard'}{20}{section.9}%
-\contentsline {section}{\numberline {10}Community}{20}{section.10}%
-\contentsline {section}{\numberline {11}Zusammenfassung}{20}{section.11}%
+\contentsline {subsubsection}{\numberline {7.3.3}Zustandsbeschreibung WunderPass - simple Betrachtung}{7}{subsubsection.7.3.3}%
+\contentsline {paragraph}{\nonumberline Status quo}{7}{paragraph*.3}%
+\contentsline {paragraph}{\nonumberline Messbarkeit Status quo}{11}{paragraph*.5}%
+\contentsline {paragraph}{\nonumberline Fazit}{13}{paragraph*.7}%
+\contentsline {subsubsection}{\numberline {7.3.4}Zustandsbeschreibung WunderPass - detaillierte Sicht}{14}{subsubsection.7.3.4}%
+\contentsline {paragraph}{\nonumberline Teilnehmer}{14}{paragraph*.9}%
+\contentsline {subsubsection}{\numberline {7.3.5}Other Stuff}{19}{subsubsection.7.3.5}%
+\contentsline {subsubsection}{\numberline {7.3.6}Business-Plan in Mathematics}{21}{subsubsection.7.3.6}%
+\contentsline {subsubsection}{\numberline {7.3.7}Quantifizierung des Status quo}{22}{subsubsection.7.3.7}%
+\contentsline {paragraph}{\nonumberline Vernetzung \& Netzwerk-Effekt}{22}{paragraph*.11}%
+\contentsline {subsubsection}{\numberline {7.3.8}Individuelle Wertschöpfung der Teilneher}{23}{subsubsection.7.3.8}%
+\contentsline {subsection}{\numberline {7.4}Token-Economics (WPT)}{24}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Einleitung}{24}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}Kreislauf}{24}{subsubsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.3}Token-Design}{24}{subsubsection.7.4.3}%
+\contentsline {subsubsection}{\numberline {7.4.4}Incentivierung}{24}{subsubsection.7.4.4}%
+\contentsline {subsubsection}{\numberline {7.4.5}Milestones-Reward-Pool}{24}{subsubsection.7.4.5}%
+\contentsline {subsubsection}{\numberline {7.4.6}WPT in Zahlen}{24}{subsubsection.7.4.6}%
+\contentsline {subsubsection}{\numberline {7.4.7}Fazit}{24}{subsubsection.7.4.7}%
+\contentsline {subsection}{\numberline {7.5}Fazit}{24}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Noch mehr Dinge}{24}{section.8}%
+\contentsline {section}{\numberline {9}Project 'Guard'}{24}{section.9}%
+\contentsline {section}{\numberline {10}Community}{25}{section.10}%
+\contentsline {section}{\numberline {11}Zusammenfassung}{25}{section.11}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -107,202 +107,32 @@ ausgehen.
 
 
 
-\subsubsection{Zustandsbeschreibung WunderPass}
+\subsubsection{Zustandsbeschreibung WunderPass - simple Betrachtung}
 \label{sec:eco_zahlen_zustand_wp}
 
-Aufbauend auf die bisher erzielten Ergebnisse, wollen wir nun auch dem Stand von WunderPass für einen beliebigen Zeitpunkt $t \in T$ einen formalisierten Charakter verleihen und definieren zunächst einmal mittels der in Def \ref{defKoeff} beschriebenen Koeffizienten $\alpha^{(t)}_{ij}$ die sogenannten "connected Pools" von Usern und Service-Providern zum Zeitpunkt $t \in T$:
+\input{[Economics][Quantifizierung][WP][Status quo]} % binde die Datei '[Economics][Quantifizierung][WP][Status quo].tex' ein
+
+\input{[Economics][Quantifizierung][WP][Messbarkeit]} % binde die Datei '[Economics][Quantifizierung][WP][Messbarkeit].tex' ein
+
+\input{[Economics][Quantifizierung][WP][Fazit]} % binde die Datei '[Economics][Quantifizierung][WP][Fazit].tex' ein
+
+
+
+
+\subsubsection{Zustandsbeschreibung WunderPass - detaillierte Sicht}
+\label{sec:eco_zahlen_zustand_wp_advanced}
+
+
+\paragraph{Teilnehmer} 
+\label{sec:eco_zahlen_zustand_wp_advanced_teilnehmer}
+\textrm{ }
 
 \vspace{0.3cm}
 
-\begin{Def}\label{defPools}
-
-Wir definieren den "connected User-Pool" $\widehat{U}^{(t)} \subseteq U^{(t)}$ und den "connected Service-Provider-Pool" $\widehat{S}^{(t)} \subseteq S^{(t)}$ als
-
-\begin{align}
-\widehat{U}^{(t)}:&= \left\{u \in U^{(t)} \mid \exists s^{*} \in S^{(t)} \textrm{ mit } \alpha^{(t)}(u, s^{*}) = 1 \right\} \tag{i} \\ 
-\widehat{S}^{(t)}:&= \left\{s \in S^{(t)} \mid \exists u^{*} \in U^{(t)} \textrm{ mit } \alpha^{(t)}(u^{*}, s) = 1 \right\} \tag{ii}
-\end{align}
-
-\vspace{0.3cm}
-
-Für die diskrete/sortierte Variante ist dies wieder gleichbedeutend mit
-\begin{align}
-\widehat{U}^{(t)} &= \left\{ \widehat{u}^{(t)}_1; \widehat{u}^{(t)}_2;...; \widehat{u}^{(t)}_{\widehat{n}} \right\} \tag{iii} \\ 
-\widehat{S}^{(t)} &= \left\{ \widehat{s}^{(t)}_1; \widehat{s}^{(t)}_2;...; \widehat{s}^{(t)}_{\widehat{m}}\right\} \tag{iv}
-\end{align}
-
-\vspace{0.6cm}
-
-Der Wert $\widehat{n} \leq n$ beschreibt die Größe des connecteten User-Pools - also die Anzahl $\widehat{n}$ der tatsächlich mit WunderPass connecteten User unter den $n$ potenziellen Usern. Analog steht $\widehat{m} \leq m$ für die Anzahl der tatsächlich mit WunderPass connecteten Prividern. Der Vollständigkeit halber übertragen wir das aus Def \ref{defKoeff} stammende Verständnis der Connection-Koeffizienten auch auf die eben definierten "connected Pools"
-
-\[
-\widehat{\alpha}^{(t)}_{ij}:=\left\{%
-\begin{array}{ll}
-    1, & \hbox{falls User $\widehat{u}^{(t)}_i \in \widehat{U}^{(t)}$ mit mit Provider $\widehat{s}^{(t)}_j \in \widehat{S}^{(t)}$ connectet ist} \\
-    0, & \hbox{andernfalls} \\
-\end{array}%
-\right. \tag{v}
-\] 
-
-\end{Def}
-
-\vspace{0.6cm}
-
-Man beachte bei den diskreten/sortierten Schreibweisen der definierten Mengen $U^{(t)}$, $\widehat{U}^{(t)}$, $S^{(t)}$ und $\widehat{S}^{(t)}$, dass in aller Regel $u^{(t)}_i \neq \widehat{u}^{(t)}_i$ und $s^{(t)}_j \neq \widehat{s}^{(t)}_j$ gelten. Die sich teils trivial aus den letzten Definitionen ergebenden Zusammenhänge fallen wir in Form eines Theorems zusammen:
-
-\vspace{0.3cm}
-
-\input{[Economics][Quantifizierung][theoremPools]}    % binde die Datei '[Economics][Quantifizierung][theoremPools].tex' ein
-
-
-Es ist klar, dass WunderPass sich in gewisser Weise an den definierten numerischen Messgrößen ihrer angebundenen Teilnehmer $\widehat{n}$ und $\widehat{m}$ messen können wird. Zusätzlich dazu möchten wir ein - womöglich deutlich relevanteres - numerisches Maß formalisieren. Nämlich die intuitive und sehr simple KPI "Gesamtzahl bestehender User-to-Provider-Connections" zum Zeitpunkt $t \in T$.
-
-\vspace{0.3cm}
-
-\begin{Def}\label{defGamma}
-
-\begin{equation*}
-  \Gamma : T \rightarrow \mathbb{N} 
-\end{equation*}
-
-\begin{equation*}
-  \Gamma(t):= \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \textrm{ mit } (n, m) = \left(n^{(t)}, m^{(t)}\right) = dP^{(t)}
-\end{equation*}
-
-\end{Def}
-
-\vspace{0.6cm}
-
-Nun beweisen wir folgende sich ergebende Zusammenhänge:
-
-\begin{Theorem}\label{theremConnectionsCount}
-
-Sei $t \in T$ ein beliebiger Zeitpunkt, $(n, m) = dP^{(t)}$ und $\widehat{U}^{(t)} = \left\{ \widehat{u}^{(t)}_1; \widehat{u}^{(t)}_2;...; \widehat{u}^{(t)}_{\widehat{n}} \right\}$ und $\widehat{S}^{(t)} = \left\{ \widehat{s}^{(t)}_1; \widehat{s}^{(t)}_2;...; \widehat{s}^{(t)}_{\widehat{m}} \right\}$ die connecteten Teilnehmer-Pools mit $\widehat{n} < n$ sowie $\widehat{m} < m$.
-
-Zudem soll in Anlehnung an Annahme \ref{assumptionRatio} $\widehat{m} << \widehat{n}$ gelten. Dann gelten zusätzlich auch folgende Aussagen:
-
-\vspace{0.3cm}
-
-\begin{align*}
-\Gamma(t)&= \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \tag{i} \label{theremConnectionsCount_1} \\ 
-\widehat{n} &\leq \Gamma(t) \leq \widehat{n} * \widehat{m} \tag{ii} \\
-\widehat{n} = \Gamma(t) &\Leftrightarrow \forall i \in \left\{1;...; \widehat{n} \right\}
-\textrm{ gilt } \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} = 1 \tag{iii} \\
-\Gamma(t) = \widehat{n} * \widehat{m} &\Leftrightarrow \widehat{\alpha}^{(t)}_{ij} = 1 \textrm{  } \forall i \in \left\{1;...; \widehat{n} \right\} \textrm{ und } \forall j \in \left\{1;...; \widehat{m} \right\} \tag{iv}
-\end{align*}
-
-\vspace{0.3cm}
-
-Man beachte, Aussage (ii) impliziert insbesondere
-
-\begin{equation*}
-\Gamma(t) = 0 \Leftrightarrow \widehat{n} = 0 \Leftrightarrow \widehat{U}^{(t)} = \emptyset  \Leftrightarrow \widehat{S}^{(t)} = \emptyset
-\end{equation*}
-
-\vspace{0.3cm}
-
-Aussage (iv) beschreibt dagegen quasi eine "\textbf{\textit{Voll-Vernetzung}}" der aktuell connecteten Teilnehmer!
-
-\end{Theorem}
-
-\vspace{0.3cm}
-
-
-\begin{proof}[Beweis] \textrm{ }
-
-\vspace{0.3cm}
-
-Die Aussage (i) ist intuitiv nahezu trivial. Das explizite Vorrechnen dagegen etwas aufwendig, erfolgt aber in Grunde sehr ähnlich wie der Beweis der Aussagen (v) und (vi) des Theorems \ref{theoremPools}.
-
-\vspace{0.4cm}
-
-zu (ii): 
-
-$\Gamma(t) \leq \widehat{n} * \widehat{m}$ ergibt sich aus
-\begin{equation*}
-  \Gamma(t) = \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \leq \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} 1 = \widehat{n} * \widehat{m}
-\end{equation*}
-
-\vspace{0.3cm}
-
-Nun zeigen wir $\widehat{n} \leq \Gamma(t)$. Für $n = 0$ ergibt sich die Aussage aus Punkt (iv) aus Theorem \ref{theoremPools}. Sei also $n > 0$. Dann ist
-
-\begin{align*}
-\Gamma(t) &\overset{\text{(i)}}{=} \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \\
-&\overset{(Def \ref{defPools})}{\geq} \sum_{i=1}^{\widehat{n}} 1 = \widehat{n}
-\end{align*}
-
-\vspace{0.4cm}
-
-zu (iii): 
-"$\Leftarrow$" ist trivial. 
-
-\vspace{0.4cm}
-
-Zu "$\Rightarrow$": Sei $\widehat{n} = \Gamma(t)$. Angenommen es gäbe ein $i^{*} \in \left\{1;...; \widehat{n} \right\}$ mit $\sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{i^{*}j} > 1$. Dann müsste es aufgrund der Annahme aber auch ein $i^{**} \in \left\{1;...; \widehat{n} \right\}$ mit $\sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{i^{**}j} < 1$ also $\sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{i^{**}j} = 0$ geben. In diesem Fall wäre aber $\widehat{u}^{(t)}_{i^{**}} \notin \widehat{U}^{(t)}$ und somit auch $i^{**} \notin \left\{1;...; \widehat{n} \right\}$. Widerspruch!
-
-\vspace{0.4cm}
-
-zu (iv): 
-"$\Leftarrow$" ist wieder trivial.
-
-\vspace{0.4cm} 
-
-Zu "$\Rightarrow$": Es gelte also $\Gamma(t) = \widehat{n} * \widehat{m}$. Angenommen es gäbe ein $i^{*} \in \{1,...,\widehat{n}\}$ und ein $j^{*} \in \{1,...,\widehat{m}\}$, sodass $\alpha^{(t)}_{i^{*}j^{*}} = 0$. Dann wäre unter Gültigkeit der Aussage (i)
-
-\begin{align*}
-\widehat{n} * \widehat{m} &= \Gamma(t) = \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \\
-&\leq \left(\sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} 1 \right) - 1 = \widehat{n} * \widehat{m} - 1 < \widehat{n} * \widehat{m} \\
-\end{align*}
-Widerspruch!
-  
-\end{proof}
+\todo{WIP}
 \vspace{1cm}
 
-
-
-\todo{[TODO3][Abschätzung $\frac{\widehat{n}}{\widehat{m}}$]}
-\vspace{0.3cm}
-
-Aussagen aus Annahme \ref{assumptionRatio} und Theorem \ref{theremConnectionsCount} - Aussage (ii) - verwerten und Annahme \ref{assumptionRatio} deutlich verschärfen.
-
-\todo{[ende TODO3]}
-\vspace{1cm}
-
-
-\todo{[TODO4]["Verdichtung"]}
-\vspace{0.3cm}
-
-Die Maße $\widehat{n}$, $\widehat{m}$ und $\Gamma(t)$ sind sehr objektiv und teils zielführend. Sie scheinen aber nicht zu reichen. So kann es z. B. User $\widehat{u} \in \widehat{U}^{(t)}$ geben, die im worst case ausschließlich zu einem einzigen Provider $\widehat{s} \in \widehat{S}^{(t)}$ connectet sind (und somit aber trotzdem den Wert von $\widehat{n}$ beeinflussen, oder noch schlimmer analog Provider $\widehat{s} \in \widehat{S}^{(t)}$, die als "angebunden" gelten, weil sie mit marginal wenigen Usern (im worst case mit einem einzigen) connectet sind. Solche Teilnehmer spielen eigentlich für den zahlenmäßigen WunderPass-Fortschritt keinerlei Rolle, beeinflussen jedoch unsere relevanten Messgrößen (KPI).
-
-Von daher benötigen wir noch eine weitere Präzisierung in Form von
-
-\begin{itemize}
-  \item "80-20-Regel" heranziehen, indem man die Mengen $\widehat{U}^{(t)}$ und $\widehat{S}^{(t)}$ so modifiziert/verkleinert, dass $\Gamma(t)$ davon kaum einen Einfluss spürt (sich lediglich um einen marginalen Prozentsatz verringert).
-  \item Formeln auf die davon modifizierten Größen $\widehat{\widehat{n}}$ und $\widehat{\widehat{m}}$ anpassen.
-  \item $\Rightarrow$ Die Grenzen von [Theorem \ref{theremConnectionsCount}][Aussage (ii)] werden damit deutlich schärfer.
-  \item $\Rightarrow$ kann sicherlich in Abschnitt \ref{sec:eco_zahlen_business_plan} für den Umgang mit dem Verhältnis $\frac{\widehat{n}}{\widehat{m}}$ genutzt werden.
-  \item Wird vermutlich auch Relevanz bei den "individuellen" (Definition erfolgt noch) User- und Provider-Pools zum Einsatz kommen.
-\end{itemize}
-
-\todo{[ende TODO4]}
-\vspace{1cm}
-
-\todo{[TODO4.1]["Exklusive Connections"]}
-\vspace{0.3cm}
-
-\begin{itemize}
-  \item Eine Connection zu einem Service-Provider ist exklusiv, wenn der zugehörige User zu keinem anderen Service-Provider connectet ist.
-    \item Es gibt mindestens $n_{nexcl} \geq \Gamma(t) - \widehat{n}$ nicht exklusive Connections.
-  
-\end{itemize}
-
-\todo{[ende TODO4.1]}
-\vspace{1cm}
-
-
-
-\todo{[TODO5]["individuelle" User- und Provider-Pools]}
+\todo{[TODO4]["individuelle" User- und Provider-Pools]}
 \vspace{0.3cm}
 
 Nicht alle Teilnehmer innerhalb der WunderPass-Netzwerks sind gleichbedeutend. Dies ist zweifelsfrei klar hinsichtlich der Unterscheidung zwischen connecteten Usern $\widehat{u} \in \widehat{U}^{(t)}$ und Service-Providern $\widehat{s} \in \widehat{S}^{(t)}$. Jedoch bestehen ebenfalls signifikante Unterschiede jeweils innerhalb der beiden Teilnehmerklassen $\widehat{U}^{(t)}$ und $\widehat{S}^{(t)}$ (siehe \todo{[TODO4]["Sättigung"]}). Um dieser Unterscheidung unserer Teilnehmer gerecht zu werden, definieren wir "connected Pools" pro individuellen Teilnehmer als
@@ -397,8 +227,174 @@ Die zweite Gleichheit folgt analog, falls man die Kommutativität der Def \ref{d
 
 
 \vspace{0.6cm}
-\todo{[ende TODO5]}
+\todo{[ende TODO4]}
+\vspace{1cm}\todo{[TODO4]["individuelle" User- und Provider-Pools]}
+\vspace{0.3cm}
+
+Nicht alle Teilnehmer innerhalb der WunderPass-Netzwerks sind gleichbedeutend. Dies ist zweifelsfrei klar hinsichtlich der Unterscheidung zwischen connecteten Usern $\widehat{u} \in \widehat{U}^{(t)}$ und Service-Providern $\widehat{s} \in \widehat{S}^{(t)}$. Jedoch bestehen ebenfalls signifikante Unterschiede jeweils innerhalb der beiden Teilnehmerklassen $\widehat{U}^{(t)}$ und $\widehat{S}^{(t)}$ (siehe \todo{[TODO4]["Sättigung"]}). Um dieser Unterscheidung unserer Teilnehmer gerecht zu werden, definieren wir "connected Pools" pro individuellen Teilnehmer als
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defTeilnehmerPool}
+
+Sei $t \in T$, $\widehat{U}^{(t)}$ und $\widehat{S}^{(t)}$ die übergeordneten "connected" User- und Provider-Pools und $\widehat{u}_{*} \in \widehat{U}^{(t)}$ und $\widehat{s}_{*} \in \widehat{S}^{(t)}$ die entsprechenden Teilnehmer, für deren individuelle "connected Pools" wir uns an dieser Stelle interessieren. Wir definieren die genannten "connected Pools" als
+
+\begin{align*}
+&accounts : \widehat{U}^{(t)} \rightarrow \mathcal{P}\left(\widehat{S}^{(t)}\right) \\
+&accounts^{(t)}(\widehat{u}_{*}) = \left\{\widehat{s} \in \widehat{S}^{(t)} \textrm{ } | \textrm{ } \alpha^{(t)}(\widehat{u}_{*}, \widehat{s}) = 1 \right\}
+\end{align*}
+und
+
+\begin{align*}
+&userbase : \widehat{S}^{(t)} \rightarrow \mathcal{P}\left(\widehat{U}^{(t)}\right) \\
+&userbase^{(t)}(\widehat{s}_{*}) = \left\{\widehat{u} \in \widehat{U}^{(t)} \textrm{ } | \textrm{ } \alpha^{(t)}(\widehat{u}, \widehat{s}_{*}) = 1 \right\}
+\end{align*}
+
+\end{Def}
+
+\vspace{0.6cm}
+
+\begin{Lemma}\label{lemmaPools}
+
+\begin{align}
+\bigcup_{\widehat{u} \in \widehat{U}^{(t)}} \left(accounts^{(t)} (\widehat{u})\right) = \widehat{S}^{(t)} \tag{i} \\
+\bigcup_{\widehat{s} \in \widehat{S}^{(t)}} \left(userbase^{(t)} (\widehat{s})\right) = \widehat{U}^{(t)} \tag{ii}
+\end{align}
+
+\end{Lemma}
+
+\vspace{0.3cm}
+
+\begin{proof}[Beweis] \textrm{ }
+
+\vspace{0.3cm}
+
+zu (i): Es ist
+
+\begin{align*}
+\bigcup_{\widehat{u} \in \widehat{U}^{(t)}} \left(accounts^{(t)} (\widehat{u})\right) &\overset{\text{Def \ref{defTeilnehmerPool}}}{=} \bigcup_{\widehat{u} \in \widehat{U}^{(t)}} \left\{\widehat{s} \in \widehat{S}^{(t)} \textrm{ } | \textrm{ } \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) = 1 \right\} \\
+&\overset{(*)}{=} \left\{\widehat{s} \in \widehat{S}^{(t)} \mid \exists \widehat{u} \in \widehat{U}^{(t)} \textrm{ mit } \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) = 1 \right\} \\
+&\overset{\text{Th. \ref{theoremPools} (\ref{theoremPools_6})}}{=} \widehat{S}^{(t)}
+\end{align*}
+Die Gleichheit zu (*) ergibt aus der Tatsache, Mengen-Vereinigungen ignorierten Doppelzählungen! 
+
+\vspace{0.3cm}
+
+Aussage (ii) folgt ganz analog!
+
+\end{proof}
+
+\vspace{0.3cm}
+
+
+\begin{Theorem}\label{theremPoolsCount}
+
+\begin{equation*}
+\sum_{\widehat{u} \in \widehat{U}^{(t)}} |accounts^{(t)} (\widehat{u})| = \sum_{\widehat{s} \in \widehat{S}^{(t)}} |userbase^{(t)} (\widehat{s})| = \Gamma(t)
+\end{equation*}
+
+\end{Theorem}
+
+\vspace{0.3cm}
+
+\begin{proof}[Beweis] \textrm{ }
+
+\vspace{0.3cm}
+
+Es ist
+
+\begin{align*}
+\Gamma(t)&\overset{\text{Th. \ref{theremConnectionsCount} (\ref{theremConnectionsCount_1})}}{=} \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \\
+&= \sum_{\widehat{u} \in \widehat{U}^{(t)}} \textrm{  } \sum_{\widehat{s} \in \widehat{S}^{(t)}} \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) \\
+&= \sum_{\widehat{u} \in \widehat{U}^{(t)}} \textrm{  } \sum_{\widehat{s} \in \widehat{S}^{(t)} \textrm{ mit } \alpha^{(t)}\left(\widehat{u}, \widehat{s}\right) = 1} 1 \\
+&\overset{\text{Def \ref{defTeilnehmerPool}}}{=} \sum_{\widehat{u} \in \widehat{U}^{(t)}} \textrm{  } \sum_{s \in accounts^{(t)} (\widehat{u})} 1 \\
+&= \sum_{\widehat{u} \in \widehat{U}^{(t)}} |accounts^{(t)} (\widehat{u})|
+\end{align*}
+
+\vspace{0.3cm}
+
+Die zweite Gleichheit folgt analog, falls man die Kommutativität der Def \ref{defGamma} beachtet: 
+
+\begin{equation*}
+  \Gamma(t)= \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} = \sum_{j=1}^m \sum_{i=1}^n \alpha^{(t)}_{ij}
+\end{equation*}
+
+\end{proof}
+
+
+\vspace{0.6cm}
+\todo{[ende TODO4]}
 \vspace{1cm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Other Stuff}
+\label{sec:eco_zahlen_zustand_todo}
+
+\vspace{2cm}
+\todo{[TODO2][Abschätzung $\frac{\widehat{n}}{\widehat{m}}$]}
+\vspace{0.3cm}
+
+Aussagen aus Annahme \ref{assumptionRatio} und Theorem \ref{theremConnectionsCount} - Aussage (ii) - verwerten und Annahme \ref{assumptionRatio} deutlich verschärfen.
+
+\todo{[ende TODO2]}
+\vspace{1cm}
+
+
+\todo{[TODO3]["Verdichtung"]}
+\vspace{0.3cm}
+
+Die Maße $\widehat{n}$, $\widehat{m}$ und $\Gamma(t)$ sind sehr objektiv und teils zielführend. Sie scheinen aber nicht zu reichen. So kann es z. B. User $\widehat{u} \in \widehat{U}^{(t)}$ geben, die im worst case ausschließlich zu einem einzigen Provider $\widehat{s} \in \widehat{S}^{(t)}$ connectet sind (und somit aber trotzdem den Wert von $\widehat{n}$ beeinflussen, oder noch schlimmer analog Provider $\widehat{s} \in \widehat{S}^{(t)}$, die als "angebunden" gelten, weil sie mit marginal wenigen Usern (im worst case mit einem einzigen) connectet sind. Solche Teilnehmer spielen eigentlich für den zahlenmäßigen WunderPass-Fortschritt keinerlei Rolle, beeinflussen jedoch unsere relevanten Messgrößen (KPI).
+
+Von daher benötigen wir noch eine weitere Präzisierung in Form von
+
+\begin{itemize}
+  \item "80-20-Regel" heranziehen, indem man die Mengen $\widehat{U}^{(t)}$ und $\widehat{S}^{(t)}$ so modifiziert/verkleinert, dass $\Gamma(t)$ davon kaum einen Einfluss spürt (sich lediglich um einen marginalen Prozentsatz verringert).
+  \item Formeln auf die davon modifizierten Größen $\widehat{\widehat{n}}$ und $\widehat{\widehat{m}}$ anpassen.
+  \item $\Rightarrow$ Die Grenzen von [Theorem \ref{theremConnectionsCount}][Aussage (ii)] werden damit deutlich schärfer.
+  \item $\Rightarrow$ kann sicherlich in Abschnitt \ref{sec:eco_zahlen_business_plan} für den Umgang mit dem Verhältnis $\frac{\widehat{n}}{\widehat{m}}$ genutzt werden.
+  \item Wird vermutlich auch Relevanz bei den "individuellen" (Definition erfolgt noch) User- und Provider-Pools zum Einsatz kommen.
+\end{itemize}
+
+\todo{[ende TODO3]}
+\vspace{1cm}
+
+\todo{[TODO4.1]["Exklusive Connections"]}
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Eine Connection zu einem Service-Provider ist exklusiv, wenn der zugehörige User zu keinem anderen Service-Provider connectet ist.
+    \item Es gibt mindestens $n_{nexcl} \geq \Gamma(t) - \widehat{n}$ nicht exklusive Connections.
+  
+\end{itemize}
+
+\todo{[ende TODO3.1]}
+\vspace{1cm}
+
+
+
+
+
+
+
 
 
 
@@ -443,32 +439,28 @@ Die WunderPass-Vision steht in ihrer Formulierung ganz klar im Sinne einer gewis
 
 Aus diesem Blickwinkel (in dem die Vision zunächst ein Selbstzweck bleibt) erscheint die folgende Definition mehr als intuitiv einleuchtend, um die obige Formulierung "irgendwie besser" zu formalisieren und vor allem zu quantifizieren. 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \vspace{0.3cm}
 
-\begin{Def}\label{defRelation}
-
-Wir bedienen uns der in Definition \ref{defGamma} beschriebenen Funktion $\Gamma(t)$, um damit eine \href{https://de.wikipedia.org/wiki/Ordnungsrelation}{Ordnungsrelation} 
-auf unserem Zeitstrahl $T$ für je zwei beliebige Zeitpunkte $t_1, t_2 \in T$ zu erhalten: 
-
-\vspace{0.3cm}
-
-\begin{equation*}
-  R_{\preceq} \subseteq T \times T \textrm{ mit}
-\end{equation*}
-
-\begin{equation*}
-  R_{\preceq}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) \leq \Gamma(t_2) \right\}
-\end{equation*}
-\vspace{1cm}
-Mittels $R_{\preceq}$ erhalten wir eine Ordnung unseres Zeitstahls $T$ und erklären zudem insbesondere, was "irgendwie besser" bedeutet. Ein beliebiger Zeitpunkt $t_1 \in T$ ist nämlich verbal genau dann "nicht schlechter" in Sinne unserer Vision als ein beliebiger anderer Zeitpunkt $t_2 \in T$, falls $(t_1, t_2) \in R_{\preceq}$ gilt.
-
-\vspace{0.3cm}
-
-\begin{equation*}
-  \textrm{Wir schreiben fortan statt } (t_1, t_2) \in R_{\preceq} \textrm{ lieber } t_1 \preceq t_2 
-\end{equation*}
-
-\end{Def}
+\todo{WIP:}
+Hier stand vorher Definition \ref{defRelation}
 
 \vspace{1cm}
 
@@ -477,29 +469,37 @@ Der Form halber ergänzen wir an der Stelle noch um zwei weitere - schematisch i
 
 \vspace{0.3cm}
 
-\begin{Def}\label{defRelationen}
-
-Um zusätzlich zur in Def \ref{defRelation} definierten Ordnungsrelation "$\preceq$", auch dem Verständnis von "echt besser" und "gleich gut" Rechnung zu tragen, definieren wir die beiden Relationen "$\prec$" und "$\simeq$"
-
-\vspace{0.3cm}
-
-\begin{equation*}
-  R_{\prec}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) < \Gamma(t_2) \right\}
-\end{equation*}
-
-\begin{equation*}
-  R_{\simeq}:= \left\{ (t_1, t_2) \in T \times T \mid \Gamma(t_1) = \Gamma(t_2) \right\}
-\end{equation*}
-
-\vspace{1cm}
-
-Bei $R_{\prec}$ handelt es sich im Übrigen wieder um eine Ordnungsrelation. Bei $R_{\simeq}$ dagegen nicht.
-
-\end{Def}
+\todo{WIP:}
+Hier stand vorher Definition \ref{defRelationen}
 
 \vspace{0.3cm}
 
-Auch für die letzten beiden Relationen wollen wir fortan die vereinfachte Schreibweise $t_1 \prec t_2$ und $t_1 \simeq t_2$ nutzen. 
+Auch für die letzten beiden Relationen wollen wir fortan die vereinfachte Schreibweise $t_1 \prec t_2$ und $t_1 \simeq t_2$ nutzen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 \vspace{1cm}
 
