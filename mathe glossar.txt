@@ -3,14 +3,14 @@
 -----Pools-----
 
 U^{(t)} = \left\{ u^{(t)}_1; u^{(t)}_2;...; u^{(t)}_{n} \right\}
-U^{(t)} = \left\{ u_1; u^_2;...; u^_{n} \right\}
+U^{(t)} = \left\{ u_1; u_2;...; u_{n} \right\}
 
 \widehat{U}^{(t)} = \left\{ \widehat{u}^{(t)}_1; \widehat{u}^{(t)}_2;...; \widehat{u}^{(t)}_{\widehat{n}} \right\}
 \widehat{U}^{(t)} = \left\{ \widehat{u}_1; \widehat{u}_2;...; \widehat{u}_{\widehat{n}} \right\}
 
 
 S^{(t)} = \left\{ s^{(t)}_1; s^{(t)}_2;...; s^{(t)}_{m} \right\}
-S^{(t)} = \left\{ s_1; s^_2;...; s^_{n} \right\}
+S^{(t)} = \left\{ s_1; s_2;...; s_{n} \right\}
 
 \widehat{S}^{(t)} = \left\{ \widehat{s}^{(t)}_1; \widehat{s}^{(t)}_2;...; \widehat{s}^{(t)}_{\widehat{m}} \right\}
 \widehat{S}^{(t)} = \left\{ \widehat{s}_1; \widehat{s}_2;...; \widehat{s}_{\widehat{m}} \right\}
@@ -47,6 +47,12 @@ dP^{(t)} = \left(n, m\right)
 \left(n, m\right) = dP^{(t)}
 
 \left(n, m\right) = \left(n^{(t)}, m^{(t)}\right) = dP^{(t)}
+
+
+accounts^{(t)}(\widehat{u})
+userbase^{(t)}(\widehat{s})
+
+
 
 
 
