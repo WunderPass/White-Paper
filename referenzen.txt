@@ -18,6 +18,8 @@
      [Lemma 01] --> \begin{Lemma}\label{lemmaPools}
    [Theorem 03] --> \begin{Theorem}\label{theremPoolsCount}
 [Definition 10] --> \begin{Def}\label{defSequenzierung}
+   [Theorem 04] --> \begin{Theorem}\label{theremPartiotionVsGamma}
+   [Theorem 05] --> \begin{Theorem}\label{theremAbschaetzung}
 	
 
 
@@ -49,6 +51,8 @@
 	\label{theremConnectionsCount_1}
 	--> "Laut Aussage (\label{theremConnectionsCount_1}) aus Theorem \ref{theremConnectionsCount}..."
 \ref{theremPoolsCount}
+\ref{theremPartiotionVsGamma}
+\ref{theremAbschaetzung}
 	
 
 

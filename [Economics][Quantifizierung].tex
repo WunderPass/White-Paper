@@ -345,21 +345,76 @@ für die konsequenterweise
 \vspace{0.3cm}
 
 \begin{align*}
-\sum_{k=1}^{\widehat{m} - r} \Omega_k &\leq \frac{\widehat{m} * \widehat{n} - \Gamma(t)}{r} \textrm{ für } r \in \left\{1,...,\widehat{m} - 1 \right\} \tag{i} \\ 
-\sum_{k=r+1}^{\widehat{m}} \Omega_k &\leq \frac{\Gamma(t) - \widehat{n}}{r} \textrm{ für } r \in \left\{1,...,\widehat{m} - 1 \right\} \tag{ii} 
+\frac{(j+1) * \widehat{n} - \Gamma(t)}{j} &\leq \sum_{k=1}^{j} \Omega_k \leq \frac{\widehat{m} * \widehat{n} - \Gamma(t)}{\widehat{m} - j} \textrm{ für } j \in \left\{1,...,\widehat{m} - 1 \right\} \tag{i} \\ 
+\frac{\Gamma(t) - j * \widehat{n}}{\widehat{m} - j} &\leq \sum_{k=j+1}^{\widehat{m}} \Omega_k \leq \frac{\Gamma(t) - \widehat{n}}{j} \textrm{ für } j \in \left\{1,...,\widehat{m} - 1 \right\} \tag{ii} 
 \end{align*}
 
 Und ganz insbesondere
 
 \begin{align*}
 2 * \widehat{n} - \Gamma(t) &\leq \Omega_1 \leq \frac{\widehat{m} * \widehat{n} - \Gamma(t)}{\widehat{m} - 1} \tag{iii} \\ 
-\Gamma(t) - \widehat{n} * \left( \widehat{m} - 1 \right) &\leq \Omega_{\widehat{m}} \leq \frac{\Gamma(t) - \widehat{n}}{\widehat{m} - 1} \tag{iv} 
+\Gamma(t) - \left( \widehat{m} - 1 \right) * \widehat{n} &\leq \Omega_{\widehat{m}} \leq \frac{\Gamma(t) - \widehat{n}}{\widehat{m} - 1} \tag{iv} 
 \end{align*}
 
 \end{Theorem}
 \vspace{0.6cm}
 
 
+\begin{proof}[Beweis] \textrm{ }
+
+\vspace{0.3cm}
+
+zu (i) und (ii): Zunächst zeigen wir die zweite Ungleichung von (i):
+
+\begin{align*}
+\Gamma(t) &\overset{(Th. \ref{theremPartiotionVsGamma})}{=} \sum_{k=1}^{\widehat{m}} k * \Omega_k = \sum_{k=1}^{j} k * \Omega_k \textrm{  +  } \sum_{k=j+1}^{\widehat{m}} k * \Omega_k \\
+&\leq j * \sum_{k=1}^{j} \Omega_k \textrm{  +  } \widehat{m} * \sum_{k=j+1}^{\widehat{m}} \Omega_k \\
+&= j * \sum_{k=1}^{j} \Omega_k \textrm{  +  } \widehat{m} * \left( n - \sum_{k=1}^{j} \Omega_k \right) \\
+&= \widehat{m} * \widehat{n} - (\widehat{m} - j) * \sum_{k=1}^{j} \Omega_k \\
+\Leftrightarrow (\widehat{m} - j) * \sum_{k=1}^{j} \Omega_k &\leq \widehat{m} * \widehat{n} - \Gamma(t) \\
+\Leftrightarrow \sum_{k=1}^{j} \Omega_k &\leq \frac{\widehat{m} * \widehat{n} - \Gamma(t)}{\widehat{m} - j}
+\end{align*}
+
+\vspace{0.3cm}
+
+Nun zeigen wir die zweite Ungleichung von (ii):
+
+\begin{align*}
+\Gamma(t) &\overset{(Th. \ref{theremPartiotionVsGamma})}{=} \sum_{k=1}^{\widehat{m}} k * \Omega_k = \sum_{k=1}^{j} k * \Omega_k \textrm{  +  } \sum_{k=j+1}^{\widehat{m}} k * \Omega_k \\
+&\geq 1 * \sum_{k=1}^{j} \Omega_k \textrm{  +  } (j+1) * \sum_{k=j+1}^{\widehat{m}} \Omega_k \\
+&= \sum_{k=1}^{m} \Omega_k \textrm{  +  } j * \sum_{k=j+1}^{\widehat{m}} \Omega_k = \widehat{n} + j * \sum_{k=j+1}^{\widehat{m}} \Omega_k \\
+\Leftrightarrow \Gamma(t) - \widehat{n} &\geq j * \sum_{k=j+1}^{\widehat{m}} \Omega_k \\
+\Leftrightarrow \frac{\Gamma(t) - \widehat{n}}{j} &\geq \sum_{k=j+1}^{\widehat{m}} \Omega_k
+\end{align*}
+
+\vspace{0.3cm}
+
+Die erste Ungleichung von (i) folgt direkt aus der zweiten von (ii):
+
+\begin{align*}
+\widehat{n} &= \sum_{k=1}^{\widehat{m}} \Omega_k = \sum_{k=1}^{j} \Omega_k \textrm{  +  } \sum_{k=j+1}^{\widehat{m}} \Omega_k \\
+&\leq \sum_{k=1}^{j} \Omega_k \textrm{  +  } \frac{\Gamma(t) - \widehat{n}}{j} \\
+\Leftrightarrow \widehat{n} - \frac{\Gamma(t) - \widehat{n}}{j} &\leq \sum_{k=1}^{j} \Omega_k \\
+\Leftrightarrow \frac{j * \widehat{n} - \Gamma(t) + \widehat{n}}{j} &\leq \sum_{k=1}^{j} \Omega_k
+\end{align*}
+
+\vspace{0.3cm}
+
+Und gänzlich analog dazu die erste Ungleichung von (ii) aus der zweiten von (i):
+
+\begin{align*}
+\widehat{n} &= \sum_{k=1}^{\widehat{m}} \Omega_k = \sum_{k=1}^{j} \Omega_k \textrm{  +  } \sum_{k=j+1}^{\widehat{m}} \Omega_k \\
+&\leq \frac{\widehat{m} * \widehat{n} - \Gamma(t)}{\widehat{m} - j} \textrm{  +  } \sum_{k=j+1}^{\widehat{m}} \Omega_k \\
+\Leftrightarrow \frac{\widehat{m} * \widehat{n} - j * \widehat{n} - \widehat{m} * \widehat{n} + \Gamma(t)}{\widehat{m} - j} &\leq \sum_{k=j+1}^{\widehat{m}} \Omega_k \\
+\Leftrightarrow \frac{\Gamma(t) - j * \widehat{n}}{\widehat{m} - j} &\leq \sum_{k=j+1}^{\widehat{m}} \Omega_k
+\end{align*}
+
+\vspace{0.3cm}
+
+
+(iii) und (iv) sind gänzlich trivial und eigentlich keine zusätzlichen Erkenntnisse zu (i) und (ii), sondern deren besonders relevanten Ausprägungen für $j=1$ und $j=m-1$, Man beachte hierfür höchstens die Tatsache $\Omega_m = \sum_{k=j+1}^{\widehat{m}} \Omega_k$ für $j=m-1$.
+  
+\end{proof}
 
 
 
@@ -543,6 +598,51 @@ Aussagen aus Annahme \ref{assumptionRatio} und Theorem \ref{theremConnectionsCou
 \Leftrightarrow \frac{\widehat{n}}{\widehat{m}} &\leq \max_{j \in \{1;...;\widehat{m}\}} \Omega_j
 \end{align*}
 \vspace{0.3cm}
+
+Weiterverarbeitung von Theorem \ref{theremAbschaetzung}:
+
+\vspace{0.3cm}
+
+\begin{Theorem}
+
+Theorem \ref{theremAbschaetzung} lieferte uns
+
+\begin{align*}
+2 * \widehat{n} - \Gamma(t) &\leq \Omega_1 \leq \frac{\widehat{m} * \widehat{n} - \Gamma(t)}{\widehat{m} - 1} \\ 
+\Gamma(t) - \left( \widehat{m} - 1 \right) * \widehat{n} &\leq \Omega_{\widehat{m}} \leq \frac{\Gamma(t) - \widehat{n}}{\widehat{m} - 1} 
+\end{align*}
+
+\vspace{0.5cm}
+
+Der Übersicht halber setzen wir
+
+\begin{align*}
+A &:= 2 * \widehat{n} - \Gamma(t) \\
+B &:= \Gamma(t) - \left( \widehat{m} - 1 \right) * \widehat{n} \\
+C &:= \frac{\widehat{m} * \widehat{n} - \Gamma(t)}{\widehat{m} - 1} \\
+D &:= \frac{\Gamma(t) - \widehat{n}}{\widehat{m} - 1}
+\end{align*}
+
+womit sich nun obige Aussage ausdrückt als
+
+\begin{align*}
+A &\leq \Omega_1 \leq C \\ 
+B &\leq \Omega_{\widehat{m}} \leq D 
+\end{align*}
+
+Damit lassen sich besondere zu untersuchende Grenzfälle formulieren: 
+
+\begin{align}
+A \leq B &\Leftrightarrow \Gamma(t) \geq (\widehat{m}-1) * \frac{\widehat{n}}{2} \tag{i} \\
+A \leq C &\Leftrightarrow 1 = 1 \\
+A \leq D &\Leftrightarrow \Gamma(t) \geq (2\widehat{m}-1) * \frac{\widehat{n}}{\widehat{m}} \tag{iii} \\
+B \leq C &\Leftrightarrow \Gamma(t) \leq (\widehat{m}+(\widehat{m}-1)^2) * \frac{\widehat{n}}{\widehat{m}} \tag{iv} \\
+B \leq D &\Leftrightarrow 1 = 1 \tag{v} \\
+C \leq D &\Leftrightarrow \Gamma(t) \geq (\widehat{m}-1) * \frac{\widehat{n}}{2} \tag{vi}
+\end{align}
+
+\end{Theorem}
+\vspace{0.6cm}
 
 \todo{[ende TODO2]}
 \vspace{1cm}

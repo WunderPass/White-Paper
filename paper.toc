@@ -17,24 +17,24 @@
 \contentsline {subsubsection}{\numberline {7.3.4}Zustandsbeschreibung WunderPass - detaillierte Sicht}{14}{subsubsection.7.3.4}%
 \contentsline {paragraph}{\nonumberline Teilnehmer}{14}{paragraph*.9}%
 \contentsline {paragraph}{\nonumberline Sequenzierung}{17}{paragraph*.11}%
-\contentsline {paragraph}{\nonumberline Beispiel 1}{19}{paragraph*.13}%
-\contentsline {paragraph}{\nonumberline Beispiel 2}{19}{paragraph*.15}%
-\contentsline {subsubsection}{\numberline {7.3.5}Other Stuff}{21}{subsubsection.7.3.5}%
-\contentsline {subsubsection}{\numberline {7.3.6}Business-Plan in Mathematics}{24}{subsubsection.7.3.6}%
-\contentsline {subsubsection}{\numberline {7.3.7}Quantifizierung des Status quo}{24}{subsubsection.7.3.7}%
-\contentsline {paragraph}{\nonumberline Vernetzung \& Netzwerk-Effekt}{24}{paragraph*.17}%
-\contentsline {subsubsection}{\numberline {7.3.8}Individuelle Wertschöpfung der Teilneher}{26}{subsubsection.7.3.8}%
-\contentsline {subsection}{\numberline {7.4}Token-Economics (WPT)}{26}{subsection.7.4}%
-\contentsline {subsubsection}{\numberline {7.4.1}Einleitung}{26}{subsubsection.7.4.1}%
-\contentsline {subsubsection}{\numberline {7.4.2}Kreislauf}{26}{subsubsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {7.4.3}Token-Design}{26}{subsubsection.7.4.3}%
-\contentsline {subsubsection}{\numberline {7.4.4}Incentivierung}{26}{subsubsection.7.4.4}%
-\contentsline {subsubsection}{\numberline {7.4.5}Milestones-Reward-Pool}{26}{subsubsection.7.4.5}%
-\contentsline {subsubsection}{\numberline {7.4.6}WPT in Zahlen}{26}{subsubsection.7.4.6}%
-\contentsline {subsubsection}{\numberline {7.4.7}Fazit}{26}{subsubsection.7.4.7}%
-\contentsline {subsection}{\numberline {7.5}Fazit}{26}{subsection.7.5}%
-\contentsline {section}{\numberline {8}Noch mehr Dinge}{26}{section.8}%
-\contentsline {section}{\numberline {9}Project 'Guard'}{26}{section.9}%
-\contentsline {section}{\numberline {10}Community}{27}{section.10}%
-\contentsline {section}{\numberline {11}Zusammenfassung}{27}{section.11}%
+\contentsline {paragraph}{\nonumberline Beispiel 1}{21}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline Beispiel 2}{21}{paragraph*.15}%
+\contentsline {subsubsection}{\numberline {7.3.5}Other Stuff}{24}{subsubsection.7.3.5}%
+\contentsline {subsubsection}{\numberline {7.3.6}Business-Plan in Mathematics}{28}{subsubsection.7.3.6}%
+\contentsline {subsubsection}{\numberline {7.3.7}Quantifizierung des Status quo}{28}{subsubsection.7.3.7}%
+\contentsline {paragraph}{\nonumberline Vernetzung \& Netzwerk-Effekt}{28}{paragraph*.17}%
+\contentsline {subsubsection}{\numberline {7.3.8}Individuelle Wertschöpfung der Teilneher}{30}{subsubsection.7.3.8}%
+\contentsline {subsection}{\numberline {7.4}Token-Economics (WPT)}{30}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Einleitung}{30}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}Kreislauf}{30}{subsubsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.3}Token-Design}{30}{subsubsection.7.4.3}%
+\contentsline {subsubsection}{\numberline {7.4.4}Incentivierung}{30}{subsubsection.7.4.4}%
+\contentsline {subsubsection}{\numberline {7.4.5}Milestones-Reward-Pool}{30}{subsubsection.7.4.5}%
+\contentsline {subsubsection}{\numberline {7.4.6}WPT in Zahlen}{30}{subsubsection.7.4.6}%
+\contentsline {subsubsection}{\numberline {7.4.7}Fazit}{30}{subsubsection.7.4.7}%
+\contentsline {subsection}{\numberline {7.5}Fazit}{30}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Noch mehr Dinge}{30}{section.8}%
+\contentsline {section}{\numberline {9}Project 'Guard'}{30}{section.9}%
+\contentsline {section}{\numberline {10}Community}{31}{section.10}%
+\contentsline {section}{\numberline {11}Zusammenfassung}{31}{section.11}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
