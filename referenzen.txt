@@ -2,21 +2,22 @@
 
 -----Reihenfolge-----
 
-[Definition 1] --> \begin{Def}\label{defU}
-[Definition 2] --> \begin{Def}\label{defS}
-[Definition 3] --> \begin{Def}\label{defKoeff}
-   [Annahme 1] --> \begin{Assumption}[Digitalisierungs-Orakel]\label{assumptionOrakel}
-   [Annahme 2] --> \begin{Assumption}[Verhältnismäßigkeit der Teilnehmer]\label{assumptionRatio}
-[Definition 4] --> \begin{Def}\label{defRatio}
-[Definition 5] --> \begin{Def}\label{defPools}
-   [Theorem 1] --> \begin{Theorem}\label{theoremPools}
-[Definition 6] --> \begin{Def}\label{defGamma}
-[Definition 7] --> \begin{Def}\label{defRelation}
-[Definition 8] --> \begin{Def}\label{defRelationen}
-   [Theorem 2] --> \begin{Theorem}\label{theremConnectionsCount}
-[Definition 9] --> \begin{Def}\label{defTeilnehmerPool}
-     [Lemma 1] --> \begin{Lemma}\label{lemmaPools}
-   [Theorem 3] --> \begin{Theorem}\label{theremPoolsCount}
+[Definition 01] --> \begin{Def}\label{defU}
+[Definition 02] --> \begin{Def}\label{defS}
+[Definition 03] --> \begin{Def}\label{defKoeff}
+   [Annahme 01] --> \begin{Assumption}[Digitalisierungs-Orakel]\label{assumptionOrakel}
+   [Annahme 02] --> \begin{Assumption}[Verhältnismäßigkeit der Teilnehmer]\label{assumptionRatio}
+[Definition 04] --> \begin{Def}\label{defRatio}
+[Definition 05] --> \begin{Def}\label{defPools}
+   [Theorem 01] --> \begin{Theorem}\label{theoremPools}
+[Definition 06] --> \begin{Def}\label{defGamma}
+[Definition 07] --> \begin{Def}\label{defRelation}
+[Definition 08] --> \begin{Def}\label{defRelationen}
+   [Theorem 02] --> \begin{Theorem}\label{theremConnectionsCount}
+[Definition 09] --> \begin{Def}\label{defTeilnehmerPool}
+     [Lemma 01] --> \begin{Lemma}\label{lemmaPools}
+   [Theorem 03] --> \begin{Theorem}\label{theremPoolsCount}
+[Definition 10] --> \begin{Def}\label{defSequenzierung}
 	
 
 
@@ -32,6 +33,7 @@
 \ref{defRelation}
 \ref{defRelationen}
 \ref{defTeilnehmerPool}
+\ref{defSequenzierung}
 
 
 ---Annahmen---
