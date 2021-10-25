@@ -1,0 +1,108 @@
+% !TEX root = paper.tex
+\subsection{Missstände der digitalen Identität}
+\label{sec:einleitung_probleme_digitaler_identitaet}
+
+\vspace{0.3cm}
+
+Das im letzte Kapitel beleuchtete Verständnis der \textit{digitalen Identität} lässt bereits erahnen, dieses sei alles andere als optimal. Nicht aus technischer Sicht, nicht aus gesetzlicher Sicht und schon gar nicht aus Sicht des Anwenders. Profitierende Akteure des Status quo in diesem Kontext, sind bestenfalls diejenigen, die sich aufgrund einer etwaigen Vormachtstellung an Ineffizienzen des Gesamtsystems bereichern können, weil sie eben weniger Nachteile durch besagte Ineffizienzen erfahren als der restliche Markt. Also Google, Apple, Amazon, Facebook etc. Nur darf der Umstand, die größten Player da draußen, haben gar kein eigenes Interesse daran, das aktuelle Verständnis der \textit{digitalen Identität} (öffentlich) zu hinterfragen, nicht darüber hinwegtäuschen, das dieses tatsächlich alles andere als optimal und sehr wohl zu hinterfragen sei.
+
+Dies liegt in erster Linie daran, dass die Einsicht zur Notwendigkeit einer sauberen Spezifikation der digitalen Identität erst viel später reifte, als ihre praktische Notwendigkeit. Spätestens mit dem massentauglichen Vormarsch des Web 2.0, mussten von so gut wie jedem Online-Dienst Userdaten modelliert werden. Da wären Gedanken, wie wir diese hier anstellen, hellseherisch gewesen. Die heutigen Definitionen \ref{defDigIdentity} und \ref{defAccount} entstanden also aus damaliger Sicht "by doing" und nicht etwa aus (dummen) Überlegungen.
+
+\vspace{0.1cm}
+
+Denn für Anbieter von Online-Diensten ist es schier unabdingbar, Daten des Users - also zumindest einen Teil der \textit{Identität} - zu erfassen: Sei es 
+
+\begin{itemize}
+  \item im Falle eines Versandhandels: \textbf{die Lieferadresse}
+  \item im Falle der Absicherung gegenüber Jugendlichen: \textbf{die Altersfreigabe}
+  \item im Falle von Entgeltforderungen: \textbf{Konto- oder Kreditkartendaten}
+\end{itemize}
+Auch die für das Marketing Verantwortlichen eines solchen Anbieters sind vielmals an einem \textbf{registrierten und wiedererkennbaren Kunden} und an dessen Kaufverhalten interessiert. [Der letzte Absatz folgte vielen Formulierungen der \href{https://vsis-www.informatik.uni-hamburg.de/getDoc.php/thesis/47/DA_Gordian_Kaulbarsch.pdf}{Diplomarbeit "Identitäten und ihre Schnittstellen auf Basis von Ontologien in einer dezentralen Umgebung"}]. 
+
+\vspace{0.3cm}
+
+Aber die ebenso suboptimale Fortentwicklung der eher ungesteuert geborenen \textit{digitalen Identität} blieb fortan nicht nur dem "Ist-Eben-So-Gewachsen" geschuldet.
+
+Im Gegensatz zum User war es für den Dienstanbieter meist interessanter, \textbf{Informationen über die Nutzer an zentraler Stelle vorzuhalten}, deren Kontrolle ihm selbst oblag. Denn besagte Datenerfassung - gegeben durch freiwilligen oder gar erzwungen durch verpflichtend eingeforderten Daten-Input seitens des Anwenders - ermöglichte dem Dienstanbieter die Wiedererkennung und Verfolgung des Users, bzw. das Speichern und Auslesen von identifizierenden Dateien – sogenannten Cookies – und die Vergabe von zusätzlich identifizierenden Session-IDs. Auf diese Weise ließen und lassen sich heute noch extrem große Mengen an Daten erfassen, verknüpfen und systematisch auswerten. [Der letzte Absatz folgte vielen Formulierungen der \href{https://vsis-www.informatik.uni-hamburg.de/getDoc.php/thesis/47/DA_Gordian_Kaulbarsch.pdf}{Diplomarbeit "Identitäten und ihre Schnittstellen auf Basis von Ontologien in einer dezentralen Umgebung"}].
+
+\vspace{0.3cm}
+
+Ungeachtet dessen, wem oder was die besagte suboptimale "Geburt" und Fortentwicklung der digitalen Identität geschuldet sei, wollen wir im folgenden die konkreten Probleme und Missstände dieser aufarbeiten.
+
+\vspace{0.3cm}
+
+\begin{Problem}[fehlende Eindeutigkeit]
+
+\todo{TODO: ausformulieren}
+dasselbe vs. das gleiche Individuum
+
+\end{Problem}
+
+\vspace{0.3cm}
+
+
+\begin{Problem}[Redundanz und fehlerbehaftete Daten]
+
+\todo{TODO: ausformulieren}
+Kreditkarte abgelaufen $\rightarrow$ in einigen Account aktuell; in anderen nicht
+
+\end{Problem}
+
+\vspace{0.3cm}
+
+
+\begin{Problem}[mangelhafte UX]
+
+\todo{TODO: ausformulieren}
+Man muss sich ständig neu registrieren, Accounts und Passwörter managen etc.
+
+\end{Problem}
+
+\vspace{0.3cm}
+
+
+
+\begin{Problem}[Datenschutz]
+
+\todo{TODO: ausformulieren}
+\begin{itemize}
+  \item meine Daten liegen an zig/hunderten Stellen gespeichert
+  \item Hacks sind an zig/hunderten Stellen möglich
+  \item Daten werden an anderer Stelle erhoben als sie gebraucht werden --> Beispiel mit der Supermarkt-Kassiererin bzw. Fluggesellschaften
+\end{itemize}
+
+\end{Problem}
+
+\vspace{0.3cm}
+
+
+\begin{Problem}[Datenmissbrauch/Bereicherung]
+
+\todo{TODO: ausformulieren}
+Big Tech nutzt meine Daten, um daran Geld zu verdienen. Und ich werde nicht an der Wertschöpfung beteiligt.
+
+\end{Problem}
+
+\vspace{0.3cm}
+
+
+\begin{Problem}[Abhängigkeit von Big Tech]
+
+\todo{TODO: ausformulieren}
+Derzeit dominieren zentrale ID-Provider wie Google und Facebook die Verwaltung von Identitätsdaten sehr vieler IT-Dienste weltweit, was zu einer großen Abhängigkeit unserer Gesellschaft in Bezug auf den Fortgang der Digitalisierung führt.
+
+\end{Problem}
+
+\vspace{0.3cm}
+
+
+\begin{Problem}[Ungenutzte Möglichkeiten]
+
+\todo{TODO: ausformulieren}
+Daten-Querverweise $\rightarrow$ Beispiel anführen 
+
+(zB aus \href{https://norbert-pohlmann.com/glossar-cyber-sicherheit/self-sovereign-identity-ssi/}{Vorlesung zu SSI})
+
+\end{Problem}
+
+\vspace{0.5cm}
