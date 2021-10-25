@@ -3,18 +3,18 @@
 \contentsline {subsection}{\numberline {2.1}Identität}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Verständnis der digitalen Identität}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Missstände der digitalen Identität}{5}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Vision}{6}{section.3}%
+\contentsline {section}{\numberline {3}Vision}{7}{section.3}%
 \contentsline {section}{\numberline {4}Unser Ansatz}{8}{section.4}%
 \contentsline {section}{\numberline {5}Avatare}{8}{section.5}%
 \contentsline {section}{\numberline {6}Dinge}{8}{section.6}%
 \contentsline {section}{\numberline {7}Economics}{8}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Einleitung}{8}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Goals}{8}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Quantifizierung}{8}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Grundlegende Definitionen}{8}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Zustandsbeschreibung der digitalen Welt}{10}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Zustandsbeschreibung WunderPass - simple Betrachtung}{12}{subsubsection.7.3.3}%
-\contentsline {paragraph}{\nonumberline Status quo}{12}{paragraph*.3}%
+\contentsline {subsection}{\numberline {7.3}Quantifizierung}{9}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Grundlegende Definitionen}{9}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Zustandsbeschreibung der digitalen Welt}{11}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Zustandsbeschreibung WunderPass - simple Betrachtung}{13}{subsubsection.7.3.3}%
+\contentsline {paragraph}{\nonumberline Status quo}{13}{paragraph*.3}%
 \contentsline {paragraph}{\nonumberline Messbarkeit Status quo}{17}{paragraph*.5}%
 \contentsline {paragraph}{\nonumberline Fazit}{19}{paragraph*.7}%
 \contentsline {subsubsection}{\numberline {7.3.4}Zustandsbeschreibung WunderPass - detaillierte Sicht}{20}{subsubsection.7.3.4}%
