@@ -5,40 +5,40 @@
 \contentsline {subsection}{\numberline {2.3}Missstände der digitalen Identität}{6}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Vision}{8}{section.3}%
 \contentsline {section}{\numberline {4}Unser Ansatz}{10}{section.4}%
-\contentsline {section}{\numberline {5}Avatare}{10}{section.5}%
-\contentsline {section}{\numberline {6}Dinge}{10}{section.6}%
-\contentsline {section}{\numberline {7}Economics}{10}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Einleitung}{10}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Goals}{10}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Quantifizierung}{10}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Grundlegende Definitionen}{11}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Zustandsbeschreibung der digitalen Welt}{12}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Zustandsbeschreibung WunderPass - simple Betrachtung}{15}{subsubsection.7.3.3}%
-\contentsline {paragraph}{\nonumberline Status quo}{15}{paragraph*.3}%
-\contentsline {paragraph}{\nonumberline Messbarkeit Status quo}{19}{paragraph*.5}%
-\contentsline {paragraph}{\nonumberline Fazit}{21}{paragraph*.7}%
-\contentsline {subsubsection}{\numberline {7.3.4}Zustandsbeschreibung WunderPass - detaillierte Sicht}{22}{subsubsection.7.3.4}%
-\contentsline {paragraph}{\nonumberline Teilnehmer}{22}{paragraph*.9}%
-\contentsline {paragraph}{\nonumberline Sequenzierung}{24}{paragraph*.11}%
-\contentsline {paragraph}{\nonumberline Beispiel 1}{29}{paragraph*.13}%
-\contentsline {paragraph}{\nonumberline Beispiel 2}{29}{paragraph*.15}%
-\contentsline {subsubsection}{\numberline {7.3.5}Other Stuff}{32}{subsubsection.7.3.5}%
-\contentsline {subsubsection}{\numberline {7.3.6}Business-Plan in Mathematics}{36}{subsubsection.7.3.6}%
-\contentsline {subsubsection}{\numberline {7.3.7}Quantifizierung des Status quo}{36}{subsubsection.7.3.7}%
-\contentsline {paragraph}{\nonumberline Vernetzung \& Netzwerk-Effekt}{36}{paragraph*.17}%
-\contentsline {subsubsection}{\numberline {7.3.8}Individuelle Wertschöpfung der Teilneher}{38}{subsubsection.7.3.8}%
-\contentsline {subsection}{\numberline {7.4}Token-Economics (WPT)}{38}{subsection.7.4}%
-\contentsline {subsubsection}{\numberline {7.4.1}Einleitung}{38}{subsubsection.7.4.1}%
-\contentsline {subsubsection}{\numberline {7.4.2}Kreislauf}{38}{subsubsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {7.4.3}Token-Design}{38}{subsubsection.7.4.3}%
-\contentsline {subsubsection}{\numberline {7.4.4}Incentivierung}{38}{subsubsection.7.4.4}%
-\contentsline {subsubsection}{\numberline {7.4.5}Milestones-Reward-Pool}{38}{subsubsection.7.4.5}%
-\contentsline {subsubsection}{\numberline {7.4.6}WPT in Zahlen}{38}{subsubsection.7.4.6}%
-\contentsline {subsubsection}{\numberline {7.4.7}Fazit}{38}{subsubsection.7.4.7}%
-\contentsline {subsection}{\numberline {7.5}Fazit}{38}{subsection.7.5}%
-\contentsline {section}{\numberline {8}Noch mehr Dinge}{38}{section.8}%
-\contentsline {section}{\numberline {9}Project 'Guard'}{38}{section.9}%
-\contentsline {section}{\numberline {10}Community}{39}{section.10}%
-\contentsline {section}{\numberline {11}Zusammenfassung}{39}{section.11}%
-\contentsline {section}{\numberline {12}Anhang}{39}{section.12}%
+\contentsline {section}{\numberline {5}Economics}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Einleitung}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Goals}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Quantifizierung}{12}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Grundlegende Definitionen}{12}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Zustandsbeschreibung der digitalen Welt}{14}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Zustandsbeschreibung WunderPass - simple Betrachtung}{16}{subsubsection.5.3.3}%
+\contentsline {paragraph}{\nonumberline Status quo}{16}{paragraph*.3}%
+\contentsline {paragraph}{\nonumberline Messbarkeit Status quo}{21}{paragraph*.5}%
+\contentsline {paragraph}{\nonumberline Fazit}{23}{paragraph*.7}%
+\contentsline {subsubsection}{\numberline {5.3.4}Zustandsbeschreibung WunderPass - detaillierte Sicht}{24}{subsubsection.5.3.4}%
+\contentsline {paragraph}{\nonumberline Teilnehmer}{24}{paragraph*.9}%
+\contentsline {paragraph}{\nonumberline Sequenzierung}{26}{paragraph*.11}%
+\contentsline {paragraph}{\nonumberline Beispiel 1}{31}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline Beispiel 2}{31}{paragraph*.15}%
+\contentsline {subsubsection}{\numberline {5.3.5}Other Stuff}{34}{subsubsection.5.3.5}%
+\contentsline {subsubsection}{\numberline {5.3.6}Business-Plan in Mathematics}{38}{subsubsection.5.3.6}%
+\contentsline {subsubsection}{\numberline {5.3.7}Quantifizierung des Status quo}{38}{subsubsection.5.3.7}%
+\contentsline {paragraph}{\nonumberline Vernetzung \& Netzwerk-Effekt}{38}{paragraph*.17}%
+\contentsline {subsubsection}{\numberline {5.3.8}Individuelle Wertschöpfung der Teilneher}{40}{subsubsection.5.3.8}%
+\contentsline {subsection}{\numberline {5.4}Token-Economics (WPT)}{40}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Einleitung}{40}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Kreislauf}{40}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}Token-Design}{40}{subsubsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.4}Incentivierung}{40}{subsubsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.5}Milestones-Reward-Pool}{40}{subsubsection.5.4.5}%
+\contentsline {subsubsection}{\numberline {5.4.6}WPT in Zahlen}{40}{subsubsection.5.4.6}%
+\contentsline {subsubsection}{\numberline {5.4.7}Fazit}{40}{subsubsection.5.4.7}%
+\contentsline {subsection}{\numberline {5.5}Fazit}{40}{subsection.5.5}%
+\contentsline {section}{\numberline {6}NFT-Pass}{40}{section.6}%
+\contentsline {section}{\numberline {7}Abgrenzung zu SSI}{41}{section.7}%
+\contentsline {section}{\numberline {8}Dinge}{41}{section.8}%
+\contentsline {section}{\numberline {9}Project 'Guard'}{41}{section.9}%
+\contentsline {section}{\numberline {10}Community}{41}{section.10}%
+\contentsline {section}{\numberline {11}Zusammenfassung}{41}{section.11}%
+\contentsline {section}{\numberline {12}Anhang}{41}{section.12}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
