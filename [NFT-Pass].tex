@@ -1,4 +1,287 @@
 % !TEX root = paper.tex
+
+\newpage
+
 \section{NFT-Pass}
 \label{sec:nft-pass}
+
+Ein exzellentes Mittel, um \textit{WunderPass} als Geschäftsmodell, Unternehmung und Unternehmen ein symbolisches - gewissermaßen plastisches - Sinnbild einzuverleiben, ist die Repräsentation von \textit{WunderPass} als Service/Protokoll mittels eines - eigens dafür kreierten - NFTs: \textbf{"Des WunderPass"} (im Folgenden auch \textit{NFT-Pass})
+
+\vspace{0.3cm}
+
+\begin{Fazit}[\textit{WunderPass} deabstrahiert durch \textbf{"den WunderPass"} als NFT]
+
+"Ich nutze \textit{WunderPass}" wird symbolisiert durch "Ich besitze \textbf{meinen WunderPass}"!
+
+\end{Fazit}
+
+\vspace{0.3cm}
+
+\subsection{Konzeption}
+
+\vspace{0.3cm}
+
+Unser Anspruch an den zu modellierenden \textit{NFT-Pass} ist grob der folgende:
+
+\vspace{0.2cm}
+
+\begin{itemize}
+  \item Der \textit{NFT-Pass} muss sich ganz klar von dem Großteil der heutigen - in größter Regel als Sammlerstück verstandenen - den Markt überflutenden NFTs abgrenzen. Er braucht einen klar ersichtlichen \textbf{intrinsischen Wert}. Man muss also "etwas mit dem \textit{NFT-Pass} anfangen können" und diesen nicht "nur besitzen", um ihn ausschließlich mit einer gewissen Wahrscheinlichkeit gewinnbringend weiterverkaufen zu können ("Hot Potato"). Der Token bedarf also gewisse Eigenschaften eines \textit{Governance-Tokens} (DAO) oder Ähnlichem.
+  \item Der \textit{NFT-Pass} braucht ungeachtet des vorigen Bullets jedoch trotzdem zusätzlich ebenso eine ähnliche Beschaffenheit - wie solche der aktuell üblichen marktbeherrschenden NFTs - als Sammlerstück - gleichwohl nicht erstrangig. 
+  \item Anders als die aktuell gängigen NFTs soll unser \textit{NFT-Pass} \textbf{nicht begrenzt} in der Anzahl seiner Stücke sein. Stattdessen sollen theoretisch beliebig viele \textit{NFT-Pässe} existieren können. Nichtsdestotrotz soll unser \textit{NFT-Pass} ebenso die Eigenschaft der nicht "inflationären Begehrtheit" einverleibt bekommen. Dies möchten wir mittels einer ausgeklügelten Minting-Logik abbilden, die ein \textbf{endliches Sub-Set} an raren und begehrten \textit{NFT-Pässen} innerhalb des \textbf{unendlichen Gesamt-Set} der \textit{NFT-Pässe} sicherstellt. Soll heißen: Es werden einerseits \textit{NFT-Pässe} existieren, die den heutigen NFTs - im Sinne ihres Sammlerwertes - gleichkommen, während die restlichen andererseits mit ihrer steigenden Gesamtanzahl zunehmend entwerten, bis sie irgendwann (als NFT betrachtet) nahezu wertlos und lediglich "funktional" werden.
+  \item Die Rarität und Begehrtheit unseres \textit{NFT-Pass} soll Gamification-Mechanismen folgen:
+  \begin{itemize}
+    \item Wir brauchen an etwaigen Stellen das (wertbestimmendes) first-come-first-serve-Prinzip.
+    \item Wir brauchen an anderen Stellen ein (ebenso wertbestimmendes) Zufallsprinzip.
+    \item Wir brauchen irgendwo ebenso ein (geringes) Maß an persönlicher Individualisierung des \textit{NFT-Pass} - ausschließlich durch den User gesteuert.
+    \item Abrundend könnte ein \textbf{gemeinnützig wertbestimmendes} (randomisiertes) Merkmal wirken. (Beispiel: Wenn die \textit{NFT-Pässe} irgendwann inflationär geworden sind, könnte der 10-Mio-ste plötzlich wieder richtig krass sein.)
+  \end{itemize}
+  \item Der \textit{NFT-Pass} muss gänzlich transparent und vor allem verständlich für den interessierten - gleichwohl vielleicht technisch nicht bewandertsten - User sein.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\todo{TODO: "Monalisa-Prinzip" ($\rightarrow$ NFT ganz neu gedacht $\rightarrow$ USP)}
+
+\vspace{0.3cm}
+
+Im folgenden ein initialer Abriss unserer Vorstellung des \textit{NFT-Pass}:
+
+\vspace{0.3cm}
+
+\begin{NFT-Prop}[Pass-Status]
+
+Diese NFT-Property - die wir gleichzeitig als die Main-Property unseres \textit{NFT-Pass} ansehen - soll der oben formulierten Anforderung nach einem first-come-first-serve-Prinzip Rechnung tragen. Zeitlich früher \textit{ausgestellte NFT-Pässe} sollen einen rareren und begehrteren \textit{Pass-Status} inne haben als die späteren. Und vor allem sollen die \textit{NFT-Pässe} eines bestimmten ausgestellten Status in ihrer Anzahl begrenzt sein und nach Erreichen einer zu definierenden Höchstgrenze fortan nie wieder ausgestellt (gemintet) werden können.
+
+\vspace{0.3cm}
+
+Wir definieren folgende \textit{NFT-Pass-Status} mit den dazugehörenden Eigenschaften:
+
+\begin{itemize}
+    \item Status A (Diamond)
+    \begin{itemize}
+    	\item Anzahl Pässe: 200
+    	\item Gemintet an Nummer: 1 bis 200
+    \end{itemize}
+    \item Status B (Black)
+    \begin{itemize}
+    	\item Anzahl Pässe: 1.600
+    	\item Gemintet an Nummer: 201 bis 1800
+    \end{itemize}
+    \item Status C (Platin)
+    \begin{itemize}
+    	\item Anzahl Pässe: 12.800
+    	\item Gemintet an Nummer: 1801 bis 14.600
+    \end{itemize}
+    \item Status D (Rubin)
+    \begin{itemize}
+    	\item Anzahl Pässe: 102.400
+    	\item Gemintet an Nummer: 14.601 bis 117.000
+    \end{itemize}
+    \item Status E (Gold)
+    \begin{itemize}
+    	\item Anzahl Pässe: 819.200
+    	\item Gemintet an Nummer: 117.001 bis 936.200
+    \end{itemize}
+    \item Status F (Silver)
+    \begin{itemize}
+    	\item Anzahl Pässe: 6.553.600
+    	\item Gemintet an Nummer: 936.201 bis 7.489.800
+    \end{itemize}
+    \item Status G (Bronze)
+    \begin{itemize}
+    	\item Anzahl Pässe: 52.428.800
+    	\item Gemintet an Nummer: 7.489.801 bis 59.918.600
+    \end{itemize}
+    \item Status H (Pearl)
+    \begin{itemize}
+    	\item Anzahl Pässe: 419.430.400
+    	\item Gemintet an Nummer: 59.918.601 bis 479.349.000
+    \end{itemize}
+    \item Status I (White)
+    \begin{itemize}
+    	\item Anzahl Pässe: $\infty$
+    	\item Gemintet an Nummer: 479.349.001 bis $\infty$
+    \end{itemize}
+\end{itemize}
+
+\end{NFT-Prop}
+
+\vspace{0.3cm}
+
+Diese NFT-Property ist per Definition trivialerweise \textbf{deterministisch}: Es ist stets zweifellos klar, welchen Status ein an x-ter Stelle geminteter \textit{NFT-Pass} haben wird. Die hinzugezogene "Reverse-Halving-Logik" \textbf{belohnt die Early-Adopter} mit einem begehrten NFT, dessen Rarität per Protokoll mit der Zeit stets abnimmt.
+
+Die Beschaffenheit dieser first-come-first-serve-Property soll jedoch einzigartig bleiben. Die folgenden Properties werden nicht mehr deterministisch sein, um unserem \textit{NFT-Pass} ein \textbf{unvorherbestimmbares "Eigenleben"} einzuverleiben. 
+
+
+\vspace{0.5cm}
+
+\begin{NFT-Prop}[Hologramm (Welt-Wunder)]
+
+Diese NFT-Property soll zwar einem ähnlichen abstufenden Raritätsprinzip zu Grunde liegen wie die Main-Property, dies jedoch nicht mehr einem first-come-first-serve- sondern stattdessen einem Zufallsprinzip folgend.
+
+Ebenfalls abweichend von der Beschaffenheit der Main-Property soll bei dieser Property die Rarität nicht mittels einer absoluten Obergrenze abgebildet werden, sondern mittels einer relativen. (Dies zahlt auf die oben formulierte Anforderung nach einem \textbf{gemeinnützig gewinnbringendem Value} unseres \textit{NFT-Pass} ein.
+
+\vspace{0.3cm}
+
+Wir definieren folgende \textit{NFT-Pass-Hologramme} mit den dazugehörenden Eigenschaften:
+
+\begin{itemize}
+    \item WW1
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Hängenden Gärten} 
+    	\item Anteil Pässe: 0.78125\%
+    \end{itemize}
+    \item WW2
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Koloss von Rhodos} 
+    	\item Anteil Pässe: 1.5625\%
+    \end{itemize}
+    \item WW3
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Grab des Königs Mausolos II. zu Halikarnassos} 
+    	\item Anteil Pässe: 3.125\%
+    \end{itemize}
+    \item WW4
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Leuchtturm auf der Insel Pharos vor Alexandria} 
+    	\item Anteil Pässe: 6.25\%
+    \end{itemize}
+    \item WW5
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Pyramiden von Gizeh} 
+    	\item Anteil Pässe: 12.5\%
+    \end{itemize}
+    \item WW6
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Tempel der Artemis in Ephesos} 
+    	\item Anteil Pässe: 25\%
+    \end{itemize}
+    \item WW7
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Zeus-Statue des Phidias} 
+    	\item Anteil Pässe: 50\% + x ($x \leq 0.78125\%$)
+    \end{itemize}
+\end{itemize}
+
+\end{NFT-Prop}
+
+\vspace{0.3cm}
+
+Das Besondere an dieser Property spiegelt sich in der Tatsache wider, gewisse rar beschaffene Ausprägungen seien nur "zeitweise" ausgeschöpft, da sich ihre (rare) Anzahl lediglich \textbf{relativ} an der Gesamtzahl der aktuell \textit{ausgestellten NFT-Pässe} bemisst und nicht wie die Main-Property einer absoluten Obergrenze obliegt, deren Erreichung nicht wieder umkehrbar ist. Soll heißen: Ist die prozentuale Obergrenze an Pässen mit einer bestimmten Ausprägung der gegenwärtigen Property zu einem bestimmten Zeitpunkt erreicht, kann zwar für einen gewissen Zeitraum kein Pass mit dieser Ausprägung mehr ausgestellt werden. Sobald jedoch die Gesamtanzahl der \textit{ausgestellten NFT-Pässe} wieder groß genug ist - sodass die Anzahl der vorhandenen \textit{NFT-Pässe} mit der besagten Ausprägung wieder die prozentuale Obergrenze unterschreitet - werden Pässe der besagten Ausprägung "wieder verfügbar".
+
+\vspace{0.3cm}
+
+\todo{TODO: "Verlosungs-Mechanismus" beschreiben (etwas aufwendig; für den one-pager jedoch nicht nötig):}
+
+\begin{itemize}
+    \item n:= Anzahl ausgestellter Pässe gesamt
+    \item $n_1, n_2,...,n_7$:= Anzahl ausgestellter Pässe mit Ausprägung 1-7
+    \item Anteile der Pässe mit den einzelnen Ausprägungen errechnen: $p_i:= \frac{n_i}{n}$ für $i \in \lbrace 1,...7 \rbrace$ und gegen definierte Obergrenzen abgleichen.
+    \item Ausgeschöpfte Ausprägungen werden bei der "Verlosung" nicht berücksichtigt.
+    \item Verfügbare Ausprägungen müssen bei der Verlosung mit ihrer relativen Rarität gewichtet werden.
+    \item Skalierung von verfügbaren Ausprägungen bei Existenz von ausgeschöpften Ausprägungen berücksichtigen.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\begin{NFT-Prop}[Background (Muster)]
+
+Diese NFT-Property soll ebenso wie die vorige einem ähnlichen abstufenden Raritätsprinzip zu Grunde liegen wie die Main-Property, dies jedoch ebenso nicht einem first-come-first-serve- sondern stattdessen einem Zufallsprinzip folgend.
+
+Genauso wie bei der Main-Property soll die Rarität dieser Property einer absoluten Obergrenze obliegen, bei deren Erreichung fortan keine \textit{NFT-Pässe} mit der erschöpften Property-Ausprägung mehr ausgestellt/gemintet werden können.
+
+\vspace{0.3cm}
+
+Wir definieren folgende \textit{NFT-Pass-Background-Muster} mit den dazugehörenden Eigenschaften:
+
+
+
 \todo{TODO}
+
+\end{NFT-Prop}
+
+
+\vspace{0.3cm}
+
+\begin{NFT-Prop}[Community]
+
+\todo{TODO}
+
+\vspace{0.2cm}
+
+Wrangel-Kiez $\rightarrow$ Berlin $\rightarrow$ Germany $\rightarrow$ Europe $\rightarrow$ WunderWorld $\rightarrow$ Sonnensystem $\rightarrow$ Milchstraße
+
+\end{NFT-Prop}
+
+
+
+\vspace{0.5cm}
+
+\todo{TODO: Beispielrechnung für geminteten NFT-Pass mit der Nummer x}
+
+\vspace{0.2cm}
+
+Angenommen x sei 1.005.965.
+
+\begin{itemize}
+  \item vorrechnet, welche ersten 1.005.964 NFT-Pässe schon weggemintet sein könnten und Wahrscheinlichkeiten für den neu zu mintenden NFT-Pass erklären.
+  \item neuen NFT-Pass unter Einbindung der Wahrscheinlichkeiten und vorgegaukelten Zufalls errechnet.
+  \item geminteten neuen NFT-Pass als exakte Grafik in unserem Design hier abbilden.
+\end{itemize}
+
+
+\vspace{0.3cm}
+
+\todo{TODO: Design}
+
+\todo{TODO: intrinsischer Wert mittels Berechtigungen als Governance-Token}
+
+\todo{TODO: Strategie des Minting und der Vergabe (Exploit-Prävention)}
+
+\vspace{0.3cm}
+
+TODOs könnten als Teil der Tech-Deep-Dive-Termine erarbeitet werden.
+
+\vspace{0.3cm}
+
+\subsection{Technische Umsetzung}
+
+\vspace{0.3cm}
+
+\todo{TODO: technische Implementierung}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Abwandlung des ERC721-Standard, um unsere Metadaten-Logik zu bändigen.
+  \item Die Metadaten werden wohl auch einem ähnlichen Konstrukt wie IPFS (off-chain) gespeichert werden und lediglich deren Hash als Datenfeld im Smart-Contract (on-chain), damit die Metadaten nicht nachträglich verändern werden können (dieses Vorgehen wird der absolute Standard sein).
+  \item Unsere Metadaten sind jedoch so komplex, das deren Erzeugung (beim Minten) wohl einen zweiten Smart-Contract erfordern wird. Wir haben also quasi einen "Metadaten-Hybriden":
+  \begin{itemize}
+  	\item Erzeugung on-chain
+  	\item Storing off-chain
+  \end{itemize}
+  \item Der Metadaten-Smart-Contract wird die oben skizzierte Logik implementieren
+  \begin{itemize}
+  	\item Wie viele Pässe gibts es bereits und welche (hinsichtlich Properties)?
+  	\item Wie sind die aktuellen Verteilungen der Properties und deren Contstraints
+  	\item Einbindung von Randomisierungs-Orakeln
+  	\item Sicherstellung, dass die erzeugten Metadaten auch tatsächlich vom Caller (ERC721-Contract) verwendet wurden und keine nachträgliche Manipulation stattgefunden hat.
+  \end{itemize}
+  \item Es muss geklärt werden, ob hinsichtlich des Gedanken an den besagten "zweiten Smart-Contract" Standards/Best-Practices existieren, damit wir hier nicht das Rad neu erfinden.
+  \item Es bleibt unklar, wie die Metadaten nach ihrer Erzeugung nach IPFS gelangen. Laut meinem Verständnis kann ein Smart-Contract sowas nicht selbst gewährleisten. Gefühlt ist der Standard-Workflow bei NFT, dass "Collections" (hinsichtlich Metadaten) bereits im Vorfeld - und zwar in Gänze der gesamten Kollektion - erzeugt und in IPFS gespeichert werden. Aber es finden sich auch andere Beispiele. Trotzdem scheint der Standard eher 
+  \begin{itemize}
+  	\item Metadaten erzeugen und speichern (IPFS; ohne Smart-Contract)
+  	\item NFT minten und dabei die Metadaten als Parameter übergeben (innerhalb des Smart-Contracts)
+  \end{itemize}
+  zu sein und nicht wie bei uns
+  \begin{itemize}
+  	\item Metadaten in einem Smart-Contract erzeugen (gecallt aus dem Minting-Contract)
+  	\item Metadaten speichern (IPFS; ohne Smart-Contract)
+  	\item Minting-Prozess aus dem ursprünglichen ERC721-Contract fortsetzen und dabei die erzeugten Metadaten verwenden.
+  \end{itemize}
+  \item \textbf{Ein etwaiger Crypto-Freelancer muss auf die skizzierten Herausforderungen gechallenget werden.}
+\end{itemize}
+
+
+\newpage

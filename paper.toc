@@ -34,11 +34,13 @@
 \contentsline {subsubsection}{\numberline {5.4.6}WPT in Zahlen}{40}{subsubsection.5.4.6}%
 \contentsline {subsubsection}{\numberline {5.4.7}Fazit}{40}{subsubsection.5.4.7}%
 \contentsline {subsection}{\numberline {5.5}Fazit}{40}{subsection.5.5}%
-\contentsline {section}{\numberline {6}NFT-Pass}{40}{section.6}%
-\contentsline {section}{\numberline {7}Abgrenzung zu SSI}{41}{section.7}%
-\contentsline {section}{\numberline {8}Dinge}{41}{section.8}%
-\contentsline {section}{\numberline {9}Project 'Guard'}{41}{section.9}%
-\contentsline {section}{\numberline {10}Community}{41}{section.10}%
-\contentsline {section}{\numberline {11}Zusammenfassung}{41}{section.11}%
-\contentsline {section}{\numberline {12}Anhang}{41}{section.12}%
+\contentsline {section}{\numberline {6}NFT-Pass}{41}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Konzeption}{41}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Technische Umsetzung}{46}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Abgrenzung zu SSI}{48}{section.7}%
+\contentsline {section}{\numberline {8}Dinge}{48}{section.8}%
+\contentsline {section}{\numberline {9}Project 'Guard'}{48}{section.9}%
+\contentsline {section}{\numberline {10}Community}{48}{section.10}%
+\contentsline {section}{\numberline {11}Zusammenfassung}{48}{section.11}%
+\contentsline {section}{\numberline {12}Anhang}{48}{section.12}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
