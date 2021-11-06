@@ -129,38 +129,43 @@ Wir definieren folgende \textit{NFT-Pass-Hologramme} mit den dazugehörenden Eig
 \begin{itemize}
     \item WW1
     \begin{itemize}
-    	\item Mögliche Ausprägung: \todo{Hängenden Gärten} 
-    	\item Anteil Pässe: 0.78125\%
+    	\item Mögliche Ausprägung: \textbf{Pyramiden von Gizeh}
+    	\item Anteil Pässe: 0,390625\% $\left( \frac{1}{256} \right)$
     \end{itemize}
     \item WW2
     \begin{itemize}
-    	\item Mögliche Ausprägung: \todo{Koloss von Rhodos} 
-    	\item Anteil Pässe: 1.5625\%
+    	\item Mögliche Ausprägung: \textbf{Chinesische Mauer}
+    	\item Anteil Pässe: 0,78125\% $\left( \frac{1}{128} \right)$
     \end{itemize}
     \item WW3
     \begin{itemize}
-    	\item Mögliche Ausprägung: \todo{Grab des Königs Mausolos II. zu Halikarnassos} 
-    	\item Anteil Pässe: 3.125\%
+    	\item Mögliche Ausprägung: \textbf{Steinstadt Petra} 
+    	\item Anteil Pässe: 1,5625\% $\left( \frac{1}{64} \right)$
     \end{itemize}
     \item WW4
     \begin{itemize}
-    	\item Mögliche Ausprägung: \todo{Leuchtturm auf der Insel Pharos vor Alexandria} 
-    	\item Anteil Pässe: 6.25\%
+    	\item Mögliche Ausprägung: \textbf{Kolosseum} 
+    	\item Anteil Pässe: 3,125\% $\left( \frac{1}{32} \right)$
     \end{itemize}
     \item WW5
     \begin{itemize}
-    	\item Mögliche Ausprägung: \todo{Pyramiden von Gizeh} 
-    	\item Anteil Pässe: 12.5\%
+    	\item Mögliche Ausprägung: \textbf{Chichén Itzá} 
+    	\item Anteil Pässe: 6,25\% $\left( \frac{1}{16} \right)$
     \end{itemize}
     \item WW6
     \begin{itemize}
-    	\item Mögliche Ausprägung: \todo{Tempel der Artemis in Ephesos} 
-    	\item Anteil Pässe: 25\%
+    	\item Mögliche Ausprägung: \textbf{Machu Picchu} 
+    	\item Anteil Pässe: 12,5\% $\left( \frac{1}{8} \right)$
     \end{itemize}
     \item WW7
     \begin{itemize}
-    	\item Mögliche Ausprägung: \todo{Zeus-Statue des Phidias} 
-    	\item Anteil Pässe: 50\% + x ($x \leq 0.78125\%$)
+    	\item Mögliche Ausprägung: \textbf{Taj Mahal} 
+    	\item Anteil Pässe: 25\% $\left( \frac{1}{4} \right)$
+    \end{itemize}
+    \item WW8
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Christus-Statue Corcovado} 
+    	\item Anteil Pässe: 50\% + x $\left( \frac{1}{2} + \frac{1}{256} \right)$
     \end{itemize}
 \end{itemize}
 
@@ -172,22 +177,48 @@ Das Besondere an dieser Property spiegelt sich in der Tatsache wider, gewisse ra
 
 \vspace{0.3cm}
 
-\todo{TODO: "Verlosungs-Mechanismus" beschreiben (etwas aufwendig; für den one-pager jedoch nicht nötig):}
+\begin{Algo}[Verlosungs-Mechanismus für Hologramm-Property]
 
 \begin{itemize}
-    \item n:= Anzahl ausgestellter Pässe gesamt
-    \item $n_1, n_2,...,n_7$:= Anzahl ausgestellter Pässe mit Ausprägung 1-7
-    \item Anteile der Pässe mit den einzelnen Ausprägungen errechnen: $p_i:= \frac{n_i}{n}$ für $i \in \lbrace 1,...7 \rbrace$ und gegen definierte Obergrenzen abgleichen.
-    \item Ausgeschöpfte Ausprägungen werden bei der "Verlosung" nicht berücksichtigt.
-    \item Verfügbare Ausprägungen müssen bei der Verlosung mit ihrer relativen Rarität gewichtet werden.
-    \item Skalierung von verfügbaren Ausprägungen bei Existenz von ausgeschöpften Ausprägungen berücksichtigen.
+    \item Zunächst bestimme man die Gesamtanzahl aller bisher geminteter Pässe $n$.
+    \item Gleiches tue man nun für die Counts der geminteten Pässe pro Ausprägung der Hologramm-Property WW1 bis WW7 als entsprechende Größen $n_1, n_2,...,n_7$.
+    \item Und damit anschließend die aktuelle prozentuale Verteilung der Ausprägung auf die aktuell geminteten Pässe als $\sigma_i:= \frac{n_i}{n}$ für $i \in \lbrace 1,...7 \rbrace$ berechnen.
+    \item Seien $\Theta_i$ für $i \in \lbrace 1,...7 \rbrace$ die oben definierten \textbf{relativen} Obergrenzen der \newline Ausprägungen der Hologramm-Property WW1 bis WW7.
+    \item Alle Ausprägungen mit $\sigma_i \geq \Theta_i$ können zum aktuellen Zeitpunkt nicht vergeben werden und damit auch nicht beim Minting eines neuen Pass berücksichtigt werden.
+    \item Für die Ausprägungen mit $\sigma_i < \Theta_i$ berechnen wir den Normierungsfaktor
+\end{itemize} 
+
+\begin{equation*}
+\omega := \sum_{\sigma_i < \Theta_i} \Theta_i \textrm{ } \leq 1
+\end{equation*} 
+
+\begin{itemize}
+    \item Damit errechnen wir die aktuell vorliegenden Wahrscheinlichkeiten $\rho_i$ für unsere Hologramm-Ausprägungen als
+\end{itemize} 
+
+\[
+\rho_i:=\left\{%
+\begin{array}{ll}
+    0, & \hbox{falls $\sigma_i \geq \Theta_i$} \\[0,3cm]
+    \hbox{\LARGE $\frac{\Theta_i}{\omega}$,} & \hbox{falls $\sigma_i < \Theta_i$} \\
+\end{array}%
+\right.
+\] 
+
+Man vergewissere sich an dieser Stelle gedanklich, dass auch für die neuen \newline Wahrscheinlichkeiten \[\sum_{i = 1}^7 \rho_i \textrm{ } = 1\] gilt.
+
+\begin{itemize}
+    \item Am Ende bestimme man mittels Randomisierung anhand der Wahrscheinlichkeiten $\rho_i$ für $i \in \lbrace 1,...7 \rbrace$ die zu vergebende Hologramm-Ausprägung. 
 \end{itemize}
+
+\end{Algo}
+
 
 \vspace{0.5cm}
 
 \begin{NFT-Prop}[Background (Muster)]
 
-Diese NFT-Property soll ebenso wie die vorige einem ähnlichen abstufenden Raritätsprinzip zu Grunde liegen wie die Main-Property, dies jedoch ebenso nicht einem first-come-first-serve- sondern stattdessen einem Zufallsprinzip folgend.
+Diese NFT-Property soll ebenso wie die vorige einem ähnlichen abstufenden \newline Raritätsprinzip zu Grunde liegen wie die Main-Property, dies jedoch ebenso nicht einem first-come-first-serve- sondern stattdessen einem Zufallsprinzip folgend.
 
 Genauso wie bei der Main-Property soll die Rarität dieser Property einer absoluten Obergrenze obliegen, bei deren Erreichung fortan keine \textit{NFT-Pässe} mit der erschöpften Property-Ausprägung mehr ausgestellt/gemintet werden können.
 
@@ -195,14 +226,112 @@ Genauso wie bei der Main-Property soll die Rarität dieser Property einer absolu
 
 Wir definieren folgende \textit{NFT-Pass-Background-Muster} mit den dazugehörenden Eigenschaften:
 
+\begin{itemize}
+    \item M1
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Muster festlegen} 
+    	\item maximale Anzahl Pässe: 256
+    	\item Wahrscheinlichkeit falls noch nicht aufgebraucht: 1,5625\% $\left( \frac{1}{64} \right)$
+    \end{itemize}
+    \item M2
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Muster festlegen} 
+    	\item maximale Anzahl Pässe: 4.096
+    	\item Wahrscheinlichkeit falls noch nicht aufgebraucht: 3,125\% $\left( \frac{1}{32} \right)$
+    \end{itemize}
+    \item M3
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Muster festlegen} 
+    	\item maximale Anzahl Pässe: 65.536
+    	\item Wahrscheinlichkeit falls noch nicht aufgebraucht: 6,25\% $\left( \frac{1}{16} \right)$
+    \end{itemize}
+    \item M4
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Muster festlegen} 
+    	\item maximale Anzahl Pässe: 1.048.576
+    	\item Wahrscheinlichkeit falls noch nicht aufgebraucht: 12,5\% $\left( \frac{1}{8} \right)$
+    \end{itemize}
+    \item M5
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Muster festlegen}  
+    	\item maximale Anzahl Pässe: 16.777.216
+    	\item Wahrscheinlichkeit falls noch nicht aufgebraucht: 25\% $\left( \frac{1}{4} \right)$
+    \end{itemize}
+    \item M6
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \todo{Muster festlegen}
+    	\item maximale Anzahl Pässe: unbegrenzt  
+    	\item Wahrscheinlichkeit: 50\% + x mit stets größer werdendem $x \in \left[ \frac{1}{64}; \frac{1}{2} \right]$
+    \end{itemize}
+\end{itemize}
 
+\vspace{0.2cm}
 
-\todo{TODO}
+Werden Pässe der Ausprägungen M1 bis M5 (aufgrund ihres Caps) im Laufe der Zeit aufgebraucht, geht deren Wahrscheinlichkeit auf die Property-Ausprägung M6 über. Für das x aus der Beschreibung der Ausprägung M6 gilt also:
+
+\vspace{0.2cm}
+
+\begin{equation*}
+x = \frac{1}{64} + \sum_{aufgebrauchte \textrm{ } M \in \lbrace M1;...;M5 \rbrace} Wahrscheinlichkeit(M)
+\end{equation*}
 
 \end{NFT-Prop}
 
-
 \vspace{0.3cm}
+
+\begin{Algo}[Verlosungs-Mechanismus für Background-Property]
+
+\begin{itemize}
+    \item Zunächst bestimme man die Gesamtanzahl aller bisher geminteter Pässe $n$.
+    \item Gleiches tue man nun für die Counts der geminteten Pässe pro Ausprägung der Background-Property M1 bis M6 als entsprechende Größen $n_1, n_2,...,n_6$.
+    \item Seien $\Theta_i$ für $i \in \lbrace 1,...6 \rbrace$ die oben definierten \textbf{absoluten} Obergrenzen der \newline Ausprägungen der Background-Property M1 bis M6.
+    \item Seien $\rho_i$ für $i \in \lbrace 1,...6 \rbrace$ die oben definierten Wahrscheinlichkeiten der \newline Ausprägungen der Background-Property M1 bis M6, deren Auswahl wir hier zusätzlich formalisieren wollen:
+    
+\[
+\rho_i:=\left\{%
+\begin{array}{ll}
+    \hbox{\LARGE $\frac{1}{2^{7 - i}}$,} & \hbox{für $i = 1,...,5$} \\[0,3cm]
+    \hbox{$\frac{1}{2} + \frac{1}{2^6}$,} & \hbox{für $i = 6$} \\
+\end{array}%
+\right.
+\]    
+    
+    \item Alle Ausprägungen mit $n_i \geq \Theta_i$ sind aufgebraucht und können weder zum aktuellen Zeitpunkt noch in der Zukunft vergeben werden und damit fortan auch nicht beim Minting eines neuen Pass berücksichtigt werden.
+    \item Wir unterteilen die Ausprägungen der Background-Property in \textit{"verbraucht"} und \textit{"verfügbar"}:
+    
+\begin{align*}
+\overline{M} &:= \lbrace i \in \lbrace 1,...,6 \rbrace \textrm{ } | \textrm{ } n_i \geq \Theta_i \rbrace \textrm{     [verbraucht]} \\
+M &:= \lbrace i \in \lbrace 1,...,6 \rbrace \textrm{ } | \textrm{ } n_i < \Theta_i \rbrace \textrm{     [verfügbar]}
+\end{align*} 
+
+Man vergewissere sich an dieser Stelle gedanklich, dass $M \cap \overline{M} = \emptyset$, $M \cup \overline{M} = \lbrace 1,...,6 \rbrace$ und $6 \in M$ gelten.
+    
+    \item Ist eine bestimmte Ausprägung $i \in \lbrace 1,...,5 \rbrace$ verbraucht, soll ihre Wahrscheinlichkeit $\rho_i$ auf die Ausprägung M6 übertragen werden (damit wir bei 100\% bleiben).
+
+    \item Damit errechnen wir die aktuell vorliegenden neuen Wahrscheinlichkeiten $\widehat{\rho}_i$ für unsere Background-Ausprägungen als
+\end{itemize} 
+
+\[
+\widehat{\rho}_i:=\left\{%
+\begin{array}{ll}
+	\hbox{0,} & \hbox{für $i \in \overline{M}$} \\[0,1cm] 
+    \hbox{$\rho_i$,} & \hbox{für $i \in M$, $i \neq 6$} \\[0,3cm]
+    \displaystyle \rho_6 + \sum_{i \in \overline{M}} \rho_i, & \hbox{für $i = 6$} \\
+\end{array}%
+\right.
+\]
+
+Man vergewissere sich an dieser Stelle gedanklich, dass auch für die neuen \newline Wahrscheinlichkeiten \[\sum_{i = 1}^6 \widehat{\rho}_i \textrm{ } = 1\] gilt.
+
+\begin{itemize}
+    \item Am Ende bestimme man mittels Randomisierung anhand der Wahrscheinlichkeiten $\widehat{\rho}_i$ für $i \in \lbrace 1,...6 \rbrace$ die zu vergebende Background-Ausprägung. 
+\end{itemize}
+
+\end{Algo}
+
+
+
+\vspace{0.5cm}
 
 \begin{NFT-Prop}[Community]
 
@@ -269,16 +398,16 @@ TODOs könnten als Teil der Tech-Deep-Dive-Termine erarbeitet werden.
   	\item Sicherstellung, dass die erzeugten Metadaten auch tatsächlich vom Caller (ERC721-Contract) verwendet wurden und keine nachträgliche Manipulation stattgefunden hat.
   \end{itemize}
   \item Es muss geklärt werden, ob hinsichtlich des Gedanken an den besagten "zweiten Smart-Contract" Standards/Best-Practices existieren, damit wir hier nicht das Rad neu erfinden.
-  \item Es bleibt unklar, wie die Metadaten nach ihrer Erzeugung nach IPFS gelangen. Laut meinem Verständnis kann ein Smart-Contract sowas nicht selbst gewährleisten. Gefühlt ist der Standard-Workflow bei NFT, dass "Collections" (hinsichtlich Metadaten) bereits im Vorfeld - und zwar in Gänze der gesamten Kollektion - erzeugt und in IPFS gespeichert werden. Aber es finden sich auch andere Beispiele. Trotzdem scheint der Standard eher 
+  \item Es bleibt noch nicht ganz klar, wie die Metadaten nach ihrer Erzeugung nach IPFS gelangen, da dies laut meinem Verständnis ein Smart-Contract nicht selbst gewährleisten kann. Moritz Idee war grob die Folgende 
   \begin{itemize}
-  	\item Metadaten erzeugen und speichern (IPFS; ohne Smart-Contract)
-  	\item NFT minten und dabei die Metadaten als Parameter übergeben (innerhalb des Smart-Contracts)
-  \end{itemize}
-  zu sein und nicht wie bei uns
-  \begin{itemize}
-  	\item Metadaten in einem Smart-Contract erzeugen (gecallt aus dem Minting-Contract)
-  	\item Metadaten speichern (IPFS; ohne Smart-Contract)
-  	\item Minting-Prozess aus dem ursprünglichen ERC721-Contract fortsetzen und dabei die erzeugten Metadaten verwenden.
+    \item Der Minting-Contract erzeugt den NFT, lässt seine Metadaten-Referenz jedoch zunächst ungesetzt (der NFT ist damit in gewisser Weise noch "unfertig"; kann in dem Zustand auch noch Constraints unterstellt sein).
+    \item Der Minting-Contract callt den Metadaten-Contract mit dem Anliegen, Metadaten zu dem "unfertigen" NFT mit der zugehörigen ID zu erzeugen.
+  	\item Der Metadaten-Contract erzeugt die Metadaten, hasht diese und gibt den Hash zurück an den Minting-Contract. Gleichzeitig publisht er ein Create-Event mit der Token-ID und den zugehörigen erzeugten Metadaten.
+  	\item Der Minting-Contract speichert den erhaltenen Metadaten-Hash und wartet auf "approvement".
+  	\item Das forcierte Event wird von einem dafür bestimmten (off-chain) Web3-Service vernommen und weiterverarbeitet: Die Metadaten werden geparst und nach IPFS gepusht. Als Ergebnis bekommen wir eine entsprechende IPFS-URI.
+  	\item Unser Web3-Service stößt anschließend eine "Set-URI"-Transaktion mit den entsprechenden Input-Daten (Token-ID; IPFS-URI) beim Minting-Contract an, um den gesamten Minting-Prozess für den neuen Token abzuschließen.
+  	\item Der Minting-Contract verifiziert die Metadaten mittels des gespeicherten Meta-Daten-Hashs (\todo{Hier ist nicht nicht ganz klar, wie. Ich weiß nicht, ob der Contract einfach die Daten von IPFS laden kann, um den Hash abzugleichen oder ob er vorher die URI implizit vorgeben muss, die irgendwie im Hash berücksichtigt werden muss, oder wie auch immer hier die Best-Practise aussieht}) und updatet die NFT-URI auf den Wert der übergebenen IPFS-URI. 
+  	\item Hiermit ist der Minting-Prozess abgeschlossen, der NFT "fertig" gemintet und kann von etwaigen "Temporary-Locked-Constraint" entbunden werden und vom neuen Besitzer frei verfügt werden.
   \end{itemize}
   \item \textbf{Ein etwaiger Crypto-Freelancer muss auf die skizzierten Herausforderungen gechallenget werden.}
 \end{itemize}
