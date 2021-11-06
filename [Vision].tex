@@ -27,8 +27,19 @@ organisatorischer Natur – \textbf{so weit wie möglich transparent} zu halten.
 
 \begin{Solution}[fehlende Eindeutigkeit]
 
-\todo{TODO: ausformulieren}
-Kryptografische Identität ist eindeutig $\rightarrow$ private key
+Um Eindeutigkeit der Identität bzw. Identifizierung herzustellen, bedarf es eines übereinstimmenden Konsens, welches ausreichend der relevanten digitalen Akteure mittragen.
+
+Der Status quo könnte in diesem Sinne gar nicht schlimmer sein. Meine digitale wird heutzutage gleichermaßen durch meine Email-Adresse, meine Telefonnummer, einen etwaigen frei wählbaren Nickname oder aber meinen Google- oder Facebook-Account repräsentiert. Wo es grad wem besser passt. Weniger eindeutig geht es also quasi kaum.
+
+Die "Großen" haben das Problem bereits erkannt und forcieren die Eindeutigkeit gen Google-, Apple- oder Facebook-Account als eindeutige Identität. Nur ist es so, dass die sich unwahrscheinlich an einen Tisch setzen und ein gemeinsames Standard beschließen. Und wenn es am Ende nur die 4 großen GAFA-Identitäten gibt, sind es im Sinne der Eindeutigkeit 3 zu viel.
+
+\vspace{0.2cm}
+
+Und da eine kollaborative Festlegung auf eindeutige Identität völlig utopisch erscheint, muss eine von den Naturgesetzen vorgegebe gewählt werden. Eine, die jeder unmissverständlich und gleich interpretieren kann, ohne eine Kollaboration mit irgendwem eingehen zu müssen.
+
+\vspace{0.2cm}
+
+\textbf{Das kryptografische Private-Public-Key-Pair scheint der perfekte Kandidat für diese Anforderung zu sein!}
 
 \end{Solution}
 
@@ -37,8 +48,9 @@ Kryptografische Identität ist eindeutig $\rightarrow$ private key
 
 \begin{Solution}[Redundanz und fehlerbehaftete Daten]
 
-\todo{TODO: ausformulieren}
-Eine einzige globale Tabelle als Identity-Management-Service in der Blockchain
+Wir möchten diesem Problem entgegnen, indem wir persönliche Daten nur an einer einzigen globalen Stelle speichern - einem Identity-Management-Service in der \newline Blockchain.
+
+Der User muss seine Daten dann nur an einer einzigen Stelle aktuell und sauber halten und die Datennutzer (z. B. Online-Services) können stets von Aktualität und Korrektheit ausgehen.
 
 \end{Solution}
 
@@ -62,6 +74,19 @@ Einen private key muss man nicht mehrfach registrieren.
   \item meine Daten liegen an einer einzigen Stelle gespeichert
   \item Daten sind verschlüsselt und unhackbar
   \item Derart ließen sich auch Identitätsdaten auf automatisierte Weise kontrolliert weitergeben. 'Kontrolliert' in diesem Zusammenhang bedeutet die Möglichkeit für den Anwender, selbst zu entscheiden, an wen er welche Daten wann und zu welchen Bedingungen übermittelt.
+\end{itemize}
+
+\end{Solution}
+
+\vspace{0.3cm}
+
+
+\begin{Solution}[Daten werden nicht dort erfasst, wo sie gebraucht werden]
+
+\todo{TODO: ausformulieren}
+\begin{itemize}
+  \item Beispiel mit der Supermarkt-Kassiererin
+  \item Beispiel mit Amazon und der Post
 \end{itemize}
 
 \end{Solution}
