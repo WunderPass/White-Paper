@@ -67,8 +67,26 @@ Dies ist nicht nur ein Problem beim User (Aufwand) sondern ebenso großes Proble
 
 \begin{Problem}[mangelhafte UX]
 
-\todo{TODO: ausformulieren}
-Man muss sich ständig neu registrieren, Accounts und Passwörter managen etc.
+Die heutige Existenz von zig, wenn nicht gar hunderten von Online-Accounts (= digitale Identitäten) pro User sehen wir nicht nur aufgrund der beiden eben formulierten Probleme der Uneindeutigkeit und Redundanz, sondern insbesondere auch aus User-Sicht als gänzlich unzeitgemäß und unzumutbar. Weil es eben nicht der Anspruch des digitalen Fortschritts unserer Zeit sein kann, zig und hunderte von Accounts und Passwörtern verwalten zu müssen, und diesen Missstand mit Verweis auf etwaige unterstützende Passwort-Manager auszublenden. \textbf{Was wir brauchen, sind keine Passwort-Manager oder Auto-Completion-Browser-Extensions, sondern ein grundlegendes Neudenken des digitalen Identifizierungs-Managements (Sign-up / Sign-in).}
+
+\vspace{0.2cm}
+
+Um den hiesigen Appell besser nachvollziehen zu können, brauchen wir einen etwas technischeren Blick auf den heute gängigen Sign-up-/Sign-in-Prozess. Für die Nutzung eines Online-Dienstes bedarf es folgender (simpler) Elemente:
+
+\begin{itemize}
+  \item Anlegen einer neuen Online-Identität beim zugehörigen Online-Dienst (\textbf{Sign-up}) als Mapping zwischen
+  \begin{itemize}
+  	\item technischem Identifier beim zugehörigen Online-Dienst (Kundennummer/
+  	\newline Nickname/Telefonnummer/Emailadresse).
+  	\item Userdaten
+  \end{itemize}
+  \item Identifizierung mittels Eingabe des technischen Identifier, um dem zugehörigen Online-Dienst mitzuteilen, wer man ist (Teil des \textbf{Sing-in}s).
+  \item Autorisierung mittels Eingabe des persönlichen Passworts (oder auch 2FA), um dem zugehörigen Online-Dienst zu beweisen, man sei auch tatsächlich derjenige, als den man sich ausgibt (Teil des \textbf{Sing-in}s).
+\end{itemize}
+
+Alle dieser drei Elemente sind fraglos nötig (gleichwohl das erste genau genommen nur einmal universell für alle existierenden Online-Dienste nötig wäre; siehe auch die beiden oben adressierten Probleme), das Problem hier ist nur, dass hier viel zu viel manuelles Zutun vom User eingefordert wird und damit die besagte UX ruiniert. 
+
+Dabei ist der Status quo hinsichtlich der Autorisierung bereits auf ganz gutem (UX-)Weg. Der Stand hinsichtlich der Identifizierung ist dagegen weiterhin katastrophal! Und katastrophal heterogen und uneinheitlich noch dazu.
 
 \end{Problem}
 

@@ -25,7 +25,7 @@ organisatorischer Natur – \textbf{so weit wie möglich transparent} zu halten.
 
 \vspace{0.3cm}
 
-\begin{Solution}[fehlende Eindeutigkeit]
+\begin{Solution}[fehlende Eindeutigkeit]\label{sol1}
 
 Um Eindeutigkeit der Identität bzw. Identifizierung herzustellen, bedarf es eines übereinstimmenden Konsens, welches ausreichend der relevanten digitalen Akteure mittragen.
 
@@ -35,7 +35,7 @@ Die "Großen" haben das Problem bereits erkannt und forcieren die Eindeutigkeit 
 
 \vspace{0.2cm}
 
-Und da eine kollaborative Festlegung auf eindeutige Identität völlig utopisch erscheint, muss eine von den Naturgesetzen vorgegebe gewählt werden. Eine, die jeder unmissverständlich und gleich interpretieren kann, ohne eine Kollaboration mit irgendwem eingehen zu müssen.
+Und da eine kollaborative Festlegung auf eindeutige Identität völlig utopisch erscheint, muss eine von den Naturgesetzen vorgegebene gewählt werden. Eine, die jeder unmissverständlich und gleich interpretieren kann, ohne eine Kollaboration mit irgendwem eingehen zu müssen.
 
 \vspace{0.2cm}
 
@@ -46,7 +46,7 @@ Und da eine kollaborative Festlegung auf eindeutige Identität völlig utopisch 
 \vspace{0.3cm}
 
 
-\begin{Solution}[Redundanz und fehlerbehaftete Daten]
+\begin{Solution}[Redundanz und fehlerbehaftete Daten] \label{sol2}
 
 Wir möchten diesem Problem entgegnen, indem wir persönliche Daten nur an einer einzigen globalen Stelle speichern - einem Identity-Management-Service in der \newline Blockchain.
 
@@ -59,8 +59,21 @@ Der User muss seine Daten dann nur an einer einzigen Stelle aktuell und sauber h
 
 \begin{Solution}[mangelhafte UX]
 
-\todo{TODO: ausformulieren}
-Einen private key muss man nicht mehrfach registrieren.
+Wie auch bei obiger Lösung \ref{sol1} sehen wir auch für dieses Problem \textbf{das kryptografische Private-Public-Key-Pair} als sehr aussichtsreiches Allheilmittel an.
+
+Denn es ist geeignet als 
+
+\begin{itemize}
+  \item	technischer Identifier mittels Public-Key,
+  \item universelles und einheitliches Erkennungsmerkmal (\textbf{Identifizierung}) mittels Public-Key,
+  \item sicherster "Identity-Proof" (\textbf{Autorisierung}) mittels kryptografischer Signatur (die zudem auch noch "zero-knowledge" ist, und nicht mittels Pishing gehackt werden kann).
+\end{itemize}
+
+Dies sichert uns schon einmal einen "Zero-Input-Sign-in" ("zero input" aus Usersicht; die Workflows laufen im Hintergrund ohne Zutuns des Users ab).
+
+\vspace{0.1cm}
+
+Gepaart mit obiger Lösung \ref{sol2} kann zudem ebenso der Sign-up abgeschafft (bzw. auf eine einzige universelle und übergeordnete Registrierung für sämtliche Online-Dienste reduziert) werden - nämlich auf die einmalige Erstellung seines WunderPasses.
 
 \end{Solution}
 
