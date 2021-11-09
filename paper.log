@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  8 NOV 2021 22:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  9 NOV 2021 04:34
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -972,19 +972,20 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 \c@Business-Def=\count314
-\c@Praemisse=\count315
-\c@Quelle=\count316
-\c@Zitat=\count317
-\c@Fazit=\count318
-\c@Problem=\count319
-\c@Solution=\count320
-\c@NFT-Prop=\count321
-\c@Def=\count322
-\c@Theorem=\count323
-\c@Lemma=\count324
-\c@Assumption=\count325
-\c@Example=\count326
-\c@Algo=\count327
+\c@Hypothese=\count315
+\c@Praemisse=\count316
+\c@Quelle=\count317
+\c@Zitat=\count318
+\c@Fazit=\count319
+\c@Problem=\count320
+\c@Solution=\count321
+\c@NFT-Prop=\count322
+\c@Def=\count323
+\c@Theorem=\count324
+\c@Lemma=\count325
+\c@Assumption=\count326
+\c@Example=\count327
+\c@Algo=\count328
  (paper.aux
 
 LaTeX Warning: Label `sec:eco_zahlen_zustand_wp_advanced_teilnehmer' multiply d
@@ -993,41 +994,41 @@ efined.
 )
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-Package scrbase Info: activating english \contentsname on input line 186.
-Package scrbase Info: activating english \listfigurename on input line 186.
-Package scrbase Info: activating english \listtablename on input line 186.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+Package scrbase Info: activating english \contentsname on input line 192.
+Package scrbase Info: activating english \listfigurename on input line 192.
+Package scrbase Info: activating english \listtablename on input line 192.
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count328
+\scratchcounter=\count329
 \scratchdimen=\dimen271
 \scratchbox=\box70
-\nofMPsegments=\count329
-\nofMParguments=\count330
+\nofMPsegments=\count330
+\nofMParguments=\count331
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count331
+\MPscratchCnt=\count332
 \MPscratchDim=\dimen272
-\MPnumerator=\count332
-\makeMPintoPDFobject=\count333
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
 \everyMPtoPDFconversion=\toks45
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -1036,7 +1037,7 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-Package hyperref Info: Link coloring ON on input line 186.
+Package hyperref Info: Link coloring ON on input line 192.
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1048,11 +1049,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count334
+\c@section@level=\count335
 )
-LaTeX Info: Redefining \ref on input line 186.
-LaTeX Info: Redefining \pageref on input line 186.
-LaTeX Info: Redefining \nameref on input line 186.
+LaTeX Info: Redefining \ref on input line 192.
+LaTeX Info: Redefining \pageref on input line 192.
+LaTeX Info: Redefining \nameref on input line 192.
  (paper.out) (paper.out)
 \@outlinefile=\write4
 \openout4 = `paper.out'.
@@ -1064,21 +1065,21 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 186.
+(scrartcl)           before \begin{document} on input line 192.
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count335
+\BKM@id=\count336
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 189
+LaTeX Font Info:    Trying to load font information for U+msa on input line 195
 .
  (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 189
+LaTeX Font Info:    Trying to load font information for U+msb on input line 195
 .
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1298,18 +1299,67 @@ Package mdframed Info: mdframed detected package amsthm
 ) ([Unser Ansatz].tex) ([Economics].tex ([Economics][Einleitung].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6.
+(mdframed)              on input line 9.
+
+Overfull \hbox (11.92216pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/n/10.95 gesamte dig-i-tale Welt und wunschenswert. Lediglich die \O
+T1/cmr/bx/n/10.95 Verteilung des geschopften
+ []
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 18.
-)
-([Economics][Goals].tex) ([Economics][Quantifizierung].tex [13]
+[13]
+Overfull \hbox (15.4866pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/n/10.95 an-deres als sie glauben: Es ist nicht die Daten-er-fas-sung
+, -verarbeitung und -monetarisierung,
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 43.
+
+Overfull \hbox (0.9728pt too wide) in paragraph at lines 73--74
+[]\OT1/cmr/m/n/10.95 Wir wollen an dieser Stelle den ganzlich of-fen-sichtlich
+en (und ten-den-ziell isolierten)
+ []
+
+
+Overfull \hbox (5.79893pt too wide) in paragraph at lines 73--74
+\OT1/cmr/m/n/10.95 In-for-ma-tion-s-ge-halt/Datenverarbeitung - wie z. B. Re-se
+rvierungs-bestatigungen, Rech-
+ []
+
+
+Overfull \hbox (8.65697pt too wide) in paragraph at lines 81--102
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--102
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 126.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 126.
+[14] [15]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 134.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 146.
+ [16]) ([Economics][Goals].tex) ([Economics][Quantifizierung].tex
 ([Economics][Quantifizierung][Definitionen].tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
 
-
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
@@ -1326,13 +1376,6 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 32.
 
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 32.
-
-[14]
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
@@ -1354,35 +1397,50 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 82.
-[15])
+[18])
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 22.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 32.
+
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 32.
+
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 32.
+[19]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 42.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 76.
- [16]
-Package mdframed Info: Not enough space on this page on input line 76.
+ [20]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 84.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 102.
- [17] ([Economics][Quantifizierung][WP][Status quo].tex
+Package mdframed Info: Not enough space on this page on input line 102.
+ ([Economics][Quantifizierung][WP][Status quo].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 13.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 43.
- [18]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 43.
+ [21]
 ([Economics][Quantifizierung][theoremPools].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1390,34 +1448,37 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 18.
- [19])
+ [22])
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 58.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 68.
+ [23]
+Package mdframed Info: Not enough space on this page on input line 68.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 74.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 102.
- [20] [21])
-([Economics][Quantifizierung][WP][Messbarkeit].tex [22]
+ [24])
+([Economics][Quantifizierung][WP][Messbarkeit].tex [25]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 21.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
+ [26]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 53.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 71.
- [23])
+)
 ([Economics][Quantifizierung][WP][Fazit].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1425,38 +1486,33 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 48.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 48.
- [24])
+ [27])
 Overfull \hbox (0.26802pt too wide) in paragraph at lines 132--133
 \OT1/cmr/m/n/10.95 ichgestellt. Dies ist zweifels-frei klar hin-sichtlich der U
 n-ter-schei-dung zwis-chen con-necteten
  []
 
+[28]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 136.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 151.
-[25]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 155.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 162.
+ [29]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 188.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 194.
-Package mdframed Info: Not enough space on this page on input line 194.
- [26]
-Package mdframed Info: Not enough space on this page on input line 194.
- [27]
+ [30]
 Overfull \hbox (13.55524pt too wide) in paragraph at lines 241--242
 []\OT1/cmr/m/n/10.95 gemessen an ihrer bloen Groe ($\OMS/cmsy/m/n/10.95 !$ \
 OT1/cmr/m/n/10.95 User mit beson-ders vie-len/wenigen Providern
@@ -1486,7 +1542,9 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 304.
-[28]
+Package mdframed Info: Not enough space on this page on input line 304.
+[31]
+Package mdframed Info: Not enough space on this page on input line 304.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 332.
@@ -1499,7 +1557,9 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 359.
- [29] [30] [31]
+ [32]
+Package mdframed Info: Not enough space on this page on input line 359.
+ [33] [34]
 \pc@column@1=\box71
 \pc@column@width@1=\dimen273
 \pc@column@2=\box72
@@ -1561,11 +1621,11 @@ Overfull \hbox (7.38197pt too wide) detected at line 568
 []| | []
  []
 
-[32] [33]
+[35] [36]
 Overfull \vbox (17.0164pt too high) has occurred while \output is active []
 
 
-[34]
+[37]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 607.
@@ -1575,13 +1635,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 644.
- [35]
+ [38]
 Overfull \hbox (36.32098pt too wide) in paragraph at lines 659--660
 []\OT1/cmr/m/n/10.95 "80-20-Regel" her-anziehen, in-dem man die Men-gen $[]$ un
 d $[]$ so mod-i-fiziert/verkleinert,
  []
 
-[36] ([Economics][Quantifizierung][deprecated].tex
+[39] ([Economics][Quantifizierung][deprecated].tex
 Overfull \hbox (18.04156pt too wide) in paragraph at lines 6--7
 []\OT1/cmr/m/n/10.95 Mit diesen geschaf-fe-nen Formalisierungs-Werkzeugen lass
 t sich nun auch die ubergeordnete
@@ -1605,7 +1665,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 41.
-[37]
+[40]
 Package mdframed Info: Not enough space on this page on input line 41.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1625,7 +1685,7 @@ Overfull \hbox (7.26398pt too wide) in paragraph at lines 705--706
 ung" bzw. "Mile-stone" einfuhren. 
  []
 
-[38]
+[41]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 709.
@@ -1644,14 +1704,14 @@ Overfull \hbox (6.29063pt too wide) in paragraph at lines 799--800
 in-di-vidu-ell un-berucksichtigt.
  []
 
-[39]
+[42]
 Overfull \hbox (20.85979pt too wide) detected at line 810
 \OML/cmm/m/it/10.95 [] \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 [] \OT1/cmr/
 m/n/10.95 = 1[]\OML/cmm/m/it/10.95 u[]; u[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it
 /10.95 U[][]s[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 S[][]
  []
 
-) ([Economics][Token-Economics].tex [40]
+) ([Economics][Token-Economics].tex [43]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 10.
@@ -1664,7 +1724,7 @@ liefert uns ein Monetarisierungs-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 52.
-[41]
+[44]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 57.
@@ -1677,7 +1737,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 92.
- [42]
+ [45]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 96.
@@ -1732,7 +1792,7 @@ Overfull \hbox (1.15424pt too wide) in paragraph at lines 127--128
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 149.
-[43] [44] [45]) ([Economics][Fazit].tex)) ([NFT-Pass].tex [46]
+[46] [47] [48]) ([Economics][Fazit].tex)) ([NFT-Pass].tex [49]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 12.
@@ -1750,14 +1810,14 @@ Overfull \hbox (7.73042pt too wide) in paragraph at lines 35--36
 endes) Zu-fall-sprinzip. 
  []
 
-[47]
+[50]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 52.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 108.
- [48]
+ [51]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 119.
@@ -1770,7 +1830,7 @@ Overfull \hbox (7.89262pt too wide) in paragraph at lines 121--122
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 172.
-[49] [50]
+[52] [53]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 180.
@@ -1790,26 +1850,26 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 278.
-[51]
+[54]
 Package mdframed Info: Not enough space on this page on input line 278.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 278.
- [52]
+ [55]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 282.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 330.
- [53]
+ [56]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 336.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 344.
- [54] [55]
+ [57] [58]
 Overfull \hbox (1.52536pt too wide) in paragraph at lines 407--408
 []\OT1/cmr/m/n/10.95 Das forcierte Event wird von einem dafur bes-timmten (off
 -chain) Web3-Service
@@ -1827,7 +1887,7 @@ Overfull \hbox (2.5931pt too wide) in paragraph at lines 412--413
 Her-aus-forderun-
  []
 
-[56]) ([SSI].tex) ([Dinge].tex) ([Project Guard].tex) ([Community].tex)
+[59]) ([SSI].tex) ([Dinge].tex) ([Project Guard].tex) ([Community].tex)
 ([Zusammenfassung].tex) ([Anhang].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1847,7 +1907,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 29.
-[57]
+[60]
 Package mdframed Info: Not enough space on this page on input line 29.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1873,7 +1933,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 65.
-[58]
+[61]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 70.
@@ -1898,14 +1958,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 102.
-[59]
+[62]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 128.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 138.
- [60]
+ [63]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 143.
@@ -1943,7 +2003,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 173.
 Package mdframed Info: Not enough space on this page on input line 173.
-[61]
+[64]
 Package mdframed Info: Not enough space on this page on input line 173.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1963,7 +2023,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 205.
-) [62] (paper.aux)
+) [65] (paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1974,10 +2034,10 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25457 strings out of 479334
- 483525 string characters out of 2857085
- 947958 words of memory out of 3000000
- 42210 multiletter control sequences out of 15000+200000
+ 25475 strings out of 479334
+ 483735 string characters out of 2857085
+ 949538 words of memory out of 3000000
+ 42223 multiletter control sequences out of 15000+200000
  418146 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  133i,13n,138p,10602b,1020s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2005,9 +2065,9 @@ s/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
 sy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (62 pages, 494513 bytes).
+Output written on paper.pdf (65 pages, 507439 bytes).
 PDF statistics:
- 829 PDF objects out of 1000 (max. 8388607)
- 204 named destinations out of 1000 (max. 500000)
+ 847 PDF objects out of 1000 (max. 8388607)
+ 209 named destinations out of 1000 (max. 500000)
  309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
