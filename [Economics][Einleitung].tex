@@ -109,16 +109,73 @@ Aus obiger Auflistung wird bereits ersichtlich, worauf wir hier eigentlich hinau
 Angenommen obige \textit{Insights} lägen allen Teilnehmern vor. Dann ergäben sich folgende zusätzliche \textit{Insights}:
 
 \vspace{0.2cm}
-\todo{Tabelle mit neuen Insights}
+
+\begin{tabular}[h]{|c|c|c|c}
+\hline
+\textbf{insight} & \textbf{Information} & \textbf{owner} \\
+\hline
+\textbf{info 9} & User A könnte Wohnung von User B in London mieten & "Gott" \\
+\hline
+\textbf{info 10} & \parbox{10cm}{\textbf{gegeben Info 9:} \\ (1) Stornierungsrisiko der HRS-Buchung seitens User A  \\ (2) HRS könnte u. U. das Zimmer von User A gewinnbringender weitervermieten (bei großer Nachfrage)} & "Gott" \\
+\hline
+\textbf{info 11} & User B könnte den Wagen von User C in Berlin anmieten & "Gott" \\
+\hline
+\textbf{info 12} & \parbox{10cm}{\textbf{gegeben Info 11:} \\ (1) Stornierungsrisiko der Sixt-Reservierung seitens User B  \\ (2) Sixt könnte u. U. den reservierten Wagen von User B gewinnbringender vermieten (bei großer Nachfrage)} & "Gott" \\
+\hline
+\end{tabular}\vspace*{0.3cm}\\*
 
 \vspace{0.2cm}
-\todo{Tabelle mit Spalte 'info relevant für'}
+
+Zusammenfassend stellen wir den bisher aufgearbeiteten Informationsgehalt pro betroffenen Teilnehmer auf.
+
+\vspace{0.1cm}
+
+Legende: 
+
+User A sei abgekürzt mit \textcolor{red}{\textbf{A}}, User B mit \textcolor{green}{\textbf{B}} und User C mit \textcolor{blue}{\textbf{C}}.
+
+EasyJet sei mit \textcolor{violet}{\textbf{EJ}}, HRS mit \textcolor{dunkelgruen}{\textbf{HRS}}, Airbnb mit \textcolor{cyan}{\textbf{ABN}}, Sixt mit \textcolor{gray}{\textbf{SX}} und Drivy mit \textcolor{orange}{\textbf{DRV}}.
 
 \vspace{0.2cm}
-\todo{Verlierer der zusätzlichen Insights}
+
+\begin{tabular}[h]{|c|c|c|c|c|c|c|c|c|c|c}
+\hline
+\textbf{info} & \textbf{owner} & \textcolor{red}{\textbf{A}} & \textcolor{green}{\textbf{B}} & \textcolor{blue}{\textbf{C}} & \textcolor{violet}{\textbf{EJ}} & \textcolor{dunkelgruen}{\textbf{HRS}} & \textcolor{cyan}{\textbf{ABN}} & \textcolor{gray}{\textbf{SX}} & \textcolor{orange}{\textbf{DRV}} \\
+\hline
+\textbf{1} & \textcolor{red}{\textbf{A}} + \textcolor{violet}{\textbf{EJ}} & $\surd$ & \textcolor{dunkelgruen}{+} & (o) & $\surd$ & \textcolor{dunkelgruen}{+} & \textcolor{dunkelgruen}{+} & \textcolor{dunkelgruen}{+} & \textcolor{dunkelgruen}{+} \\
+\hline
+\textbf{2} & \textcolor{green}{\textbf{B}} + \textcolor{violet}{\textbf{EJ}} & (o) & $\surd$ & \textcolor{dunkelgruen}{+} & $\surd$ & \textcolor{dunkelgruen}{+} & \textcolor{dunkelgruen}{+} & \textcolor{dunkelgruen}{+} & \textcolor{dunkelgruen}{+} \\
+\hline
+\textbf{3} & \parbox{1.8cm}{\textcolor{red}{\textbf{A}} + evtl. \\ (\textcolor{violet}{\textbf{EJ}}+\textcolor{dunkelgruen}{\textbf{HRS}})} & $\surd$ & \textcolor{dunkelgruen}{++} & (o) & (o) & \textcolor{dunkelgruen}{++} & \textcolor{dunkelgruen}{++} & (o) & (o) \\
+\hline
+\textbf{4} & \textcolor{red}{\textbf{A}} + \textcolor{dunkelgruen}{\textbf{HRS}} & $\surd$ & ? & (o) & (o) & $\surd$ & ? & (o) & (o) \\
+\hline
+\textbf{5} & \textcolor{red}{\textbf{A}} + \textcolor{cyan}{\textbf{ABN}} & $\surd$ & \textcolor{dunkelgruen}{++} & (o) & (o) & ? & $\surd$ & (o) & (o) \\
+\hline
+\textbf{6} & \textcolor{green}{\textbf{B}} + \textcolor{cyan}{\textbf{ABN}} & \textcolor{dunkelgruen}{++} & $\surd$ & (o) & (o) & (o) & $\surd$ & (o) & (o) \\
+\hline
+\textbf{7} & \textcolor{green}{\textbf{B}} + \textcolor{gray}{\textbf{SX}} & (o) & $\surd$ & \textcolor{dunkelgruen}{++} & (o) & (o) & (o) & $\surd$ & \textcolor{dunkelgruen}{++} \\
+\hline
+\textbf{8} & \textcolor{blue}{\textbf{C}} + \textcolor{orange}{\textbf{DRV}} & (o) & \textcolor{dunkelgruen}{++} & $\surd$ & (o) & (o) & (o) & (o) & $\surd$ \\
+\hline
+\textbf{9} & ----- & \textcolor{dunkelgruen}{+++} & \textcolor{dunkelgruen}{+++} & (o) & (o) & \textcolor{red}{- -} & \textcolor{dunkelgruen}{++} & (o) & (o) \\
+\hline
+\textbf{10} & ----- & $\surd$ & $\surd$ & (o) & (o) & \textcolor{dunkelgruen}{+++} & (o) & (o) & (o) \\
+\hline
+\textbf{11} & ----- & (o) & \textcolor{dunkelgruen}{+++} & \textcolor{dunkelgruen}{+++} & (o) & (o) & (o) & \textcolor{red}{- -} & \textcolor{dunkelgruen}{++} \\
+\hline
+\textbf{12} & ----- & (o) & $\surd$ & $\surd$ & (o) & (o) & (o) & \textcolor{dunkelgruen}{+++} & (o) \\
+\hline
+\end{tabular}\vspace*{0.3cm}\\*
 
 \vspace{0.2cm}
-\todo{Gewinner der zusätzlichen Insights}
+
+\todo{Interpretation Verlierer/Gewinner der zusätzlichen Insights}:
+
+\begin{itemize}
+  \item Info 9 ist zwar absolut nicht im Sinne von HRS, kann HRS jedoch das Bekanntwerden dieser Info nicht verhindern, bekommt Info 10 für sie an signifikanter Relevanz (Value).
+  \item Gleiches gilt für die Infos 11 und 12 aus Sicht von Sixt. 
+\end{itemize}
 
 \vspace{0.2cm}
 \todo{Gesamt-Value mit zusätzlichen Insights vs. ohne}
