@@ -42,11 +42,11 @@
 \contentsline {section}{\numberline {9}Project 'Guard'}{61}{section.9}%
 \contentsline {section}{\numberline {10}Project 'Pools'}{61}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Einleitung}{61}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Pool-Erzeugung}{61}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Pool-Economics}{61}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.2}Pool-Erzeugung}{62}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Pool-Economics}{62}{subsection.10.3}%
 \contentsline {subsection}{\numberline {10.4}Pool-Lifetime}{62}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}Pool-Liquidierung}{62}{subsection.10.5}%
-\contentsline {section}{\numberline {11}Community}{62}{section.11}%
-\contentsline {section}{\numberline {12}Zusammenfassung}{62}{section.12}%
-\contentsline {section}{\numberline {13}Anhang}{62}{section.13}%
+\contentsline {subsection}{\numberline {10.5}Pool-Liquidierung}{63}{subsection.10.5}%
+\contentsline {section}{\numberline {11}Community}{63}{section.11}%
+\contentsline {section}{\numberline {12}Zusammenfassung}{63}{section.12}%
+\contentsline {section}{\numberline {13}Anhang}{63}{section.13}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
