@@ -119,6 +119,38 @@ Analog dazu definieren wir auch den Besitz am \textit{WPT} eines Users - mit dem
 
 \vspace{0.3cm}
 
+Die Erzeugung des Pools findet in zwei Phasen statt: Der \textit{Initialisierungs-Phase} und der \textit{Teilnahme-Phase}
+
+\vspace{0.2cm}
+
+\underline{\textbf{Initialisierungs-Phase}}
+
+\vspace{0.2cm}
+
+Die Initialisierungs-Phase läuft in etwa in folgenden Schritten ab:
+
+\begin{itemize}
+	\item Ein Initiator (Admin) $u_A \in U$ erzeugt den Pool in einer dafür vorgesehenen \textit{Pool-Applikation} (vergleichbar mit der Erstellung einer WhatsApp-Gruppe). Der Initiator $u_A$ ist dabei selbst ein Teilnehmer des Pools. Unsere klare Absicht hierbei ist jedoch keine "gesonderten" Pool-Teilnehmer zu haben bzw. mit besonderen Rechten auszustatten. Die Unterscheidung zwischen dem Admin $u_A$ und anderen Pool-Teilnehmern $u \in U$ ist idealerweise - sofern es denn der spezielle Case zulässt - nur für die Initialisierungs-Phase von Nöten und kann anschließend entfallen.
+	\item Der Admin definiert das Regelwerk für den zu erstellenden Pool:
+	\begin{itemize}
+		\item Art des Pools (Invest-Pool, Wette, Spende, Kicktipp, Splitwise etc.)
+		\item privater oder öffentlich zugänglicher Pool
+		\item etwaige Obergrenze an Teilnehmern
+		\item Einsatz (minimaler, maximaler oder exakter Einsatz pro Teilnehmer und Währung des Einsatzes)
+		\item Auszahlungslogik (per Abstimmung oder Adresse eines Oracle-Smart-Contracts, der abhängig seiner Contract-Logik einen Auszahlungsschlüssel bereitstellt)
+	\end{itemize}
+	\item \todo{User einladen -> Kontakte}
+
+\end{itemize}
+
+\vspace{0.3cm}
+
+\underline{\textbf{Teilnahme-Phase}}
+
+\vspace{0.2cm}
+
+\vspace{0.3cm}
+
 \todo{Pool erstellen (DAO)}
 
 \todo{Pool konfigurieren}
