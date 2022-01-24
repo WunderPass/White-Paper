@@ -30,15 +30,88 @@ Ganz grob beschrieben, streben wir in etwa folgende Geschäftslogik an:
   \item Ein User erstellt einen Pool (in einer dafür implementierten Wunder-Pool-Applikation).
   \item Derselbe User definiert die Pool-Art, ein etwaiges dazugehöriges Regelwerk und fordert andere User auf, dem Pool beizutreten. Idealerweise erfolgt die Einladung mittels Suche nach der Wunder-ID des einzuladenden Teilnehmers (und nicht etwa anhand seiner Ethereum-Adresse oder sonstigem).
   \item Die eingeladenen Teilnehmer erhalten die Einladung (in der WunderPass-App oder der Wunder-Pool-Applikation) und können entscheiden, ob sie dem Pool betreten möchten oder nicht. 
-  \item In der Regel ist sofort beim Beitritt des Pools der definierte Einsatz zu entrichten (der anschließend in die Pool-Treasury geht). In einigen Cases kann der Einsatz evtl. zu einem späteren Zeitpunkt erfolgen oder gar ganz entfallen (Splitwise).
-  \item \todo{TODO}
+  \item In der Regel ist sofort beim Beitritt des Pools der definierte Einsatz zu entrichten (der anschließend in die Pool-Treasury geht). In einigen Cases kann der Einsatz evtl. zu einem späteren Zeitpunkt erfolgen oder gar ganz entfallen (z.B. beim Case \textit{Splitwise}).
+  \item Der Pool ist eingerichtet und "kommt zu Einsatz", wie in etwa
+  \begin{itemize}
+  	\item zum gemeinschaftlichen Investieren in (Crypto-)Assets,
+  	\item zum Verwahren "in Treuhand" bei einer oder mehreren abgeschlossenen Wetten (oder auch z. B. Kicktipp),
+  	\item etc.
+  \end{itemize}
+  \item Der Pool wird liquidiert und das Geld nach dem vorher festgelegten Regelwerk auf alle Pool-Teilnehmer (nach einem aus dem Regelwerk folgenden Verteilungsschlüssel) verteilt. Die Liquidierung selbst kann entweder ebenfalls durch das Regelwerk auf einen bestimmten Zeitpunkt und/oder Ereignis terminiert werden (z.B. Ende einer BuLi-Saison beim Case \textit{Kicktipp}) oder aber durch die Teilnehmer beschlossen werden (mittels einer DAO-Abstimmung). Die Errechnung des genannten Verteilungsschlüssels möchten wir möglichst allgemein halten und übertragen diese Verantwortlichkeit einem \textit{abstrakten Oracle}, welches es stets Case-spezifisch zu definieren (und zu implementieren) gilt.
 \end{itemize}
 
 \vspace{0.2cm}
 
-\todo{Verallgemeinerung}
+\underline{\textbf{Product-Sicht}}
 
-\todo{Product-Sicht}
+\vspace{0.2cm}
+
+Abschließend sei noch einmal betont, dass wir das/die aus den Wunder-Pools hervorgehende(n) Product(s) (mittelfristig) alternativlos user-friendly sehen. Ohne notwendigen Bezug zur Crypto-Szene, ohne MetaMask und ohne kryptische hexadezimale Wallet-Adressen. Stattdessen clean und simpel.
+
+\vspace{0.5cm}
+
+\subsection{Formalisierungen}
+
+\vspace{0.3cm}
+
+Zunächst einmal benötigen wir einige formale Werkzeuge und bedienen uns dafür folgender Definition:
+
+\vspace{0.2cm}
+
+\begin{Def}\label{defPoolTeilnehmer}
+
+Im folgenden setzen wir Voraus, die Nutzung der Pools seitens der User erfordert zwingend den Besitz eines WunderPass (bzw. Wunder-ID) und betrachten von daher auch nur solche User.
+
+\begin{equation*}
+  U := \left\{ u_1; u_2;...; u_{n} \text{ } | \text{ } u_i \text{ besitzt eine Wunder-ID} \right\}
+\end{equation*}
+
+\vspace{0.2cm}
+
+Wir stellen zusätzlich, dass der vorausgesetzte Besitz einer Wunder-ID mit dem Besitz von unterschiedlichen Wallets bzw. anderen durch die Wunder-ID implizierten Dingen einhergeht. So hat jeder User $u_i$ z.B. eine Telefonnummer mit seiner Wunder-ID verknüpft (anhand derer er mittels Kontakte-Scan auf dem Smartphone als Inhaber einer Wunder-ID und damit potenzieller Pool-Teilnehmer erkannt werden kann und soll). Des weiteren kann $u_i$ einen NFT-Pass (siehe Kapitel \ref{sec:nft-pass}) besitzen und/oder unser ERC20-Utility-Token (im Folgenden als \textit{WPT} bezeichnet; siehe Kapitel \todo{TODO: verlinken}). 
+
+\vspace{0.2cm}
+
+Wir formalisieren den in Kapitel \ref{sec:nft-pass} definierten NFT-Pass als die (geordnete) Menge aller bisher geminteter NFT-Pässe:
+
+\begin{align*}
+  WPN &:= \left\{ wpn_1; wpn_2;... \right\} \text{ mit} \\
+  wpn_i &:= (s_i, w_i, m_i)
+\end{align*}
+
+\vspace{0.2cm}
+
+Dabei repräsentiert $s_i$ den Status des NFT-Passes, $m_i$ sein Muster und $w_i$ das sich auf ihm abgebildete Weltwunder.
+
+\vspace{0.2cm}
+
+Den Besitz eines Pass-NFTs beschreiben wir durch die Funktion 
+
+\vspace{0.2cm}
+
+\begin{equation*}
+  \omega : U \rightarrow \mathcal{P} \left( WPN \right)  
+\end{equation*}
+
+\begin{equation*}
+  \omega(u):= \left\{ wpn \in WPN \text{ } | \text{ User u besitzt den Pass-NFT } wpn \right\}. 
+\end{equation*}
+
+\vspace{0.2cm}
+
+Analog dazu definieren wir auch den Besitz am \textit{WPT} eines Users - mit dem Unterschied, dass der Funktionsbereich dieser Funktion aufgrund der Fungibilität von einer Potenzmenge auf einen simplen numerischen Wert zusammenfällt:
+
+\vspace{0.2cm}
+
+\begin{equation*}
+  \varphi : U \rightarrow \mathbb{Q}  
+\end{equation*}
+
+\begin{equation*}
+  \varphi(u):= \text{ Balance des Users u am ERC20-Token WPT}. 
+\end{equation*}
+
+\end{Def}
 
 \vspace{0.5cm}
 

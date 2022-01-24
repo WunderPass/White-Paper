@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  23 JAN 2022 21:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  24 JAN 2022 20:05
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -1037,7 +1037,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
 )
-([Einleitung][digitale Identität].tex
+([Einleitung][digitale Identität].tex [3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 15.
@@ -1050,8 +1050,6 @@ Overfull \hbox (7.36034pt too wide) in paragraph at lines 21--22
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 23.
-[3]
-Package mdframed Info: Not enough space on this page on input line 23.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 33.
@@ -1064,7 +1062,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 55.
- [4]) ([Einleitung][Probleme].tex [5]
+[4] [5]) ([Einleitung][Probleme].tex
 Overfull \hbox (10.985pt too wide) in paragraph at lines 9--10
 \OT1/cmr/m/n/10.95 Spez-i-fika-tion der dig-i-talen Iden-titat erst viel spat
 er reifte, als ihre prak-tis-che Notwendigkeit.
@@ -1096,6 +1094,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 63.
 [7]
+Package mdframed Info: Not enough space on this page on input line 63.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 68.
@@ -1142,37 +1141,20 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 138.
-
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 138.
-
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 138.
-[9]
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last split box is empty
-(mdframed)                You have to change the settings on input line 138.
-
+ [9]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 143.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 150.
-)) ([Vision].tex
+)) ([Vision].tex [10]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 28.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
- [10]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 49.
@@ -1190,6 +1172,9 @@ rung\OT1/cmr/m/n/10.95 ) mit-tels kryp-tografis-cher Sig-natur
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
+(mdframed)              on input line 78.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
 (mdframed)              on input line 78.
 [11]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1228,7 +1213,9 @@ Overfull \hbox (7.66446pt too wide) in paragraph at lines 122--124
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 125.
+Package mdframed Info: Not enough space on this page on input line 125.
 [12]
+Package mdframed Info: Not enough space on this page on input line 125.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 130.
@@ -1308,7 +1295,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--170
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 183.
-[14] [15] [16]
+[14]
+Package mdframed Info: Not enough space on this page on input line 183.
+ [15] [16]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 191.
@@ -1848,7 +1837,22 @@ Overfull \hbox (17.7679pt too wide) in paragraph at lines 30--31
 tierten Wunder-Pool-Applikation). 
  []
 
-[61]) ([Community].tex [62]) ([Zusammenfassung].tex) ([Anhang].tex
+[61]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 61.
+
+Overfull \hbox (0.93097pt too wide) in paragraph at lines 71--72
+\OT1/cmr/m/n/10.95 Be-sitz von un-ter-schiedlichen Wal-lets bzw. an-deren durch
+ die Wunder-ID im-plizierten
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 114.
+[62]
+Package mdframed Info: Not enough space on this page on input line 114.
+ [63]) ([Community].tex) ([Zusammenfassung].tex) ([Anhang].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 11.
@@ -1861,6 +1865,8 @@ itsbezogenen Teil-Identitaten.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 15.
+[64]
+Package mdframed Info: Not enough space on this page on input line 15.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 23.
@@ -1879,14 +1885,13 @@ ist die Iden-titatsdarstellung
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 45.
-[63]
-Package mdframed Info: Not enough space on this page on input line 45.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 50.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 55.
+[65]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 60.
@@ -1899,7 +1904,6 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 80.
- [64]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 85.
@@ -1912,19 +1916,22 @@ Overfull \hbox (10.53731pt too wide) in paragraph at lines 87--88
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 89.
+[66]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 94.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 102.
-[65]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 128.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 138.
+Package mdframed Info: Not enough space on this page on input line 138.
+ [67]
+Package mdframed Info: Not enough space on this page on input line 138.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 143.
@@ -1937,7 +1944,6 @@ Overfull \hbox (10.3716pt too wide) in paragraph at lines 148--152
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 153.
-[66]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 158.
@@ -1956,6 +1962,7 @@ a-ben oder Ein-schrankungen
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 164.
+[68]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 169.
@@ -1968,7 +1975,6 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 184.
-[67]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 189.
@@ -1981,7 +1987,10 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 205.
-) [68] (paper.aux)
+Package mdframed Info: Not enough space on this page on input line 205.
+ [69]
+Package mdframed Info: Not enough space on this page on input line 205.
+) [70] (paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1992,13 +2001,13 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25751 strings out of 478864
- 490633 string characters out of 2848661
- 981076 words of memory out of 3000000
- 42954 multiletter control sequences out of 15000+600000
+ 25753 strings out of 478864
+ 490603 string characters out of 2848661
+ 975020 words of memory out of 3000000
+ 42952 multiletter control sequences out of 15000+600000
  418146 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 130i,13n,130p,10602b,1022s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 130i,13n,130p,10602b,1023s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Slava\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -2023,9 +2032,9 @@ s/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
 sy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (68 pages, 538200 bytes).
+Output written on paper.pdf (70 pages, 544690 bytes).
 PDF statistics:
- 915 PDF objects out of 1000 (max. 8388607)
- 218 named destinations out of 1000 (max. 500000)
- 357 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 931 PDF objects out of 1000 (max. 8388607)
+ 222 named destinations out of 1000 (max. 500000)
+ 365 words of extra memory for PDF output out of 10000 (max. 10000000)
 
