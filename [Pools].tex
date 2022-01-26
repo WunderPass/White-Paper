@@ -6,7 +6,7 @@
 
 \vspace{0.3cm}
 
-Die Idee hinter den sogenannten \textit{Wunder-Pools} ist das Bündeln von Liquidität mehrerer User/Teilnehmer bzw. eine Art 'Treuehandverwahrung' in einem gemeinsamen Pool. Die Anwendungsfälle solche Pools sind sehr zahlreich. Um in Folgenden nur einige Beispiele zu nennen:  
+Die Idee hinter den sogenannten \textit{Wunder-Pools} ist das Bündeln von Liquidität mehrerer User/Teilnehmer bzw. eine Art 'Treuehandverwahrung' in einem gemeinsamen Pool. Die Anwendungsfälle solche Pools sind sehr zahlreich. Um im Folgenden nur einige Beispiele zu nennen:  
 
 \begin{itemize}
   \item Gemeinsame Invests in (Crypto-)Assets.
@@ -18,9 +18,9 @@ Die Idee hinter den sogenannten \textit{Wunder-Pools} ist das Bündeln von Liqui
 
 \vspace{0.2cm}
 
-Das besondere an dem in den folgenden Abschnitten genauer zu beschreibenden Modell, ist sein sehr allgemein gehaltener Ansatz, mit dem sich gleichzeitig Cases umsetzen lassen, die auf den ersten Blick sehr verschieden zu sein scheinen. Genauer genommen lassen sich solche Pools mit speziellen \textit{DAO-Strukturen} umsetzen.
+Das besondere an dem in den folgenden Abschnitten genauer zu beschreibenden Modell, ist sein sehr allgemein gehaltener Ansatz, mit dem sich gleichzeitig Cases umsetzen lassen, die auf den ersten Blick sehr verschieden zu sein scheinen. Genauer genommen lassen sich solche Pools mit speziellen \textit{DAO-Strukturen} beschreiben.
 
-Abgesehen von der den Pools zugrundeliegenden Geschäftslogik, besteht der zentrale Ansatz unserer \textit{Wunder-Pools} darin, dem User ein rundes Produkt bereitzustellen - und zwar ganz unabhängig dessen, welcher der oben genannten Cases nun tatsächlich umgesetzt wird. An dieser Stelle möchten wir uns ganz explizit von dem Status quo der heute gängigen UX in der Web3-Welt abgrenzen.
+Abgesehen von der den Pools zugrundeliegenden Geschäftslogik, besteht der zentrale Ansatz unserer \textit{Wunder-Pools} darin, dem User ein rundes Produkt anzubieten - und zwar ganz unabhängig dessen, welcher der oben genannten Cases nun tatsächlich umgesetzt wird. An dieser Stelle möchten wir uns daher ganz explizit von dem Status quo der heute gängigen UX in der Web3-Welt abgrenzen.
 
 \vspace{0.2cm}
 
@@ -29,12 +29,12 @@ Ganz grob beschrieben, streben wir in etwa folgende Geschäftslogik an:
 \begin{itemize}
   \item Ein User erstellt einen Pool (in einer dafür implementierten Wunder-Pool-Applikation).
   \item Derselbe User definiert die Pool-Art, ein etwaiges dazugehöriges Regelwerk und fordert andere User auf, dem Pool beizutreten. Idealerweise erfolgt die Einladung mittels Suche nach der Wunder-ID des einzuladenden Teilnehmers (und nicht etwa anhand seiner Ethereum-Adresse oder sonstigem).
-  \item Die eingeladenen Teilnehmer erhalten die Einladung (in der WunderPass-App oder der Wunder-Pool-Applikation) und können entscheiden, ob sie dem Pool betreten möchten oder nicht. 
+  \item Die eingeladenen Teilnehmer erhalten die Einladung (in der WunderPass-App oder der Wunder-Pool-Applikation) und können entscheiden, ob sie dem Pool beitreten möchten oder nicht. 
   \item In der Regel ist sofort beim Beitritt des Pools der definierte Einsatz zu entrichten (der anschließend in die Pool-Treasury geht). In einigen Cases kann der Einsatz evtl. zu einem späteren Zeitpunkt erfolgen oder gar ganz entfallen (z.B. beim Case \textit{Splitwise}).
   \item Der Pool ist eingerichtet und "kommt zu Einsatz", wie in etwa
   \begin{itemize}
   	\item zum gemeinschaftlichen Investieren in (Crypto-)Assets,
-  	\item zum Verwahren "in Treuhand" bei einer oder mehreren abgeschlossenen Wetten (oder auch z. B. Kicktipp),
+  	\item zum Verwahren "in Treuhand" bei einer oder mehreren abgeschlossenen Wetten (oder auch z. B. Kicktipp)
   	\item etc.
   \end{itemize}
   \item Der Pool wird liquidiert und das Geld nach dem vorher festgelegten Regelwerk auf alle Pool-Teilnehmer (nach einem aus dem Regelwerk folgenden Verteilungsschlüssel) verteilt. Die Liquidierung selbst kann entweder ebenfalls durch das Regelwerk auf einen bestimmten Zeitpunkt und/oder Ereignis terminiert werden (z.B. Ende einer BuLi-Saison beim Case \textit{Kicktipp}) oder aber durch die Teilnehmer beschlossen werden (mittels einer DAO-Abstimmung). Die Errechnung des genannten Verteilungsschlüssels möchten wir möglichst allgemein halten und übertragen diese Verantwortlichkeit einem \textit{abstrakten Oracle}, welches es stets Case-spezifisch zu definieren (und zu implementieren) gilt.
@@ -139,8 +139,6 @@ Die Initialisierungs-Phase läuft in etwa in folgenden Schritten ab:
 		\item Einsatz (minimaler, maximaler oder exakter Einsatz pro Teilnehmer und Währung des Einsatzes)
 		\item Auszahlungslogik (per Abstimmung oder Adresse eines Oracle-Smart-Contracts, der abhängig seiner Contract-Logik einen Auszahlungsschlüssel bereitstellt)
 	\end{itemize}
-	\item \todo{User einladen -> Kontakte}
-
 \end{itemize}
 
 \vspace{0.3cm}
@@ -149,13 +147,23 @@ Die Initialisierungs-Phase läuft in etwa in folgenden Schritten ab:
 
 \vspace{0.2cm}
 
+Die Teilnahme-Phase besteht grob aus folgenden Schritten:
+
+\begin{itemize}
+	\item Der Admin verliert seine Sonderstellung und wird stattdessen zum ersten Teilnehmer seines eigens initiierten Pools. 
+	\item Der (ursprüngliche) Admin lädt Teilnehmer ein, sich am Pool zu beteiligen. Die Beteiligung erfordert dabei einen WunderPass (= Wunder-ID) seitens des Teilnehmers. Idealerweise sind die Wunder-IDs mit Telefonnummern verknüpft, sodass sich die einzuladenden User in den Kontakten des Admins erkennbar als potenzielle Teilnehmer wiederfinden.
+	\item Alternativ kann der (ursprüngliche) Admin (oder auch jeder andere bereits beigetreten Teilnehmer) einen Teilnahme-Link an (weitere) potenzielle Teilnehmer verschicken.
+	\item Jeder adressierte User erhält die Einladung mit allen relevanten Informationen zum eingeladenen Pool (insbesondere auch dem zu entwendenden Einsatz) in seiner Wunder-Pool-Applikation, und muss diese lediglich entweder bestätigen oder ablehnen (Pull-Prinzip). Insbesondere braucht der User für den Beitritt zum Pool kein MetaMask oder Sonstiges (Push-Prinzip wie aktuell bei DAOs üblich). 
+	\item Auch der Einsatz des neuen Teilnehmers muss nicht aktiv entrichtet (an eine Wallet) werden, sondern wird stattdessen im Zuge des vorigen Schritts nach Bestätigung der Teilnahme am Pool automatisch eingezogen.
+\end{itemize}
+
 \vspace{0.3cm}
 
 \todo{Pool erstellen (DAO)}
 
-\todo{Pool konfigurieren}
+\vspace{0.3cm}
 
-\todo{User einladen -> mit WP verknüpfte Kontakte}
+\todo{Pool formal darstellen}
 
 \vspace{0.5cm}
 

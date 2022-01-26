@@ -44,7 +44,7 @@
 \contentsline {subsection}{\numberline {10.1}Einleitung}{61}{subsection.10.1}%
 \contentsline {subsection}{\numberline {10.2}Formalisierungen}{62}{subsection.10.2}%
 \contentsline {subsection}{\numberline {10.3}Pool-Erzeugung}{64}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Pool-Economics}{64}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.4}Pool-Economics}{65}{subsection.10.4}%
 \contentsline {subsection}{\numberline {10.5}Pool-Lifetime}{65}{subsection.10.5}%
 \contentsline {subsection}{\numberline {10.6}Pool-Liquidierung}{65}{subsection.10.6}%
 \contentsline {section}{\numberline {11}Community}{65}{section.11}%
