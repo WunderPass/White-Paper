@@ -288,19 +288,23 @@ Und da die Abstraktion mittels Oracle so bequem scheint, tun wir das Gleiche ebe
 \begin{Fazit}[Auszahlungsschlüssel-Oracle]
 
 Seien $\mathcal{P} = \left( \mathcal{U}, \mathcal{R}, \mathcal{T}, \mathcal{G} \right)$ 
-der Pool und $\mathcal{U} = \left\{ u_1; u_2;...;u_n \right\}$ die Menge seiner $n$ Teilnehmer wie in Definition \ref{defPool} beschrieben.
+der Pool und $\mathcal{U} = \left\{ u_1; u_2;...;u_n \right\}$ die Menge seiner $n$ Teilnehmer wie in Definition \ref{defPool} beschrieben und $v_{\mathcal{T}}$ der sich zum Liquidierungszeitpunkt in der Pool-Treasury $\mathcal{T}$ befindende Value. 
+
+Falls der Pool lediglich als Treuhand-Verwahrung diente (also über die Zeit keine Veränderung der Treasury stattfand) ergibt sich $v_{\mathcal{T}}$ als  
 
 \vspace{0.1cm}
 
-Wir definieren einen Auszahlungsvektor als
-
 \begin{equation*}
-  \varphi_{\mathcal{P}} = [\varphi_1, \varphi_1, ..., \varphi_n] \text{ mit } \sum_{i=1}^{n} \varphi_i = 1 
+  v_{\mathcal{T}} = \sum_{i=1}^{n} s_i \text{ mit } s_i \text{ wie in Definition \ref{defPool}}
 \end{equation*}
 
 \vspace{0.2cm}
 
-\todo{Verteilt wird der Inhalt von Treasury $\mathcal{T}$}
+Wir definieren einen Auszahlungsvektor als
+
+\begin{equation*}
+  \varphi_{\mathcal{P}} = [\varphi_1, \varphi_1, ..., \varphi_n] \text{ mit } \sum_{i=1}^{n} \varphi_i = v_{\mathcal{T}} 
+\end{equation*}
 
 \vspace{0.2cm}
 
@@ -309,6 +313,10 @@ Wir definieren einen Auszahlungsvektor als
 \vspace{0.2cm}
 
 \todo{$\mathcal{R}$ definiert das Oracle und sagt, ob die $\varphi_i$ negativ sein dürfen}
+
+\vspace{0.2cm}
+
+\todo{Oracle verteilt anhand von $\mathcal{T}$ und $\mathcal{G}$}
 
 \end{Fazit}
 
