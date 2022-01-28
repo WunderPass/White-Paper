@@ -157,13 +157,52 @@ Die Teilnahme-Phase besteht grob aus folgenden Schritten:
 	\item Auch der Einsatz des neuen Teilnehmers muss nicht aktiv entrichtet (an eine Wallet) werden, sondern wird stattdessen im Zuge des vorigen Schritts nach Bestätigung der Teilnahme am Pool automatisch eingezogen.
 \end{itemize}
 
+\vspace{0.2cm}
+
+Wir fassen die bisher erzielten Ergebnisse etwas formaler zusammen:
+
+\vspace{0.2cm}
+
+\begin{Def}\label{defPool}
+
+Ein (jungfräulicher) Pool im Sinne der oben Aufgezählten Eigenschaften und Anforderungen lässt sich formal schreiben als
+
+\begin{equation*}
+  Pool := \left( \mathcal{U}, \mathcal{R}, \mathcal{T}, \mathcal{G} \right) \text{ mit}
+\end{equation*}
+
+\begin{align*}
+  & \mathcal{U} = \left\{ u_1; u_2;...;u_n \right\} \subseteq U \text{ die Menge der n Pool-Teilnehmer, } \\
+  & \mathcal{R} \text{ das Regelset des Pools, was es gesondert zu formalisieren gilt, } \\
+  & \mathcal{T} = \left\{ s_1...;s_n \right\} \text{ mit } s_i \in \mathbb{Q} \text{ die Treasury des Pools und} \\
+  & \mathcal{G} = \left\{ g_1...;g_n \right\} \text{ mit } g_i \in \mathbb{N} \text{ die Governance des Pools.}
+\end{align*}
+
+\vspace{0.2cm}
+
+Dabei beschreibt jedes $s_i$ den Einsatz des Teilnehmers $u_i \in \mathcal{U}$ ($s$ für Stake). Dieser Einsatz liegt dabei in einem vom Regelset $\mathcal{R}$ definierten Intervall $\mathcal{I} \subseteq \mathbb{Q}$. Damit haben wir bereits an dieser Stelle einen kleinen Teil der noch fehlenden Formalisierung von $\mathcal{R}$ identifiziert. Bei genauer Betrachtung fehlt uns noch die Einheit der Einsätze $s_i$. Diese wird sehr wahrscheinlich \textit{USDT} sein oder ein anderer Stable-Coin.
+
+Zudem beachte man an dieser Stelle zusätzlich, die Definition von $\mathcal{T}$ werde im Verlaufe der Lifetime eines Pools nicht so simpel bleiben können, als nur aus dem eingebrachten Einsätzen der Teilnehmer zu bestehen. Die Pool-Treasury bedeutet nämlich mehr als nur die Menge der initialen Stakes. Etwaige Invests aus der Treasury heraus würden nämlich ebenfalls in der Treasury landen.
+
+\vspace{0.2cm} 
+
+Die $g_i$ dagegen beschreiben ganz simpel die Anzahl der Governance-Tokens pro User $u_i \in \mathcal{U}$. Man kann diese auch als Gesellschaftsanteile einer GbR betrachten. Das Stammkapital dieser Gesellschaft würde sich in diesem Vergleich auf
+
+\begin{equation*}
+  \kappa := \sum_{i=1}^{n} g_i 
+\end{equation*}
+
+belaufen. Der prozentuale Stimmrecht-Anteil eines Users $u_i \in \mathcal{U}$ ergäbe sich damit als 
+
+\begin{equation*}
+  \rho_i = \frac{g_i}{\kappa}, \text{   } \forall i = 1, 2, ...,n. 
+\end{equation*}
+
+\end{Def}
+
 \vspace{0.3cm}
 
-\todo{Pool erstellen (DAO)}
-
-\vspace{0.3cm}
-
-\todo{Pool formal darstellen}
+Die zusammengetragenen Anforderungen für die Initialisierung eines WunderPools lassen sofort deutlich erkennen, \textbf{diese Pools könnten mittels DAO-ähnlicher Strukturen implementiert werden}. Dies erscheint insofern noch logischer, nachdem wir erkannt haben, die Pools stellen gesellschaftsrechtlich GbRs dar - also Gesellschaften und/oder Organisationen.  
 
 \vspace{0.5cm}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  26 JAN 2022 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  28 JAN 2022 15:32
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -1859,12 +1859,30 @@ le-Smart-Contracts,
  []
 
 
-Overfull \hbox (2.46832pt too wide) in paragraph at lines 156--157
+Overfull \hbox (13.47906pt too wide) in paragraph at lines 156--157
+\OT1/cmr/m/n/10.95 Wunder-Pool-Applikation, und muss diese lediglich en-tweder 
+bestatigen oder ablehnen
+ []
+
+[64]
+Overfull \hbox (2.46832pt too wide) in paragraph at lines 157--158
 \OT1/cmr/m/n/10.95 let) wer-den, son-dern wird stattdessen im Zuge des vorigen 
 Schritts nach Bestatigung
  []
 
-[64]) ([Community].tex) ([Zusammenfassung].tex) ([Anhang].tex
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 166.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 201.
+[65]
+Overfull \hbox (0.95747pt too wide) in paragraph at lines 205--206
+\OT1/cmr/m/n/10.95 lassen so-fort deut-lich erken-nen, \OT1/cmr/bx/n/10.95 dies
+e Pools konnten mit-tels DAO-ahnlicher Struk-
+ []
+
+) ([Community].tex) ([Zusammenfassung].tex) ([Anhang].tex [66]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 11.
@@ -1877,8 +1895,6 @@ itsbezogenen Teil-Identitaten.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 15.
-[65]
-Package mdframed Info: Not enough space on this page on input line 15.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 23.
@@ -1903,7 +1919,8 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 55.
-[66]
+[67]
+Package mdframed Info: Not enough space on this page on input line 55.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 60.
@@ -1928,22 +1945,20 @@ Overfull \hbox (10.53731pt too wide) in paragraph at lines 87--88
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 89.
-[67]
+[68]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 94.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 102.
+ [69]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 128.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 138.
-Package mdframed Info: Not enough space on this page on input line 138.
- [68]
-Package mdframed Info: Not enough space on this page on input line 138.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 143.
@@ -1956,6 +1971,14 @@ Overfull \hbox (10.3716pt too wide) in paragraph at lines 148--152
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 153.
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 153.
+
+[70]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 158.
@@ -1974,7 +1997,6 @@ a-ben oder Ein-schrankungen
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 164.
-[69]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 169.
@@ -1993,16 +2015,16 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 193.
+Package mdframed Info: Not enough space on this page on input line 193.
+[71]
+Package mdframed Info: Not enough space on this page on input line 193.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 198.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 205.
-Package mdframed Info: Not enough space on this page on input line 205.
- [70]
-Package mdframed Info: Not enough space on this page on input line 205.
-) [71] (paper.aux)
+) [72] (paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2013,10 +2035,10 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25756 strings out of 478864
- 490655 string characters out of 2848661
- 975067 words of memory out of 3000000
- 42954 multiletter control sequences out of 15000+600000
+ 25754 strings out of 478864
+ 490567 string characters out of 2848661
+ 975056 words of memory out of 3000000
+ 42950 multiletter control sequences out of 15000+600000
  418146 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  130i,13n,130p,10602b,1023s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2044,9 +2066,9 @@ s/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
 sy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (71 pages, 548109 bytes).
+Output written on paper.pdf (72 pages, 554083 bytes).
 PDF statistics:
- 936 PDF objects out of 1000 (max. 8388607)
- 223 named destinations out of 1000 (max. 500000)
+ 941 PDF objects out of 1000 (max. 8388607)
+ 225 named destinations out of 1000 (max. 500000)
  365 words of extra memory for PDF output out of 10000 (max. 10000000)
 
