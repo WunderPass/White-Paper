@@ -1,0 +1,71 @@
+% !TEX root = paper.tex
+
+\subsubsection{Status-Property}
+
+\vspace{0.2cm}
+
+Diese NFT-Property - die wir gleichzeitig als die Main-Property unseres \textit{NFT-Pass} ansehen - soll der oben formulierten Anforderung nach einem first-come-first-serve-Prinzip Rechnung tragen. Zeitlich früher ausgestellte NFT-Pässe sollen einen rareren und begehrteren \textit{Pass-Status} inne haben als die späteren. Und vor allem sollen die \textit{NFT-Pässe} eines bestimmten ausgestellten Status in ihrer Anzahl begrenzt sein und nach Erreichen einer zu definierenden Höchstgrenze fortan nie wieder ausgestellt (ge\-mintet) werden können.
+
+\vspace{0.3cm}
+
+\begin{NFT-Prop}[Pass-Status]
+
+Wir definieren folgende \textit{NFT-Pass-Status} mit den dazugehörenden Eigenschaften:
+
+\begin{itemize}
+    \item Status A (\textbf{Diamond})
+    \begin{itemize}
+    	\item Anzahl Pässe: 200
+    	\item Gemintet an Nummer: 1 bis 200
+    \end{itemize}
+    \item Status B (\textbf{Black})
+    \begin{itemize}
+    	\item Anzahl Pässe: 1.600
+    	\item Gemintet an Nummer: 201 bis 1800
+    \end{itemize}
+    \item Status C (\textbf{Pearl})
+    \begin{itemize}
+    	\item Anzahl Pässe: 12.800
+    	\item Gemintet an Nummer: 1801 bis 14.600
+    \end{itemize}
+    \item Status D (\textbf{Platin})
+    \begin{itemize}
+    	\item Anzahl Pässe: 102.400
+    	\item Gemintet an Nummer: 14.601 bis 117.000
+    \end{itemize}
+    \item Status E (\textbf{Ruby})
+    \begin{itemize}
+    	\item Anzahl Pässe: 819.200
+    	\item Gemintet an Nummer: 117.001 bis 936.200
+    \end{itemize}
+    \item Status F (\textbf{Gold})
+    \begin{itemize}
+    	\item Anzahl Pässe: 6.553.600
+    	\item Gemintet an Nummer: 936.201 bis 7.489.800
+    \end{itemize}
+    \item Status G (\textbf{Silver})
+    \begin{itemize}
+    	\item Anzahl Pässe: 52.428.800
+    	\item Gemintet an Nummer: 7.489.801 bis 59.918.600
+    \end{itemize}
+    \item Status H (\textbf{Bronze})
+    \begin{itemize}
+    	\item Anzahl Pässe: 419.430.400
+    	\item Gemintet an Nummer: 59.918.601 bis 479.349.000
+    \end{itemize}
+    \item Status I (\textbf{White})
+    \begin{itemize}
+    	\item Anzahl Pässe: $\infty$
+    	\item Gemintet an Nummer: 479.349.001 bis $\infty$
+    \end{itemize}
+\end{itemize}
+
+\end{NFT-Prop}
+
+\vspace{0.3cm}
+
+Diese NFT-Property ist per Definition trivialerweise \textbf{deterministisch}: Es ist stets zweifellos klar, welchen Status ein an x-ter Stelle geminteter \textit{NFT-Pass} haben wird. Die hinzugezogene "Reverse-Halving-Logik" \textbf{belohnt die Early-Adopter} mit einem begehrten NFT, dessen Rarität per Protokoll mit der Zeit stets abnimmt.
+
+\vspace{0.1cm}
+
+

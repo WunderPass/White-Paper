@@ -1,0 +1,105 @@
+% !TEX root = paper.tex
+
+\subsubsection{Wunder-Property}
+
+\vspace{0.3cm}
+
+Diese NFT-Property soll zwar einem ähnlichen abstufenden Raritätsprinzip zu Grunde liegen wie die Main-Property, dies jedoch nicht mehr einem first-come-first-serve- sondern stattdessen einem Zufallsprinzip folgend.
+
+Ebenfalls abweichend von der Beschaffenheit der Main-Property soll bei dieser Pro\-perty die Rarität nicht mittels einer absoluten Obergrenze abgebildet werden, sondern mittels einer relativen. (Dies zahlt auf die oben formulierte Anforderung nach einem \textbf{gemeinnützig gewinnbringendem Value} unseres \textit{NFT-Pass} ein.
+
+\vspace{0.3cm}
+
+\begin{NFT-Prop}[Hologramm (Welt-Wunder)]
+
+Wir definieren folgende \textit{NFT-Pass-Hologramme} mit den dazugehörenden Eigenschaften:
+
+\begin{itemize}
+    \item WW1
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Pyramids of Giza}
+    	\item Anteil Pässe: 0,390625\% $\left( \frac{1}{256} \right)$
+    \end{itemize}
+    \item WW2
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Great Wall of China}
+    	\item Anteil Pässe: 0,78125\% $\left( \frac{1}{128} \right)$
+    \end{itemize}
+    \item WW3
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Petra} 
+    	\item Anteil Pässe: 1,5625\% $\left( \frac{1}{64} \right)$
+    \end{itemize}
+    \item WW4
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Colosseum} 
+    	\item Anteil Pässe: 3,125\% $\left( \frac{1}{32} \right)$
+    \end{itemize}
+    \item WW5
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Chichén Itzá} 
+    	\item Anteil Pässe: 6,25\% $\left( \frac{1}{16} \right)$
+    \end{itemize}
+    \item WW6
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Machu Picchu} 
+    	\item Anteil Pässe: 12,5\% $\left( \frac{1}{8} \right)$
+    \end{itemize}
+    \item WW7
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Taj Mahal} 
+    	\item Anteil Pässe: 25\% $\left( \frac{1}{4} \right)$
+    \end{itemize}
+    \item WW8
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Christ the Redeemer} 
+    	\item Anteil Pässe: 50\% + x $\left( \frac{1}{2} + \frac{1}{256} \right)$
+    \end{itemize}
+\end{itemize}
+
+\end{NFT-Prop}
+
+\vspace{0.3cm}
+
+Das Besondere an dieser Property spiegelt sich in der Tatsache wider, gewisse rar beschaffene Ausprägungen seien nur "zeitweise" ausgeschöpft, da sich ihre (rare) Anzahl lediglich \textbf{relativ} an der Gesamtzahl der aktuell \textit{ausgestellten NFT-Pässe} bemisst und nicht wie die Main-Property einer absoluten Obergrenze obliegt, deren Erreichung unumkehrbar ist. Soll heißen: Ist die prozentuale Obergrenze an Pässen mit einer beChrist the Redeemerstimmten Ausprägung der gegenwärtigen Property zu einem be\-stimmten Zeitpunkt erreicht, kann zwar für einen gewissen Zeitraum kein Pass mit dieser Ausprägung mehr ausgestellt werden. Sobald jedoch die Gesamtanzahl der \textit{ausgestellten NFT-Pässe} wieder groß genug ist - sodass die Anzahl der vorhandenen \textit{NFT-Pässe} mit der betroffenen Ausprägung wieder die prozentuale Obergrenze unterschreitet - werden Pässe der besagten Ausprägung "wieder verfügbar".
+
+\vspace{0.3cm}
+
+\begin{Algo}[Verlosungs-Mechanismus für Hologramm-Property]
+
+\begin{itemize}
+    \item Zunächst bestimme man die Gesamtanzahl aller bisher geminteter Pässe $n$.
+    \item Gleiches tue man nun für die Counts der geminteten Pässe pro Ausprägung der Hologramm-Property WW1 bis WW8 als entsprechende Größen $n_1, n_2,...,n_8$.
+    \item Und damit anschließend die aktuelle prozentuale Verteilung der Ausprägung auf die aktuell geminteten Pässe als $\sigma_i:= \frac{n_i}{n}$ für $i \in \lbrace 1,...,8 \rbrace$ berechnen.
+    \item Seien $\Theta_i$ für $i \in \lbrace 1,...,8 \rbrace$ die oben definierten \textbf{relativen} Obergrenzen der \newline Ausprägungen der Hologramm-Property WW1 bis WW8.
+    \item Alle Ausprägungen mit $\sigma_i \geq \Theta_i$ können zum aktuellen Zeitpunkt nicht vergeben werden und damit auch nicht beim Minting eines neuen Pass berücksichtigt werden.
+    \item Für die Ausprägungen mit $\sigma_i < \Theta_i$ berechnen wir den Normierungsfaktor
+\end{itemize} 
+
+\begin{equation*}
+\omega := \sum_{\sigma_i < \Theta_i} \Theta_i \textrm{ } \leq 1
+\end{equation*} 
+
+\begin{itemize}
+    \item Damit errechnen wir die aktuell vorliegenden Wahrscheinlichkeiten $\rho_i$ für unsere Hologramm-Ausprägungen als
+\end{itemize} 
+
+\[
+\rho_i:=\left\{%
+\begin{array}{ll}
+    0, & \hbox{falls $\sigma_i \geq \Theta_i$} \\[0,3cm]
+    \hbox{\LARGE $\frac{\Theta_i}{\omega}$,} & \hbox{falls $\sigma_i < \Theta_i$}. \\
+\end{array}%
+\right.
+\] 
+
+Man vergewissere sich an dieser Stelle gedanklich, auch für die neuen \newline Wahrscheinlichkeiten gelte \[\sum_{i = 1}^7 \rho_i \textrm{ } = 1.\]
+
+\begin{itemize}
+    \item Am Ende bestimme man mittels Randomisierung anhand der Wahrscheinlichkeiten $\rho_i$ für $i \in \lbrace 1,...7 \rbrace$ die zu vergebende Hologramm-Ausprägung. 
+\end{itemize}
+
+\end{Algo}
+
+\vspace{0.3cm}
+
