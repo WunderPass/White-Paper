@@ -203,22 +203,24 @@ belaufen. Der prozentuale Stimmrecht-Anteil eines Users $u_i \in \mathcal{U}$ er
 
 \vspace{0.3cm}
 
-Die zusammengetragenen Anforderungen für die Initialisierung eines WunderPools lassen sofort deutlich erkennen, \textbf{diese Pools könnten mittels DAO-ähnlicher Strukturen implementiert werden}. Dies erscheint insofern noch logischer, nachdem wir erkannt haben, die Pools stellen gesellschaftsrechtlich GbRs dar - also Gesellschaften und/oder Organisationen.  
+Die zusammengetragenen Anforderungen für die Initialisierung eines WunderPools lassen sofort deutlich erkennen, \textbf{diese Pools könnten mittels DAO-ähnlicher Strukturen implementiert werden}. Dies erscheint insofern noch logischer, nachdem wir erkannt haben, die Pools stellen gesellschaftsrechtlich GbRs dar - also Gesellschaften und/oder Organisationen. Diese Erkenntnis wollen wir noch einmal als eine formale Annahme formulieren: 
 
-\vspace{0.5cm}
+\vspace{0.2cm}
 
-\subsection{Pool-Economics}
+\begin{Assumption}[Ein WunderPool stellt eine GbR dar]
+\label{assumptionGbR} 
 
-\vspace{0.3cm}
+Sei $\mathcal{P} := \left( \mathcal{U}, \mathcal{R}, \mathcal{T}, \mathcal{G} \right)$ ein WunderPool wie in Definition \ref{defPool} beschrieben. Wir ziehen die Analogie zu einer \textbf{Gesellschaft} bürgerlichen Rechts:
 
-\todo{Staking von WUNDER}
+\begin{itemize}
+	\item Die Menge $\mathcal{U}$ der Pool-Teilnehmer ist der \textbf{Gesellschafterkreis der Gesellschaft}.
+	\item $\mathcal{G}$ bildet den \textbf{Cap-Table der Gesellschaft} ab.
+	\item Das Pool-Regelwerk $\mathcal{R}$ ist der \textbf{Gesellschaftervertrag zur Gesellschaft}.
+	\item Die Pool-Treasury $\mathcal{S}$ ist das \textbf{Gesellschaftskonto und/oder -depot der Gesellschaft}.
+\end{itemize}
 
-\todo{Pool-Governance-Tokens}
-
-\todo{Pass-NFT-Status-Rewards}
-
-\todo{Pass-NFT-Wunder-Rewards}
-
+\end{Assumption}
+ 
 \vspace{0.5cm}
 
 \subsection{Pool-Lifetime}
@@ -267,7 +269,7 @@ Für eine etwaige Pool-Liquidierung stellen sich exakt zwei Fragen: "\textbf{Wan
 
 \vspace{0.3cm}
 
-Bullet 2 klingt hier leider noch nicht ausreichend abstrakt. Daher abstrahieren wir die genannten Forderungen in einer:
+Bullet 2 klingt hier leider noch nicht ausreichend abstrakt. Daher abstrahieren wir die genannten Forderungen in einer einzigen:
 
 \vspace{0.2cm}
 
@@ -322,5 +324,42 @@ Wir definieren einen Auszahlungsvektor als
 
 \vspace{0.3cm}
 
+\todo{TODO}
 
 \vspace{0.5cm}
+
+\subsection{Pool-Economics}
+
+\vspace{0.3cm}
+
+\todo{Staking von WUNDER}
+
+\todo{Pool-Governance-Tokens}
+
+\todo{Pass-NFT-Status-Rewards}
+
+\todo{Pass-NFT-Wunder-Rewards}
+
+\vspace{0.5cm}
+
+\subsection{Pool-Vertrag}
+
+\vspace{0.3cm}
+
+\todo{Herausgearbeitete Dinge zu $\mathcal{R}$ zusammentragen}
+
+\begin{itemize}
+  \item Vorgabe zur Teilnehmer-Menge $\mathcal{U}$
+  \item Vorgabe zur Pool-Treasury $\mathcal{S}$:
+  \begin{itemize}
+  	\item Währung (zB \textit{USDT})
+  	\item Intervall $\mathcal{I}$ für $s_i \in \mathcal{I}$
+  \end{itemize}
+  \item Definition der \textit{Liquidierungsentscheidung-Oracle}
+  \item Definition der \textit{Auszahlungsschlüssel-Oracle}
+  \item Optionale Forderung $\varphi_i \geq 0$
+  \item etc.
+\end{itemize}
+
+\vspace{0.5cm}
+
