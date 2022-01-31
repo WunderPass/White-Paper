@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  31 JAN 2022 22:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  31 JAN 2022 22:18
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -1950,7 +1950,9 @@ Overfull \hbox (2.5931pt too wide) in paragraph at lines 38--39
 Her-aus-forderun-
  []
 
-)) ([SSI].tex [60]) ([Project Guard].tex) ([Pools].tex
+)) (C:/Users/Slava/White-Paper/[07][SSI]/[SSI].tex [60])
+(C:/Users/Slava/White-Paper/[08][Project Guard]/[Project Guard].tex)
+(C:/Users/Slava/White-Paper/[09][Pools]/[Pools].tex
 Overfull \hbox (17.7679pt too wide) in paragraph at lines 31--32
 []\OT1/cmr/m/n/10.95 Ein User er-stellt einen Pool (in einer dafur im-ple-men-
 tierten Wunder-Pool-Applikation). 
@@ -2052,7 +2054,8 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 323.
- [68] [69]) ([Community].tex) ([Zusammenfassung].tex)
+ [68] [69]) (C:/Users/Slava/White-Paper/[10][Community]/[Community].tex)
+(C:/Users/Slava/White-Paper/[11][Zusammenfassung]/[Zusammenfassung].tex)
 (C:/Users/Slava/White-Paper/[12][Anhang]/[Anhang].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2200,8 +2203,8 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25551 strings out of 479334
- 486190 string characters out of 2857085
+ 25561 strings out of 479334
+ 487134 string characters out of 2857085
  975752 words of memory out of 3000000
  42243 multiletter control sequences out of 15000+200000
  418146 words of font info for 82 fonts, out of 3000000 for 9000
