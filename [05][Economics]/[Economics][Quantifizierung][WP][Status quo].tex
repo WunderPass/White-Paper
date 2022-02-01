@@ -1,0 +1,158 @@
+% !TEX root = [Economics][Quantifizierung].tex
+
+\paragraph{Status quo} 
+\label{sec:eco_zahlen_zustand_wp_now}
+\textrm{ }
+
+\vspace{0.3cm}
+
+Aufbauend auf die bisher erzielten Ergebnisse, wollen wir nun auch dem Stand von WunderPass für einen beliebigen Zeitpunkt $t \in T$ einen formalisierten Charakter verleihen und definieren zunächst einmal mittels der in Def \ref{defKoeff} beschriebenen Koeffizienten $\alpha^{(t)}_{ij}$ die sogenannten "connected Pools" von Usern und Service-Providern zum Zeitpunkt $t \in T$:
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defPools}
+
+Wir definieren den "connected User-Pool" $\widehat{U}^{(t)} \subseteq U^{(t)}$ und den "connected Service-Provider-Pool" $\widehat{S}^{(t)} \subseteq S^{(t)}$ als
+
+\begin{align}
+\widehat{U}^{(t)}:&= \left\{u \in U^{(t)} \mid \exists s^{*} \in S^{(t)} \textrm{ mit } \alpha^{(t)}(u, s^{*}) = 1 \right\} \tag{i} \\ 
+\widehat{S}^{(t)}:&= \left\{s \in S^{(t)} \mid \exists u^{*} \in U^{(t)} \textrm{ mit } \alpha^{(t)}(u^{*}, s) = 1 \right\} \tag{ii}
+\end{align}
+
+\vspace{0.3cm}
+
+Für die diskrete/sortierte Variante ist dies wieder gleichbedeutend mit
+\begin{align}
+\widehat{U}^{(t)} &= \left\{ \widehat{u}^{(t)}_1; \widehat{u}^{(t)}_2;...; \widehat{u}^{(t)}_{\widehat{n}} \right\} \tag{iii} \\ 
+\widehat{S}^{(t)} &= \left\{ \widehat{s}^{(t)}_1; \widehat{s}^{(t)}_2;...; \widehat{s}^{(t)}_{\widehat{m}}\right\} \tag{iv}
+\end{align}
+
+\vspace{0.6cm}
+
+Der Wert $\widehat{n} \leq n$ beschreibt die Größe des connecteten User-Pools - also die Anzahl $\widehat{n}$ der tatsächlich mit WunderPass connecteten User unter den $n$ potenziellen Usern. Analog steht $\widehat{m} \leq m$ für die Anzahl der tatsächlich mit WunderPass connecteten Providern. Der Vollständigkeit halber übertragen wir das aus Def \ref{defKoeff} stammende Verständnis der Connection-Koeffizienten auch auf die eben definierten "connected Pools"
+
+\[
+\widehat{\alpha}^{(t)}_{ij}:=\left\{%
+\begin{array}{ll}
+    1, & \hbox{falls User $\widehat{u}^{(t)}_i \in \widehat{U}^{(t)}$ mit mit Provider $\widehat{s}^{(t)}_j \in \widehat{S}^{(t)}$ connectet ist} \\
+    0, & \hbox{andernfalls} \\
+\end{array}%
+\right. \tag{v}
+\] 
+
+\end{Def}
+
+\vspace{0.6cm}
+
+Man beachte bei den diskreten/sortierten Schreibweisen der definierten Mengen $U^{(t)}$, $\widehat{U}^{(t)}$, $S^{(t)}$ und $\widehat{S}^{(t)}$, dass in aller Regel $u^{(t)}_i \neq \widehat{u}^{(t)}_i$ und $s^{(t)}_j \neq \widehat{s}^{(t)}_j$ gelten. Die sich teils trivial aus den letzten Definitionen ergebenden Zusammenhänge fallen wir in Form eines Theorems zusammen:
+
+\vspace{0.3cm}
+
+\input{C:/Users/Slava/White-Paper/[05][Economics]/[Economics][Quantifizierung][WP][Status quo][theoremPools]}    % binde die Datei '[Economics][Quantifizierung][WP][Status quo][theoremPools].tex' ein
+
+
+Es ist klar, dass WunderPass sich in gewisser Weise an den definierten numerischen Messgrößen ihrer angebundenen Teilnehmer $\widehat{n}$ und $\widehat{m}$ messen können wird. Zusätzlich dazu möchten wir ein - womöglich deutlich relevanteres - numerisches Maß formalisieren. Nämlich die intuitive und sehr simple KPI "Gesamtzahl bestehender User-to-Provider-Connections" zum Zeitpunkt $t \in T$.
+
+\vspace{0.3cm}
+
+\begin{Def}\label{defGamma}
+
+\begin{equation*}
+  \Gamma : T \rightarrow \mathbb{N} 
+\end{equation*}
+
+\begin{equation*}
+  \Gamma(t):= \sum_{i=1}^n \sum_{j=1}^m \alpha^{(t)}_{ij} \textrm{ mit } (n, m) = \left(n^{(t)}, m^{(t)}\right) = dP^{(t)}
+\end{equation*}
+
+\end{Def}
+
+\vspace{0.6cm}
+
+Nun beweisen wir folgende sich ergebende Zusammenhänge:
+
+\begin{Theorem}\label{theremConnectionsCount}
+
+Sei $t \in T$ ein beliebiger Zeitpunkt, $(n, m) = dP^{(t)}$ und $\widehat{U}^{(t)} = \left\{ \widehat{u}^{(t)}_1; \widehat{u}^{(t)}_2;...; \widehat{u}^{(t)}_{\widehat{n}} \right\}$ und $\widehat{S}^{(t)} = \left\{ \widehat{s}^{(t)}_1; \widehat{s}^{(t)}_2;...; \widehat{s}^{(t)}_{\widehat{m}} \right\}$ die connecteten Teilnehmer-Pools mit $\widehat{n} < n$ sowie $\widehat{m} < m$.
+
+Zudem soll in Anlehnung an Annahme \ref{assumptionRatio} $\widehat{m} << \widehat{n}$ gelten. Dann gelten zusätzlich auch folgende Aussagen:
+
+\vspace{0.3cm}
+
+\begin{align*}
+\Gamma(t)&= \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \tag{i} \label{theremConnectionsCount_1} \\ 
+\widehat{n} &\leq \Gamma(t) \leq \widehat{n} * \widehat{m} \tag{ii} \\
+\widehat{n} = \Gamma(t) &\Leftrightarrow \forall i \in \left\{1;...; \widehat{n} \right\}
+\textrm{ gilt } \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} = 1 \tag{iii} \\
+\Gamma(t) = \widehat{n} * \widehat{m} &\Leftrightarrow \widehat{\alpha}^{(t)}_{ij} = 1 \textrm{  } \forall i \in \left\{1;...; \widehat{n} \right\} \textrm{ und } \forall j \in \left\{1;...; \widehat{m} \right\} \tag{iv}
+\end{align*}
+
+\vspace{0.3cm}
+
+Man beachte, Aussage (ii) impliziert insbesondere
+
+\begin{equation*}
+\Gamma(t) = 0 \Leftrightarrow \widehat{n} = 0 \Leftrightarrow \widehat{U}^{(t)} = \emptyset  \Leftrightarrow \widehat{S}^{(t)} = \emptyset
+\end{equation*}
+
+\vspace{0.3cm}
+
+Aussage (iv) beschreibt dagegen quasi eine "\textbf{\textit{Voll-Vernetzung}}" der aktuell connecteten Teilnehmer!
+
+\end{Theorem}
+
+\vspace{0.3cm}
+
+
+\begin{proof}[Beweis] \textrm{ }
+
+\vspace{0.3cm}
+
+Die Aussage (i) ist intuitiv nahezu trivial. Das explizite Vorrechnen dagegen etwas aufwendig, erfolgt aber in Grunde sehr ähnlich wie der Beweis der Aussagen (v) und (vi) des Theorems \ref{theoremPools}.
+
+\vspace{0.4cm}
+
+zu (ii): 
+
+$\Gamma(t) \leq \widehat{n} * \widehat{m}$ ergibt sich aus
+\begin{equation*}
+  \Gamma(t) = \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \leq \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} 1 = \widehat{n} * \widehat{m}
+\end{equation*}
+
+\vspace{0.3cm}
+
+Nun zeigen wir $\widehat{n} \leq \Gamma(t)$. Für $n = 0$ ergibt sich die Aussage aus Punkt (iv) aus Theorem \ref{theoremPools}. Sei also $n > 0$. Dann ist
+
+\begin{align*}
+\Gamma(t) &\overset{\text{(i)}}{=} \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \\
+&\overset{(Def \ref{defPools})}{\geq} \sum_{i=1}^{\widehat{n}} 1 = \widehat{n}
+\end{align*}
+
+\vspace{0.4cm}
+
+zu (iii): 
+"$\Leftarrow$" ist trivial. 
+
+\vspace{0.4cm}
+
+Zu "$\Rightarrow$": Sei $\widehat{n} = \Gamma(t)$. Angenommen es gäbe ein $i^{*} \in \left\{1;...; \widehat{n} \right\}$ mit $\sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{i^{*}j} > 1$. Dann müsste es aufgrund der Annahme aber auch ein $i^{**} \in \left\{1;...; \widehat{n} \right\}$ mit $\sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{i^{**}j} < 1$ also $\sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{i^{**}j} = 0$ geben. In diesem Fall wäre aber $\widehat{u}^{(t)}_{i^{**}} \notin \widehat{U}^{(t)}$ und somit auch $i^{**} \notin \left\{1;...; \widehat{n} \right\}$. Widerspruch!
+
+\vspace{0.4cm}
+
+zu (iv): 
+"$\Leftarrow$" ist wieder trivial.
+
+\vspace{0.4cm} 
+
+Zu "$\Rightarrow$": Es gelte also $\Gamma(t) = \widehat{n} * \widehat{m}$. Angenommen es gäbe ein $i^{*} \in \{1,...,\widehat{n}\}$ und ein $j^{*} \in \{1,...,\widehat{m}\}$, sodass $\alpha^{(t)}_{i^{*}j^{*}} = 0$. Dann wäre unter Gültigkeit der Aussage (i)
+
+\begin{align*}
+\widehat{n} * \widehat{m} &= \Gamma(t) = \sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} \widehat{\alpha}^{(t)}_{ij} \\
+&\leq \left(\sum_{i=1}^{\widehat{n}} \sum_{j=1}^{\widehat{m}} 1 \right) - 1 = \widehat{n} * \widehat{m} - 1 < \widehat{n} * \widehat{m} \\
+\end{align*}
+Widerspruch!
+  
+\end{proof}
+\vspace{0.6cm}
+
+

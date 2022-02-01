@@ -1,0 +1,65 @@
+% !TEX root = C:/Users/Slava/White-Paper/[06][NFT-Pass]/[NFT-Pass][Konzept].tex
+
+\subsubsection{Edition}
+
+\vspace{0.3cm}
+
+Die Edition unseres WunderPasses soll als Property auf die anfangs geforderte Möglichkeit einer gewissen Individualisierung des WunderPasses durch seinen Besitzer einzahlen. Zu individuell darf eine solche NFT-Property aber auch nicht sein, da der NFT zwingend seinen Eigentümer wechseln können soll, da das ganze Unterfangen mit dem NFT-Pass andernfalls ad absurdum führte.
+
+Um die Edition-Property noch etwas interessanter zu gestalten, sollen Exemplare jeder Edition nicht endlos verfügbar sein, sondern stattdessen irgendwann einmal \textit{aufgebraucht}. In solch einem Fall soll sich der User aber nicht einfach irgendeine andere Edition auswählen müssen, sondern erhält die \textit{"Oberedition"} (Parent) seiner ursprünglich gewünschten Edition. Und falls auch diese \textit{aufgebraucht} sein sollte, die \textit{"Oberedition"} der \textit{"Oberedition"} usw. 
+
+\vspace{0.2cm}
+
+\begin{NFT-Prop}[Edition]
+
+Als Ausprägung der WunderPass-NFT-\textbf{Edition} haben wir uns für \textbf{Städte} der Welt entschieden. Die \textbf{Parent-Edition} einer Stadt ist das dazugehörige \textbf{Land}, dessen 
+Parent-Edition wiederum \textbf{Kontinent} und die \textbf{oberste Editions-Ebene} dann die \textbf{Welt-Edition}. Letztere unterliegt folglich auch keiner stückweisen Obergrenze mehr.
+
+\vspace{0.2cm}
+
+\underline{\textbf{\textit{Beispiel einer Edition-Kette:}}}
+
+\vspace{0.2cm}
+
+\begin{equation*}
+\textrm{Berlin } \rightarrow \textrm{ Germany } \rightarrow \textrm{ Europe } \rightarrow \textrm{ World }
+\end{equation*} 
+
+\vspace{0.2cm}
+
+Es gilt folgendes grobe Regel-Set, was jedoch explizit auch nach Launch modifizierbar bleiben soll:
+
+\begin{itemize}
+    \item Die möglichen Editionen werden von uns bestimmt. Diese müssen nicht zwingend beim Launch des NFT vollständig benannt werden, sondern können stattdessen auch nachträglich eingepflegt werden.
+    \item Jede berücksichtigte \textit{Städte-Edition} ist genau \textbf{100} Mal verfügbar. Sind alle 100 Exemplare einer \textit{Städte-Edition} bereits gemintet (verbraucht), erhält die nächste Mint-Anfrage nach einem WunderPass derselben Edition automatisch die zu dieser Städte-Edition gehörende \textit{Landes-Edition}.
+    \item Die \textit{Landes-Editionen} sind in einer maximalen Stückzahl von je \textbf{10.000} pro berücksichtigtem Land verfügbar. Sind auch diese aufgebraucht, wird die durch den User ausgewählte Stadt auf die ihrem Land übergeordnete \textit{Kontinent-Edition} gemappt.
+    \item Die \textit{Kontinent-Editionen} sind in einer maximalen Stückzahl von je \textbf{1.000.000} für jeden Kontinent (außer der Antarktis) vorgesehen. Sollte auch diese Menge irgendwann erschöpfen, greifen wir zu der übergeordneten \textit{Welt-Edition}
+\end{itemize} 
+
+\end{NFT-Prop}
+
+\vspace{0.24cm}
+
+\underline{\textbf{Quantitative Daten zu den Editionen:}}
+
+\begin{itemize}
+    \item Nach aktuellem Stand sind mindestens 693 \textit{Städte-Edition} vorgesehen.
+    \item Die genannten \textit{Städte-Edition} verteilen sich dabei aktuell auf 179 \textit{Landes-Edition}.
+    \item Die unterschiedlichen \textit{Kontinent-Edition} belaufen sich auf 6 (Nord- und Südamerika, Europa, Afrika, Asien und Australien).
+    \item Die übergeordnete \textit{Welt-Edition} ist in ihrer Stückzahl unbegrenzt. 
+    \item Die Auswahl der angebotenen \textit{Städte-Editionen} folgt (mit Augenmaß) in etwa folgender Logik:
+    \begin{itemize}
+    	\item Die Hauptstadt eines jeden mit einer \textit{Landes-Edition} versehenen Landes ist gleichzeitig auch eine verfügbare \textit{Städte-Edition}.
+    	\item Mit Ausnahme der Hauptstädte erfordert die Größe einer Stadt (nach Einwohnern) ein Mindestmaß $m_1$, um als \textit{Städte-Edition} aufgenommen zu werden.
+    	\item Sofern es das vorige Kriterium hergibt, sollen nach Möglichkeit für jedes Land mit einer eigenen \textit{Landes-Edition} mindestens seine 5 größten Städte mit einer eigenen \textit{Städte-Edition} versehen werden.
+    	\item Überschreiten die $n$ größten Städte eines in die \textit{Landes-Editionen} aufgenommenen Landes eine bestimmte Mindestgröße (nach Einwohnern) $m_2$, werden alle $n$ Städte in die verfügbaren \textit{Städte-Editionen} aufgenommen. Dieses Kriterium wird aufgrund des vorigen ausschließlich für $n > 5$ relevant.
+    	\item Städte der G7-Länder werden (ungeachtet etwaiger Mindestgröße) vermehrt in die \textit{Städte-Editionen} aufgenommen (bis zu 25 \textit{Städte-Editionen} pro Land).
+    \end{itemize} 
+    \item Einzelne Städte können bei Bedarf auch bei Missachtung aller vorigen Kriterien aufgenommen werden.
+\end{itemize}
+
+\vspace{0.5cm}
+
+
+
+

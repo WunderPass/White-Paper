@@ -1,0 +1,123 @@
+% !TEX root = C:/Users/Slava/White-Paper/[06][NFT-Pass]/[NFT-Pass][Konzept].tex
+
+\subsubsection{Pattern-Property}
+
+\vspace{0.3cm}
+
+\begin{sloppypar}
+Diese NFT-Property soll ebenso wie die beiden vorigen einem abstufenden Raritätsprinzip zu Grunde liegen - und zwar ausschließlich dem Zufall folgend.
+\end{sloppypar}
+
+Im Gegensatz zu den beiden vorigen Properties obliegt die \textit{Pattern-Property} keiner absoluten Obergrenze - insbesondere auch dann nicht, falls einige Pattern zu einem Zeitpunkt verhältnismäßig unter- oder überrepräsentiert sind.
+
+\vspace{0.3cm}
+
+\begin{NFT-Prop}[Background (Pattern)]
+
+Wir definieren folgende \textit{NFT-Pass-Background-Muster} mit den dazugehörenden Eigenschaften:
+
+\begin{itemize}
+    \item M1
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Safari} 
+    	\item maximale Anzahl Pässe: 256
+    	\item Wahrscheinlichkeit falls noch nicht aufgebraucht: 1,5625\% $\left( \frac{1}{64} \right)$
+    \end{itemize}
+    \item M2
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Bars} 
+    	\item maximale Anzahl Pässe: 4.096
+    	\item Wahrscheinlichkeit falls noch nicht aufgebraucht: 3,125\% $\left( \frac{1}{32} \right)$
+    \end{itemize}
+    \item M3
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Dots} 
+    	\item maximale Anzahl Pässe: 65.536
+    	\item Wahrscheinlichkeit falls noch nicht aufgebraucht: 6,25\% $\left( \frac{1}{16} \right)$
+    \end{itemize}
+    \item M4
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Muster festlegen} 
+    	\item maximale Anzahl Pässe: 1.048.576
+    	\item Wahrscheinlichkeit falls noch nicht aufgebraucht: 12,5\% $\left( \frac{1}{8} \right)$
+    \end{itemize}
+    \item M5
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Muster festlegen}  
+    	\item maximale Anzahl Pässe: 16.777.216
+    	\item Wahrscheinlichkeit falls noch nicht aufgebraucht: 25\% $\left( \frac{1}{4} \right)$
+    \end{itemize}
+    \item M6
+    \begin{itemize}
+    	\item Mögliche Ausprägung: \textbf{Muster festlegen}
+    	\item maximale Anzahl Pässe: unbegrenzt  
+    	\item Wahrscheinlichkeit: 50\% + x mit stets größer werdendem $x \in \left[ \frac{1}{64}; \frac{1}{2} \right]$
+    \end{itemize}
+\end{itemize}
+
+\vspace{0.2cm}
+
+Werden Pässe der Ausprägungen M1 bis M5 (aufgrund ihres Caps) im Laufe der Zeit aufgebraucht, geht deren Wahrscheinlichkeit auf die Property-Ausprägung M6 über. Für das x aus der Beschreibung der Ausprägung M6 gilt also:
+
+\vspace{0.2cm}
+
+\begin{equation*}
+x = \frac{1}{64} + \sum_{aufgebrauchte \textrm{ } M \in \lbrace M1;...;M5 \rbrace} Wahrscheinlichkeit(M)
+\end{equation*}
+
+\end{NFT-Prop}
+
+\vspace{0.3cm}
+
+\begin{Algo}[Verlosungs-Mechanismus für Background-Property]
+
+\begin{itemize}
+    \item Zunächst bestimme man die Gesamtanzahl aller bisher geminteter Pässe $n$.
+    \item Gleiches tue man nun für die Counts der geminteten Pässe pro Ausprägung der Background-Property M1 bis M6 als entsprechende Größen $n_1, n_2,...,n_6$.
+    \item Seien $\Theta_i$ für $i \in \lbrace 1,...6 \rbrace$ die oben definierten \textbf{absoluten} Obergrenzen der \newline Ausprägungen der Background-Property M1 bis M6.
+    \item Seien $\rho_i$ für $i \in \lbrace 1,...6 \rbrace$ die oben definierten Wahrscheinlichkeiten der \newline Ausprägungen der Background-Property M1 bis M6, deren Auswahl wir hier zusätzlich formalisieren wollen:
+    
+\[
+\rho_i:=\left\{%
+\begin{array}{ll}
+    \hbox{\LARGE $\frac{1}{2^{7 - i}}$,} & \hbox{für $i = 1,...,5$} \\[0,3cm]
+    \hbox{$\frac{1}{2} + \frac{1}{2^6}$,} & \hbox{für $i = 6$} \\
+\end{array}%
+\right.
+\]    
+    
+    \item Alle Ausprägungen mit $n_i \geq \Theta_i$ sind aufgebraucht und können weder zum aktuellen Zeitpunkt noch in der Zukunft vergeben werden und damit fortan auch nicht beim Minting eines neuen Pass berücksichtigt werden.
+    \item Wir unterteilen die Ausprägungen der Background-Property in \textit{"verbraucht"} und \textit{"verfügbar"}:
+    
+\begin{align*}
+\overline{M} &:= \lbrace i \in \lbrace 1,...,6 \rbrace \textrm{ } | \textrm{ } n_i \geq \Theta_i \rbrace \textrm{     [verbraucht]} \\
+M &:= \lbrace i \in \lbrace 1,...,6 \rbrace \textrm{ } | \textrm{ } n_i < \Theta_i \rbrace \textrm{     [verfügbar]}
+\end{align*} 
+
+Man vergewissere sich an dieser Stelle gedanklich, dass $M \cap \overline{M} = \emptyset$, $M \cup \overline{M} = \lbrace 1,...,6 \rbrace$ und $6 \in M$ gelten.
+    
+    \item Ist eine bestimmte Ausprägung $i \in \lbrace 1,...,5 \rbrace$ verbraucht, soll ihre Wahrscheinlichkeit $\rho_i$ auf die Ausprägung M6 übertragen werden (damit wir bei 100\% bleiben).
+
+    \item Damit errechnen wir die aktuell vorliegenden neuen Wahrscheinlichkeiten $\widehat{\rho}_i$ für unsere Background-Ausprägungen als
+\end{itemize} 
+
+\[
+\widehat{\rho}_i:=\left\{%
+\begin{array}{ll}
+	\hbox{0,} & \hbox{für $i \in \overline{M}$} \\[0,1cm] 
+    \hbox{$\rho_i$,} & \hbox{für $i \in M$, $i \neq 6$} \\[0,3cm]
+    \displaystyle \rho_1 + \sum_{i \in \overline{M}} \rho_i, & \hbox{für $i = 6$} \\
+\end{array}%
+\right.
+\]
+
+Man vergewissere sich an dieser Stelle gedanklich, dass auch für die neuen \newline Wahrscheinlichkeiten \[\sum_{i = 1}^6 \widehat{\rho}_i \textrm{ } = 1\] gilt.
+
+\begin{itemize}
+    \item Am Ende bestimme man mittels Randomisierung anhand der Wahrscheinlichkeiten $\widehat{\rho}_i$ für $i \in \lbrace 1,...6 \rbrace$ die zu vergebende Background-Ausprägung. 
+\end{itemize}
+
+\end{Algo}
+
+\vspace{0.3cm}
+

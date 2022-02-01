@@ -1,0 +1,39 @@
+% !TEX root = C:/Users/Slava/White-Paper/[06][NFT-Pass]/[NFT-Pass].tex
+
+\subsection{Technische Umsetzung}
+
+\vspace{0.3cm}
+
+\todo{TODO: technische Implementierung}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+  \item Abwandlung des ERC721-Standard, um unsere Metadaten-Logik zu bändigen.
+  \item Die Metadaten werden wohl auch einem ähnlichen Konstrukt wie IPFS (off-chain) gespeichert werden und lediglich deren Hash als Datenfeld im Smart-Contract (on-chain), damit die Metadaten nicht nachträglich verändern werden können (dieses Vorgehen wird der absolute Standard sein).
+  \item Unsere Metadaten sind jedoch so komplex, das deren Erzeugung (beim Minten) wohl einen zweiten Smart-Contract erfordern wird. Wir haben also quasi einen "Metadaten-Hybriden":
+  \begin{itemize}
+  	\item Erzeugung on-chain
+  	\item Storing off-chain
+  \end{itemize}
+  \item Der Metadaten-Smart-Contract wird die oben skizzierte Logik implementieren
+  \begin{itemize}
+  	\item Wie viele Pässe gibts es bereits und welche (hinsichtlich Properties)?
+  	\item Wie sind die aktuellen Verteilungen der Properties und deren Contstraints
+  	\item Einbindung von Randomisierungs-Orakeln
+  	\item Sicherstellung, dass die erzeugten Metadaten auch tatsächlich vom Caller (ERC721-Contract) verwendet wurden und keine nachträgliche Manipulation stattgefunden hat.
+  \end{itemize}
+  \item Es muss geklärt werden, ob hinsichtlich des Gedanken an den besagten "zweiten Smart-Contract" Standards/Best-Practices existieren, damit wir hier nicht das Rad neu erfinden.
+  \item Es bleibt noch nicht ganz klar, wie die Metadaten nach ihrer Erzeugung nach IPFS gelangen, da dies laut meinem Verständnis ein Smart-Contract nicht selbst gewährleisten kann. Moritz Idee war grob die Folgende 
+  \begin{itemize}
+    \item Der Minting-Contract erzeugt den NFT, lässt seine Metadaten-Referenz jedoch zunächst ungesetzt (der NFT ist damit in gewisser Weise noch "unfertig"; kann in dem Zustand auch noch Constraints unterstellt sein).
+    \item Der Minting-Contract callt den Metadaten-Contract mit dem Anliegen, Metadaten zu dem "unfertigen" NFT mit der zugehörigen ID zu erzeugen.
+  	\item Der Metadaten-Contract erzeugt die Metadaten, hasht diese und gibt den Hash zurück an den Minting-Contract. Gleichzeitig publisht er ein Create-Event mit der Token-ID und den zugehörigen erzeugten Metadaten.
+  	\item Der Minting-Contract speichert den erhaltenen Metadaten-Hash und wartet auf "approvement".
+  	\item Das forcierte Event wird von einem dafür bestimmten (off-chain) Web3-Service vernommen und weiterverarbeitet: Die Metadaten werden geparst und nach IPFS gepusht. Als Ergebnis bekommen wir eine entsprechende IPFS-URI.
+  	\item Unser Web3-Service stößt anschließend eine "Set-URI"-Transaktion mit den entsprechenden Input-Daten (Token-ID; IPFS-URI) beim Minting-Contract an, um den gesamten Minting-Prozess für den neuen Token abzuschließen.
+  	\item Der Minting-Contract verifiziert die Metadaten mittels des gespeicherten Meta-Daten-Hashs (\todo{Hier ist nicht nicht ganz klar, wie. Ich weiß nicht, ob der Contract einfach die Daten von IPFS laden kann, um den Hash abzugleichen oder ob er vorher die URI implizit vorgeben muss, die irgendwie im Hash berücksichtigt werden muss, oder wie auch immer hier die Best-Practise aussieht}) und updatet die NFT-URI auf den Wert der übergebenen IPFS-URI. 
+  	\item Hiermit ist der Minting-Prozess abgeschlossen, der NFT "fertig" gemintet und kann von etwaigen "Temporary-Locked-Constraint" entbunden werden und vom neuen Besitzer frei verfügt werden.
+  \end{itemize}
+  \item \textbf{Ein etwaiger Crypto-Freelancer muss auf die skizzierten Herausforderungen gechallenget werden.}
+\end{itemize}
