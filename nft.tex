@@ -1,0 +1,238 @@
+\documentclass[11pt]{scrartcl}
+
+
+%---------Konfiguration------
+
+
+%-----Sprache und Zeichen----
+\usepackage[utf8]{inputenc}
+% \usepackage{ucs}
+% \usepackage[T1]{fontenc}
+
+% Zeilenumbrüche der deutschen Sprache
+% \usepackage[ngerman]{babel}
+
+
+%---------Farben-------------
+\usepackage[RGB]{xcolor}
+\definecolor{dunkelgruen}{RGB}{0 136 0}
+\newcommand\todo[1]{\textcolor{red}{#1}}
+
+
+%---------Links/Refs---------
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
+
+%---------Grafiken-----------
+\usepackage{graphicx}
+\usepackage{subfig}
+
+
+
+%---------Sonstiges----------
+\usepackage{parcolumns}
+\usepackage{enumitem}
+
+
+
+%---------Mathe--------------
+\usepackage{amsthm, amssymb, mathtools}
+% \usepackage{amsmath, amssymb, amstext ,lipsum}
+
+
+
+%---------Umgebungen---------
+\usepackage[framemethod=tikz]{mdframed}
+
+%---------Business---------
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{Business-Def}{Definition}
+
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{Hypothese}{Hypothese}
+
+\mdtheorem[
+  linecolor=gray,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=gray,
+]{Praemisse}{Prämisse}
+
+\mdtheorem[
+  linecolor=violet,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=violet,
+]{Quelle}{Quellen}
+
+\mdtheorem[
+  linecolor=violet,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=violet,
+]{Zitat}{Zitat}
+
+\mdtheorem[
+  linecolor=blue,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=blue,
+]{Fazit}{Conclusion}
+
+\mdtheorem[
+  linecolor=red,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=red,
+]{Problem}{Problem}
+
+\mdtheorem[
+  linecolor=cyan,
+  frametitlefont=\sffamily\bfseries\color{black},
+  frametitlebackgroundcolor=cyan,
+]{Solution}{Lösung}
+
+
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{NFT-Prop}{NFT-Property}
+
+
+
+%---------Mathe------------
+\mdtheorem[
+  linecolor=gray,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=gray,
+]{Def}{Definition}
+
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{Theorem}{Theorem}
+
+\mdtheorem[
+  linecolor=blue,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=blue,
+]{Lemma}{Lemma}
+
+\mdtheorem[
+  linecolor=red,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=red,
+]{Assumption}{Annahme}
+
+\mdtheorem[
+  linecolor=violet,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=violet,
+]{Example}{Beispiel}
+
+\mdtheorem[
+  linecolor=cyan,
+  frametitlefont=\sffamily\bfseries\color{black},
+  frametitlebackgroundcolor=cyan,
+]{Algo}{Algorithmus}
+
+
+
+
+
+
+ 
+%---------Dokument-----------
+
+%---------Titel--------------
+\title{WunderPass-NFT}
+\author{WunderTeam}
+\date{\today{}, Berlin}
+ 
+%---------Inhalt-------------
+\begin{document}
+
+
+\maketitle
+\tableofcontents{}
+
+
+
+%------------------------------------------------Einleitende Worte---------------------------------
+
+\newpage
+
+Ein exzellentes Mittel, um \textit{WunderPass} als Geschäftsmodell, Unternehmung und Unternehmen ein symbolisches - gewissermaßen plastisches - Sinnbild einzuverleiben, ist die Repräsentation von \textit{WunderPass} als Service/Protokoll mittels eines - eigens dafür kreierten - NFTs: \textbf{"Des WunderPass"} (im Folgenden auch \textit{NFT-Pass} genannt)
+
+\vspace{0.3cm}
+
+\begin{Fazit}[\textit{WunderPass} deabstrahiert durch \textbf{"den WunderPass"} als NFT]
+
+"Ich nutze \textit{WunderPass}" wird symbolisiert durch "Ich besitze \textbf{meinen WunderPass}"!
+
+\end{Fazit}
+
+\vspace{0.3cm}
+
+%------------------------------------------------Konzept-Kapitel-----------------------------------
+
+% -----------------Einleitende Worte-------------
+\input{[06][NFT-Pass]/[NFT-Pass][Konzept][Einleitung]}    % binde die Datei '[NFT-Pass][Konzept][Einleitung].tex' ein
+
+
+% -----------------NFT-Status--------------------
+\section{Status-Property}
+\vspace{0.2cm}
+\input{[06][NFT-Pass]/[NFT-Pass][Konzept][Status]}    % binde die Datei '[NFT-Pass][Konzept][Status].tex' ein
+
+
+% -----------------Überleitende Worte------------
+Die Beschaffenheit dieser \textit{first-come-first-serve-Property} soll jedoch einzigartig bleiben. Die folgenden Properties werden nicht mehr deterministisch sein, um unserem \textit{NFT-Pass} ein \textbf{unvorherbestimmbares "Eigenleben"} einzuverleiben. 
+
+
+% -----------------NFT-Hologramm-----------------
+\section{Hologramm}
+\label{sec:hologramm}
+\vspace{0.3cm}
+\input{[06][NFT-Pass]/[NFT-Pass][Konzept][Wunder]}    % binde die Datei '[NFT-Pass][Konzept][Wunder].tex' ein
+%\input{[NFT-Pass][Konzept][Wunder]}
+
+
+% -----------------NFT-Pattern-------------------
+\section{Pattern-Property}
+\vspace{0.3cm}
+\input{[06][NFT-Pass]/[NFT-Pass][Konzept][Pattern]}    % binde die Datei '[NFT-Pass][Konzept][Pattern].tex' ein
+%\input{[06][NFT-Pass]/[NFT-Pass][Konzept][Pattern][alt]}
+
+
+% -----------------NFT-Edition-------------------
+\section{Edition}
+\vspace{0.3cm}
+\input{[06][NFT-Pass]/[NFT-Pass][Konzept][Edition]}    % binde die Datei '[NFT-Pass][Konzept][Edition].tex' ein
+
+% -----------------Design------------------------
+\section{Design}
+\vspace{0.3cm}
+\input{[06][NFT-Pass]/[NFT-Pass][Konzept][Design]}    % binde die Datei '[NFT-Pass][Konzept][Design].tex' ein
+%\input{[NFT-Pass][Konzept][Design]}
+\newpage
+
+
+% -----------------Beispiel----------------------
+\section{Beispielhafte Analyse der Collection}
+\vspace{0.3cm}
+\input{[06][NFT-Pass]/[NFT-Pass][Konzept][Beispiel]}    % binde die Datei '[NFT-Pass][Konzept][Beispiel].tex' ein
+%\input{[NFT-Pass][Konzept][Beispiel]} 
+
+
+% -----------------Intrinsischer Wert------------
+%\section{Intrinsischer Wert}
+%\vspace{0.3cm}
+%\input{[06][NFT-Pass]/[NFT-Pass][Konzept][Intrinsischer Wert]}    % binde die Datei '[NFT-Pass][Konzept][Intrinsischer Wert].tex' ein
+
+
+ 
+\end{document}
