@@ -41,20 +41,20 @@
 \contentsline {subsubsection}{\numberline {6.1.3}Pattern-Property}{56}{subsubsection.6.1.3}%
 \contentsline {subsubsection}{\numberline {6.1.4}Edition}{57}{subsubsection.6.1.4}%
 \contentsline {subsubsection}{\numberline {6.1.5}Design}{59}{subsubsection.6.1.5}%
-\contentsline {subsubsection}{\numberline {6.1.6}Beispiel}{59}{subsubsection.6.1.6}%
-\contentsline {subsubsection}{\numberline {6.1.7}Intrinsischer Wert}{59}{subsubsection.6.1.7}%
-\contentsline {subsection}{\numberline {6.2}Technische Umsetzung}{59}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Abgrenzung zu SSI}{61}{section.7}%
-\contentsline {section}{\numberline {8}Project 'Guard'}{61}{section.8}%
-\contentsline {section}{\numberline {9}Project 'Pools'}{61}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Einleitung}{61}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Formalisierungen}{62}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Pool-Erzeugung}{64}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Pool-Lifetime}{66}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Pool-Liquidierung}{68}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Pool-Economics}{69}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}Pool-Vertrag}{69}{subsection.9.7}%
-\contentsline {section}{\numberline {10}Community}{70}{section.10}%
-\contentsline {section}{\numberline {11}Zusammenfassung}{70}{section.11}%
-\contentsline {section}{\numberline {12}Anhang}{70}{section.12}%
+\contentsline {subsubsection}{\numberline {6.1.6}Beispiel}{60}{subsubsection.6.1.6}%
+\contentsline {subsubsection}{\numberline {6.1.7}Intrinsischer Wert}{60}{subsubsection.6.1.7}%
+\contentsline {subsection}{\numberline {6.2}Technische Umsetzung}{60}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Abgrenzung zu SSI}{62}{section.7}%
+\contentsline {section}{\numberline {8}Project 'Guard'}{62}{section.8}%
+\contentsline {section}{\numberline {9}Project 'Pools'}{62}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Einleitung}{62}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Formalisierungen}{64}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Pool-Erzeugung}{65}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Pool-Lifetime}{67}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Pool-Liquidierung}{69}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Pool-Economics}{70}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Pool-Vertrag}{70}{subsection.9.7}%
+\contentsline {section}{\numberline {10}Community}{71}{section.10}%
+\contentsline {section}{\numberline {11}Zusammenfassung}{71}{section.11}%
+\contentsline {section}{\numberline {12}Anhang}{71}{section.12}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
