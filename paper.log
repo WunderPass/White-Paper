@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  1 FEB 2022 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  2 FEB 2022 00:04
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -1873,24 +1873,25 @@ Package mdframed Info: mdframed detected package amsthm
 ([06][NFT-Pass]/[NFT-Pass].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 10.
+(mdframed)              on input line 12.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 14.
+(mdframed)              on input line 16.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 14.
+(Font)              using `OT1/cmss/bx/n' instead on input line 16.
 
 [50]
-Package mdframed Info: Not enough space on this page on input line 14.
+Package mdframed Info: Not enough space on this page on input line 16.
  ([06][NFT-Pass]/[NFT-Pass][Konzept].tex
-Overfull \hbox (7.73042pt too wide) in paragraph at lines 21--22
+([06][NFT-Pass]/[NFT-Pass][Konzept][Einleitung].tex
+Overfull \hbox (7.73042pt too wide) in paragraph at lines 17--18
 []\OT1/cmr/m/n/10.95 Wir brauchen an an-deren Stellen ein (ebenso wertbes-tim-m
 endes) Zu-fall-sprinzip. 
  []
 
-[51] ([06][NFT-Pass]/[NFT-Pass][Konzept][Status].tex
+[51]) ([06][NFT-Pass]/[NFT-Pass][Konzept][Status].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 11.
@@ -2341,10 +2342,10 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27077 strings out of 479334
- 517860 string characters out of 2857085
- 994382 words of memory out of 3000000
- 43699 multiletter control sequences out of 15000+200000
+ 27081 strings out of 479334
+ 518068 string characters out of 2857085
+ 994379 words of memory out of 3000000
+ 43700 multiletter control sequences out of 15000+200000
  418445 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  111i,13n,116p,10602b,1016s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2373,7 +2374,7 @@ y6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (80 pages, 7981017 bytes).
+Output written on paper.pdf (80 pages, 7980879 bytes).
 PDF statistics:
  1052 PDF objects out of 1200 (max. 8388607)
  257 named destinations out of 1000 (max. 500000)
