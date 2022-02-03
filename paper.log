@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  2 FEB 2022 18:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  3 FEB 2022 14:19
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -2265,10 +2265,10 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27405 strings out of 478864
- 528831 string characters out of 2848661
- 1006794 words of memory out of 3000000
- 44494 multiletter control sequences out of 15000+600000
+ 27401 strings out of 478864
+ 528741 string characters out of 2848661
+ 1006737 words of memory out of 3000000
+ 44490 multiletter control sequences out of 15000+600000
  418445 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,114p,10602b,1016s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2297,7 +2297,7 @@ y6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (80 pages, 8000404 bytes).
+Output written on paper.pdf (80 pages, 8000588 bytes).
 PDF statistics:
  1074 PDF objects out of 1200 (max. 8388607)
  257 named destinations out of 1000 (max. 500000)
