@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  3 FEB 2022 14:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  7 FEB 2022 19:37
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -1984,16 +1984,40 @@ File: [06][NFT-Pass]/images/pass 4.png Graphic file (type png)
 Package pdftex.def Info: [06][NFT-Pass]/images/pass 4.png  used on input line 1
 12.
 (pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-) ([NFT-Pass][Konzept][Intrinsischer Wert].tex [63 <./[06][NFT-Pass]/images/pas
-s 1.png> <./[06][NFT-Pass]/images/pass 2.png> <./[06][NFT-Pass]/images/pass 3.p
-ng> <./[06][NFT-Pass]/images/pass 4.png>])
-([06][NFT-Pass]/[NFT-Pass][Tech].tex [64]
+) ([NFT-Pass][Konzept][Intrinsischer Wert].tex
+Overfull \hbox (4.0499pt too wide) in paragraph at lines 3--5
+\OT1/cmr/m/n/10.95 einen Abriss zu denkbaren Ein-satzmoglichkeiten des WunderP
+ass-NFTs und seinen poten-
+ []
+
+[63 <./[06][NFT-Pass]/images/pass 1.png> <./[06][NFT-Pass]/images/pass 2.png> <
+./[06][NFT-Pass]/images/pass 3.png> <./[06][NFT-Pass]/images/pass 4.png>]
+Overfull \hbox (5.0123pt too wide) in paragraph at lines 49--49
+\OT1/cmr/m/n/10.95 Product/Features 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+\OT1/cmr/m/n/10.95 (DAO-
+ []
+
+
+Overfull \hbox (10.01215pt too wide) in paragraph at lines 17--64
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--64
+
+ []
+
+) ([06][NFT-Pass]/[NFT-Pass][Tech].tex [64]
 Overfull \hbox (1.52536pt too wide) in paragraph at lines 33--34
 []\OT1/cmr/m/n/10.95 Das forcierte Event wird von einem dafur bes-timmten (off
 -chain) Web3-Service
  []
 
-
+[65]
 Overfull \hbox (4.77998pt too wide) in paragraph at lines 35--36
 []\OT1/cmr/m/n/10.95 Der Minting-Contract ver-i-fiziert die Meta-daten mit-tels
  des gespe-icherten Meta-
@@ -2005,7 +2029,7 @@ Overfull \hbox (2.5931pt too wide) in paragraph at lines 38--39
 Her-aus-forderun-
  []
 
-[65])) ([07][SSI]/[SSI].tex) ([08][Project Guard]/[Project Guard].tex)
+)) ([07][SSI]/[SSI].tex) ([08][Project Guard]/[Project Guard].tex)
 ([09][Pools]/[Pools].tex [66]
 Overfull \hbox (17.7679pt too wide) in paragraph at lines 32--33
 []\OT1/cmr/m/n/10.95 Ein User er-stellt einen Pool (in einer dafur im-ple-men-
@@ -2025,19 +2049,22 @@ Overfull \hbox (0.93097pt too wide) in paragraph at lines 73--74
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 116.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 116.
 [68]
 Overfull \hbox (10.37666pt too wide) in paragraph at lines 142--143
 []\OT1/cmr/m/n/10.95 Auszahlungslogik (per Ab-stim-mung oder Adresse eines Orac
 le-Smart-Contracts,
  []
 
-
+[69]
 Overfull \hbox (13.47906pt too wide) in paragraph at lines 158--159
 \OT1/cmr/m/n/10.95 Wunder-Pool-Applikation, und muss diese lediglich en-tweder 
 bestatigen oder ablehnen
  []
 
-[69]
+
 Overfull \hbox (2.46832pt too wide) in paragraph at lines 159--160
 \OT1/cmr/m/n/10.95 let) wer-den, son-dern wird stattdessen im Zuge des vorigen 
 Schritts nach Bestatigung
@@ -2086,20 +2113,19 @@ Overfull \hbox (13.95567pt too wide) in paragraph at lines 240--241
 traum. Hier wird eingezahlt,
  []
 
-
+[72]
 Overfull \hbox (14.56393pt too wide) in paragraph at lines 242--243
 \OT1/cmr/m/n/10.95 weder eine echte Trea-sury noch eine Life-time. Fur Split-w
 ise wird erst die Umverteilung
  []
 
-[72]
+[73]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 277.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 283.
- [73]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 291.
@@ -2120,13 +2146,13 @@ itsbezogenen Teil-Identitaten.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 16.
+[75]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 24.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 30.
-[75]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 35.
@@ -2151,14 +2177,9 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 66.
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 66.
-
+Package mdframed Info: Not enough space on this page on input line 66.
 [76]
+Package mdframed Info: Not enough space on this page on input line 66.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 71.
@@ -2177,28 +2198,20 @@ Overfull \hbox (10.53731pt too wide) in paragraph at lines 88--89
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 90.
+[77]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 95.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 103.
-[77]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 129.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 139.
-
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 139.
-
-[78]
+ [78]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 144.
@@ -2229,13 +2242,13 @@ a-ben oder Ein-schrankungen
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 165.
+[79]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 170.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 174.
-[79]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 179.
@@ -2254,7 +2267,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 206.
-) [80] (paper.aux)
+ [80]) [81] (paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2265,13 +2278,13 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27401 strings out of 478864
- 528741 string characters out of 2848661
- 1006737 words of memory out of 3000000
- 44490 multiletter control sequences out of 15000+600000
+ 27403 strings out of 478864
+ 528781 string characters out of 2848661
+ 1006690 words of memory out of 3000000
+ 44491 multiletter control sequences out of 15000+600000
  418445 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,13n,114p,10602b,1016s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,13n,114p,10602b,1018s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Slava\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -2297,9 +2310,9 @@ y6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (80 pages, 8000588 bytes).
+Output written on paper.pdf (81 pages, 8003595 bytes).
 PDF statistics:
- 1074 PDF objects out of 1200 (max. 8388607)
- 257 named destinations out of 1000 (max. 500000)
+ 1077 PDF objects out of 1200 (max. 8388607)
+ 258 named destinations out of 1000 (max. 500000)
  471 words of extra memory for PDF output out of 10000 (max. 10000000)
 
