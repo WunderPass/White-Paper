@@ -4,4 +4,5 @@
 \contentsline {section}{\numberline {4}Edition}{8}{section.4}%
 \contentsline {section}{\numberline {5}Design}{10}{section.5}%
 \contentsline {section}{\numberline {6}Beispielhafte Analyse der Collection}{11}{section.6}%
+\contentsline {section}{\numberline {7}Intrinsischer Wert}{14}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
