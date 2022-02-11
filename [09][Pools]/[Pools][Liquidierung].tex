@@ -1,0 +1,70 @@
+% !TEX root = paper.tex
+
+Für eine etwaige Pool-Liquidierung stellen sich exakt zwei Fragen: "\textbf{Wann} wird liquidiert?" und "\textbf{Wie} wird liquidiert?" Das \textbf{Wann} ist hierbei schnell geklärt. Es gibt grob folgende drei Möglichkeiten, von denen eine durch das in Definition \ref{defPool} definierte Regelset $\mathcal{R}$ zu spezifizieren ist:
+
+\begin{itemize}
+  \item $\mathcal{R}$ legt einen exakten Zeitpunkt fest, zu dem der Pool liquidiert werden soll.
+  \item $\mathcal{R}$ definiert ein bestimmtes Ereignis, bei deren Eintreten der Pool liquidiert werden soll.
+  \item $\mathcal{R}$ regelt, dass die Pool-Liquidierung per (DAO-)Abstimmung beschlossen werden muss.
+\end{itemize}
+
+\vspace{0.3cm}
+
+Bullet 2 klingt hier leider noch nicht ausreichend abstrakt. Daher abstrahieren wir die genannten Forderungen in einer einzigen:
+
+\vspace{0.2cm}
+
+\begin{Fazit}[Liquidierungsentscheidung-Oracle]
+
+Das in Definition \ref{defPool} definierte Regelset $\mathcal{R}$ definiert ein Oracle, welches zu jedem Zeitpunkt die Frage beantworten kann, ob der Pool zum jetzigen Zeitpunkt liquidiert werden soll oder nicht. 
+
+Dieses Oracle kann beliebig einfach gestrickt sein (z.B. im Falle des obigen Bullet 1 einfach anhand $"SYSDATE <= T_{END}"$ über das Fortbestehen des Pools entscheidet) oder aber auch beliebig komplex. Dies braucht uns aber an dieser Stelle nicht weiter weiter interessieren. 
+
+\end{Fazit}
+
+\vspace{0.3cm}
+
+Und da die Abstraktion mittels Oracle so bequem scheint, tun wir das Gleiche ebenfalls für das oben genannte \textbf{Wie}:
+
+\vspace{0.2cm}
+
+\begin{Fazit}[Auszahlungsschlüssel-Oracle]
+
+Seien $\mathcal{P} = \left( \mathcal{U}, \mathcal{R}, \mathcal{T}, \mathcal{G} \right)$ 
+der Pool und $\mathcal{U} = \left\{ u_1; u_2;...;u_n \right\}$ die Menge seiner $n$ Teilnehmer wie in Definition \ref{defPool} beschrieben und $v_{\mathcal{T}}$ der sich zum Liquidierungszeitpunkt in der Pool-Treasury $\mathcal{T}$ befindende Value. 
+
+Falls der Pool lediglich als Treuhand-Verwahrung diente (also über die Zeit keine Veränderung der Treasury stattfand) ergibt sich $v_{\mathcal{T}}$ als  
+
+\vspace{0.1cm}
+
+\begin{equation*}
+  v_{\mathcal{T}} = \sum_{i=1}^{n} s_i \text{ mit } s_i \text{ wie in Definition \ref{defPool}}
+\end{equation*}
+
+\vspace{0.2cm}
+
+Wir definieren einen Auszahlungsvektor als
+
+\begin{equation*}
+  \varphi_{\mathcal{P}} = [\varphi_1, \varphi_1, ..., \varphi_n] \text{ mit } \sum_{i=1}^{n} \varphi_i = v_{\mathcal{T}} 
+\end{equation*}
+
+\vspace{0.2cm}
+
+\todo{Ein mögliches $\varphi_{\mathcal{P}}$ ist tatsächlich $\mathcal{G}$}
+
+\vspace{0.2cm}
+
+\todo{$\mathcal{R}$ definiert das Oracle und sagt, ob die $\varphi_i$ negativ sein dürfen}
+
+\vspace{0.2cm}
+
+\todo{Oracle verteilt anhand von $\mathcal{T}$ und $\mathcal{G}$}
+
+\end{Fazit}
+
+\vspace{0.3cm}
+
+\todo{TODO}
+
+\vspace{0.5cm}

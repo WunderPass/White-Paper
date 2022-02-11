@@ -1,0 +1,104 @@
+% !TEX root = paper.tex
+
+Die Erzeugung des Pools findet in zwei Phasen statt: Der \textit{Initialisierungs-Phase} und der \textit{Teilnahme-Phase}
+
+\vspace{0.2cm}
+
+\underline{\textbf{Initialisierungs-Phase}}
+
+\vspace{0.2cm}
+
+Die Initialisierungs-Phase läuft in etwa in folgenden Schritten ab:
+
+\begin{itemize}
+	\item Ein Initiator (Admin) $u_A \in U$ erzeugt den Pool in einer dafür vorgesehenen \textit{Pool-Applikation} (vergleichbar mit der Erstellung einer WhatsApp-Gruppe). Der Initiator $u_A$ ist dabei selbst ein Teilnehmer des Pools. Unsere klare Absicht hierbei ist jedoch keine "gesonderten" Pool-Teilnehmer zu haben bzw. mit besonderen Rechten auszustatten. Die Unterscheidung zwischen dem Admin $u_A$ und anderen Pool-Teilnehmern $u \in U$ ist idealerweise - sofern es denn der spezielle Case zulässt - nur für die Initialisierungs-Phase von Nöten und kann anschließend entfallen.
+	\item Der Admin definiert das Regelwerk für den zu erstellenden Pool:
+	\begin{itemize}
+		\item Art des Pools (Invest-Pool, Wette, Spende, Kicktipp, Splitwise etc.)
+		\item privater oder öffentlich zugänglicher Pool
+		\item etwaige Obergrenze an Teilnehmern
+		\item Einsatz (minimaler, maximaler oder exakter Einsatz pro Teilnehmer und Währung des Einsatzes)
+		\item Auszahlungslogik (per Abstimmung oder Adresse eines Oracle-Smart-Contracts, der abhängig seiner Contract-Logik einen Auszahlungsschlüssel bereitstellt)
+	\end{itemize}
+\end{itemize}
+
+\vspace{0.3cm}
+
+\underline{\textbf{Teilnahme-Phase}}
+
+\vspace{0.2cm}
+
+Die Teilnahme-Phase besteht grob aus folgenden Schritten:
+
+\begin{itemize}
+	\item Der Admin verliert seine Sonderstellung und wird stattdessen zum ersten Teilnehmer seines eigens initiierten Pools. 
+	\item Der (ursprüngliche) Admin lädt Teilnehmer ein, sich am Pool zu beteiligen. Die Beteiligung erfordert dabei einen WunderPass (= Wunder-ID) seitens des Teilnehmers. Idealerweise sind die Wunder-IDs mit Telefonnummern verknüpft, sodass sich die einzuladenden User in den Kontakten des Admins erkennbar als potenzielle Teilnehmer wiederfinden.
+	\item Alternativ kann der (ursprüngliche) Admin (oder auch jeder andere bereits beigetreten Teilnehmer) einen Teilnahme-Link an (weitere) potenzielle Teilnehmer verschicken.
+	\item Jeder adressierte User erhält die Einladung mit allen relevanten Informationen zum eingeladenen Pool (insbesondere auch dem zu entwendenden Einsatz) in seiner Wunder-Pool-Applikation, und muss diese lediglich entweder bestätigen oder ablehnen (Pull-Prinzip). Insbesondere braucht der User für den Beitritt zum Pool kein MetaMask oder Sonstiges (Push-Prinzip wie aktuell bei DAOs üblich). 
+	\item Auch der Einsatz des neuen Teilnehmers muss nicht aktiv entrichtet (an eine Wallet) werden, sondern wird stattdessen im Zuge des vorigen Schritts nach Bestätigung der Teilnahme am Pool automatisch eingezogen.
+\end{itemize}
+
+\vspace{0.2cm}
+
+Wir fassen die bisher erzielten Ergebnisse etwas formaler zusammen:
+
+\vspace{0.2cm}
+
+\begin{Def}\label{defPool}
+
+Ein (jungfräulicher) Pool im Sinne der oben Aufgezählten Eigenschaften und Anforderungen lässt sich formal schreiben als
+
+\begin{equation*}
+  Pool := \left( \mathcal{U}, \mathcal{R}, \mathcal{T}, \mathcal{G} \right) \text{ mit}
+\end{equation*}
+
+\begin{align*}
+  & \mathcal{U} = \left\{ u_1; u_2;...;u_n \right\} \subseteq U \text{ die Menge der n Pool-Teilnehmer, } \\
+  & \mathcal{R} \text{ das Regelset des Pools, was es gesondert zu formalisieren gilt, } \\
+  & \mathcal{T} = \left\{ s_1...;s_n \right\} \text{ mit } s_i \in \mathbb{Q} \text{ die Treasury des Pools und} \\
+  & \mathcal{G} = \left\{ g_1...;g_n \right\} \text{ mit } g_i \in \mathbb{N} \text{ die Governance des Pools.}
+\end{align*}
+
+\vspace{0.2cm}
+
+Dabei beschreibt jedes $s_i$ den Einsatz des Teilnehmers $u_i \in \mathcal{U}$ ($s$ für Stake). Dieser Einsatz liegt dabei in einem vom Regelset $\mathcal{R}$ definierten Intervall $\mathcal{I} \subseteq \mathbb{Q}$. Damit haben wir bereits an dieser Stelle einen kleinen Teil der noch fehlenden Formalisierung von $\mathcal{R}$ identifiziert. Bei genauer Betrachtung fehlt uns noch die Einheit der Einsätze $s_i$. Diese wird sehr wahrscheinlich \textit{USDT} sein oder ein anderer Stable-Coin.
+
+Zudem beachte man an dieser Stelle zusätzlich, die Definition von $\mathcal{T}$ werde im Verlaufe der Lifetime eines Pools nicht so simpel bleiben können, als nur aus dem eingebrachten Einsätzen der Teilnehmer zu bestehen. Die Pool-Treasury bedeutet nämlich mehr als nur die Menge der initialen Stakes. Etwaige Invests aus der Treasury heraus würden nämlich ebenfalls in der Treasury landen.
+
+\vspace{0.2cm} 
+
+Die $g_i$ dagegen beschreiben ganz simpel die Anzahl der Governance-Tokens pro User $u_i \in \mathcal{U}$. Man kann diese auch als Gesellschaftsanteile einer GbR betrachten. Das Stammkapital dieser Gesellschaft würde sich in diesem Vergleich auf
+
+\begin{equation*}
+  \kappa := \sum_{i=1}^{n} g_i 
+\end{equation*}
+
+belaufen. Der prozentuale Stimmrecht-Anteil eines Users $u_i \in \mathcal{U}$ ergäbe sich damit als 
+
+\begin{equation*}
+  \rho_i = \frac{g_i}{\kappa}, \text{   } \forall i = 1, 2, ...,n. 
+\end{equation*}
+
+\end{Def}
+
+\vspace{0.3cm}
+
+Die zusammengetragenen Anforderungen für die Initialisierung eines WunderPools lassen sofort deutlich erkennen, \textbf{diese Pools könnten mittels DAO-ähnlicher Strukturen implementiert werden}. Dies erscheint insofern noch logischer, nachdem wir erkannt haben, die Pools stellen gesellschaftsrechtlich GbRs dar - also Gesellschaften und/oder Organisationen. Diese Erkenntnis wollen wir noch einmal als eine formale Annahme formulieren: 
+
+\vspace{0.2cm}
+
+\begin{Assumption}[Ein WunderPool stellt eine GbR dar]
+\label{assumptionGbR} 
+
+Sei $\mathcal{P} := \left( \mathcal{U}, \mathcal{R}, \mathcal{T}, \mathcal{G} \right)$ ein WunderPool wie in Definition \ref{defPool} beschrieben. Wir ziehen die Analogie zu einer \textbf{Gesellschaft} bürgerlichen Rechts:
+
+\begin{itemize}
+	\item Die Menge $\mathcal{U}$ der Pool-Teilnehmer ist der \textbf{Gesellschafterkreis der Gesellschaft}.
+	\item $\mathcal{G}$ bildet den \textbf{Cap-Table der Gesellschaft} ab.
+	\item Das Pool-Regelwerk $\mathcal{R}$ ist der \textbf{Gesellschaftervertrag zur Gesellschaft}.
+	\item Die Pool-Treasury $\mathcal{S}$ ist das \textbf{Gesellschaftskonto und/oder -depot der Gesellschaft}.
+\end{itemize}
+
+\end{Assumption}
+ 
+\vspace{0.5cm}
