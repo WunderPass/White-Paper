@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  11 FEB 2022 15:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  11 FEB 2022 15:54
 entering extended mode
 **./nft.tex
 (nft.tex
@@ -1260,26 +1260,21 @@ ass-NFTs und seinen poten-
 
 [15 <./[06][NFT-Pass]/images/pass 1.png> <./[06][NFT-Pass]/images/pass 2.png> <
 ./[06][NFT-Pass]/images/pass 3.png> <./[06][NFT-Pass]/images/pass 4.png>]
-Overfull \hbox (5.0123pt too wide) in paragraph at lines 50--50
+Overfull \hbox (5.0123pt too wide) in paragraph at lines 57--57
 \OT1/cmr/m/n/10.95 Product/Features 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--52
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 \OT1/cmr/m/n/10.95 (DAO-
  []
 
 
-Overfull \hbox (10.01215pt too wide) in paragraph at lines 18--65
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--65
+Underfull \hbox (badness 10000) in paragraph at lines 25--72
 
  []
 
-) [16] (nft.aux)
+[16]) [17] (nft.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1287,9 +1282,9 @@ Package rerunfilecheck Info: File `nft.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26621 strings out of 478864
- 510194 string characters out of 2848661
- 964973 words of memory out of 3000000
+ 26622 strings out of 478864
+ 510201 string characters out of 2848661
+ 962973 words of memory out of 3000000
  44024 multiletter control sequences out of 15000+600000
  417229 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1312,9 +1307,9 @@ c/amsfonts/cm/cmr8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type
 ts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Slava/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Slava/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on nft.pdf (16 pages, 7652695 bytes).
+Output written on nft.pdf (17 pages, 7653268 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
  119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
