@@ -1,0 +1,180 @@
+\documentclass[11pt]{scrartcl}
+
+
+%---------Konfiguration------
+
+
+%-----Sprache und Zeichen----
+\usepackage[utf8]{inputenc}
+% \usepackage{ucs}
+% \usepackage[T1]{fontenc}
+
+% Zeilenumbrüche der deutschen Sprache
+% \usepackage[ngerman]{babel}
+
+
+%---------Farben-------------
+\usepackage[RGB]{xcolor}
+\definecolor{dunkelgruen}{RGB}{0 136 0}
+\newcommand\todo[1]{\textcolor{red}{#1}}
+
+
+%---------Links/Refs---------
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
+
+%---------Grafiken-----------
+\usepackage{graphicx}
+\usepackage{subfig}
+
+
+
+%---------Sonstiges----------
+\usepackage{parcolumns}
+\usepackage{enumitem}
+
+
+
+%---------Mathe--------------
+\usepackage{amsthm, amssymb, mathtools}
+% \usepackage{amsmath, amssymb, amstext ,lipsum}
+
+
+
+%---------Umgebungen---------
+\usepackage[framemethod=tikz]{mdframed}
+
+%---------Business---------
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{Business-Def}{Definition}
+
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{Hypothese}{Hypothese}
+
+\mdtheorem[
+  linecolor=gray,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=gray,
+]{Praemisse}{Prämisse}
+
+\mdtheorem[
+  linecolor=violet,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=violet,
+]{Quelle}{Quellen}
+
+\mdtheorem[
+  linecolor=violet,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=violet,
+]{Zitat}{Zitat}
+
+\mdtheorem[
+  linecolor=blue,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=blue,
+]{Fazit}{Conclusion}
+
+\mdtheorem[
+  linecolor=red,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=red,
+]{Problem}{Problem}
+
+\mdtheorem[
+  linecolor=cyan,
+  frametitlefont=\sffamily\bfseries\color{black},
+  frametitlebackgroundcolor=cyan,
+]{Solution}{Lösung}
+
+
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{NFT-Prop}{NFT-Property}
+
+
+
+%---------Mathe------------
+\mdtheorem[
+  linecolor=gray,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=gray,
+]{Def}{Definition}
+
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{Theorem}{Theorem}
+
+\mdtheorem[
+  linecolor=blue,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=blue,
+]{Lemma}{Lemma}
+
+\mdtheorem[
+  linecolor=red,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=red,
+]{Assumption}{Annahme}
+
+\mdtheorem[
+  linecolor=violet,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=violet,
+]{Example}{Beispiel}
+
+\mdtheorem[
+  linecolor=cyan,
+  frametitlefont=\sffamily\bfseries\color{black},
+  frametitlebackgroundcolor=cyan,
+]{Algo}{Algorithmus}
+
+
+
+
+
+
+ 
+%---------Dokument-----------
+
+%---------Titel--------------
+\title{WunderEconomics}
+\author{WunderTeam}
+\date{\today{}, Berlin}
+ 
+%---------Inhalt-------------
+\begin{document}
+
+
+\maketitle
+\tableofcontents{}
+
+\newpage
+
+
+
+
+
+\section{Lösungsideen}
+\vspace{0.3cm}
+\input{[Economics][Token-Economics][Ideen]} % binde die Datei '[Economics][Token-Economics][Ideen].tex' ein
+\section{Einbindung der Investing-Pools}
+\vspace{0.3cm}
+\input{[Economics][Token-Economics][Investing-Pools]} % binde die Datei '[Economics][Token-Economics][Investing-Pools].tex' ein
+\section{Bonding-Curves}
+\vspace{0.3cm}
+\input{[Economics][Token-Economics][Bonding Curves]} % binde die Datei '[Economics][Token-Economics][Bonding Curves].tex' ein
+
+
+ 
+\end{document}

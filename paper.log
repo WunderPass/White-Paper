@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  20 FEB 2022 01:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=latex 2022.2.7)  21 FEB 2022 12:08
 entering extended mode
 **./paper.tex
 (paper.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> xparse <2020-03-03>
+LaTeX2e <2021-06-01>
+L3 programming layer <2021-06-01>
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrartcl.cl
 s
 Document Class: scrartcl 2021/03/17 v3.33 KOMA-Script document class (article)
@@ -26,99 +26,21 @@ ok.sty
 Package: scrlfile-hook 2021/03/17 v3.33 KOMA-Script package (using LaTeX hooks)
 
 
-LaTeX3 Info: Defining command \BeforeFile with sig. 'm' on line 61.
-
-
-LaTeX3 Info: Defining command \AfterFile with sig. 'm' on line 65.
-
-
-LaTeX3 Info: Defining command \BeforeClass with sig. 'm' on line 69.
-
-
-LaTeX3 Info: Defining command \BeforePackage with sig. 'm' on line 73.
-
-
-LaTeX3 Info: Defining command \AfterAtEndOfClass with sig. 'smo+m' on line 83.
-
-
-LaTeX3 Info: Defining command \AfterAtEndOfPackage with sig. 'smo+m' on line
-(LaTeX3)     93.
-
-
-LaTeX3 Info: Defining command \scrlfile@AfterClass with sig. 'smo+m' on line
-(LaTeX3)     173.
-
-
-LaTeX3 Info: Defining command \AfterClass with sig. '' on line 174.
-
-
-LaTeX3 Info: Defining command \scrlfile@AfterPackage with sig. 'smo+m' on line
-(LaTeX3)     191.
-
-
-LaTeX3 Info: Defining command \AfterPackage with sig. '' on line 192.
-
-
-LaTeX3 Info: Defining command \ReplaceInput with sig. '' on line 193.
-
-
-LaTeX3 Info: Defining command \ReplaceClass with sig. 'mm' on line 196.
-
-
-LaTeX3 Info: Defining command \ReplacePackage with sig. 'mm' on line 199.
-
-
-LaTeX3 Info: Defining command \UnReplaceInput with sig. '' on line 200.
-
-
-LaTeX3 Info: Defining command \UnReplaceClass with sig. 'm' on line 203.
-
-
-LaTeX3 Info: Defining command \UnReplacePackage with sig. 'mm' on line 206.
-
-
-LaTeX3 Info: Defining command \PreventPackageFromLoading with sig. 's+om' on
-(LaTeX3)     line 234.
-
-
-LaTeX3 Info: Defining command \StorePreventPackageFromLoading with sig. 'm' on
-(LaTeX3)     line 242.
-
-
-LaTeX3 Info: Defining command \ResetPreventPackageFromLoading with sig. '' on
-(LaTeX3)     line 247.
-
-
-LaTeX3 Info: Defining command \UnPreventPackageFromLoading with sig. 'sm' on
-(LaTeX3)     line 261.
-
-
-LaTeX3 Info: Defining command \BeforeClosingMainAux with sig. 'om' on line
-(LaTeX3)     274.
-
-
-LaTeX3 Info: Defining command \AfterReadingMainAux with sig. 'om' on line 287.
-
-
-LaTeX3 Info: Defining command \protected@immediate@write with sig. 'm+m+m' on
-(LaTeX3)     line 298.
-
-
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
 Package: scrlogo 2021/03/17 v3.33 KOMA-Script package (logo)
 ))) (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks16
 )
-Skipping: [2021/05/01] Usage of raw option list on input line 252.
-Applying: [0000/00/00] compatibility for LaTeX before 2021/05/01 on input line 
-337.
+Applying: [2021/05/01] Usage of raw option list on input line 252.
+Already applied: [0000/00/00] compatibility for LaTeX before 2021/05/01 on inpu
+t line 337.
 ))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocbasic.st
 y
 Package: tocbasic 2021/03/17 v3.33 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip47
-\scr@dte@tocline@numbox=\box47
+\scr@dte@tocline@numbox=\box50
 )
 Package tocbasic Info: babel extension for `toc' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 135.
@@ -140,7 +62,7 @@ File: scrsize11pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (11pt
 y
 Package: typearea 2021/03/17 v3.33 KOMA-Script package (type area)
 \ta@bcor=\skip48
-\ta@div=\count179
+\ta@div=\count182
 \ta@hblk=\skip49
 \ta@vblk=\skip50
 \ta@temp=\skip51
@@ -163,12 +85,12 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \baselineskip   = 13.6pt
 (typearea)              on input line 1741.
 )
-\c@part=\count180
-\c@section=\count181
-\c@subsection=\count182
-\c@subsubsection=\count183
-\c@paragraph=\count184
-\c@subparagraph=\count185
+\c@part=\count183
+\c@section=\count184
+\c@subsection=\count185
+\c@subsubsection=\count186
+\c@paragraph=\count187
+\c@subparagraph=\count188
 \scr@dte@section@maxnumwidth=\skip53
 Class scrartcl Info: using compatibility default `runin=bysign'
 (scrartcl)           for `\section on input line 4846.
@@ -199,23 +121,23 @@ Class scrartcl Info: using compatibility default `afterindent=bysign'
 (scrartcl)           for `\subparagraph on input line 4895.
 \abovecaptionskip=\skip59
 \belowcaptionskip=\skip60
-\c@pti@nb@sid@b@x=\box48
+\c@pti@nb@sid@b@x=\box51
 Package tocbasic Info: babel extension for `lof' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 6127.
 
 \scr@dte@figure@maxnumwidth=\skip61
-\c@figure=\count186
+\c@figure=\count189
 Package tocbasic Info: babel extension for `lot' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 6139.
 
 \scr@dte@table@maxnumwidth=\skip62
-\c@table=\count187
+\c@table=\count190
 Class scrartcl Info: Redefining `\numberline' on input line 6303.
 \bibindent=\dimen138
 ) (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -223,13 +145,11 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+Package xcolor Info: Driver file: dvips.def on input line 225.
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -237,10 +157,8 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2021-02-10 v7.00j Hypertext links for LaTeX
-
+) (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2021-06-05 v7.00l Hypertext links for LaTeX
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
@@ -258,7 +176,7 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
 ty
@@ -285,16 +203,16 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen139
-\Hy@linkcounter=\count188
-\Hy@pagecounter=\count189
+\Hy@linkcounter=\count191
+\Hy@pagecounter=\count192
  (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2021-02-10 v7.00j Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2021-06-05 v7.00l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-langp
 atches.def
-File: hyperref-langpatches.def 2021-02-10 v7.00j Hyperref: patches for babel la
+File: hyperref-langpatches.def 2021-06-05 v7.00l Hyperref: patches for babel la
 nguages
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
@@ -303,9 +221,9 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count190
+\Hy@SavedSpaceFactor=\count193
  (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2021-02-10 v7.00j Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2021-06-05 v7.00l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -317,7 +235,7 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count191
+\c@Hy@tempcnt=\count194
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
@@ -334,44 +252,50 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count192
+\Fld@menulength=\count195
 \Field@Width=\dimen141
 \Fld@charsize=\dimen142
-Package hyperref Info: Hyper figures OFF on input line 6075.
-Package hyperref Info: Link nesting OFF on input line 6080.
-Package hyperref Info: Hyper index ON on input line 6083.
-Package hyperref Info: backreferencing OFF on input line 6090.
-Package hyperref Info: Link coloring ON on input line 6093.
-Package hyperref Info: Link coloring with OCG OFF on input line 6100.
-Package hyperref Info: PDF/A mode OFF on input line 6105.
-LaTeX Info: Redefining \ref on input line 6145.
-LaTeX Info: Redefining \pageref on input line 6149.
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring ON on input line 6094.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
-with kernel methods
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
 )
-\Hy@abspage=\count193
-\c@Item=\count194
-\c@Hfootnote=\count195
+\Hy@abspage=\count196
+\c@Item=\count197
+\c@Hfootnote=\count198
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2021-02-10 v7.00j Hyperref driver for pdfTeX
+Package hyperref Info: Driver (default): hdvips.
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hdvips.def
+File: hdvips.def 2021-06-05 v7.00l Hyperref driver for dvips
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pdfmark.def
+File: pdfmark.def 2021-06-05 v7.00l Hyperref definitions for pdfmark specials
+\pdf@docset=\toks19
+\pdf@box=\box52
+\pdf@toks=\toks20
+\pdf@defaulttoks=\toks21
+\HyField@AnnotCount=\count199
+\Fld@listcount=\count266
+\c@bookmark@seq@number=\count267
+
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count196
-\c@bookmark@seq@number=\count197
-
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
-echeck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
 ounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
@@ -380,12 +304,12 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip63
-)
+))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -394,7 +318,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: dvips.def on input line 107.
 )
 \Gin@req@height=\dimen143
 \Gin@req@width=\dimen144
@@ -419,21 +343,21 @@ o
 File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the 
 KOMA-Script document classes (AR)
 ))
-\c@caption@flags=\count198
-\c@continuedfloat=\count199
+\c@caption@flags=\count268
+\c@continuedfloat=\count269
 Package caption Info: hyperref package is loaded.
 )
-\c@KVtest=\count266
+\c@KVtest=\count270
 \sf@farskip=\skip64
 \sf@captopadj=\dimen152
 \sf@capskip=\skip65
 \sf@nearskip=\skip66
-\c@subfigure=\count267
-\c@subfigure@save=\count268
-\c@lofdepth=\count269
-\c@subtable=\count270
-\c@subtable@save=\count271
-\c@lotdepth=\count272
+\c@subfigure=\count271
+\c@subfigure@save=\count272
+\c@lofdepth=\count273
+\c@subtable=\count274
+\c@subtable@save=\count275
+\c@lotdepth=\count276
 \sf@top=\skip67
 \sf@bottom=\skip68
 )
@@ -443,52 +367,55 @@ Package: parcolumns 2004/11/25 v1.2 Typeset multiple parallel columns
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/sauerj\processkv.sty
 Package: processkv 2004/08/09 v1.0.1 process key=value lists
 )
-\pc@columnctr=\count273
-\pc@columncount=\count274
-\pc@everypar=\toks18
+\pc@columnctr=\count277
+\pc@columncount=\count278
+\pc@everypar=\toks22
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip69
 \enit@outerparindent=\dimen153
-\enit@toks=\toks19
-\enit@inbox=\box49
-\enit@count@id=\count275
-\enitdp@description=\count276
+\enit@toks=\toks23
+\enit@inbox=\box53
+\enit@count@id=\count279
+\enitdp@description=\count280
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks20
-\thm@bodyfont=\toks21
-\thm@headfont=\toks22
-\thm@notefont=\toks23
-\thm@headpunct=\toks24
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
 \thm@preskip=\skip70
 \thm@postskip=\skip71
 \thm@headsep=\skip72
-\dth@everypar=\toks25
+\dth@everypar=\toks29
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2021-02-18 L3 programming layer (loader) 
+Package: expl3 2021-06-01 L3 programming layer (loader) 
 
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count277
-\l__pdf_internal_box=\box50
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-dvi
+ps.def
+File: l3backend-dvips.def 2021-05-07 L3 backend support: dvips
+\l__pdf_internal_box=\box54
+\g__pdf_backend_object_int=\count281
+\l__pdf_backend_content_box=\box55
+\l__pdf_backend_model_box=\box56
+\g__pdf_backend_annotation_int=\count282
+\g__pdf_backend_link_int=\count283
+\g__pdf_backend_link_sf_int=\count284
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
 e.sty
-Package: xparse 2020-10-27 L3 Experimental document command parser
-
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
-e-generic.tex))
+Package: xparse 2021-06-01 L3 Experimental document command parser
+)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count278
+\etb@tempcnta=\count285
 ))
 Class scrartcl Info: amsthm's \deferred@thm@head patched.
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
@@ -496,7 +423,7 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks26
+\@emptytoks=\toks30
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
@@ -505,24 +432,24 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2021/04/12 v1.27 mathematical typesetting tools
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\calc.sty
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count279
-\calc@Bcount=\count280
+\calc@Acount=\count286
+\calc@Bcount=\count287
 \calc@Adimen=\dimen154
 \calc@Bdimen=\dimen155
 \calc@Askip=\skip73
 \calc@Bskip=\skip74
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count281
+\calc@Ccount=\count288
 \calc@Cskip=\skip75
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2020/09/23 v2.17i AMS math features
+Package: amsmath 2021/04/20 v2.17j AMS math features
 \@mathmargin=\skip76
 
 For additional information on amsmath, use the `?' option.
@@ -531,7 +458,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks27
+\@emptytoks=\toks31
 \ex@=\dimen156
 ))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
@@ -541,41 +468,41 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count282
+\inf@bad=\count289
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count283
-\leftroot@=\count284
+\uproot@=\count290
+\leftroot@=\count291
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count285
-\DOTSCASE@=\count286
+\classnum@=\count292
+\DOTSCASE@=\count293
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box51
-\strutbox@=\box52
+\Mathstrutbox@=\box57
+\strutbox@=\box58
 \big@size=\dimen158
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count287
-\c@MaxMatrixCols=\count288
+\macc@depth=\count294
+\c@MaxMatrixCols=\count295
 \dotsspace@=\muskip17
-\c@parentequation=\count289
-\dspbrk@lvl=\count290
-\tag@help=\toks28
-\row@=\count291
-\column@=\count292
-\maxfields@=\count293
-\andhelp@=\toks29
+\c@parentequation=\count296
+\dspbrk@lvl=\count297
+\tag@help=\toks32
+\row@=\count298
+\column@=\count299
+\maxfields@=\count300
+\andhelp@=\toks33
 \eqnshift@=\dimen159
 \alignsep@=\dimen160
 \tagshift@=\dimen161
 \tagwidth@=\dimen162
 \totwidth@=\dimen163
 \lineht@=\dimen164
-\@envbody=\toks30
+\@envbody=\toks34
 \multlinegap=\skip77
 \multlinetaggap=\skip78
-\mathdisplay@stack=\toks31
+\mathdisplay@stack=\toks35
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
@@ -583,7 +510,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count294
+\g_MT_multlinerow_int=\count301
 \l_MT_multwidth_dim=\dimen165
 \origjot=\skip79
 \l_MT_shortvdotswithinadjustabove_dim=\dimen166
@@ -592,7 +519,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_intertext_sep=\dimen169
 \l_MT_above_shortintertext_sep=\dimen170
 \l_MT_below_shortintertext_sep=\dimen171
-\xmathstrut@box=\box53
+\xmathstrut@box=\box59
 \xmathstrut@dim=\dimen172
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.sty
@@ -607,14 +534,14 @@ Package zref Info: New property list: main on input line 764.
 Package zref Info: New property: default on input line 765.
 Package zref Info: New property: page on input line 766.
 )
-\c@abspage=\count295
+\c@abspage=\count302
 Package zref Info: New property: abspage on input line 66.
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip80
-\c@mdf@globalstyle@cnt=\count296
+\c@mdf@globalstyle@cnt=\count303
 \mdf@skipabove@length=\skip81
 \mdf@skipbelow@length=\skip82
 \mdf@leftmargin@length=\skip83
@@ -662,7 +589,7 @@ sty
 y
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
-\pgfutil@everybye=\toks32
+\pgfutil@everybye=\toks36
 \pgfutil@tempdima=\dimen173
 \pgfutil@tempdimb=\dimen174
 
@@ -670,14 +597,14 @@ y
 -common-lists.tex))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
-\pgfutil@abb=\box54
+\pgfutil@abb=\box60
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
-Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
-Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
 sty
@@ -685,16 +612,16 @@ sty
 sty
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s.code.tex
-Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
-\pgfkeys@pathtoks=\toks33
-\pgfkeys@temptoks=\toks34
+\pgfkeys@pathtoks=\toks37
+\pgfkeys@temptoks=\toks38
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 filtered.code.tex
-\pgfkeys@tmptoks=\toks35
+\pgfkeys@tmptoks=\toks39
 ))
 \pgf@x=\dimen175
 \pgf@y=\dimen176
@@ -708,42 +635,43 @@ filtered.code.tex
 \pgf@yd=\dimen184
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count297
-\c@pgf@countb=\count298
-\c@pgf@countc=\count299
-\c@pgf@countd=\count300
-\t@pgf@toka=\toks36
-\t@pgf@tokb=\toks37
-\t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count301
+\c@pgf@counta=\count304
+\c@pgf@countb=\count305
+\c@pgf@countc=\count306
+\c@pgf@countd=\count307
+\t@pgf@toka=\toks40
+\t@pgf@tokb=\toks41
+\t@pgf@tokc=\toks42
+\pgf@sys@id@count=\count308
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
-File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-dvips.def
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-pdftex.def
-File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+s-dvips.def
+File: pgfsys-dvips.def 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-common-pdf.def
-File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+s-common-postscript.def
+File: pgfsys-common-postscript.def 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@objectcount=\count309
 )))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count302
-\pgfsyssoftpath@bigbuffer@items=\count303
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count310
+\pgfsyssoftpath@bigbuffer@items=\count311
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
-File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 e.code.tex
-Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex
@@ -754,11 +682,11 @@ code.tex)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
 \pgfmath@dimen=\dimen185
-\pgfmath@count=\count304
-\pgfmath@box=\box55
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
+\pgfmath@count=\count312
+\pgfmath@box=\box61
+\pgfmath@toks=\toks43
+\pgfmath@stack@operand=\toks44
+\pgfmath@stack@operation=\toks45
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.code.tex
@@ -780,13 +708,13 @@ ions.misc.code.tex)
 ions.integerarithmetics.code.tex)))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count305
+\c@pgfmathroundto@lastzeros=\count313
 ))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
-File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@picminx=\dimen186
 \pgf@picmaxx=\dimen187
 \pgf@picminy=\dimen188
@@ -804,103 +732,103 @@ File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@path@lastx=\dimen256
 \pgf@path@lasty=\dimen257
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
-File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@shorten@end@additional=\dimen258
 \pgf@shorten@start@additional=\dimen259
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
-File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfpic=\box56
-\pgf@hbox=\box57
-\pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count306
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count314
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgflinewidth=\dimen260
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
-File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@pt@x=\dimen261
 \pgf@pt@y=\dimen262
 \pgf@pt@temp=\dimen263
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
-File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eobjects.code.tex
-File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
-File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfarrowsep=\dimen264
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
-File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen265
-\pgf@sys@shading@range@num=\count307
-\pgf@shadingcount=\count308
+\pgf@sys@shading@range@num=\count315
+\pgf@shadingcount=\count316
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
-File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
-File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfexternal@startupbox=\box59
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box65
 ))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
-File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransparency.code.tex
-File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epatterns.code.tex
-File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 erdf.code.tex
-File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
-File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfnodeparttextbox=\box60
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box66
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
-File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
-Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@nodesepstart=\dimen266
 \pgf@nodesepend=\dimen267
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
-Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
 y
@@ -913,23 +841,23 @@ ty
 .tex))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
 code.tex
-Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex)
 \pgffor@iter=\dimen268
 \pgffor@skip=\dimen269
-\pgffor@stack=\toks42
-\pgffor@toks=\toks43
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
 ))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z\tikz.code.tex
-Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count309
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count317
 \pgfplotmarksize=\dimen270
 )
 \tikz@lastx=\dimen271
@@ -940,36 +868,36 @@ File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \tikz@lastmovetoy=\dimen276
 \tikzleveldistance=\dimen277
 \tikzsiblingdistance=\dimen278
-\tikz@figbox=\box61
-\tikz@figbox@bg=\box62
-\tikz@tempbox=\box63
-\tikz@tempbox@bg=\box64
-\tikztreelevel=\count310
-\tikznumberofchildren=\count311
-\tikznumberofcurrentchild=\count312
-\tikz@fig@count=\count313
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count318
+\tikznumberofchildren=\count319
+\tikznumberofcurrentchild=\count320
+\tikz@fig@count=\count321
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
-File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count314
-\pgfmatrixcurrentcolumn=\count315
-\pgf@matrix@numberofcolumns=\count316
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count322
+\pgfmatrixcurrentcolumn=\count323
+\pgf@matrix@numberofcolumns=\count324
 )
-\tikz@expandcount=\count317
+\tikz@expandcount=\count325
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-frame-1.mdf
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 )
-\mdf@frametitlebox=\box65
-\mdf@footnotebox=\box66
-\mdf@splitbox@one=\box67
-\mdf@splitbox@two=\box68
-\mdf@splitbox@save=\box69
+\mdf@frametitlebox=\box71
+\mdf@footnotebox=\box72
+\mdf@splitbox@one=\box73
+\mdf@splitbox@two=\box74
+\mdf@splitbox@save=\box75
 \mdfsplitboxwidth=\skip120
 \mdfsplitboxtotalwidth=\skip121
 \mdfsplitboxheight=\skip122
@@ -997,33 +925,33 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \mdf@horizontalspaceofbox=\skip144
 \mdfsubtitleheight=\skip145
 \mdfsubsubtitleheight=\skip146
-\c@mdfcountframes=\count318
+\c@mdfcountframes=\count326
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count319
-\c@mdf@env@i=\count320
-\c@mdf@env@ii=\count321
-\c@mdf@zref@counter=\count322
+\mdf@envdepth=\count327
+\c@mdf@env@i=\count328
+\c@mdf@env@ii=\count329
+\c@mdf@zref@counter=\count330
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-\c@Business-Def=\count323
-\c@Hypothese=\count324
-\c@Praemisse=\count325
-\c@Quelle=\count326
-\c@Zitat=\count327
-\c@Fazit=\count328
-\c@Problem=\count329
-\c@Solution=\count330
-\c@NFT-Prop=\count331
-\c@Def=\count332
-\c@Theorem=\count333
-\c@Lemma=\count334
-\c@Assumption=\count335
-\c@Example=\count336
-\c@Algo=\count337
+\c@Business-Def=\count331
+\c@Hypothese=\count332
+\c@Praemisse=\count333
+\c@Quelle=\count334
+\c@Zitat=\count335
+\c@Fazit=\count336
+\c@Problem=\count337
+\c@Solution=\count338
+\c@NFT-Prop=\count339
+\c@Def=\count340
+\c@Theorem=\count341
+\c@Lemma=\count342
+\c@Assumption=\count343
+\c@Example=\count344
+\c@Algo=\count345
  (paper.aux
 
 LaTeX Warning: Label `sec:eco_zahlen_zustand_wp_advanced_teilnehmer' multiply d
@@ -1053,31 +981,8 @@ LaTeX Font Info:    ... okay on input line 193.
 Package scrbase Info: activating english \contentsname on input line 193.
 Package scrbase Info: activating english \listfigurename on input line 193.
 Package scrbase Info: activating english \listtablename on input line 193.
-
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
-\scratchdimen=\dimen279
-\scratchbox=\box70
-\nofMPsegments=\count339
-\nofMParguments=\count340
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count341
-\MPscratchDim=\dimen280
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
-\everyMPtoPDFconversion=\toks45
-)
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-)
 Package hyperref Info: Link coloring ON on input line 193.
-
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+ (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -1087,7 +992,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count344
+\c@section@level=\count346
 )
 LaTeX Info: Redefining \ref on input line 193.
 LaTeX Info: Redefining \pageref on input line 193.
@@ -1096,21 +1001,24 @@ LaTeX Info: Redefining \nameref on input line 193.
 \@outlinefile=\write4
 \openout4 = `paper.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
 (scrartcl)           because of handling of possible bookmark level gaps.
 (scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
-(scrartcl)             \usepackage{bookmark}
+(scrartcl)             \usepackage[dvips]{bookmark}
 (scrartcl)           before \begin{document} on input line 193.
-
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
-(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
-File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count345
+(C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-dvips.def
+File: bkm-dvips.def 2020-11-06 v1.29 bookmark driver for dvips (HO)
+\BKM@id=\count347
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -1129,21 +1037,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (paper.toc [1
 
 
-{C:/Users/Slava/AppData/Local/MiKTeX/pdftex/config/pdftex.map}])
+])
 \tf@toc=\write5
 \openout5 = `paper.toc'.
 
-
-([01][Abstract]/[Abstract].tex) ([02][Einleitung]/[Einleitung].tex
-([02][Einleitung]/[Einleitung][Identität].tex
+ ([01][Abstract]/[Abstract].tex)
+([02][Einleitung]/[Einleitung].tex
+([02][Einleitung]/[Einleitung][Identität].tex [2]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 10.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 14.
- [2]
-Package mdframed Info: Not enough space on this page on input line 14.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 23.
@@ -1176,28 +1082,38 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 38.
+[4]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 49.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 56.
-[4]
-Package mdframed Info: Not enough space on this page on input line 56.
  [5]) ([02][Einleitung]/[Einleitung][Probleme].tex
 Overfull \hbox (10.985pt too wide) in paragraph at lines 10--11
 \OT1/cmr/m/n/10.95 Spez-i-fika-tion der dig-i-talen Iden-titat erst viel spat
 er reifte, als ihre prak-tis-che Notwendigkeit.
  []
 
+
+Overfull \hbox (408.12564pt too wide) in paragraph at lines 21--22
+\OT1/cmr/m/n/10.95 in-ter-essiert. [Der let-zte Ab-satz fol-gte vie-len For-mul
+ierun-gen der [][][][][][]]. 
+ []
+
 [6]
+Overfull \hbox (348.42781pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/n/10.95 [Der let-zte Ab-satz fol-gte vie-len For-mulierun-gen der []
+[][][][][]]. 
+ []
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 35.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 51.
- [7]
+[7]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 56.
@@ -1268,7 +1184,12 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 151.
-)) ([03][Vision]/[Vision].tex [10]
+)) ([03][Vision]/[Vision].tex
+Overfull \hbox (185.16171pt too wide) in paragraph at lines 21--22
+\OT1/cmr/bx/it/10.95 lems. \OT1/cmr/m/n/10.95 [[][][][][][]] 
+ []
+
+[10]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 29.
@@ -1293,6 +1214,7 @@ rung\OT1/cmr/m/n/10.95 ) mit-tels kryp-tografis-cher Sig-natur
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 79.
+Package mdframed Info: Not enough space on this page on input line 79.
 [11]
 Package mdframed Info: Not enough space on this page on input line 79.
 Package mdframed Info: mdframed detected package amsthm 
@@ -1548,6 +1470,11 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
 
+Overfull \hbox (7.39575pt too wide) in paragraph at lines 48--50
+[]\OT1/cmr/m/n/10.95 Man beachte, dass es sich bei der definierten Ord-nungsre-
+la-tion gar um eine [][][][][][]
+ []
+
 [27]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1636,10 +1563,10 @@ Package mdframed Info: mdframed detected package amsthm
  [33]
 Package mdframed Info: Not enough space on this page on input line 360.
  [34] [35]
-\pc@column@1=\box71
-\pc@column@width@1=\dimen281
-\pc@column@2=\box72
-\pc@column@width@2=\dimen282
+\pc@column@1=\box76
+\pc@column@width@1=\dimen279
+\pc@column@2=\box77
+\pc@column@width@2=\dimen280
 Package parcolumns Info: Width of column 1 calculated as 198.17775pt on input l
 ine 428.
 Package parcolumns Info: Width of column 2 calculated as 198.17775pt on input l
@@ -1732,7 +1659,7 @@ Package mdframed Info: mdframed detected package amsthm
 
 Overfull \hbox (3.1983pt too wide) in paragraph at lines 24--26
 []\OT1/cmr/m/n/10.95 Die gelun-gene For-mal-isierung un-serer Vi-sion mit-tels 
-Def-i-ni-tion [][]11[][] mag einen Fortschritt
+Def-i-ni-tion [][][][][][] mag einen Fortschritt
  []
 
 Package mdframed Info: mdframed detected package amsthm 
@@ -1769,6 +1696,12 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 714.
 
+Overfull \hbox (7.39575pt too wide) in paragraph at lines 757--759
+[]\OT1/cmr/m/n/10.95 Man beachte, dass es sich bei der definierten Ord-nungsre-
+la-tion gar um eine [][][][][][]
+ []
+
+
 Overfull \hbox (7.06117pt too wide) in paragraph at lines 796--797
 []\OT1/cmr/m/n/10.95 Diese Netzwerk-Bewertungs-Modell be-sitzt je-doch im ak-tu
 ellen Zu-s-tand drei wesentliche
@@ -1790,149 +1723,145 @@ m/n/10.95 = 1[]\OML/cmm/m/it/10.95 u[]; u[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it
 ) ([05][Economics]/[Economics][Token-Economics].tex [44]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 10.
+(mdframed)              on input line 11.
 
-Overfull \hbox (12.70349pt too wide) in paragraph at lines 30--31
+Overfull \hbox (12.70349pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/n/10.95 mu-nis-tis-cher Akt. Nur diese Beschaf-fen-heit des To-kens 
 liefert uns ein Monetarisierungs-
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 52.
+(mdframed)              on input line 53.
 [45]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 57.
+(mdframed)              on input line 58.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 75.
+(mdframed)              on input line 76.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 80.
+(mdframed)              on input line 81.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 92.
- [46]
+(mdframed)              on input line 93.
+ [46] [47] ([Economics][Token-Economics][Ideen].tex)
+([Economics][Token-Economics][Investing-Pools].tex [48]
+Overfull \hbox (30.77608pt too wide) in paragraph at lines 30--32
+\OT1/cmr/m/n/10.95 istierende Pools geschahe. Damit ware die Er-stel-lung neu
+er Pools mit ihrer zahlenmaigen
+ []
+
+[49]
+Overfull \hbox (11.89738pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10.95 hende User durch eine zu hohe fi-nanzielle Sicher-heit-sein-
+lage davon abzuschrecken
+ []
+
+
+Overfull \hbox (5.70264pt too wide) in paragraph at lines 38--39
+[]\OT1/cmr/m/n/10.95 pro Zeit-ein-heit (Vo-rauszahlung fur einen gewis-sen Zei
+traum als pre-paid; danach
+ []
+
+
+Overfull \hbox (14.4221pt too wide) in paragraph at lines 44--45
+[]\OT1/cmr/m/n/10.95 gekoppelt an Beteili-gung am Staken (prozen-tual auf die v
+origen Punkte anzurech-
+ []
+
+
+Overfull \hbox (4.17159pt too wide) in paragraph at lines 47--48
+[]\OT1/cmr/m/n/10.95 Die Teil-nehmer konnen bei dieser Logik aber nicht wie ni
+cht wie die Staker zusatzlich
+ []
+
+[50]
+Overfull \hbox (17.91492pt too wide) in paragraph at lines 57--58
+[]$\OT1/cmr/m/n/10.95 [$Pool-Creator er-bringt den Stake; alle an-deren Teil-ne
+hmer bezahlen die Gebuhren$]$ 
+ []
+
+) ([Economics][Token-Economics][Bonding Curves].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 96.
+(mdframed)              on input line 7.
 
-Overfull \hbox (14.71997pt too wide) in paragraph at lines 104--106
-[]\OT1/cmr/m/n/10.95 Der User und der Service-Provider A erzie-len - wie auch i
-m-mer - eine []Ubereinkunft
- []
-
-
-Overfull \hbox (2.25037pt too wide) in paragraph at lines 104--106
-\OT1/cmr/m/n/10.95 the-o-retisch mit-tels des WunderPass-Lookups mit Drit-ten g
-eteilt wer-den konnen
- []
-
-
-Overfull \hbox (10.18906pt too wide) in paragraph at lines 106--107
-[]\OT1/cmr/m/n/10.95 Beispiel 1: Die Da-seins-berech-ti-gung des Identity-Data-
-Management-Service
- []
-
-
-Overfull \hbox (0.33405pt too wide) in paragraph at lines 107--108
-\OT1/cmr/m/n/10.95 gerichtet gezielte Wer-beange-bote im zugehorigen Aus-land 
-zu ermoglichen. 
- []
-
-
-Overfull \hbox (11.7765pt too wide) in paragraph at lines 118--119
-\OT1/cmr/m/n/10.95 einen \OT1/cmr/m/it/10.95 Berechtigungs-Token \OT1/cmr/m/n/1
-0.95 fur den Abruf von entsprechen-den Daten von Provider
- []
-
-
-Overfull \hbox (8.5453pt too wide) in paragraph at lines 120--122
-[]\OT1/cmr/m/n/10.95 Service-Provider B fragt unter Vor-lage des Berechtigungs-
-Token die gewunschten
- []
-
-
-Overfull \hbox (14.62874pt too wide) in paragraph at lines 122--123
-[]\OT1/cmr/m/n/10.95 Provider A muss den Berechtigungs-Token va-li-dieren (beim
- Lookup-Service). 
- []
-
-
-Overfull \hbox (1.15424pt too wide) in paragraph at lines 127--128
-[]\OT1/cmr/m/n/10.95 Mit dem Bestatigungszertifikat kann Provider A seine Verg
-utung beim Lookup-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 149.
-[47] [48] [49] [50] ([Economics][Token-Economics][Ideen].tex [51]
-Overfull \hbox (1.83559pt too wide) in paragraph at lines 41--42
-\OT1/cmr/m/n/10.95 sei gle-ichzeitig auch ein groer Sup-porter des gesamten Pr
-o-jekt und glaube
- []
-
-[52]
-Overfull \hbox (3.97998pt too wide) in paragraph at lines 50--51
-[]\OT1/cmr/m/n/10.95 abhangig vom Pool-Creator (Community-/Staking-Status als 
-Invest-Guru;
- []
-
-
-Overfull \hbox (17.28726pt too wide) in paragraph at lines 54--55
-[]\OT1/cmr/m/n/10.95 abhangig vom NFT-Pass-Status (prozen-tual auf die vorigen
- Punkte anzurech-
- []
-
-
-Overfull \hbox (2.71768pt too wide) in paragraph at lines 60--61
-[]\OT1/cmr/m/n/10.95 Absolute Mindest- und Ober-gren-zen des Projekt-Pool-Antei
-ls (min-destens
- []
-
-
-Overfull \hbox (4.11685pt too wide) in paragraph at lines 61--62
-[]\OT1/cmr/m/n/10.95 progressive Verteilung abhangig des er-brachten Staking-B
-etrags (so konnte
- []
-
-[53]
-Overfull \hbox (16.44144pt too wide) in paragraph at lines 76--77
-[]$[]$ 
- []
-
-
-Overfull \hbox (1.1908pt too wide) in paragraph at lines 80--81
-[]\OT1/cmr/m/n/10.95 Zunachst ein-mal eine For-mal-isierung einer Token-Distri
-bution mit-tels Bonding-Curves: 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 84.
-
-Overfull \hbox (8.78992pt too wide) in paragraph at lines 95--96
+Overfull \hbox (8.78992pt too wide) in paragraph at lines 18--19
 \OT1/cmr/m/n/10.95 Contract-Logik fol-gen-den - Ruckkaufpreis an den Token-Con
 tract zuruckgegeben
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 127.
-[54]
+(mdframed)              on input line 50.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 127.
- [55] [56]
+(mdframed)              on input line 50.
+[51] [52] [53]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 157.
+(mdframed)              on input line 80.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 175.
- [57])) ([05][Economics]/[Economics][Fazit].tex))
+(mdframed)              on input line 100.
+ [54]) [55]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 114.
+
+Overfull \hbox (14.71997pt too wide) in paragraph at lines 122--124
+[]\OT1/cmr/m/n/10.95 Der User und der Service-Provider A erzie-len - wie auch i
+m-mer - eine []Ubereinkunft
+ []
+
+
+Overfull \hbox (2.25037pt too wide) in paragraph at lines 122--124
+\OT1/cmr/m/n/10.95 the-o-retisch mit-tels des WunderPass-Lookups mit Drit-ten g
+eteilt wer-den konnen
+ []
+
+
+Overfull \hbox (10.18906pt too wide) in paragraph at lines 124--125
+[]\OT1/cmr/m/n/10.95 Beispiel 1: Die Da-seins-berech-ti-gung des Identity-Data-
+Management-Service
+ []
+
+
+Overfull \hbox (0.33405pt too wide) in paragraph at lines 125--126
+\OT1/cmr/m/n/10.95 gerichtet gezielte Wer-beange-bote im zugehorigen Aus-land 
+zu ermoglichen. 
+ []
+
+
+Overfull \hbox (11.7765pt too wide) in paragraph at lines 136--137
+\OT1/cmr/m/n/10.95 einen \OT1/cmr/m/it/10.95 Berechtigungs-Token \OT1/cmr/m/n/1
+0.95 fur den Abruf von entsprechen-den Daten von Provider
+ []
+
+
+Overfull \hbox (8.5453pt too wide) in paragraph at lines 138--140
+[]\OT1/cmr/m/n/10.95 Service-Provider B fragt unter Vor-lage des Berechtigungs-
+Token die gewunschten
+ []
+
+
+Overfull \hbox (14.62874pt too wide) in paragraph at lines 140--141
+[]\OT1/cmr/m/n/10.95 Provider A muss den Berechtigungs-Token va-li-dieren (beim
+ Lookup-Service). 
+ []
+
+
+Overfull \hbox (1.15424pt too wide) in paragraph at lines 145--146
+[]\OT1/cmr/m/n/10.95 Mit dem Bestatigungszertifikat kann Provider A seine Verg
+utung beim Lookup-
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 167.
+[56] [57] [58]) ([05][Economics]/[Economics][Fazit].tex))
 ([06][NFT-Pass]/[NFT-Pass].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1945,13 +1874,13 @@ Package mdframed Info: mdframed detected package amsthm
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 16.
 
-([06][NFT-Pass]/[NFT-Pass][Konzept][Einleitung].tex [58]
+([06][NFT-Pass]/[NFT-Pass][Konzept][Einleitung].tex [59]
 Overfull \hbox (7.73042pt too wide) in paragraph at lines 17--18
 []\OT1/cmr/m/n/10.95 Wir brauchen an an-deren Stellen ein (ebenso wertbes-tim-m
 endes) Zu-fall-sprinzip. 
  []
 
-) ([06][NFT-Pass]/[NFT-Pass][Konzept][Status].tex [59]
+) ([06][NFT-Pass]/[NFT-Pass][Konzept][Status].tex [60]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 7.
@@ -1961,7 +1890,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 59.
- [60])
+ [61])
 ([06][NFT-Pass]/[NFT-Pass][Konzept][Wunder].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1972,7 +1901,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 56.
- [61]
+ [62]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 64.
@@ -1986,13 +1915,13 @@ geben
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 98.
-[62]) ([06][NFT-Pass]/[NFT-Pass][Konzept][Pattern].tex
+[63]) ([06][NFT-Pass]/[NFT-Pass][Konzept][Pattern].tex
 Underfull \hbox (badness 5189) in paragraph at lines 4--5
 \OT1/cmr/m/n/10.95 Diese NFT-Property soll ebenso wie die bei-den vorigen einem
  ab-stufenden
  []
 
-[63]
+[64]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 11.
@@ -2005,7 +1934,7 @@ ground-Muster \OT1/cmr/m/n/10.95 mit den dazugehorenden Eigen-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 64.
-[64]) ([06][NFT-Pass]/[NFT-Pass][Konzept][Edition].tex
+[65]) ([06][NFT-Pass]/[NFT-Pass][Konzept][Edition].tex
 Overfull \hbox (2.7724pt too wide) in paragraph at lines 3--4
 \OT1/cmr/m/n/10.95 Die Edi-tion un-seres Wun-der-Passes soll als Prop-erty auf 
 die an-fangs geforderte Moglichkeit
@@ -2023,7 +1952,7 @@ eordnete \OT1/cmr/m/it/10.95 Kontinent-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 35.
-[65]
+[66]
 Overfull \hbox (4.73717pt too wide) in paragraph at lines 44--45
 []\OT1/cmr/m/n/10.95 Die un-ter-schiedlichen \OT1/cmr/m/it/10.95 Kontinent-Edit
 ion \OT1/cmr/m/n/10.95 be-laufen sich auf 6 (Nord- und Sudamerika,
@@ -2036,64 +1965,135 @@ Overfull \hbox (2.86612pt too wide) in paragraph at lines 51--52
 r/m/n/10.95 aufgenomme-
  []
 
-) [66] ([06][NFT-Pass]/[NFT-Pass][Konzept][Design].tex
-<[06][NFT-Pass]/images/diamand 1.png, id=639, 1003.75pt x 678.535pt>
-File: [06][NFT-Pass]/images/diamand 1.png Graphic file (type png)
-<use [06][NFT-Pass]/images/diamand 1.png>
-Package pdftex.def Info: [06][NFT-Pass]/images/diamand 1.png  used on input lin
-e 9.
-(pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[06][NFT-Pass]/images/diamand 2.png, id=641, 1003.75pt x 678.535pt>
-File: [06][NFT-Pass]/images/diamand 2.png Graphic file (type png)
-<use [06][NFT-Pass]/images/diamand 2.png>
-Package pdftex.def Info: [06][NFT-Pass]/images/diamand 2.png  used on input lin
-e 11.
-(pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[06][NFT-Pass]/images/black.png, id=642, 1003.75pt x 678.535pt>
-File: [06][NFT-Pass]/images/black.png Graphic file (type png)
-<use [06][NFT-Pass]/images/black.png>
-Package pdftex.def Info: [06][NFT-Pass]/images/black.png  used on input line 17
-.
-(pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[06][NFT-Pass]/images/pearl.png, id=643, 1003.75pt x 678.535pt>
-File: [06][NFT-Pass]/images/pearl.png Graphic file (type png)
-<use [06][NFT-Pass]/images/pearl.png>
-Package pdftex.def Info: [06][NFT-Pass]/images/pearl.png  used on input line 19
-.
-(pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[06][NFT-Pass]/images/gold.png, id=644, 1003.75pt x 678.535pt>
-File: [06][NFT-Pass]/images/gold.png Graphic file (type png)
-<use [06][NFT-Pass]/images/gold.png>
-Package pdftex.def Info: [06][NFT-Pass]/images/gold.png  used on input line 25.
+) [67] ([06][NFT-Pass]/[NFT-Pass][Konzept][Design].tex
 
-(pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[06][NFT-Pass]/images/bronze.png, id=645, 1003.75pt x 678.535pt>
-File: [06][NFT-Pass]/images/bronze.png Graphic file (type png)
-<use [06][NFT-Pass]/images/bronze.png>
-Package pdftex.def Info: [06][NFT-Pass]/images/bronze.png  used on input line 2
-7.
-(pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
+! LaTeX Error: File `{"[06][NFT-Pass]/images/diamand 1"}' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...idth]{{"[06][NFT-Pass]/images/diamand 1"}}}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (11.81937pt too wide) in paragraph at lines 9--9
+[][]|| 
+ []
 
-) [67 <./[06][NFT-Pass]/images/diamand 1.png> <./[06][NFT-Pass]/images/diamand 
-2.png> <./[06][NFT-Pass]/images/black.png> <./[06][NFT-Pass]/images/pearl.png>]
-([06][NFT-Pass]/[NFT-Pass][Konzept][Beispiel].tex
+
+! LaTeX Error: File `{"[06][NFT-Pass]/images/diamand 2"}' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...dth]{{"[06][NFT-Pass]/images/diamand 2"}}}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (12.33325pt too wide) in paragraph at lines 11--11
+[][]|| 
+ []
+
+
+! LaTeX Error: File `{"[06][NFT-Pass]/images/black"}' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...newidth]{{"[06][NFT-Pass]/images/black"}}}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (11.81937pt too wide) in paragraph at lines 17--17
+[][]|| 
+ []
+
+
+! LaTeX Error: File `{"[06][NFT-Pass]/images/pearl"}' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...newidth]{{"[06][NFT-Pass]/images/pearl"}}}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (12.33325pt too wide) in paragraph at lines 19--19
+[][]|| 
+ []
+
+
+! LaTeX Error: File `{"[06][NFT-Pass]/images/gold"}' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...inewidth]{{"[06][NFT-Pass]/images/gold"}}}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (11.81937pt too wide) in paragraph at lines 25--25
+[][]|| 
+ []
+
+
+! LaTeX Error: File `{"[06][NFT-Pass]/images/bronze"}' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ...ewidth]{{"[06][NFT-Pass]/images/bronze"}}}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (12.33325pt too wide) in paragraph at lines 27--27
+[][]|| 
+ []
+
+) [68] ([06][NFT-Pass]/[NFT-Pass][Konzept][Beispiel].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 7.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 17.
- [68 <./[06][NFT-Pass]/images/gold.png> <./[06][NFT-Pass]/images/bronze.png>] [
-69]
+ [69]
 Overfull \hbox (2.38402pt too wide) in paragraph at lines 80--81
 []\OT1/cmr/bx/it/10.95 Die Wahrschein-lichkeit fur un-seren NFT-Pass, als Holo
 -gramm die Chichen
  []
 
-
+[70]
 Overfull \hbox (10.60197pt too wide) in paragraph at lines 104--105
 []\OT1/cmr/bx/it/10.95 Als Edi-tion wahlen wir 'Berlin', von dem wir aus-ge-he
 n, es sei noch verfugbar. 
@@ -2105,39 +2105,90 @@ Overfull \hbox (30.72533pt too wide) in paragraph at lines 114--115
 Ergeb-nisse und Wahrscheinlichkeits-
  []
 
-[70]
-<[06][NFT-Pass]/images/pass 1.png, id=683, 1003.75pt x 678.535pt>
-File: [06][NFT-Pass]/images/pass 1.png Graphic file (type png)
-<use [06][NFT-Pass]/images/pass 1.png>
-Package pdftex.def Info: [06][NFT-Pass]/images/pass 1.png  used on input line 1
-21.
-(pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[06][NFT-Pass]/images/pass 2.png, id=684, 1003.75pt x 678.535pt>
-File: [06][NFT-Pass]/images/pass 2.png Graphic file (type png)
-<use [06][NFT-Pass]/images/pass 2.png>
-Package pdftex.def Info: [06][NFT-Pass]/images/pass 2.png  used on input line 1
-23.
-(pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[06][NFT-Pass]/images/pass 3.png, id=685, 1003.75pt x 678.535pt>
-File: [06][NFT-Pass]/images/pass 3.png Graphic file (type png)
-<use [06][NFT-Pass]/images/pass 3.png>
-Package pdftex.def Info: [06][NFT-Pass]/images/pass 3.png  used on input line 1
-29.
-(pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[06][NFT-Pass]/images/pass 4.png, id=686, 1003.75pt x 678.535pt>
-File: [06][NFT-Pass]/images/pass 4.png Graphic file (type png)
-<use [06][NFT-Pass]/images/pass 4.png>
-Package pdftex.def Info: [06][NFT-Pass]/images/pass 4.png  used on input line 1
-31.
-(pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
+[71]
+
+! LaTeX Error: File `{"[06][NFT-Pass]/images/pass 1"}' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 ...width]{{"[06][NFT-Pass]/images/pass 1"}}}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (11.81937pt too wide) in paragraph at lines 121--121
+[][]|| 
+ []
+
+
+! LaTeX Error: File `{"[06][NFT-Pass]/images/pass 2"}' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 ...width]{{"[06][NFT-Pass]/images/pass 2"}}}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (12.33325pt too wide) in paragraph at lines 123--123
+[][]|| 
+ []
+
+
+! LaTeX Error: File `{"[06][NFT-Pass]/images/pass 3"}' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 ...width]{{"[06][NFT-Pass]/images/pass 3"}}}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (11.81937pt too wide) in paragraph at lines 129--129
+[][]|| 
+ []
+
+
+! LaTeX Error: File `{"[06][NFT-Pass]/images/pass 4"}' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 ...width]{{"[06][NFT-Pass]/images/pass 4"}}}
+                                                  %
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (12.33325pt too wide) in paragraph at lines 131--131
+[][]|| 
+ []
+
 ) ([06][NFT-Pass]/[NFT-Pass][Konzept][Intrinsischer Wert].tex
 Overfull \hbox (4.0499pt too wide) in paragraph at lines 3--5
 \OT1/cmr/m/n/10.95 einen Abriss zu denkbaren Ein-satzmoglichkeiten des WunderP
 ass-NFTs und seinen poten-
  []
 
-[71 <./[06][NFT-Pass]/images/pass 1.png> <./[06][NFT-Pass]/images/pass 2.png> <
-./[06][NFT-Pass]/images/pass 3.png> <./[06][NFT-Pass]/images/pass 4.png>]
+
 Overfull \hbox (5.0123pt too wide) in paragraph at lines 57--57
 \OT1/cmr/m/n/10.95 Product/Features 
  []
@@ -2275,6 +2326,11 @@ Package mdframed Info: mdframed detected package amsthm
 ([09][Pools]/[Pools][Economic].tex) ([09][Pools]/[Pools][Vertrag].tex [83]))
 ([10][Community]/[Community].tex) ([11][Zusammenfassung]/[Zusammenfassung].tex)
 ([12][Anhang]/[Anhang].tex
+Overfull \hbox (11.3499pt too wide) in paragraph at lines 8--9
+\OT1/cmr/m/n/10.95 Eine schone Def-i-ni-tion der Iden-titat laut [][][][][][]
+ 
+ []
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 12.
@@ -2287,15 +2343,19 @@ itsbezogenen Teil-Identitaten.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 16.
+
+Overfull \hbox (463.15959pt too wide) in paragraph at lines 20--21
+[]\OT1/cmr/m/n/10.95 Folgende hil-fre-iche Zi-tate, Aus-sagen und For-mulierun-
+gen entstam-men der [][][][][][]. 
+ []
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 24.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 30.
-Package mdframed Info: Not enough space on this page on input line 30.
 [84]
-Package mdframed Info: Not enough space on this page on input line 30.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 35.
@@ -2320,6 +2380,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 66.
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 66.
+
 [85]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2389,9 +2456,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 174.
-Package mdframed Info: Not enough space on this page on input line 174.
 [88]
-Package mdframed Info: Not enough space on this page on input line 174.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 179.
@@ -2410,53 +2475,30 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 206.
-) [89] (paper.aux)
+) [89]
+\BKM@file=\write6
+\openout6 = `paper.out.ps'.
+
+ [90] (paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
+
+LaTeX Warning: Temporary extra page added at the end. Rerun to get it removed.
+
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27141 strings out of 479334
- 519570 string characters out of 2857085
- 994637 words of memory out of 3000000
- 43723 multiletter control sequences out of 15000+200000
- 419467 words of font info for 86 fonts, out of 3000000 for 9000
+ 26942 strings out of 478865
+ 526350 string characters out of 2848687
+ 1025871 words of memory out of 3000000
+ 44243 multiletter control sequences out of 15000+600000
+ 419467 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 111i,13n,116p,10602b,1016s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Slava\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx
-1095.pk> <C:\Users\Slava\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\tcrm1095.pk><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Slava/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Slava/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/Slava
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Us
-ers/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.p
-fb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Slava/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Slava/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Slava/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Slava
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/
-Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmsy6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (89 pages, 8014081 bytes).
-PDF statistics:
- 1107 PDF objects out of 1200 (max. 8388607)
- 270 named destinations out of 1000 (max. 500000)
- 479 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 108i,15n,114p,10602b,1018s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+Output written on paper.dvi (90 pages, 678964 bytes).

@@ -1,0 +1,102 @@
+% !TEX root = paper.tex
+
+Zunächst einmal eine Formalisierung einer Token-Distribution mittels Bonding-Curves:
+
+\vspace{0.2cm}
+
+\begin{Def}[Token-Distribution mittels Bonding-Curves]
+\label{defBC}
+
+Angenommen man möchte einen Projekt-Token \textbf{TKN} herausgeben und dieses im Markt distribuieren. Der Mechanismus der \textit{Bonding-Curves} stellt hierbei ein alternatives Modell zu gängigen Tokensales (z.B. ICO) dar und folgt dabei einigen wesentlich Merkmalen, die ihn teils grundlegend von herkömmlichen Tokensales abgrenzen.
+
+\begin{itemize}
+  \item TKN wird von einem Smart-Contract verwaltet, der wesentlich mehr Logik implementiert als ein herkömmlicher ERC20-Contract.
+  \item TKN kann jederzeit und von jedem gemintet werden. Dies geschieht gegen eine Einlage/Bezahlung in einer dafür definierten Währung (z.B. ETH oder USDT). Der Token wird quasi von dem Verwalter-Contract verkauft.
+  \item Es existiert damit keine initiale bevorzugte Token-Ausgabe beim Contact-Launch an etwaige bevorzugte Parteien (Contract-Owner, Herausgeber, Investoren etc.). Die Ausgabe erfolgt ausschließlich gegen Einlage und kennt keine Bevorzugung entgegen der Contract-Logik. 
+  \item Die Einnahmen aus der Tokenausgabe kommen ausschließlich der Token-Cont\-ract-Treasury $\mathbf{\mathcal{T}}$ zugute anstatt wie bei herkömmlichen Tokensales bestimmten Begünstigten (wie z.B. der Herausgeber-Company oder deren Gründern).
+  \item TKN unterliegt keinem maximalen Gesamt-Supply. Es können stets neue Tokens ausgegeben werden, solange Interessenten existieren, die die Einlage für die Token-Ausgabe erbringen.
+  \item Tokens können jederzeit von ihren Besitzern gegen einen - einer bestimmten Contract-Logik folgenden - Rückkaufpreis an den Token-Contract zurückgegeben werden. Zurückgegebene Tokens werden dabei sofort von dem Verwalter-Contract geburnt und somit aus der Zirkulation genommen.
+  \item TKN kann selbstverständlich auch am Sekundärmarkt gehandelt werden (falls dieser bessere Konditionen hergibt als die Aussage bzw. Rücknahme durch den Token-Contract selbst).
+\end{itemize}
+
+\vspace{0.2cm}
+
+Sei $i \in \mathbb{N}$ der aktuelle Gesamt-Supply von TKR (wir nehmen hier mal an, TKR sei atomar) und \textbf{\$} die Tausch- bzw. Einlage-Währung (\textbf{\$} ist hier abstrakt und nicht als US-Dollar zu verstehen).
+
+Dann werden die durch die Token-Contract vorgegebenen Ausgabepreis (Kaufpreis) $\mathcal{K}$, Rücknahmepreis (Verkaufspreis) $\mathcal{V}$ und Contract-Treasury-Inhalt $\mathbf{\mathcal{T}}$ für den zuletzt ausgegebenen Token $i$ - jeweils in der Einheit \textbf{\$} - durch die jeweils supply-abhängigen Funktionen beschrieben:
+
+\begin{align*}
+\mathcal{K}, \mathcal{V}, \mathcal{T} &: \mathbb{N} \rightarrow \mathbb{Q}^{+} \\
+\mathcal{K} \left( i \right) &:= \textrm{ Letzter Token-Ausgabepreis in \$ bei einem Gesamt-Supply von i} \\
+\mathcal{V} \left( i \right) &:= \textrm{ Aktueller Token-Rückkaufkurs in \$ bei einem Gesamt-Supply von i} \\
+\mathcal{T} \left( i \right) &:= \sum_{j = 1}^{i} \mathcal{K} \left( j \right)
+\end{align*}
+
+\vspace{0.2cm}
+
+Die definierende Logik unseres Tokens lässt sich damit also formal als 
+
+\begin{equation*}
+TKR = \left( \mathcal{K}, \mathcal{V}, \$ \right)
+\end{equation*}
+
+schreiben, wobei hierbei $\mathbf{\mathcal{T}}$ ausgespart bleibt, da es implizit durch $\mathbf{\mathcal{K}}$ gegeben ist.
+
+\vspace{0.2cm}
+
+Sicherlich können und werden bei einer konkreten Implementierung eines mittels der durch $\mathbf{\mathcal{K}}$ und $\mathbf{\mathcal{V}}$ gegebenen \textit{Bonding-Curves} beschriebenen Tokens noch andere zu formalisierende Faktoren und Mechanismen eine Rolle spielen. Für die simpelste abstrakte Definition reichen die genannten Größen 
+jedoch für den Moment aus.
+
+\end{Def}
+
+\vspace{0.3cm}
+
+Die eben - auf diskrete Weise - definierten Funktionen $\mathcal{K} \left( i \right)$ und $\mathcal{V} \left( i \right)$ erfordern insofern noch eine zusätzliche Bemerkung, als dass diese explizit nur eine Token-weise Auskunft über Ausgabe- und Rücknahmepreis geben. Möchte man mehrere Token minten oder zurückkgeben, muss der Preis für jeden der Tokens separat ausgerechnet und anschließend addiert werden. Möchte man bei einem aktuellen Supply von $i \in \mathbb{N}$ nicht einen sondern $k \in \mathbb{N}$ mit $k \leq i$ Tokens minten bzw. zurückgeben, beläuft sich der gesamte Kauf- bzw- Verkaufspreis auf
+
+\begin{align*}
+\mathcal{K}_{k} \left( i \right) &:= \sum_{j = i + 1}^{i + k} \mathcal{K} \left( j \right) \\
+\mathcal{V}_{k} \left( i \right) &:= \sum_{j = i - k + 1}^{i} \mathcal{V} \left( j \right).
+\end{align*}
+
+\vspace{0.3cm}
+
+Das besonders Hervorhebenswerte an diesem Token-Ausgabemodell ist zweifelsfrei die gemeinschaftliche aus der Token-Ausgabe gefütterte Contract-Treasury aus echten Geldeinlagen, die nicht etwa einer dritten (Ausgabe-)Partei zugute kommt, sondern de facto den Tokeninhabern gehört. Die Existenz dieser Rücklagen gibt den ausgegebenen Tokens theoretisch einen realen Wert und ermöglicht einzig und allein die Implementierung des Rückkauf-Mechanismus. Der Gebrauch von dieser Möglichkeit und die Verankerung der Rückkauffunktion $\mathbf{\mathcal{V}}$ in der Logik des Token-Contracts gibt den Tokens dann auch praktisch einen realen Wert. Denn wenn ich eine definitive - in Contract-Logik verankerte - Sicherheit habe, ein Asset jederzeit verkaufen zu können, besitzt dieses Asset auch einen echten, intrinsischen Value, der nicht zwingend den marktwirtschaftlichen Mechanismen unterliegt - und somit auch keinen etwaigen Hypes um einen gut vermarkteten Tokensale ohne dahinterliegende Substanz. Vielmehr folgt der Tokenpreis der gemeinschaftlichen Projekt-Treasury $\mathbf{\mathcal{T}}$, die ihrerseits substanziell mit dem Projekterfolg einhergeht. 
+
+\vspace{0.2cm}
+
+Die letzte Einsicht lässt uns zu zwei wesentlichen Gedanken gelangen, die die entscheidenden Argumente für das \textit{Bonding-Curves}-Modell liefern könnten:
+
+\begin{itemize}
+  \item Der Rückgabepreis $\mathcal{V} \left( i \right)$ sollte eine direkte Abhängigkeit vom Treasury-Inhalt $\mathcal{T} \left( i \right)$ aufweisen.
+  \item Nach bisheriger Definition hängt der Treasury-Inhalt $\mathcal{T} \left( i \right)$ ausschließlich vom aktuellen Supply $i \in \mathbb{N}$ (und den damit einhergehenden Ausgabepreisen $\mathcal{K} \left( j \right)$ für $j \leq i$) ab. Gepaart mit der ersten Forderung bedeutete dies implizit nichts anderes, als dass der aktuelle Rücknahmepreis ausschließlich von den Ausgabepreisen der bisherigen Tokens abhinge. Dies ist schlecht und ein sehr großes Problem der gängigen \textit{Bonding-Curves}-Implementierungen, da Koppelung des Rücknahmepreises - also des intrinsischen Werts des Tokens - ausschließlich an den Kaufpreis voriger Tokens - und die Wertentwicklung damit an den Kaufpreis etwaiger zukünftig ausgegebener Tokens, würde mathematisch alternativlos eine monoton steigende Ausgabepreis-Funktion $\mathcal{K} \left( i \right)$ erfordern. Ohne eine sehr stark fundierte projekt-bezogene Argumentation für ein monoton steigendes $\mathcal{K} \left( i \right)$ schrie das gesamte Modell nur so nach \textit{Pump \& Dump} und \textit{Hot Potatoe}. Und tatsächlich ist es so, dass nahezu alle \textit{Bonding-Curves}-Implementierungen Gebrauch von einer (streng) monoton steigenden Ausgabepreis-Kurve $\mathcal{K} \left( i \right)$ machen. Sie argumentieren mit anderem generierten Projekt-Value, der nicht durch die Contract-Treasury $\mathcal{T} \left( i \right)$ gemessen werden kann und diese Argumentation muss nicht zwingend falsch oder ungenügend sein. Uns reicht dies aber nicht - zumal es mehr als gute Gründe für ein monoton steigendes $\mathcal{K} \left( i \right)$ gibt (dazu später mehr). Somit bleibt uns nichts anderes als die - zumindest teilweise - Abkoppelung von $\mathcal{T} \left( i \right)$ und $\mathcal{K} \left( i \right)$, womit wir auch unsere obige Definition von $\mathcal{T} \left( i \right) = \sum_{j = 1}^{i} \mathcal{K} \left( j \right)$ wieder teils verwerfen müssen.
+\end{itemize} 
+
+\vspace{0.2cm}
+
+Wir fassen zusammen:
+
+\vspace{0.3cm}
+
+\begin{Fazit}[Contract-Treasury als wichtigster Baustein zum Erfolg]
+
+Wie sind der Überzeugung, der Contract-Treasury-Inhalt - gemessen als $\mathcal{T} \left( i \right)$ - sei der entscheidende Baustein für einen soliden \textit{Bonding-Curves}-Token. $\mathcal{T} \left( i \right)$ beeinflusst direkt den Rücknahmepreis $\mathcal{V} \left( i \right)$, verleiht dem Token damit einen echten geldwerten Value, was wiederum als Kaufargument für neue Tokens gilt und damit implizit auch zur Beurteilung des Ausgabepreises $\mathcal{K} \left( i \right)$ seitens etwaiger neuer Investoren hinzugezogen wird.
+
+\vspace{0.2cm}
+
+Konkret auf den Rücknahmepreis $\mathcal{V} \left( i \right)$ bezogen sehen wir kaum sinnvollere Alternativen als der gängigen Definition 
+
+\begin{equation*}
+\mathcal{V} \left( i \right) = \frac{\mathcal{T} \left( i \right)}{i}
+\end{equation*}
+
+zu folgen, was gleichbedeutend damit ist, dass der Besitz am Contract-Treasury-Inhalt pro rata auf die sich in Zirkulation befindenden Token verteilt wird, was sich konsequenterweise im Rücknahmepreis $\mathcal{V} \left( i \right)$ widerspiegelt. Mit der in Definition \ref{defBC} beschriebenen Treasury-Funktion $\mathcal{T} \left( i \right)$ ergibt sich damit für den Rücknahmepreis $\mathcal{V} \left( i \right)$
+
+\begin{equation*}
+\mathcal{V} \left( i \right) = \frac{\mathcal{T} \left( i \right)}{i} = \frac{\sum_{j = 1}^{i} \mathcal{K} \left( j \right)}{i}.
+\end{equation*} 
+
+\vspace{0.3cm}
+
+\end{Fazit}
+
+\vspace{0.5cm}
