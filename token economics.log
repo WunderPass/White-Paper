@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  21 FEB 2022 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  21 FEB 2022 18:21
 entering extended mode
 **"./token economics.tex"
 (token economics.tex
@@ -1053,13 +1053,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Slava/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] ([Economics][To
 ken-Economics][Ideen].tex)
-([Economics][Token-Economics][Investing-Pools].tex [2]
-Overfull \hbox (30.77608pt too wide) in paragraph at lines 30--32
-\OT1/cmr/m/n/10.95 istierende Pools geschahe. Damit ware die Er-stel-lung neu
-er Pools mit ihrer zahlenmaigen
- []
-
-[3]
+([Economics][Token-Economics][Investing-Pools].tex [2] [3]
 Overfull \hbox (11.89738pt too wide) in paragraph at lines 33--34
 \OT1/cmr/m/n/10.95 hende User durch eine zu hohe fi-nanzielle Sicher-heit-sein-
 lage davon abzuschrecken
@@ -1106,18 +1100,33 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 80.
+
+Overfull \hbox (10.76689pt too wide) in paragraph at lines 114--116
+\OT1/cmr/m/n/10.95 hun-dert Prozent dem math-e-ma-tis-chen Verstandnis gle-ich
+t und die Aus-sage wahrschein-
+ []
+
+
+Overfull \hbox (2.25539pt too wide) in paragraph at lines 127--128
+\OT1/cmr/m/n/10.95 darstellt. Also so eine Art Gradmesser der (ex-ter-nen) Wert
+schopfung/Wirtschaftlich-
+ []
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 100.
- [8]) [9] (token economics.aux)
+(mdframed)              on input line 131.
+[8] [9]) [10] (token economics.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `"token economics".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26389 strings out of 478864
- 503149 string characters out of 2848661
- 955026 words of memory out of 3000000
- 43851 multiletter control sequences out of 15000+600000
+ 26392 strings out of 478864
+ 503197 string characters out of 2848661
+ 956026 words of memory out of 3000000
+ 43853 multiletter control sequences out of 15000+600000
  414861 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,114p,10614b,1016s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1138,9 +1147,9 @@ m/cmssbx10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public
 e1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "token economics.pdf" (9 pages, 189217 bytes).
+Output written on "token economics.pdf" (10 pages, 197992 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
  37 words of extra memory for PDF output out of 10000 (max. 10000000)
 

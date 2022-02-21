@@ -95,8 +95,45 @@ zu folgen, was gleichbedeutend damit ist, dass der Besitz am Contract-Treasury-I
 \mathcal{V} \left( i \right) = \frac{\mathcal{T} \left( i \right)}{i} = \frac{\sum_{j = 1}^{i} \mathcal{K} \left( j \right)}{i}.
 \end{equation*} 
 
-\vspace{0.3cm}
+\vspace{0.2cm}
+
+Um einen Kauf bei aktuellem Supply von $i \in \mathbb{N}$ zu dem Preis von $\mathcal{K} \left( i \right)$ für sich als Investor zu rechtfertigen, muss man argumentieren, man könne den gekauften Token irgendwann zu einem höheren Preis wieder zurückgeben:
+
+\begin{equation*}
+\exists k > i, \textrm{  so dass } \mathcal{V} \left( k \right) > \mathcal{K} \left( i \right)
+\end{equation*} 
+
+\begin{equation*}
+\Leftrightarrow \textrm{    } \sum_{j = 1}^{k} \mathcal{K} \left( j \right) > k \cdot \mathcal{K} \left( i \right)
+\end{equation*} 
+
+Gleichzeitig sollte $\mathcal{V} \left( i \right) \leq \mathcal{K} \left( i \right)$ für alle Supplies $i$ selbstverständlich angenommen werden können, da sonst Arbitrage entstünde, was sofort vom Markt aufgefressen werden würde.
+
+\vspace{0.2cm}
+
+Solche Anforderungen gehen alternativlos mit einem zwingend monoton steigenden $\mathcal{K} \left( i \right)$ einher (\todo{'monoton steigend' wäre hierbei noch zu präzisieren, da es nicht zu hundert Prozent dem mathematischen Verständnis gleicht und die Aussage wahrscheinlich noch zu beweisen; intuitiv ist es aber klar}).
+Da eine zwingend monoton steigende Preiskurve als Investitionsmotivation - in einem abstrakt stehenden Kontext und ohne zusätzliche Argumente - schlichtweg unseriös ist, fordern wir für den \textit{Contract-Treasury-Inhalt}
+
+\begin{equation*}
+\mathcal{T} \left( i \right) > \sum_{j = 1}^{i} \mathcal{K} \left( j \right),
+\end{equation*} 
+
+bzw.
+
+\begin{equation*}
+\mathcal{T} \left( i \right) = \sum_{j = 1}^{i} \mathcal{K} \left( j \right) \textrm{  +  } f(t, i) \textrm{ mit } f(t, i) > 0,
+\end{equation*} 
+
+wobei $f(t, i)$ eine nicht genau präzisierte, positive \textit{Value-Funktion} unseres Projekts darstellt. Also so eine Art Gradmesser der (externen) Wertschöpfung/Wirtschaftlich\-keit unseres Projekts, die nicht in direktem Bezug zum Projekt-Kontrakt steht. Man könnte $f(t, i)$ vielleicht \textbf{\textit{Of-Contract-EBIT}} unseres Projekt nennen - wie auch immer dieses erwirtschaftet wird. 
+
+Wie durch das $t$ angedeutet, bringt das $f(t, i)$ die zeitliche Dimension in unsere \textit{Contract-Treasury}-Rechnung, die externen (wirtschaftlichen) Einflüssen unterliegt und nicht mehr ausschließlich vom Gesamtsupply $i$ abhängt - gleichwohl der Gesamtsupply $i$ durchaus auch die genannten externen Einflüsse und damit auch $f(t, i)$ begünstigen kann.
 
 \end{Fazit}
+
+\vspace{0.3cm}
+
+Der \textit{Of-Contract-EBIT} muss zwar nicht, kann aber durchaus auch aus anderen Smart-Contracts fließen. Solche Inter-Contract-Geldflüsse sind natürlich - falls möglich - eine stets bevorzugte Variante.  
+
+Ist dies nicht möglich - und etwaige finanzielle Projekteinnahmen tatsächlich gänzlich \textit{off-chain}, bedarf es eines definierten und vertrauensvollen Mechanismus, der dafür sorge, dass die erzielten Projekterträge in die gemeinschaftliche Projekt-Treasury eingezahlt werden. Dies könnte entweder durch eine gesonderte Contract-Function dargestellt werden, oder aber durch den allgemeingültigen Weg mittels Tokenkäufen. Im zweiten Fall würden die gegen die extern erwirtschaftete Einlage ausgegebenen Tokens pro rata auf alle aktuellen Tokenhalter verteilt werden. 
 
 \vspace{0.5cm}
