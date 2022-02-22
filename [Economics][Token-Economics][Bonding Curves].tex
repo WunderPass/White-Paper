@@ -134,6 +134,118 @@ Wie durch das $t$ angedeutet, bringt das $f(t, i)$ die zeitliche Dimension in un
 
 Der \textit{Of-Contract-EBIT} muss zwar nicht, kann aber durchaus auch aus anderen Smart-Contracts fließen. Solche Inter-Contract-Geldflüsse sind natürlich - falls möglich - eine stets bevorzugte Variante.  
 
-Ist dies nicht möglich - und etwaige finanzielle Projekteinnahmen tatsächlich gänzlich \textit{off-chain}, bedarf es eines definierten und vertrauensvollen Mechanismus, der dafür sorge, dass die erzielten Projekterträge in die gemeinschaftliche Projekt-Treasury eingezahlt werden. Dies könnte entweder durch eine gesonderte Contract-Function dargestellt werden, oder aber durch den allgemeingültigen Weg mittels Tokenkäufen. Im zweiten Fall würden die gegen die extern erwirtschaftete Einlage ausgegebenen Tokens pro rata auf alle aktuellen Tokenhalter verteilt werden. 
+Ist dies nicht möglich - und etwaige finanzielle Projekteinnahmen tatsächlich gänzlich \textit{off-chain}, bedarf es eines definierten und vertrauensvollen Mechanismus, der dafür sorge, dass die erzielten Projekterträge in die gemeinschaftliche Projekt-Treasury eingezahlt werden. Dies könnte entweder durch eine gesonderte Contract-Function dargestellt werden, oder aber durch den allgemeingültigen Weg mittels Tokenkäufen. Im zweiten Fall würden die gegen die extern erwirtschaftete Einlage ausgegebenen Tokens pro rata auf alle aktuellen Tokenhalter verteilt werden.
+
+\vspace{0.2cm}
+
+Mit einer nachweislich existenten \textit{externen projektbezogenen Profit-Funktion} $f(t, i)$ bekäme ein einem Projekt zugrunde liegendes \textit{Bonding-Curves-Token-Modell} das ihm noch fehlende - und aus unserer Sicht unverzichtbare - Merkmal: Nämlich eine gewisse Abkoppelung des realen Tokenwerts - gemessen durch $\mathcal{V} \left( i \right)$ - von der oft - zurecht als scheeball-artig kritisierten - Ausgabepreis-Kurve $\mathcal{K} \left( i \right)$.
+
+Damit liefern wir aus unserer Sicht den bisher bei dem meisten \textit{Bonding-Curves-Implementierungen} fehlenden Baustein für eine solide und fundierte Token-Distribution mittels eines \textit{Bonding-Curves-Modells} und entgegnen damit - zumindest auf abstrakt Weise - dem bestehenden Hauptproblem der \textit{Bonding-Curves}: Nämlich \textit{Ponzi, Pump \& Dump oder Hot Potatoe} zu sein.
+
+\vspace{0.2cm}
+
+Wir behaupten hierbei keinesfalls, den heiligen Gral für das Funktionieren von \textit{Bonding-Curves-gestützten Token-Modellen} gefunden zu haben. Denn schließlich ist die Existenz des von uns eingeführten $f(t, i)$ alles andere als gegeben, äußerst projekt-abhängig und zudem in der Regel vermutlich nicht leicht zu formalisieren - geschweige denn ohne optimistische Annahmen zu beweisen. Denn nicht zuletzt argumentieren viele auf \textit{Bonding-Curves-Token-Modelle} gestützte Projekte genau wie wir hier an dieser Stelle: \textit{Es existiere ein externer Projekt-Value, von welchem die Tokeninhaber profitieren!} Nur geben diese Argumentationen diesem Value nicht den Namen $f(t, i)$ und verpassen damit eine formal abstrakte Verallgemeinerung.
+
+Wir fassen zusammen:
+
+\vspace{0.2cm}
+
+\begin{Fazit}[Token-externer Projekt-Value]
+
+Wir reduzieren das bestehende Problem von \textit{Bonding-Curves-Token-Modellen} hinsichtlich \textit{'Ponzi' und 'Pump \& Dump'} auf den Nachweis der Existenz einer \textbf{\textit{Of-Contract-EBIT-Funktion}} $f(t, i) > 0$ und deren Formalisierung anstatt von undefiniertem \textit{externen Projekt-Value} zu sprechen.
+
+\vspace{0.2cm}
+
+Idealerweise wird $f(t, i) > 0$ durch unbestreitbare Logik eines Smart-Contracts begründet, der in wertschöpfender Interaktion mit unserem Token-Contract steht (Profite in seine Treasury einzahlt). Andernfalls erschwert sich die Argumentation und muss solide begründet und formalisiert werden.
+
+\end{Fazit}
+
+\vspace{0.3cm}
+
+Um das $f(t, i)$ nicht ganz als abstraktes Mysterium dastehen zu lassen und Zweifel an dessen Existenz zu zerstreuen: 
+
+\vspace{0.2cm}
+
+\begin{Example}[DeFi-Projekte besitzen stets ein $f(t, i) > 0$]
+
+Jedes DeFi-Projekt besitzt ein $f(t, i) > 0$! Ob
+
+\begin{itemize}
+  \item DEX-Provider à la \textit{Balancer}, 
+  \item Market-Places à la \textit{OpenSea},
+  \item Lending-Platforms
+\end{itemize}  
+
+oder viele andere agieren wirtschaftlich, indem sie in der Regel Provisionen auf ihre Dienstleistung veranschlagen. Diese Gebühren sind unmissverständlich in ihrer Contract-Logik verankert und gänzlich transparent. 
+
+Würden solche Projekte einen \textit{Bonding-Curves-gestützten} Utility-Token herausgeben und einen gewissen Abfluss ihrer Provisions-Profite in die Contract-Treasury dieses Tokens implementieren, würde solch ein Mechanismus auf ganz natürlich Weise das von uns geforderte $f(t, i) > 0$ definieren. Jeder Tokeninhaber würde damit jeder gebühren-pflichtigen Transaktion mit partizipieren.
+
+\end{Example}
+
+\vspace{0.3cm}
+
+Wie nun bereits mehrfach betont, ist und bleibt das von uns eingeführte $f(t, i)$ projekt-bezogen. Wir wollen an dieser Stelle dagegen weiterhin möglichst abstrakt und allgemein bleiben und uns im folgenden der Ausgabepreis-Kurve $\mathcal{K} \left( i \right)$ widmen - insbesondere auch mit der Zielsetzung die Anforderungen an das $f(t, i)$ so gering zu gestalten, wie nur möglich.
+
+Wie ebenfalls bereits herausgearbeitet, ist die verwendete Implementierung des $\mathcal{K} \left( i \right)$ ohne nachweisbare Existenz eines $f(t, i) > 0$ in vielen \textit{Bonding-Curves-Projekten} als ein teils unseriöser Preistreiber zu sehen. Dies resultierte aus der bereits oben formalisierten Kaufentscheidung eines jeden potenziellen Tokenkäufers:
+
+\begin{equation*}
+\textrm{Ich sollte kaufen   } \Leftrightarrow \exists k > i, \textrm{  so dass } \mathcal{V} \left( k \right) > \mathcal{K} \left( i \right)
+\end{equation*} 
+
+Und zwar \textbf{Preistreiber} deswegen, weil die Kaufentscheidung eines Tokens bei aktuellem Supply $i \in \mathbb{N}$ ohne fundiertes $f(t, i)$ von Kaufentscheidungen Anderer bei größerem Supply $i, i+1,...,k$ abhängt. Man sollte also genau dann kaufen, wenn man davon ausgeht, das andere später auch kaufen - und das noch zu einem höheren Preis. Diese müssten dann davon ausgehen, dass wiederum andere noch später zu einem noch höheren Kurs einsteigen und so weiter.
+
+\vspace{0.2cm}
+
+Und obwohl wir die Existenz eines $f(t, i) > 0$ nicht allgemein sicherstellen und es erst recht nicht konkret benennen können, so können wir zumindest eine Mindestanforderung herleiten und diese dabei zusätzlich ins Verhältnis zum Risiko eines potenziellen Investors setzen.
+
+Dazu wollen wir das $\mathcal{V} \left( i \right)$ von etwaigen künftigen Käufen abkoppeln und seine Abhängigkeit von $\mathcal{K} \left( j \right)$ auf ausschließlich vergangene Käufe $\mathcal{K} \left( j \right)$ mit $j <= i$ reduzieren.
+
+\vspace{0.3cm}
+
+\begin{Praemisse}[Risiko eines Tokenkaufs]
+
+Wir definieren eine zusätzliche Abhängigkeit zwischen Ausgabepreis-Kurve $\mathcal{K} \left( i \right)$ und Rücknahmepreis-Kurve $\mathcal{V} \left( i \right)$:
+
+\begin{equation*}
+\mathcal{K} \left( i \right) = \left( 1 + \rho \right) \cdot \mathcal{V} \left( i \right) = \left( 1 + \rho \right) \cdot \frac{\mathcal{T} \left( i \right)}{i} = \left( 1 + \rho \right) \cdot \frac{\sum_{j = 1}^{i} \mathcal{K} \left( j \right)}{i} \textrm{  mit } \rho > 0
+\end{equation*}
+
+Neu an dieser Forderung ist hierbei lediglich die erste Gleichheit. Die anderen sind Resultat unserer bereits weiter oben definierten Anforderungen an die Rücknahmepreis-Kurve $\mathcal{V} \left( i \right)$.
+
+\vspace{0.3cm}
+
+Das $\rho > 0$ beschreibt hierbei das Invest-Risiko eines Tokenkaufs bei Supply von $i \in \mathbb{N}$. Unsere Forderung ist also wie folgt zu interpretieren: $\rho$ beziffert den prozentualen Höchstverlust, den ein potenzieller Investor bei einem Kauf eines Tokens zum Preis von $\mathcal{K} \left( i \right)$ bei einem Supply von $i \in \mathbb{N}$ im schlimmsten Fall zu tragen hätte. Denn er könnte den gekauften Token jederzeit zum Preis von $\mathcal{V} \left( i \right) = \frac{\mathcal{K} \left( i \right)}{1 + \rho}$ wieder an den Contract zurückgeben und sich dafür auszahlen lassen.
+
+\vspace{0.1cm}
+
+Hinsichtlich dieser Interpretation wird das $\rho > 0$ in der Praxis also vermutlich tendenziell sehr klein zu wählen sein: $0 < \rho \ll 1$.
+
+\vspace{0.1cm}
+
+Die konkrete Wahl von $\rho$ wird hierbei in starker Wechselwirkung zum projekt-bezogenen $f(t, i) > 0$ stehen. Je vielversprechender der durch $f(t, i)$ beschriebe \textit{Of-Contract-EBIT} des Projekts ausfällt, desto größeres Risiko und damit $\rho$ ist einem Tokenkäufer zuzumuten und umgekehrt. 
+
+\vspace{0.1cm}
+
+Am Ende gilt wahrscheinlich sogar 
+
+\begin{equation*}
+\textrm{Es existiert kein  } f(t, i) > 0 \textrm{   } \Leftrightarrow \textrm{   } \rho = 0 \textrm{   } \Leftrightarrow \textrm{   } \mathcal{V} \left( i \right) = \mathcal{K} \left( i \right) \textrm{  } \forall i \in \mathbb{N}
+\end{equation*}
+
+\end{Praemisse}
+
+\vspace{0.3cm}
+
+Das Risiko ist mit der gemachten Vorgabe an die Rücknahmepreis-Kurve ist insofern mit gegebener Sicherheit gedeckelt als das $\mathcal{V} \left( i \right)$ für $\rho > 0$ stark monoton steigend ist
+
+\vspace{0.3cm}
+
+Zudem kann man bei gegebenem $\rho > 0$ seine durch
+
+\begin{equation*}
+\exists k > i, \textrm{  so dass } \mathcal{V} \left( k \right) > \mathcal{K} \left( i \right)
+\end{equation*} 
+
+gechallengte Kaufentscheidung validieren und nicht nur die Existenz eines solchen $k > i$ beweisen, sondern dieses $k$ auch konkret in Abhängigkeit des $\rho$ berechnen.
 
 \vspace{0.5cm}
