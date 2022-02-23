@@ -1,5 +1,18 @@
 % !TEX root = paper.tex
 
+\vspace{0.2cm}
+
+\begin{itemize}
+  \item \href{https://medium.com/@simondlr/tokens-2-0-curved-token-bonding-in-curation-markets-1764a2e0bee5}{Gute Einführung}
+  \item \href{https://www.newsbtc.com/sponsored/zap-fun-profit/}{Anwendungsbeispiel}
+  \item \href{https://docs.google.com/document/d/1VNkBjjGhcZUV9CyC0ccWYbqeOoVKT2maqX0rK3yXB20/edit}{White-Paper}
+  \item \href{https://github.com/ConsenSysMesh/curationmarkets/blob/master/CurationMarkets.sol}{Smart-Contract}
+\end{itemize}  
+
+
+
+\vspace{0.5cm}
+
 Zunächst einmal eine Formalisierung einer Token-Distribution mittels Bonding-Curves:
 
 \vspace{0.2cm}
@@ -60,7 +73,7 @@ Die eben - auf diskrete Weise - definierten Funktionen $\mathcal{K} \left( i \ri
 
 \vspace{0.3cm}
 
-Das besonders Hervorhebenswerte an diesem Token-Ausgabemodell ist zweifelsfrei die gemeinschaftliche aus der Token-Ausgabe gefütterte Contract-Treasury aus echten Geldeinlagen, die nicht etwa einer dritten (Ausgabe-)Partei zugute kommt, sondern de facto den Tokeninhabern gehört. Die Existenz dieser Rücklagen gibt den ausgegebenen Tokens theoretisch einen realen Wert und ermöglicht einzig und allein die Implementierung des Rückkauf-Mechanismus. Der Gebrauch von dieser Möglichkeit und die Verankerung der Rückkauffunktion $\mathbf{\mathcal{V}}$ in der Logik des Token-Contracts gibt den Tokens dann auch praktisch einen realen Wert. Denn wenn ich eine definitive - in Contract-Logik verankerte - Sicherheit habe, ein Asset jederzeit verkaufen zu können, besitzt dieses Asset auch einen echten, intrinsischen Value, der nicht zwingend den marktwirtschaftlichen Mechanismen unterliegt - und somit auch keinen etwaigen Hypes um einen gut vermarkteten Tokensale ohne dahinterliegende Substanz. Vielmehr folgt der Tokenpreis der gemeinschaftlichen Projekt-Treasury $\mathbf{\mathcal{T}}$, die ihrerseits substanziell mit dem Projekterfolg einhergeht. 
+Das besonders Hervorhebenswerte an diesem Token-Ausgabemodell ist zweifelsfrei die gemeinschaftliche aus der Token-Ausgabe gefütterte Contract-Treasury aus echten Geldeinlagen, die nicht etwa einer dritten (Ausgabe-)Partei zugute kommt, sondern de facto den Tokeninhabern gehört. Die Existenz dieser Rücklagen gibt den ausgegebenen Tokens theoretisch einen realen Wert und ermöglicht einzig und allein die Implementierung des Rückkauf-Mechanismus. Der Gebrauch von dieser Möglichkeit und die Verankerung der Rückkauffunktion $\mathbf{\mathcal{V}}$ in der Logik des Token-Contracts realisiert den besagten realen Wert dann auch in der Praxis und nennt sich \textbf{\textit{"market maker of last resort"}}. Denn wenn ich eine definitive - in Contract-Logik verankerte - Sicherheit habe, ein Asset jederzeit verkaufen zu können, besitzt dieses Asset auch einen echten, intrinsischen Value, der nicht zwingend den marktwirtschaftlichen Mechanismen unterliegt - und somit auch keinen etwaigen Hypes um einen gut vermarkteten Tokensale ohne dahinterliegende Substanz. Vielmehr folgt der Tokenpreis der gemeinschaftlichen Projekt-Treasury $\mathbf{\mathcal{T}}$, die ihrerseits substanziell mit dem Projekterfolg einhergeht. 
 
 \vspace{0.2cm}
 
@@ -196,6 +209,10 @@ Und zwar \textbf{Preistreiber} deswegen, weil die Kaufentscheidung eines Tokens 
 
 \vspace{0.2cm}
 
+\todo{An bier WIP}
+
+\vspace{0.5cm}
+
 Und obwohl wir die Existenz eines $f(t, i) > 0$ nicht allgemein sicherstellen und es erst recht nicht konkret benennen können, so können wir zumindest eine Mindestanforderung herleiten und diese dabei zusätzlich ins Verhältnis zum Risiko eines potenziellen Investors setzen.
 
 Dazu wollen wir das $\mathcal{V} \left( i \right)$ von etwaigen künftigen Käufen abkoppeln und seine Abhängigkeit von $\mathcal{K} \left( j \right)$ auf ausschließlich vergangene Käufe $\mathcal{K} \left( j \right)$ mit $j <= i$ reduzieren.
@@ -247,5 +264,13 @@ Zudem kann man bei gegebenem $\rho > 0$ seine durch
 \end{equation*} 
 
 gechallengte Kaufentscheidung validieren und nicht nur die Existenz eines solchen $k > i$ beweisen, sondern dieses $k$ auch konkret in Abhängigkeit des $\rho$ berechnen.
+
+\vspace{0.3cm}
+
+\todo{WIP}
+
+\vspace{0.3cm}
+
+\todo{Begünstigte formalisieren (mit zusätzlicher Funktion). Begünstigte erhalten einen Teil der Projekt-Treasury zu ihrer freien Verfügung.}
 
 \vspace{0.5cm}

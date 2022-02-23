@@ -29,36 +29,36 @@
 \contentsline {subsubsection}{\numberline {5.4.1}Einleitung}{46}{subsubsection.5.4.1}%
 \contentsline {subsubsection}{\numberline {5.4.2}Lösungsideen}{49}{subsubsection.5.4.2}%
 \contentsline {subsubsection}{\numberline {5.4.3}Einbindung der Investing-Pools}{49}{subsubsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.4}Bonding-Curves}{52}{subsubsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {5.4.5}Lösungsidee 2}{60}{subsubsection.5.4.5}%
-\contentsline {subsubsection}{\numberline {5.4.6}Kreislauf}{63}{subsubsection.5.4.6}%
-\contentsline {subsubsection}{\numberline {5.4.7}Token-Design}{63}{subsubsection.5.4.7}%
-\contentsline {subsubsection}{\numberline {5.4.8}Incentivierung}{63}{subsubsection.5.4.8}%
-\contentsline {subsubsection}{\numberline {5.4.9}Milestones-Reward-Pool}{63}{subsubsection.5.4.9}%
-\contentsline {subsubsection}{\numberline {5.4.10}WPT in Zahlen}{63}{subsubsection.5.4.10}%
-\contentsline {subsubsection}{\numberline {5.4.11}Fazit}{63}{subsubsection.5.4.11}%
-\contentsline {subsection}{\numberline {5.5}Fazit}{63}{subsection.5.5}%
-\contentsline {section}{\numberline {6}NFT-Pass}{63}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Konzeption}{64}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Status-Property}{65}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Hologramm}{66}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Pattern-Property}{69}{subsubsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.4}Edition}{70}{subsubsection.6.1.4}%
-\contentsline {subsubsection}{\numberline {6.1.5}Design}{72}{subsubsection.6.1.5}%
-\contentsline {subsubsection}{\numberline {6.1.6}Beispielhafte Analyse der Collection}{73}{subsubsection.6.1.6}%
-\contentsline {subsubsection}{\numberline {6.1.7}Intrinsischer Wert}{76}{subsubsection.6.1.7}%
-\contentsline {subsection}{\numberline {6.2}Technische Umsetzung}{78}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Abgrenzung zu SSI}{80}{section.7}%
-\contentsline {section}{\numberline {8}Project 'Guard'}{80}{section.8}%
-\contentsline {section}{\numberline {9}Project 'Pools'}{80}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Einleitung}{80}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Formalisierungen}{82}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Pool-Erzeugung}{83}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Pool-Lifetime}{85}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Pool-Liquidierung}{87}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Pool-Economics}{88}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}Pool-Vertrag}{88}{subsection.9.7}%
-\contentsline {section}{\numberline {10}Community}{89}{section.10}%
-\contentsline {section}{\numberline {11}Zusammenfassung}{89}{section.11}%
-\contentsline {section}{\numberline {12}Anhang}{89}{section.12}%
+\contentsline {subsubsection}{\numberline {5.4.4}Bonding-Curves}{53}{subsubsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.5}Lösungsidee 2}{61}{subsubsection.5.4.5}%
+\contentsline {subsubsection}{\numberline {5.4.6}Kreislauf}{64}{subsubsection.5.4.6}%
+\contentsline {subsubsection}{\numberline {5.4.7}Token-Design}{64}{subsubsection.5.4.7}%
+\contentsline {subsubsection}{\numberline {5.4.8}Incentivierung}{64}{subsubsection.5.4.8}%
+\contentsline {subsubsection}{\numberline {5.4.9}Milestones-Reward-Pool}{64}{subsubsection.5.4.9}%
+\contentsline {subsubsection}{\numberline {5.4.10}WPT in Zahlen}{64}{subsubsection.5.4.10}%
+\contentsline {subsubsection}{\numberline {5.4.11}Fazit}{64}{subsubsection.5.4.11}%
+\contentsline {subsection}{\numberline {5.5}Fazit}{64}{subsection.5.5}%
+\contentsline {section}{\numberline {6}NFT-Pass}{64}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Konzeption}{65}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Status-Property}{66}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Hologramm}{67}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Pattern-Property}{70}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.4}Edition}{71}{subsubsection.6.1.4}%
+\contentsline {subsubsection}{\numberline {6.1.5}Design}{73}{subsubsection.6.1.5}%
+\contentsline {subsubsection}{\numberline {6.1.6}Beispielhafte Analyse der Collection}{74}{subsubsection.6.1.6}%
+\contentsline {subsubsection}{\numberline {6.1.7}Intrinsischer Wert}{77}{subsubsection.6.1.7}%
+\contentsline {subsection}{\numberline {6.2}Technische Umsetzung}{79}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Abgrenzung zu SSI}{81}{section.7}%
+\contentsline {section}{\numberline {8}Project 'Guard'}{81}{section.8}%
+\contentsline {section}{\numberline {9}Project 'Pools'}{81}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Einleitung}{81}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Formalisierungen}{83}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Pool-Erzeugung}{84}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Pool-Lifetime}{86}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Pool-Liquidierung}{88}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Pool-Economics}{89}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Pool-Vertrag}{89}{subsection.9.7}%
+\contentsline {section}{\numberline {10}Community}{90}{section.10}%
+\contentsline {section}{\numberline {11}Zusammenfassung}{90}{section.11}%
+\contentsline {section}{\numberline {12}Anhang}{90}{section.12}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
