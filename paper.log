@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  23 FEB 2022 16:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  14 MAR 2022 13:26
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -2246,10 +2246,9 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 64.
-)
-([09][Pools]/[Pools][Economic].tex) ([09][Pools]/[Pools][Vertrag].tex [89]))
-([10][Community]/[Community].tex) ([11][Zusammenfassung]/[Zusammenfassung].tex)
-([12][Anhang]/[Anhang].tex
+) ([Pools][Economic].tex
+[89]) ([09][Pools]/[Pools][Vertrag].tex)) ([10][Community]/[Community].tex)
+([11][Zusammenfassung]/[Zusammenfassung].tex) ([12][Anhang]/[Anhang].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 12.
@@ -2262,15 +2261,13 @@ itsbezogenen Teil-Identitaten.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 16.
+[90]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 24.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 30.
-Package mdframed Info: Not enough space on this page on input line 30.
-[90]
-Package mdframed Info: Not enough space on this page on input line 30.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 35.
@@ -2295,7 +2292,9 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 66.
+Package mdframed Info: Not enough space on this page on input line 66.
 [91]
+Package mdframed Info: Not enough space on this page on input line 66.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 71.
@@ -2314,13 +2313,13 @@ Overfull \hbox (10.53731pt too wide) in paragraph at lines 88--89
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 90.
+[92]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 95.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 103.
-[92]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 129.
@@ -2358,15 +2357,13 @@ a-ben oder Ein-schrankungen
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 165.
+[94]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 170.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 174.
-Package mdframed Info: Not enough space on this page on input line 174.
-[94]
-Package mdframed Info: Not enough space on this page on input line 174.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 179.
@@ -2385,7 +2382,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 206.
-) [95] (paper.aux)
+ [95]) [96] (paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2396,10 +2393,10 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27530 strings out of 478864
- 532606 string characters out of 2848661
+ 27535 strings out of 478864
+ 532643 string characters out of 2848661
  994752 words of memory out of 3000000
- 44561 multiletter control sequences out of 15000+600000
+ 44565 multiletter control sequences out of 15000+600000
  419467 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,114p,10602b,1020s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2429,9 +2426,9 @@ cm/cmsy6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (95 pages, 8055165 bytes).
+Output written on paper.pdf (96 pages, 8056673 bytes).
 PDF statistics:
- 1176 PDF objects out of 1200 (max. 8388607)
- 282 named destinations out of 1000 (max. 500000)
+ 1182 PDF objects out of 1200 (max. 8388607)
+ 283 named destinations out of 1000 (max. 500000)
  503 words of extra memory for PDF output out of 10000 (max. 10000000)
 
