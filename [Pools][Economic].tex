@@ -36,7 +36,7 @@
 	\item Für den Pool-Creator soll folgendes gelten:
 	\begin{itemize}
 		\item \todo{(Muss einen PassNFT besitzen.)}
-		\item Soll einen prozentual an den geschätzten gesamten Pool-Fees gemessenen Betrag $x$ als Sicherheit staken ($x \in [50 \%; 200 \%]$).
+		\item Soll einen prozentual an den geschätzten gesamten Pool-Fees gemessenen Betrag $x$ als Sicherheit staken ($x \in [50 \%; 200 \%]$). \todo{Kann theoretisch auch einer absoluten oder relativen Obergrenze unterliegen.}
 		\item Soll selbst keine Fees bezahlen.
 		\item Soll für das Staken mit einem Teil der erwirtschafteten Gebühren entlohnt werden.
 	\end{itemize}
@@ -117,7 +117,7 @@ Der Gebührenordnung folgen einige Annahmen hinsichtlich des \textbf{Business-Pl
 
 \vspace{0.3cm}
 
-\begin{Assumption}[Business-Plan]
+\begin{Assumption}[Business-Plan]\label{bp}
 
 Zunächst schätzen wir einige KPI ab, die es natürlich zu validieren gilt:
 
@@ -181,7 +181,7 @@ Damit belaufen sich die einzelnen Fees-Bestandteile auf
 \begin{itemize}
 	\item Grundgebühren: $fees_{G}^{\mathcal{P}} \approx 4.67\$ $
 	\item Trading-Gebühren: $fees_{T}^{\mathcal{P}} \approx 8.44 \$ $
-	\item Profit-Beteiligung: $fees_{P}^{\mathcal{P}} \approx 13.5 \$ $
+	\item Profit-Beteiligung: $fees_{P}^{\mathcal{P}} \approx 13.50 \$ $
 \end{itemize}
 
 und damit die im Mittel erwarteten Gesamt-Fees pro Pool auf
@@ -190,20 +190,116 @@ und damit die im Mittel erwarteten Gesamt-Fees pro Pool auf
   fees^{\mathcal{P}} = fees_{G}^{\mathcal{P}} + fees_{T}^{\mathcal{P}} + fees_{P}^{\mathcal{P}} \approx 26.61 \$. 
 \end{equation*}
 
-\vspace{1.0cm}
+\vspace{0.67cm}
 
-\todo{Forecast}
+Bei einer Staking-Anforderung von 200 \% der geschätzten Pool-Fees \todo{(auf Staking verlinken)} und den in \ref{bp} getroffenen Business-Plan-Annahmen ergeben sich folgende näherungsweisen Forecasts:
 
+\begin{itemize}
+	\item Nach 3 Monaten: ca. 40 noch aktive und bereits ca. 10 liquidierte Pools.
+	\begin{itemize}
+		\item bereits \textit{umgesetzte Fees}: 266 \$ 
+		\item \textit{Pending-Fees}: 1.064 \$ 
+		\item \textit{Staked-Fees}: 2.129 \$ 
+	\end{itemize}
+	\item Nach 6 Monaten: ca. 100 noch aktive und bereits ca. 50 liquidierte Pools.
+	\begin{itemize}
+		\item bereits \textit{umgesetzte Fees}: 1.330 \$ 
+		\item \textit{Pending-Fees}: 2.661 \$ 
+		\item \textit{Staked-Fees}: 5.322 \$ 
+	\end{itemize}
+	\item Nach 12 Monaten: ca. 300 noch aktive und bereits ca. 200 liquidierte Pools.
+	\begin{itemize}
+		\item bereits \textit{umgesetzte Fees}: 5.322 \$ 
+		\item \textit{Pending-Fees}: 7.983 \$ 
+		\item \textit{Staked-Fees}: 15.966 \$ 
+	\end{itemize}	 
+\end{itemize}
+
+\vspace{0.5cm}
+
+Zu guter Letzt noch eine sehr bullishe Prognose:
+
+\begin{itemize}
+	\item Nach 5 Jahren: 450.000 noch aktive und bereits 550.000 liquidierte Pools.
+	\begin{itemize}
+		\item bereits \textit{umgesetzte Fees}: $\approx$ 15 Mio. \$ 
+		\item \textit{Pending-Fees}: $\approx$ 12 Mio. \$ 
+		\item \textit{Staked-Fees}: $\approx$ 24 Mio. \$ 
+	\end{itemize}	 
+\end{itemize}
 
 \end{Fazit}
 
+\vspace{0.5cm}
+
+Wir rechnen ein bisschen rum, um ein Gefühl für den nötigen Token-Supply zu bekommen:
+
 \vspace{0.3cm}
 
-\todo{Staking von WUNDER}
+\begin{Example}[Rechnerei zum Token-Supply]
 
-\todo{Pass-NFT-Status-Rewards}
+Wir peilen den Token-Contract so zu stricken, dass wir im eingeschwungenen Zustand einen Tokenwert des \textit{W-PLT} von $\approx$ 1 Cent anpeilen, aber gleichzeitig auch die Grenzen $[$0.5 Cent; 2 Cent$]$ im Auge behalten.
 
-\todo{Pass-NFT-Wunder-Rewards}
+\vspace{0.2cm}
 
-\vspace{0.5cm}
+Im Folgenden wieder die obige Forecast-Ausstellung - nun aus Token-Sicht:
+
+
+\begin{itemize}
+	\item Nach 3 Monaten: ca. 40 noch aktive und bereits ca. 10 liquidierte Pools.
+	\begin{itemize}
+		\item bereits \textit{umgesetzte Fees}: 25.000 \textit{W-PLT} 
+		\item mindestens bereits geburnte Tokens: 12.500 \textit{W-PLT} 
+		\item \textit{Pending-Fees}: 100.000 \textit{W-PLT}  
+		\item \textit{Staked-Fees}: 200.000 \textit{W-PLT}
+		\item min Supply: 300.000 \textit{W-PLT}
+	\end{itemize}
+	\item Nach 6 Monaten: ca. 100 noch aktive und bereits ca. 50 liquidierte Pools.
+	\begin{itemize}
+		\item bereits \textit{umgesetzte Fees}: 130.000 \textit{W-PLT}
+		\item mindestens bereits geburnte Tokens: 65.000 \textit{W-PLT}  
+		\item \textit{Pending-Fees}: 250.000 \textit{W-PLT}
+		\item \textit{Staked-Fees}: 500.000 \textit{W-PLT} 
+		\item min Supply: 750.000 \textit{W-PLT}
+	\end{itemize}
+	\item Nach 12 Monaten: ca. 300 noch aktive und bereits ca. 200 liquidierte Pools.
+	\begin{itemize}
+		\item bereits \textit{umgesetzte Fees}: 500.000 \textit{W-PLT}  
+		\item mindestens bereits geburnte Tokens: 250.000 \textit{W-PLT}
+		\item \textit{Pending-Fees}: 800.000 \textit{W-PLT}  
+		\item \textit{Staked-Fees}: 1.6 Mio. \textit{W-PLT} 
+		\item min Supply: 2.4 Mio \textit{W-PLT} 
+	\end{itemize}
+	\item Nach 5 Jahren: 450.000 noch aktive und bereits 550.000 liquidierte Pools.
+	\begin{itemize}
+		\item bereits \textit{umgesetzte Fees}: 1.5 Mrd. \textit{W-PLT} 
+		\item mindestens bereits geburnte Tokens: 750 Mio. \textit{W-PLT}
+		\item \textit{Pending-Fees}: 1.2 Mrd. \textit{W-PLT}
+		\item \textit{Staked-Fees}: 2.4 Mrd. \textit{W-PLT} 
+		\item min Supply: 3.6 Mrd. \textit{W-PLT} 
+	\end{itemize}	 
+\end{itemize}
+
+\end{Example}
+
+
+
+
+
+
+\vspace{1.0cm}
+
+\todo{WIP}
+
+\vspace{0.3cm}
+
+\begin{itemize}
+	\item Wann bezahlen die User die Fees?
+	\item In welcher Form/Währung dürfen die Fees von den Usern erbracht/verrechnet werden und wird dann alles im Hintergrund sofort in \textit{W-PLT} umgewandelt?
+	\item Ist es denkbar die Fees aus dem Stake-Pool des Creators zu verwenden und diesem seinen Stake in einer anderen Währung zurückzuerstatten?
+	\item Wie schafft man die Brücke zwischen Fees in \textit{USDT} und \textit{W-PLT}?
+\end{itemize}
+
+
+\newpage
 
