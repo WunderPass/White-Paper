@@ -51,9 +51,9 @@
 Es sollen in etwa folgende \textit{Basic-Fees} anfallen:
 
 \begin{itemize}
-	\item Grundgebühr von 1 \% auf den Deposit (für jeden Pool-Teilnehmer außer des Pool-Creators).
+	\item Grundgebühr von 1.9 \% auf den Deposit (für jeden Pool-Teilnehmer außer des Pool-Creators).
 	\item Tradinggebühr von 0.1 \% auf jede Kauf- oder Verkaufsorder.
-	\item Gewinnprovision von 4.9 \% auf einen durch den Pool erwirtschafteten \textbf{positiven} EBIT (bei Liquidierung des Pools).
+	\item Gewinnprovision von 9.9 \% auf einen durch den Pool erwirtschafteten \textbf{positiven} EBIT (bei Liquidierung des Pools).
 \end{itemize}
 
 \vspace{0.2cm}
@@ -70,7 +70,7 @@ Ergänzt werde diese durch etwaige \textit{Service-Fees}:
 Zudem sind folgende \textit{Benefits} hinsichtlich der Gebührenordnung für Inhaber eines Pass-NFTs \todo{(Kapitel verlinken)} vorgesehen:
 
 \begin{itemize}
-	\item Wegfall der Deposit-Grundgebühr für Inhaber eines PassNFTs des Status \textit{Diamond}.
+	\item Wegfall der Deposit-Grundgebühr für Inhaber eines PassNFTs des Status \textit{Diamond} und \textit{Black}.
 	\item Reduzierung sämtlicher Gebühren, die auf User- und nicht Pool-Basis anfallen um
 	\begin{itemize}
 		\item 50 \% für Teilnehmer mit PassNFT-Status \textit{Diamond},
@@ -127,7 +127,7 @@ Zunächst schätzen wir einige KPI ab, die es natürlich zu validieren gilt:
 	\item Wir gehen des Weiteren von einer durchschnittlichen \textit{Pool-Lifetime} von ca. 6 Monaten aus,
 	\item schätzen die durchschnittliche Anzahl an Tradings während der Pool-Lifetime auf 10-15,
 	\item deren Trading-Volumen auf etwa $\frac{1}{3}$ des initialen Pool-Kapitals und schließlich 
-	\item und einen daraus resultierenden konservativen mittleren Profit von 2 \% (auf die Pool-Lifetime von 6 Monaten also 4-5 \% p.a.).
+	\item und einen daraus resultierenden konservativen mittleren Profit von 2.5 \% (auf die Pool-Lifetime von 6 Monaten also 5-6 \% p.a.).
 	\item Zuletzt schätzen wir, jeder User betreibe im Mittel 2-3 Pools gleichzeitig.
 \end{itemize}
 
@@ -160,34 +160,34 @@ Für einen durchschnittlichen Pool $\mathcal{P}$ mit dem initialen Pool-Kapital
 approximieren wir die anfallenden Fees als Summe der Fee-Bestandteile
 
 \begin{itemize}
-	\item Grundgebühren: $fees_{G}^{\mathcal{P}} = \rho(nft) \cdot 0.01 \cdot (4.5 - 1) \cdot 200\$ $
-	\item Trading-Gebühren: $fees_{T}^{\mathcal{P}} = \phi(nft) \cdot 0.001 \cdot 12.5 \cdot vol^{\mathcal{P}} $
-	\item Profit-Beteiligung: $fees_{P}^{\mathcal{P}} = \phi(nft) \cdot 0.02 \cdot vol^{\mathcal{P}} $
+	\item Grundgebühren: $fees_{G}^{\mathcal{P}} = \rho(nft) \cdot 0.019 \cdot (4.5 - 1) \cdot 200\$ $
+	\item Trading-Gebühren: $fees_{T}^{\mathcal{P}} = \phi(nft) \cdot 0.001 \cdot 12.5 \cdot \frac{1}{3} \cdot vol^{\mathcal{P}} $
+	\item Profit-Beteiligung: $fees_{P}^{\mathcal{P}} = \phi(nft) \cdot 0.099 \cdot 0.025 \cdot vol^{\mathcal{P}} $
 \end{itemize}
 
 wobei $\rho(nft)$ und $\phi(nft)$ Normierungsfaktoren darstellen, die die in Annahme \ref{fees} beschriebenen \textit{Benefits für PassNFT-Besitzer} berücksichtigen sollen, und von uns als 
 
 \begin{itemize}
-	\item $\rho(nft) \approx \frac{2}{3}$ und 
-	\item $\phi(nft) \approx \frac{3}{4}$
+	\item $\rho(nft) \approx \frac{9}{10}$ und 
+	\item $\phi(nft) \approx \frac{7}{8}$
 \end{itemize}	
 
-geschätzt werden sollen.
+geschätzt werden sollen \todo{(für die Anfangsphase sind diese eher zu klein, im einge\-schwungenen Zustand viel zu groß)}.
 
 \vspace{0.2cm}
 
 Damit belaufen sich die einzelnen Fees-Bestandteile auf 
 
 \begin{itemize}
-	\item Grundgebühren: $fees_{G}^{\mathcal{P}} \approx 4.67\$ $
-	\item Trading-Gebühren: $fees_{T}^{\mathcal{P}} \approx 8.44 \$ $
-	\item Profit-Beteiligung: $fees_{P}^{\mathcal{P}} \approx 13.50 \$ $
+	\item Grundgebühren: $fees_{G}^{\mathcal{P}} \approx 11.97\$ $
+	\item Trading-Gebühren: $fees_{T}^{\mathcal{P}} \approx 3.28 \$ $
+	\item Profit-Beteiligung: $fees_{P}^{\mathcal{P}} \approx 1.95 \$ $
 \end{itemize}
 
 und damit die im Mittel erwarteten Gesamt-Fees pro Pool auf
 
 \begin{equation*}
-  fees^{\mathcal{P}} = fees_{G}^{\mathcal{P}} + fees_{T}^{\mathcal{P}} + fees_{P}^{\mathcal{P}} \approx 26.61 \$. 
+  fees^{\mathcal{P}} = fees_{G}^{\mathcal{P}} + fees_{T}^{\mathcal{P}} + fees_{P}^{\mathcal{P}} \approx 17.20 \$. 
 \end{equation*}
 
 \vspace{0.67cm}
