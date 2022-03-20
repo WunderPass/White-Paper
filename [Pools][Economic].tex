@@ -20,8 +20,70 @@
 
 \newpage
 
-\todo{Einleitung: Einführung des WunderPool-Tokens: W-PLT}
+\subsubsection{Einleitung}
 
+\todo{Einführung des WunderPool-Tokens: W-PLT; Konzept erklären}
+
+\vspace{0.5cm}
+
+\subsubsection{Herleitung Bonding Curves}
+
+\todo{Andere Kapitel müssen vorgezogen werden. Im Ergebnis leiten sich aber folgende Kurven für den Token ab:}
+
+\vspace{0.3cm}
+
+\begin{Solution}[Token-Curves]
+
+Sei $s \in \mathbb{N}$ der Token-Supply und 
+
+\begin{equation*}
+p \approx 1.03
+\end{equation*}
+
+der \textit{Profit-Koeffizient} \todo{(erklären weshalb, wofür, warum)}.
+Dann leiten sich Verkaufs- und Kaufpreis-Kurve wie folgt ab:
+
+\vspace{0.2cm}
+
+Verkaufspreis-Kurve:
+
+\begin{equation*}
+V(s) = V_{0} \cdot p^{ln\left(2 \cdot \frac{s}{s_{o}}\right) \cdot ln\left(\frac{s}{s_{o}}\right)}
+\end{equation*}
+
+\vspace{0.2cm}
+
+Kaufpreis-Kurve:
+
+\begin{align*}
+K(s) &= K_{0} \cdot p^{ln\left(2 \cdot \frac{s}{s_{o}}\right) \cdot ln\left(\frac{s}{s_{o}}\right)} \cdot \left( ln(p) \cdot \left( 2 \cdot ln\left( \frac{s}{s_{o}} \right) + ln(2) \right) + 1 \right) \\
+ &= V(s) \cdot \left( ln(p) \cdot \left( 2 \cdot ln\left( \frac{s}{s_{o}} \right) + ln(2) \right) + 1 \right)
+\end{align*}
+
+\vspace{0.4cm}
+
+wobei $s_{0}$ für einen sehr kleinen (initialen) Supply und 
+
+\begin{equation*}
+K_{0} = K(s_{0}) = V(s_{0}) = V_{0}
+\end{equation*}
+
+für seinen initialen Kauf- und Verkaufskurs stehen und dabei übrigens ganz nebenbei 
+
+\begin{equation*}
+K(s) = \left( s \cdot V(s) \right)^{\prime}
+\end{equation*}
+
+gilt.
+
+\end{Solution}
+
+\vspace{0.5cm}
+
+\subsubsection{Zu strukturierender Stuff}
+
+\vspace{0.3cm}
+\todo{WIP}
 \vspace{0.5cm}
 
 \begin{Praemisse}[Cash-Flow]
