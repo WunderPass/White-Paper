@@ -1,4 +1,4 @@
-\contentsline {section}{\numberline {1}Abstract}{2}{section.1}%
+\contentsline {section}{\numberline {1}Abstract}{3}{section.1}%
 \contentsline {section}{\numberline {2}Einleitung}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Identität}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Verständnis der digitalen Identität}{4}{subsection.2.2}%
@@ -47,20 +47,25 @@
 \contentsline {subsubsection}{\numberline {6.1.5}Design}{73}{subsubsection.6.1.5}%
 \contentsline {subsubsection}{\numberline {6.1.6}Beispielhafte Analyse der Collection}{74}{subsubsection.6.1.6}%
 \contentsline {subsubsection}{\numberline {6.1.7}Intrinsischer Wert}{77}{subsubsection.6.1.7}%
-\contentsline {subsection}{\numberline {6.2}Technische Umsetzung}{79}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Abgrenzung zu SSI}{81}{section.7}%
-\contentsline {section}{\numberline {8}Project 'Guard'}{81}{section.8}%
-\contentsline {section}{\numberline {9}Project 'Pools'}{81}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Einleitung}{81}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Formalisierungen}{83}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Pool-Erzeugung}{84}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Pool-Lifetime}{86}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Pool-Liquidierung}{88}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Pool-Vertrag}{89}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}Pool-Economics}{90}{subsection.9.7}%
-\contentsline {subsubsection}{\numberline {9.7.1}Einleitung}{91}{subsubsection.9.7.1}%
-\contentsline {subsubsection}{\numberline {9.7.2}Herleitung Bonding Curves}{91}{subsubsection.9.7.2}%
-\contentsline {subsubsection}{\numberline {9.7.3}Zu strukturierender Stuff}{92}{subsubsection.9.7.3}%
+\contentsline {subsection}{\numberline {6.2}Technische Umsetzung}{78}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Abgrenzung zu SSI}{80}{section.7}%
+\contentsline {section}{\numberline {8}Project 'Guard'}{80}{section.8}%
+\contentsline {section}{\numberline {9}Project 'Pools'}{80}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Einleitung}{80}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Formalisierungen}{82}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Pool-Erzeugung}{83}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Pool-Lifetime}{85}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Pool-Liquidierung}{87}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Pool-Vertrag}{88}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Pool-Economics}{89}{subsection.9.7}%
+\contentsline {subsubsection}{\numberline {9.7.1}Einleitung}{90}{subsubsection.9.7.1}%
+\contentsline {subsubsection}{\numberline {9.7.2}Grundlegende Idee}{90}{subsubsection.9.7.2}%
+\contentsline {subsubsection}{\numberline {9.7.3}Gebühren-Ordnung}{90}{subsubsection.9.7.3}%
+\contentsline {subsubsection}{\numberline {9.7.4}Business-Plan}{90}{subsubsection.9.7.4}%
+\contentsline {subsubsection}{\numberline {9.7.5}Herleitung Bonding-Curves}{90}{subsubsection.9.7.5}%
+\contentsline {subsubsection}{\numberline {9.7.6}Beispielrechnung}{91}{subsubsection.9.7.6}%
+\contentsline {subsubsection}{\numberline {9.7.7}Recap \& Ausblick}{91}{subsubsection.9.7.7}%
+\contentsline {subsubsection}{\numberline {9.7.8}Zu strukturierender Stuff}{91}{subsubsection.9.7.8}%
 \contentsline {section}{\numberline {10}Community}{101}{section.10}%
 \contentsline {section}{\numberline {11}Zusammenfassung}{101}{section.11}%
 \contentsline {section}{\numberline {12}Anhang}{101}{section.12}%
