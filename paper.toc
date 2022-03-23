@@ -59,17 +59,21 @@
 \contentsline {subsection}{\numberline {9.7}Pool-Economics}{82}{subsection.9.7}%
 \contentsline {subsubsection}{\numberline {9.7.1}Einleitung}{82}{subsubsection.9.7.1}%
 \contentsline {subsubsection}{\numberline {9.7.2}WPT - Die grundlegende Idee eines Pools-Project-Utility-Tokens}{84}{subsubsection.9.7.2}%
-\contentsline {subsubsection}{\numberline {9.7.3}Gebühren-Ordnung}{85}{subsubsection.9.7.3}%
-\contentsline {paragraph}{\nonumberline Gebühren-Modell}{85}{paragraph*.24}%
-\contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{86}{paragraph*.26}%
-\contentsline {subsubsection}{\numberline {9.7.4}Business-Plan}{87}{subsubsection.9.7.4}%
-\contentsline {subsubsection}{\numberline {9.7.5}Herleitung Bonding-Curves}{90}{subsubsection.9.7.5}%
-\contentsline {subsubsection}{\numberline {9.7.6}Beispielrechnung}{91}{subsubsection.9.7.6}%
-\contentsline {subsubsection}{\numberline {9.7.7}Recap \& Ausblick}{94}{subsubsection.9.7.7}%
-\contentsline {subsubsection}{\numberline {9.7.8}Unberücksichtigte Inhalte \& Ideen}{94}{subsubsection.9.7.8}%
-\contentsline {section}{\numberline {10}Community}{97}{section.10}%
-\contentsline {section}{\numberline {11}Zusammenfassung}{97}{section.11}%
-\contentsline {section}{\numberline {12}Anhang}{97}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Quellen und Inspiration}{97}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Bonding-Curves}{103}{subsection.12.2}%
+\contentsline {paragraph}{\nonumberline Monetarisierung \& Tokenisierung}{84}{paragraph*.24}%
+\contentsline {paragraph}{\nonumberline Die entscheidende Idee}{86}{paragraph*.26}%
+\contentsline {paragraph}{\nonumberline Umsetzung}{87}{paragraph*.28}%
+\contentsline {paragraph}{\nonumberline Ausblick}{87}{paragraph*.30}%
+\contentsline {subsubsection}{\numberline {9.7.3}Gebühren-Ordnung}{87}{subsubsection.9.7.3}%
+\contentsline {paragraph}{\nonumberline Gebühren-Modell}{87}{paragraph*.32}%
+\contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{88}{paragraph*.34}%
+\contentsline {subsubsection}{\numberline {9.7.4}Business-Plan}{89}{subsubsection.9.7.4}%
+\contentsline {subsubsection}{\numberline {9.7.5}Herleitung Bonding-Curves}{92}{subsubsection.9.7.5}%
+\contentsline {subsubsection}{\numberline {9.7.6}Beispielrechnung}{93}{subsubsection.9.7.6}%
+\contentsline {subsubsection}{\numberline {9.7.7}Recap \& Ausblick}{96}{subsubsection.9.7.7}%
+\contentsline {subsubsection}{\numberline {9.7.8}Unberücksichtigte Inhalte \& Ideen}{96}{subsubsection.9.7.8}%
+\contentsline {section}{\numberline {10}Community}{99}{section.10}%
+\contentsline {section}{\numberline {11}Zusammenfassung}{99}{section.11}%
+\contentsline {section}{\numberline {12}Anhang}{99}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Quellen und Inspiration}{99}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Bonding-Curves}{105}{subsection.12.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
