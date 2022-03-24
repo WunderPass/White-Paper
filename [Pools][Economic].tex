@@ -202,6 +202,7 @@ zu verstehen. Um das ganze nicht ausufern zu lassen, wollen wir diese Fragestell
 \vspace{0.3cm}
 
 \begin{Assumption}[Erwünschte Effekte des Pools-Project-Tokens]
+\label{token-anforderungen}
 \vspace{0.2cm}
 
 Folgende Anforderungen, Erwartungen und Absichten verfolgen wir mit dem zu designenden Projekt-Token und/oder beabsichtigen zu erfüllen:
@@ -227,46 +228,130 @@ Folgende Anforderungen, Erwartungen und Absichten verfolgen wir mit dem zu desig
 
 \end{Assumption}
 
-\vspace{0.3cm}
+\vspace{0.5cm}
 
-An der Abarbeitung dieser Liste werden wir uns durch das Kapitel hangeln und fangen bei der Einflussnahme auf die Token-Zirkulation an:
-
-\vspace{0.3cm}
-
-\todo{WIP}
+An der Abarbeitung dieser Liste werden wir uns - nicht zwingend die Reihenfolge wahrend - durch das restliche Kapitel hangeln. Bevor wir uns gleich im Anschluss etwas detaillierter dem letzten Punkt der obigen Liste - nämlich der Einflussnahme auf die Token-Zirkulation - widmen, zunächst ein sich sofort ersichtlicher \textit{Quick-Win} hinsichtlich Bullet 4 der obigen Liste:
 
 \vspace{0.3cm}
 
-\begin{Konzept}[Mechanism-Design-Aspekte des Pools-Project-Tokens]
+\begin{Konzept}[Das \textit{Bonding-Curves-Modell} als vielversprechendes Mittel für unseren Pool-Project-Token]
 \vspace{0.2cm}
 
-\todo{WIP}
+Der Wunsch nach einem \textbf{transparenten, berechenbaren und vertrauenswürdig\-en Token} aus der Anforderungsliste \ref{token-anforderungen} suggeriert, das \textit{Bonding-Curves-Modell} als Grundlage zur Modellierung unseres Pool-Project-Token in Betracht zu ziehen, da der \textit{Bonding-Curves-Ansatz}
 
 \begin{itemize}
-	\item Da die Gebühren in Token anfallen, entsteht eine gewisse natürliche Token-Zirkulation.
-	\item Staking
-	\begin{itemize}
-		\item Zur Pool-Eröffnung muss ein \textit{Sicherheits}-Stake aufgebracht werden (vom Pool-Creater).
-		\item Dazu müssen Tokens gekauft und über einen längeren Zeitraum gehalten werden.
-		\item Dies reduziert den Token-Umlauf und erhöht damit den Kurs.
-		\item Der Staker erhält einen Anteil an den veranschlagten Fees.
-		\item Der Staker ist damit nicht nur User des \textit{Pool-Service} sondern gleichzeitig auch ein Investor (Token-Holder) in das übergeordnete Pools-Project (da er gezwungen ist, die Tokens über einen längeren Zeitraum zu halten)
-		\item Der Staker ist damit mehrfach incentiviert durch 
-		\begin{itemize}
-			\item Nutzung der Dienstleistung als solches
-			\item Erstellung des/mehreren eigenen Pools aufgrund der Fees-Gewinn-Beteiligung als Staker
-			\item Erstellung vieler Pools allgemein aufgrund der Fees-Gewinn-Beteiligung als Token-Holder \textit{(word-of-mouth)}
-		\end{itemize}
-	\end{itemize}
-	\item \todo{Gebühren-Zahler:} künstlichen Token-Bedarf über längeren Zeitraum mittels \textit{Pending-Fees} forcieren
+	\item mittels Einsatzes eines Smart-Contract-AMMs, \textbf{Transparenz und Berechenbarkeit} des Tokens garantiert,
+	\item durch im Token-Contract vorgehaltene \textbf{Kapital-Deckung pro ausgegebenem Token} das Investrisiko deckelt und damit die gewünschte \textbf{Vertrauenswürdig\-keit} abbildet und
+	\item letztendlich durch seinen Basis-Mechanismus zwingend einen in seiner Logik verankerten AMM mitliefert.
 \end{itemize}
 
+\vspace{0.3cm}
+
+\todo{1-2 allgemeine fortführende Links zu \textit{Bonding-Curves} referenzieren.}
 
 \vspace{0.5cm}
+
+Tatsächlich werden wir den \textit{Bonding-Curves-Ansatz} für unseren Pool-Project-Token später wieder aufgreifen und uns seiner Anwendung - den Gedanken aus dem Anhang zu \nameref{sec:bonding-curves} folgend - bemühen.
+
+\vspace{0.3cm}
+
+Der Vorgriff darauf erfolgte an dieser Stelle lediglich aufgrund des direkten Kontext-Bezugs zu Bullet 4 aus Anforderungsliste \ref{token-anforderungen}.
 
 \end{Konzept}
 
+\newpage
+%\vspace{0.5cm}
+
+
+Nun kommen wir - wie bereits angekündigt zu Mechanismen der \textbf{Token-Zirkulation}:
+
+\vspace{0.3cm}
+
+
+\begin{Konzept}[Token-Zirkulation-Mechanismen]
+\vspace{0.2cm}
+
+Eines sofort vorweg:
+
+\vspace{0.2cm}
+\todo{\noindent\hrulefill}
+
+\todo{Die gleich vorgestellten Gedanken und Konzepte sind als noch nicht sehr ausgereifte initiale Ideen und Entwurfsmuster zu verstehen, die es noch zu erforschen und besser zu verstehen gilt. Mögen diese vielleicht in ihren grundlegenden Ansätzen noch so fundiert und durchdacht sein, wäre ein Anspruch ihrer perfekten Ausformulierung in einem - nicht auf fundierten praktischen Produkt-Erfahrung aufbauenden - White-Paper - wie es dieses aktuell ist - nur anmaßend und eine Vortäuschung einer pseudo-fundierten Theorie, die es aber ohne praktische Erprobung nicht ist.}
+
+\vspace{0.2cm}
+
+\todo{Vielmehr gilt es, die folgenden Ideen und Ansätze in ihrem Grundsatz zu verinnerlichen, und dabei gleichzeitig, die etwaigen Konkretisierungen mit Augenmaß \textit{weich} zu deuten, um diese mit zunehmender praktischer Anwendung zu validieren, zu justieren oder zu verwerfen.}
+
+\vspace{0.2cm}
+
+\todo{Dieser Teil des White-Papers ist also mit voller Absicht bis auf weiteres als \textbf{WIP} anzusehen und soll hier als solches markiert sein.}
+
+\todo{\noindent\hrulefill}
 \vspace{0.5cm}
+
+
+\textbf{Die folgenden Ausführungen betrachten den anvisierten Pool-Project-Token in seinem Dasein als \textit{Utility-Token}.}
+
+\vspace{0.2cm}
+
+Es bedarf wahrscheinlich keiner weiteren Erklärung, wir verfolgten im Großen und Ganzen einen sich \textbf{positiv entwickelnden Token-Kurs} und richteten unsere \textit{Mechanism-Design}-Überlegungen genau diesem Ziel folgend aus.
+
+\vspace{0.2cm}
+
+Den Markt-Gesetzen folgend geht ein steigender Kurs mit \textbf{steigender Nachfrage und/oder knapper werdendem Angebot} der durch den Token repräsentierten \textit{Utility} einher.
+
+\vspace{0.2cm}
+
+Da wir die \textit{Utility} unseres Pool-Project-Tokens als Zahlungsmittel für die anfallenden Service-Fees des Pools-Service definiert haben, stellt uns die Gegenüberstellung der gewünschten \textbf{Kurssteigerung des Tokens} vs. des \textbf{Angebot-Nachfrage-Prinzips} vor ein nicht unerhebliches Problem:
+
+\vspace{0.4cm}
+
+\textbf{Die Nutzung des Pools-Service erfolgt über einen gewissen (längeren) Zeitraum. Die Entrichtung der Fees geschieht dagegen in einem einzigen Moment, was die Nachfrage nach dem Pools-Service von der Nachfrage nach dem zugehörigen \textit{Utility-Token} nahezu gänzlich voneinander ent\-koppelt - wenn nicht gar das gesamte Verständnis von einer Nachfrage nach dem \textit{Utility-Token} in sich zusammenfallen lässt.} 
+
+\vspace{0.4cm}
+
+Um genau diesem Problem entgegenzuwirken und die \textit{Utility} - die wir unverändert bei der Service-Fee-Abrechnung belassen wollen - zeitlich auf die übergeordnete Pools-Nutzung-Dienstleistung auszudehnen und dabei gleichzeitig eine \textbf{künstliche Verknappung} der zirkulierenden Pool-Project-Tokens zu induzieren, bedienen wir uns zweier entscheidender Design-Mechanismen:
+
+\vspace{0.5cm}
+
+\underline{\textbf{Pending-Fees}}
+
+\vspace{0.3cm}
+
+\todo{Gebühren-Zahler:} künstlichen Token-Bedarf über längeren Zeitraum mittels \textit{Pending-Fees} forcieren
+
+
+\vspace{0.75cm}
+
+\underline{\textbf{Staking}}
+
+\vspace{0.3cm}
+
+\vspace{0.3cm}
+\todo{WIP}
+
+\vspace{0.3cm}
+
+
+\begin{itemize}
+	\item Der Pool-Initiator müsste bei der Pool-Eröffnung WPT staken, die er unter bestimmten Umständen verlieren könnte, wenn sein Pool zB. ungenutzt bleibt. So könnte man sicherstellen, dass ernste Absichten hinter den Pools stecken und diese auch genutzt werden. 	
+	\item Dazu müssen Tokens gekauft und über einen längeren Zeitraum gehalten werden.
+	\item Dies reduziert den Token-Umlauf und erhöht damit den Kurs.
+	\item Der Staker erhält einen Anteil an den veranschlagten Fees.
+	\item Der Staker ist damit nicht nur User des \textit{Pool-Service} sondern gleichzeitig auch ein Investor (Token-Holder) in das übergeordnete Pools-Project (da er gezwungen ist, die Tokens über einen längeren Zeitraum zu halten)
+	\item Der Staker ist damit mehrfach incentiviert durch 
+	\begin{itemize}
+		\item Nutzung der Dienstleistung als solches
+		\item Erstellung des/mehreren eigenen Pools aufgrund der Fees-Gewinn-Beteiligung als Staker
+		\item Erstellung vieler Pools allgemein aufgrund der Fees-Gewinn-Beteiligung als Token-Holder \textit{(word-of-mouth)}
+	\item In jedem Fall sollte der Staker im Normalfall (falls er nicht irgendwie Scheiße baut) bei der Auflösung des Pools mindestens seinen Einsatz zurückerhalten (also keinerlei Gebühren für die Nutzung des Pool-Service zahlen). In aller Regel sollte er mit mehr als dem ursprünglich gestakten Betrag rausgehen.
+	\end{itemize}
+\end{itemize}
+
+
+\end{Konzept}
+\vspace{0.5cm}
+
 
 
 
@@ -284,7 +369,6 @@ An der Abarbeitung dieser Liste werden wir uns durch das Kapitel hangeln und fan
 		\item Inspiration: \href{https://medium.com/atchai/can-we-save-the-utility-token-55ef639370cf}{Utility-Token als Bunding-Curves-Modell}
 		\item Modellierung mit den Denkansätzen aus dem Anhang zu \nameref{sec:bonding-curves} unter Einbeziehung der obigen Gewinnbeteiligung an Fees
 	\end{itemize}	
-	\item Entfernen der Inhalte aus Kapitel 5, die diese ganzen Ideen andeuten.
 \end{itemize}
 
 \vspace{0.5cm}
@@ -298,6 +382,7 @@ An der Abarbeitung dieser Liste werden wir uns durch das Kapitel hangeln und fan
 \todo{WIP}
 
 \begin{itemize}
+	\item Der erste und größere Investor für das Pool-Projekt wäre WunderPass selbst. Für die erfolgte Einlage in den Projekt-Pool bekäme WunderPass WPT, die es für Incentivierungen und Rewards für die Nutzung von Pools verwenden könnte. Dieses Invest könnte (im Gegensatz zu den Einlagen anderer Investoren) zB. auch einem Locking unterliegen, um eine gewisse Preisstabilität des WPT zu gewährleisten.	
 	\item Erste Andeutung, dass die Token-Contract-Treasury zwar im ersten Schritt in \textit{USDT} modelliert, jedoch in \textit{WUNDER} geplant ist.
 	\item Ausblick auf die anschließenden Kapitel, die das präsentierte Konzept umsetzen.
 	\item Erstmals auf \textit{Economics-Excel} verweisen.
@@ -822,12 +907,45 @@ Im Folgenden wieder die obige Forecast-Aufstellung - nun aus Token-Sicht:
 		\item fester, statischer Split
 		\item fester, statischer Split mit eingebauten Unter- und Obergrenzen für den Gesamtertrag des Stakers $\sigma_{S} \cdot fees^{\mathcal{P}}$
 		\item $fees^{\mathcal{P}}$-abhängiger (progressiver) Split, bei dem der Anteil des Stakers $\sigma_{S}$ mit zunehmendem $fees^{\mathcal{P}}$ stets kleiner wird. Dies unter Umständen ebenfalls unter Berücksichtigung eingebauter Unter- und Obergrenzen für den Staker.
+		\item Begünstigung des Stakers in Abhängigkeit seines NFT-Pass-Status.
 	\end{itemize}	
 	\item Anfängliche Air-Drops von \textit{W-PLT} an erste Pool-User müssen einer Locking-Periode unterliegen.
 	\item Problem: Wenn Token-Holder aussteigen, nehmen diese nicht nur ihren Anteil an den bisher erwirtschafteten Fees-Einnahmen mit, sondern drücken zudem auch noch den Token-Kurs nach unten. Das stellt einen sich selbst verstärkenden Effekt dar, der irgendwie in den Griff zu bekommen ist (evtl. Locking-Periode oder berücksichtigende Verkaufs-Kurve).
 	\item Es macht eine Locking-Periode von der Dauer der durchschnittlichen Pool-Lifetime viel Sinn, da die beim Verkauf der Tokens mitgenommenen Gewinne aus Fees-Einnahmen durch neu generierte Fees-Einnahmen egalisiert werden und der Token-Value somit stabil bleibt.
-	\item Wie schafft man die Brücke zwischen Fees in \textit{USDT} und \textit{W-PLT}?
+	\item Die Einlage für den \textit{W-PLT} ist idealerweise in WUNDER zu erbringen \todo{(Es ist noch unklar, wie man an WUNDER kommt, wenn es vorher keinen Token-Sale gegeben hat. Ob der WUNDER ebenfalls mittels Bonding-Curves abzubilden wäre, sei hier erst einmal mehr als unklar.)}
+	
 \end{itemize}
+
+\vspace{1.0cm}
+
+\begin{Problem}[\textit{USDT} vs. \textit{W-PLT} als Berechnungsgrundlage für Fees, Staking etc.]
+\vspace{0.2cm}
+
+\todo{Was nehmen wir hier?}
+
+\vspace{0.5cm}
+
+\todo{Folgend übernommene alte Test-Passagen zu dem Thema:}
+
+\vspace{0.5cm}
+
+Ein weiterer sehr essenzieller Faktor für die Größe des zu stakenden Betrags könnte der Kurs des IPTs sein. Denn laut der \textbf{Bonding-Curves}-Implementierung würde der \textit{W-PLT}-Preis mit steigender Zirkulation steigen, was mit der Zunahme von existierende Pools geschähe. Damit wäre die Erstellung neuer Pools mit ihrer zahlen\-mäßigen Zunahme stets kapital-intensiver (aber nicht gleichbedeutend teurer). \textbf{Die Frage hierbei ist also, ob der zu erbringende Stake des Pool-Creators auf den \textit{Total-Supply des W-PLT} normiert werden sollte oder nicht}, die gänzlich mit der obigen Fragestellung einhergeht, ob der Pool-Creator eigentlich staken möchte oder das nur tun muss.
+	
+\begin{itemize}
+	\item Gegen eine Normierung spricht die Annahme/Hoffnung, ein Pool-Creator sei gleichzeitig auch ein großer Supporter des gesamten Projekt und glaube daran. Wenn der \textit{W-PLT}-Preis steigt, ist dies gleichbedeutend mit der Zunahme an genutzten Pools, an denen der Pool-Creator als Staker, Besitzer von \textit{W-PLT} und damit Projekt-Investor auch selbst (finanziell) profitiert.
+	\item Für eine Normierung spricht dagegen die potenzielle Gefahr, neue oder bestehende User durch eine zu hohe finanzielle Sicherheitseinlage davon abzuschrecken neue Pools zu erstellen.
+\end{itemize}
+
+\vspace{0.2cm}
+	
+Die Antwort auf diese Fragestellung könnte auch darin liegen, ob wir uns besonders viele oder lieber weniger aber besonders Teilnehmer-starke Pools wünschen.
+
+\vspace{0.5cm}
+	
+Die \textit{Pool-Teilnehmer} (außer des Creators) können bei dieser Logik aber nicht wie nicht wie die Staker zusätzlich als Projekt-Investoren angesehen werden, weil sie \textit{W-PLT} kaufen, da die gekauften \textit{W-PLT} direkt als Gebühr entrichtet werden. Für die Pool-Teilnehmer stellt der \textit{W-PLT} also eher einen Utility- bzw. Purpose-Token dar weshalb die Höhe der zu entrichtenden Gebühr zweifelsfrei auf Basis von \textit{Total-Supply des W-PLT} normiert werden muss (die Gebühr darf keinesfalls mit Zunahme von Pools steigen).
+
+
+\end{Problem}
 
 
 \newpage
