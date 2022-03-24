@@ -131,29 +131,101 @@ Für den - unbestreitbar verkomplizierenden und technisch teils nicht unerheblic
 \textbf{ }
 \vspace{0.3cm}
 
-Allen relevanten Erklärungen vorweggreifend folgt unser fundamentale \textit{Token-Economics}-Ansatz für die Pools-Project-Token:
+Allen relevanten Erklärungen vorweggreifend folgt unser fundamentale \\
+\textit{Token-Economics}-Ansatz für die Pools-Project-Token:
 
 \vspace{0.2cm}
 
-\begin{Praemisse}[Dividende auf den Pools-Project-Token]
+\begin{Konzept}[Dividende auf den Pools-Project-Token]
 \vspace{0.2cm}
+
+Zusätzlich zur \textit{Utility}-Beschaffenheit unseres Pools-Project-Tokens möchten \\
+wir diesem noch eine gewisse \textit{Equity}-Eigenschaft einverleiben:
+
+\vspace{0.2cm}
+
+\textbf{Ein Token-Besitzer soll mittels des Tokens nicht nur den Pools-Service nutzen können oder an der steigenden Nachfrage nach diesem - durch eine positive Kursentwicklung - profitieren, sondern zusätzlich DIREKT an den generierten Erträgen des gesamten Pools-Projects beteiligt werden.}
+
+\vspace{0.2cm}
+
+Er soll demnach de facto als Anteilseigner des Pools-Projects gelten und an etwaigen Gewinnen des Projekts - in Form einer gewissen \textit{Dividende} - pro rata seines Token-Volumens partizipieren.
+
+\vspace{0.2cm}
+
+Die Implementierung dieses \textit{Equity}-Mechanismus soll selbstverständlich mittels eines Smart-Contracts sichergestellt sein, was unseren Token stark von anderen \\ \textit{Equity}-Tokens abhebt.
+
+\vspace{0.2cm}
+
+Durch diesen zusätzlichen Kniff, schaffen wir eine sich selbst verstärkende Synergie zwischen den \textit{Utility}- und \textit{Equity}-Eigenschaften unseres Pools-Project-Tokens, indem wir einen potenziellen User des Pools-Service (besitzt \textit{Utility} in Form des Tokens) gleichzeitig zu einem Projekt-Investor machen (besitzt \textit{Equity} in Form desselben Tokens). Dieser doppelte Synergieeffekt weitet sich auch unmittelbar auf die Kursentwicklung aus. DENN: Wachsende Nutzung des Pools-Services impliziert zwangsläufig eine steigende Token-Zirkulation (im Sinne der \textit{Utility}-Beschaffenheit) und steigenden Bedarf und somit Nachfrage nach dem Token UND generiert gleich\-zeitig zunehmenden Ertrag durch Service-Fees, was wiederum eine Wertsteigerung des Tokens aus seiner \textit{Equity}-Beschaffenheit nach sich zieht.
+
+\end{Konzept}
+
+\vspace{0.3cm}
+
+Wie genau wir uns das eben formulierte Vorhaben in der Umsetzung planen, wird etwas weiter unten vertieft. Zunächst bleiben wir beim ökonomischen Teil des Token-Designs und erarbeiten einige relevante Mechanismen.
+
+\vspace{0.5cm}
+
+
+\paragraph{Token-Design}
+\textbf{ }
+\vspace{0.3cm}
+
+Beim Design unseres Pools-Project-Tokens wollen wir uns stark an den Gedanken des spieltheoretischen Gebiets des \href{https://de.wikipedia.org/wiki/Mechanismus-Design-Theorie}{Mechanismus-Design} orientieren.
+
+Dieses Wissenschaftsgebiet befasst sich im Wesentlichen damit als \textit{höhere Instanz eines Spiels} - also in dem Fall wir als Project-Owner - mittels Regelgestaltung und Incentivierungs-Mechanismen - also in unserem Fall mittels Token-Design - Einfluss auf das Verhalten der Spieler - also in dem Fall Nutzer des Pool-Service und Investoren - im Sinne des Spiels nehmen kann.
+
+\vspace{0.1cm}
+
+Entscheidend hinsichtlich letzter Formulierung ist dabei das \textit{"... im Sinne des Spiels..."} genaust möglich zu präzisieren und idealerweise zu quantifizieren und formalisieren.
+
+\vspace{0.5cm}
+
+\textbf{Was möchten wir also genau wie, wann und womit erreichen für unser Pools-Projekt?}
+
+\vspace{0.5cm}
+
+Dabei bewegen sich die \href{https://de.wikipedia.org/wiki/Mechanismus-Design-Theorie}{Mechanismus-Design}-Werkzeuge tendenziell auf einer granularen Ebene, weshalb die Antwort \textit{"Pools-Project to the moon!"} auf obige Frage nicht in deren Sinne stünde. Viel mehr ist obige Frage daher als
+
+\begin{itemize}
+	\item Welche Etappenziele möchten wir erreichen (Projekt-Funding, Wachstum, Exit etc.)?
+	\item Welche Projekt-Stakeholder (Gründer, Project-Owner, Investoren, User etc.) werden gebraucht und wie können diese gewonnen und deren Interessen gewahrt werden?
+	\item Welche Hebel und designte Einflussmöglichkeiten möchten wir mittels von Token-Mechanismen besonders stark in eigener Hand behalten, anstatt sie dem Zufall oder Markt-Gesetzen zu überlassen?
+	\item Welche Synergien möchten wir schaffen/verstärken bzw. verhindern/bremsen?
+	\item Letzeres ist nicht nur aus Sicht des Pools-Projekts für sich alleinstehend zu betrachten sondern insbesondere auch im Hinblick auf ein etwaiges künftiges Wunder-Ökosystem. 
+	\item Wie können wir als Gründer/Project-Owner (finanziell) profitieren?
+\end{itemize}
+
+zu verstehen. Um das ganze nicht ausufern zu lassen, wollen wir diese Fragestellungen stark auf das Pools-Projekt, seinen Projekt-Token und insbesondere dessen erhofften Effekte fokussieren:
+
+\vspace{0.3cm}
+
+\begin{Assumption}[Erwünschte Effekte des Pools-Project-Tokens]
+\vspace{0.2cm}
+
+\todo{WIP}
+
+\begin{itemize}
+	\item Projekt-Funding
+	\item Deckung von DEV-Kosten
+	\item Profit für Gründer, Investoren, Early-Adopters 
+	\item Verhinderung von Pump'n'Dump
+	\item Utility-Token hat deflationär zu sein
+	\item \textit{pseudo-deflationärer} Token $\rightarrow$ Hebel über Kurs und Supply
+	\item Token-Zirkulation fördern
+	\item künstlichen Token-Bedarf über längeren Zeitraum mittels \textit{Pending-Fees} forcieren
+	\item
+\end{itemize}
+
+\end{Assumption}
+
+\vspace{0.3cm}
 
 \todo{WIP}
 
 \vspace{0.3cm}
 
-\todo{Gewinnbeteiligung der Token-Holder an den kassierten Fees $\rightarrow$ Kurs-Entwicklung bei Projekt-Erfolg}
-
-\end{Praemisse}
-
-\vspace{0.3cm}
-
-
-Diesem Ansatz folgend schlagen wir grob folgende beim Token-Design zu berücksichtigenden Mechanismen vor:
-
-\vspace{0.2cm}
-
-\begin{Algo}[Mechanism-Design-Aspekte des Pools-Project-Tokens]
+\begin{Konzept}[Mechanism-Design-Aspekte des Pools-Project-Tokens]
 \vspace{0.2cm}
 
 \todo{WIP}
@@ -180,7 +252,7 @@ Diesem Ansatz folgend schlagen wir grob folgende beim Token-Design zu berücksic
 
 \vspace{0.5cm}
 
-\end{Algo}
+\end{Konzept}
 
 \vspace{0.5cm}
 
