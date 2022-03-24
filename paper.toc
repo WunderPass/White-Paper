@@ -63,18 +63,18 @@
 \contentsline {paragraph}{\nonumberline Die entscheidende Idee}{86}{paragraph*.26}%
 \contentsline {paragraph}{\nonumberline Token-Design}{86}{paragraph*.28}%
 \contentsline {paragraph}{\nonumberline Umsetzung}{89}{paragraph*.30}%
-\contentsline {paragraph}{\nonumberline Ausblick}{89}{paragraph*.32}%
-\contentsline {subsubsection}{\numberline {9.7.3}Gebühren-Ordnung}{89}{subsubsection.9.7.3}%
-\contentsline {paragraph}{\nonumberline Gebühren-Modell}{89}{paragraph*.34}%
-\contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{90}{paragraph*.36}%
-\contentsline {subsubsection}{\numberline {9.7.4}Business-Plan}{91}{subsubsection.9.7.4}%
-\contentsline {subsubsection}{\numberline {9.7.5}Herleitung Bonding-Curves}{94}{subsubsection.9.7.5}%
-\contentsline {subsubsection}{\numberline {9.7.6}Beispielrechnung}{95}{subsubsection.9.7.6}%
-\contentsline {subsubsection}{\numberline {9.7.7}Recap \& Ausblick}{98}{subsubsection.9.7.7}%
-\contentsline {subsubsection}{\numberline {9.7.8}Unberücksichtigte Inhalte \& Ideen}{98}{subsubsection.9.7.8}%
-\contentsline {section}{\numberline {10}Community}{101}{section.10}%
-\contentsline {section}{\numberline {11}Zusammenfassung}{101}{section.11}%
-\contentsline {section}{\numberline {12}Anhang}{101}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Quellen und Inspiration}{101}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Bonding-Curves}{107}{subsection.12.2}%
+\contentsline {paragraph}{\nonumberline Ausblick}{90}{paragraph*.32}%
+\contentsline {subsubsection}{\numberline {9.7.3}Gebühren-Ordnung}{90}{subsubsection.9.7.3}%
+\contentsline {paragraph}{\nonumberline Gebühren-Modell}{90}{paragraph*.34}%
+\contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{91}{paragraph*.36}%
+\contentsline {subsubsection}{\numberline {9.7.4}Business-Plan}{92}{subsubsection.9.7.4}%
+\contentsline {subsubsection}{\numberline {9.7.5}Herleitung Bonding-Curves}{95}{subsubsection.9.7.5}%
+\contentsline {subsubsection}{\numberline {9.7.6}Beispielrechnung}{96}{subsubsection.9.7.6}%
+\contentsline {subsubsection}{\numberline {9.7.7}Recap \& Ausblick}{99}{subsubsection.9.7.7}%
+\contentsline {subsubsection}{\numberline {9.7.8}Unberücksichtigte Inhalte \& Ideen}{99}{subsubsection.9.7.8}%
+\contentsline {section}{\numberline {10}Community}{102}{section.10}%
+\contentsline {section}{\numberline {11}Zusammenfassung}{102}{section.11}%
+\contentsline {section}{\numberline {12}Anhang}{102}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Quellen und Inspiration}{102}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Bonding-Curves}{108}{subsection.12.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
