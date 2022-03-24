@@ -1,0 +1,45 @@
+% !TEX root = paper.tex
+
+Die Idee hinter den sogenannten \textit{Wunder-Pools} ist das Bündeln von Liquidität mehrerer User/Teilnehmer bzw. eine Art 'Treuehandverwahrung' in einem gemeinsamen Pool. Die Anwendungsfälle solche Pools können sehr zahlreich sein. Um im Folgenden nur einige Beispiele zu nennen:  
+
+\begin{itemize}
+  \item Gemeinsame Invests in (Crypto-)Assets.
+  \item Pool für ein gemeinsames (Geburtstags-)Geschenk.
+  \item Kicktipp-Pool (der über die gesamte Saison verwahrt werden muss).
+  \item Wetten unter Freunden.
+  \item Ausgleichspool für Auslagen von Geld an Freunde (Splitwise).
+\end{itemize}
+
+\vspace{0.2cm}
+
+Das besondere an dem in den folgenden Abschnitten genauer zu beschreibenden Modell, ist sein sehr allgemein gehaltener Ansatz, mit dem sich gleichzeitig Cases umsetzen lassen, die auf den ersten Blick sehr verschieden zu sein scheinen. Genauer genommen lassen sich solche Pools mit speziellen \textit{DAO-Strukturen} beschreiben.
+
+Abgesehen von der den Pools zugrundeliegenden Geschäftslogik, besteht der zentrale Ansatz unserer \textit{Wunder-Pools} darin, dem User ein rundes Produkt anzubieten - und zwar ganz unabhängig dessen, welcher der oben genannten Cases nun tatsächlich umgesetzt wird. An dieser Stelle möchten wir uns daher ganz explizit von dem Status quo der heute gängigen UX in der Web3-Welt abgrenzen.
+
+\vspace{0.2cm}
+
+Ganz grob beschrieben, streben wir in etwa folgende Geschäftslogik an:
+
+\begin{itemize}
+  \item Ein User erstellt einen Pool (in einer dafür implementierten Wunder-Pool-Applikation).
+  \item Derselbe User definiert die Pool-Art, ein etwaiges dazugehöriges Regelwerk und fordert andere User auf, dem Pool beizutreten. Idealerweise erfolgt die Einladung mittels Suche nach der Wunder-ID des einzuladenden Teilnehmers (und nicht etwa anhand seiner Ethereum-Adresse oder sonstigem).
+  \item Die eingeladenen Teilnehmer erhalten die Einladung (in der WunderPass-App oder der Wunder-Pool-Applikation) und können entscheiden, ob sie dem Pool beitreten möchten oder nicht. 
+  \item In der Regel ist sofort beim Beitritt des Pools der definierte Einsatz zu entrichten (der anschließend in die Pool-Treasury geht). In einigen Cases kann der Einsatz evtl. zu einem späteren Zeitpunkt erfolgen oder gar ganz entfallen (z.B. beim Case \textit{Splitwise}).
+  \item Der Pool ist eingerichtet und "kommt zu Einsatz", wie in etwa
+  \begin{itemize}
+  	\item zum gemeinschaftlichen Investieren in (Crypto-)Assets,
+  	\item zum Verwahren "in Treuhand" bei einer oder mehreren abgeschlossenen Wetten (oder auch z. B. Kicktipp)
+  	\item etc.
+  \end{itemize}
+  \item Der Pool wird liquidiert und das Geld nach dem vorher festgelegten Regelwerk auf alle Pool-Teilnehmer (nach einem aus dem Regelwerk folgenden Verteilungsschlüssel) verteilt. Die Liquidierung selbst kann entweder ebenfalls durch das Regelwerk auf einen bestimmten Zeitpunkt und/oder Ereignis terminiert werden (z.B. Ende einer BuLi-Saison beim Case \textit{Kicktipp}) oder aber durch die Teilnehmer beschlossen werden (mittels einer DAO-Abstimmung). Die Errechnung des genannten Verteilungsschlüssels möchten wir möglichst allgemein halten und übertragen diese Verantwortlichkeit einem \textit{abstrakten Oracle}, welches es stets Case-spezifisch zu definieren (und zu implementieren) gilt.
+\end{itemize}
+
+\vspace{0.2cm}
+
+\underline{\textbf{Product-Sicht}}
+
+\vspace{0.2cm}
+
+Abschließend sei noch einmal betont, dass wir das/die aus den Wunder-Pools hervorgehende(n) Product(s) (mittelfristig) alternativlos user-friendly sehen. Ohne notwendigen Bezug zur Crypto-Szene, ohne MetaMask und ohne kryptische hexadezimale Wallet-Adressen. Stattdessen clean und simpel.
+
+\vspace{0.5cm}

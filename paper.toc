@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {2.2}Verständnis der digitalen Identität}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Missstände der digitalen Identität}{6}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Vision}{10}{section.3}%
-\contentsline {section}{\numberline {4}Unser Ansatz}{13}{section.4}%
+\contentsline {section}{\numberline {4}Umsetzung}{13}{section.4}%
 \contentsline {section}{\numberline {5}Economics}{14}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Einleitung}{14}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Goals}{18}{subsection.5.2}%
@@ -35,45 +35,44 @@
 \contentsline {subsubsection}{\numberline {5.4.7}WPT in Zahlen}{49}{subsubsection.5.4.7}%
 \contentsline {subsubsection}{\numberline {5.4.8}Fazit}{49}{subsubsection.5.4.8}%
 \contentsline {subsection}{\numberline {5.5}Fazit}{49}{subsection.5.5}%
-\contentsline {section}{\numberline {6}NFT-Pass}{49}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Konzeption}{49}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Status-Property}{50}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Hologramm}{52}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Pattern-Property}{54}{subsubsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.4}Edition}{56}{subsubsection.6.1.4}%
-\contentsline {subsubsection}{\numberline {6.1.5}Design}{58}{subsubsection.6.1.5}%
-\contentsline {subsubsection}{\numberline {6.1.6}Beispielhafte Analyse der Collection}{59}{subsubsection.6.1.6}%
-\contentsline {subsubsection}{\numberline {6.1.7}Intrinsischer Wert}{62}{subsubsection.6.1.7}%
-\contentsline {subsection}{\numberline {6.2}Technische Umsetzung}{64}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Abgrenzung zu SSI}{66}{section.7}%
-\contentsline {section}{\numberline {8}Project 'Guard'}{66}{section.8}%
-\contentsline {section}{\numberline {9}Project 'Pools'}{66}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Einleitung}{66}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Formalisierungen}{68}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Pool-Erzeugung}{69}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Pool-Lifetime}{71}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Pool-Liquidierung}{73}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Pool-Vertrag}{74}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}Pool-Economics}{75}{subsection.9.7}%
-\contentsline {subsubsection}{\numberline {9.7.1}Einleitung}{75}{subsubsection.9.7.1}%
-\contentsline {subsubsection}{\numberline {9.7.2}WPT - Die grundlegende Idee eines Pools-Project-Utility-Tokens}{77}{subsubsection.9.7.2}%
-\contentsline {paragraph}{\nonumberline Monetarisierung \& Tokenisierung}{77}{paragraph*.24}%
-\contentsline {paragraph}{\nonumberline Die entscheidende Idee}{79}{paragraph*.26}%
-\contentsline {paragraph}{\nonumberline Token-Design}{79}{paragraph*.28}%
-\contentsline {paragraph}{\nonumberline Umsetzung}{85}{paragraph*.30}%
-\contentsline {paragraph}{\nonumberline Ausblick}{85}{paragraph*.32}%
-\contentsline {subsubsection}{\numberline {9.7.3}Gebühren-Ordnung}{85}{subsubsection.9.7.3}%
-\contentsline {paragraph}{\nonumberline Gebühren-Modell}{85}{paragraph*.34}%
-\contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{86}{paragraph*.36}%
-\contentsline {subsubsection}{\numberline {9.7.4}Business-Plan}{87}{subsubsection.9.7.4}%
-\contentsline {subsubsection}{\numberline {9.7.5}Herleitung Bonding-Curves}{90}{subsubsection.9.7.5}%
-\contentsline {subsubsection}{\numberline {9.7.6}Beispielrechnung}{91}{subsubsection.9.7.6}%
-\contentsline {subsubsection}{\numberline {9.7.7}Recap \& Ausblick}{94}{subsubsection.9.7.7}%
-\contentsline {subsubsection}{\numberline {9.7.8}Unberücksichtigte Inhalte \& Ideen}{94}{subsubsection.9.7.8}%
-\contentsline {section}{\numberline {10}Community}{98}{section.10}%
-\contentsline {section}{\numberline {11}Zusammenfassung}{98}{section.11}%
-\contentsline {section}{\numberline {12}Anhang}{98}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Quellen und Inspiration}{98}{subsection.12.1}%
-\contentsline {subsubsection}{\numberline {12.1.1}WUNDER-Token - Skizze eines möglichen Kreislaufs}{104}{subsubsection.12.1.1}%
-\contentsline {subsection}{\numberline {12.2}Bonding-Curves}{107}{subsection.12.2}%
+\contentsline {section}{\numberline {6}Abgrenzung zu SSI}{49}{section.6}%
+\contentsline {section}{\numberline {7}Zusammenfassung}{49}{section.7}%
+\contentsline {section}{\numberline {A}NFT-Pass}{50}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Konzeption}{50}{subsection.A.1}%
+\contentsline {subsubsection}{\numberline {A.1.1}Status-Property}{51}{subsubsection.A.1.1}%
+\contentsline {subsubsection}{\numberline {A.1.2}Hologramm}{52}{subsubsection.A.1.2}%
+\contentsline {subsubsection}{\numberline {A.1.3}Pattern-Property}{55}{subsubsection.A.1.3}%
+\contentsline {subsubsection}{\numberline {A.1.4}Edition}{56}{subsubsection.A.1.4}%
+\contentsline {subsubsection}{\numberline {A.1.5}Design}{58}{subsubsection.A.1.5}%
+\contentsline {subsubsection}{\numberline {A.1.6}Beispielhafte Analyse der Collection}{59}{subsubsection.A.1.6}%
+\contentsline {subsubsection}{\numberline {A.1.7}Intrinsischer Wert}{63}{subsubsection.A.1.7}%
+\contentsline {subsection}{\numberline {A.2}Technische Umsetzung}{65}{subsection.A.2}%
+\contentsline {section}{\numberline {B}Project 'Pools'}{68}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Einleitung}{68}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Formalisierungen}{69}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.3}Pool-Erzeugung}{70}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.4}Pool-Lifetime}{73}{subsection.B.4}%
+\contentsline {subsection}{\numberline {B.5}Pool-Liquidierung}{74}{subsection.B.5}%
+\contentsline {subsection}{\numberline {B.6}Pool-Vertrag}{76}{subsection.B.6}%
+\contentsline {subsection}{\numberline {B.7}Pool-Economics}{76}{subsection.B.7}%
+\contentsline {subsubsection}{\numberline {B.7.1}Einleitung}{76}{subsubsection.B.7.1}%
+\contentsline {subsubsection}{\numberline {B.7.2}WPT - Die grundlegende Idee eines Pools-Project-Utility-Tokens}{78}{subsubsection.B.7.2}%
+\contentsline {paragraph}{\nonumberline Monetarisierung \& Tokenisierung}{78}{paragraph*.24}%
+\contentsline {paragraph}{\nonumberline Die entscheidende Idee}{80}{paragraph*.26}%
+\contentsline {paragraph}{\nonumberline Token-Design}{81}{paragraph*.28}%
+\contentsline {paragraph}{\nonumberline Umsetzung}{87}{paragraph*.30}%
+\contentsline {paragraph}{\nonumberline Ausblick}{87}{paragraph*.32}%
+\contentsline {subsubsection}{\numberline {B.7.3}Gebühren-Ordnung}{87}{subsubsection.B.7.3}%
+\contentsline {paragraph}{\nonumberline Gebühren-Modell}{87}{paragraph*.34}%
+\contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{88}{paragraph*.36}%
+\contentsline {subsubsection}{\numberline {B.7.4}Business-Plan}{89}{subsubsection.B.7.4}%
+\contentsline {subsubsection}{\numberline {B.7.5}Herleitung Bonding-Curves}{92}{subsubsection.B.7.5}%
+\contentsline {subsubsection}{\numberline {B.7.6}Beispielrechnung}{93}{subsubsection.B.7.6}%
+\contentsline {subsubsection}{\numberline {B.7.7}Recap \& Ausblick}{96}{subsubsection.B.7.7}%
+\contentsline {subsubsection}{\numberline {B.7.8}Unberücksichtigte Inhalte \& Ideen}{96}{subsubsection.B.7.8}%
+\contentsline {section}{\numberline {C}Project 'Guard'}{100}{appendix.C}%
+\contentsline {section}{\numberline {D}Diverses}{101}{appendix.D}%
+\contentsline {subsection}{\numberline {D.1}Quellen und Inspiration}{101}{subsection.D.1}%
+\contentsline {subsection}{\numberline {D.2}WUNDER-Token - Skizze eines möglichen Kreislaufs}{107}{subsection.D.2}%
+\contentsline {subsection}{\numberline {D.3}Bonding-Curves}{110}{subsection.D.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
