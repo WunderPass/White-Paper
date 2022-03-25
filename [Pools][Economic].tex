@@ -82,6 +82,8 @@ Dazu folgen zunächst einige - mehr oder minder erklärungsbedürftige - rohe Au
 \vspace{0.2cm} 
 
 \begin{Praemisse}[Monetarisierung]
+\label{monetarisierung}
+\vspace{0.2cm}
 
 Die Monetarisierung unseres Pool-Service soll auf Basis (prozentualer) Fees (siehe \nameref{sec:fees}) - gemessen am (finanziellen) Volumen der erbrachten Dienst\-leistung - erfolgen. Für den Moment sehr plakativ betrachtet, ist dies gleichbedeutend mit: 
 
@@ -94,8 +96,8 @@ Die Monetarisierung unseres Pool-Service soll auf Basis (prozentualer) Fees (sie
 \vspace{0.5cm}
 
 \begin{Praemisse}[Utility-Token als Monetarisierungs-Tool für alle Stakeholder]
-
-\vspace{0.2cm} 
+\label{fees-for-token}
+\vspace{0.2cm}
 
 \textbf{Die Fees sollen mittels eines dafür geschaffenen Utility-Tokens abgerechnet, erhoben und erbracht werden!}
 
@@ -235,6 +237,7 @@ An der Abarbeitung dieser Liste werden wir uns - nicht zwingend die Reihenfolge 
 \vspace{0.3cm}
 
 \begin{Konzept}[Das \textit{Bonding-Curves-Modell} als vielversprechendes Mittel für unseren Pool-Project-Token]
+\label{bcm}
 \vspace{0.2cm}
 
 Der Wunsch nach einem \textbf{transparenten, berechenbaren und vertrauenswürdig\-en Token} aus der Anforderungsliste \ref{token-anforderungen} suggeriert, das \textit{Bonding-Curves-Modell} als Grundlage zur Modellierung unseres Pool-Project-Token in Betracht zu ziehen, da der \textit{Bonding-Curves-Ansatz}
@@ -259,8 +262,8 @@ Der Vorgriff darauf erfolgte an dieser Stelle lediglich aufgrund des direkten Ko
 
 \end{Konzept}
 
-\newpage
-%\vspace{0.5cm}
+%\newpage
+\vspace{0.5cm}
 
 
 Nun kommen wir - wie bereits angekündigt zu Mechanismen der \textbf{Token-Zirkulation}:
@@ -269,6 +272,7 @@ Nun kommen wir - wie bereits angekündigt zu Mechanismen der \textbf{Token-Zirku
 
 
 \begin{Konzept}[Token-Zirkulation-Mechanismen]
+\label{circulation}
 \vspace{0.2cm}
 
 Eines sofort vorweg:
@@ -317,6 +321,9 @@ Um genau diesem Problem entgegenzuwirken und die \textit{Utility} - die wir unve
 \underline{\textbf{Pending-Fees}}
 
 \vspace{0.3cm}
+\todo{WIP}
+
+\vspace{0.3cm}
 
 \todo{Gebühren-Zahler:} künstlichen Token-Bedarf über längeren Zeitraum mittels \textit{Pending-Fees} forcieren
 
@@ -359,14 +366,42 @@ Um genau diesem Problem entgegenzuwirken und die \textit{Utility} - die wir unve
 \textbf{ }
 \vspace{0.3cm}
 
+Gleichwohl noch nicht richtig quantifizierbar, jedoch konzeptuell bereits solide Formen annehmend, wollen wir an dieser Stelle endlich unseren angestrebten \textit{Pool-Project-Token} einführen und fortan an einem konkreten anstatt wie bisher abstrakt gehaltenem Gebilde weiterarbeiten:
+
+\vspace{0.3cm}
+
+\begin{Solution}[WunderPool-Token (\textit{WPT})]
+\label{wpt}
+\vspace{0.2cm}
+
+Folgenden bisher erarbeiteten wesentlichen Ergebnissen folgend definieren wir den WunderPool-Token (\textbf{WPT}) als den anvisierten \textit{Pool-Project-Token}:
+
+\begin{itemize}
+	\item Die Monetarisierung des Pools-Projekt erfolgt durch Service-Fees, die Mittels des \textit{Utility-Tokens} \textbf{WPT} veranschlagt und abgerechnet werden (Prämissen \ref{monetarisierung} und \ref{fees-for-token}).
+	\item Die Venture-Invests der \textbf{WPT}-Käufer werden durch echte Kapital-Rücklagen innerhalb des \textbf{WPT}-Token-Contracts gedeckt (Design-Merkmal \ref{bcm}).
+	\item Alle \textbf{WPT}-Holder werden finanziell am etwaigen Projekt-Erfolg beteiligt \\ (Design-Merkmal \ref{token-usp}).
+	\item Ein AMM zur \textbf{WPT}-Distribution (und initialem Token-Sale) wird bereitgestellt (Design-Merkmal \ref{bcm}).
+	\item Der \textbf{WPT}-Supply und -Kurs wird zwecks Vermeidung von Inflation des \textit{Utility-Tokens} in gewissem Rahmen kontrolliert (Design-Merkmal \ref{bcm}).
+	\item Bei gegebenem Demand nach dem Pools-Service wird die aktuelle Zirkulation des \textbf{WPT-Utility-Tokens} künstlich aufrecht erhalten und der Anteil der verfügbaren an sich in Zirkulation befindenden \textbf{WPT} künstlich verknappt (Design-Merkmal \ref{circulation}).
+\end{itemize}
+
+\vspace{0.5cm}
+
+Zur Motivation des Einsatzes von \textbf{Bonding-Curves} beim hier besonders prägenden Design-Merkmal \ref{bcm} sei zur allgemeinen Einführung auf den Artikel \todo{Link zu einem guten Artikel}, zur Inspiration auf den Artikel \href{https://medium.com/atchai/can-we-save-the-utility-token-55ef639370cf}{Utility-Token als Bunding-Curves-Modell} und hinsichtlich Umsetzung auf unseren eigenen Content aus dem Anhang zu \nameref{sec:bonding-curves} verwiesen.
+
+\vspace{0.3cm}
+\todo{TODO: Welcher der obigen Punkte wird in welchen der folgenden Kapitel en Detail aufgegriffen und weiter vertiegt, um die noch fehlende Quantifizierung darzustellen?}
+
+\end{Solution}
+
+\vspace{0.5cm}
+
 \todo{WIP}
 
 \begin{itemize}
-	\item Einführung des WPT
 	\item Bonding-Curves
 	\begin{itemize}
 		\item Warum?
-		\item Inspiration: \href{https://medium.com/atchai/can-we-save-the-utility-token-55ef639370cf}{Utility-Token als Bunding-Curves-Modell}
 		\item Modellierung mit den Denkansätzen aus dem Anhang zu \nameref{sec:bonding-curves} unter Einbeziehung der obigen Gewinnbeteiligung an Fees
 	\end{itemize}	
 \end{itemize}
