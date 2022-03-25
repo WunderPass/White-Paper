@@ -1,0 +1,386 @@
+% !TEX root = paper.tex
+
+\paragraph{Monetarisierung \& Tokenisierung}
+\textbf{ }
+\vspace{0.3cm}
+
+Der abstrakt gehaltenen Einleitung zum finanziellen Grundgerüst unseres Pool-Projekts wollen wir in diesem Abschnitt nun den konzeptuell gedanklichen Grundstein zur dessen tatsächlichen Economics-Realisierung legen, auf dem dann im Anschluss die folgenden Kapitel aufbauen.
+
+\vspace{0.2cm}
+
+Dazu folgen zunächst einige - mehr oder minder erklärungsbedürftige - rohe Aussagen: 
+
+\vspace{0.2cm} 
+
+\begin{Praemisse}[Monetarisierung]
+\label{monetarisierung}
+\vspace{0.2cm}
+
+Die Monetarisierung unseres Pool-Service soll auf Basis (prozentualer) Fees (siehe \nameref{sec:fees}) - gemessen am (finanziellen) Volumen der erbrachten Dienst\-leistung - erfolgen. Für den Moment sehr plakativ betrachtet, ist dies gleichbedeutend mit: 
+
+\vspace{0.2cm} 
+
+\textbf{\textit{Mit je mehr Kohle die Pools hantieren, desto größer sollen die anfallenden Fees sein!}}
+
+\end{Praemisse}
+
+\vspace{0.5cm}
+
+\begin{Praemisse}[Utility-Token als Monetarisierungs-Tool für alle Stakeholder]
+\label{fees-for-token}
+\vspace{0.2cm}
+
+\textbf{Die Fees sollen mittels eines dafür geschaffenen Utility-Tokens abgerechnet, erhoben und erbracht werden!}
+
+\vspace{0.5cm} 
+
+Für den - unbestreitbar verkomplizierenden und technisch teils nicht unerheblich umständlichen - Umweg der Monetarisierung über einen Token sehen wir folgende schlagende Argumente, die auch in den anschließend folgenden Kapiteln immer mal wieder argumentativ zum Vorschein kommen werden:
+
+\begin{itemize}
+	\item Die Nutzung des Pools-Service kann als ein echtes \textit{\textbf{Gut}} - eine \textit{Utility} - angesehen werden, was unter Umständen nicht endlos verfügbar sei (begrenzte Skalierung auf der Blockchain), besonders begehrt (bei exzellenter Service-Qualität) oder im Übermaß vorhanden (bei anfänglicher Unbekanntheit des Service) sei. 
+	
+	Durch die Tokenisierung der Dienstleistung einverleibt man dieser den Stellenwert einer \textit{Ressource}, mit zugehörigen Eigenschaften wie \textbf{Verfügbarkeit}, \textbf{Qualität} und \textbf{Nachhaltigkeitsgedanken}, was bei digitalen Dienstleistungen oft unberücksichtigt bleibt. 
+	
+	Mit diesem Ansatz kommt das \textit{Marktwirtschaftsprinzip von Angebot \& Nachfrage} auch bei digitalen Services zum Tragen, was in der digitalen Welt heutzutage ausschließlich auf \textit{Nachfrage} reduziert wurde, da das \textit{Angebot} de facto als unendlich betrachtet wird.
+	\item Die Tokenisierung eines Business-Modells eröffnet einem das sehr mächtige spieltheoretische Werkzeug des \href{https://de.wikipedia.org/wiki/Mechanismus-Design-Theorie}{Mechanismus-Design}, um sämtliche Projekt-Beteiligte bzw. -Stakeholder in ihrem Verhalten hinsichtlich des übergeordneten Projekterfolgs zu beeinflussen/incentivieren. Oder simple ausgedrückt: Das zu tun, was wir aus strategischen Überlegungen möchten, dass er/sie tut.
+	\item \textbf{Direkte \& unbürokratische Projekt-Finanzierung}.
+	
+	Durch die Tokenisierung der Dienstleistung muss ein potenzieller Investor beim Kauf von Utility-Tokens lediglich vom Erfolg der Dientleistung=Utility selbst überzeugt sein (da eine Nachfrage nach der Dienstleistung direkt an die Nachfrage nach dem zugehörigen Utility-Token gekoppelt ist), anstatt bei seiner ROI-Evaluierung herkömmliche bürokratisch geregelte Venture-Capital-Aspekte wie etwaige Shareholders-Agreements und Exit-Szenarien hinzuziehen zu müssen.
+	\item Technische und konzeptuelle Vereinfachung, Flexibilität und Direktheit bei \textit{Customer-Akquise} und \textit{CRM} mittels des Utility-Tokens, da
+	\begin{itemize}
+		\item die \textit{Marketing-Währung} in Form von Tokens die \textbf{Utility} selbst statt \textit{Fiat} in den Vordergrund rückt.
+		\item Der \textit{Project-Owner} (in dem Fall also WunderPass) in aller Regel selbst ein großer Token-Holder sein wird und somit über die Mittel verfügt, das Marketing-Volumen zu erbringen (ohne dabei zusätzlich finanziell belastet zu werden).
+	\end{itemize}
+	\item Uneingeschränkte Transparenz für alle Projekt-Teilnehmer über Stake, Cash-Flows, Handlungen, Strategien etc. aller anderen Projekt-Teilnehmer und damit ihrer Position und Interessen innerhalb des Projekts mittels jederzeit offen einsehbarer dezentraler Smart-Contract-Logik.
+	\item Uneingeschränkte Transparenz und Eliminierung von Interpretationsspielraum hinsichtlich des Business-Plans.
+	\item Zu guter Letzt sei noch das - weniger auf harten Fakten als auf dem \textit{Opportunitiy-Gedanken} begründete - Argument des vermeintlichen \textit{Tokenisierungs-Trends} zu nennen, welches ein rein selbstzweck-getriebenes Interesse bei potenziellen Token-Investoren wecken könnte.
+\end{itemize}
+
+\end{Praemisse}
+
+\vspace{0.5cm}
+
+\paragraph{Die entscheidende Idee}
+\textbf{ }
+\vspace{0.3cm}
+
+Allen relevanten Erklärungen vorweggreifend folgt unser fundamentale \\
+\textit{Token-Economics}-Ansatz für die Pools-Project-Token:
+
+\vspace{0.2cm}
+
+\begin{Konzept}[Dividende auf den Pools-Project-Token]
+\label{token-usp}
+\vspace{0.2cm}
+
+Zusätzlich zur \textit{Utility}-Beschaffenheit unseres Pools-Project-Tokens möchten \\
+wir diesem noch eine gewisse \textit{Equity}-Eigenschaft einverleiben:
+
+\vspace{0.2cm}
+
+\textbf{Ein Token-Besitzer soll mittels des Tokens nicht nur den Pools-Service nutzen können oder an der steigenden Nachfrage nach diesem - durch eine positive Kursentwicklung - profitieren, sondern zusätzlich DIREKT an den generierten Erträgen des gesamten Pools-Projects beteiligt werden.}
+
+\vspace{0.2cm}
+
+Er soll demnach de facto als Anteilseigner des Pools-Projects gelten und an etwaigen Gewinnen des Projekts - in Form einer gewissen \textit{Dividende} - pro rata seines Token-Volumens partizipieren.
+
+\vspace{0.2cm}
+
+Die Implementierung dieses \textit{Equity}-Mechanismus soll selbstverständlich mittels eines Smart-Contracts sichergestellt sein, was unseren Token stark von anderen \\ \textit{Equity}-Tokens abhebt.
+
+\vspace{0.2cm}
+
+Durch diesen zusätzlichen Kniff, schaffen wir eine sich selbst verstärkende Synergie zwischen den \textit{Utility}- und \textit{Equity}-Eigenschaften unseres Pools-Project-Tokens, indem wir einen potenziellen User des Pools-Service (besitzt \textit{Utility} in Form des Tokens) gleichzeitig zu einem Projekt-Investor machen (besitzt \textit{Equity} in Form desselben Tokens). Dieser doppelte Synergieeffekt weitet sich auch unmittelbar auf die Kursentwicklung aus. DENN: Wachsende Nutzung des Pools-Services impliziert zwangsläufig eine steigende Token-Zirkulation (im Sinne der \textit{Utility}-Beschaffenheit) und steigenden Bedarf und somit Nachfrage nach dem Token UND generiert gleich\-zeitig zunehmenden Ertrag durch Service-Fees, was wiederum eine Wertsteigerung des Tokens aus seiner \textit{Equity}-Beschaffenheit nach sich zieht.
+
+\end{Konzept}
+
+\vspace{0.3cm}
+
+Wie genau wir uns das eben formulierte Vorhaben in der Umsetzung planen, wird etwas weiter unten vertieft. Zunächst bleiben wir beim ökonomischen Teil des Token-Designs und erarbeiten einige relevante Mechanismen.
+
+\vspace{0.5cm}
+
+
+\paragraph{Token-Design}
+\textbf{ }
+\vspace{0.3cm}
+
+Beim Design unseres Pools-Project-Tokens wollen wir uns stark an den Gedanken des spieltheoretischen Gebiets des \href{https://de.wikipedia.org/wiki/Mechanismus-Design-Theorie}{Mechanismus-Design} orientieren.
+
+Dieses Wissenschaftsgebiet befasst sich im Wesentlichen damit als \textit{höhere Instanz eines Spiels} - also in dem Fall wir als Project-Owner - mittels Regelgestaltung und Incentivierungs-Mechanismen - also in unserem Fall mittels Token-Design - Einfluss auf das Verhalten der Spieler - also in dem Fall Nutzer des Pool-Service und Investoren - im Sinne des Spiels nehmen kann.
+
+\vspace{0.1cm}
+
+Entscheidend hinsichtlich letzter Formulierung ist dabei das \textit{"... im Sinne des Spiels..."} genaust möglich zu präzisieren und idealerweise zu quantifizieren und formalisieren.
+
+\vspace{0.5cm}
+
+\textbf{Was möchten wir also genau wie, wann und womit erreichen für unser Pools-Projekt?}
+
+\vspace{0.5cm}
+
+Dabei bewegen sich die \href{https://de.wikipedia.org/wiki/Mechanismus-Design-Theorie}{Mechanismus-Design}-Werkzeuge tendenziell auf einer granularen Ebene, weshalb die Antwort \textit{"Pools-Project to the moon!"} auf obige Frage nicht in deren Sinne stünde. Viel mehr ist obige Frage daher als
+
+\begin{itemize}
+	\item Welche Etappenziele möchten wir erreichen (Projekt-Funding, Wachstum, Exit etc.)?
+	\item Welche Projekt-Stakeholder (Gründer, Project-Owner, Investoren, User etc.) werden gebraucht und wie können diese gewonnen und deren Interessen gewahrt werden?
+	\item Welche Hebel und designte Einflussmöglichkeiten möchten wir mittels von Token-Mechanismen besonders stark in eigener Hand behalten, anstatt sie dem Zufall oder Markt-Gesetzen zu überlassen?
+	\item Welche Synergien möchten wir schaffen/verstärken bzw. verhindern/bremsen?
+	\item Letzeres ist nicht nur aus Sicht des Pools-Projekts für sich alleinstehend zu betrachten sondern insbesondere auch im Hinblick auf ein etwaiges künftiges Wunder-Ökosystem. 
+	\item Wie können wir als Gründer/Project-Owner (finanziell) profitieren?
+\end{itemize}
+
+zu verstehen. Um das ganze nicht ausufern zu lassen, wollen wir diese Fragestellungen stark auf das Pools-Projekt, seinen Projekt-Token und insbesondere dessen erhofften Effekte fokussieren:
+
+\vspace{0.3cm}
+
+\begin{Assumption}[Erwünschte Effekte des Pools-Project-Tokens]
+\label{token-anforderungen}
+\vspace{0.2cm}
+
+Folgende Anforderungen, Erwartungen und Absichten verfolgen wir mit dem zu designenden Projekt-Token und/oder beabsichtigen zu erfüllen:
+
+\begin{itemize}
+	\item Selbstverständlich stellt ein gewisses initiales Projekt-Funding mittels Token-Sale eine der ausschlaggebendsten Motivationen für den Token dar, um z. B. auch Entwicklungskosten zu decken. 
+	\item Gleichzeitig müssen aber eben die initialen Kapitalgeber angemessen für ihr Risiko entlohnt werden und signifikant stärker an ihrem Token-Invest profitieren als spätere Token-Käufer.
+	\item Nicht verkehrt wäre gleiches für die Gründer ;)
+	\item Nicht nur für die zuletzt genannten early Investors sondern generell für alle Token-Investoren möchten wir einen transparenten, berechenbaren und vertrauenswürdigen Token schaffen, 
+	\begin{itemize}
+		\item dessen Kursentwicklung keiner künstlichen PR-getriebenen Hysterie mit anschließendem Crash unterliegt (\textit{Pump \& Dump}),
+		\item dessen Value transparenten und idealerweise durch Smart-Contracts ge\-steuerten Mechanismen und Projekt-Entwicklungen folgt,
+		\item dessen Value einen \textit{Utility-}Bezug hat und
+		\item der idealerweise mittels eines AMMs (\textit{Automated Market Maker}) jederzeit handelbar sein soll.
+	\end{itemize}
+	\item Nicht ganz so essenziell wie das initiale Projekt-Funding jedoch ebenfalls nicht zu vernachlässigen ist die fortlaufende (operative) Projekt-Finanzierung, die gänzlich oder zumindest teilweise durch den Projekt-Token mitfinanziert werden könnte.
+	\item Gleichwohl der oben skizzierte USP unseres Tokens (siehe \ref{token-usp}) \textit{Equity}-techni\-scher Natur ist, ist und bleibt unserer Pools-Project-Token substanziell ein \textbf{\textit{Utility-Token}}.
+	\begin{itemize}
+		\item Grundsätzlich wird die Zirkulation eines \textit{Utility-Tokens} stets stark korreliert mit der Nutzung/Nachfrage der Utility - also in unserem Fall dem Pools-Service - sein. Wie solch eine Korrelation konkret aussieht, haben wir mittels des Token-Designs maßgeblich in eigener Hand. So kann man mit Mitteln wie z. B. \textit{Staking} oder \textit{Locking} die Zirkulation künstlich verlangsamen bzw. eine künstliche Verknappung an zirkulierenden Tokens induzieren.
+		\item In gewisser Überzeugung, ein echter \textit{Utility-Token} repräsentiere eine nur endlich verfügbare Ressource, streben wir einen deflationären Token an. Oder zumindest einen \textit{pseudo-deflationären} (also einen, der zwar theoretisch unendlich lange weitergemintet werden kann, dies jedoch ab einem bestimmten Moment absolut unwirtschaftlich wird).
+	\end{itemize}
+\end{itemize}
+
+\end{Assumption}
+
+\vspace{0.5cm}
+
+An der Abarbeitung dieser Liste werden wir uns - nicht zwingend die Reihenfolge wahrend - durch das restliche Kapitel hangeln. Bevor wir uns gleich im Anschluss etwas detaillierter dem letzten Punkt der obigen Liste - nämlich der Einflussnahme auf die Token-Zirkulation - widmen, zunächst ein sich sofort ersichtlicher \textit{Quick-Win} hinsichtlich Bullet 4 der obigen Liste:
+
+\vspace{0.3cm}
+
+\begin{Konzept}[Das \textit{Bonding-Curves-Modell} als vielversprechendes Mittel für unseren Pool-Project-Token]
+\label{bcm}
+\vspace{0.2cm}
+
+Der Wunsch nach einem \textbf{transparenten, berechenbaren und vertrauenswürdig\-en Token} aus der Anforderungsliste \ref{token-anforderungen} suggeriert, das \textit{Bonding-Curves-Modell} als Grundlage zur Modellierung unseres Pool-Project-Token in Betracht zu ziehen, da der \textit{Bonding-Curves-Ansatz}
+
+\begin{itemize}
+	\item mittels Einsatzes eines Smart-Contract-AMMs, \textbf{Transparenz und Berechenbarkeit} des Tokens garantiert,
+	\item durch im Token-Contract vorgehaltene \textbf{Kapital-Deckung pro ausgegebenem Token} das Investrisiko deckelt und damit die gewünschte \textbf{Vertrauenswürdig\-keit} abbildet und
+	\item letztendlich durch seinen Basis-Mechanismus zwingend einen in seiner Logik verankerten AMM mitliefert.
+\end{itemize}
+
+\vspace{0.5cm}
+
+Zur Einführung und Motivation des \textit{Bonding-Curves-Modells} sei repräsentativ auf folgende zwei Blog-Artikel verwiesen:
+
+\begin{itemize}
+	\item \href{https://medium.com/coinmonks/token-bonding-curves-explained-7a9332198e0e}{Token Bonding Curves Explained}
+	\item \href{https://blog.goodaudience.com/rewriting-the-story-of-human-collaboration-c33a8a4cd5b8}{Rewriting the Story of Human Collaboration}
+\end{itemize}
+
+\vspace{0.5cm}
+
+Tatsächlich werden wir den \textit{Bonding-Curves-Ansatz} für unseren Pool-Project-Token später wieder aufgreifen und uns seiner Anwendung - den Gedanken aus dem Anhang zu \nameref{sec:bonding-curves} folgend - bemühen.
+
+\vspace{0.3cm}
+
+Der Vorgriff darauf erfolgte an dieser Stelle lediglich aufgrund des direkten Kontext-Bezugs zu Bullet 4 aus Anforderungsliste \ref{token-anforderungen}.
+
+\end{Konzept}
+
+%\newpage
+\vspace{0.5cm}
+
+
+Nun kommen wir - wie bereits angekündigt zu Mechanismen der \textbf{Token-Zirkulation}:
+
+\vspace{0.3cm}
+
+
+\begin{Konzept}[Token-Zirkulation-Mechanismen]
+\label{circulation}
+\vspace{0.2cm}
+
+Eines sofort vorweg:
+
+\vspace{0.2cm}
+\todo{\noindent\hrulefill}
+
+\todo{Die gleich vorgestellten Gedanken und Konzepte sind als noch nicht sehr ausgereifte initiale Ideen und Entwurfsmuster zu verstehen, die es noch zu erforschen und besser zu verstehen gilt. Mögen diese vielleicht in ihren grundlegenden Ansätzen noch so fundiert und durchdacht sein, wäre ein Anspruch ihrer perfekten Ausformulierung in einem - nicht auf fundierten praktischen Produkt-Erfahrung aufbauenden - White-Paper - wie es dieses aktuell ist - nur anmaßend und eine Vortäuschung einer pseudo-fundierten Theorie, die es aber ohne praktische Erprobung nicht ist.}
+
+\vspace{0.2cm}
+
+\todo{Vielmehr gilt es, die folgenden Ideen und Ansätze in ihrem Grundsatz zu verinnerlichen, und dabei gleichzeitig, die etwaigen Konkretisierungen mit Augenmaß \textit{weich} zu deuten, um diese mit zunehmender praktischer Anwendung zu validieren, zu justieren oder zu verwerfen.}
+
+\vspace{0.2cm}
+
+\todo{Dieser Teil des White-Papers ist also mit voller Absicht bis auf weiteres als \textbf{WIP} anzusehen und soll hier als solches markiert sein.}
+
+\todo{\noindent\hrulefill}
+\vspace{0.5cm}
+
+
+\textbf{Die folgenden Ausführungen betrachten den anvisierten Pool-Project-Token in seinem Dasein als \textit{Utility-Token}.}
+
+\vspace{0.2cm}
+
+Es bedarf wahrscheinlich keiner weiteren Erklärung, wir verfolgten im Großen und Ganzen einen sich \textbf{positiv entwickelnden Token-Kurs} und richteten unsere \textit{Mechanism-Design}-Überlegungen genau diesem Ziel folgend aus.
+
+\vspace{0.2cm}
+
+Den Markt-Gesetzen folgend geht ein steigender Kurs mit \textbf{steigender Nachfrage und/oder knapper werdendem Angebot} der durch den Token repräsentierten \textit{Utility} einher.
+
+\vspace{0.2cm}
+
+Da wir die \textit{Utility} unseres Pool-Project-Tokens als Zahlungsmittel für die anfallenden Service-Fees des Pools-Service definiert haben, stellt uns die Gegenüberstellung der gewünschten \textbf{Kurssteigerung des Tokens} vs. des \textbf{Angebot-Nachfrage-Prinzips} vor ein nicht unerhebliches Problem:
+
+\vspace{0.4cm}
+
+\textbf{Die Nutzung des Pools-Service erfolgt über einen gewissen (längeren) Zeitraum. Die Entrichtung der Fees geschieht dagegen in einem einzigen Moment, was die Nachfrage nach dem Pools-Service von der Nachfrage nach dem zugehörigen \textit{Utility-Token} nahezu gänzlich voneinander ent\-koppelt - wenn nicht gar das gesamte Verständnis von einer Nachfrage nach dem \textit{Utility-Token} in sich zusammenfallen lässt.} 
+
+\vspace{0.4cm}
+
+Um genau diesem Problem entgegenzuwirken und die \textit{Utility} - die wir unverändert bei der Service-Fee-Abrechnung belassen wollen - zeitlich auf die übergeordnete Pools-Nutzung-Dienstleistung auszudehnen und dabei gleichzeitig eine \textbf{künstliche Verknappung} der zirkulierenden Pool-Project-Tokens zu induzieren, bedienen wir uns zweier entscheidender Design-Mechanismen:
+
+\vspace{0.5cm}
+
+\underline{\textbf{Pending-Fees:}}
+\vspace{0.3cm}
+
+Der simpelst denkbare Mechanismus dem oben aufgeworfenen Problem zu entgegnen, ist die künstliche Streckung des Zeitraums zwischen dem Moment, zu dem die Service-Fees anfallen und dem Moment, wo diese tatsächlich fließen.
+
+\vspace{0.2cm}
+
+Gleichwohl der Großteil der Service-Fees bereits in der initialen Phase eines \\ \textit{Investing-Pools} anfallen (siehe \nameref{sec:fees}), kann ihre Abrechnung - quasi die \textit{"Überweisung"} - durchaus (deutlich) später erfolgen. Dabei würden die Fees zwar trotzdem zum Fälligkeitszeitpunkt eingezogen werden, im Anschluss jedoch bis zum Abrechnungszeitpunkt - als \textit{Token-Stake} - bis zu ihrer Auszahlung an die Begünstigten in einer Art \textit{Treuhand} verweilen.
+
+\vspace{0.1cm}
+
+Auf diese Weise wäre der Service-Fee-äquivalente \textbf{Token-Betrag \textit{gelockt}} und damit ein kursfördernder - sich zwar in Zirkulation befindender aber nicht liquider - Bestandteil des gesamten Token-Supplys.
+
+\vspace{0.2cm}
+
+Der Abrechnungszeitpunkt wäre hierbei natürlich noch zu definieren. Dieser könnte z. B. entweder der Zeitpunkt der \nameref{sec:pools-liquidierung} sein, oder aber - zwecks besserer Planung und Vorbeugung \textit{"toter Pools"} - zeitlich wiederkehrende \textit{Abrechnungs-Stichtage}.
+
+\vspace{0.75cm}
+
+\underline{\textbf{Staking:}}
+
+\vspace{0.3cm}
+
+Der sogenannte \textbf{\textit{Staking-Mechanismus}} ist ein - besonders im \textit{DeFi}-Umfeld - bekanntes und sehr gängiges \textit{Mechanism-Design}-Mittel, seinen - häufig \textit{Utility}-angelehnten - Token, der Markt-Liquidität zu entziehen und damit eine künstliche Verknappung des Markt-Angebots zu erzeugen, womit eine positive Kurs-Entwicklung des Tokens befeuert werden soll. Der dabei auftretende Protagonist - \textbf{\textit{der Staker}} - wird hierbei mittels sogenannter \textbf{\textit{Staking-Reward}} - in aller Regel mindest garantiert\-en Zinssatzes - zum \textbf{\textit{Staking}} incentiviert.
+
+\vspace{0.2cm}
+
+Problematisch an diesem - generell sehr sinnvollen Ansatz - ist die Tatsache, diese eigne sich auch unheimlich gut als Hebel eines \textit{"Pump \& Dump"-Scams}: Ist die \textit{FOMO} eines \textit{"Pump \& Dump"-Token-Sales} erst gesät, implementiert man obendrauf noch einen \textit{Staking-Mechanismus} mit horrend hohen - jeglicher Realität entbehrenden - \textit{Staking-Rewards}, verknappt - in dem ohnehin kurzen Augenblick der extremen \textit{FOMO-Phase} - noch künstlich \textit{"pumpend"} das Token-Angebot und nimmt den Stakern zusätzlich die Handlungsfähigkeit, rechtzeitig auf den anstehenden \textbf{Dump} zu reagieren. 
+
+Nach erfolgtem \textbf{Dump} bleiben die garantierten horrend \textit{Staking-Rewards} (teils in Größenordnungen von zig Prozent AM TAG) zwar weiter garantiert, nur sind diese - genauso wie der zugrundeliegende Token - plötzlich nichts mehr wert.
+
+\noindent\hrulefill
+
+\vspace{0.5cm}
+
+Dennoch möchten wir bei unserem Pools-Project-Token nicht auf besagten \textbf{\textit{Staking-Mechanismus}} verzichten und haben auch für das adressierte Problem eine wasser\-dichte Lösung:
+
+\vspace{0.2cm}
+ 
+\textbf{Anstatt einen gewissen \textit{Staking-Zins} einfach unbegründet zu garantieren, wollen wir diesen in Bezug zu dem durch den \textit{erbrachten Stake} generierten Value setzen.}
+
+\vspace{0.5cm}
+
+Konkretisierend folgt nun en Detail unser anvisierter \textbf{\textit{Staking-Mechanismus}}:
+
+\begin{itemize}
+	\item Der Pool-Creator wird dazu verpflichtet, einen gewissen \textbf{\textit{Staking-Betrag}} - in Form des \textbf{Pools-Project-Tokens} - zu erbringen, um den Pool überhaupt erst eröffnen zu dürfen.
+	\item Der zu leistende \textbf{\textit{Staking-Betrag}} richtet sich an den \textbf{\textit{zu erwartenden Service-Fees}}, die in Gänze über die gesamte \textit{Pool-Lifetime} anfallen werden/könnten. Hierbei ist ein etwaiger \textit{Multiplier} auf die Service-Fees anzunehmen.
+	\item Der zu erbringende \textbf{\textit{Staking-Betrag}} (in Token) bleibt während der gesamten \textit{Pool-Lifetime} in einer Art \textbf{\textit{Treuhand}} verwahrt, ist damit \textbf{\textit{dem Markt-Angebot entzogen}} und wirkt damit kurs-befeuernd.
+	\item Da die Service-Fees generell in Relation zum den im Pool bewegten finanziellen Mitteln stehen (siehe \nameref{sec:fees}) - also tendenziell in \textit{USDT} errechnet werden - der \textbf{\textit{Staking-Betrag}} jedoch in Pools-Project-Tokens zu erbringen ist, bleibt hierbei noch ein angemessenes \textit{Umrechnungs-Design} nachzuliefern.
+	\item Der \textbf{\textit{Staking-Betrag}} kann und soll als eine Art \textbf{\textit{Sicherheit}} argumentiert werden, aber auch als eine Art \textbf{\textit{Preepaid-Fees-Konto}} des Pools verwendet werden können. 
+	\item Zwar kann der \textbf{\textit{Staker}} in der Theorie seinen \textbf{\textit{Stake}} (oder einen Teil davon) verlieren - falls der Pool z. B. ungenutzt bleibt (\todo{hier bieten sich uns weitere Mechanism-Design-Möglichkeiten, das Verhalten der Pool-Teilnehmer zu be\-einflussen}) - soll dieses Szenario jedoch einen tendenziell ungewollten Edge-Case darstellen und der \textbf{\textit{Staker}} in aller Regel zu keinem \textbf{\textit{Payer}} werden.
+	\item Den letzten Punkt aufgreifend soll der \textbf{\textit{Staker}} idealerweise von jegliche anfallenden Service-Fees befreit werden. Stattdessen sollen die Fees durch die \textbf{\textit{"passiven" Pool-Member}} getragen werden.
+	\item Zusätzlich zur Befreiung von den Service-Fees, soll der \textbf{\textit{Staker}} einen Teil der anfallenden Fees als \textbf{\textit{Staking-Reward}} erhalten. Die Konkretisierung des genauen Anteils bzw. der Berechnungsgrundlage dieser erfolgt zu einem späteren Zeitpunkt.
+	\item Der Staker ist damit nicht nur User des \textit{Pool-Service} sondern gleichzeitig auch ein Investor (Token-Holder) des übergeordneten Pools-Projects (da er gezwungen ist, die Tokens über einen längeren Zeitraum zu halten). Er avanciert damit zu der spannendsten Rolle innerhalb des \textbf{\textit{Pools-Ökosystems}}, da sich die Motivation seines Token-Besitzes besonders stark streut:
+	\begin{itemize}
+		\item Er braucht den Token als \textit{Utility} zu Nutzung der Pools-Dienstleistung.
+		\item Er braucht den Token als \textbf{\textit{Staking-Betrag}} zur Erstellung eines neuen Pools, verdient aber gleichzeitig an dieser im Form einer Gewinnbeteiligung an den generierten Service-Fees. Damit ist er konsequenterweise incentiviert, neue Pools zu erstellen und diese aktiv zu bewerben.
+		\item Als Token-Holder ist er gleichzeitig ein Projekt-Investor, Gewinnbeteiligter und damit Interessent und Werbetreibender \textbf{\textit{(word-of-mouth)}} für Wachs\-tum - also viele neue Pools, auch an denen er nicht aktiv beteiligt ist.
+	\end{itemize}
+\end{itemize}
+
+\end{Konzept}
+
+\vspace{0.5cm}
+
+
+
+\paragraph{Umsetzung}
+\textbf{ }
+\vspace{0.3cm}
+
+Gleichwohl noch nicht richtig quantifizierbar, jedoch konzeptuell bereits solide Formen annehmend, wollen wir an dieser Stelle endlich unseren angestrebten \textit{Pool-Project-Token} einführen und fortan an einem konkreten anstatt wie bisher abstrakt gehaltenem Gebilde weiterarbeiten:
+
+\vspace{0.3cm}
+
+\begin{Solution}[WunderPool-Token (\textit{WPT})]
+\label{wpt}
+\vspace{0.2cm}
+
+Folgenden bisher erarbeiteten wesentlichen Ergebnissen folgend definieren wir den WunderPool-Token (\textbf{WPT}) als den anvisierten \textit{Pool-Project-Token}:
+
+\begin{itemize}
+	\item Die Monetarisierung des Pools-Projekt erfolgt durch Service-Fees, die Mittels des \textit{Utility-Tokens} \textbf{WPT} veranschlagt und abgerechnet werden (Prämissen \ref{monetarisierung} und \ref{fees-for-token}).
+	\item Die Venture-Invests der \textbf{WPT}-Käufer werden durch echte Kapital-Rücklagen innerhalb des \textbf{WPT}-Token-Contracts gedeckt (Design-Merkmal \ref{bcm}).
+	\item Alle \textbf{WPT}-Holder werden finanziell am etwaigen Projekt-Erfolg beteiligt \\ (Design-Merkmal \ref{token-usp}).
+	\item Ein AMM zur \textbf{WPT}-Distribution (und initialem Token-Sale) wird bereitgestellt (Design-Merkmal \ref{bcm}).
+	\item Der \textbf{WPT}-Supply und -Kurs wird zwecks Vermeidung von Inflation des \textit{Utility-Tokens} in gewissem Rahmen kontrolliert (Design-Merkmal \ref{bcm}).
+	\item Bei gegebenem Demand nach dem Pools-Service wird die aktuelle Zirkulation des \textbf{WPT-Utility-Tokens} künstlich aufrecht erhalten und der Anteil der verfügbaren an sich in Zirkulation befindenden \textbf{WPT} künstlich verknappt (Design-Merkmal \ref{circulation}).
+\end{itemize}
+
+\vspace{0.5cm}
+
+Zur Motivation des Einsatzes von \textbf{Bonding-Curves} beim hier besonders prägenden Design-Merkmal \ref{bcm} sei zur allgemeinen Einführung unter anderem auf die Artikel \href{https://medium.com/coinmonks/token-bonding-curves-explained-7a9332198e0e}{Token Bonding Curves Explained} und \href{https://blog.goodaudience.com/rewriting-the-story-of-human-collaboration-c33a8a4cd5b8}{Rewriting the Story of Human Collaboration}, zur Inspiration auf den Artikel \href{https://medium.com/atchai/can-we-save-the-utility-token-55ef639370cf}{Utility-Token als Bunding-Curves-Modell} und hinsichtlich Umsetzung auf unseren eigenen Content aus dem Anhang zu \nameref{sec:bonding-curves} verwiesen.
+
+\vspace{0.3cm}
+\todo{TODO: Welcher der obigen Punkte wird in welchen der folgenden Kapitel en Detail aufgegriffen und weiter vertiegt, um die noch fehlende Quantifizierung darzustellen?}
+
+\end{Solution}
+
+\vspace{0.5cm}
+
+\todo{WIP}
+
+\begin{itemize}
+	\item Bonding-Curves
+	\begin{itemize}
+		\item Warum?
+		\item Modellierung mit den Denkansätzen aus dem Anhang zu \nameref{sec:bonding-curves} unter Einbeziehung der obigen Gewinnbeteiligung an Fees
+	\end{itemize}	
+\end{itemize}
+
+\vspace{0.5cm}
+
+
+
+\paragraph{Ausblick}
+\textbf{ }
+\vspace{0.3cm}
+
+\todo{WIP}
+
+\begin{itemize}
+	\item Der erste und größere Investor für das Pool-Projekt wäre WunderPass selbst. Für die erfolgte Einlage in den Projekt-Pool bekäme WunderPass WPT, die es für Incentivierungen und Rewards für die Nutzung von Pools verwenden könnte. Dieses Invest könnte (im Gegensatz zu den Einlagen anderer Investoren) zB. auch einem Locking unterliegen, um eine gewisse Preisstabilität des WPT zu gewährleisten.	
+	\item Erste Andeutung, dass die Token-Contract-Treasury zwar im ersten Schritt in \textit{USDT} modelliert, jedoch in \textit{WUNDER} geplant ist.
+	\item Ausblick auf die anschließenden Kapitel, die das präsentierte Konzept umsetzen.
+	\item Erstmals auf \textit{Economics-Excel} verweisen.
+\end{itemize}
+
+\todo{Hallo mallo!}
