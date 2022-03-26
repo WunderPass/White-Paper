@@ -66,13 +66,13 @@
 \contentsline {paragraph}{\nonumberline Gebühren-Modell}{89}{paragraph*.34}%
 \contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{90}{paragraph*.36}%
 \contentsline {subsubsection}{\numberline {B.7.4}Business-Plan}{91}{subsubsection.B.7.4}%
-\contentsline {subsubsection}{\numberline {B.7.5}Herleitung Bonding-Curves}{94}{subsubsection.B.7.5}%
+\contentsline {subsubsection}{\numberline {B.7.5}WPT - ready to launch}{94}{subsubsection.B.7.5}%
 \contentsline {subsubsection}{\numberline {B.7.6}Beispielrechnung}{95}{subsubsection.B.7.6}%
-\contentsline {subsubsection}{\numberline {B.7.7}Recap \& Ausblick}{98}{subsubsection.B.7.7}%
-\contentsline {subsubsection}{\numberline {B.7.8}Unberücksichtigte Inhalte \& Ideen}{98}{subsubsection.B.7.8}%
-\contentsline {section}{\numberline {C}Project 'Guard'}{102}{appendix.C}%
-\contentsline {section}{\numberline {D}Diverses}{103}{appendix.D}%
-\contentsline {subsection}{\numberline {D.1}Quellen und Inspiration}{103}{subsection.D.1}%
-\contentsline {subsection}{\numberline {D.2}WUNDER-Token - Skizze eines möglichen Kreislaufs}{109}{subsection.D.2}%
-\contentsline {subsection}{\numberline {D.3}Bonding-Curves}{112}{subsection.D.3}%
+\contentsline {subsubsection}{\numberline {B.7.7}Recap \& Ausblick}{99}{subsubsection.B.7.7}%
+\contentsline {subsubsection}{\numberline {B.7.8}Unberücksichtigte Inhalte \& Ideen}{99}{subsubsection.B.7.8}%
+\contentsline {section}{\numberline {C}Project 'Guard'}{103}{appendix.C}%
+\contentsline {section}{\numberline {D}Diverses}{104}{appendix.D}%
+\contentsline {subsection}{\numberline {D.1}Quellen und Inspiration}{104}{subsection.D.1}%
+\contentsline {subsection}{\numberline {D.2}WUNDER-Token - Skizze eines möglichen Kreislaufs}{110}{subsection.D.2}%
+\contentsline {subsection}{\numberline {D.3}Bonding-Curves}{113}{subsection.D.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

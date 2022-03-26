@@ -336,38 +336,34 @@ Gleichwohl noch nicht richtig quantifizierbar, jedoch konzeptuell bereits solide
 
 Folgenden bisher erarbeiteten wesentlichen Ergebnissen folgend definieren wir den WunderPool-Token (\textbf{WPT}) als den anvisierten \textit{Pool-Project-Token}:
 
-\begin{itemize}
+\begin{enumerate}
 	\item Die Monetarisierung des Pools-Projekt erfolgt durch Service-Fees, die Mittels des \textit{Utility-Tokens} \textbf{WPT} veranschlagt und abgerechnet werden (Prämissen \ref{monetarisierung} und \ref{fees-for-token}).
 	\item Die Venture-Invests der \textbf{WPT}-Käufer werden durch echte Kapital-Rücklagen innerhalb des \textbf{WPT}-Token-Contracts gedeckt (Design-Merkmal \ref{bcm}).
 	\item Alle \textbf{WPT}-Holder werden finanziell am etwaigen Projekt-Erfolg beteiligt \\ (Design-Merkmal \ref{token-usp}).
 	\item Ein AMM zur \textbf{WPT}-Distribution (und initialem Token-Sale) wird bereitgestellt (Design-Merkmal \ref{bcm}).
 	\item Der \textbf{WPT}-Supply und -Kurs wird zwecks Vermeidung von Inflation des \textit{Utility-Tokens} in gewissem Rahmen kontrolliert (Design-Merkmal \ref{bcm}).
-	\item Bei gegebenem Demand nach dem Pools-Service wird die aktuelle Zirkulation des \textbf{WPT-Utility-Tokens} künstlich aufrecht erhalten und der Anteil der verfügbaren an sich in Zirkulation befindenden \textbf{WPT} künstlich verknappt (Design-Merkmal \ref{circulation}).
-\end{itemize}
+	\item Bei gegebenem Demand nach dem Pools-Service wird die aktuelle Zirkulation des \textbf{WPT-Utility-Tokens} künstlich aufrechterhalten und der Anteil der verfügbaren sich in Zirkulation befindenden \textbf{WPT} künstlich verknappt (Design-Merkmal \ref{circulation}).
+\end{enumerate}
 
 \vspace{0.5cm}
 
 Zur Motivation des Einsatzes von \textbf{Bonding-Curves} beim hier besonders prägenden Design-Merkmal \ref{bcm} sei zur allgemeinen Einführung unter anderem auf die Artikel \href{https://medium.com/coinmonks/token-bonding-curves-explained-7a9332198e0e}{Token Bonding Curves Explained} und \href{https://blog.goodaudience.com/rewriting-the-story-of-human-collaboration-c33a8a4cd5b8}{Rewriting the Story of Human Collaboration}, zur Inspiration auf den Artikel \href{https://medium.com/atchai/can-we-save-the-utility-token-55ef639370cf}{Utility-Token als Bunding-Curves-Modell} und hinsichtlich Umsetzung auf unseren eigenen Content aus dem Anhang zu \nameref{sec:bonding-curves} verwiesen.
 
-\vspace{0.3cm}
-\todo{TODO: Welcher der obigen Punkte wird in welchen der folgenden Kapitel en Detail aufgegriffen und weiter vertiegt, um die noch fehlende Quantifizierung darzustellen?}
-
 \end{Solution}
 
 \vspace{0.5cm}
 
-\todo{WIP}
+Konzeptuell können wir an dieser Stelle - bis auf etwaige kleinere Justierungen - einen Haken an das Design unseres \textbf{WPT-Tokens} setzen und uns im Folgenden an die quantitative, konkrete Modellierung desselben wagen. Bezugnehmend auf die eben erfolgte Definition des \textbf{WPT} werden wir
 
 \begin{itemize}
-	\item Bonding-Curves
-	\begin{itemize}
-		\item Warum?
-		\item Modellierung mit den Denkansätzen aus dem Anhang zu \nameref{sec:bonding-curves} unter Einbeziehung der obigen Gewinnbeteiligung an Fees
-	\end{itemize}	
+	\item in Abschnitt \nameref{sec:fees} die Grundlage für obigen Punkt (1) schaffen,
+	\item in Abschnitt \nameref{sec:bp} die Berechnungsgrundlage und das Potenzial hinsichtlich obigen Punkts (3) beleuchten,
+	\item uns bei obigen Punkten (2), (4) und (5) auf das Vertrautsein des Lesers zu \textbf{\textit{Bonding-Curves}} generell und der halbwegs verstandenen Lektüre des - teils sehr mathematischen - Anhangs zu unserem Blickwinkel auf \nameref{sec:bonding-curves} berufen,
+	\item von einer (vortäuschenden) Genauigkeit bezüglich obigen Punkts (6) zum aktuellen Zeitpunkt im White-Paper absehen, die zugehörigen Parameter initial nach bestem Wissen und Gewissen schätzen und erst mit zunehmenden praktischen Erkenntnissen eine Justierung vornehmen, die auch ihren Platz im White-Paper findet, und
+	\item schlussendlich in Abschnitt \nameref{sec:wpt} alle Ergebnisse einfließenlassend ein Token-Modell angegeben, das sich ohne offene Fragen in einen Token-Contract gießen lässt. 
 \end{itemize}
 
 \vspace{0.5cm}
-
 
 
 \paragraph{Ausblick}
@@ -382,5 +378,3 @@ Zur Motivation des Einsatzes von \textbf{Bonding-Curves} beim hier besonders pr�
 	\item Ausblick auf die anschließenden Kapitel, die das präsentierte Konzept umsetzen.
 	\item Erstmals auf \textit{Economics-Excel} verweisen.
 \end{itemize}
-
-\todo{Hallo mallo!}
