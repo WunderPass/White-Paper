@@ -3,15 +3,19 @@
 \todo{WIP}
 \vspace{0.5cm}
 
-\todo{Recap aus den vorigen Kapitln und deren Input für das gegenständige Kapitel}
+\todo{Recap aus den vorigen Kapiteln und deren Input für das gegenständige Kapitel}
 \vspace{0.5cm}
+
+\paragraph{Token-Kurs-Kurven}
+\textbf{ }
+\vspace{0.3cm}
 
 \todo{Hier müssen im Wesentlichen die Excel-Parameter erklärt werden}
 
 \begin{itemize}
 	\item die Annahme-Parameter in der Excel folgen im Wesentlichen aus den vorigen Kapiteln
 	\item die einzelnen Kurven-Stufen erklären
-	\item die tatsächlichen Bonding-Curves zu erklären wäre nicht ganz ohne. Kann man das einfach ausschweigen?
+	\item die tatsächlichen Bonding-Curves zu erklären wäre nicht ganz ohne. Kann man das einfach ausschweigen? Falls wir es genauer erklären wollen, wären die Ausführungen aus Algo \ref{approx} hilfreich.
 \end{itemize}
 
 \vspace{0.5cm}
@@ -64,8 +68,82 @@ gilt.
 \end{Solution}
 
 \vspace{0.5cm}
-\todo{Eine Abbildung der Kurve wäre nichr verkehrt.}
+\todo{Eine Abbildung der Preis-Kurve(n) wäre nichr verkehrt.}
+\vspace{0.5cm}
+
+
+\paragraph{Staking \& Gewinn-Split}
+\textbf{ }
+\vspace{0.3cm}
+
+\todo{WIP}
+\vspace{0.5cm}
+
+Split der Gebühren auf Staker und Projekt-Treasury $(\sigma_{S}; \sigma_{T})$ mit $\sigma_{S} + \sigma_{T} = 1$ definieren. Dazu gibt es einige denkbare Varianten:
+
+\begin{itemize}
+	\item fester, statischer Split
+	\item fester, statischer Split mit eingebauten Unter- und Obergrenzen für den Gesamtertrag des Stakers $\sigma_{S} \cdot fees^{\mathcal{P}}$
+	\item $fees^{\mathcal{P}}$-abhängiger (progressiver) Split, bei dem der Anteil des Stakers $\sigma_{S}$ mit zunehmendem $fees^{\mathcal{P}}$ stets kleiner wird. Dies unter Umständen ebenfalls unter Berücksichtigung eingebauter Unter- und Obergrenzen für den Staker.
+	\item Begünstigung des Stakers in Abhängigkeit seines NFT-Pass-Status.
+\end{itemize}
 
 \vspace{0.5cm}
+
+
+\paragraph{Workflows}
+\textbf{ }
+\vspace{0.3cm}
+
+\todo{WIP}
+\vspace{0.5cm}
+
+\begin{itemize}
+	\item Wann bezahlen die User die Fees?
+	\item In welcher Form/Währung dürfen die Fees von den Usern erbracht/verrechnet werden und wird dann alles im Hintergrund sofort in \textit{WPT} umgewandelt?
+	\item Ist es denkbar die Fees aus dem Stake-Pool des Creators zu verwenden und diesem seinen Stake in einer anderen Währung zurückzuerstatten?
+\end{itemize}
+
+\vspace{0.5cm}
+
+\paragraph{Problem}
+\textbf{ }
+\vspace{0.3cm}	
+
+\begin{Problem}[\textit{USDT} vs. \textit{W-PLT} als Berechnungsgrundlage für Fees, Staking etc.]
+\vspace{0.2cm}
+
+\todo{Was nehmen wir hier?}
+
+\vspace{0.5cm}
+
+\todo{Folgend übernommene alte Test-Passagen zu dem Thema:}
+
+\vspace{0.5cm}
+
+Ein weiterer sehr essenzieller Faktor für die Größe des zu stakenden Betrags könnte der Kurs des IPTs sein. Denn laut der \textbf{Bonding-Curves}-Implementierung würde der \textit{W-PLT}-Preis mit steigender Zirkulation steigen, was mit der Zunahme von existierende Pools geschähe. Damit wäre die Erstellung neuer Pools mit ihrer zahlen\-mäßigen Zunahme stets kapital-intensiver (aber nicht gleichbedeutend teurer). \textbf{Die Frage hierbei ist also, ob der zu erbringende Stake des Pool-Creators auf den \textit{Total-Supply des W-PLT} normiert werden sollte oder nicht}, die gänzlich mit der obigen Fragestellung einhergeht, ob der Pool-Creator eigentlich staken möchte oder das nur tun muss.
+	
+\begin{itemize}
+	\item Gegen eine Normierung spricht die Annahme/Hoffnung, ein Pool-Creator sei gleichzeitig auch ein großer Supporter des gesamten Projekt und glaube daran. Wenn der \textit{W-PLT}-Preis steigt, ist dies gleichbedeutend mit der Zunahme an genutzten Pools, an denen der Pool-Creator als Staker, Besitzer von \textit{W-PLT} und damit Projekt-Investor auch selbst (finanziell) profitiert.
+	\item Für eine Normierung spricht dagegen die potenzielle Gefahr, neue oder bestehende User durch eine zu hohe finanzielle Sicherheitseinlage davon abzuschrecken neue Pools zu erstellen.
+\end{itemize}
+
+\vspace{0.2cm}
+	
+Die Antwort auf diese Fragestellung könnte auch darin liegen, ob wir uns besonders viele oder lieber weniger aber besonders Teilnehmer-starke Pools wünschen.
+
+\vspace{0.5cm}
+	
+Die \textit{Pool-Teilnehmer} (außer des Creators) können bei dieser Logik aber nicht wie nicht wie die Staker zusätzlich als Projekt-Investoren angesehen werden, weil sie \textit{W-PLT} kaufen, da die gekauften \textit{W-PLT} direkt als Gebühr entrichtet werden. Für die Pool-Teilnehmer stellt der \textit{W-PLT} also eher einen Utility- bzw. Purpose-Token dar weshalb die Höhe der zu entrichtenden Gebühr zweifelsfrei auf Basis von \textit{Total-Supply des W-PLT} normiert werden muss (die Gebühr darf keinesfalls mit Zunahme von Pools steigen).
+
+\end{Problem}
+
+\vspace{0.5cm}
+
+
+\paragraph{Fazit}
+\textbf{ }
+\vspace{0.3cm}
+
 \todo{Gibt es noch Ungeklärtheiten, ohne die sich kein Token-Contract schreiben lässt?}
 

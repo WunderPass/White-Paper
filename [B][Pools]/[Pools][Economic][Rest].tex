@@ -135,6 +135,9 @@ Im Folgenden wieder die obige Forecast-Aufstellung - nun aus Token-Sicht:
 
 \todo{Einbettung in das Wunder-Ökosystem und Link zwischen WPT zu WUNDER}
 
+\vspace{0.5cm}
+
+Die Einlage für den \textit{WPT} ist idealerweise in WUNDER zu erbringen \todo{(Es ist noch unklar, wie man an WUNDER kommt, wenn es vorher keinen Token-Sale gegeben hat. Ob der WUNDER ebenfalls mittels Bonding-Curves abzubilden wäre, sei hier erst einmal mehr als unklar.)}
 
 \vspace{0.5cm}
 
@@ -146,31 +149,9 @@ Im Folgenden wieder die obige Forecast-Aufstellung - nun aus Token-Sicht:
 \todo{WIP}
 \vspace{0.5cm}
 
-\begin{Praemisse}[Cash-Flow]
-
-\begin{itemize}
-	\item Deposit/Invest erfolgt in einem Stable-Coin (z.B. \textit{USDT}). \todo{Es sind aber auch mehrere zulässige Währungen denkbar.}
-	\item Cashout erfolgt in derselben Währung wie der Deposit \todo{(oder zumindest in einer der zulässigen Währungen)}. 
-	\item Fees werden in aller Regel prozentual am Volumen (also in \textit{USDT}) berechnet, jedoch in \textbf{\textit{W-PLT}} veranschlagt, bei dem man von Kursschwankungen ausgehen muss und ausgehen will. \todo{(Das muss sowohl bei der Token-Modellierung als evtl. auch bei der Gebührenordnung berücksichtigt werden.)}
-	\item Ein Teil der Fees soll direkt an den (Bonding-Curves-basierten) \textit{W-PLT}-Contract gehen und damit die \textit{W-PLT}-Investoren/-Hodler belohnen.
-	\item Die Fees sollen \todo{(aufgrund des genauer zu erklärenden Stakings)} erst bei der Liquidierung des Pools entrichtet werden.
-	\item Die Fees sollen von allen Pool-Teilnehmers außer des Pool-Creators getragen werden.
-	\item Für den Pool-Creator soll folgendes gelten:
-	\begin{itemize}
-		\item \todo{(Muss einen PassNFT besitzen.)}
-		\item Soll einen prozentual an den geschätzten gesamten Pool-Fees gemessenen Betrag $x$ als Sicherheit staken ($x \in [50 \%; 200 \%]$). \todo{Kann theoretisch auch einer absoluten oder relativen Obergrenze unterliegen.}
-		\item Soll selbst keine Fees bezahlen.
-		\item Soll für das Staken mit einem Teil der erwirtschafteten Gebühren entlohnt werden.
-	\end{itemize}
-\end{itemize}
-
-\end{Praemisse}
-
-\vspace{0.5cm}
-
-
 
 \begin{Algo}[\textit{W-PLT}-Design]
+\label{approx}
 
 \begin{itemize}
 	\item Wir haben Szenarien vorgerechnet und dabei den zugehörigen \textit{Ziel-Supply} angegeben. Daran orientieren wir uns.
@@ -183,61 +164,15 @@ Im Folgenden wieder die obige Forecast-Aufstellung - nun aus Token-Sicht:
 	\item Wir errechnen für einige supply-Milestones den Kaufpreis auf der Grundlage des letzten Bullets und approximieren dann dazwischen.
 \end{itemize}
 
+\vspace{0.3cm}
+\todo{\noindent\hrulefill}
+
+\begin{itemize}
+	\item Problem: Wenn Token-Holder aussteigen, nehmen diese nicht nur ihren Anteil an den bisher erwirtschafteten Fees-Einnahmen mit, sondern drücken zudem auch noch den Token-Kurs nach unten. Das stellt einen sich selbst verstärkenden Effekt dar, der irgendwie in den Griff zu bekommen ist (evtl. Locking-Periode oder berücksichtigende Verkaufs-Kurve).
+	\item Es macht eine Locking-Periode von der Dauer der durchschnittlichen Pool-Lifetime viel Sinn, da die beim Verkauf der Tokens mitgenommenen Gewinne aus Fees-Einnahmen durch neu generierte Fees-Einnahmen egalisiert werden und der Token-Value somit stabil bleibt.	
+\end{itemize}
+
 \end{Algo}
 
 
 
-\vspace{1.0cm}
-
-\todo{WIP}
-
-\vspace{0.3cm}
-
-\begin{itemize}
-	\item Wann bezahlen die User die Fees?
-	\item In welcher Form/Währung dürfen die Fees von den Usern erbracht/verrechnet werden und wird dann alles im Hintergrund sofort in \textit{W-PLT} umgewandelt?
-	\item Ist es denkbar die Fees aus dem Stake-Pool des Creators zu verwenden und diesem seinen Stake in einer anderen Währung zurückzuerstatten?
-	\item Split der Gebühren auf Staker und Projekt-Treasury $(\sigma_{S}; \sigma_{T})$ mit $\sigma_{S} + \sigma_{T} = 1$ definieren. Dazu gibt es einige denkbare Varianten:
-	\begin{itemize}
-		\item fester, statischer Split
-		\item fester, statischer Split mit eingebauten Unter- und Obergrenzen für den Gesamtertrag des Stakers $\sigma_{S} \cdot fees^{\mathcal{P}}$
-		\item $fees^{\mathcal{P}}$-abhängiger (progressiver) Split, bei dem der Anteil des Stakers $\sigma_{S}$ mit zunehmendem $fees^{\mathcal{P}}$ stets kleiner wird. Dies unter Umständen ebenfalls unter Berücksichtigung eingebauter Unter- und Obergrenzen für den Staker.
-		\item Begünstigung des Stakers in Abhängigkeit seines NFT-Pass-Status.
-	\end{itemize}	
-	\item Anfängliche Air-Drops von \textit{W-PLT} an erste Pool-User müssen einer Locking-Periode unterliegen.
-	\item Problem: Wenn Token-Holder aussteigen, nehmen diese nicht nur ihren Anteil an den bisher erwirtschafteten Fees-Einnahmen mit, sondern drücken zudem auch noch den Token-Kurs nach unten. Das stellt einen sich selbst verstärkenden Effekt dar, der irgendwie in den Griff zu bekommen ist (evtl. Locking-Periode oder berücksichtigende Verkaufs-Kurve).
-	\item Es macht eine Locking-Periode von der Dauer der durchschnittlichen Pool-Lifetime viel Sinn, da die beim Verkauf der Tokens mitgenommenen Gewinne aus Fees-Einnahmen durch neu generierte Fees-Einnahmen egalisiert werden und der Token-Value somit stabil bleibt.
-	\item Die Einlage für den \textit{W-PLT} ist idealerweise in WUNDER zu erbringen \todo{(Es ist noch unklar, wie man an WUNDER kommt, wenn es vorher keinen Token-Sale gegeben hat. Ob der WUNDER ebenfalls mittels Bonding-Curves abzubilden wäre, sei hier erst einmal mehr als unklar.)}
-	
-\end{itemize}
-
-\vspace{1.0cm}
-
-\begin{Problem}[\textit{USDT} vs. \textit{W-PLT} als Berechnungsgrundlage für Fees, Staking etc.]
-\vspace{0.2cm}
-
-\todo{Was nehmen wir hier?}
-
-\vspace{0.5cm}
-
-\todo{Folgend übernommene alte Test-Passagen zu dem Thema:}
-
-\vspace{0.5cm}
-
-Ein weiterer sehr essenzieller Faktor für die Größe des zu stakenden Betrags könnte der Kurs des IPTs sein. Denn laut der \textbf{Bonding-Curves}-Implementierung würde der \textit{W-PLT}-Preis mit steigender Zirkulation steigen, was mit der Zunahme von existierende Pools geschähe. Damit wäre die Erstellung neuer Pools mit ihrer zahlen\-mäßigen Zunahme stets kapital-intensiver (aber nicht gleichbedeutend teurer). \textbf{Die Frage hierbei ist also, ob der zu erbringende Stake des Pool-Creators auf den \textit{Total-Supply des W-PLT} normiert werden sollte oder nicht}, die gänzlich mit der obigen Fragestellung einhergeht, ob der Pool-Creator eigentlich staken möchte oder das nur tun muss.
-	
-\begin{itemize}
-	\item Gegen eine Normierung spricht die Annahme/Hoffnung, ein Pool-Creator sei gleichzeitig auch ein großer Supporter des gesamten Projekt und glaube daran. Wenn der \textit{W-PLT}-Preis steigt, ist dies gleichbedeutend mit der Zunahme an genutzten Pools, an denen der Pool-Creator als Staker, Besitzer von \textit{W-PLT} und damit Projekt-Investor auch selbst (finanziell) profitiert.
-	\item Für eine Normierung spricht dagegen die potenzielle Gefahr, neue oder bestehende User durch eine zu hohe finanzielle Sicherheitseinlage davon abzuschrecken neue Pools zu erstellen.
-\end{itemize}
-
-\vspace{0.2cm}
-	
-Die Antwort auf diese Fragestellung könnte auch darin liegen, ob wir uns besonders viele oder lieber weniger aber besonders Teilnehmer-starke Pools wünschen.
-
-\vspace{0.5cm}
-	
-Die \textit{Pool-Teilnehmer} (außer des Creators) können bei dieser Logik aber nicht wie nicht wie die Staker zusätzlich als Projekt-Investoren angesehen werden, weil sie \textit{W-PLT} kaufen, da die gekauften \textit{W-PLT} direkt als Gebühr entrichtet werden. Für die Pool-Teilnehmer stellt der \textit{W-PLT} also eher einen Utility- bzw. Purpose-Token dar weshalb die Höhe der zu entrichtenden Gebühr zweifelsfrei auf Basis von \textit{Total-Supply des W-PLT} normiert werden muss (die Gebühr darf keinesfalls mit Zunahme von Pools steigen).
-
-
-\end{Problem}

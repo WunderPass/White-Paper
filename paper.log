@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  26 MAR 2022 02:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  26 MAR 2022 03:35
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -1132,13 +1132,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {C:/Users/Slava/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Overfull \hbox (1.095pt too wide) detected at line 73
- []\OT1/cmss/bx/n/10.95 103
+Overfull \hbox (1.095pt too wide) detected at line 77
+ []\OT1/cmss/bx/n/10.95 102
  []
 
 
-Overfull \hbox (1.095pt too wide) detected at line 74
- []\OT1/cmss/bx/n/10.95 104
+Overfull \hbox (1.095pt too wide) detected at line 78
+ []\OT1/cmss/bx/n/10.95 103
  []
 
 )
@@ -2457,19 +2457,37 @@ Package mdframed Info: Box was splittet wrong
 (mdframed)              on input line 143.
  [93])
 ([B][Pools]/[Pools][Economic][Bonding-Curves].tex [94]
+Overfull \hbox (1.9714pt too wide) in paragraph at lines 18--19
+\OT1/cmr/m/n/10.95 ein-fach auss-chweigen? Falls wir es genauer erklaren wolle
+n, waren die Ausfuhrungen
+ []
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 18.
+(mdframed)              on input line 24.
 
-Overfull \hbox (3.64319pt too wide) in paragraph at lines 26--28
+Overfull \hbox (3.64319pt too wide) in paragraph at lines 32--34
 []\OT1/cmr/m/n/10.95 der \OT1/cmr/m/it/10.95 Profit-Koeffizient []\OT1/cmr/m/n/
 10.95 (erklaren we-shalb, wofur, warum)[]. Dann leiten sich Verkaufs-
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 62.
-) ([B][Pools]/[Pools][Economic][Rest].tex [95]
+(mdframed)              on input line 68.
+[95]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 113.
+
+Overfull \hbox (8.60735pt too wide) in paragraph at lines 128--129
+\OT1/cmr/m/n/10.95 hende User durch eine zu hohe fi-nanzielle Sicher-heit-sein-
+lage davon abzuschrecken
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 139.
+[96]) ([B][Pools]/[Pools][Economic][Rest].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 20.
@@ -2489,50 +2507,25 @@ Overfull \hbox (12.35635pt too wide) in paragraph at lines 40--41
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 123.
-[96] [97] [98]
+[97]
+Package mdframed Info: Not enough space on this page on input line 123.
+ [98]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 123.
+ [99] [100]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 149.
+(mdframed)              on input line 153.
 
-Overfull \hbox (10.25873pt too wide) in paragraph at lines 155--156
-[]\OT1/cmr/m/n/10.95 Ein Teil der Fees soll di-rekt an den (Bonding-Curves-basi
-erten) \OT1/cmr/m/it/10.95 W-PLT\OT1/cmr/m/n/10.95 -Contract
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 167.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 173.
-
-Overfull \hbox (18.85786pt too wide) in paragraph at lines 179--180
+Overfull \hbox (18.85786pt too wide) in paragraph at lines 160--161
 []\OT1/cmr/m/n/10.95 Aus den obi-gen Daten konnen wir fur diesen Zeitraum (ab
  In-vest beim entsprechen-
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 186.
-[99]
-Overfull \hbox (18.14813pt too wide) in paragraph at lines 203--204
-[]\OT1/cmr/m/n/10.95 fester, statis-cher Split mit einge-bauten Unter- und Ober
--gren-zen fur den Gesamter-
- []
-
-[100]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 216.
-
-Overfull \hbox (8.60735pt too wide) in paragraph at lines 231--232
-\OT1/cmr/m/n/10.95 hende User durch eine zu hohe fi-nanzielle Sicher-heit-sein-
-lage davon abzuschrecken
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 243.
+(mdframed)              on input line 175.
 [101]) [102]) ([C][Project Guard]/[Project Guard].tex) [103]
 ([D][Anhang]/[Anhang].tex ([D][Anhang]/[Anhang][Textueller Input].tex
 Package mdframed Info: mdframed detected package amsthm 
@@ -2834,10 +2827,10 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27380 strings out of 479334
- 524151 string characters out of 2857085
- 993881 words of memory out of 3000000
- 43862 multiletter control sequences out of 15000+200000
+ 27382 strings out of 479334
+ 524088 string characters out of 2857085
+ 993702 words of memory out of 3000000
+ 43855 multiletter control sequences out of 15000+200000
  419467 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  111i,13n,116p,10602b,1016s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2867,9 +2860,9 @@ cm/cmsy6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (120 pages, 8129825 bytes).
+Output written on paper.pdf (120 pages, 8129972 bytes).
 PDF statistics:
- 1382 PDF objects out of 1440 (max. 8388607)
- 351 named destinations out of 1000 (max. 500000)
+ 1393 PDF objects out of 1440 (max. 8388607)
+ 360 named destinations out of 1000 (max. 500000)
  559 words of extra memory for PDF output out of 10000 (max. 10000000)
 
