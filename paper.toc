@@ -60,21 +60,21 @@
 \contentsline {paragraph}{\nonumberline Monetarisierung \& Tokenisierung}{78}{paragraph*.24}%
 \contentsline {paragraph}{\nonumberline Die entscheidende Idee}{80}{paragraph*.26}%
 \contentsline {paragraph}{\nonumberline Token-Design}{81}{paragraph*.28}%
-\contentsline {paragraph}{\nonumberline Umsetzung}{87}{paragraph*.30}%
+\contentsline {paragraph}{\nonumberline Umsetzungskonzept}{87}{paragraph*.30}%
 \contentsline {paragraph}{\nonumberline Ausblick}{89}{paragraph*.32}%
-\contentsline {subsubsection}{\numberline {B.7.3}Gebühren-Ordnung}{89}{subsubsection.B.7.3}%
-\contentsline {paragraph}{\nonumberline Gebühren-Modell}{89}{paragraph*.34}%
-\contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{90}{paragraph*.36}%
-\contentsline {subsubsection}{\numberline {B.7.4}Business-Plan}{91}{subsubsection.B.7.4}%
-\contentsline {subsubsection}{\numberline {B.7.5}WPT - ready to launch}{94}{subsubsection.B.7.5}%
-\contentsline {paragraph}{\nonumberline Token-Kurs-Kurven}{94}{paragraph*.38}%
+\contentsline {subsubsection}{\numberline {B.7.3}Gebühren-Ordnung}{90}{subsubsection.B.7.3}%
+\contentsline {paragraph}{\nonumberline Gebühren-Modell}{90}{paragraph*.34}%
+\contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{91}{paragraph*.36}%
+\contentsline {subsubsection}{\numberline {B.7.4}Business-Plan}{92}{subsubsection.B.7.4}%
+\contentsline {subsubsection}{\numberline {B.7.5}WPT - ready to launch}{95}{subsubsection.B.7.5}%
+\contentsline {paragraph}{\nonumberline Token-Kurs-Kurven}{95}{paragraph*.38}%
 \contentsline {paragraph}{\nonumberline Staking \& Gewinn-Split}{96}{paragraph*.40}%
-\contentsline {paragraph}{\nonumberline Workflows}{96}{paragraph*.42}%
-\contentsline {paragraph}{\nonumberline Problem}{96}{paragraph*.44}%
-\contentsline {paragraph}{\nonumberline Fazit}{97}{paragraph*.46}%
-\contentsline {subsubsection}{\numberline {B.7.6}Beispielrechnung}{97}{subsubsection.B.7.6}%
-\contentsline {subsubsection}{\numberline {B.7.7}Recap \& Ausblick}{100}{subsubsection.B.7.7}%
-\contentsline {subsubsection}{\numberline {B.7.8}Unberücksichtigte Inhalte \& Ideen}{101}{subsubsection.B.7.8}%
+\contentsline {paragraph}{\nonumberline Workflows}{97}{paragraph*.42}%
+\contentsline {paragraph}{\nonumberline Problem}{97}{paragraph*.44}%
+\contentsline {paragraph}{\nonumberline Fazit}{98}{paragraph*.46}%
+\contentsline {subsubsection}{\numberline {B.7.6}Beispielrechnung}{98}{subsubsection.B.7.6}%
+\contentsline {subsubsection}{\numberline {B.7.7}Recap \& Ausblick}{101}{subsubsection.B.7.7}%
+\contentsline {subsubsection}{\numberline {B.7.8}Unberücksichtigte Inhalte \& Ideen}{102}{subsubsection.B.7.8}%
 \contentsline {section}{\numberline {C}Project 'Guard'}{103}{appendix.C}%
 \contentsline {section}{\numberline {D}Diverses}{104}{appendix.D}%
 \contentsline {subsection}{\numberline {D.1}Quellen und Inspiration}{104}{subsection.D.1}%

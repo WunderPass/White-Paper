@@ -322,7 +322,7 @@ Konkretisierend folgt nun en Detail unser anvisierter \textbf{\textit{Staking-Me
 
 
 
-\paragraph{Umsetzung}
+\paragraph{Umsetzungskonzept}
 \textbf{ }
 \vspace{0.3cm}
 
@@ -360,8 +360,12 @@ Konzeptuell können wir an dieser Stelle - bis auf etwaige kleinere Justierungen
 	\item in Abschnitt \nameref{sec:bp} die Berechnungsgrundlage und das Potenzial hinsichtlich obigen Punkts (3) beleuchten,
 	\item uns bei obigen Punkten (2), (4) und (5) auf das Vertrautsein des Lesers zu \textbf{\textit{Bonding-Curves}} generell und der halbwegs verstandenen Lektüre des - teils sehr mathematischen - Anhangs zu unserem Blickwinkel auf \nameref{sec:bonding-curves} berufen,
 	\item von einer (vortäuschenden) Genauigkeit bezüglich obigen Punkts (6) zum aktuellen Zeitpunkt im White-Paper absehen, die zugehörigen Parameter initial nach bestem Wissen und Gewissen schätzen und erst mit zunehmenden praktischen Erkenntnissen eine Justierung vornehmen, die auch ihren Platz im White-Paper findet, und
-	\item schlussendlich in Abschnitt \nameref{sec:wpt} alle Ergebnisse einfließenlassend ein Token-Modell angegeben, das sich ohne offene Fragen in einen Token-Contract gießen lässt. 
+	\item schlussendlich in Abschnitt \nameref{sec:wpt} alle Ergebnisse einfließenlassend ein Token-Modell formuliert, das sich ohne offene Fragen in einen Token-Contract gießen lassen sollte. 
 \end{itemize}
+
+\vspace{0.3cm}
+
+Bevor es also in den folgenden Abschnitten dann letztendlich an die quantitative Modellierung geht, bleiben noch einige letzte konzeptuelle Gedanken zu formulieren, die bisher untergegangen sein könnten.
 
 \vspace{0.5cm}
 
@@ -370,11 +374,56 @@ Konzeptuell können wir an dieser Stelle - bis auf etwaige kleinere Justierungen
 \textbf{ }
 \vspace{0.3cm}
 
+Um die ohnehin nicht ganz geringe Komplexität unseres \textit{WPT} nicht noch mehr ausufern zu lassen, haben wir in allen obigen Gedanken und Ausführungen einen sehr entscheidenden Punkt geschickt ausgespart. Leicht angedeutet wurde dies stets durch die verwendete Bezeichnung \textit{Pools-\textbf{Project}-Token}. Und wahrhaftig stellt der \textit{WPT} weder unseren \textbf{\textit{'Main'}}-Token dar, noch bleibt er der einzige.
+
+\vspace{0.3cm}
+
+\begin{Abgrenzung}[Der \textit{WPT} ist \textbf{nicht} der \textit{WUNDER}]
+\vspace{0.2cm}
+
+An der Stelle sei die Erinnerung daran, dass es bei dem \textit{Pool-Projekt} lediglich um ein Teilprojekt der übergeordneten großen \textbf{WunderPass-Vision} handelt, sehr angebracht. Um ein Teilprojekt als kleiner Baustein des anvisierten größeren \textbf{WunderPass-Ökosystems} - und als solches versehen mit seinem eigenen Projekt-Token. 
+
+\vspace{0.2cm}
+
+Der \textbf{\textit{WUNDER}} soll dagegen den Ökosystem-übergreifenden \textit{'Main'}-Token dar\-stellen. \todo{$[ \rightarrow Verlinken]$}
+
+\vspace{0.2cm}
+
+Eine Begründung für die Trennung der \textit{Project}-Tokens vom \textit{'Main'}-Token würde an dieser Stelle den Rahmen sprengen (\todo{hier wäre eine Verlinkung zu bezugnehmenden Kapiteln des White-Papers sehr wünschenswert; ist aktuell noch etwas chaotisch}).
+
+\vspace{0.2cm}
+
+Gleichzeitig ist es einleuchtend und nicht weiter erklärungsbedürftig, dass der \textit{WPT} in den Kontext des \textit{WUNDER} eingeordnet werden muss, wie sich das \textit{Pool-Projekt} in den Kontext des \textbf{WunderPass-Ökosystems} einordnet. Das soll aber nicht Gegenstand dieses Kapitels sein.
+
+\vspace{0.3cm}
+\todo{\noindent\hrulefill}
+
+\todo{Grundsätzlich ist die Verknüpfung zwischen \textit{WPT} und \textit{WUNDER} konzeptuell auch noch nicht abgeschlossen. Dies wird auch noch größerer Design- und Entwicklungsblöcke erfordern und Zeit brauchen. Vermutlich wird dies gar ein fortlaufenden Erprobungsprozess werden. Der \textit{WUNDER} ist daher zum aktuellen Moment auch noch sehr vage und unfinal gehalten. Das ist durchaus so beabsichtigt, um sich möglichst keines Potenzials durch zu frühe Entscheidungen zu berauben.}
+
+\vspace{0.2cm}
+
+\todo{Für den \textit{WPT} sind diese gewissen \textit{Unfertigkeit} aber größtenteils von keinem Nachteil oder in irgendeiner Weise problematisch. Er kann sich aktuell einfach auf einen \textit{abstrakten WUNDER} referenzieren.}
+
+\vspace{0.2cm}
+
+\todo{Wichtig ist es lediglich, dies an dieser Stelle deutlich klargestellt und genannt zu haben. Und bei gegeben Fortschritt hier textuelle Anpassungen vorzunehmen}
+
+\todo{\noindent\hrulefill}
+\vspace{0.3cm}
+
+\todo{WIP}
+
+\begin{itemize}
+	\item Erste Andeutung, dass die Token-Contract-Treasury zwar im ersten Schritt in \textit{USDT} modelliert, jedoch in \textit{WUNDER} geplant ist.
+\end{itemize}
+
+\end{Abgrenzung}
+
+
+\vspace{0.3cm}
 \todo{WIP}
 
 \begin{itemize}
 	\item Der erste und größere Investor für das Pool-Projekt wäre WunderPass selbst. Für die erfolgte Einlage in den Projekt-Pool bekäme WunderPass WPT, die es für Incentivierungen und Rewards für die Nutzung von Pools verwenden könnte. Dieses Invest könnte (im Gegensatz zu den Einlagen anderer Investoren) zB. auch einem Locking unterliegen, um eine gewisse Preisstabilität des WPT zu gewährleisten.	
-	\item Erste Andeutung, dass die Token-Contract-Treasury zwar im ersten Schritt in \textit{USDT} modelliert, jedoch in \textit{WUNDER} geplant ist.
-	\item Ausblick auf die anschließenden Kapitel, die das präsentierte Konzept umsetzen.
 	\item Erstmals auf \textit{Economics-Excel} verweisen.
 \end{itemize}
