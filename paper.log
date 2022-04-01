@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  1 APR 2022 01:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  2 APR 2022 01:58
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -1133,12 +1133,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Slava/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 Overfull \hbox (1.095pt too wide) detected at line 78
- []\OT1/cmss/bx/n/10.95 105
+ []\OT1/cmss/bx/n/10.95 106
  []
 
 
 Overfull \hbox (1.095pt too wide) detected at line 79
- []\OT1/cmss/bx/n/10.95 106
+ []\OT1/cmss/bx/n/10.95 107
  []
 
 )
@@ -2437,9 +2437,10 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 414.
 [89]
-Overfull \hbox (14.42195pt too wide) in paragraph at lines 418--419
-[]\OT1/cmr/m/n/10.95 Ungeachtet des eben the-ma-tisierten noch nicht zu Ende de
--sign-ten Sta-tus der WunderPass-
+Overfull \hbox (4.79477pt too wide) in paragraph at lines 418--419
+\OT1/cmr/m/n/10.95 des Zusam-men-spiels zwis-chen dem \OT1/cmr/bx/it/10.95 WPT 
+\OT1/cmr/m/n/10.95 und dem \OT1/cmr/bx/it/10.95 WUN-DER\OT1/cmr/m/n/10.95 . Die
+ses wird zu gegebener
  []
 
 Package mdframed Info: mdframed detected package amsthm 
@@ -2458,73 +2459,94 @@ se \OT1/cmr/m/it/10.95 Einlage-Wahrung \OT1/cmr/m/n/10.95 werde
  []
 
 
-Overfull \hbox (27.60504pt too wide) in paragraph at lines 439--440
-\OT1/cmr/m/n/10.95 waiger Prof-ite aus dem \OT1/cmr/m/it/10.95 Pools-Ecosystem 
-\OT1/cmr/m/n/10.95 auch gle-ich das ubergeordnete \OT1/cmr/m/it/10.95 WunderPa
-ss-
+Overfull \hbox (0.5689pt too wide) in paragraph at lines 450--451
+[]\OT1/cmr/m/n/10.95 (ALTERNATIVE: Der \OT1/cmr/m/it/10.95 WUN-DER \OT1/cmr/m/n
+/10.95 muss in gewis-sem Rah-men \OT1/cmr/m/it/10.95 "sta-ble" \OT1/cmr/m/n/10.
+95 gemacht
  []
 
 
-Overfull \hbox (24.42743pt too wide) in paragraph at lines 440--441
-[]\OT1/cmr/m/n/10.95 Fur uns als \OT1/cmr/m/it/10.95 Product-Provider Wun-der-
-Pass \OT1/cmr/m/n/10.95 bote diese Vari-ante zahlre-iche zusatzliche
+Overfull \hbox (7.26097pt too wide) in paragraph at lines 481--482
+[]\OT1/cmr/m/n/10.95 Fur \OT1/cmr/m/it/10.95 Wun-der-Pass \OT1/cmr/m/n/10.95 a
+ls Product-Provider bote diese Vari-ante zahlre-iche zusatzliche
  []
 
 
-Overfull \hbox (0.37636pt too wide) in paragraph at lines 440--441
+Overfull \hbox (0.37636pt too wide) in paragraph at lines 481--482
 \OT1/cmr/m/it/10.95 Mechanism-Design\OT1/cmr/m/n/10.95 -Moglichkeiten und Er-l
 e-ichterun-gen hin-sichtlich tech-nis-cher
  []
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 466.
-[90] [91]) ([B][Pools]/[Pools][Economic][Fees].tex
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 11.
 
-Overfull \hbox (5.59612pt too wide) in paragraph at lines 50--51
+Overfull \hbox (8.41255pt too wide) in paragraph at lines 486--487
+\OT1/cmr/m/n/10.95 cashen erziel-ter Prof-ite aus dem \OT1/cmr/m/it/10.95 Pools
+-Eco-System \OT1/cmr/m/n/10.95 auch gle-ich das ubergeordnete
+ []
+
+
+Overfull \hbox (2.8787pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/n/10.95 deren An-wen-dungsfallen nutzen konnte als nur fur die \O
+T1/cmr/m/it/10.95 Pools\OT1/cmr/m/n/10.95 . Die Notwendigkeit
+ []
+
+
+Overfull \hbox (0.55453pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/it/10.95 Pools-Services \OT1/cmr/m/n/10.95 in das \OT1/cmr/m/it/10.9
+5 WunderPass-Eco-System \OT1/cmr/m/n/10.95 verstandlicher; sowie die Trans-
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 492.
+[90]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 492.
+ [91]) ([B][Pools]/[Pools][Economic][Fees].tex
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+
+Overfull \hbox (5.59612pt too wide) in paragraph at lines 51--52
 \OT1/cmr/m/n/10.95 (sowohl fi-nanziell als auch feature-technisch) ganzlich ko
 sten-los bleiben konnten,
  []
 
 
-Overfull \hbox (1.22618pt too wide) in paragraph at lines 51--52
+Overfull \hbox (1.22618pt too wide) in paragraph at lines 52--53
 []\OT1/cmr/m/it/10.95 Managed-Pools\OT1/cmr/m/n/10.95 : Pools, die von einem er
 -probten und er-fol-gre-ichen Pool-Creator
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 54.
-[92]
+(mdframed)              on input line 55.
+[92] [93]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 87.
+(mdframed)              on input line 89.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 99.
- [93]) ([B][Pools]/[Pools][Economic][Business-Plan].tex
+(mdframed)              on input line 101.
+) ([B][Pools]/[Pools][Economic][Business-Plan].tex [94]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 20.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 50.
- [94]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 50.
+ [95]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 58.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 143.
- [95]
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 143.
  [96])
-([B][Pools]/[Pools][Economic][Bonding-Curves].tex
+([B][Pools]/[Pools][Economic][Bonding-Curves].tex [97]
 Overfull \hbox (1.9714pt too wide) in paragraph at lines 18--19
 \OT1/cmr/m/n/10.95 ein-fach auss-chweigen? Falls wir es genauer erklaren wolle
 n, waren die Ausfuhrungen
@@ -2542,7 +2564,7 @@ Overfull \hbox (3.64319pt too wide) in paragraph at lines 32--34
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 68.
-[97] [98]
+[98]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 113.
@@ -2575,20 +2597,26 @@ Overfull \hbox (12.35635pt too wide) in paragraph at lines 40--41
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 123.
-[100] [101] [102]
+[100]
+Package mdframed Info: Not enough space on this page on input line 123.
+ [101]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 123.
+ [102] [103]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 153.
+(mdframed)              on input line 157.
 
-Overfull \hbox (18.85786pt too wide) in paragraph at lines 160--161
+Overfull \hbox (18.85786pt too wide) in paragraph at lines 164--165
 []\OT1/cmr/m/n/10.95 Aus den obi-gen Daten konnen wir fur diesen Zeitraum (ab
  In-vest beim entsprechen-
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 175.
-[103]) [104]) ([C][Project Guard]/[Project Guard].tex) [105]
+(mdframed)              on input line 179.
+[104]) [105]) ([C][Project Guard]/[Project Guard].tex) [106]
 ([D][Anhang]/[Anhang].tex ([D][Anhang]/[Anhang][Textueller Input].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2620,7 +2648,7 @@ ist die Iden-titatsdarstellung
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 46.
-[106]
+[107]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 51.
@@ -2651,7 +2679,7 @@ Overfull \hbox (10.53731pt too wide) in paragraph at lines 88--89
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 90.
-[107]
+[108]
 Package mdframed Info: Not enough space on this page on input line 90.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2659,7 +2687,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 103.
- [108]
+ [109]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 129.
@@ -2685,7 +2713,7 @@ Package mdframed Warning: You got a bad break
 (mdframed)                by changing the text, the space
 (mdframed)                or something else on input line 154.
 
-[109]
+[110]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 159.
@@ -2723,7 +2751,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 194.
 Package mdframed Info: Not enough space on this page on input line 194.
-[110]
+[111]
 Package mdframed Info: Not enough space on this page on input line 194.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2731,7 +2759,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 206.
-) [111]
+) [112]
 ([D][Anhang]/[Anhang][Token-Economics][WUNDER-Token - Skizze eines möglichen K
 reislaufs].tex
 Package mdframed Info: mdframed detected package amsthm 
@@ -2788,7 +2816,7 @@ Overfull \hbox (1.15424pt too wide) in paragraph at lines 37--38
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 59.
-[112] [113]) [114] ([D][Anhang]/[Anhang][Token-Economics][Bonding Curves].tex
+[113] [114]) [115] ([D][Anhang]/[Anhang][Token-Economics][Bonding Curves].tex
 Overfull \hbox (1.1908pt too wide) in paragraph at lines 19--20
 []\OT1/cmr/m/n/10.95 Zunachst ein-mal eine For-mal-isierung einer Token-Distri
 bution mit-tels Bonding-Curves: 
@@ -2806,7 +2834,7 @@ tract zuruckgegeben
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 66.
-[115] [116] [117]
+[116] [117] [118]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 96.
@@ -2828,7 +2856,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 147.
-[118] [119]
+[119] [120]
 Overfull \hbox (3.24362pt too wide) in paragraph at lines 163--164
 []\OT1/cmr/m/n/10.95 Wir be-haupten hi-er-bei keines-falls, den heili-gen Gral 
 fur das Funk-tion-ieren von \OT1/cmr/m/it/10.95 Bonding-
@@ -2849,7 +2877,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 199.
-[120]
+[121]
 Overfull \hbox (6.72806pt too wide) in paragraph at lines 211--212
 \OT1/cmr/m/n/10.95 tuellem Sup-ply $\OML/cmm/m/it/10.95 i \OMS/cmsy/m/n/10.95 2
  \U/msb/m/n/10.95 N$ \OT1/cmr/m/n/10.95 ohne fundiertes $\OML/cmm/m/it/10.95 f\
@@ -2878,7 +2906,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 255.
-[121])) [122] (paper.aux)
+[122])) [123] (paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2889,10 +2917,10 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27406 strings out of 479334
- 524575 string characters out of 2857085
- 994180 words of memory out of 3000000
- 43875 multiletter control sequences out of 15000+200000
+ 27405 strings out of 479334
+ 524500 string characters out of 2857085
+ 994186 words of memory out of 3000000
+ 43872 multiletter control sequences out of 15000+200000
  419467 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  111i,13n,116p,10602b,1016s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2922,9 +2950,9 @@ cm/cmsy6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (122 pages, 8140104 bytes).
+Output written on paper.pdf (123 pages, 8143537 bytes).
 PDF statistics:
- 1408 PDF objects out of 1440 (max. 8388607)
- 364 named destinations out of 1000 (max. 500000)
- 559 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1422 PDF objects out of 1440 (max. 8388607)
+ 366 named destinations out of 1000 (max. 500000)
+ 567 words of extra memory for PDF output out of 10000 (max. 10000000)
 

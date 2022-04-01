@@ -415,7 +415,7 @@ Gleichzeitig ist es einleuchtend und nicht weiter erklärungsbedürftig, dass de
 
 \vspace{0.3cm}
 
-Ungeachtet des eben thematisierten noch nicht zu Ende designten Status der WunderPass-Ökosystem Currency \textbf{\textit{WUNDER}}, benötigen wir zumindest ein grobes Verständnis des Zusammenspiels zwischen dem \textbf{\textit{WPT}} und dem \textbf{\textit{WUNDER}}. Dieses wird zu gegebener Zeit geschärft.
+Ungeachtet des eben thematisierten noch nicht zu Ende designten Status der Wunder\-Pass-Ökosystem Currency \textbf{\textit{WUNDER}}, benötigen wir zumindest ein grobes Verständnis des Zusammenspiels zwischen dem \textbf{\textit{WPT}} und dem \textbf{\textit{WUNDER}}. Dieses wird zu gegebener Zeit geschärft.
 
 \vspace{0.3cm}
 
@@ -428,48 +428,90 @@ Bezugnehmend auf die vorgestellte \textit{WPT}-Modellierung \ref{wpt}, die insbe
 
 Bisher waren wir stillschweigend davon ausgegangen, diese \textit{Einlage-Währung} werde ein Stable-Dollar (z.B. der \textit{USDT}). Dies ist grundsätzlich eine durchaus sehr sinn\-volle Annahme. Jedoch nicht die einzig vernünftige Option. Zumal wir hierbei plötzlich eine gute Einsatzmöglichkeit für unseren geplanten \textit{WUNDER} in die Hand gelegt bekommen.
 
-\vspace{0.3cm}
-\todo{WIP}
+\vspace{0.2cm}
 
-\vspace{0.3cm}
-\todo{Vorteile}
+Es stellt sich also folgende Frage:
+
+\noindent\hrulefill
+
+\textbf{Was ist, wenn wir den \textit{WUNDER} anstatt (oder auch zusätzlich) eines \textit{Stable-Dollers} als Einlage-Währung unseres \textit{WPS}-Bonding-Curves-Con\-tracts verwenden?}
+
+\noindent\hrulefill
+
+\vspace{0.2cm}
+
+Die Nachteile dieses Ansatzes liegen auf der Hand:
 
 \begin{itemize}
-	\item Investoren von \textit{WUNDER} könnten sich bei besonderem Interesse an dem \textit{Pools-Projekt} stärker und direkten daran beteiligen oder genau dies unterlassen, wenn sie sich eher für die übergeordnete Vision interessieren und die Pools für Spielerei halten.
-	\item \textit{WPT-Beneficiaries} (z. B Staker) wären nicht angehalten beim Auscashen etwaiger Profite aus dem \textit{Pools-Ecosystem} auch gleich das übergeordnete \textit{WunderPass-Ecosystem} zu verlassen.
-	\item Für uns als \textit{Product-Provider WunderPass} böte diese Variante zahlreiche zusätzliche \textit{Mechanism-Design}-Möglichkeiten und Erleichterungen hinsichtlich technischer Umsetzung und UX-Gestaltung - gleichwohl das initiale Aufsetzen dieses Setups ungleich komplexer wäre.
+	\item Höhere Komplexität durch einen zusätzlichen Token, die zudem aus User-Sicht kaum ersichtlich ist und damit auch höherer implizierter Aufwand hinsichtlich der UX-Gestaltung, die dies wieder egalisiert. 
+	\item Notwendigkeit zur Sicherstellung von \textit{WUNDER}-Liquidität, um den \textit{Pools-Service} zu launchen/monetarisieren.
+	\item Nachdem der \textit{WPS} erst an der \textit{WUNDER} gekoppelt wurde, muss dies hinsichtlich des \nameref{fees-model} und der \nameref{fees-charging} de facto wieder rückgängig gemacht werden, damit die Fees zur Nutzung des \textit{Pools-Services} nicht von etwaigen Kursschwankungen des \textit{WUNDER} beeinflusst werden.
 	
-	Als bestes Beispiel sei hierbei gleich der Umstand genannt, dass wir viel einfacher sicherstellen können, ein WunderPass-Besitzer besitze auch \textit{WUNDER} als dies für einen Stable-Doller der Fall sei. Dies geht auch unmittelbar mit der leichteren Handhabe der \textit{Fiat-zu-WUNDER-} vs. \textit{Fiat-zu-USDT-Konvertierung} einher.
-	\item Ein \textit{Pools-User} wäre von Anfang an besser in das anvisierte WunderPass-Ökosystem eingebunden, weil er den \textit{WUNDER} hoffentlich bald auch in anderen Anwendungsfällen nutzen könnte als nur für die \textit{Pools}. Die Integration des \textit{Pools-Cases} in das WunderPass-Ökosystem fiele verständlicher aus, die Transformation irgendwann einfacher und konsequenter.
-	\item Und am Ende streben wir ja genau das an: Großes WunderPass-Ökosystem mit unterschiedlichsten Usecase und einer einheitlichen Währung, bei gleichzeitig klar abgegrenzten \textit{Utility-Tokens} der einzelnen Projekt-Cases mit ihren möglicherweise  sehr unterschiedlichen Economy-Designs.
-	\item
+	(ALTERNATIVE: Der \textit{WUNDER} muss in gewissem Rahmen \textit{"stable"}  gemacht werden.)
 \end{itemize}
 
-\vspace{0.3cm}
-\todo{Nachteile}
+\noindent\hrulefill
+\vspace{0.2cm}
+
+Damit wären wir gezwungen, mit dem Launch des \textit{WPS} gleichzeitig - zumindest initial - \textbf{einen von uns durch Fiat gedeckten Liquidity-Bootstrapping-Pool für den \textit{WUNDER} bereitzustellen}, der zudem noch einen halbwegs stabilen \textit{WUNDER}-Kurs sicherstellen muss.
+
+\vspace{0.2cm}
+
+Da jedoch ohnehin klar ist, dass wir als \textit{WunderPass} de facto der erste Fiat-Investor in \textit{WPS} sein muss und sein wird, stellt zumindest das Bereitstellen der Fiat-Liquidität in den oben genannten Liquidity-Bootstrapping-Pool kein zusätzliches Problem des hier beleuchteten Ansatzes dar.
+
+\noindent\hrulefill
+
+\vspace{0.2cm}
+
+Gleichzeitig müssen aber auch die zahlreichen Vorteile des Ansatzes genannt, die teils unverkennbar sind:
+
+\vspace{0.2cm}
+
+\textbf{Wir streben letztendlich ein größeres \textit{WunderPass-Eco-System} an, innerhalb dessen der \textit{Pools-Service} lediglich als (kleiner) Bestandteil exi\-stiert, und in dessen Sphären der \textit{WPS} lediglich eine Ressource - in Form eines Utility-Token - darstellt, die in der übergeordneten Eco-System-Währung - dem \textit{WUNDER} - bezahlt werden soll!}
+
+\vspace{0.2cm}
 
 \begin{itemize}
-	\item 
-	\item
-	\item
-\end{itemize}
-
-\vspace{0.3cm}
-\todo{Benötigte Mechanismen}
-
-\begin{itemize}
-	\item 
-	\item
-	\item
+	\item \textbf{Klare Abgrenzung der \textit{Utility} von der \textit{Currency}}
+	\item \textbf{Gestaltungsspielraum für Investoren:}
+	
+	Investoren und Token-Holder von \textit{WUNDER} erhielten die Möglichkeit, sich bei besonderem Interesse am \textit{Pools-Projekt} stärker und direkter an demselben zu beteiligen oder genau dies zu unterlassen, falls sie tendenziell auf die übergeordnete Vision setzen. Auf diese Weise könnten die gehaltenen \textit{WUNDER} sofort wieder gewinnbringend eingesetzt werden.
+	\item \textbf{Gestaltungsspielraum für WunderPass als Project-Owner:}
+	
+	Für \textit{WunderPass} als Product-Provider böte diese Variante zahlreiche zusätzliche \textit{Mechanism-Design}-Möglichkeiten und Erleichterungen hinsichtlich technischer Umsetzung und UX-Gestaltung - gleichwohl das initiale Setup natürlich ungleich komplexer wäre.
+	
+	Als bestes Beispiel sei hierbei der Umstand genannt, die Sicherstellung einer vorhandenen Balance eines \textbf{WunderPass-Inhabers} an \textit{WUNDER} sei aus unserer Sicht ungleich komfortabler als eine Stable-Doller-Balance. Dies geht unmittelbar aus einer leichteren Handhabe einer \textit{"Fiat-zu-WUNDER"-} vs. \textit{"Fiat-zu-USDT"-Konvertierung} einher.
+	\item \textbf{Beneficiaries im Eco-System halten:}
+	
+	Etwaige \textit{WPT-Beneficiaries} (z. B Staker) wären nicht angehalten, beim Auscashen erzielter Profite aus dem \textit{Pools-Eco-System} auch gleich das übergeordnete \textit{WunderPass-Eco-System} zu verlassen.
+	\item \textbf{User für Eco-System sensibilisieren:}
+	
+	Ein \textit{Pools-User} wäre von Anfang an, besser in das anvisierte \textit{WunderPass-Eco-System} eingebunden, da er den \textit{WUNDER} hoffentlich bald zusätzlich in anderen Anwendungsfällen nutzen könnte als nur für die \textit{Pools}. Die Notwendigkeit eines WunderPasses zur Nutzung der \textit{Pools} wäre erklärt; die Integration des \textit{Pools-Services} in das \textit{WunderPass-Eco-System} verständlicher; sowie die Transformation irgendwann einfacher und konsequenter.
 \end{itemize}
 
 \end{Konzept}
 
 
-\vspace{0.3cm}
-\todo{WIP}
 
-\begin{itemize}
-	\item Der erste und größere Investor für das Pool-Projekt wäre WunderPass selbst. Für die erfolgte Einlage in den Projekt-Pool bekäme WunderPass WPT, die es für Incentivierungen und Rewards für die Nutzung von Pools verwenden könnte. Dieses Invest könnte (im Gegensatz zu den Einlagen anderer Investoren) zB. auch einem Locking unterliegen, um eine gewisse Preisstabilität des WPT zu gewährleisten.	
-	\item Erstmals auf \textit{Economics-Excel} verweisen.
-\end{itemize}
+
+\subsubsection{Begleitende Excel}
+\label{sec:fees}
+\vspace{0.2cm}
+%\input{[B][Pools]/[Pools][Economic][Fees]}    % binde die Datei '[Pools][Economic][Fees].tex' ein
+
+Die Rechnerei der anschließenden Kapitel (insbesondere XXX und YYY) wird stets die Excel-Datei \href{pool-economics-V3.xlsx}{Pools-Economics} begleitet!
+
+\vspace{0.5cm}
+
+
+\vspace{0.3cm}
+\todo{TODO: Erstmals auf \textit{Economics-Excel} verweisen.}
+
+%\href{run:/127.0.0.1/temp/test.txt}{Textdatei}
+%\href{run:pool-economics-V3.xlsx}{Pools-Economics}
+
+\href{pool-economics-V3.xlsx}{Pools-Economics}
+
+\href{hallo.txt}{Hallo}
+
+\href{run:C:/Users/Slava/White-Paper/nft.pdf}{This is my link}
