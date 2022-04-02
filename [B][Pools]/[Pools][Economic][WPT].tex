@@ -322,7 +322,7 @@ Konkretisierend folgt nun en Detail unser anvisierter \textbf{\textit{Staking-Me
 
 
 
-\paragraph{Umsetzung}
+\paragraph{Umsetzungskonzept}
 \textbf{ }
 \vspace{0.3cm}
 
@@ -336,49 +336,157 @@ Gleichwohl noch nicht richtig quantifizierbar, jedoch konzeptuell bereits solide
 
 Folgenden bisher erarbeiteten wesentlichen Ergebnissen folgend definieren wir den WunderPool-Token (\textbf{WPT}) als den anvisierten \textit{Pool-Project-Token}:
 
-\begin{itemize}
+\begin{enumerate}
 	\item Die Monetarisierung des Pools-Projekt erfolgt durch Service-Fees, die Mittels des \textit{Utility-Tokens} \textbf{WPT} veranschlagt und abgerechnet werden (Prämissen \ref{monetarisierung} und \ref{fees-for-token}).
 	\item Die Venture-Invests der \textbf{WPT}-Käufer werden durch echte Kapital-Rücklagen innerhalb des \textbf{WPT}-Token-Contracts gedeckt (Design-Merkmal \ref{bcm}).
 	\item Alle \textbf{WPT}-Holder werden finanziell am etwaigen Projekt-Erfolg beteiligt \\ (Design-Merkmal \ref{token-usp}).
 	\item Ein AMM zur \textbf{WPT}-Distribution (und initialem Token-Sale) wird bereitgestellt (Design-Merkmal \ref{bcm}).
 	\item Der \textbf{WPT}-Supply und -Kurs wird zwecks Vermeidung von Inflation des \textit{Utility-Tokens} in gewissem Rahmen kontrolliert (Design-Merkmal \ref{bcm}).
-	\item Bei gegebenem Demand nach dem Pools-Service wird die aktuelle Zirkulation des \textbf{WPT-Utility-Tokens} künstlich aufrecht erhalten und der Anteil der verfügbaren an sich in Zirkulation befindenden \textbf{WPT} künstlich verknappt (Design-Merkmal \ref{circulation}).
-\end{itemize}
+	\item Bei gegebenem Demand nach dem Pools-Service wird die aktuelle Zirkulation des \textbf{WPT-Utility-Tokens} künstlich aufrechterhalten und der Anteil der verfügbaren sich in Zirkulation befindenden \textbf{WPT} künstlich verknappt (Design-Merkmal \ref{circulation}).
+\end{enumerate}
 
 \vspace{0.5cm}
 
 Zur Motivation des Einsatzes von \textbf{Bonding-Curves} beim hier besonders prägenden Design-Merkmal \ref{bcm} sei zur allgemeinen Einführung unter anderem auf die Artikel \href{https://medium.com/coinmonks/token-bonding-curves-explained-7a9332198e0e}{Token Bonding Curves Explained} und \href{https://blog.goodaudience.com/rewriting-the-story-of-human-collaboration-c33a8a4cd5b8}{Rewriting the Story of Human Collaboration}, zur Inspiration auf den Artikel \href{https://medium.com/atchai/can-we-save-the-utility-token-55ef639370cf}{Utility-Token als Bunding-Curves-Modell} und hinsichtlich Umsetzung auf unseren eigenen Content aus dem Anhang zu \nameref{sec:bonding-curves} verwiesen.
 
-\vspace{0.3cm}
-\todo{TODO: Welcher der obigen Punkte wird in welchen der folgenden Kapitel en Detail aufgegriffen und weiter vertiegt, um die noch fehlende Quantifizierung darzustellen?}
-
 \end{Solution}
 
 \vspace{0.5cm}
 
-\todo{WIP}
+Konzeptuell können wir an dieser Stelle - bis auf etwaige kleinere Justierungen - einen Haken an das Design unseres \textbf{WPT-Tokens} setzen und uns im Folgenden an die quantitative, konkrete Modellierung desselben wagen. Bezugnehmend auf die eben erfolgte Definition des \textbf{WPT} werden wir
 
 \begin{itemize}
-	\item Bonding-Curves
-	\begin{itemize}
-		\item Warum?
-		\item Modellierung mit den Denkansätzen aus dem Anhang zu \nameref{sec:bonding-curves} unter Einbeziehung der obigen Gewinnbeteiligung an Fees
-	\end{itemize}	
+	\item in Abschnitt \nameref{sec:fees} die Grundlage für obigen Punkt (1) schaffen,
+	\item in Abschnitt \nameref{sec:bp} die Berechnungsgrundlage und das Potenzial hinsichtlich obigen Punkts (3) beleuchten,
+	\item uns bei obigen Punkten (2), (4) und (5) auf das Vertrautsein des Lesers zu \textbf{\textit{Bonding-Curves}} generell und der halbwegs verstandenen Lektüre des - teils sehr mathematischen - Anhangs zu unserem Blickwinkel auf \nameref{sec:bonding-curves} berufen,
+	\item von einer (vortäuschenden) Genauigkeit bezüglich obigen Punkts (6) zum aktuellen Zeitpunkt im White-Paper absehen, die zugehörigen Parameter initial nach bestem Wissen und Gewissen schätzen und erst mit zunehmenden praktischen Erkenntnissen eine Justierung vornehmen, die auch ihren Platz im White-Paper findet, und
+	\item schlussendlich in Abschnitt \nameref{sec:wpt} alle Ergebnisse einfließenlassend ein Token-Modell formuliert, das sich ohne offene Fragen in einen Token-Contract gießen lassen sollte. 
 \end{itemize}
 
-\vspace{0.5cm}
+\vspace{0.3cm}
 
+Bevor es also in den folgenden Abschnitten dann letztendlich an die quantitative Modellierung geht, bleiben noch einige letzte konzeptuelle Gedanken zu formulieren, die bisher untergegangen sein könnten.
+
+\vspace{0.5cm}
 
 
 \paragraph{Ausblick}
 \textbf{ }
 \vspace{0.3cm}
 
-\todo{WIP}
+Um die ohnehin nicht ganz geringe Komplexität unseres \textit{WPT} nicht noch mehr ausufern zu lassen, haben wir in allen obigen Gedanken und Ausführungen einen sehr entscheidenden Punkt geschickt ausgespart. Leicht angedeutet wurde dies stets durch die verwendete Bezeichnung \textit{Pools-\textbf{Project}-Token}. Und wahrhaftig stellt der \textit{WPT} weder unseren \textbf{\textit{'Main'}}-Token dar, noch bleibt er der einzige.
+
+\vspace{0.3cm}
+
+\begin{Abgrenzung}[Der \textit{WPT} ist \textbf{nicht} der \textit{WUNDER}]
+\vspace{0.2cm}
+
+An der Stelle sei die Erinnerung daran, dass es bei dem \textit{Pool-Projekt} lediglich um ein Teilprojekt der übergeordneten großen \textbf{WunderPass-Vision} handelt, sehr angebracht. Um ein Teilprojekt als kleiner Baustein des anvisierten größeren \textbf{WunderPass-Ökosystems} - und als solches versehen mit seinem eigenen Projekt-Token. 
+
+\vspace{0.2cm}
+
+Der \textbf{\textit{WUNDER}} soll dagegen den Ökosystem-übergreifenden \textit{'Main'}-Token dar\-stellen. \todo{$[ \rightarrow Verlinken]$}
+
+\vspace{0.2cm}
+
+Eine Begründung für die Trennung der \textit{Project}-Tokens vom \textit{'Main'}-Token würde an dieser Stelle den Rahmen sprengen (\todo{hier wäre eine Verlinkung zu bezugnehmenden Kapiteln des White-Papers sehr wünschenswert; ist aktuell noch etwas chaotisch}).
+
+\vspace{0.2cm}
+
+Gleichzeitig ist es einleuchtend und nicht weiter erklärungsbedürftig, dass der \textit{WPT} in den Kontext des \textit{WUNDER} eingeordnet werden muss, wie sich das \textit{Pool-Projekt} in den Kontext des \textbf{WunderPass-Ökosystems} einordnet. Das soll aber nicht Gegenstand dieses Kapitels sein.
+
+\vspace{0.3cm}
+\todo{\noindent\hrulefill}
+
+\todo{Grundsätzlich ist die Verknüpfung zwischen \textit{WPT} und \textit{WUNDER} konzeptuell auch noch nicht abgeschlossen. Dies wird auch noch größerer Design- und Entwicklungsblöcke erfordern und Zeit brauchen. Vermutlich wird dies gar ein fortlaufenden Erprobungsprozess werden. Der \textit{WUNDER} ist daher zum aktuellen Moment auch noch sehr vage und unfinal gehalten. Das ist durchaus so beabsichtigt, um sich möglichst keines Potenzials durch zu frühe Entscheidungen zu berauben.}
+
+\vspace{0.2cm}
+
+\todo{Für den \textit{WPT} sind diese gewissen \textit{Unfertigkeit} aber größtenteils von keinem Nachteil oder in irgendeiner Weise problematisch. Er kann sich aktuell einfach auf einen \textit{abstrakten WUNDER} referenzieren.}
+
+\vspace{0.2cm}
+
+\todo{Wichtig ist es lediglich, dies an dieser Stelle deutlich klargestellt und genannt zu haben. Und bei gegeben Fortschritt hier textuelle Anpassungen vorzunehmen}
+
+\todo{\noindent\hrulefill}
+\vspace{0.3cm}
+
+\end{Abgrenzung}
+
+\vspace{0.3cm}
+
+Ungeachtet des eben thematisierten noch nicht zu Ende designten Status der Wunder\-Pass-Ökosystem Currency \textbf{\textit{WUNDER}}, benötigen wir zumindest ein grobes Verständnis des Zusammenspiels zwischen dem \textbf{\textit{WPT}} und dem \textbf{\textit{WUNDER}}. Dieses wird zu gegebener Zeit geschärft.
+
+\vspace{0.3cm}
+
+\begin{Konzept}[\textit{WUNDER} vs. \textit{USDT} als Funding-Currency des \textit{WPT}-Bonding-Curves-Contracts]
+\vspace{0.2cm}
+
+Bezugnehmend auf die vorgestellte \textit{WPT}-Modellierung \ref{wpt}, die insbesondere auf dem Design-Konzept aufsetzt \ref{bcm} benötigt unser \textit{WPT} eine durch reale Finanzmittel gedeck\-te \textbf{Token-Contract-Treasury}!
+
+\vspace{0.2cm}
+
+Bisher waren wir stillschweigend davon ausgegangen, diese \textit{Einlage-Währung} werde ein Stable-Dollar (z.B. der \textit{USDT}). Dies ist grundsätzlich eine durchaus sehr sinn\-volle Annahme. Jedoch nicht die einzig vernünftige Option. Zumal wir hierbei plötzlich eine gute Einsatzmöglichkeit für unseren geplanten \textit{WUNDER} in die Hand gelegt bekommen.
+
+\vspace{0.2cm}
+
+Es stellt sich also folgende Frage:
+
+\noindent\hrulefill
+
+\textbf{Was ist, wenn wir den \textit{WUNDER} anstatt (oder auch zusätzlich) eines \textit{Stable-Dollers} als Einlage-Währung unseres \textit{WPS}-Bonding-Curves-Con\-tracts verwenden?}
+
+\noindent\hrulefill
+
+\vspace{0.2cm}
+
+Die Nachteile dieses Ansatzes liegen auf der Hand:
 
 \begin{itemize}
-	\item Der erste und größere Investor für das Pool-Projekt wäre WunderPass selbst. Für die erfolgte Einlage in den Projekt-Pool bekäme WunderPass WPT, die es für Incentivierungen und Rewards für die Nutzung von Pools verwenden könnte. Dieses Invest könnte (im Gegensatz zu den Einlagen anderer Investoren) zB. auch einem Locking unterliegen, um eine gewisse Preisstabilität des WPT zu gewährleisten.	
-	\item Erste Andeutung, dass die Token-Contract-Treasury zwar im ersten Schritt in \textit{USDT} modelliert, jedoch in \textit{WUNDER} geplant ist.
-	\item Ausblick auf die anschließenden Kapitel, die das präsentierte Konzept umsetzen.
-	\item Erstmals auf \textit{Economics-Excel} verweisen.
+	\item Höhere Komplexität durch einen zusätzlichen Token, die zudem aus User-Sicht kaum ersichtlich ist und damit auch höherer implizierter Aufwand hinsichtlich der UX-Gestaltung, die dies wieder egalisiert. 
+	\item Notwendigkeit zur Sicherstellung von \textit{WUNDER}-Liquidität, um den \textit{Pools-Service} zu launchen/monetarisieren.
+	\item Nachdem der \textit{WPS} erst an der \textit{WUNDER} gekoppelt wurde, muss dies hinsichtlich des \nameref{fees-model} und der \nameref{fees-charging} de facto wieder rückgängig gemacht werden, damit die Fees zur Nutzung des \textit{Pools-Services} nicht von etwaigen Kursschwankungen des \textit{WUNDER} beeinflusst werden.
+	
+	(ALTERNATIVE: Der \textit{WUNDER} muss in gewissem Rahmen \textit{"stable"}  gemacht werden.)
 \end{itemize}
+
+\noindent\hrulefill
+\vspace{0.2cm}
+
+Damit wären wir gezwungen, mit dem Launch des \textit{WPS} gleichzeitig - zumindest initial - \textbf{einen von uns durch Fiat gedeckten Liquidity-Bootstrapping-Pool für den \textit{WUNDER} bereitzustellen}, der zudem noch einen halbwegs stabilen \textit{WUNDER}-Kurs sicherstellen muss.
+
+\vspace{0.2cm}
+
+Da jedoch ohnehin klar ist, dass wir als \textit{WunderPass} de facto der erste Fiat-Investor in \textit{WPS} sein muss und sein wird, stellt zumindest das Bereitstellen der Fiat-Liquidität in den oben genannten Liquidity-Bootstrapping-Pool kein zusätzliches Problem des hier beleuchteten Ansatzes dar.
+
+\noindent\hrulefill
+
+\vspace{0.2cm}
+
+Gleichzeitig müssen aber auch die zahlreichen Vorteile des Ansatzes genannt, die teils unverkennbar sind:
+
+\vspace{0.2cm}
+
+\textbf{Wir streben letztendlich ein größeres \textit{WunderPass-Eco-System} an, innerhalb dessen der \textit{Pools-Service} lediglich als (kleiner) Bestandteil exi\-stiert, und in dessen Sphären der \textit{WPS} lediglich eine Ressource - in Form eines Utility-Token - darstellt, die in der übergeordneten Eco-System-Währung - dem \textit{WUNDER} - bezahlt werden soll!}
+
+\vspace{0.2cm}
+
+\begin{itemize}
+	\item \textbf{Klare Abgrenzung der \textit{Utility} von der \textit{Currency}}
+	\item \textbf{Gestaltungsspielraum für Investoren:}
+	
+	Investoren und Token-Holder von \textit{WUNDER} erhielten die Möglichkeit, sich bei besonderem Interesse am \textit{Pools-Projekt} stärker und direkter an demselben zu beteiligen oder genau dies zu unterlassen, falls sie tendenziell auf die übergeordnete Vision setzen. Auf diese Weise könnten die gehaltenen \textit{WUNDER} sofort wieder gewinnbringend eingesetzt werden.
+	\item \textbf{Gestaltungsspielraum für WunderPass als Project-Owner:}
+	
+	Für \textit{WunderPass} als Product-Provider böte diese Variante zahlreiche zusätzliche \textit{Mechanism-Design}-Möglichkeiten und Erleichterungen hinsichtlich technischer Umsetzung und UX-Gestaltung - gleichwohl das initiale Setup natürlich ungleich komplexer wäre.
+	
+	Als bestes Beispiel sei hierbei der Umstand genannt, die Sicherstellung einer vorhandenen Balance eines \textbf{WunderPass-Inhabers} an \textit{WUNDER} sei aus unserer Sicht ungleich komfortabler als eine Stable-Doller-Balance. Dies geht unmittelbar aus einer leichteren Handhabe einer \textit{"Fiat-zu-WUNDER"-} vs. \textit{"Fiat-zu-USDT"-Konvertierung} einher.
+	\item \textbf{Beneficiaries im Eco-System halten:}
+	
+	Etwaige \textit{WPT-Beneficiaries} (z. B Staker) wären nicht angehalten, beim Auscashen erzielter Profite aus dem \textit{Pools-Eco-System} auch gleich das übergeordnete \textit{WunderPass-Eco-System} zu verlassen.
+	\item \textbf{User für Eco-System sensibilisieren:}
+	
+	Ein \textit{Pools-User} wäre von Anfang an, besser in das anvisierte \textit{WunderPass-Eco-System} eingebunden, da er den \textit{WUNDER} hoffentlich bald zusätzlich in anderen Anwendungsfällen nutzen könnte als nur für die \textit{Pools}. Die Notwendigkeit eines WunderPasses zur Nutzung der \textit{Pools} wäre erklärt; die Integration des \textit{Pools-Services} in das \textit{WunderPass-Eco-System} verständlicher; sowie die Transformation irgendwann einfacher und konsequenter.
+\end{itemize}
+
+\end{Konzept}

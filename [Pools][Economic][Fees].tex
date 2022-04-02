@@ -1,0 +1,105 @@
+% !TEX root = paper.tex
+
+\paragraph{Gebühren-Modell}
+\label{fees-model}
+\textbf{ }
+\vspace{0.2cm}
+
+\todo{Es muss noch zeitliche Service-Pauschale (z.B. nach Ablauf jeden Jahres) veranschlagt werden, um gänzlich inaktive Pool (mit Geld drauf) zu verhindern.}
+
+\vspace{0.3cm}
+
+\begin{Assumption}[Gebühren]\label{fees}
+
+Es sollen in etwa folgende \textit{Basic-Fees} anfallen:
+
+\begin{itemize}
+	\item Grundgebühr von 1.9 \% auf den Deposit (für jeden Pool-Teilnehmer außer des Pool-Creators).
+	\item Tradinggebühr von 0.1 \% auf jede Kauf- oder Verkaufsorder.
+	\item Gewinnprovision von 9.9 \% auf einen durch den Pool erwirtschafteten \textbf{positiven} EBIT (bei Liquidierung des Pools).
+\end{itemize}
+
+\vspace{0.2cm}
+
+Ergänzt werde diese durch etwaige \textit{Service-Fees}: 
+
+\begin{itemize}
+	\item Erweiterte Grundgebühr von zusätzlichen 1.5 \% auf den Deposit bei einem späteren Pool-Beitritt (additiv zu der obigen Basis-Grundgebühr).
+	\item \textit{Leaving-Gebühr} von 6.9 \% auf den Cashout-Betrag bei vorzeitigem Verlassen des Pools und Cashout seitens eines Pool-Teilnehmers, falls der Cashout über den Pool-Contract erfolgt (und nicht z.B. mittels Verkaufs der Shares an einen anderen Pool-Teilnehmer oder am Sekundär-Markt).
+\end{itemize}
+
+\vspace{0.2cm}
+
+Zudem sind folgende \textit{Benefits} hinsichtlich der Gebührenordnung für Inhaber eines Pass-NFTs \todo{(Kapitel verlinken)} vorgesehen:
+
+\begin{itemize}
+	\item Wegfall der Deposit-Grundgebühr für Inhaber eines PassNFTs des Status \textit{Diamond} und \textit{Black}.
+	\item Reduzierung sämtlicher Gebühren, die auf User- und nicht Pool-Basis anfallen um
+	\begin{itemize}
+		\item 50 \% für Teilnehmer mit PassNFT-Status \textit{Diamond},
+		\item 30 \% für Teilnehmer mit PassNFT-Status \textit{Black},
+		\item 20 \% für Teilnehmer mit PassNFT-Status \textit{Pearl},
+		\item 10 \% für Teilnehmer mit PassNFT-Status \textit{Platin}.
+	\end{itemize}
+\end{itemize}
+
+\vspace{0.5cm}	
+
+Aktuell nicht berücksichtigt jedoch grundsätzlich spannend sind die folgenden Gebühren-Aspekte und -Varianten:
+
+\begin{itemize}
+	\item Eine mögliche \textit{Trial-vs-Pro-Gebührenordnung}, bei der (stark) limitierte Pools (sowohl finanziell als auch feature-technisch) gänzlich kostenlos bleiben könnten, während eine unlimitierte Nutzung mit höheren Gebühren als den obigen einhergehen würde.
+	\item \textit{Managed-Pools}: Pools, die von einem erprobten und erfolgreichen Pool-Creator hinsichtlich der Invests gesteuert, könnten eine höhere Teilnahme-Gebühr erfordern, an der auch der Creator maßgeblich beteiligt wird. 
+\end{itemize}	
+
+\end{Assumption}
+
+\vspace{0.5cm}
+
+
+
+\paragraph{Gebühren-Abrechnung}
+\label{fees-charging}
+\textbf{ }
+\vspace{0.2cm}
+
+
+
+
+\todo{WIP}
+
+\begin{itemize}
+	\item Klarstellung und Erklärung, dass die Gebühren zunächst in Fiat berechnet, jedoch am Ende in WPT veranschlagt werden.
+	\item Erste Andeutung, dass die Token-Contract-Treasury zwar im ersten Schritt in \textit{USDT} modelliert, jedoch in \textit{WUNDER} geplant ist.
+	\item Cash-Flows hinsichtlich der Fees:
+	\begin{itemize}
+		\item Wann fallen die Gebühren an? 
+		\item Wann und wie werden diese in WPT transferiert? 
+		\item Wann werden diese ausgezahlt? $\rightarrow$ \textit{Pending-Fees}
+	\end{itemize}
+	\item Handling inaktiver Pool über die Zeit - inklusive einer automatischen Eliminierung nach einem gewissen Inaktivitätszeitraum (um auch reale Finanzmittel nicht in toten Pools verloren gehen zu lassen, wenn die Teilnehmer - wie auch immer geartet - "kryptografisch tot" sind).
+\end{itemize}
+
+\vspace{0.5cm}
+
+Abgerechnet werden die auf den Pool anfallenden Fees (selbst die ausschließlich User-basierten) aufgrund von \textit{Mechanism-Design}-Überlegungen erst bei seiner Liquidierung.
+
+\vspace{0.3cm}
+
+\begin{Praemisse}[Abrechnung]
+
+Sämtliche für einen Pool angefallenen Fees werden (ungeachtet ihres Fälligkeitszeit\-punkts) fließen erst bei seiner Liquidierung und werden zwischen Fälligkeit und Entrichtung in einem gesonderten Teil der \textit{Pool-Treasury} vorgehalten (ähnlich dessen, wo der gestakte Betrag des Pool-Creators verwahrt wird).
+
+\vspace{0.2cm}
+
+Wir werden diese finanziellen Mittel im weiteren Verlauf auch als \textbf{\textit{Pending-Fees}} bezeichnen.
+
+\vspace{0.2cm}
+
+In Analogie dazu werden wir an geeigneter Stelle folgend auch von \textbf{\textit{Staked-Fees}} sprechen - gleichwohl es sich dabei eher um eine Sicherheit als um tatsächliche Fees handelt.
+
+\end{Praemisse}
+
+\vspace{0.5cm}
+
+\todo{Ende WIP}

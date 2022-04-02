@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  2 APR 2022 01:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.8)  2 APR 2022 02:27
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -1132,12 +1132,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {C:/Users/Slava/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Overfull \hbox (1.095pt too wide) detected at line 78
+Overfull \hbox (1.095pt too wide) detected at line 79
  []\OT1/cmss/bx/n/10.95 106
  []
 
 
-Overfull \hbox (1.095pt too wide) detected at line 79
+Overfull \hbox (1.095pt too wide) detected at line 80
  []\OT1/cmss/bx/n/10.95 107
  []
 
@@ -1927,25 +1927,25 @@ r/m/n/10.95 aufgenomme-
  []
 
 ) ([A][NFT-Pass]/[NFT-Pass][Konzept][Design].tex
-<[A][NFT-Pass]/images/diamand 1.png, id=617, 1003.75pt x 678.535pt>
+<[A][NFT-Pass]/images/diamand 1.png, id=619, 1003.75pt x 678.535pt>
 File: [A][NFT-Pass]/images/diamand 1.png Graphic file (type png)
 <use [A][NFT-Pass]/images/diamand 1.png>
 Package pdftex.def Info: [A][NFT-Pass]/images/diamand 1.png  used on input line
  9.
 (pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[A][NFT-Pass]/images/diamand 2.png, id=619, 1003.75pt x 678.535pt>
+<[A][NFT-Pass]/images/diamand 2.png, id=621, 1003.75pt x 678.535pt>
 File: [A][NFT-Pass]/images/diamand 2.png Graphic file (type png)
 <use [A][NFT-Pass]/images/diamand 2.png>
 Package pdftex.def Info: [A][NFT-Pass]/images/diamand 2.png  used on input line
  11.
 (pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[A][NFT-Pass]/images/black.png, id=620, 1003.75pt x 678.535pt>
+<[A][NFT-Pass]/images/black.png, id=622, 1003.75pt x 678.535pt>
 File: [A][NFT-Pass]/images/black.png Graphic file (type png)
 <use [A][NFT-Pass]/images/black.png>
 Package pdftex.def Info: [A][NFT-Pass]/images/black.png  used on input line 17.
 
 (pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[A][NFT-Pass]/images/pearl.png, id=621, 1003.75pt x 678.535pt>
+<[A][NFT-Pass]/images/pearl.png, id=623, 1003.75pt x 678.535pt>
 File: [A][NFT-Pass]/images/pearl.png Graphic file (type png)
 <use [A][NFT-Pass]/images/pearl.png>
 Package pdftex.def Info: [A][NFT-Pass]/images/pearl.png  used on input line 19.
@@ -1955,12 +1955,12 @@ Package pdftex.def Info: [A][NFT-Pass]/images/pearl.png  used on input line 19.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<[A][NFT-Pass]/images/gold.png, id=622, 1003.75pt x 678.535pt>
+<[A][NFT-Pass]/images/gold.png, id=624, 1003.75pt x 678.535pt>
 File: [A][NFT-Pass]/images/gold.png Graphic file (type png)
 <use [A][NFT-Pass]/images/gold.png>
 Package pdftex.def Info: [A][NFT-Pass]/images/gold.png  used on input line 25.
 (pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[A][NFT-Pass]/images/bronze.png, id=623, 1003.75pt x 678.535pt>
+<[A][NFT-Pass]/images/bronze.png, id=625, 1003.75pt x 678.535pt>
 File: [A][NFT-Pass]/images/bronze.png Graphic file (type png)
 <use [A][NFT-Pass]/images/bronze.png>
 Package pdftex.def Info: [A][NFT-Pass]/images/bronze.png  used on input line 27
@@ -1997,25 +1997,25 @@ Ergeb-nisse und Wahrscheinlichkeits-
  []
 
 [61] [62]
-<[A][NFT-Pass]/images/pass 1.png, id=665, 1003.75pt x 678.535pt>
+<[A][NFT-Pass]/images/pass 1.png, id=667, 1003.75pt x 678.535pt>
 File: [A][NFT-Pass]/images/pass 1.png Graphic file (type png)
 <use [A][NFT-Pass]/images/pass 1.png>
 Package pdftex.def Info: [A][NFT-Pass]/images/pass 1.png  used on input line 12
 1.
 (pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[A][NFT-Pass]/images/pass 2.png, id=666, 1003.75pt x 678.535pt>
+<[A][NFT-Pass]/images/pass 2.png, id=668, 1003.75pt x 678.535pt>
 File: [A][NFT-Pass]/images/pass 2.png Graphic file (type png)
 <use [A][NFT-Pass]/images/pass 2.png>
 Package pdftex.def Info: [A][NFT-Pass]/images/pass 2.png  used on input line 12
 3.
 (pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[A][NFT-Pass]/images/pass 3.png, id=667, 1003.75pt x 678.535pt>
+<[A][NFT-Pass]/images/pass 3.png, id=669, 1003.75pt x 678.535pt>
 File: [A][NFT-Pass]/images/pass 3.png Graphic file (type png)
 <use [A][NFT-Pass]/images/pass 3.png>
 Package pdftex.def Info: [A][NFT-Pass]/images/pass 3.png  used on input line 12
 9.
 (pdftex.def)             Requested size: 167.29967pt x 113.09233pt.
-<[A][NFT-Pass]/images/pass 4.png, id=668, 1003.75pt x 678.535pt>
+<[A][NFT-Pass]/images/pass 4.png, id=670, 1003.75pt x 678.535pt>
 File: [A][NFT-Pass]/images/pass 4.png Graphic file (type png)
 <use [A][NFT-Pass]/images/pass 4.png>
 Package pdftex.def Info: [A][NFT-Pass]/images/pass 4.png  used on input line 13
@@ -2216,7 +2216,7 @@ echanismus
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 59.
-[77]) ([Pools][Economic][WPT].tex
+[77]) ([B][Pools]/[Pools][Economic][WPT].tex
 Overfull \hbox (4.49104pt too wide) in paragraph at lines 7--8
 []\OT1/cmr/m/n/10.95 Der ab-strakt gehal-te-nen Ein-leitung zum fi-nanziellen G
 rundgerust un-seres Pool-Projekts
@@ -2502,7 +2502,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 492.
- [91]) ([B][Pools]/[Pools][Economic][Fees].tex
+ [91]) ([B][Pools]/[Pools][Economic][Excel].tex
+Overfull \hbox (10.74156pt too wide) in paragraph at lines 3--4
+\OT1/cmr/m/n/10.95 Die Rech-nerei der an-schlieen-den Kapi-tel wird stets durc
+h die Excel-Datei [][]Pools-Economics[][]
+ []
+
+) ([Pools][Economic][Fees].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 12.
@@ -2917,10 +2923,10 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27405 strings out of 479334
- 524500 string characters out of 2857085
- 994186 words of memory out of 3000000
- 43872 multiletter control sequences out of 15000+200000
+ 27410 strings out of 479334
+ 524679 string characters out of 2857085
+ 994326 words of memory out of 3000000
+ 43874 multiletter control sequences out of 15000+200000
  419467 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  111i,13n,116p,10602b,1016s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2950,9 +2956,9 @@ cm/cmsy6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (123 pages, 8143537 bytes).
+Output written on paper.pdf (123 pages, 8143234 bytes).
 PDF statistics:
- 1422 PDF objects out of 1440 (max. 8388607)
+ 1420 PDF objects out of 1440 (max. 8388607)
  366 named destinations out of 1000 (max. 500000)
  567 words of extra memory for PDF output out of 10000 (max. 10000000)
 
