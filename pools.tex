@@ -1,0 +1,256 @@
+\documentclass[11pt]{scrartcl}
+
+
+%---------Konfiguration------
+
+
+%-----Sprache und Zeichen----
+\usepackage[utf8]{inputenc}
+% \usepackage{ucs}
+% \usepackage[T1]{fontenc}
+
+% Zeilenumbrüche der deutschen Sprache
+% \usepackage[ngerman]{babel}
+
+
+%---------Farben-------------
+\usepackage[RGB]{xcolor}
+\definecolor{dunkelgruen}{RGB}{0 136 0}
+\newcommand\todo[1]{\textcolor{red}{#1}}
+
+
+%---------Links/Refs---------
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
+
+%---------Grafiken-----------
+\usepackage{graphicx}
+\usepackage{subfig}
+
+
+
+%---------Sonstiges----------
+\usepackage{parcolumns}
+\usepackage{enumitem}
+
+
+
+%---------Mathe--------------
+\usepackage{amsthm, amssymb, mathtools}
+% \usepackage{amsmath, amssymb, amstext ,lipsum}
+
+
+
+%---------Umgebungen---------
+\usepackage[framemethod=tikz]{mdframed}
+
+%---------Business---------
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{Business-Def}{Definition}
+
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{Hypothese}{Hypothese}
+
+\mdtheorem[
+  linecolor=gray,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=gray,
+]{Praemisse}{Prämisse}
+
+\mdtheorem[
+  linecolor=red,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=red,
+]{Abgrenzung}{Abgrenzung}
+
+\mdtheorem[
+  linecolor=violet,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=violet,
+]{Quelle}{Quellen}
+
+\mdtheorem[
+  linecolor=violet,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=violet,
+]{Zitat}{Zitat}
+
+\mdtheorem[
+  linecolor=blue,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=blue,
+]{Fazit}{Conclusion}
+
+\mdtheorem[
+  linecolor=red,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=red,
+]{Problem}{Problem}
+
+\mdtheorem[
+  linecolor=cyan,
+  frametitlefont=\sffamily\bfseries\color{black},
+  frametitlebackgroundcolor=cyan,
+]{Solution}{Lösung}
+
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{Konzept}{Konzept}
+
+
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{NFT-Prop}{NFT-Property}
+
+
+
+%---------Mathe------------
+\mdtheorem[
+  linecolor=gray,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=gray,
+]{Def}{Definition}
+
+\mdtheorem[
+  linecolor=dunkelgruen,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=dunkelgruen,
+]{Theorem}{Theorem}
+
+\mdtheorem[
+  linecolor=blue,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=blue,
+]{Lemma}{Lemma}
+
+\mdtheorem[
+  linecolor=red,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=red,
+]{Assumption}{Annahme}
+
+\mdtheorem[
+  linecolor=violet,
+  frametitlefont=\sffamily\bfseries\color{white},
+  frametitlebackgroundcolor=violet,
+]{Example}{Beispiel}
+
+\mdtheorem[
+  linecolor=cyan,
+  frametitlefont=\sffamily\bfseries\color{black},
+  frametitlebackgroundcolor=cyan,
+]{Algo}{Algorithmus}
+
+
+
+
+%---------Dokument-----------
+
+%---------Titel--------------
+\title{WunderPass-NFT}
+\author{WunderTeam}
+\date{\today{}, Berlin}
+ 
+%---------Inhalt-------------
+\begin{document}
+
+
+\maketitle
+\tableofcontents{}
+
+\newpage
+
+
+
+\section{Einleitung}
+\label{sec:pools-einleitung}
+\vspace{0.3cm}
+\input{[B][Pools]/[Pools][Einleitung]}    % binde die Datei '[Pools][Einleitung].tex' ein
+
+
+\section{Formalisierungen}
+\vspace{0.3cm}
+\input{[B][Pools]/[Pools][Formalisierung]}    % binde die Datei '[Pools][Formalisierung].tex' ein
+
+
+\section{Pool-Erzeugung}
+\vspace{0.3cm}
+\input{[B][Pools]/[Pools][Erzeugung]}    % binde die Datei '[Pools][Erzeugung].tex' ein
+
+
+\section{Pool-Lifetime}
+\vspace{0.3cm}
+\input{[B][Pools]/[Pools][Lifetime]}    % binde die Datei '[Pools][Lifetime].tex' ein
+
+
+\section{Pool-Liquidierung}
+\label{sec:pools-liquidierung}
+\vspace{0.3cm}
+\input{[B][Pools]/[Pools][Liquidierung]}    % binde die Datei '[Pools][Liquidierung].tex' ein
+
+
+\section{Pool-Vertrag}
+\vspace{0.3cm}
+\input{[B][Pools]/[Pools][Vertrag]}    % binde die Datei '[Pools][Vertrag].tex' ein
+
+
+%---------Pool-Economics------------------
+\section{Pool-Economics}
+\vspace{0.3cm}
+
+
+\subsection{Einleitung}
+\vspace{0.2cm}
+\input{[B][Pools]/[Pools][Economic][Einleitung]}    % binde die Datei '[Pools][Economic][Einleitung].tex' ein
+\vspace{0.5cm}
+
+\subsection{WPT - Die grundlegende Idee eines Pools-Project-Utility-Tokens}
+\label{sec:wpt-design}
+\vspace{0.2cm}
+\input{[B][Pools]/[Pools][Economic][WPT]}    % binde die Datei '[Pools][Economic][WPT].tex' ein
+%\input{[Pools][Economic][WPT]}
+\vspace{0.5cm}
+
+\subsection{Begleitende Excel}
+\label{sec:excel}
+\vspace{0.2cm}
+\input{[B][Pools]/[Pools][Economic][Excel]}    % binde die Datei '[Pools][Economic][Excel].tex' ein
+\vspace{0.5cm}
+
+\subsection{Gebühren-Ordnung}
+\label{sec:fees}
+\vspace{0.2cm}
+%\input{[B][Pools]/[Pools][Economic][Fees]}    % binde die Datei '[Pools][Economic][Fees].tex' ein
+\input{[Pools][Economic][Fees]}
+\vspace{0.5cm}
+
+\subsection{Business-Plan}
+\label{sec:bp}
+\vspace{0.2cm}
+\input{[B][Pools]/[Pools][Economic][Business-Plan]}    % binde die Datei '[Pools][Economic][Business-Plan].tex' ein
+\vspace{0.5cm}
+
+\subsection{WPT - ready to launch}
+\label{sec:wpt}
+\vspace{0.2cm}
+\input{[B][Pools]/[Pools][Economic][Bonding-Curves]}    % binde die Datei '[Pools][Economic][Bonding-Curves].tex' ein
+\vspace{0.5cm}
+
+
+%\input{[B][Pools]/[Pools][Economic][Rest]}    % binde die Datei '[Pools][Economic][Rest].tex' ein
+
+
+
+
+\end{document}
+

@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
+\contentsline {section}{\numberline {2}Formalisierungen}{3}{section.2}%
+\contentsline {section}{\numberline {3}Pool-Erzeugung}{4}{section.3}%
+\contentsline {section}{\numberline {4}Pool-Lifetime}{7}{section.4}%
+\contentsline {section}{\numberline {5}Pool-Liquidierung}{8}{section.5}%
+\contentsline {section}{\numberline {6}Pool-Vertrag}{10}{section.6}%
+\contentsline {section}{\numberline {7}Pool-Economics}{10}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Einleitung}{10}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}WPT - Die grundlegende Idee eines Pools-Project-Utility-Tokens}{12}{subsection.7.2}%
+\contentsline {paragraph}{\nonumberline Monetarisierung \& Tokenisierung}{12}{paragraph*.3}%
+\contentsline {paragraph}{\nonumberline Die entscheidende Idee}{14}{paragraph*.5}%
+\contentsline {paragraph}{\nonumberline Token-Design}{15}{paragraph*.7}%
+\contentsline {paragraph}{\nonumberline Umsetzungskonzept}{21}{paragraph*.9}%
+\contentsline {paragraph}{\nonumberline Ausblick}{23}{paragraph*.11}%
+\contentsline {subsection}{\numberline {7.3}Begleitende Excel}{26}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Gebühren-Ordnung}{26}{subsection.7.4}%
+\contentsline {paragraph}{\nonumberline Gebühren-Modell}{26}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{28}{paragraph*.15}%
+\contentsline {subsection}{\numberline {7.5}WPT - ready to launch}{29}{subsection.7.5}%
+\contentsline {paragraph}{\nonumberline Token-Kurs-Kurven}{29}{paragraph*.17}%
+\contentsline {paragraph}{\nonumberline Staking \& Gewinn-Split}{30}{paragraph*.19}%
+\contentsline {paragraph}{\nonumberline Workflows}{31}{paragraph*.21}%
+\contentsline {paragraph}{\nonumberline Problem}{31}{paragraph*.23}%
+\contentsline {paragraph}{\nonumberline Fazit}{32}{paragraph*.25}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
