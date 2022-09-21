@@ -6,7 +6,7 @@ Zunächst einmal benötigen wir einige formale Werkzeuge und bedienen uns dafür
 
 \begin{Def}\label{defPoolTeilnehmer}
 
-Im folgenden setzen wir Voraus, die Nutzung der Pools seitens der User erfordert zwingend den Besitz eines WunderPass (bzw. Wunder-ID) und betrachten von daher auch nur solche User.
+Im folgenden setzen wir voraus, die Nutzung der Pools seitens der User erfordert zwingend den Besitz eines WunderPass (bzw. Wunder-ID) und betrachten von daher auch nur solche User.
 
 \begin{equation*}
   U := \left\{ u_1; u_2;...; u_{n} \text{ } | \text{ } u_i \text{ besitzt eine Wunder-ID} \right\}
@@ -14,7 +14,7 @@ Im folgenden setzen wir Voraus, die Nutzung der Pools seitens der User erfordert
 
 \vspace{0.2cm}
 
-Wir stellen zusätzlich, dass der vorausgesetzte Besitz einer Wunder-ID mit dem Besitz von unterschiedlichen Wallets bzw. anderen durch die Wunder-ID implizierten Dingen einhergeht. So hat jeder User $u_i$ z.B. eine Telefonnummer mit seiner Wunder-ID verknüpft (anhand derer er mittels Kontakte-Scan auf dem Smartphone als Inhaber einer Wunder-ID und damit potenzieller Pool-Teilnehmer erkannt werden kann und soll). Des weiteren kann $u_i$ einen NFT-Pass (siehe Kapitel \ref{sec:nft-pass}) besitzen und/oder unser ERC20-Utility-Token (im Folgenden als \textit{WPT} bezeichnet; siehe Kapitel \todo{TODO: verlinken}). 
+Wir unterstellen zudem, die geforderte Existenz einer Wunder-ID gehe mit dem Besitz von unterschiedlichen Wallets bzw. anderen durch die Wunder-ID implizierten Dingen einher. So hat jeder User $u_i$ z.B. eine Telefonnummer mit seiner Wunder-ID verknüpft (anhand derer er mittels Kontakte-Scan auf dem Smartphone als Inhaber einer Wunder-ID und damit potenzieller Pool-Teilnehmer erkannt werden kann und soll). Des weiteren kann $u_i$ einen NFT-Pass (siehe Kapitel \ref{sec:nft-pass}) besitzen und/oder unser ERC20-Utility-Token (im Folgenden als \textit{WPT} bezeichnet; siehe Kapitel \nameref{sec:wpt-design}). 
 
 \vspace{0.2cm}
 
@@ -43,9 +43,11 @@ Den Besitz eines Pass-NFTs beschreiben wir durch die Funktion
   \omega(u):= \left\{ wpn \in WPN \text{ } | \text{ User u besitzt den Pass-NFT } wpn \right\}. 
 \end{equation*}
 
-\vspace{0.2cm}
+$\Bigl( \omega(u) = \emptyset$ falls der User $u$ keinen Pass-NFT besitzt.$\Bigr)$
 
-Analog dazu definieren wir auch den Besitz am \textit{WPT} eines Users - mit dem Unterschied, dass der Funktionsbereich dieser Funktion aufgrund der Fungibilität von einer Potenzmenge auf einen simplen numerischen Wert zusammenfällt:
+\vspace{0.4cm}
+
+Analog dazu definieren wir auch den Besitz am \textit{WPT} eines Users - mit dem Unterschied, dass der Funktionsbereich dieser Funktion - aufgrund der Fungibilität - von einer Potenzmenge auf einen simplen numerischen Wert zusammenfällt:
 
 \vspace{0.2cm}
 
@@ -58,5 +60,9 @@ Analog dazu definieren wir auch den Besitz am \textit{WPT} eines Users - mit dem
 \end{equation*}
 
 \end{Def}
+
+\vspace{0.2cm}
+
+Die Notwendigkeit bzw. die Vorteile der vorangegangenen Annahmen und Definitionen sollten sich größtenteils aus der Lektüre der Kapitel des übergeorneten \textit{WunderPass-Whitepapers} erschließen, dessen lediglich partiellen Bestandteil das hiesige \textit{Pools-Kapitel} ausmacht. 
 
 \vspace{0.5cm}
