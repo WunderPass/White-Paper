@@ -1,6 +1,6 @@
 % !TEX root = paper.tex
 
-Für eine etwaige Pool-Liquidierung stellen sich exakt zwei Fragen: "\textbf{Wann} wird liquidiert?" und "\textbf{Wie} wird liquidiert?" Das \textbf{Wann} ist hierbei schnell geklärt. Es gibt grob folgende drei Möglichkeiten, von denen eine durch das in Definition \ref{defPool} definierte Regelset $\mathcal{R}$ zu spezifizieren ist:
+Für eine etwaige Pool-Liquidierung stellen sich exakt zwei Fragen: "\textbf{Wann} wird liquidiert?" und "\textbf{Wie} wird liquidiert?" Das \textbf{Wann} ist hierbei schnell geklärt. Es gibt grob folgende drei Möglichkeiten, von denen \textbf{genau eine} durch das in Definition \ref{defPool} definierte Regelset $\mathcal{R}$ zu benennen ist:
 
 \begin{itemize}
   \item $\mathcal{R}$ legt einen exakten Zeitpunkt fest, zu dem der Pool liquidiert werden soll.
@@ -10,7 +10,7 @@ Für eine etwaige Pool-Liquidierung stellen sich exakt zwei Fragen: "\textbf{Wan
 
 \vspace{0.3cm}
 
-Bullet 2 klingt hier leider noch nicht ausreichend abstrakt. Daher abstrahieren wir die genannten Forderungen in einer einzigen:
+Bullet 2 klingt hier leider noch nicht ausreichend abstrakt. Daher abstrahieren wir die genannten drei Forderungen in einer einzigen:
 
 \vspace{0.2cm}
 
@@ -18,9 +18,11 @@ Bullet 2 klingt hier leider noch nicht ausreichend abstrakt. Daher abstrahieren 
 
 Das in Definition \ref{defPool} definierte Regelset $\mathcal{R}$ definiert ein Oracle, welches zu jedem Zeitpunkt die Frage beantworten kann, ob der Pool zum jetzigen Zeitpunkt liquidiert werden soll oder nicht. 
 
-Dieses Oracle kann beliebig einfach gestrickt sein (z.B. im Falle des obigen Bullet 1 einfach anhand $"SYSDATE <= T_{END}"$ über das Fortbestehen des Pools entscheidet) oder aber auch beliebig komplex. Dies braucht uns aber an dieser Stelle nicht weiter weiter interessieren. 
-
 \end{Fazit}
+ 
+\vspace{0.1cm}
+ 
+Dieses Oracle kann beliebig einfach gestrickt sein (z.B. im Falle des obigen Bullet 1 einfach anhand $"SYSDATE <= T_{END}"$ über das Fortbestehen des Pools entscheidet) oder aber auch beliebig komplex. Dies braucht uns aber an dieser Stelle nicht weiter interessieren.
 
 \vspace{0.3cm}
 
@@ -51,20 +53,81 @@ Wir definieren einen Auszahlungsvektor als
 
 \vspace{0.2cm}
 
-\todo{Ein mögliches $\varphi_{\mathcal{P}}$ ist tatsächlich $\mathcal{G}$}
-
-\vspace{0.2cm}
-
-\todo{$\mathcal{R}$ definiert das Oracle und sagt, ob die $\varphi_i$ negativ sein dürfen}
-
-\vspace{0.2cm}
-
-\todo{Oracle verteilt anhand von $\mathcal{T}$ und $\mathcal{G}$}
+Die $\varphi_i$ beschreiben also die absoluten Anteile der Teilnehmers $u_i$ an der Pool-Treasury $\mathcal{T}$. Und $\frac{\varphi_i}{v_{\mathcal{T}}}$ dann logischerweise die prozentualen.
 
 \end{Fazit}
 
+
+Definiert/Konkretisiert werden müssten die \textit{Liquidierungsentscheidung-} und \textit{Auszahl\-ungsschlüssel-Oracle} in dem Pool-Regelset $\mathcal{R}$
+
 \vspace{0.3cm}
 
-\todo{TODO}
+Im Folgenden einige Beispiele für denkbare \textit{Auszahlungsschlüssel-Oracle}. Zur Vereinfachung nehmen wir dazu an, die Pool-Treasury $\mathcal{T}$ enthielte ausschließlich Funds derselben Fiat-Währung, weshalb
+der oben genannte Value $v_{\mathcal{T}}$ gänzlich intuitiv ersichtlich sei.  
+
+
+\vspace{0.3cm}
+
+\begin{Example}[Pro-Rata-Auszahlung]
+
+Dies stellt eigentlich den intuitivsten aller denkbaren Auszahlungsschlüssel dar. Jeder Pool-Teilnehmer bekommt genau den prozentualen Anteil an $v_{\mathcal{T}}$ ausgezahlt, der seinem Anteil an der Pool-Governance $\mathcal{G}$ entspricht.
+
+\vspace{0.2cm}
+
+Der obige Auszahlungsvektor würde sich in diesem Fall ganz simple als
+
+\begin{equation*}
+  \varphi_i = v_{\mathcal{T}} \cdot \frac{g_i}{\sum_{j=1}^{n} g_j}
+\end{equation*}
+
+ergeben. Wobei $\mathcal{G} = \left\{ g_1; g_2;...;g_n \right\}$ wäre.
+
+\end{Example}
+
+\vspace{0.2cm}
+
+
+\begin{Example}[Auszahlung nach abgeschlossener Kicktipp-Tipprunde]
+
+Angenommen so ein WunderPool würde für die Verwahrung der Spieleinsätze einer Kicktipp-Tipprunde verwendet werden. Nach abgeschlossene Spielzeit sollte der gesamte Wettpool an die besten Tipper ausgezahlt werden. Wer die besten Tipper waren und wie das Geld konkret unter diesen verteilt wird, mocken wir hinter einem \textit{Kicktipp-Oracle}, der diese Daten wie auch immer (von extern) beschafft. Bei einem Wettpool von ingesamt 1000 Euro und acht Mitspielern könnte das vom Oracle gelieferte Ergebnis z. B. wie folgt aussehen:
+
+\begin{equation*}
+  \varphi_{\mathcal{P}} = [0, 100, 0, 0, 700, 0, 200, 0]
+\end{equation*}
+
+\end{Example}
+
+\vspace{0.2cm}
+
+\begin{Example}[Splitwise-Abrechnung]
+
+Nutzt man die WunderPools-Abstahierung, um eine Splitwise-Abrechnung unter Wunder-Usern innerhalb derselben Splitwise-Gruppe abzubilden, könnte die Splitwise-API dazu genutzt werden, ein \textit{Splitwise-Oracle} zu implementieren. Dieses könnte bei acht Spitwise-Usern z. B. folgendes Ergebnis liefern:
+
+\begin{equation*}
+  \varphi_{\mathcal{P}} = [80, 50, -50, -30, 0, -40, 20, -30]
+\end{equation*}
+
+Man beachte, dass bei diesem Case die $\varphi_i$ auch gegativ sein können und sich in Summe auf 0 addieren: $\sum_{i=1}^n \varphi_i = 0$.
+
+\end{Example}
+
+\vspace{0.2cm}
+
+\begin{Example}[Random Gambling]
+
+Keine besonders sinvolle aber theoretisch dennoch denkbare Auszahlungsstrategie wäre eine völlig zufällige Verteilung von $v_{\mathcal{T}}$ unter allen Pool-Teilnehmern. Hierbei wäre unser Oracle ein einfacher Zufallsgenerator, der uns eine Zufallsverteilung $P = \left\{ P_1; P_2;...;P_n \right\}$ für unsere $n$ Pool-Teilnehmer mit $\sum_{i=1}^n P_i = 1$ liefert.
+
+\vspace{0.2cm}
+
+Der Auszahlungsvektor würde sich in diesem Fall ganz simple als
+
+\begin{equation*}
+  \varphi_i = v_{\mathcal{T}} \cdot P_i
+\end{equation*}
+
+ergeben. 
+
+\end{Example}
+
 
 \vspace{0.5cm}
