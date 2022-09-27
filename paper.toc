@@ -52,33 +52,33 @@
 \contentsline {subsection}{\numberline {B.2}Formalisierungen}{69}{subsection.B.2}%
 \contentsline {subsection}{\numberline {B.3}Pool-Erzeugung}{70}{subsection.B.3}%
 \contentsline {subsection}{\numberline {B.4}Pool-Lifetime}{73}{subsection.B.4}%
-\contentsline {subsection}{\numberline {B.5}Pool-Liquidierung}{74}{subsection.B.5}%
-\contentsline {subsection}{\numberline {B.6}Pool-Vertrag}{76}{subsection.B.6}%
-\contentsline {subsection}{\numberline {B.7}Pool-Economics}{76}{subsection.B.7}%
-\contentsline {subsubsection}{\numberline {B.7.1}Einleitung}{76}{subsubsection.B.7.1}%
-\contentsline {subsubsection}{\numberline {B.7.2}WPT - Die grundlegende Idee eines Pools-Project-Utility-Tokens}{78}{subsubsection.B.7.2}%
-\contentsline {paragraph}{\nonumberline Monetarisierung \& Tokenisierung}{78}{paragraph*.24}%
-\contentsline {paragraph}{\nonumberline Die entscheidende Idee}{80}{paragraph*.26}%
-\contentsline {paragraph}{\nonumberline Token-Design}{81}{paragraph*.28}%
-\contentsline {paragraph}{\nonumberline Umsetzungskonzept}{87}{paragraph*.30}%
-\contentsline {paragraph}{\nonumberline Ausblick}{89}{paragraph*.32}%
-\contentsline {subsubsection}{\numberline {B.7.3}Begleitende Excel}{92}{subsubsection.B.7.3}%
-\contentsline {subsubsection}{\numberline {B.7.4}Gebühren-Ordnung}{92}{subsubsection.B.7.4}%
-\contentsline {paragraph}{\nonumberline Gebühren-Modell}{92}{paragraph*.34}%
-\contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{94}{paragraph*.36}%
-\contentsline {subsubsection}{\numberline {B.7.5}Business-Plan}{95}{subsubsection.B.7.5}%
-\contentsline {subsubsection}{\numberline {B.7.6}WPT - ready to launch}{98}{subsubsection.B.7.6}%
-\contentsline {paragraph}{\nonumberline Token-Kurs-Kurven}{98}{paragraph*.38}%
-\contentsline {paragraph}{\nonumberline Staking \& Gewinn-Split}{99}{paragraph*.40}%
-\contentsline {paragraph}{\nonumberline Workflows}{99}{paragraph*.42}%
-\contentsline {paragraph}{\nonumberline Problem}{100}{paragraph*.44}%
-\contentsline {paragraph}{\nonumberline Fazit}{101}{paragraph*.46}%
-\contentsline {subsubsection}{\numberline {B.7.7}Beispielrechnung}{101}{subsubsection.B.7.7}%
-\contentsline {subsubsection}{\numberline {B.7.8}Recap \& Ausblick}{104}{subsubsection.B.7.8}%
-\contentsline {subsubsection}{\numberline {B.7.9}Unberücksichtigte Inhalte \& Ideen}{104}{subsubsection.B.7.9}%
-\contentsline {section}{\numberline {C}Project 'Guard'}{106}{appendix.C}%
-\contentsline {section}{\numberline {D}Diverses}{107}{appendix.D}%
-\contentsline {subsection}{\numberline {D.1}Quellen und Inspiration}{107}{subsection.D.1}%
-\contentsline {subsection}{\numberline {D.2}WUNDER-Token - Skizze eines möglichen Kreislaufs}{113}{subsection.D.2}%
-\contentsline {subsection}{\numberline {D.3}Bonding-Curves}{116}{subsection.D.3}%
+\contentsline {subsection}{\numberline {B.5}Pool-Liquidierung}{77}{subsection.B.5}%
+\contentsline {subsection}{\numberline {B.6}Pool-Vertrag}{79}{subsection.B.6}%
+\contentsline {subsection}{\numberline {B.7}Pool-Economics}{81}{subsection.B.7}%
+\contentsline {subsubsection}{\numberline {B.7.1}Einleitung}{81}{subsubsection.B.7.1}%
+\contentsline {subsubsection}{\numberline {B.7.2}WPT - Die grundlegende Idee eines Pools-Project-Utility-Tokens}{83}{subsubsection.B.7.2}%
+\contentsline {paragraph}{\nonumberline Monetarisierung \& Tokenisierung}{83}{paragraph*.24}%
+\contentsline {paragraph}{\nonumberline Die entscheidende Idee}{85}{paragraph*.26}%
+\contentsline {paragraph}{\nonumberline Token-Design}{86}{paragraph*.28}%
+\contentsline {paragraph}{\nonumberline Umsetzungskonzept}{92}{paragraph*.30}%
+\contentsline {paragraph}{\nonumberline Ausblick}{94}{paragraph*.32}%
+\contentsline {subsubsection}{\numberline {B.7.3}Begleitende Excel}{97}{subsubsection.B.7.3}%
+\contentsline {subsubsection}{\numberline {B.7.4}Gebühren-Ordnung}{97}{subsubsection.B.7.4}%
+\contentsline {paragraph}{\nonumberline Gebühren-Modell}{97}{paragraph*.34}%
+\contentsline {paragraph}{\nonumberline Gebühren-Abrechnung}{98}{paragraph*.36}%
+\contentsline {subsubsection}{\numberline {B.7.5}Business-Plan}{100}{subsubsection.B.7.5}%
+\contentsline {subsubsection}{\numberline {B.7.6}WPT - ready to launch}{102}{subsubsection.B.7.6}%
+\contentsline {paragraph}{\nonumberline Token-Kurs-Kurven}{103}{paragraph*.38}%
+\contentsline {paragraph}{\nonumberline Staking \& Gewinn-Split}{104}{paragraph*.40}%
+\contentsline {paragraph}{\nonumberline Workflows}{104}{paragraph*.42}%
+\contentsline {paragraph}{\nonumberline Problem}{104}{paragraph*.44}%
+\contentsline {paragraph}{\nonumberline Fazit}{105}{paragraph*.46}%
+\contentsline {subsubsection}{\numberline {B.7.7}Beispielrechnung}{105}{subsubsection.B.7.7}%
+\contentsline {subsubsection}{\numberline {B.7.8}Recap \& Ausblick}{108}{subsubsection.B.7.8}%
+\contentsline {subsubsection}{\numberline {B.7.9}Unberücksichtigte Inhalte \& Ideen}{109}{subsubsection.B.7.9}%
+\contentsline {section}{\numberline {C}Project 'Guard'}{111}{appendix.C}%
+\contentsline {section}{\numberline {D}Diverses}{112}{appendix.D}%
+\contentsline {subsection}{\numberline {D.1}Quellen und Inspiration}{112}{subsection.D.1}%
+\contentsline {subsection}{\numberline {D.2}WUNDER-Token - Skizze eines möglichen Kreislaufs}{118}{subsection.D.2}%
+\contentsline {subsection}{\numberline {D.3}Bonding-Curves}{121}{subsection.D.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
