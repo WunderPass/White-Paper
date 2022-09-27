@@ -4,26 +4,41 @@ Die in Definition \ref{defPool} erstmals eingeführte Größe $\mathcal{R}$ bege
 
 \vspace{0.1cm}
 
-So richtig formalisiert haben wir $\mathcal{R}$ jedoch bisher nirgends. Vielmehr wurde genannt, was $\mathcal{R}$ zu regeln hat oder was es enthalten kann oder muss. Die fehlende Formali\-sierung ist kein Versäumnis sonder schlichweg kaum möglich, was aber auch gleichzeitig kaum überraschen mag, wenn man bedenkt, wie beliebig komplex, heterogen und zahlenmäßig unbeschränkt die Regelungen in einem \textit{Gesellschaftervertrag} nur sein können. Man kann darin prinzipiell alles regeln oder fast gar nichts. 
+So richtig formalisiert haben wir $\mathcal{R}$ jedoch bisher nirgends. Stattdessen wurde benannt, was $\mathcal{R}$ zu regeln hat oder was es enthalten kann oder muss. Die fehlende Formali\-sierung ist kein Versäumnis sonder schlichweg kaum möglich, was aber auch gleich\-zeitig wenig überraschen mag, wenn man bedenkt, wie beliebig komplex, heterogen und zahlenmäßig unbeschränkt die Regelungen in einem \textit{Gesellschaftervertrag} nur sein können. Man kann darin prinzipiell alles regeln oder fast gar nichts.
 
-\vspace{0.3cm}
+Um erneut bei der Analogie aus in Annahme \ref{assumptionGbR} zu bleiben, ist $\mathcal{R}$ nicht anderes als ein \href{https://en.wikipedia.org/wiki/Shareholders'_agreement}{Shareholder's Aggreement}, woran man sich beim Design von $\mathcal{R}$ ganz gut inspirieren lassen kann.
 
-\todo{Einfach Brainstorming als Bullet-Liste...Kein Anspruch auf Vollständigkeit...Definition eines SHA verlinken...}
+Es folgt eine Sammlung von Dingen, die durch $\mathcal{R}$ geregelt werden müssen oder können und die wir im Verlaufe der vorangehenden Abschnitte ohnehin bereits als Bestandteile von $\mathcal{R}$ erkannt haben, bzw. die darüber hinaus zu bedenken sind oder zu bedenken sein könnten. Die Liste hat dabei weder einen Anspruch auf Vollständigkeit noch auf wasserdichte formale Exaktheit. Sie ist eher als gedankliche Anregung für die Struktur und die Anforderungen an $\mathcal{R}$ zu verstehen.
 
-\vspace{0.3cm}
-
-\todo{Herausgearbeitete Dinge zu $\mathcal{R}$ zusammentragen}
 
 \begin{itemize}
-  \item Vorgabe zur Teilnehmer-Menge $\mathcal{U}$
-  \item Vorgabe zur Pool-Treasury $\mathcal{T}$:
+  \item Pool-Art (\textit{Geschäftsgegenstand der Gesellschaft})
+  \item Vorgaben zum Teilnehmer-Kreis $\mathcal{U}$ (\textit{Geselschafterkreis})
+  \begin{itemize}
+	\item öffentlicher vs. privater Pool
+	\item min/max Teilnehmer
+	\item etwaige Teilnahmebedingungen (z. B. Exklusivität durch NFT-Besitz)
+  \end{itemize}
+  \item Vorgaben zur Pool-Treasury / Teilnahmeeinsatz $\mathcal{T}$:
   \begin{itemize}
   	\item Währung (zB \textit{USDT})
-  	\item Intervall $\mathcal{I}$ für $s_i \in \mathcal{I}$
+  	\item Intervall $\mathcal{I}$ für Einsatz $s_i \in \mathcal{I}$ (vergleiche Definition \ref{defPool})
   \end{itemize}
-  \item Definition der \textit{Liquidierungsentscheidung-Oracle}
-  \item Definition der \textit{Auszahlungsschlüssel-Oracle}
-  \item Optionale Forderung $\varphi_i \geq 0$
+  \item Vorgaben zur Governance $\mathcal{G}$ (Anteile, Stimmen, Mehrheiten):
+  \begin{itemize}
+  	\item initiale Vergabe von Shares
+  	\item Mehrheiten \& (Sperr)minoritäten
+	\item Voting-Regeln
+  \end{itemize}  
+  \item Regelungen zum nachträglichen Beitreten des Pools (\textit{Kapitalerhöhung; neue Gesell\-schafter})
+  \item Regelungen zum vorzeitigen Verlassen des Pools
+  \item Regelungen zu Anteilsverkäufen / -abtretungen
+  \item Regelungen zur Liquidierung des Pools
+  \begin{itemize}
+	\item Definition der \textit{Liquidierungsentscheidung-Oracle} (vergleiche Definition \ref{defLiquiOracle})
+	\item Definition der \textit{Auszahlungsschlüssel-Oracle} (vergleiche Definition \ref{defPayoutOracle})
+  \end{itemize}
+  \item Regelungen zu nachträglichen Änderungen an $\mathcal{R}$ selbst.
   \item etc.
 \end{itemize}
 

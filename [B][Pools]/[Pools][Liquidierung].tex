@@ -14,11 +14,12 @@ Bullet 2 klingt hier leider noch nicht ausreichend abstrakt. Daher abstrahieren 
 
 \vspace{0.2cm}
 
-\begin{Fazit}[Liquidierungsentscheidung-Oracle]
+\begin{Def}[Liquidierungsentscheidung-Oracle]
+\label{defLiquiOracle}
 
 Das in Definition \ref{defPool} definierte Regelset $\mathcal{R}$ definiert ein Oracle, welches zu jedem Zeitpunkt die Frage beantworten kann, ob der Pool zum jetzigen Zeitpunkt liquidiert werden soll oder nicht. 
 
-\end{Fazit}
+\end{Def}
  
 \vspace{0.1cm}
  
@@ -30,7 +31,8 @@ Und da die Abstraktion mittels Oracle so bequem scheint, tun wir das Gleiche ebe
 
 \vspace{0.2cm}
 
-\begin{Fazit}[Auszahlungsschlüssel-Oracle]
+\begin{Def}[Auszahlungsschlüssel-Oracle]
+\label{defPayoutOracle}
 
 Seien $\mathcal{P} = \left( \mathcal{U}, \mathcal{R}, \mathcal{T}, \mathcal{G} \right)$ 
 der Pool und $\mathcal{U} = \left\{ u_1; u_2;...;u_n \right\}$ die Menge seiner $n$ Teilnehmer wie in Definition \ref{defPool} beschrieben und $v_{\mathcal{T}}$ der sich zum Liquidierungszeitpunkt in der Pool-Treasury $\mathcal{T}$ befindende Value. 
@@ -55,7 +57,7 @@ Wir definieren einen Auszahlungsvektor als
 
 Die $\varphi_i$ beschreiben also die absoluten Anteile der Teilnehmers $u_i$ an der Pool-Treasury $\mathcal{T}$. Und $\frac{\varphi_i}{v_{\mathcal{T}}}$ dann logischerweise die prozentualen.
 
-\end{Fazit}
+\end{Def}
 
 
 Definiert/Konkretisiert werden müssten die \textit{Liquidierungsentscheidung-} und \textit{Auszahl\-ungsschlüssel-Oracle} in dem Pool-Regelset $\mathcal{R}$
