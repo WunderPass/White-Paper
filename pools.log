@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  27 SEP 2022 18:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  27 SEP 2022 19:33
 entering extended mode
-**pools economics.tex
+**./pools.tex
 (pools.tex
 LaTeX2e <2021-06-01>
 L3 programming layer <2021-06-01>
@@ -1060,26 +1060,15 @@ Overfull \hbox (0.20723pt too wide) in paragraph at lines 34--35
 rech-nung des genann-
  []
 
-) ([B][Pools]/[Pools][Formalisierung].tex
+) ([B][Pools]/[Pools][Formalisierung][sub paper version].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 7.
-
-
-LaTeX Warning: Reference `sec:nft-pass' on page 3 undefined on input line 17.
-
-
-LaTeX Warning: Reference `sec:wpt-design' on page 3 undefined on input line 17.
-
-
 
 Overfull \hbox (0.93097pt too wide) in paragraph at lines 17--18
 \OT1/cmr/m/n/10.95 Be-sitz von un-ter-schiedlichen Wal-lets bzw. an-deren durch
  die Wunder-ID im-plizierten
  []
-
-
-LaTeX Warning: Reference `sec:nft-pass' on page 3 undefined on input line 21.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1222,20 +1211,17 @@ mr/m/it/10.95 Kap-i-talerhohung; neue Gesell-
  []
 
 [14]) [15] (pools.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `pools.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26472 strings out of 478864
- 504304 string characters out of 2848661
+ 26469 strings out of 478864
+ 504325 string characters out of 2848661
  957844 words of memory out of 3000000
- 43910 multiletter control sequences out of 15000+600000
+ 43907 multiletter control sequences out of 15000+600000
  413218 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,114p,10610b,1022s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,11n,114p,10602b,1022s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Slava\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1254,9 +1240,9 @@ ype1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on pools.pdf (15 pages, 252018 bytes).
+Output written on pools.pdf (15 pages, 253400 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
+ 235 PDF objects out of 1000 (max. 8388607)
  34 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
