@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  27 SEP 2022 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  27 SEP 2022 19:52
 entering extended mode
 **./pools-economics.tex
 (pools-economics.tex
@@ -1055,48 +1055,48 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Slava/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] ([B][Pools]/[Po
 ols][Economic][Einleitung].tex
-Overfull \hbox (10.25488pt too wide) in paragraph at lines 7--8
+Overfull \hbox (10.25488pt too wide) in paragraph at lines 4--5
 \OT1/cmr/m/n/10.95 sowie eine mogliche Utility-Token-[]Okonomie, die diese Kom
 -po-nen-ten mit-tels [][]Mechanismus-
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 34.
+(mdframed)              on input line 31.
 
-Overfull \hbox (6.51247pt too wide) in paragraph at lines 38--39
+Overfull \hbox (6.51247pt too wide) in paragraph at lines 35--36
 []\OT1/cmr/m/n/10.95 Die Di-en-stleis-tung un-seres Pools-Projects hat im Sinne
  des \OT1/cmr/m/it/10.95 Social-Investings \OT1/cmr/m/n/10.95 unauswe-
  []
 
 
-Overfull \hbox (2.58495pt too wide) in paragraph at lines 52--53
+Overfull \hbox (2.58495pt too wide) in paragraph at lines 49--50
 []\OT1/cmr/m/n/10.95 Die Mon-e-tarisierung des Pools-Service wird an-hand von (
 prozen-tualen) Service-
  []
 
 
-Overfull \hbox (1.3077pt too wide) in paragraph at lines 54--55
+Overfull \hbox (1.3077pt too wide) in paragraph at lines 51--52
 \OT1/cmr/m/it/10.95 Stable-Coin \OT1/cmr/m/n/10.95 UND/ODER der Pool-Project-To
 ken sein kann. Die \OT1/cmr/m/it/10.95 Monetarisier-
  []
 
 
-Overfull \hbox (6.01024pt too wide) in paragraph at lines 54--55
+Overfull \hbox (6.01024pt too wide) in paragraph at lines 51--52
 \OT1/cmr/m/it/10.95 ungs-Wahrung \OT1/cmr/m/n/10.95 ist dabei zen-traler Be-st
 andteil der \OT1/cmr/m/it/10.95 Pool-Economics\OT1/cmr/m/n/10.95 , die Wahrung
 
  []
 
 
-Overfull \hbox (4.22731pt too wide) in paragraph at lines 54--55
+Overfull \hbox (4.22731pt too wide) in paragraph at lines 51--52
 \OT1/cmr/m/n/10.95 muss unter Umstanden ein Umrechnungs- und Ad-Hoc-Umtausch-M
 echanismus
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 59.
+(mdframed)              on input line 56.
 [2]) ([B][Pools]/[Pools][Economic][WPT].tex [3]
 Overfull \hbox (4.49104pt too wide) in paragraph at lines 7--8
 []\OT1/cmr/m/n/10.95 Der ab-strakt gehal-te-nen Ein-leitung zum fi-nanziellen G
@@ -1504,10 +1504,10 @@ Package rerunfilecheck Info: File `pools-economics.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26576 strings out of 478864
- 506427 string characters out of 2848661
- 976492 words of memory out of 3000000
- 43975 multiletter control sequences out of 15000+600000
+ 26575 strings out of 478864
+ 506393 string characters out of 2848661
+ 976480 words of memory out of 3000000
+ 43974 multiletter control sequences out of 15000+600000
  413218 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,114p,10612b,1014s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1529,9 +1529,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Slava/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on pools-economics.pdf (23 pages, 290532 bytes).
+Output written on pools-economics.pdf (23 pages, 290801 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
+ 312 PDF objects out of 1000 (max. 8388607)
  76 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
