@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  27 SEP 2022 19:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  4 OCT 2022 15:49
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -1056,12 +1056,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Slava/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 Overfull \hbox (1.095pt too wide) detected at line 79
- []\OT1/cmss/bx/n/10.95 106
+ []\OT1/cmss/bx/n/10.95 111
  []
 
 
 Overfull \hbox (1.095pt too wide) detected at line 80
- []\OT1/cmss/bx/n/10.95 107
+ []\OT1/cmss/bx/n/10.95 112
  []
 
 )
@@ -2141,60 +2141,50 @@ Overfull \hbox (0.39774pt too wide) in paragraph at lines 33--34
 mr/m/it/10.95 Kap-i-talerhohung; neue Gesell-
  []
 
-
-LaTeX Warning: Reference `defLiquiOracle' on page 80 undefined on input line 38
-.
-
-
-LaTeX Warning: Reference `defPayoutOracle' on page 80 undefined on input line 3
-9.
-
 [80]) ([B][Pools]/[Pools][Economic][Einleitung].tex
-Overfull \hbox (10.25488pt too wide) in paragraph at lines 7--8
+Overfull \hbox (10.25488pt too wide) in paragraph at lines 4--5
 \OT1/cmr/m/n/10.95 sowie eine mogliche Utility-Token-[]Okonomie, die diese Kom
 -po-nen-ten mit-tels [][]Mechanismus-
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 34.
+(mdframed)              on input line 31.
 
-Overfull \hbox (6.51247pt too wide) in paragraph at lines 38--39
+Overfull \hbox (6.51247pt too wide) in paragraph at lines 35--36
 []\OT1/cmr/m/n/10.95 Die Di-en-stleis-tung un-seres Pools-Projects hat im Sinne
  des \OT1/cmr/m/it/10.95 Social-Investings \OT1/cmr/m/n/10.95 unauswe-
  []
 
 
-Overfull \hbox (2.58495pt too wide) in paragraph at lines 52--53
+Overfull \hbox (2.58495pt too wide) in paragraph at lines 49--50
 []\OT1/cmr/m/n/10.95 Die Mon-e-tarisierung des Pools-Service wird an-hand von (
 prozen-tualen) Service-
  []
 
 
-Overfull \hbox (1.3077pt too wide) in paragraph at lines 54--55
+Overfull \hbox (1.3077pt too wide) in paragraph at lines 51--52
 \OT1/cmr/m/it/10.95 Stable-Coin \OT1/cmr/m/n/10.95 UND/ODER der Pool-Project-To
 ken sein kann. Die \OT1/cmr/m/it/10.95 Monetarisier-
  []
 
 
-Overfull \hbox (6.01024pt too wide) in paragraph at lines 54--55
+Overfull \hbox (6.01024pt too wide) in paragraph at lines 51--52
 \OT1/cmr/m/it/10.95 ungs-Wahrung \OT1/cmr/m/n/10.95 ist dabei zen-traler Be-st
 andteil der \OT1/cmr/m/it/10.95 Pool-Economics\OT1/cmr/m/n/10.95 , die Wahrung
 
  []
 
 
-Overfull \hbox (4.22731pt too wide) in paragraph at lines 54--55
+Overfull \hbox (4.22731pt too wide) in paragraph at lines 51--52
 \OT1/cmr/m/n/10.95 muss unter Umstanden ein Umrechnungs- und Ad-Hoc-Umtausch-M
 echanismus
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 59.
-[81]
-Package mdframed Info: Not enough space on this page on input line 59.
- [82]) ([B][Pools]/[Pools][Economic][WPT].tex
+(mdframed)              on input line 56.
+[81] [82]) ([B][Pools]/[Pools][Economic][WPT].tex
 Overfull \hbox (4.49104pt too wide) in paragraph at lines 7--8
 []\OT1/cmr/m/n/10.95 Der ab-strakt gehal-te-nen Ein-leitung zum fi-nanziellen G
 rundgerust un-seres Pool-Projekts
@@ -2921,7 +2911,7 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 Here is how much of TeX's memory you used:
  27792 strings out of 478864
  537750 string characters out of 2848661
- 1007417 words of memory out of 3000000
+ 1007622 words of memory out of 3000000
  44711 multiletter control sequences out of 15000+600000
  419467 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2952,9 +2942,9 @@ cm/cmsy6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (128 pages, 8184568 bytes).
+Output written on paper.pdf (128 pages, 8185446 bytes).
 PDF statistics:
- 1488 PDF objects out of 1728 (max. 8388607)
+ 1492 PDF objects out of 1728 (max. 8388607)
  378 named destinations out of 1000 (max. 500000)
  567 words of extra memory for PDF output out of 10000 (max. 10000000)
 

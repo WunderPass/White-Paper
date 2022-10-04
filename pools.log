@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  27 SEP 2022 19:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  4 OCT 2022 15:49
 entering extended mode
 **./pools.tex
 (pools.tex
@@ -1217,7 +1217,7 @@ Package rerunfilecheck Info: File `pools.out' has not changed.
 Here is how much of TeX's memory you used:
  26469 strings out of 478864
  504325 string characters out of 2848661
- 957844 words of memory out of 3000000
+ 957870 words of memory out of 3000000
  43907 multiletter control sequences out of 15000+600000
  413218 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1240,7 +1240,7 @@ ype1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on pools.pdf (15 pages, 253400 bytes).
+Output written on pools.pdf (15 pages, 254620 bytes).
 PDF statistics:
  235 PDF objects out of 1000 (max. 8388607)
  34 named destinations out of 1000 (max. 500000)
