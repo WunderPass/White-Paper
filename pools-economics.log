@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  4 OCT 2022 15:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  5 OCT 2022 12:21
 entering extended mode
 **./pools-economics.tex
 (pools-economics.tex
@@ -1097,13 +1097,12 @@ echanismus
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 56.
-[2]) ([B][Pools]/[Pools][Economic][WPT].tex
+[2]) ([B][Pools]/[Pools][Economic][WPT].tex [3]
 Overfull \hbox (4.49104pt too wide) in paragraph at lines 7--8
 []\OT1/cmr/m/n/10.95 Der ab-strakt gehal-te-nen Ein-leitung zum fi-nanziellen G
 rundgerust un-seres Pool-Projekts
  []
 
-[3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 15.
@@ -1128,17 +1127,14 @@ ls auf dem \OT1/cmr/m/it/10.95 Opportunitiy-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 59.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 59.
-[4]
+[4] [5]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 72.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 95.
- [5]
+
 Overfull \hbox (0.8713pt too wide) in paragraph at lines 114--115
 []\OT1/cmr/m/n/10.95 Entscheidend hin-sichtlich let-zter For-mulierung ist dabe
 i das \OT1/cmr/m/it/10.95 "... im Sinne des Spiels..."
@@ -1199,7 +1195,9 @@ Package mdframed Info: mdframed detected package amsthm
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 199.
 
+Package mdframed Info: Not enough space on this page on input line 199.
 [8]
+Package mdframed Info: Not enough space on this page on input line 199.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 210.
@@ -1261,7 +1259,11 @@ t/10.95 (word-of-mouth) \OT1/cmr/m/n/10.95 fur Wachs-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 319.
-[9] [10] [11] [12]
+[9] [10] [11]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 319.
+ [12]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 333.
@@ -1285,6 +1287,9 @@ onding-Curves \OT1/cmr/m/n/10.95 beim hier beson-ders pragenden
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 352.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 352.
 [13]
 
 LaTeX Warning: Reference `sec:bp' on page 14 undefined on input line 360.
@@ -1305,6 +1310,7 @@ Overfull \hbox (4.20973pt too wide) in paragraph at lines 377--378
 \OT1/cmr/m/it/10.95 WPT \OT1/cmr/m/n/10.95 nicht noch mehr ausufern
  []
 
+[14]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 381.
@@ -1323,7 +1329,8 @@ r-linkung zu bezugnehmenden
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 414.
-[14]
+Package mdframed Info: Not enough space on this page on input line 414.
+
 Overfull \hbox (4.79477pt too wide) in paragraph at lines 418--419
 \OT1/cmr/m/n/10.95 des Zusam-men-spiels zwis-chen dem \OT1/cmr/bx/it/10.95 WPT 
 \OT1/cmr/m/n/10.95 und dem \OT1/cmr/bx/it/10.95 WUN-DER\OT1/cmr/m/n/10.95 . Die
@@ -1391,7 +1398,7 @@ Overfull \hbox (10.74156pt too wide) in paragraph at lines 3--4
 h die Excel-Datei [][]Pools-Economics[][]
  []
 
-) ([Pools][Economic][Fees].tex [17]
+[17]) ([Pools][Economic][Fees].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 8.
@@ -1428,22 +1435,29 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 79.
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 79.
+
+[19]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 84.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 95.
-[19]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 108.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 120.
-) ([B][Pools]/[Pools][Economic][Bonding-Curves].tex
+) ([B][Pools]/[Pools][Economic][Bonding-Curves].tex [20]
 
-LaTeX Warning: Reference `approx' on page 20 undefined on input line 18.
+LaTeX Warning: Reference `approx' on page 21 undefined on input line 18.
 
 
 Overfull \hbox (1.9714pt too wide) in paragraph at lines 18--19
@@ -1451,7 +1465,6 @@ Overfull \hbox (1.9714pt too wide) in paragraph at lines 18--19
 n, waren die Ausfuhrungen
  []
 
-[20]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 24.
@@ -1464,7 +1477,9 @@ Overfull \hbox (3.64319pt too wide) in paragraph at lines 32--34
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 68.
-Package mdframed Info: Not enough space on this page on input line 68.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 68.
 [21]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1478,9 +1493,6 @@ lage davon abzuschrecken
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 139.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 139.
 [22]) [23] (pools-economics.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1488,14 +1500,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `pools-economics.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26568 strings out of 478864
- 506224 string characters out of 2848661
- 973925 words of memory out of 3000000
- 43967 multiletter control sequences out of 15000+600000
+ 26575 strings out of 478864
+ 506393 string characters out of 2848661
+ 976536 words of memory out of 3000000
+ 43974 multiletter control sequences out of 15000+600000
  413218 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,114p,10612b,1014s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1517,9 +1532,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Slava/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on pools-economics.pdf (23 pages, 292001 bytes).
+Output written on pools-economics.pdf (23 pages, 292272 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
+ 313 PDF objects out of 1000 (max. 8388607)
  76 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
