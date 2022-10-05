@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  4 OCT 2022 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  5 OCT 2022 17:00
 entering extended mode
 **./paper.tex
 (paper.tex
@@ -1985,7 +1985,7 @@ Her-aus-forderun-
  []
 
 )) [67] ([B][Pools]/[Pools].tex ([B][Pools]/[Pools][Einleitung].tex [68]
-Overfull \hbox (0.20723pt too wide) in paragraph at lines 34--35
+Overfull \hbox (0.20723pt too wide) in paragraph at lines 36--37
 \OT1/cmr/m/n/10.95 beschlossen wer-den (mit-tels einer DAO-Abstimmung). Die Er-
 rech-nung des genann-
  []
@@ -2002,6 +2002,9 @@ Overfull \hbox (0.93097pt too wide) in paragraph at lines 17--18
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
+(mdframed)              on input line 62.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
 (mdframed)              on input line 62.
 [69]) ([B][Pools]/[Pools][Erzeugung].tex [70]
 Overfull \hbox (1.31244pt too wide) in paragraph at lines 35--36
@@ -2108,15 +2111,21 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 87.
+
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 87.
+
+[78]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 92.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 100.
-Package mdframed Info: Not enough space on this page on input line 100.
- [78]
-Package mdframed Info: Not enough space on this page on input line 100.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 104.
@@ -2184,7 +2193,9 @@ echanismus
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 56.
-[81] [82]) ([B][Pools]/[Pools][Economic][WPT].tex
+[81]
+Package mdframed Info: Not enough space on this page on input line 56.
+ [82]) ([B][Pools]/[Pools][Economic][WPT].tex
 Overfull \hbox (4.49104pt too wide) in paragraph at lines 7--8
 []\OT1/cmr/m/n/10.95 Der ab-strakt gehal-te-nen Ein-leitung zum fi-nanziellen G
 rundgerust un-seres Pool-Projekts
@@ -2909,10 +2920,10 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27792 strings out of 478864
- 537750 string characters out of 2848661
+ 27794 strings out of 478864
+ 537795 string characters out of 2848661
  1007622 words of memory out of 3000000
- 44711 multiletter control sequences out of 15000+600000
+ 44713 multiletter control sequences out of 15000+600000
  419467 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,114p,10602b,1020s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2942,7 +2953,7 @@ cm/cmsy6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (128 pages, 8185446 bytes).
+Output written on paper.pdf (128 pages, 8185684 bytes).
 PDF statistics:
  1492 PDF objects out of 1728 (max. 8388607)
  378 named destinations out of 1000 (max. 500000)

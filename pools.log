@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  4 OCT 2022 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  5 OCT 2022 17:00
 entering extended mode
 **./pools.tex
 (pools.tex
@@ -1055,7 +1055,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Slava/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 ([B][Pools]/[Pools][Einleitung].tex [2]
-Overfull \hbox (0.20723pt too wide) in paragraph at lines 34--35
+Overfull \hbox (0.20723pt too wide) in paragraph at lines 36--37
 \OT1/cmr/m/n/10.95 beschlossen wer-den (mit-tels einer DAO-Abstimmung). Die Er-
 rech-nung des genann-
  []
@@ -1072,9 +1072,6 @@ Overfull \hbox (0.93097pt too wide) in paragraph at lines 17--18
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 62.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
 (mdframed)              on input line 62.
 [3]) ([B][Pools]/[Pools][Erzeugung].tex [4]
 Overfull \hbox (1.31244pt too wide) in paragraph at lines 35--36
@@ -1153,18 +1150,22 @@ sem Szenario wurde ein Gesellschafter
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 76.
-[9]
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 76.
- [10]) ([B][Pools]/[Pools][Liquidierung].tex
+[9] [10]) ([B][Pools]/[Pools][Liquidierung].tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 17.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 22.
- [11]
+
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 22.
+
+[11]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 34.
@@ -1177,15 +1178,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 87.
+ [12]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 92.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 100.
-Package mdframed Info: Not enough space on this page on input line 100.
- [12]
-Package mdframed Info: Not enough space on this page on input line 100.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 104.
@@ -1211,17 +1210,20 @@ mr/m/it/10.95 Kap-i-talerhohung; neue Gesell-
  []
 
 [14]) [15] (pools.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `pools.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26469 strings out of 478864
- 504325 string characters out of 2848661
- 957870 words of memory out of 3000000
- 43907 multiletter control sequences out of 15000+600000
+ 26480 strings out of 478864
+ 504580 string characters out of 2848661
+ 958870 words of memory out of 3000000
+ 43918 multiletter control sequences out of 15000+600000
  413218 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,114p,10602b,1022s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,11n,114p,10602b,1018s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Slava\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1240,7 +1242,7 @@ ype1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Slava/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Slava/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on pools.pdf (15 pages, 254620 bytes).
+Output written on pools.pdf (15 pages, 254997 bytes).
 PDF statistics:
  235 PDF objects out of 1000 (max. 8388607)
  34 named destinations out of 1000 (max. 500000)

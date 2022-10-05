@@ -50,10 +50,10 @@
 \contentsline {section}{\numberline {B}Project 'Pools'}{68}{appendix.B}%
 \contentsline {subsection}{\numberline {B.1}Einleitung}{68}{subsection.B.1}%
 \contentsline {subsection}{\numberline {B.2}Formalisierungen}{69}{subsection.B.2}%
-\contentsline {subsection}{\numberline {B.3}Pool-Erzeugung}{70}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.3}Pool-Erzeugung}{71}{subsection.B.3}%
 \contentsline {subsection}{\numberline {B.4}Pool-Lifetime}{73}{subsection.B.4}%
 \contentsline {subsection}{\numberline {B.5}Pool-Liquidierung}{77}{subsection.B.5}%
-\contentsline {subsection}{\numberline {B.6}Pool-Vertrag}{79}{subsection.B.6}%
+\contentsline {subsection}{\numberline {B.6}Pool-Vertrag}{80}{subsection.B.6}%
 \contentsline {subsection}{\numberline {B.7}Pool-Economics}{81}{subsection.B.7}%
 \contentsline {subsubsection}{\numberline {B.7.1}Einleitung}{81}{subsubsection.B.7.1}%
 \contentsline {subsubsection}{\numberline {B.7.2}WPT - Die grundlegende Idee eines Pools-Project-Utility-Tokens}{83}{subsubsection.B.7.2}%

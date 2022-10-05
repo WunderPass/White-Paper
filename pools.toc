@@ -1,8 +1,8 @@
 \contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
 \contentsline {section}{\numberline {2}Formalisierungen}{3}{section.2}%
-\contentsline {section}{\numberline {3}Pool-Erzeugung}{4}{section.3}%
+\contentsline {section}{\numberline {3}Pool-Erzeugung}{5}{section.3}%
 \contentsline {section}{\numberline {4}Pool-Lifetime}{7}{section.4}%
 \contentsline {section}{\numberline {5}Pool-Liquidierung}{11}{section.5}%
-\contentsline {section}{\numberline {6}Pool-Vertrag}{13}{section.6}%
+\contentsline {section}{\numberline {6}Pool-Vertrag}{14}{section.6}%
 \contentsline {section}{\numberline {7}WunderPools-Economics}{15}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
