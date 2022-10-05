@@ -1,10 +1,21 @@
 % !TEX root = paper.tex
 
-\begin{Problem}[Bedarf nach Gemeinschaftskassen und und deren Verwahrung]
+Dies ist die \textit{Lightpaper-Version} des \href{https://github.com/WunderPass/White-Paper/blob/main/pools.pdf}{WunderPools-Papers}.
 
-\todo{Problem: BaFin-Lizenz}
+\vspace{0.3cm}
 
-Die Idee hinter den sogenannten \textit{Wunder-Pools} ist das Bündeln von Liquidität mehrerer User/Teilnehmer bzw. eine Art 'Treuehandverwahrung' in einem gemeinsamen Pool. 
+
+\begin{Problem}[Bedarf nach Gemeinschaftskassen und deren Verwahrung]
+
+Es existieren zahlreiche Situationen, in denen - insbesondere im privaten Umfeld - Gemeinschaftskassen von Vorteil wären (z.B. Haushaltskasse in einer WG) bzw. in denen eine Gruppe von (Privat-)Personen, Geld für einen bestimmten (gemeinsammen) Zweck sammelt (z. B Geburtstagsgeschenk für einen Freund).
+
+\vspace{0.3cm}
+
+Digitale Lösungen für diesen Bedarf existieren de facto nicht. Der Grund dafür besteht im Wesentlichen in der Notwendigkeit einer Banklizenz (\textit{BaFin}) zur Geldverwahrung. Selbst \textit{PayPal} hat ihr früheres \textit{Pooling-Feature} abgeschaltet.
+
+\vspace{0.1cm}
+
+Die \textit{'analog'} Lösung - die darin bestehen, dass eine verantwortliche Person händisch Geld von den Anderen eintreiben muss - ist gelinde gesagt ziemlich müßig und des digitalen Zeitalters unwürdig! 
 
 \end{Problem}
 
@@ -13,12 +24,16 @@ Die Idee hinter den sogenannten \textit{Wunder-Pools} ist das Bündeln von Liqui
 
 \begin{Example}[Anwendungsfälle sind zahlreich]
 
+Im Folgenden eine nur kurze Liste von Anwendungsfällen:
+
 \begin{itemize}
-  \item Gemeinsame Invests in (Crypto-)Assets.
   \item Pool für ein gemeinsames (Geburtstags-)Geschenk.
+  \item Haushaltskasse (z.B. in einer WG oder im Urlaub).
+  \item Vereinskasse.
+  \item Gemeinsame Invests in (Crypto-)Assets.
   \item Kicktipp-Pool (der über die gesamte Saison verwahrt werden muss).
-  \item Wetten unter Freunden (z. B. Sportereinisse wie ein WM-Finale).
-  \item Ausgleichspool für Auslagen von Geld an Freunde (Splitwise).
+  \item Wetten unter Freunden (z. B. 'Schaffe ich den Marathon?').
+  \item Ausgleichspool für Auslagen von Geld an Freunde \& Bekannte (Splitwise).
 \end{itemize}
 
 \end{Example}
@@ -28,18 +43,57 @@ Die Idee hinter den sogenannten \textit{Wunder-Pools} ist das Bündeln von Liqui
 
 \begin{Solution}[Smart-Contracts brauchen keine BaFin-Lizenz]
 
-\todo{TODO}
+Darum, was ein (digitaler) Service-Dienstleister ohne größte bürokratische Hürden nicht darf, muss ein Smart-Contract noch nicht einmal jemanden fragen: \textbf{Geldverwahrung für Dritte}.
+
+\vspace{0.2cm}
+
+Genau genommen machen zahlreiche der bedeutendsten heutigen Smart-Contracts bereits nichts anderes: Hantieren mit irgendwelchen Funds, was auch die Verwahrung inkludiert. 
+
+\end{Solution}
+
+\vspace{0.3cm}
+
+
+
+\begin{Konzept}[von der GbR zur \textit{Mini-DAO}]
+
+Die oben genannten Anwendungsfälle gelten laut deutschem Recht als eine \href{https://de.wikipedia.org/wiki/Gesellschaft_b%C3%BCrgerlichen_Rechts_(Deutschland)}{Gesellschaft bürgerlichen Rechts (GbR)}. Eine Gruppe von Privatpersonen, die für einen Freund ein gemeinsames Geschenk kaufen möchten, gelten demnach tatsächlich als eine \textit{GbR}.
+
+\vspace{0.3cm}
+
+Jeder WunderPool stellt also de facto nichts anderes dar als eine \textit{GbR}, die man im Web3-Jargon wiederum auch \textit{Mini-DAO} nennen könnte. Im Folgenden eine (plakative) Gegenüberstellung von analogen Bestandteilen: 
+
+\vspace{0.5cm}
+
+\begin{tabular}[h]{|c|c|c}
+\hline
+\textbf{WunderPool / Mini-DAO} & \textbf{GbR / Gesellschaft} \\
+\hline
+Pool- / DAO-Member & Gesellschafter \\
+\hline
+Pool- / DAO-Treasury & Gemeinschaftskasse / Gesellschaftskonto \\
+\hline
+parametrisierte Contract-Logik & Abmachungen / Gesellschaftervereinbarung \\
+\hline
+Pool- / DAO-Governance & Cap-Table \\
+\hline
+\end{tabular}
+
+\end{Konzept}
+
+\vspace{0.3cm}
+
+
+
+\begin{Solution}[technische Konzeption]
+
+Die technische Konzeption wird ausführlich in dem umfänglichen \href{https://github.com/WunderPass/White-Paper/blob/main/pools.pdf}{WunderPools-Paper} beschrieben. Dabei wird die Business-Logik maßgeblich in die folgenden drei Bereiche unterteilt:
 
 \begin{itemize}
-  \item \todo{Kernaussage beleuchten}
-  \item Grobe Beschreibung und Verlinkungen ins ausführliche Pool-Paper
-  \begin{itemize}
-	\item Pool-Erzeugung
-	\item Pool-Lifetime
-	\item Pool-Liquidierung
-  \end{itemize}
+  \item \textbf{Pool-Erzeugung}
+  \item \textbf{Pool-Lifetime}
+  \item \textbf{Pool-Liquidierung}
 \end{itemize}
-
 
 \end{Solution}
 
@@ -48,7 +102,15 @@ Die Idee hinter den sogenannten \textit{Wunder-Pools} ist das Bündeln von Liqui
 
 \begin{Hypothese}[Abstraktion mittels Payout-Oracles]
 
-\todo{TODO}
+Wir erwarten, dass sich unser \textit{Mini-DAO-Case} auf einen \textbf{wesentlich größeren Markt} abstrahieren lässt als kleine bis mittlere GbRs mit integriertem Geldpool. Und zwar auf jeden einzelnen Anwendungsfall, der eine praktive, sichere und unbüro\-kratische Aufbewahrung von Funds benötigt. Und insbesondere auch jene Anwendungsfälle, die eine solche Aufbewahrung eigentlich benötigen könnten/würden, in der Praxis jedoch aufgrund der BaFin-Regularien bisher darauf verzichten (müssen).
+
+\vspace{0.3cm}
+
+Bei einer solchen Abstaktion würde man wesentliche der obigen funktionalen Bestandteile der \textit{GbR} bzw. \textit{Mini-DAO} aus dem Funktionsumfang des Produkts herausnehmen und im Wesentlichen nur noch die \textit{Pool-Treasury} zum dezentralen Aufbewahren von Funds auf Protokoll-Ebene anbieten. Wie ein \textit{Safe} ohne viel Schnickschnack. Simple integrierbar in Fremdanwendungen und vor allem ohne Notwendigkeit einer BaFin-Lizenz. 
+
+\vspace{0.3cm}
+
+Die Auf- bzw. Umverteilung der aufbewahrten Funds bei Pool-Liquidierung würde dabei mittels abstrahierter \textit{Payout-Oracles} erfolgen. Zu Ideen und anschaulichen Beispielen zu dem Thema \textit{Payout-Oracles} siehe \textbf{Kapitel 5} des \href{https://github.com/WunderPass/White-Paper/blob/main/pools.pdf}{WunderPools-Papers}.
 
 \end{Hypothese}
 
@@ -56,17 +118,6 @@ Die Idee hinter den sogenannten \textit{Wunder-Pools} ist das Bündeln von Liqui
 
 
 
-
-
-
-
-\begin{Problem}[Bedarf nach Gemeinschaftskassen und und deren Verwahrung]
-
-\todo{TODO}
-
-\end{Problem}
-
-\vspace{0.3cm}
 
 
 \vspace{0.5cm}
