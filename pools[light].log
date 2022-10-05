@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  5 OCT 2022 16:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.7)  5 OCT 2022 16:45
 entering extended mode
 **./pools[light].tex
 (pools[light].tex
@@ -932,57 +932,54 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 \c@Hypothese=\count327
 \c@Praemisse=\count328
 \c@Abgrenzung=\count329
-\c@Quelle=\count330
-\c@Zitat=\count331
+\c@Umsetzung=\count330
+\c@Ausblick=\count331
 \c@Fazit=\count332
 \c@Problem=\count333
 \c@Solution=\count334
 \c@Konzept=\count335
-\c@NFT-Prop=\count336
-\c@Def=\count337
-\c@Theorem=\count338
-\c@Lemma=\count339
-\c@Assumption=\count340
-\c@Example=\count341
-\c@Algo=\count342
+\c@Def=\count336
+\c@Assumption=\count337
+\c@Example=\count338
+\c@Algo=\count339
  (pools[light].aux)
 \openout1 = `pools[light].aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-Package scrbase Info: activating english \contentsname on input line 165.
-Package scrbase Info: activating english \listfigurename on input line 165.
-Package scrbase Info: activating english \listtablename on input line 165.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+Package scrbase Info: activating english \contentsname on input line 149.
+Package scrbase Info: activating english \listfigurename on input line 149.
+Package scrbase Info: activating english \listtablename on input line 149.
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
+\scratchcounter=\count340
 \scratchdimen=\dimen279
 \scratchbox=\box73
-\nofMPsegments=\count344
-\nofMParguments=\count345
+\nofMPsegments=\count341
+\nofMParguments=\count342
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count346
+\MPscratchCnt=\count343
 \MPscratchDim=\dimen280
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
+\MPnumerator=\count344
+\makeMPintoPDFobject=\count345
 \everyMPtoPDFconversion=\toks46
 )
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -995,7 +992,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 165.
+Package hyperref Info: Link coloring ON on input line 149.
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1007,11 +1004,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count349
+\c@section@level=\count346
 )
-LaTeX Info: Redefining \ref on input line 165.
-LaTeX Info: Redefining \pageref on input line 165.
-LaTeX Info: Redefining \nameref on input line 165.
+LaTeX Info: Redefining \ref on input line 149.
+LaTeX Info: Redefining \pageref on input line 149.
+LaTeX Info: Redefining \nameref on input line 149.
  (pools[light].out) (pools[light].out)
 \@outlinefile=\write4
 \openout4 = `pools[light].out'.
@@ -1023,24 +1020,24 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 165.
+(scrartcl)           before \begin{document} on input line 149.
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count350
+\BKM@id=\count347
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 169
+LaTeX Font Info:    Trying to load font information for U+msa on input line 153
 .
  (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 169
+LaTeX Font Info:    Trying to load font information for U+msb on input line 153
 .
 
 (C:\Users\Slava\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1065,13 +1062,6 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 39.
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 39.
-
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 39.
@@ -1083,9 +1073,9 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
 
-Overfull \hbox (0.7143pt too wide) in paragraph at lines 50--51
-[]\OT1/cmr/m/n/10.95 Genau genom-men machen zahlre-iche der be-deu-tend-sten he
-uti-gen Smart-Contracts
+Overfull \hbox (6.46306pt too wide) in paragraph at lines 50--51
+[]\OT1/cmr/m/n/10.95 Genau genom-men macht eine Vielzahl der be-deu-tend-sten h
+euti-gen Smart-Contracts
  []
 
 Package mdframed Info: mdframed detected package amsthm 
@@ -1116,6 +1106,12 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 103.
+
+Overfull \hbox (1.03366pt too wide) in paragraph at lines 105--106
+\OT1/cmr/m/n/10.95 wurden, in der Praxis je-doch auf-grund der BaFin-Regularie
+n bisher da-rauf verzichten
+ []
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 115.
@@ -1126,20 +1122,17 @@ Package mdframed Info: Not enough space on this page on input line 115.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `pools[light].out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26328 strings out of 478864
- 501093 string characters out of 2848661
- 950908 words of memory out of 3000000
- 43809 multiletter control sequences out of 15000+600000
+ 26289 strings out of 478864
+ 500806 string characters out of 2848661
+ 949698 words of memory out of 3000000
+ 43776 multiletter control sequences out of 15000+600000
  412565 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,10n,114p,10609b,1012s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,10n,114p,10609b,998s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Slava\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1147,9 +1140,9 @@ ic/amsfonts/cm/cmr10.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmr12.pfb><C:/Users/Slava/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Slava/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on pools[light].pdf (3 pages, 99629 bytes).
+Output written on pools[light].pdf (3 pages, 98981 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
+ 58 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
